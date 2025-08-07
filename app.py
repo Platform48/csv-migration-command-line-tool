@@ -1,68 +1,83 @@
 import os
-from validate_csv_dynamic import validate_csv 
-from core_data_services import CoreDataService
-from templates_services import getTemplateIds
 import json
+import pandas as pd
+from customizable_mapping import map_location_component
+from validate_csv_dynamic import validate_csv
+from core_data_services import CoreDataService
+
+SHEET_TEMPLATE_MAP = {
+    "Locations": [
+        "template_6662df87de064104a81422a351d5ce1c", # Location
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+    ],
+}
+
+SHEET_ROW_MAPPERS = {
+    "Locations": map_location_component,
+}
+
+COMPONENTS_PATH = "components.xlsx"
 
 def run_loop():
-    
-    # Template ids from top to bottom level
-    print("🔁 CSV Validator and Migration App (Ctrl+C or type 'exit' to quit)")
+    print("🔁 XLSX Validator and Migration App (Ctrl+C or type 'exit' to quit)")
 
     try:
-        template_ids = []
-
-        if len(template_ids) == 0:
-            template_ids = getTemplateIds()
-
-        core_data_service = CoreDataService(template_ids)
-        json_schemas = core_data_service.getSchemaWithArrayLevel()
-
-        print("Fetched JSON Schema: ")
-        print(json.dumps(json_schemas, indent= 2))
-        print('--------------------------------------------------------------------')
-        print(f"Friendly Reminder: copy and paste this array {template_ids} into template_ids variable if it is required in future.")
-        
         while True:
-            csv_path = input("\nEnter CSV file path: ").strip()
-            if csv_path.lower() == "exit":
-                break
-
-            if not os.path.exists(csv_path):
-                print("❌ CSV file not found.")
+            if not os.path.exists(COMPONENTS_PATH):
+                print("❌ File not found.")
                 continue
 
             try:
-                results, parsed_json = validate_csv(csv_path, json_schemas)
+                xls = pd.read_excel(COMPONENTS_PATH, sheet_name=None)
             except Exception as e:
-                print(f"❌ Validation error: {e}")
+                print(f"❌ Error reading Excel file: {e}")
                 continue
 
-            invalid = [r for r in results if not r["valid"]]
-            if invalid:
-                print("\n❌ Validation failed on the following rows:")
-                for r in invalid:
-                    for err in r["errors"]:
-                        print("  -", err)
-                print("Please correct the above before retry")
-            else:
-                print("\n✅ All rows are valid!")
-                insert = input("Do you want to insert into the database? (y/n): ").strip().lower()
+            for sheet_name, df in xls.items():
+                if sheet_name not in SHEET_TEMPLATE_MAP or sheet_name not in SHEET_ROW_MAPPERS:
+                    continue
+
+                print(f"\n📄 Processing Sheet: {sheet_name}")
+
+                template_ids = SHEET_TEMPLATE_MAP[sheet_name]
+                row_mapper = SHEET_ROW_MAPPERS[sheet_name]
+                core_data_service = CoreDataService(template_ids)
+                schemas = core_data_service.getSchemaWithArrayLevel()
+
+                try:
+                    results, parsed_json = validate_csv(df, schemas, template_ids, lambda row: row_mapper(row, template_ids))
+                except Exception as e:
+                    print(f"❌ Validation error in '{sheet_name}': {e}")
+                    continue
+
+                invalid = [r for r in results if not r["valid"]]
+                if invalid:
+                    print(f"\n❌ Validation failed for sheet '{sheet_name}' on the following rows:")
+                    for r in invalid:
+                        for err in r["errors"]:
+                            print(f"  - {err}")
+                    print("Please correct the above before retry.")
+                    continue
+
+                print(f"\n✅ All rows in sheet '{sheet_name}' are valid!")
+                insert = input(f"Do you want to insert '{sheet_name}' data into the database? (y/n): ").strip().lower()
                 if insert == "y":
                     print("📦 Preview JSON:")
-                    print(json.dumps(parsed_json, indent = 2))
-                    
+                    print(json.dumps(parsed_json, indent=2))
+
                     push = input("Are you sure to push these into database? (y/n): ").strip().lower()
                     if push == "y":
                         print("🛜 Calling API ...")
                         core_data_service.pushValidRowToDB(parsed_json)
-                        print("✅ Data inserted into database.")
-                else:
-                    print("⏩ Skipping database insert.")
+                        print(f"✅ Data from '{sheet_name}' inserted into database.")
+                    else:
+                        print("⏩ Skipping database insert.")
+
+            print("✅ All sheets processed.")
+            break
 
     except KeyboardInterrupt:
         print("\n👋 Exiting the app. Goodbye!")
-        
 
 if __name__ == "__main__":
     run_loop()
