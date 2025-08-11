@@ -1,6 +1,8 @@
 import requests
 import json
 
+import requests
+
 class CoreDataService:
     def __init__(self, template_ids):
         self.template_ids = template_ids
@@ -28,9 +30,20 @@ class CoreDataService:
             res = requests.post(f"{self.service_url}/core-data-service/v1/components", json=component)
             if res.status_code == 201:
                 print(f"✅ Row {idx + 1} has been pushed!")
+                try:
+                    data = res.json()
+                    comp_id = data.get("id")
+                    comp_name = component.get("name")
+                    template_id = component.get("templateId")
+                    if comp_id and comp_name and template_id:
+                        COMPONENT_ID_MAP[(template_id, comp_name)] = comp_id
+                        print(f"   ↳ Stored in ID map: ({template_id}, {comp_name}) -> {comp_id}")
+                except Exception as e:
+                    print(f"⚠️ Could not parse returned ID for row {idx+1}: {e}")
             else:
                 try:
                     error_msg = res.json()
                     print(f"❌ Failed to push Row {idx + 1}. Error: {error_msg}")
                 except Exception:
                     print(f"❌ Failed to push Row {idx + 1}. HTTP Status: {res.status_code}")
+
