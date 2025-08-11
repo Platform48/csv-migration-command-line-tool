@@ -62,7 +62,7 @@ def map_location_component(row, template_ids):
         "descriptionwithHtml": get_stripped("Description (with html)"),
         "overrideUrl": get_stripped("Override url"),
         "type": get_stripped("Type"),
-        "nEWCUSTOMADDRESSWHAT3WORDS": get_stripped("NEW CUSTOM ADDRESS/WHAT3WORDS"),
+        "NEWCUSTOMADDRESSWHAT3WORDS": get_stripped("NEW CUSTOM ADDRESS/WHAT3WORDS"),
         "latitude": row.get("Latitude"),
         "longitude": row.get("Longitude"),
         "images": images,
@@ -112,7 +112,6 @@ def map_location_component(row, template_ids):
         "details": details,
         "bundle": {},
     }
-
 
 def map_ground_accommodation_component(row, template_ids):
 
@@ -250,7 +249,6 @@ def map_ground_accommodation_component(row, template_ids):
         "details": details,
         "bundle": {}
     }
-
 
 def map_ship_accommodation_component(row, template_ids):
 
@@ -395,5 +393,100 @@ def map_ship_accommodation_component(row, template_ids):
         "endDate": None,
         "duration": None,
         "details": details,
+        "bundle": {}
+    }
+
+def map_cruise_bundle(row, template_ids):
+
+    def get_stripped(field):
+        val = row.get(field)
+        if pd.isna(val):
+            return ""
+        return str(val).strip()
+
+    def parse_staff_guest_ratio(value):
+        if not value or pd.isna(value):
+            return None
+        if isinstance(value, (int, float)):  # Already numeric
+            return float(value)
+        parts = str(value).split(":")
+        if len(parts) == 2:
+            try:
+                a = float(parts[0].strip())
+                b = float(parts[1].strip())
+                return a / (a + b) if (a + b) != 0 else None
+            except ValueError:
+                return None
+        try:
+            return float(value)
+        except ValueError:
+            return None
+
+
+    # ===== Level 0: Cruise =====
+    level_0 = {
+        "emmissionsPerDay": float(row.get("Emmissions per day")) if pd.notna(row.get("Emmissions per day")) else -1,
+        "ship": get_stripped("Ship"),  # If Ship is a component, replace with nested object mapping
+        "staffGuestRatio": parse_staff_guest_ratio(row.get("Expedition Staff: Guest Ratio")) if pd.notna(row.get("Expedition Staff: Guest Ratio")) else -1,
+        "itineraryType": "Flexible Itinerary" if get_stripped("Day 3 to 6") else "Fixed Itinerary",
+        "flexibleItineraryContent": {
+            "embarkationDay": int(row.get("Embarkation Day")) if pd.notna(row.get("Embarkation Day")) else -1,
+            "embarkationDescription": get_stripped("Day 1"),
+            "voyageDescription": get_stripped("Day Description - Web"),
+            "disembarkationDescription": get_stripped("Day 7"),
+            "disembarkationDay": int(row.get("Disembarkation Day")) if pd.notna(row.get("Disembarkation Day")) else -1
+        }
+    }
+
+    # ===== Level 1: Package =====
+    level_1 = {
+        "description": get_stripped("Cruise Description"),
+        "durationdays": int(row.get("Duration (Days)")) if pd.notna(row.get("Duration (Days)")) else -1,
+        "restrictions": {
+            "minimumAge": int(row.get("Min age")) if pd.notna(row.get("Min age")) else -1,
+            "maximumAge": int(row.get("Max age")) if pd.notna(row.get("Max age")) else -1,
+            "oKWhenPregnant": get_stripped("Ok when pregnant?").lower() == "true",
+            "wheelchairAccess": get_stripped("Wheelchair access?").lower() == "true",
+            "upperWeightLimitkg": float(row.get("Upper Weight Limit (kg)")) if pd.notna(row.get("Upper Weight Limit (kg)")) else -1,
+            "upperHeightLimitm": float(row.get("Upper Height Limit (m)")) if pd.notna(row.get("Upper Height Limit (m)")) else -1,
+            "lowerHeightLimitm": float(row.get("Lower Height Limit (m)")) if pd.notna(row.get("Lower Height Limit (m)")) else -1,
+            "oKWithBreathingMachines": get_stripped("OK with Breathing machines?").lower() == "true",
+            "suitedForVisuallyImpaired": get_stripped("Suited for visually impaired").lower() == "true"
+        },
+        "inclusions": {
+            "guided": get_stripped("Guided?").lower() == "true",
+            "drinks": get_stripped("Drinks"),
+            "complimentaryGifts": get_stripped("Complimentary gifts?"),
+            "nationalParkFee": get_stripped("National Park fee"),
+            "other": [x.strip() for x in get_stripped("Other").split(",") if x.strip()] if get_stripped("Other") else []
+        },
+        "requiredGear": [x.strip() for x in get_stripped("Required gear (comma-list)").split(",") if x.strip()] if get_stripped("Required gear (comma-list)") else [],
+        "difficulty": get_stripped("Difficulty") or 'Moderate',
+        "itinerary": "\n".join([
+            f"{get_stripped('Day')} - {get_stripped('Day Title')}: {get_stripped('Day Description - Web')}"
+        ])  # Simplified example: you could loop through all Day columns to build a proper itinerary string
+    }
+
+    # ===== Level 2: Base =====
+    level_2 = {}
+
+    component_fields = [
+        {"templateId": template_ids[0], "data": level_0},  # Cruise
+        {"templateId": template_ids[1], "data": level_1},  # Package
+        {"templateId": template_ids[2], "data": level_2}   # Base
+    ]
+
+    return {
+        "orgId": None,
+        "templateId": template_ids[0],
+        "revisionGroupId": None,
+        "state": "unpublished",
+        "name": get_stripped("Name"),
+        "componentFields": component_fields,
+        "partners": [p.strip() for p in get_stripped("Partner").split(",") if p.strip()] if get_stripped("Partner") else [],
+        "startDate": None,
+        "endDate": None,
+        "duration": int(row.get("Duration (Days)")) if pd.notna(row.get("Duration (Days)")) else None,
+        "details": {},
         "bundle": {}
     }

@@ -1,7 +1,7 @@
 import os
 import json
 import pandas as pd
-from customizable_mapping import map_location_component, map_ground_accommodation_component, map_ship_accommodation_component
+from customizable_mapping import map_location_component, map_ground_accommodation_component, map_ship_accommodation_component, map_cruise_bundle
 from validate_csv_dynamic import validate_csv
 from core_data_services import CoreDataService
 
@@ -13,22 +13,28 @@ SHEET_TEMPLATE_MAP = {
     #     "template_6662df87de064104a81422a351d5ce1c", # Location
     #     "template_aca16a46ec3842ca85d182ee9348f627", # Base
     # ],
-    "Ground Accom": [
-        "template_40f3b745b3f841caa2a7ee9631f21a26",  # Ground Accom
-        "template_b70cd1388f5e49a4be344253215dd473",  # Accom
+    # "Ground Accom": [
+    #     "template_40f3b745b3f841caa2a7ee9631f21a26",  # Ground Accom
+    #     "template_b70cd1388f5e49a4be344253215dd473",  # Accom
+    #     "template_aca16a46ec3842ca85d182ee9348f627",  # Base
+    # ],
+    # "Ship Accom": [
+    #     "template_63766858b3f444a890574fd849d8e273",  # Ship
+    #     "template_b70cd1388f5e49a4be344253215dd473",  # Accom
+    #     "template_aca16a46ec3842ca85d182ee9348f627",  # Base
+    # ],
+    "Cruise Packages": [
+        "template_0c2ff80e37ab4632b808b45cfa79d2cd",  # Cruise
+        "template_ee591e8d618542e2933819ac2a441af4",  # Packages
         "template_aca16a46ec3842ca85d182ee9348f627",  # Base
-    ],
-    "Ship Accom": [
-        "template_63766858b3f444a890574fd849d8e273",  # Ship
-        "template_b70cd1388f5e49a4be344253215dd473",  # Accom
-        "template_aca16a46ec3842ca85d182ee9348f627",  # Base
-    ],
+    ]
 }
 
 SHEET_ROW_MAPPERS = {
     # "Locations": map_location_component,
-    "Ground Accom": map_ground_accommodation_component,
-    "Ship Accom": map_ship_accommodation_component
+    # "Ground Accom": map_ground_accommodation_component,
+    # "Ship Accom": map_ship_accommodation_component,
+    "Cruise Packages": map_cruise_bundle,
 
 }
 
