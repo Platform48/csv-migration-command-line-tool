@@ -13,11 +13,11 @@ SHEET_TEMPLATE_MAP = {
     #     "template_6662df87de064104a81422a351d5ce1c", # Location
     #     "template_aca16a46ec3842ca85d182ee9348f627", # Base
     # ],
-    # "Ground Accom": [
-    #     "template_40f3b745b3f841caa2a7ee9631f21a26",  # Ground Accom
-    #     "template_b70cd1388f5e49a4be344253215dd473",  # Accom
-    #     "template_aca16a46ec3842ca85d182ee9348f627",  # Base
-    # ],
+    "Ground Accom": [
+        "template_40f3b745b3f841caa2a7ee9631f21a26",  # Ground Accom
+        "template_b70cd1388f5e49a4be344253215dd473",  # Accom
+        "template_aca16a46ec3842ca85d182ee9348f627",  # Base
+    ],
     # "Ship Accom": [
     #     "template_63766858b3f444a890574fd849d8e273",  # Ship
     #     "template_b70cd1388f5e49a4be344253215dd473",  # Accom
@@ -32,10 +32,15 @@ SHEET_TEMPLATE_MAP = {
 
 SHEET_ROW_MAPPERS = {
     # "Locations": map_location_component,
-    # "Ground Accom": map_ground_accommodation_component,
+    "Ground Accom": map_ground_accommodation_component,
     # "Ship Accom": map_ship_accommodation_component,
     "Cruise Packages": map_cruise_bundle,
 
+}
+
+TEMPLATE_TYPES = {
+        "template_40f3b745b3f841caa2a7ee9631f21a26": "Accommodation", # Referenced by bundle "component type"
+        "template_0c2ff80e37ab4632b808b45cfa79d2cd": "Cruise"
 }
 
 PAT_COMPONENTS_PATH = "pat_components.xlsx"
@@ -55,6 +60,23 @@ def run_loop():
 
             try:
                 xls = pd.read_excel(COMPONENTS_PATH, sheet_name=None)
+
+                # Make duplicate column names unique (Day, Day.1, Day.2, etc.)
+                def dedup_columns(columns):
+                    seen = {}
+                    new_cols = []
+                    for col in columns:
+                        if col not in seen:
+                            seen[col] = 0
+                            new_cols.append(col)
+                        else:
+                            seen[col] += 1
+                            new_cols.append(f"{col}.{seen[col]}")
+                    return new_cols
+
+                for sheet, df_sheet in xls.items():
+                    df_sheet.columns = dedup_columns(df_sheet.columns)
+
             except Exception as e:
                 print(f"❌ Error reading Excel file: {e}")
                 continue
@@ -71,12 +93,17 @@ def run_loop():
 
                 schemas = core_data_service.getSchemaWithArrayLevel()
 
+
+                # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                df = df.head(20) # MUST TAKE THIS OUT (limits script to only read/upload first n records)
+                # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
                 try:
                     results, parsed_json = validate_csv(
                         df,
                         schemas,
                         template_ids,
-                        lambda row: row_mapper(row, template_ids)
+                        lambda row: row_mapper(row, template_ids, COMPONENT_ID_MAP)
                     )
                 except Exception as e:
                     print(f"❌ Validation error in '{sheet_name}': {e}")
@@ -151,8 +178,9 @@ class CoreDataService:
                     comp_name = component.get("name")
                     template_id = component.get("templateId")
                     if comp_id and comp_name and template_id:
-                        COMPONENT_ID_MAP[(template_id, comp_name)] = comp_id
-                        print(f"   ↳ Stored in ID map: ({template_id}, {comp_name}) -> {comp_id}")
+                        template_name = TEMPLATE_TYPES[template_id]
+                        COMPONENT_ID_MAP[(template_name, comp_name)] = comp_id
+                        print(f"   ↳ Stored in ID map: ({template_name}, {comp_name}) -> {comp_id}")
                 except Exception as e:
                     print(f"⚠️ Could not parse returned ID for row {idx+1}: {e}")
             else:
