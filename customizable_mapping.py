@@ -457,7 +457,7 @@ def map_cruise_bundle(row, template_ids):
             "guided": get_stripped("Guided?").lower() == "true",
             "drinks": get_stripped("Drinks"),
             "complimentaryGifts": get_stripped("Complimentary gifts?"),
-            "nationalParkFee": get_stripped("National Park fee"),
+            "nationalParkFee": get_stripped("National Park fee") or 'Excluded ',
             "other": [x.strip() for x in get_stripped("Other").split(",") if x.strip()] if get_stripped("Other") else []
         },
         "requiredGear": [x.strip() for x in get_stripped("Required gear (comma-list)").split(",") if x.strip()] if get_stripped("Required gear (comma-list)") else [],
