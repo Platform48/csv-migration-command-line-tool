@@ -1,53 +1,62 @@
 import os
 import json
 import pandas as pd
-from customizable_mapping import map_location_component, map_ground_accommodation_component, map_ship_accommodation_component, map_cruise_bundle
+
+from mappings.cruise_pkg import map_cruise_bundle
+from mappings.location import map_location_component
+from mappings.ground_accom import map_ground_accommodation_component
+from mappings.ship_accom import map_ship_accommodation_component
+
 from validate_csv_dynamic import validate_csv
 from core_data_services import CoreDataService
+
+
+DEBUG_MODE = True  # toggle this to switch between dry-run and real upload
+DEBUG_OUTPUT_FILE = "debug_output.ndjson"
 
 # Global map for later reference: (templateId, name) -> componentId
 COMPONENT_ID_MAP = {}
 
 SHEET_TEMPLATE_MAP = {
-    # "Locations": [
-    #     "template_6662df87de064104a81422a351d5ce1c", # Location
-    #     "template_aca16a46ec3842ca85d182ee9348f627", # Base
-    # ],
-    "Ground Accom": [
-        "template_40f3b745b3f841caa2a7ee9631f21a26",  # Ground Accom
-        "template_b70cd1388f5e49a4be344253215dd473",  # Accom
-        "template_aca16a46ec3842ca85d182ee9348f627",  # Base
+    "Location": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_d0904afaccec4ef69057572ff77e2790", # Location
     ],
+    # "Ground Accom": [
+    #     "template_aca16a46ec3842ca85d182ee9348f627",  # Base
+    #     "template_271e218329f74ad78601617abaa74891",  # Accom
+    #     "template_d32b51f46e7946faa5d3e2aa33e7d29a",  # Ground Accom
+    # ],
     # "Ship Accom": [
     #     "template_63766858b3f444a890574fd849d8e273",  # Ship
     #     "template_b70cd1388f5e49a4be344253215dd473",  # Accom
     #     "template_aca16a46ec3842ca85d182ee9348f627",  # Base
     # ],
-    "Cruise Packages": [
-        "template_0c2ff80e37ab4632b808b45cfa79d2cd",  # Cruise
-        "template_ee591e8d618542e2933819ac2a441af4",  # Packages
-        "template_aca16a46ec3842ca85d182ee9348f627",  # Base
-    ]
+    # "Cruise Packages": [
+    #     "template_0c2ff80e37ab4632b808b45cfa79d2cd",  # Cruise
+    #     "template_ee591e8d618542e2933819ac2a441af4",  # Packages
+    #     "template_aca16a46ec3842ca85d182ee9348f627",  # Base
+    # ]
 }
 
 SHEET_ROW_MAPPERS = {
-    # "Locations": map_location_component,
-    "Ground Accom": map_ground_accommodation_component,
+    "Location": map_location_component,
+    # "Ground Accom": map_ground_accommodation_component,
     # "Ship Accom": map_ship_accommodation_component,
-    "Cruise Packages": map_cruise_bundle,
+    # "Cruise Packages": map_cruise_bundle,
 
 }
 
 TEMPLATE_TYPES = {
-        "template_40f3b745b3f841caa2a7ee9631f21a26": "Accommodation", # Referenced by bundle "component type"
-        "template_0c2ff80e37ab4632b808b45cfa79d2cd": "Cruise"
+    "template_d0904afaccec4ef69057572ff77e2790": "location",
+    # "template_40f3b745b3f841caa2a7ee9631f21a26": "Accommodation", # Referenced by bundle "component type"
+    # "template_0c2ff80e37ab4632b808b45cfa79d2cd": "Cruise"
 }
 
 PAT_COMPONENTS_PATH = "pat_components.xlsx"
 ANT_COMPONENTS_PATH = "ant_components.xlsx"
 
-COMPONENTS_PATH = ANT_COMPONENTS_PATH # Just using this for the moment - obv will need both!
-
+COMPONENTS_PATH = PAT_COMPONENTS_PATH # Just using this for the moment - obv will need both!
 
 def run_loop():
     print("🔁 XLSX Validator and Migration App (Ctrl+C or type 'exit' to quit)")
@@ -168,6 +177,12 @@ class CoreDataService:
         return schemas
 
     def pushValidRowToDB(self, components):
+        if DEBUG_MODE:
+            print(f"📝 DEBUG MODE ON: Writing {len(components)} components to {DEBUG_OUTPUT_FILE} instead of uploading.")
+            with open(DEBUG_OUTPUT_FILE, "a", encoding="utf-8") as f:
+                for comp in components:
+                    f.write(json.dumps(comp, ensure_ascii=False) + "\n")
+            return
         for idx, component in enumerate(components):
             res = requests.post(f"{self.service_url}/core-data-service/v1/components", json=component)
             if res.status_code == 201:
