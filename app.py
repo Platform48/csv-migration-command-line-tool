@@ -6,12 +6,13 @@ from mappings.cruise_pkg import map_cruise_bundle
 from mappings.location import map_location_component
 from mappings.ground_accom import map_ground_accommodation_component
 from mappings.ship_accom import map_ship_accommodation_component
+from mappings.journey import map_journey_component
 
 from validate_csv_dynamic import validate_csv
 from core_data_services import CoreDataService
 
 
-DEBUG_MODE = True  # toggle this to switch between dry-run and real upload
+DEBUG_MODE = False  # toggle this to switch between dry-run and real upload
 DEBUG_OUTPUT_FILE = "debug_output.ndjson"
 
 # Global map for later reference: (templateId, name) -> componentId
@@ -22,11 +23,15 @@ SHEET_TEMPLATE_MAP = {
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_d0904afaccec4ef69057572ff77e2790", # Location
     ],
-    # "Ground Accom": [
-    #     "template_aca16a46ec3842ca85d182ee9348f627",  # Base
-    #     "template_271e218329f74ad78601617abaa74891",  # Accom
-    #     "template_d32b51f46e7946faa5d3e2aa33e7d29a",  # Ground Accom
-    # ],
+    "Ground Accom": [
+        "template_aca16a46ec3842ca85d182ee9348f627",  # Base
+        "template_c265e31c0c2848fa8210050f452d3926",  # Accom
+        "template_d32b51f46e7946faa5d3e2aa33e7d29a",  # Ground Accom
+    ],
+    "Journeys": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_fe4243df590147a09a546e2f177cdcf3", # Journeys
+    ],
     # "Ship Accom": [
     #     "template_63766858b3f444a890574fd849d8e273",  # Ship
     #     "template_b70cd1388f5e49a4be344253215dd473",  # Accom
@@ -40,9 +45,12 @@ SHEET_TEMPLATE_MAP = {
 }
 
 SHEET_ROW_MAPPERS = {
-    "Location": map_location_component,
-    # "Ground Accom": map_ground_accommodation_component,
-    # "Ship Accom": map_ship_accommodation_component,
+    # Name of Sheet    : mapping function
+
+    "Location"         : map_location_component,
+    "Ground Accom"     : map_ground_accommodation_component,
+    "Journeys"         : map_journey_component,
+    # "Ship Accom"     : map_ship_accommodation_component,
     # "Cruise Packages": map_cruise_bundle,
 
 }
@@ -86,6 +94,12 @@ def run_loop():
                 for sheet, df_sheet in xls.items():
                     df_sheet.columns = dedup_columns(df_sheet.columns)
 
+                    # drop the first data row (row index 0 is the header, row index 1 is metadata)
+                    df_sheet = df_sheet.iloc[1:].reset_index(drop=True)
+
+                    xls[sheet] = df_sheet  # overwrite back into the dict
+
+
             except Exception as e:
                 print(f"❌ Error reading Excel file: {e}")
                 continue
@@ -104,7 +118,7 @@ def run_loop():
 
 
                 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                df = df.head(20) # MUST TAKE THIS OUT (limits script to only read/upload first n records)
+                # df = df.head(20) # MUST TAKE THIS OUT (limits script to only read/upload first n records)
                 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
                 try:
@@ -128,12 +142,12 @@ def run_loop():
                     continue
 
                 print(f"\n✅ All rows in sheet '{sheet_name}' are valid!")
-                insert = input(f"Do you want to insert '{sheet_name}' data into the database? (y/n): ").strip().lower()
+                insert = "y"#input(f"Do you want to insert '{sheet_name}' data into the database? (y/n): ").strip().lower()
                 if insert == "y":
-                    print("📦 Preview JSON:")
-                    print(json.dumps(parsed_json, indent=2))
+                    # print("📦 Preview JSON:")
+                    # print(json.dumps(parsed_json, indent=2))
 
-                    push = input("Are you sure to push these into database? (y/n): ").strip().lower()
+                    push = "y"#input("Are you sure to push these into database? (y/n): ").strip().lower()
                     if push == "y":
                         print("🛜 Calling API ...")
                         core_data_service.pushValidRowToDB(parsed_json)

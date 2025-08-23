@@ -1,160 +1,123 @@
+# ground_accommodation_mapper.py
+from utils import get_stripped, safe_float, safe_int
+from .location import LOCATION_ALIASES, map_region_name_to_id
 import pandas as pd
-import json
-
-with open("swoop.regions.json", "r", encoding="utf-8") as f:
-    regions_data = json.load(f)
-
-REGION_LOOKUP = {
-    region["name"]: region["_id"]
-    for region in regions_data
-}
-
-REGION_ALIASES = {
-    "Glaciares": "Los Glaciares",
-    "Torres": "Torres del Paine",
-    "Ruta40": "Ruta 40",
-    "Iguazu": "Iguazú",
-    "Jujuy": "Salta & Jujuy",
-    "Península": "Peninsula",
-    "Circle Region": "Circle",
-    "Santiago Region": "Santiago",
-}
-
-UNMAPPED_REGIONS = set()
 
 def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP):
 
-    def get_stripped(field):
-        val = row.get(field)
-        if pd.isna(val):
-            return ""
-        return str(val).strip()
+    # --- Regions ---
+    regions = [map_region_name_to_id(get_stripped(row, "Region"))]
 
-    def map_region_name_to_id(region_name):
-        if not region_name:
-            return None
-        region_name = region_name.strip()
-        canonical = REGION_ALIASES.get(region_name, region_name)
-        region_id = REGION_LOOKUP.get(canonical)
-        if not region_id:
-            UNMAPPED_REGIONS.add(region_name)
-        return region_id
+    # --- Pricing ---
+    price_val = None
+    if pd.notna(row.get("Price")):
+        try:
+            price_val = int(float(row.get("Price")))
+        except (ValueError, TypeError):
+            price_val = None
+    pricing = {}
+    if price_val:
+        pricing = {
+            "amount": price_val,
+            "currency": get_stripped(row, "Currency") or "USD"
+        }
 
-    # Images
-    images = [
-        get_stripped(col)
-        for col in ["Image 1", "Image 2", "Image 3", "Image 4", "Image 5"]
-        if get_stripped(col)
-    ]
+    # --- Media ---
+    images = get_stripped(row, "images").split("\n")
+    for i in images:
+        i = i.strip()
 
-    # Map primary region
-    raw_region = get_stripped("Region")
-    region_id = map_region_name_to_id(raw_region)
-
-    # ===== Level 0 → Schema 1 (Accommodation details) =====
-    level_0 = {
-        "description": get_stripped("Description") or "Description unavailable",
-        "region": region_id,
+    media = {
         "images": images,
+        "videos": []
+    }
+
+    location_name = get_stripped(row, "location")
+    if location_name in LOCATION_ALIASES:
+        location_name = LOCATION_ALIASES[location_name]
+    location_id = COMPONENT_ID_MAP.get(("location", location_name))
+    if not location_id:
+        print(f"❌ WARNING NO location_id matching {location_name}")
+        location_id = ""# get_stripped(row, "Location\n(Ground Accommodation only)") # TEMP test
+
+    # ===== Level 0 → Base schema (empty) =====
+    level_0 = {}
+
+    # ===== Level 1 → Accommodation Details =====
+    level_1 = {
+        "location": location_id,
+
         "facilities": {
-            "library": get_stripped("Library").lower() == "true",
-            "shop": get_stripped("Shop").lower() == "true",
-            "restaurant": get_stripped("Restaurant").lower() == "true",
-            "additionalRestaurants": get_stripped("Additional Restaurants").lower() == "true",
-            "bar": get_stripped("Bar").lower() == "true",
-            "gym": get_stripped("Gym") or "No",
-            "spa": get_stripped("Spa") or "No",
-            "jacuzzi": get_stripped("Jacuzzi") or "No",
-            "pool": get_stripped("Pool") or "No",
-            "sauna": get_stripped("Sauna") or "No",
-            "steamRoom": get_stripped("Steam Room") if get_stripped("Steam Room") in ['Included', 'Extra Cost'] else "No",
-            "massage": get_stripped("Massage") or "No",
-            "elevator": get_stripped("Elevator").lower() == "true",
-            "laundry": get_stripped("Laundry") or "No",
-            "roomService": get_stripped("Room Service").lower() == "true"
+            "bar": get_stripped(row, "facilities.bar") == "TRUE",
+            "elevator": get_stripped(row, "facilities.elevator") == "TRUE",
+            "jacuzzi": get_stripped(row, "facilities.jacuzzi") == "Included",
+            "library": get_stripped(row, "facilities.library") == "TRUE",
+            "pool": get_stripped(row, "facilities.pool") == "Included",
+            "spa": get_stripped(row, "facilities.spa") == "Included",
+            "steamRoom": get_stripped(row, "facilities.steamRoom") == "Included",
+            "laundry": get_stripped(row, "facilities.laundry") == "Included",
+            "shop": get_stripped(row, "facilities.shop") == "TRUE",
+            "restaurants": get_stripped(row, "facilities.restaurants") == "TRUE",
+            "sauna": get_stripped(row, "facilities.sauna") == "Included",
+            "gym": get_stripped(row, "facilities.gym") == "Included",
+            "massage": get_stripped(row, "facilities.massage") == "Included",
+            "roomService": get_stripped(row, "facilities.roomService") == "TRUE",
+            "wiFi": get_stripped(row, "connectivity.wiFi") == "TRUE",
+            "phoneSignal": get_stripped(row, "Phone Signal") == "TRUE"
         },
-        "foodDrink": {
-            "foodDrinkDescription": get_stripped("Food & Drink Description"),
-            "boardBasis": {
-                "bB": False,
-                "halfBoard": False,
-                "fullBoard": False,
-                "allInclusive": False
-            }
+        "checkin": {
+            "start": get_stripped(row, "Check in Time"),
+            "end": "",
+            "out": get_stripped(row, "Check Out Time")
         },
-        "connectivity": {
-            "wiFi": get_stripped("WiFi").lower() == "true"
+        "info": {
+            "yearBuilt": safe_int(get_stripped(row, "facts.yearBuilt")),
+            "capacity": safe_int(get_stripped(row, "facts.capacity"))
         },
-        "facts": {
-            "capacity": int(row.get("Capacity")) if pd.notna(row.get("Capacity")) else None,
-            "yearBuilt": int(row.get("Year Built")) if pd.notna(row.get("Year Built")) else None
+        "rooms": [
+            # populate as needed
+        ],
+        "requirements": {
+            "minimumAge": safe_int(get_stripped(row, "minimumAge"))
         },
         "inspections": [
             {
-                "inspectedBy": get_stripped("Inspected by 1"),
-                "date": get_stripped("Date 1"),
-                "inspectionNotes": get_stripped("Inspection Notes 1")
-            }
-        ] if get_stripped("Inspected by 1") else [],
-        "swoopSays": get_stripped("What they say about this accommodation"),
-        "video": get_stripped("Video URL"),
-        "minimumAge": int(row.get("Minimum Age")) if pd.notna(row.get("Minimum Age")) else -1,
-        "emissionsPerNightPerPerson": None,
-        "importantInfo": None,
-        "whatWeLikeAboutThisAccommodation": get_stripped("What we like about this hotel"),
-        "thingsToNoteAboutThisAccommodation": get_stripped("We think its worth noting"),
-        "hintsTips": get_stripped("Recommendations")
+            "inspectedBy": get_stripped(row, "Inspected by 1"),
+            "date":        get_stripped(row, "Date 1"),
+            "notes":       get_stripped(row, "Inspection Notes 1")
+            },
+            {
+            "inspectedBy": get_stripped(row, "Inspected by 2"),
+            "date":        get_stripped(row, "Date 2"),
+            "notes":       get_stripped(row, "Inspection Notes 2")
+            },
+        ]
     }
 
-    # ===== Level 1 → Schema 2 (Location/type/check-in) =====
-    level_1 = {
-        "location": get_stripped("Location\n(Ground Accommodation only)"),
-        "type": get_stripped("Type"),
-        "checkinTime": {
-            "checkinStart": get_stripped("Check in Time"),
-            "checkinCloses": None,  # You could parse from "(with ranges)" if provided
-            "checkoutTime": get_stripped("Check Out Time")
-        }
+
+    # ===== Level 2 → Ground Accommodation (location/check-in) =====
+    level_2 = {
+        "type": get_stripped(row, "Type"),
     }
-
-    # ===== Level 2 (empty base schema) =====
-    level_2 = {}
-
-    # ===== Details =====
-    details = {
-        "regions": [region_id] if region_id else [],
-        "price": int(row.get("Price")) if pd.notna(row.get("Price")) else None,
-        "currency": get_stripped("Currency") if pd.notna(row.get("Currency")) else None
-    }
-
-    # Append additional mapped regions if present
-    for reg_field in ["Region", "Region 2"]:
-        raw_val = get_stripped(reg_field)
-        mapped_id = map_region_name_to_id(raw_val)
-        if mapped_id and mapped_id not in details["regions"]:
-            details["regions"].append(mapped_id)
 
     component_fields = [
-        {"templateId": template_ids[0], "data": level_0},
+        {"templateId": template_ids[2], "data": level_2},
         {"templateId": template_ids[1], "data": level_1},
-        {"templateId": template_ids[2], "data": level_2}
+        {"templateId": template_ids[0], "data": level_0},
     ]
 
     return {
-        "orgId": None,
-        "templateId": template_ids[0],
-        "revisionGroupId": None,
-        "state": "unpublished",
-        "name": get_stripped("Name"),
+        "templateId": template_ids[2],
+        "description":{
+            "web":get_stripped(row, "Description") or "",
+            "quote":get_stripped(row, "Description") or "",
+            "final":get_stripped(row, "Description") or ""
+        },
+        "partners": [p.strip() for p in get_stripped(row, "Partner").split(",") if p.strip()],
+        "regions": regions,
+        "name": get_stripped(row, "name") or "Untitled",
+        "pricing": pricing,
+        "media": media,
         "componentFields": component_fields,
-        "partners": [
-            p.strip()
-            for p in get_stripped("Partners").split(",")
-            if p.strip()
-        ] if get_stripped("Partners") else [],
-        "startDate": None,
-        "endDate": None,
-        "duration": None,
-        "details": details,
-        "bundle": {}
+        "package": {},
     }
