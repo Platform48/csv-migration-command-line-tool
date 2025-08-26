@@ -1,0 +1,348 @@
+MISSING COMPONENT REFERENCES REPORT (BY TYPE)
+Generated: 2025-08-26 17:22:41
+
+This report groups all unique missing component references by type.
+Each entry shows the component name and how many times it was missing.
+
+====================================================================================================
+
+TYPE: location
+--------------------------------------------------------------------------------
+Missing Component                                                | Occurrences
+-------------------------------------------------------------------------------
+"Activity"                                                       | 42
+"120"                                                            | 17
+"Santiago City Central Hotel"                                    | 17
+"30"                                                             | 15
+"100"                                                            | 13
+"Arturo Merino Benitez International Airport SCL"                | 13
+"20"                                                             | 12
+"Awasi Atacama"                                                  | 11
+"10"                                                             | 10
+"25"                                                             | 10
+"1"                                                              | 9
+"2"                                                              | 9
+"5"                                                              | 9
+"Puero Natales"                                                  | 9
+"Recoleta Hotel"                                                 | 9
+"15"                                                             | 8
+"60"                                                             | 8
+"7"                                                              | 8
+"90"                                                             | 8
+"Estancia La Bandada"                                            | 8
+"Ministro Pistarini International Airport, Ezeiza (EZE)"         | 8
+"Palermo Hotel"                                                  | 8
+"Tigre Delta"                                                    | 8
+"3"                                                              | 7
+"8"                                                              | 7
+"Aeroparque Internacional Jorge Newbery (AEP)"                   | 7
+"Explora Torres del Paine"                                       | 7
+"Mallin Colarado"                                                | 7
+"Refugio Central/EcoCamp/Las Torres"                             | 7
+"360"                                                            | 6
+"9"                                                              | 6
+"Barraco Lodge"                                                  | 6
+"Explora Rapa Nui Hotel"                                         | 6
+"130"                                                            | 5
+"45"                                                             | 5
+"50"                                                             | 5
+"55"                                                             | 5
+"80"                                                             | 5
+"Chiloe"                                                         | 5
+"Errante Ecolodge"                                               | 5
+"Hotel Rio Serrano"                                              | 5
+"12"                                                             | 4
+"140"                                                            | 4
+"150"                                                            | 4
+"160"                                                            | 4
+"170"                                                            | 4
+"180"                                                            | 4
+"190"                                                            | 4
+"200"                                                            | 4
+"35"                                                             | 4
+"6"                                                              | 4
+"65"                                                             | 4
+"Aysen"                                                          | 4
+"Balmaceda Camp"                                                 | 4
+"Cajon de Maipo"                                                 | 4
+"Casa Real Hotel"                                                | 4
+"City Hotel"                                                     | 4
+"El Mirador de Guadal"                                           | 4
+"Estancia La Bamba de Areco"                                     | 4
+"Explora Rapa Hui Hotel"                                         | 4
+"Hotel Remota"                                                   | 4
+"Hotel Taha Tai"                                                 | 4
+"Matetic Vineyards"                                              | 4
+"Parque Futangue"                                                | 4
+"Puerto Pirámides"                                               | 4
+"San Antonio de Areco"                                           | 4
+"San Antonio de Areco (Estancia La Bamba de Areco)"              | 4
+"San Antonio Port"                                               | 4
+"San Martín de los Andes"                                        | 4
+"Santiago Bus Station"                                           | 4
+"The Port of Buenos Aires"                                       | 4
+"Ushuaia Hotel"                                                  | 4
+"Valpariso hotel"                                                | 4
+"Valpariso port"                                                 | 4
+"Valpariso, via Casa Martin winery tour"                         | 4
+"Valpariso, via Matetic Vineyards"                               | 4
+"Vina del Mar"                                                   | 4
+"Vina Vik"                                                       | 4
+"110"                                                            | 3
+"115"                                                            | 3
+"215"                                                            | 3
+"250"                                                            | 3
+"290"                                                            | 3
+"320"                                                            | 3
+"330"                                                            | 3
+"350"                                                            | 3
+"4"                                                              | 3
+"40"                                                             | 3
+"85"                                                             | 3
+"95"                                                             | 3
+"Ahu Tahai"                                                      | 3
+"Argentine Lake District"                                        | 3
+"Castro (Chiloe)"                                                | 3
+"Chacras or Maipu area"                                          | 3
+"Downtown Mendoza/Hotel"                                         | 3
+"Hanga Poukura"                                                  | 3
+"Lake Grey"                                                      | 3
+"Palermo"                                                        | 3
+"Pudeto"                                                         | 3
+"Recoleta"                                                       | 3
+"Refugia Chiloe"                                                 | 3
+"Sairecabur Volcano"                                             | 3
+"Uco Valley"                                                     | 3
+"105"                                                            | 2
+"18"                                                             | 2
+"220"                                                            | 2
+"240"                                                            | 2
+"270"                                                            | 2
+"280"                                                            | 2
+"300"                                                            | 2
+"310"                                                            | 2
+"340"                                                            | 2
+"75"                                                             | 2
+"Ahu Akivi"                                                      | 2
+"Ahu Tongariki"                                                  | 2
+"Awasi Iguazu"                                                   | 2
+"Barraco Lodge (Tagua Tagua Park)"                               | 2
+"Casa Madsen"                                                    | 2
+"Cavas Wine Lodge"                                               | 2
+"Chaiten"                                                        | 2
+"Cochamo"                                                        | 2
+"Cochcrane"                                                      | 2
+"Cordillera de la Sal"                                           | 2
+"El Calafate Central Hotel"                                      | 2
+"El Chaltén Hotel"                                               | 2
+"El Tatio Geysers"                                               | 2
+"Eolo"                                                           | 2
+"Estancia Lazo"                                                  | 2
+"Explora Patagonia National Park"                                | 2
+"Explora Patagonia NP"                                           | 2
+"Futaleufu"                                                      | 2
+"Grand Melia Iguazu falls"                                       | 2
+"Hanga Roa"                                                      | 2
+"Hanga Te'e"                                                     | 2
+"Hotel Das Cataratas"                                            | 2
+"Iguazú"                                                         | 2
+"Lake Esmeralda"                                                 | 2
+"Licancabur Volcano"                                             | 2
+"Machuca"                                                        | 2
+"Name"                                                           | 2
+"Pampa Linda"                                                    | 2
+"Petrohue Falls"                                                 | 2
+"Pudeto dock"                                                    | 2
+"Puerto Iguazú Hotel"                                            | 2
+"Puerto Madryn Airport (PMY)"                                    | 2
+"Punta Arenas Australis"                                         | 2
+"Río Hermoso Hotel"                                              | 2
+"Saciel Volcano"                                                 | 2
+"Santiago City Central Hotel, via Santiago Restaurant"           | 2
+"Tierra Atacama"                                                 | 2
+"Tierra Del Fuego National Park"                                 | 2
+"Tierra Hotel/Estancia Lazo"                                     | 2
+"Ushuaia Malvinas Argentinas (USH)"                              | 2
+"Ushuaia Port"                                                   | 2
+"Vistalba Winery"                                                | 2
+"Yerbas Buenas"                                                  | 2
+"0.1"                                                            | 1
+"0.5"                                                            | 1
+"116"                                                            | 1
+"125"                                                            | 1
+"135"                                                            | 1
+"16"                                                             | 1
+"17"                                                             | 1
+"185"                                                            | 1
+"230"                                                            | 1
+"235"                                                            | 1
+"24"                                                             | 1
+"260"                                                            | 1
+"275"                                                            | 1
+"328"                                                            | 1
+"34"                                                             | 1
+"345"                                                            | 1
+"37"                                                             | 1
+"460"                                                            | 1
+"490"                                                            | 1
+"540"                                                            | 1
+"620"                                                            | 1
+"630"                                                            | 1
+"70"                                                             | 1
+"740"                                                            | 1
+"Aguas Arriba"                                                   | 1
+"Aguas Calientes and Tuyajto"                                    | 1
+"Ahu Huri A Urenga"                                              | 1
+"Ahu One Makihi"                                                 | 1
+"Ahu Tahira"                                                     | 1
+"Ahu Te Pito Kura"                                               | 1
+"Ahu Vinapu"                                                     | 1
+"ALMA Observatory"                                               | 1
+"Anakena"                                                        | 1
+"Anakena Beach"                                                  | 1
+"Australis Pier"                                                 | 1
+"AWA"                                                            | 1
+"Bahia Exploradores"                                             | 1
+"Bahia Mansa"                                                    | 1
+"Bahía Bustamante"                                               | 1
+"Bahía Exploradores"                                             | 1
+"Baker Nef confluence"                                           | 1
+"Buenos Aires City Centre Hotel"                                 | 1
+"Cactus Valley"                                                  | 1
+"Calama Airport (CJC)"                                           | 1
+"Calama Bus station"                                             | 1
+"Calama, Downtown"                                               | 1
+"Cataratas/Puerto Iguazú Hotel"                                  | 1
+"Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Airport (IGR)"   | 1
+"Catedral Ski Center"                                            | 1
+"Cejar Lagoon"                                                   | 1
+"Cerro Arcoíris"                                                 | 1
+"Chaitén Airport (WCH)"                                          | 1
+"Chiloé Hotel"                                                   | 1
+"Chiloé Island"                                                  | 1
+"Chituca"                                                        | 1
+"Colorada Lagoon"                                                | 1
+"Devils Canyon"                                                  | 1
+"Dinosaur Valley"                                                | 1
+"Domeyko Range"                                                  | 1
+"Downtown Mendoza"                                               | 1
+"Edita Lagoon"                                                   | 1
+"El Amarillo"                                                    | 1
+"El Bote Bay"                                                    | 1
+"El Calafate Airport (FTE"                                       | 1
+"El Calafate Bus Terminal"                                       | 1
+"El Chaltén Bus Terminal"                                        | 1
+"El Condor Viewpoint"                                            | 1
+"Estancia 25 de Mayo"                                            | 1
+"Estancia Doe Elianas"                                           | 1
+"Estancia Puerto Conselo"                                        | 1
+"Estancia San Luis"                                              | 1
+"Estancia Vega Castillo"                                         | 1
+"Explora Hotel"                                                  | 1
+"Explora Rapa Nui"                                               | 1
+"Explora Uyuni Lodge"                                            | 1
+"Exploradores Glacier"                                           | 1
+"French Valley Trailhead"                                        | 1
+"Futangue Hotel"                                                 | 1
+"Grey Lookout"                                                   | 1
+"Grey Park Ranger Station"                                       | 1
+"Hanga Kioe"                                                     | 1
+"Hike to Las Torres Lookout"                                     | 1
+"Hotel Das Cataratas, via bird park"                             | 1
+"Hotel Grey"                                                     | 1
+"Hotel Río Serrano"                                              | 1
+"Huerquehue National Park"                                       | 1
+"Jeinimeni National Park"                                        | 1
+"Lago Grey"                                                      | 1
+"Lago Sarmiento Gate"                                            | 1
+"Laguna Condor"                                                  | 1
+"Laguna Gaviotas"                                                | 1
+"Lake Bertrand"                                                  | 1
+"Lake Jeinimeni"                                                 | 1
+"Lake Llanquihue"                                                | 1
+"Lake Mascardi"                                                  | 1
+"Lake Pehoe Dock"                                                | 1
+"Las Torres trailhead"                                           | 1
+"Leones River"                                                   | 1
+"Loma Guanaco"                                                   | 1
+"Los Glaciares"                                                  | 1
+"Los Huemules Reserve/Explora Chaltén"                           | 1
+"Los Ríos"                                                       | 1
+"Láscar Volcano"                                                 | 1
+"Mahatua"                                                        | 1
+"Mallin Colorado Lodge"                                          | 1
+"Mallin Colorado/Pared Sur/Cruce Maiten"                         | 1
+"Mendoza Downtown"                                               | 1
+"Nahuel Huapi National Park"                                     | 1
+"name"                                                           | 1
+"Navarino Island"                                                | 1
+"Nibepo Aike"                                                    | 1
+"Oco's Place"                                                    | 1
+"Omora Ethnobotanical Park"                                      | 1
+"Orongo"                                                         | 1
+"Paine River"                                                    | 1
+"Papa Vaka"                                                      | 1
+"Patagonia NP"                                                   | 1
+"Pehoe/Serrano Village/Administration"                           | 1
+"Peuma Hue"                                                      | 1
+"Pingo River"                                                    | 1
+"Pingo Valley"                                                   | 1
+"Port"                                                           | 1
+"Pucon Hotel"                                                    | 1
+"Puerto Aysen"                                                   | 1
+"Puerto Iguazu (IGR)"                                            | 1
+"Puerto Iguazú (IGR) or Foz de Iguaçu (IGU) Airports"            | 1
+"Puerto Iguazú Hotel ,via restaurant"                            | 1
+"Puerto Iguazú Hotel, via bird park"                             | 1
+"Puerto Ingenerio Ibanez"                                        | 1
+"Puerto Montt (PMC)"                                             | 1
+"Puerto Montt Airport (PMC)"                                     | 1
+"Puerto Natales Hotel"                                           | 1
+"Puerto Natales, Via Cerro Negro Ranch"                          | 1
+"Puerto Navarino"                                                | 1
+"Puerto Panuelo"                                                 | 1
+"Puerto Pañuelo"                                                 | 1
+"Puerto Tranquillo"                                              | 1
+"Puerto Varas (includes ferry from Leptepu to Hornopiren)"       | 1
+"Puerto Varas Aerodrome"                                         | 1
+"Pumalín Douglas Tompkins National Park"                         | 1
+"Puna Pao"                                                       | 1
+"Puna Pau quarry"                                                | 1
+"Punta Arenas Bus Station"                                       | 1
+"Punta Arenas Bus Terminal"                                      | 1
+"Punta Arenas Hotel"                                             | 1
+"Punta Arenas Port"                                              | 1
+"Punta Bandera"                                                  | 1
+"Rano Kau crater"                                                | 1
+"Rano Kau volcano"                                               | 1
+"Rano Raraku"                                                    | 1
+"Rapa Nui Museum"                                                | 1
+"Retiro bus station"                                             | 1
+"Rio Electrico"                                                  | 1
+"Rio Frio"                                                       | 1
+"Rui Hill"                                                       | 1
+"Rupestre"                                                       | 1
+"Salt Lake and Toconao"                                          | 1
+"San Pedro de Atacam"                                            | 1
+"San Pedro Salt Mountains"                                       | 1
+"Serrano Village/Administration (Y-290)"                         | 1
+"Skorpios Pier"                                                  | 1
+"Skorpios Pier Puerto Montt"                                     | 1
+"Skorpios Pier Puerto Natales"                                   | 1
+"Sol de la Manana"                                               | 1
+"Sol de la Mañana"                                               | 1
+"Tagua Tagua National Park"                                      | 1
+"Terevaka Volcano"                                               | 1
+"Termas Lago Rupanco"                                            | 1
+"Three Lagoons"                                                  | 1
+"Toco Hill"                                                      | 1
+"Torres Del Paine"                                               | 1
+"Torres Del Paine, Via Estancia Cerro Negro"                     | 1
+"Trancura River"                                                 | 1
+"Turquiri Lagoon"                                                | 1
+"Uyuni Airport (UYU)"                                            | 1
+"Vicente Pérez Rosales National Park"                            | 1
+"Villarica"                                                      | 1
+"Vinapu"                                                         | 1
+"Vira Vira"                                                      | 1
+"Yates Volcano"                                                  | 1

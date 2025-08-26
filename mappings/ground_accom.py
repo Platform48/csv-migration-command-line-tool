@@ -34,6 +34,10 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
     if location_name in LOCATION_ALIASES:
         location_name = LOCATION_ALIASES[location_name]
 
+    city_name = get_stripped(row, "city")
+    if city_name in LOCATION_ALIASES:
+        city_name = LOCATION_ALIASES[city_name]
+
     location_id = get_location_id(
         location_name=location_name,
         component_id_map=COMPONENT_ID_MAP,
@@ -44,6 +48,18 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
             "additional_info": f"{get_stripped(row, 'name')}"
         }
     )
+
+    city_id = get_location_id(
+        location_name=city_name,
+        component_id_map=COMPONENT_ID_MAP,
+        context={
+            **(context or {}),
+            "field": "city",
+            "row_index": row_index,
+            "additional_info": f"{get_stripped(row, 'name')}"
+        }
+    )
+    print(city_id)
 
     # ===== Level 0 → Base schema (empty) =====
     level_0 = {}

@@ -40,10 +40,10 @@ SHEET_TEMPLATE_MAP = {
         "template_c265e31c0c2848fa8210050f452d3926",  # Accom
         "template_d32b51f46e7946faa5d3e2aa33e7d29a",  # Ground Accom
     ],
-    # "All Activities - For Upload": [
-    #     "template_aca16a46ec3842ca85d182ee9348f627", # Base
-    #     "template_e2f0e9e5343349358037a0564a3366a0"
-    # ]
+    "All Activities - For Upload": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_e2f0e9e5343349358037a0564a3366a0"
+    ]
 }
 
 SHEET_ROW_MAPPERS = {

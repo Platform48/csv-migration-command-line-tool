@@ -61,9 +61,7 @@ def get_component_id(
     Returns:
         Component ID if found, None if not found
     """
-    if not component_name or not component_name.strip():
-        if required:
-            log_missing_reference(component_type, component_name, "Empty/null name", context)
+    if not component_name or not str(component_name).strip():
         return None
     
     # Clean the name
@@ -134,21 +132,26 @@ def log_missing_reference(
 
 
 def save_missing_references_log():
-    """Save missing references to file for client review"""
+    """Save missing references into two files:
+       1. By-sheet detailed report
+       2. By-type unique references summary
+    """
     if not MISSING_REFERENCES:
         return
     
     try:
-        # Create human-readable report
+        # -----------------------------------------------------------------
+        # 1. HUMAN-READABLE REPORT BY SHEET
+        # -----------------------------------------------------------------
         report_lines = [
-            "MISSING COMPONENT REFERENCES REPORT",
+            "MISSING COMPONENT REFERENCES REPORT (BY SHEET)",
             f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
             "",
             "WHAT TO FIX:",
             "The following component names in your Excel sheets don't match any uploaded components.",
             "Please check the spelling or make sure these components exist in the system.",
             "",
-            "=" * 80,
+            "=" * 100,
             ""
         ]
         
@@ -162,7 +165,7 @@ def save_missing_references_log():
                 
                 row_num = context.get("row_index", "?")
                 if row_num is not None and str(row_num).isdigit():
-                    row_num = int(row_num) + 1  # +1 for 0-based index, +1 for header row
+                    row_num = int(row_num) + 1  # adjust for header + 0-based index
                 
                 field = context.get("field", context.get("additional_info", "unknown field"))
                 missing_name = entry["component_name"]
@@ -178,58 +181,91 @@ def save_missing_references_log():
         # Write each sheet's issues
         for sheet_name, issues in by_sheet.items():
             report_lines.append(f"SHEET: {sheet_name}")
-            report_lines.append("-" * 80)
+            issues_sorted = sorted(
+                issues,
+                key=lambda x: x["row"] if isinstance(x["row"], int) else 999999
+            )
 
-            # Sort by row number
-            issues_sorted = sorted(issues, key=lambda x: x["row"] if isinstance(x["row"], int) else 999999)
-
-            # Compute column widths
             row_col_width    = max(len(str(issue["row"])) for issue in issues_sorted) + 5
             field_col_width  = max(len(str(issue["field"])) for issue in issues_sorted) + 2
             miss_col_width   = max(len(str(issue["missing"])) for issue in issues_sorted) + 2
             type_col_width   = max(len(str(issue["type"])) for issue in issues_sorted) + 8
-
-            # Header row
+            
+            report_lines.append("-" * (row_col_width + field_col_width + miss_col_width + type_col_width + 9))
             report_lines.append(
                 f"{'Row':<{row_col_width}} | {'Row Name':<{field_col_width}} | {'Missing Component':<{miss_col_width}} | {'Type':<{type_col_width}}"
             )
             report_lines.append("-" * (row_col_width + field_col_width + miss_col_width + type_col_width + 9))
-
-            # Issue rows
+            
             for issue in issues_sorted:
                 row_display = str(issue["row"]) if isinstance(issue["row"], int) else "?"
+                missing_quoted = f'"{issue["missing"]}"'  # wrap BEFORE padding
                 report_lines.append(
-                    f"{row_display:<{row_col_width}} | {issue['field']:<{field_col_width}} | {issue['missing']:<{miss_col_width}} | {issue['type']:<{type_col_width}}"
+                    f'{row_display:<{row_col_width}} | {issue["field"]:<{field_col_width}} | {missing_quoted:<{miss_col_width}} | {issue["type"]:<{type_col_width}}'
                 )
-
             report_lines.append("")
 
-        # Summary
-        type_counts = {}
-        for entry in MISSING_REFERENCES.values():
-            comp_type = entry["component_type"]
-            type_counts[comp_type] = type_counts.get(comp_type, 0) + entry["occurrences"]
-        
-        report_lines.extend([
-            "SUMMARY:",
-            f"Total missing references: {sum(type_counts.values())}",
-            ""
-        ])
-        
-        for comp_type, count in type_counts.items():
-            report_lines.append(f"   • Missing {comp_type}s: {count}")
-        
-        # Write human-readable report
         readable_file = "MISSING_COMPONENTS_REPORT.txt"
         with open(readable_file, 'w', encoding='utf-8') as f:
             f.write('\n'.join(report_lines))
         
-        print(f"📋 Saved human-readable report: {readable_file}")
-        print(f"   {len(MISSING_REFERENCES)} unique missing components")
-        print(f"   {sum(type_counts.values())} total references need fixing")
+        # -----------------------------------------------------------------
+        # 2. UNIQUE MISSING REFERENCES BY TYPE
+        # -----------------------------------------------------------------
+        unique_lines = [
+            "MISSING COMPONENT REFERENCES REPORT (BY TYPE)",
+            f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+            "",
+            "This report groups all unique missing component references by type.",
+            "Each entry shows the component name and how many times it was missing.",
+            "",
+            "=" * 100,
+            ""
+        ]
+
+        # Group by type
+        by_type = {}
+        for entry in MISSING_REFERENCES.values():
+            comp_type = entry["component_type"]
+            if comp_type not in by_type:
+                by_type[comp_type] = []
+            by_type[comp_type].append(entry)
+
+        for comp_type, entries in by_type.items():
+            unique_lines.append(f"TYPE: {comp_type}")
+            unique_lines.append("-" * 80)
+
+            # Sort alphabetically
+            entries_sorted = sorted(
+                entries,
+                key=lambda e: (-e["occurrences"], e["component_name"].lower())
+            )
+            name_width = max(len(e["component_name"]) for e in entries_sorted) + 4
+
+            unique_lines.append(f"{'Missing Component':<{name_width}} | Occurrences")
+            unique_lines.append("-" * (name_width + 15))
+
+            for entry in entries_sorted:
+                missing_quoted = f'"{entry["component_name"]}"'  # wrap BEFORE padding
+                unique_lines.append(
+                    f'{missing_quoted:<{name_width}} | {entry["occurrences"]}'
+                )
+            unique_lines.append("")
+
+        unique_file = "MISSING_COMPONENTS_BY_TYPE.txt"
+        with open(unique_file, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(unique_lines))
         
+        # -----------------------------------------------------------------
+        # PRINT SUMMARY
+        # -----------------------------------------------------------------
+        print(f"📋 Saved detailed report: {readable_file}")
+        print(f"📋 Saved unique-by-type report: {unique_file}")
+        print(f"   {len(MISSING_REFERENCES)} unique missing components logged")
+
     except Exception as e:
-        print(f"⚠️ Error saving missing references report: {e}")
+        print(f"⚠️ Error saving missing references reports: {e}")
+
 
 
 def clear_missing_references_session():
