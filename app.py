@@ -2,6 +2,7 @@ import os
 import json
 import pandas as pd
 
+from mappings.activity import map_activity_component
 from mappings.cruise_pkg import map_cruise_bundle
 from mappings.location import map_location_component
 from mappings.ground_accom import map_ground_accommodation_component
@@ -32,6 +33,10 @@ SHEET_TEMPLATE_MAP = {
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_fe4243df590147a09a546e2f177cdcf3", # Journeys
     ],
+    "All Activities - For Upload": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_e2f0e9e5343349358037a0564a3366a0"
+    ]
     # "Ship Accom": [
     #     "template_63766858b3f444a890574fd849d8e273",  # Ship
     #     "template_b70cd1388f5e49a4be344253215dd473",  # Accom
@@ -50,6 +55,7 @@ SHEET_ROW_MAPPERS = {
     "Location"         : map_location_component,
     "Ground Accom"     : map_ground_accommodation_component,
     "Journeys"         : map_journey_component,
+    "All Activities - For Upload": map_activity_component
     # "Ship Accom"     : map_ship_accommodation_component,
     # "Cruise Packages": map_cruise_bundle,
 

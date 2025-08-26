@@ -53,8 +53,8 @@ def map_journey_component(row, template_ids, COMPONENT_ID_MAP):
 
     # ===== Level 1 → Jounrey Details =====
     level_1 = {
-        "startLocation":start_location_id,
-        "endLocation": end_location_id,
+        "startLocation":start_location_name,
+        "endLocation": end_location_name,
         "highlightLocation": "",
         "distanceKm": safe_float(get_stripped(row, "distancekm")) or -1,
         "minimumDuration": get_stripped(row, "minimumDuration"),
