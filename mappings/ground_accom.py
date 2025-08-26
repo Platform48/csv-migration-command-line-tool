@@ -1,9 +1,11 @@
-# ground_accommodation_mapper.py
-from utils import get_stripped, safe_float, safe_int
+from utils import get_stripped, safe_float, safe_int, get_location_id
 from .location import LOCATION_ALIASES, map_region_name_to_id
 import pandas as pd
 
-def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP):
+def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1):
+    """
+    Map ground accommodation component using consistent ID lookup utilities
+    """
 
     # --- Regions ---
     regions = [map_region_name_to_id(get_stripped(row, "Region"))]
@@ -24,28 +26,31 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP):
 
     # --- Media ---
     images = get_stripped(row, "images").split("\n")
-    for i in images:
-        i = i.strip()
+    images = [i.strip() for i in images if i.strip()]  # Clean empty strings
+    media = {"images": images, "videos": []}
 
-    media = {
-        "images": images,
-        "videos": []
-    }
-
+    # --- Location ID lookup with util ---
     location_name = get_stripped(row, "location")
     if location_name in LOCATION_ALIASES:
         location_name = LOCATION_ALIASES[location_name]
-    location_id = COMPONENT_ID_MAP.get(("location", location_name))
-    if not location_id:
-        print(f"❌ WARNING NO location_id matching {location_name}")
-        location_id = ""# get_stripped(row, "Location\n(Ground Accommodation only)") # TEMP test
+
+    location_id = get_location_id(
+        location_name=location_name,
+        component_id_map=COMPONENT_ID_MAP,
+        context={
+            **(context or {}),
+            "field": "location",
+            "row_index": row_index,
+            "additional_info": f"{get_stripped(row, 'name')}"
+        }
+    )
 
     # ===== Level 0 → Base schema (empty) =====
     level_0 = {}
 
     # ===== Level 1 → Accommodation Details =====
     level_1 = {
-        "location": location_id,
+        "location": location_id or "",
 
         "facilities": {
             "bar": get_stripped(row, "facilities.bar") == "TRUE",
@@ -74,28 +79,25 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP):
             "yearBuilt": safe_int(get_stripped(row, "facts.yearBuilt")),
             "capacity": safe_int(get_stripped(row, "facts.capacity"))
         },
-        "rooms": [
-            # populate as needed
-        ],
+        "rooms": [],
         "requirements": {
             "minimumAge": safe_int(get_stripped(row, "minimumAge"))
         },
         "inspections": [
             {
-            "inspectedBy": get_stripped(row, "Inspected by 1"),
-            "date":        get_stripped(row, "Date 1"),
-            "notes":       get_stripped(row, "Inspection Notes 1")
+                "inspectedBy": get_stripped(row, "Inspected by 1"),
+                "date":        get_stripped(row, "Date 1"),
+                "notes":       get_stripped(row, "Inspection Notes 1")
             },
             {
-            "inspectedBy": get_stripped(row, "Inspected by 2"),
-            "date":        get_stripped(row, "Date 2"),
-            "notes":       get_stripped(row, "Inspection Notes 2")
+                "inspectedBy": get_stripped(row, "Inspected by 2"),
+                "date":        get_stripped(row, "Date 2"),
+                "notes":       get_stripped(row, "Inspection Notes 2")
             },
         ]
     }
 
-
-    # ===== Level 2 → Ground Accommodation (location/check-in) =====
+    # ===== Level 2 → Ground Accommodation =====
     level_2 = {
         "type": get_stripped(row, "Type"),
     }
@@ -108,13 +110,13 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP):
 
     return {
         "templateId": template_ids[2],
-        "description":{
-            "web":get_stripped(row, "Description") or "",
-            "quote":get_stripped(row, "Description") or "",
-            "final":get_stripped(row, "Description") or ""
+        "description": {
+            "web": get_stripped(row, "Description") or "",
+            "quote": get_stripped(row, "Description") or "",
+            "final": get_stripped(row, "Description") or ""
         },
         "partners": [p.strip() for p in get_stripped(row, "Partner").split(",") if p.strip()],
-        "regions": regions,
+        "regions": [r for r in regions if r],
         "name": get_stripped(row, "name") or "Untitled",
         "pricing": pricing,
         "media": media,

@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT
-Generated: 2025-08-26 16:39:55
+Generated: 2025-08-26 16:51:52
 
 WHAT TO FIX:
 The following component names in your Excel sheets don't match any uploaded components.
@@ -852,7 +852,213 @@ Row      | Row Name                                                             
 501      | Río Hermoso Lodge to Bariloche or reverse                                                                               | Río Hermoso Hotel                                              | location        
 502      | Balmaceda Airport (BBA) to Mallin Colorado Lodge or reverse                                                             | Mallin Colorado Lodge                                          | location        
 
-SUMMARY:
-Total missing references: 840
+SHEET: Ground Accom
+--------------------------------------------------------------------------------
+Row      | Row Name                              | Missing Component | Type            
+------------------------------------------------------------------------
+3        | Aguas Arriba Lodge                    |    | location        
+4        | Albatros                              |    | location        
+5        | Alma del Lago                         |    | location        
+6        | Altiplánico Atacama                   |    | location        
+7        | Altiplánico Santiago                  |    | location        
+8        | Alto Andino                           |    | location        
+9        | Amonite                               |    | location        
+10       | Arakur                                |    | location        
+11       | AWA                                   |    | location        
+12       | Awasi Atacama                         |    | location        
+13       | Awasi Iguazú                          |    | location        
+14       | Awasi Patagonia                       |    | location        
+15       | B&B and Cabins Cerro Castillo         |    | location        
+16       | Bader Climber's Camp                  |    | location        
+17       | Bahía Bustamante Lodge                |    | location        
+18       | Barraco Lodge                         |    | location        
+19       | Big Sur                               |    | location        
+20       | BordeBaker Lodge                      |    | location        
+21       | Cabo de Hornos                        |    | location        
+22       | Cacique Inacayal Lake & Spa Hotel     |    | location        
+23       | Caleta Gonzalo Lodge                  |    | location        
+24       | Camping Italiano                      |    | location        
+25       | Camping Japonés                       |    | location        
+26       | Camping Paso                          |    | location        
+27       | Camping Perros                        |    | location        
+28       | Camping Serón                         |    | location        
+29       | Carpa Manzano                         |    | location        
+30       | Casa Kalfu                            |    | location        
+31       | Casa Solaria                          |    | location        
+32       | Casa Sur Recoleta                     |    | location        
+33       | Castillo Rojo                         |    | location        
+34       | Chaltén Camp                          |    | location        
+35       | Chaltén Suites                        |    | location        
+36       | Cilene del Faro Suites and Spa        |    | location        
+37       | Cilene del Fuego Suites & Spa         |    | location        
+38       | Continental 725                       |    | location        
+39       | Correntoso Lake River Hotel           |    | location        
+40       | Coyhaique River Lodge                 |    | location        
+41       | Dazzler Palermo                       |    | location        
+42       | Dazzler Puerto Madryn                 |    | location        
+43       | Del Nómade Hosteria                   |    | location        
+44       | Desertica                             |    | location        
+45       | Destino Sur                           |    | location        
+46       | Don Tomas                             |    | location        
+47       | Dreams Coyhaique                      |    | location        
+48       | Duhau Palace - Park Hyatt             |    | location        
+49       | EcoCamp Patagonia                     |    | location        
+50       | El Casco                              |    | location        
+51       | El Galpón del Glaciar                 |    | location        
+52       | El Mirador de Guadal                  |    | location        
+53       | El Reloj                              |    | location        
+54       | Entre Hielos Lodge                    |    | location        
+55       | EOLO                                  |    | location        
+56       | Errante EcoLodge                      |    | location        
+57       | Estancia Bonanza                      |    | location        
+58       | Estancia Cerro Guido                  |    | location        
+59       | Estancia Cristina                     |    | location        
+60       | Estancia El Condor                    |    | location        
+61       | Estancia Helsingfors                  |    | location        
+62       | Estancia Josefina                     |    | location        
+63       | Estancia La Ernestina                 |    | location        
+64       | Estancia La Estela                    |    | location        
+65       | Estancia La Península                 |    | location        
+66       | Estancia Lago Pinto                   |    | location        
+67       | Estancia Lazo                         |    | location        
+68       | Estancia Nibepo Aike                  |    | location        
+69       | Estancia Peuma Hue                    |    | location        
+70       | Estancia Rincón Chico                 |    | location        
+71       | Estancia San Luis                     |    | location        
+72       | Estancia Tercera Barranca             |    | location        
+73       | Explora Atacama                       |    | location        
+74       | Explora Easter Island                 |    | location        
+75       | Explora El Chaltén                    |    | location        
+76       | Explora Patagonia National Park       |    | location        
+77       | Explora Torres del Paine              |    | location        
+78       | French Domes                          |    | location        
+79       | Futangue Hotel                        |    | location        
+80       | Gran Meliá Iguazú                     |    | location        
+81       | Green Baker Lodge                     |    | location        
+82       | Home Hotel                            |    | location        
+83       | Hospedaje La Casona                   |    | location        
+84       | Hostal Gladys                         |    | location        
+85       | Hostal Schilling                      |    | location        
+86       | Hostería El Paraíso                   |    | location        
+87       | Hosteria La Estepa                    |    | location        
+88       | Hosteria Lago Grey                    |    | location        
+89       | Hosteria Pehoe                        |    | location        
+90       | Hotel Almasur                         |    | location        
+91       | Hotel Ancud                           |    | location        
+92       | Hotel Babel Boutique                  |    | location        
+93       | Hotel Bidasoa                         |    | location        
+94       | Hotel Cabañas del Lago                |    | location        
+95       | Hotel Casa Real                       |    | location        
+96       | Hotel Clásico                         |    | location        
+97       | Hotel Cumbres Lastarria               |    | location        
+98       | Hotel Diego de Almagro                |    | location        
+99       | Hotel Director                        |    | location        
+100      | Hotel Dreams Punta Arenas             |    | location        
+101      | Hotel Emperador                       |    | location        
+102      | Hotel Kran Kreen                      |    | location        
+103      | Hotel Ladera                          |    | location        
+104      | Hotel Las Marianas                    |    | location        
+105      | Hotel Las Torres                      |    | location        
+106      | Hotel Luciano K                       |    | location        
+107      | Hotel Malalhue                        |    | location        
+108      | Hotel Mil810                          |    | location        
+109      | Hotel Peninsula Valdés                |    | location        
+110      | Hotel Puelche                         |    | location        
+111      | Hotel Rio Serrano                     |    | location        
+112      | Hotel Simple Patagonia                |    | location        
+113      | Hotel Solace                          |    | location        
+114      | Hotel Taha Hai                        |    | location        
+115      | Hotel Territorio Puerto Madryn        |    | location        
+116      | Hotel Ultimo Paraíso                  |    | location        
+117      | Hotel Veat                            |    | location        
+118      | Intersur Recoleta                     |    | location        
+119      | Jose Nogueira                         |    | location        
+120      | Kaulem                                |    | location        
+121      | Kimal                                 |    | location        
+123      | La Casa de Eugenia                    |    | location        
+124      | La Cascada                            |    | location        
+125      | La Casona Matetic                     |    | location        
+126      | Las Balsas Relais & Châteaux          |    | location        
+127      | Las Hayas                             |    | location        
+128      | Las Lengas                            |    | location        
+129      | Le Chatelet                           |    | location        
+130      | Le Reve                               |    | location        
+131      | Legado Mitico                         |    | location        
+132      | Llao Llao Resort Golf and Spa         |    | location        
+133      | Loi Suites                            |    | location        
+134      | Los Cauquenes Resort and Spa          |    | location        
+135      | Los Cerros                            |    | location        
+136      | Los Ponchos Hotel Boutique            |    | location        
+137      | Los Raices B&B                        |    | location        
+138      | Maison Italia 1029                    |    | location        
+139      | Mallín Colorado Lodge                 |    | location        
+140      | Mandarin Oriental Santiago            |    | location        
+141      | Mine Hotel                            |    | location        
+142      | Mirador del Lago                      |    | location        
+143      | Mountain Lodge Cochamó                |    | location        
+144      | Nayara Alto Atacama                   |    | location        
+145      | Nayara Rapa Nui                       |    | location        
+146      | NEW - Refugio Frey                    |    | location        
+147      | NEW - Refugio Italiano                |    | location        
+148      | NEW - Refugio Jacob                   |    | location        
+149      | Noi Casa Atacama                      |    | location        
+150      | Noi Indigo Patagonia                  |    | location        
+151      | Noi Vitacura                          |    | location        
+152      | Nomades Hotel Boutique                |    | location        
+153      | Nothofagus B+B                        |    | location        
+154      | Nuss                                  |    | location        
+155      | Oceano Rayentray                      |    | location        
+156      | Palafito 1326 Hotel Boutique          |    | location        
+157      | Palo Santo                            |    | location        
+158      | Paradise                              |    | location        
+159      | Parque Factoría Lodge                 |    | location        
+160      | Patagonia Camp                        |    | location        
+161      | Patagonia House                       |    | location        
+162      | Patagonia Queen                       |    | location        
+163      | Patios de San Telmo                   |    | location        
+164      | Peninsula Petit                       |    | location        
+165      | Petrohué Lodge                        |    | location        
+166      | Poblado Kimal                         |    | location        
+167      | Posada del Río                        |    | location        
+168      | Posada los Juncos                     |    | location        
+169      | Puyuhuapi Lodge                       |    | location        
+170      | Quebrada Verde Cabins                 |    | location        
+171      | Rayentray Grand Hotel Puerto Madryn   |    | location        
+172      | Rayentray Oceano                      |    | location        
+173      | Rayentray Puerto Piramides            |    | location        
+174      | Recoleta Grand                        |    | location        
+175      | Refugia Chiloé                        |    | location        
+176      | Refugio Central                       |    | location        
+177      | Refugio Chileno                       |    | location        
+178      | Refugio Cochamó                       |    | location        
+179      | Refugio Cuernos                       |    | location        
+180      | Refugio Dickson                       |    | location        
+181      | Refugio Grey                          |    | location        
+182      | Refugio Paine Grande                  |    | location        
+183      | Refugio Puesto Cagliero               |    | location        
+184      | Remota Lodge                          |    | location        
+185      | Río Hermoso Lodge                     |    | location        
+186      | Rio Palena Lodge                      |    | location        
+187      | San Telmo Luxury Suites               |    | location        
+188      | Santiago Airport Holiday Inn          |    | location        
+189      | Senderos Hosteria                     |    | location        
+190      | Serrano Camp                          |    | location        
+191      | Sofitel Buenos Aires Recoleta         |    | location        
+192      | Terrantai                             |    | location        
+193      | The Ritz-Carlton Santiago             |    | location        
+194      | The Singular Patagonia                |    | location        
+195      | The Singular Santiago                 |    | location        
+196      | Tierra Atacama                        |    | location        
+197      | Tierra de Leyendas                    |    | location        
+198      | Tierra Patagonia                      |    | location        
+199      | Vendaval                              |    | location        
+200      | Vira Vira                             |    | location        
+201      | Weskar Lodge                          |    | location        
+202      | Wyndham Puerto Varas Pettra           |    | location        
+203      | Xelena                                |    | location        
+204      | Yegua Loca                            |    | location        
 
-   • Missing locations: 840
+SUMMARY:
+Total missing references: 1041
+
+   • Missing locations: 1041

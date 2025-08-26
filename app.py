@@ -35,11 +35,11 @@ SHEET_TEMPLATE_MAP = {
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_14cc18c1408a4b73a16d4e1dad2efca9", # Journeys
     ],
-    # "Ground Accom": [
-    #     "template_aca16a46ec3842ca85d182ee9348f627",  # Base
-    #     "template_c265e31c0c2848fa8210050f452d3926",  # Accom
-    #     "template_d32b51f46e7946faa5d3e2aa33e7d29a",  # Ground Accom
-    # ],
+    "Ground Accom": [
+        "template_aca16a46ec3842ca85d182ee9348f627",  # Base
+        "template_c265e31c0c2848fa8210050f452d3926",  # Accom
+        "template_d32b51f46e7946faa5d3e2aa33e7d29a",  # Ground Accom
+    ],
     # "All Activities - For Upload": [
     #     "template_aca16a46ec3842ca85d182ee9348f627", # Base
     #     "template_e2f0e9e5343349358037a0564a3366a0"
