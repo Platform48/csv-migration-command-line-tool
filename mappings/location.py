@@ -65,7 +65,7 @@ def map_region_name_to_id(region_name):
         print(f"❌ ERROR: Region '{region_name}' (canonical: '{canonical}') not found in REGION_LOOKUP.")
     return region_id
 
-def map_location_component(row, template_ids, COMPONENT_ID_MAP):
+def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1):
 
     ALLOWED_TYPES = {
         "Other","Airport","Apartments","Bay","Bridge","Campsite","City","Estancia",

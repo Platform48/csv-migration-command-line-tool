@@ -14,7 +14,7 @@ def validate_row(row: dict, schema: dict, row_number: int = None):
 def validate_csv(df, schemas, template_ids, row_mapper):
     UNMAPPED_REGIONS = set()
     
-    mapped_data = df.apply(row_mapper, axis=1).tolist()
+    mapped_data = df.apply(lambda row: row_mapper(row, row.name + 2), axis=1).tolist()
     results = []
     parsed_rows = []
 

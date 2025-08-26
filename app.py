@@ -1,6 +1,8 @@
 import os
 import json
 import pandas as pd
+from datetime import datetime
+import hashlib
 
 from mappings.activity import map_activity_component
 from mappings.cruise_pkg import map_cruise_bundle
@@ -11,69 +13,171 @@ from mappings.journey import map_journey_component
 
 from validate_csv_dynamic import validate_csv
 from core_data_services import CoreDataService
+from utils import save_missing_references_log, clear_missing_references_session, get_missing_references_summary
 
 
 DEBUG_MODE = False  # toggle this to switch between dry-run and real upload
 DEBUG_OUTPUT_FILE = "debug_output.ndjson"
+COMPONENT_CACHE_FILE = "component_id_cache.json"
 
 # Global map for later reference: (templateId, name) -> componentId
 COMPONENT_ID_MAP = {}
 
+# New: Component hash cache to detect changes
+COMPONENT_HASH_CACHE = {}
+
 SHEET_TEMPLATE_MAP = {
     "Location": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
-        "template_d0904afaccec4ef69057572ff77e2790", # Location
-    ],
-    "Ground Accom": [
-        "template_aca16a46ec3842ca85d182ee9348f627",  # Base
-        "template_c265e31c0c2848fa8210050f452d3926",  # Accom
-        "template_d32b51f46e7946faa5d3e2aa33e7d29a",  # Ground Accom
+        "template_0c105b25350647b096753b4f863ab06c", # Location
     ],
     "Journeys": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
-        "template_fe4243df590147a09a546e2f177cdcf3", # Journeys
+        "template_14cc18c1408a4b73a16d4e1dad2efca9", # Journeys
     ],
-    "All Activities - For Upload": [
-        "template_aca16a46ec3842ca85d182ee9348f627", # Base
-        "template_e2f0e9e5343349358037a0564a3366a0"
-    ]
-    # "Ship Accom": [
-    #     "template_63766858b3f444a890574fd849d8e273",  # Ship
-    #     "template_b70cd1388f5e49a4be344253215dd473",  # Accom
+    # "Ground Accom": [
     #     "template_aca16a46ec3842ca85d182ee9348f627",  # Base
+    #     "template_c265e31c0c2848fa8210050f452d3926",  # Accom
+    #     "template_d32b51f46e7946faa5d3e2aa33e7d29a",  # Ground Accom
     # ],
-    # "Cruise Packages": [
-    #     "template_0c2ff80e37ab4632b808b45cfa79d2cd",  # Cruise
-    #     "template_ee591e8d618542e2933819ac2a441af4",  # Packages
-    #     "template_aca16a46ec3842ca85d182ee9348f627",  # Base
+    # "All Activities - For Upload": [
+    #     "template_aca16a46ec3842ca85d182ee9348f627", # Base
+    #     "template_e2f0e9e5343349358037a0564a3366a0"
     # ]
 }
 
 SHEET_ROW_MAPPERS = {
-    # Name of Sheet    : mapping function
-
-    "Location"         : map_location_component,
-    "Ground Accom"     : map_ground_accommodation_component,
-    "Journeys"         : map_journey_component,
+    "Location"                   : map_location_component,
+    "Ground Accom"               : map_ground_accommodation_component,
+    "Journeys"                   : map_journey_component,
     "All Activities - For Upload": map_activity_component
-    # "Ship Accom"     : map_ship_accommodation_component,
-    # "Cruise Packages": map_cruise_bundle,
-
 }
 
 TEMPLATE_TYPES = {
-    "template_d0904afaccec4ef69057572ff77e2790": "location",
-    # "template_40f3b745b3f841caa2a7ee9631f21a26": "Accommodation", # Referenced by bundle "component type"
-    # "template_0c2ff80e37ab4632b808b45cfa79d2cd": "Cruise"
+    "template_0c105b25350647b096753b4f863ab06c": "location",
+    "template_c265e31c0c2848fa8210050f452d3926": "accommodation",
+    "template_d32b51f46e7946faa5d3e2aa33e7d29a": "ground_accommodation",
+    "template_14cc18c1408a4b73a16d4e1dad2efca9": "journey",
+    "template_e2f0e9e5343349358037a0564a3366a0": "activity"
 }
 
 PAT_COMPONENTS_PATH = "pat_components.xlsx"
 ANT_COMPONENTS_PATH = "ant_components.xlsx"
+COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
-COMPONENTS_PATH = PAT_COMPONENTS_PATH # Just using this for the moment - obv will need both!
+
+def load_component_cache():
+    """Load existing component ID mappings from cache file"""
+    global COMPONENT_ID_MAP, COMPONENT_HASH_CACHE
+    
+    if os.path.exists(COMPONENT_CACHE_FILE):
+        try:
+            with open(COMPONENT_CACHE_FILE, 'r', encoding='utf-8') as f:
+                cache_data = json.load(f)
+                COMPONENT_ID_MAP = cache_data.get('component_map', {})
+                COMPONENT_HASH_CACHE = cache_data.get('hash_cache', {})
+                
+                # Convert string keys back to tuples for component map
+                COMPONENT_ID_MAP = {eval(k) if k.startswith('(') else k: v 
+                                   for k, v in COMPONENT_ID_MAP.items()}
+                
+                print(f"📥 Loaded {len(COMPONENT_ID_MAP)} component mappings from cache")
+                
+        except Exception as e:
+            print(f"⚠️ Error loading cache: {e}. Starting with empty cache.")
+            COMPONENT_ID_MAP = {}
+            COMPONENT_HASH_CACHE = {}
+    else:
+        print("📝 No cache file found. Starting with empty cache.")
+
+
+def save_component_cache():
+    """Save current component ID mappings to cache file"""
+    try:
+        # Convert tuple keys to strings for JSON serialization
+        serializable_map = {str(k): v for k, v in COMPONENT_ID_MAP.items()}
+        
+        cache_data = {
+            'component_map': serializable_map,
+            'hash_cache': COMPONENT_HASH_CACHE,
+            'last_updated': datetime.now().isoformat(),
+            'total_components': len(COMPONENT_ID_MAP)
+        }
+        
+        with open(COMPONENT_CACHE_FILE, 'w', encoding='utf-8') as f:
+            json.dump(cache_data, f, indent=2, ensure_ascii=False)
+            
+        print(f"💾 Saved {len(COMPONENT_ID_MAP)} component mappings to cache")
+        
+    except Exception as e:
+        print(f"⚠️ Error saving cache: {e}")
+
+
+def generate_component_hash(component_data):
+    """Generate a hash for component data to detect changes"""
+    # Remove fields that don't affect the component's core data
+    hashable_data = component_data.copy()
+    
+    # Remove metadata that might change but doesn't affect the component
+    hashable_data.pop('id', None)
+    hashable_data.pop('createdAt', None) 
+    hashable_data.pop('updatedAt', None)
+    
+    # Convert to stable string representation
+    stable_json = json.dumps(hashable_data, sort_keys=True, ensure_ascii=False)
+    return hashlib.md5(stable_json.encode('utf-8')).hexdigest()
+
+
+def check_component_exists(template_type, name, component_data):
+    """Check if component already exists and hasn't changed"""
+    cache_key = (template_type, name)
+    
+    if cache_key not in COMPONENT_ID_MAP:
+        return False, None
+        
+    component_id = COMPONENT_ID_MAP[cache_key]
+    current_hash = generate_component_hash(component_data)
+    cached_hash = COMPONENT_HASH_CACHE.get(f"{template_type}:{name}")
+    
+    if cached_hash == current_hash:
+        print(f"♻️  Using cached component: {name} (ID: {component_id})")
+        return True, component_id
+    else:
+        print(f"🔄 Component changed, will re-upload: {name}")
+        return False, component_id
+
+
+def filter_components_for_upload(components, template_type):
+    """Filter out components that already exist and haven't changed"""
+    components_to_upload = []
+    cached_components = []
+    
+    for component in components:
+        name = component.get('name', 'Untitled')
+        exists, component_id = check_component_exists(template_type, name, component)
+        
+        if exists:
+            cached_components.append({
+                'name': name,
+                'id': component_id,
+                'component': component
+            })
+        else:
+            components_to_upload.append(component)
+    
+    print(f"📊 Upload Summary:")
+    print(f"   • Cached (skipping): {len(cached_components)}")
+    print(f"   • New/Changed (uploading): {len(components_to_upload)}")
+    
+    return components_to_upload, cached_components
+
 
 def run_loop():
     print("🔁 XLSX Validator and Migration App (Ctrl+C or type 'exit' to quit)")
+    
+    # Load existing cache and clear session missing references
+    load_component_cache()
+    clear_missing_references_session()
 
     try:
         while True:
@@ -84,7 +188,7 @@ def run_loop():
             try:
                 xls = pd.read_excel(COMPONENTS_PATH, sheet_name=None)
 
-                # Make duplicate column names unique (Day, Day.1, Day.2, etc.)
+                # Make duplicate column names unique
                 def dedup_columns(columns):
                     seen = {}
                     new_cols = []
@@ -99,12 +203,8 @@ def run_loop():
 
                 for sheet, df_sheet in xls.items():
                     df_sheet.columns = dedup_columns(df_sheet.columns)
-
-                    # drop the first data row (row index 0 is the header, row index 1 is metadata)
                     df_sheet = df_sheet.iloc[1:].reset_index(drop=True)
-
-                    xls[sheet] = df_sheet  # overwrite back into the dict
-
+                    xls[sheet] = df_sheet
 
             except Exception as e:
                 print(f"❌ Error reading Excel file: {e}")
@@ -122,17 +222,21 @@ def run_loop():
 
                 schemas = core_data_service.getSchemaWithArrayLevel()
 
-
-                # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                # df = df.head(20) # MUST TAKE THIS OUT (limits script to only read/upload first n records)
-                # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
                 try:
                     results, parsed_json = validate_csv(
                         df,
                         schemas,
                         template_ids,
-                        lambda row: row_mapper(row, template_ids, COMPONENT_ID_MAP)
+                        lambda row, row_index: row_mapper(
+                            row,
+                            template_ids,
+                            COMPONENT_ID_MAP,
+                            {
+                                "sheet_name": sheet_name,
+                                "row_name": row.get("name", "Untitled")
+                            },
+                            row_index=row_index
+                        )
                     )
                 except Exception as e:
                     print(f"❌ Validation error in '{sheet_name}': {e}")
@@ -148,22 +252,60 @@ def run_loop():
                     continue
 
                 print(f"\n✅ All rows in sheet '{sheet_name}' are valid!")
-                insert = "y"#input(f"Do you want to insert '{sheet_name}' data into the database? (y/n): ").strip().lower()
+                
+                # Get template type for caching - use the component's actual templateId
+                # We'll determine this from the first component since they should all have the same templateId
+                template_type = "unknown"
+                if parsed_json:
+                    component_template_id = parsed_json[0].get("templateId")
+                    template_type = TEMPLATE_TYPES.get(component_template_id, "unknown")
+                    if template_type == "unknown":
+                        print(f"⚠️ Warning: Unknown template type for templateId: {component_template_id}")
+                
+                # Filter components based on cache
+                components_to_upload, cached_components = filter_components_for_upload(
+                    parsed_json, template_type
+                )
+                
+                if not components_to_upload:
+                    print(f"🎉 All components in '{sheet_name}' already exist in cache. Skipping upload.")
+                    continue
+                
+                insert = input(f"Upload {len(components_to_upload)} new/changed components from '{sheet_name}'? (y/n): ").strip().lower()
                 if insert == "y":
-                    # print("📦 Preview JSON:")
-                    # print(json.dumps(parsed_json, indent=2))
-
-                    push = "y"#input("Are you sure to push these into database? (y/n): ").strip().lower()
+                    push = input("Confirm upload to database? (y/n): ").strip().lower()
                     if push == "y":
                         print("🛜 Calling API ...")
-                        core_data_service.pushValidRowToDB(parsed_json)
-                        print(f"✅ Data from '{sheet_name}' inserted into database.")
+                        # Upload only new/changed components
+                        newly_uploaded = core_data_service.pushValidRowToDB(components_to_upload, template_type)
+                        
+                        # Update cache with newly uploaded components
+                        for component in newly_uploaded:
+                            name = component.get('name', 'Untitled')
+                            component_hash = generate_component_hash(component)
+                            COMPONENT_HASH_CACHE[f"{template_type}:{name}"] = component_hash
+                        
+                        # Save updated cache
+                        save_component_cache()
+                        
+                        print(f"✅ {len(components_to_upload)} new components uploaded from '{sheet_name}'.")
+                        print(f"♻️  {len(cached_components)} components were reused from cache.")
                     else:
                         print("⏩ Skipping database insert.")
 
-            print("\n📋 Final Component ID Map (templateId, name) -> id")
-            for k, v in COMPONENT_ID_MAP.items():
-                print(f"{k} -> {v}")
+            # Save missing references log after processing all sheets
+            save_missing_references_log()
+            
+            print(f"\n📋 Session Summary:")
+            print(f"Final Component ID Map Statistics: {len(COMPONENT_ID_MAP)} total components")
+            by_type = {}
+            for (template_type, name), comp_id in COMPONENT_ID_MAP.items():
+                by_type[template_type] = by_type.get(template_type, 0) + 1
+            
+            for template_type, count in by_type.items():
+                print(f"  {template_type}: {count} components")
+            
+            print(f"\n{get_missing_references_summary()}")
 
             print("✅ All sheets processed.")
             break
@@ -196,34 +338,44 @@ class CoreDataService:
                 schemas.append({})
         return schemas
 
-    def pushValidRowToDB(self, components):
+    def pushValidRowToDB(self, components, template_type):
         if DEBUG_MODE:
-            print(f"📝 DEBUG MODE ON: Writing {len(components)} components to {DEBUG_OUTPUT_FILE} instead of uploading.")
+            print(f"📝 DEBUG MODE ON: Writing {len(components)} components to {DEBUG_OUTPUT_FILE}")
             with open(DEBUG_OUTPUT_FILE, "a", encoding="utf-8") as f:
                 for comp in components:
                     f.write(json.dumps(comp, ensure_ascii=False) + "\n")
-            return
+            return components
+            
+        uploaded_components = []
+        
         for idx, component in enumerate(components):
             res = requests.post(f"{self.service_url}/core-data-service/v1/components", json=component)
             if res.status_code == 201:
-                print(f"✅ Row {idx + 1} has been pushed!")
                 try:
                     data = res.json()
                     comp_id = data.get("id")
                     comp_name = component.get("name")
                     template_id = component.get("templateId")
+                    
                     if comp_id and comp_name and template_id:
-                        template_name = TEMPLATE_TYPES[template_id]
-                        COMPONENT_ID_MAP[(template_name, comp_name)] = comp_id
-                        print(f"   ↳ Stored in ID map: ({template_name}, {comp_name}) -> {comp_id}")
+                        # Store in global cache
+                        COMPONENT_ID_MAP[(template_type, comp_name)] = comp_id
+                        print(f"✅ Row {idx + 1} - ({template_type}, {comp_name}) -> {comp_id}")
+                        
+                        # Add ID to component for hash caching
+                        component['id'] = comp_id
+                        uploaded_components.append(component)
+                        
                 except Exception as e:
-                    print(f"⚠️ Could not parse returned ID for row {idx+1}: {e}")
+                    print(f"⚠️ Row {idx + 1} - Could not parse returned ID for row {idx+1}: {e}")
             else:
                 try:
                     error_msg = res.json()
-                    print(f"❌ Failed to push Row {idx + 1}. Error: {error_msg}")
+                    print(f"❌ Failed to upload row {idx + 1}. Error: {error_msg}")
                 except Exception:
-                    print(f"❌ Failed to push Row {idx + 1}. HTTP Status: {res.status_code}")
+                    print(f"❌ Failed to upload row {idx + 1}. HTTP Status: {res.status_code}")
+        
+        return uploaded_components
 
 
 if __name__ == "__main__":
