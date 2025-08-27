@@ -302,6 +302,21 @@ def get_location_id(location_name: str, component_id_map: Dict, context: Optiona
         required=True
     )
 
+# Helper function for your existing mappers
+def get_transfer_id(transfer_name: str, component_id_map: Dict, context: Optional[Dict] = None) -> Optional[str]:
+    """Convenience function specifically for location lookups"""
+    # from mappings.location import LOCATION_ALIASES  # Import your existing aliases
+    
+    return get_component_id(
+        component_type="transfer",
+        component_name=transfer_name,
+        component_id_map=component_id_map,
+        # aliases=LOCATION_ALIASES,
+        context=context,
+        required=True
+    )
+
+
 
 def get_activity_id(activity_name: str, component_id_map: Dict, context: Optional[Dict] = None) -> Optional[str]:
     """Convenience function specifically for activity lookups"""

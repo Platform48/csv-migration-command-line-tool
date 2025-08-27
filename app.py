@@ -10,6 +10,8 @@ from mappings.location import map_location_component
 from mappings.ground_accom import map_ground_accommodation_component
 from mappings.ship_accom import map_ship_accommodation_component
 from mappings.journey import map_journey_component
+from mappings.tranfer import map_transfer_component
+from mappings.excursions import map_excursion_component
 
 from validate_csv_dynamic import validate_csv
 from core_data_services import CoreDataService
@@ -43,6 +45,14 @@ SHEET_TEMPLATE_MAP = {
     "All Activities - For Upload": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_e2f0e9e5343349358037a0564a3366a0"
+    ],
+    "All Transfers - For Upload": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_901d40ac12214820995880915c5b62f5"
+    ],
+    "Copy of Excursions Package": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_3b7714dcfa374cd19b9dc97af1510204"
     ]
 }
 
@@ -50,7 +60,10 @@ SHEET_ROW_MAPPERS = {
     "Location"                   : map_location_component,
     "Ground Accom"               : map_ground_accommodation_component,
     "Journeys"                   : map_journey_component,
-    "All Activities - For Upload": map_activity_component
+    "All Activities - For Upload": map_activity_component,
+    "All Transfers - For Upload" : map_transfer_component,
+    "Copy of Excursions Package" : map_excursion_component,
+
 }
 
 TEMPLATE_TYPES = {
@@ -58,7 +71,10 @@ TEMPLATE_TYPES = {
     "template_c265e31c0c2848fa8210050f452d3926": "accommodation",
     "template_d32b51f46e7946faa5d3e2aa33e7d29a": "ground_accommodation",
     "template_14cc18c1408a4b73a16d4e1dad2efca9": "journey",
-    "template_e2f0e9e5343349358037a0564a3366a0": "activity"
+    "template_e2f0e9e5343349358037a0564a3366a0": "activity",
+    "template_901d40ac12214820995880915c5b62f5": "transfer",
+    "template_3b7714dcfa374cd19b9dc97af1510204": "package",
+
 }
 
 PAT_COMPONENTS_PATH = "pat_components.xlsx"
@@ -203,7 +219,15 @@ def run_loop():
 
                 for sheet, df_sheet in xls.items():
                     df_sheet.columns = dedup_columns(df_sheet.columns)
-                    df_sheet = df_sheet.iloc[1:].reset_index(drop=True)
+
+                    if sheet == "All Transfers - For Upload":
+                        # Treat row 2 as header (skip the first row)
+                        df_sheet.columns = df_sheet.iloc[0]  # take row 2 as header
+                        df_sheet = df_sheet.iloc[1:].reset_index(drop=True)
+                    else:
+                        # Normal behavior
+                        df_sheet = df_sheet.iloc[1:].reset_index(drop=True)
+
                     xls[sheet] = df_sheet
 
             except Exception as e:
