@@ -20,6 +20,8 @@ from utils import save_missing_references_log, clear_missing_references_session,
 
 
 DEBUG_MODE = False  # toggle this to switch between dry-run and real upload
+FORCE_REUPLOAD = True
+
 DEBUG_OUTPUT_FILE = "debug_output.ndjson"
 COMPONENT_CACHE_FILE = "component_id_cache.json"
 
@@ -41,7 +43,8 @@ SHEET_TEMPLATE_MAP = {
     # "Ground Accom": [
     #     "template_aca16a46ec3842ca85d182ee9348f627",  # Base
     #     "template_c265e31c0c2848fa8210050f452d3926",  # Accom
-    #     "template_d32b51f46e7946faa5d3e2aa33e7d29a",  # Ground Accom
+    #     "template_d32b51f46e7946faa5d3e2aa33e7d29a",  # Gy
+    # yround Accom
     # ],
     # "All Activities - For Upload": [
     #     "template_aca16a46ec3842ca85d182ee9348f627", # Base
@@ -51,10 +54,10 @@ SHEET_TEMPLATE_MAP = {
     #     "template_aca16a46ec3842ca85d182ee9348f627", # Base
     #     "template_901d40ac12214820995880915c5b62f5"
     # ],
-    # "Copy of Excursions Package": [
-    #     "template_aca16a46ec3842ca85d182ee9348f627", # Base
-    #     "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
-    # ],
+    "Copy of Excursions Package": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
+    ],
     "Copy of Private Tours Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
@@ -153,6 +156,10 @@ def check_component_exists(template_type, name, component_data):
     """Check if component already exists and hasn't changed"""
     cache_key = (template_type, name)
     
+    if FORCE_REUPLOAD:
+        print(f"🔁 Force re-upload enabled for: {name}")
+        return False, COMPONENT_ID_MAP.get(cache_key)
+    
     if cache_key not in COMPONENT_ID_MAP:
         return False, None
         
@@ -234,6 +241,7 @@ def run_loop():
                         df_sheet = df_sheet.iloc[1:].reset_index(drop=True)
 
                     xls[sheet] = df_sheet
+
 
             except Exception as e:
                 print(f"❌ Error reading Excel file: {e}")
@@ -349,12 +357,25 @@ class CoreDataService:
     def __init__(self, template_ids):
         self.template_ids = template_ids
         self.service_url = 'https://data-api-dev.swoop-adventures.com'
+        self.headers = {
+            "Authorization": "Bearer supercoolamazingtoken"
+        }
 
     def getSchemaWithArrayLevel(self):
         schemas = []
         for idx, template_id in enumerate(self.template_ids):
-            res = requests.get(f"{self.service_url}/core-data-service/v1/templates/{template_id}")
-            response = res.json()
+            res = requests.get(
+                f"{self.service_url}/core-data-service/v1/templates/{template_id}",
+                headers=self.headers
+            )
+            
+            # Debug: check content type and response text
+            try:
+                response = res.json()
+            except json.JSONDecodeError:
+                print("⚠️ JSON decode error. Raw response:")
+                print(res.text)  # show first 500 chars for debugging
+                raise  # re-raise so you can see the issue
 
             schema_str = response.get("validationSchemas", {}).get("componentSchema")
             if schema_str:
@@ -367,6 +388,7 @@ class CoreDataService:
                 schemas.append({})
         return schemas
 
+
     def pushValidRowToDB(self, components, template_type):
         if DEBUG_MODE:
             print(f"📝 DEBUG MODE ON: Writing {len(components)} components to {DEBUG_OUTPUT_FILE}")
@@ -378,7 +400,11 @@ class CoreDataService:
         uploaded_components = []
         
         for idx, component in enumerate(components):
-            res = requests.post(f"{self.service_url}/core-data-service/v1/components", json=component)
+            res = requests.post(
+                f"{self.service_url}/core-data-service/v1/components",
+                json=component,
+                headers=self.headers
+            )
             if res.status_code == 201:
                 try:
                     data = res.json()

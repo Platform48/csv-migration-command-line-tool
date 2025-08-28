@@ -15,6 +15,30 @@ def get_stripped(row, field):
         return ""
     return str(val).strip()
 
+# def get_stripped(row, field):
+#     """
+#     Safely get a string value from a DataFrame row (Series or dict).
+#     Returns a stripped string, never a Series.
+#     """
+#     # Try dict-style access first
+#     val = row.get(field) if hasattr(row, "get") else None
+    
+#     # Fallback to Series-style access
+#     if val is None and hasattr(row, "__getitem__") and field in row:
+#         val = row[field]
+
+#     # If it’s a Series, pick first non-null value
+#     if isinstance(val, pd.Series):
+#         val = val.dropna().astype(str).iloc[0] if not val.dropna().empty else ""
+
+#     # Handle NaN / None
+#     if pd.isna(val):
+#         return ""
+
+#     return str(val).strip()
+
+
+
 def safe_float(val):
     try:
         return float(val)

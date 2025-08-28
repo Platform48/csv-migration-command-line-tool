@@ -135,6 +135,9 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
         {"templateId": template_ids[0], "data": level_0},
     ]
 
+    # print(row)
+    # print(f"name: {get_stripped(row, "name")}")
+
     return {
         "templateId": template_ids[1],
         "description": {
