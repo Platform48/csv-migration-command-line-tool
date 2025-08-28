@@ -1,0 +1,995 @@
+MISSING COMPONENT REFERENCES REPORT (BY TYPE)
+Generated: 2025-08-28 10:57:10
+
+This report groups all unique missing component references by type.
+Each entry shows the component name and how many times it was missing.
+
+====================================================================================================
+
+TYPE: location
+--------------------------------------------------------------------------------
+Missing Component                                                                                                         | Occurrences
+----------------------------------------------------------------------------------------------------------------------------------------
+"Activity"                                                                                                                | 44
+"Santiago City Central Hotel"                                                                                             | 31
+"Arturo Merino Benitez International Airport SCL"                                                                         | 26
+"Aeroparque Internacional Jorge Newbery (AEP)"                                                                            | 14
+"Ministro Pistarini International Airport, Ezeiza (EZE)"                                                                  | 14
+"Awasi Atacama"                                                                                                           | 13
+"Explora Rapa Nui Hotel"                                                                                                  | 13
+"El Calafate Airport (FTE) to El Chaltén or reverse"                                                                      | 12
+"El Chaltén to El Calafate or reverse"                                                                                    | 12
+"Recoleta Hotel"                                                                                                          | 12
+"El Chaltén to Los Huemules Reserve/Explora Chaltén"                                                                      | 10
+"Explora Torres del Paine"                                                                                                | 10
+"Palermo Hotel"                                                                                                           | 10
+"Puerto Montt Airport (PMC)"                                                                                              | 10
+"Explora Rapa Hui Hotel"                                                                                                  | 9
+"Puero Natales"                                                                                                           | 9
+"El Calafate Hotel to Activity or reverse"                                                                                | 8
+"El Chaltén Hotel to Activity or reverse"                                                                                 | 8
+"Estancia La Bandada"                                                                                                     | 8
+"Punta Arenas Hotel"                                                                                                      | 8
+"Punta Arenas Hotel to Activity or reverse"                                                                               | 8
+"Tigre Delta"                                                                                                             | 8
+"Ushuaia Hotel to Activity or reverse"                                                                                    | 8
+"Hotel Taha Tai"                                                                                                          | 7
+"Mallin Colarado"                                                                                                         | 7
+"Refugio Central/EcoCamp/Las Torres"                                                                                      | 7
+"Ushuaia Hotel"                                                                                                           | 7
+"Aguas Arriba to Activity or reverse"                                                                                     | 6
+"Barraco Lodge"                                                                                                           | 6
+"Palermo"                                                                                                                 | 6
+"Puerto Natales Hotel to Activity or reverse"                                                                             | 6
+"Recoleta"                                                                                                                | 6
+"Ahu Tahai"                                                                                                               | 5
+"Arturo Merino Benitez International Airport SCL - City Hotel or reverse"                                                 | 5
+"Calama Airport (CJC)"                                                                                                    | 5
+"Central Mendoza Hotel"                                                                                                   | 5
+"Chaiten"                                                                                                                 | 5
+"El Plumerillo International Airport, Mendoza MDZ"                                                                        | 5
+"Errante Ecolodge"                                                                                                        | 5
+"Hanga Poukura"                                                                                                           | 5
+"Hotel Rio Serrano"                                                                                                       | 5
+"Puerto Pirámides"                                                                                                        | 5
+"San Pedro Hotel to Cactus Valley or reverse"                                                                             | 5
+"San Pedro Hotel to Rainbow Valley (via Cactus Valley) or reverse"                                                        | 5
+"Ahu Akivi"                                                                                                               | 4
+"Ahu Tongariki"                                                                                                           | 4
+"Aysen"                                                                                                                   | 4
+"Balmaceda Camp"                                                                                                          | 4
+"Bariloche Airport (BRC) to Bariloche or reverse"                                                                         | 4
+"Cajon de Maipo"                                                                                                          | 4
+"Casa Real Hotel"                                                                                                         | 4
+"Chiloe"                                                                                                                  | 4
+"City Hotel"                                                                                                              | 4
+"EcoCamp Patagonia to Laguna Azul area or reverse"                                                                        | 4
+"El Calafate (Hotels) to El Calafate Airport (FTE) or reverse"                                                            | 4
+"El Calafate Airport (FTE"                                                                                                | 4
+"El Calafate to Hotel Las Torres or reverse"                                                                              | 4
+"El Loa Airport CJC - San Pedro de Atacama or reverse"                                                                    | 4
+"El Mirador de Guadal"                                                                                                    | 4
+"Estancia La Bamba de Areco"                                                                                              | 4
+"Explora Torres del Paine to Explora El Chaltén (or reverse)"                                                             | 4
+"Hanga Te'e"                                                                                                              | 4
+"Hotel Remota"                                                                                                            | 4
+"Matetic Vineyards"                                                                                                       | 4
+"Parque Futangue"                                                                                                         | 4
+"Patagonia Camp to Activity or reverse"                                                                                   | 4
+"Patagonia Camp to El Calafate via Cancha Carrera / Cerro Castillo or reverse"                                            | 4
+"Patagonia Camp to Punta Arenas or reverse"                                                                               | 4
+"Pucon to Huilo Huilo or reverse"                                                                                         | 4
+"Puerto Iguazú Hotel"                                                                                                     | 4
+"Puerto Montt Airport (PMC) to AWA or reverse"                                                                            | 4
+"Puerto Montt Airport (PMC) to Castro (Chiloe) or reverse"                                                                | 4
+"Puerto Natales Airport (PNT) to Cerro Guido or reverse"                                                                  | 4
+"Puerto Natales Airport (PNT) to Tierra Patagonia or reverse"                                                             | 4
+"Puerto Natales to Cerro Guido or reverse"                                                                                | 4
+"Puerto Natales to El Calafate (or reverse)"                                                                              | 4
+"Puerto Natales to Hotel Las Torres or reverse"                                                                           | 4
+"Puerto Natales to Hotel Rio Serrano or reverse"                                                                          | 4
+"Puerto Natales to Patagonia Camp (or reverse)"                                                                           | 4
+"Puerto Natales to Tierra Hotel/Estancia Lazo (or reverse)"                                                               | 4
+"Puerto Tranquillo"                                                                                                       | 4
+"Puerto Varas to Castro (Chiloe) or reverse"                                                                              | 4
+"Puerto Varas to Huilo Huilo or reverse"                                                                                  | 4
+"Puerto Varas to Parque Futangue or reverse"                                                                              | 4
+"Puerto Varas to Termas Lago Rupanco or reverse"                                                                          | 4
+"Puerto Varas to Vicente Pérez Rosales National Park or reverse"                                                          | 4
+"Punta Arenas to Cerro Guido or reverse"                                                                                  | 4
+"Punta Arenas to Explora Torres del Paine (or reverse)"                                                                   | 4
+"Punta Arenas to Hotel Las Torres or reverse"                                                                             | 4
+"Punta Arenas to Hotel Rio Serrano or reverse"                                                                            | 4
+"San Antonio de Areco"                                                                                                    | 4
+"San Antonio de Areco (Estancia La Bamba de Areco)"                                                                       | 4
+"San Antonio Port"                                                                                                        | 4
+"San Martín de los Andes"                                                                                                 | 4
+"San Pedro Hotel to Cerro Toco or reverse"                                                                                | 4
+"San Pedro Hotel to Devils Canyon or reverse"                                                                             | 4
+"San Pedro Hotel to El Tatio Geysers or reverse"                                                                          | 4
+"San Pedro Hotel to Yerbas Buenas or reverse"                                                                             | 4
+"Santiago Bus Station"                                                                                                    | 4
+"The Port of Buenos Aires"                                                                                                | 4
+"Ushuaia Malvinas Argentinas (USH)"                                                                                       | 4
+"Valpariso hotel"                                                                                                         | 4
+"Valpariso port"                                                                                                          | 4
+"Valpariso, via Casa Martin winery tour"                                                                                  | 4
+"Valpariso, via Matetic Vineyards"                                                                                        | 4
+"Vina del Mar"                                                                                                            | 4
+"Vina Vik"                                                                                                                | 4
+"Argentine Lake District"                                                                                                 | 3
+"Balmaceda Airport (BBA) to Cerro Castillo or reverse"                                                                    | 3
+"Castro (Chiloe)"                                                                                                         | 3
+"Cataratas of Iguazu International Airport IG"                                                                            | 3
+"Chacras or Maipu area"                                                                                                   | 3
+"Downtown Mendoza/Hotel"                                                                                                  | 3
+"El Chaltén to Rio Electrico (Laguna de Los Tres)"                                                                        | 3
+"Explora Rapa Nui Hotel - Ahu Tahira"                                                                                     | 3
+"Explora Uyuni Lodge"                                                                                                     | 3
+"Foz do Iguaçu International Airport IGU"                                                                                 | 3
+"Futaleufu"                                                                                                               | 3
+"Hotel Das Cataratas"                                                                                                     | 3
+"Hotel Remota to Activity or reverse"                                                                                     | 3
+"Lake Grey"                                                                                                               | 3
+"Mendoza Bus station"                                                                                                     | 3
+"Orongo"                                                                                                                  | 3
+"Presidente Carlos Ibáñez del Campo International Airport PUQ"                                                            | 3
+"Pudeto"                                                                                                                  | 3
+"Puerto Montt Airport (PMC) to Parque Futangue or reverse"                                                                | 3
+"Puerto Natales to Hotel Grey (or reverse)"                                                                               | 3
+"Puerto Natales to Refugio Central/EcoCamp/Las Torres via Cerro Castillo (or reverse)"                                    | 3
+"Puerto Varas Hotel to Activity or reverse"                                                                               | 3
+"Rano Raraku"                                                                                                             | 3
+"Refugia Chiloe"                                                                                                          | 3
+"Sairecabur Volcano"                                                                                                      | 3
+"Uco Valley"                                                                                                              | 3
+"Aeroparque Internacional Jorge Newbery (AEP) - Palermo Hotel or reverse"                                                 | 2
+"Aeroparque Internacional Jorge Newbery (AEP) - Recoleta Hotel or reverse"                                                | 2
+"Ahu Akivi - Explora Rapa Nui Hotel"                                                                                      | 2
+"Ahu Huri A Urenga"                                                                                                       | 2
+"Ahu One Makihi"                                                                                                          | 2
+"Ahu Tahai - Explora Rapa Hui Hotel"                                                                                      | 2
+"Ahu Te Pito Kura"                                                                                                        | 2
+"Ahu Vinapu"                                                                                                              | 2
+"Anakena"                                                                                                                 | 2
+"Anakena Beach"                                                                                                           | 2
+"Arturo Merino Benitez International Airport SCL - Bus station"                                                           | 2
+"Arturo Merino Benitez International Airport SCL - Cajon de Maipo or reverse"                                             | 2
+"Arturo Merino Benitez International Airport SCL - Casa Real Hotel or reverse"                                            | 2
+"Arturo Merino Benitez International Airport SCL - Matetic Vineyard or reverse"                                           | 2
+"Arturo Merino Benitez International Airport SCL - Port or reverse"                                                       | 2
+"Arturo Merino Benitez International Airport SCL - Santa Cruz or reverse"                                                 | 2
+"Arturo Merino Benitez International Airport SCL - Valpariso Hotel or reverse"                                            | 2
+"Arturo Merino Benitez International Airport SCL - Vina Del Mar or reverse"                                               | 2
+"Arturo Merino Benitez International Airport SCL - Vina Vik or reverse"                                                   | 2
+"Australis Cruise Port (PUQ) to Explora Torres del Paine (or reverse)"                                                    | 2
+"Awasi Atacama to Activity or reverse"                                                                                    | 2
+"Awasi Atacama to Cejar Lagoon or reverse"                                                                                | 2
+"Awasi Atacama to Cordillera de la Sal or reverse"                                                                        | 2
+"Awasi Atacama to Dinosaur Valley or reverse"                                                                             | 2
+"Awasi Atacama to El Tatio Geysers or reverse"                                                                            | 2
+"Awasi Atacama to Sairecabur Volcano or reverse"                                                                          | 2
+"Awasi Atacama to Toco Hill or reverse"                                                                                   | 2
+"Awasi Iguazu"                                                                                                            | 2
+"Awasi Iguazu to Activity or reverse"                                                                                     | 2
+"Awasi Patagonia to Activity or reverse"                                                                                  | 2
+"Awasi Patagonia to Cerro Castillo or reverse"                                                                            | 2
+"Awasi Patagonia to Estancia San Luis or reverse"                                                                         | 2
+"Awasi Patagonia to Loma Guanaco or reverse"                                                                              | 2
+"Awasi Patagonia to Paine River or reverse"                                                                               | 2
+"Balmaceda Airport (BBA) / Balmaceda to Coyhaique or reverse"                                                             | 2
+"Balmaceda Airport (BBA) to Explora Patagonia National Park or reverse"                                                   | 2
+"Balmaceda Airport (BBA) to Mallin Colorado Lodge or reverse"                                                             | 2
+"Bariloche Airport (BRC) to Peuma Hue or reverse"                                                                         | 2
+"Bariloche to Activity or reverse"                                                                                        | 2
+"Bariloche to Catedral Ski Center or reverse"                                                                             | 2
+"Bariloche to Lake Mascardi or reverse"                                                                                   | 2
+"Bariloche to Pampa Linda or reverse"                                                                                     | 2
+"Bariloche to Puerto Pañuelo or reverse"                                                                                  | 2
+"Bariloche to San Martin"                                                                                                 | 2
+"Barraco Lodge (Tagua Tagua Park)"                                                                                        | 2
+"Barraco Lodge to La Junta or reverse"                                                                                    | 2
+"Barraco Lodge to Laguna Gaviotas or reverse"                                                                             | 2
+"Barraco Lodge to Yates Volcano or reverse"                                                                               | 2
+"Buenos Aires Hotel to Activity or reverse"                                                                               | 2
+"Calama Airport (CJC) to Awasi Atacama or reverse"                                                                        | 2
+"Calama Airport (CJC) to Explora Atacama or reverse"                                                                      | 2
+"Calama Airport (CJC) to San Pedro de Atacama (All Hotels) or reverse"                                                    | 2
+"Calama Airport (CJC) to Tierra Atacama or reverse"                                                                       | 2
+"Caleta Gonzalo to Activity or reverse"                                                                                   | 2
+"Caleta Gonzalo to Futaleufu or reverse"                                                                                  | 2
+"Camping Seron"                                                                                                           | 2
+"Casa Madsen"                                                                                                             | 2
+"Castro Mocopulli Airport (MHC) to Refugia Chiloe or reverse"                                                             | 2
+"Castro to Activity or reverse"                                                                                           | 2
+"Cataratas of Iguazu International Airport IGR  - Puerto Iguazú Hotel or reverse"                                         | 2
+"Cataratas of Iguazu International Airport IGR - Belmond Das Cataratas or reverse"                                        | 2
+"Cataratas of Iguazu International Airport IGR - Grand Melia Iguazu falls or reverse"                                     | 2
+"Cataratas/Puerto Iguazú Hotel or reverse"                                                                                | 2
+"Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Airport (IGR) or reverse"                                                 | 2
+"Cavas Wine Lodge"                                                                                                        | 2
+"Cerro Castillo to Cerro Guido or reverse"                                                                                | 2
+"Cerro Castillo to Puerto Tranquillo"                                                                                     | 2
+"Chaiten to Caleta Gonzalo or reverse"                                                                                    | 2
+"Chaiten to El Amarillo (Pumalin Park) or reverse"                                                                        | 2
+"Chaiten to Pumalín Douglas Tompkins National Park or reverse"                                                            | 2
+"Chaitén Airport (WCH) to Puerto Montt Airport (PMC) or reverse"                                                          | 2
+"Chiloé Hotel to Activity or reverse"                                                                                     | 2
+"Chiloé to Puerto Montt or reverse"                                                                                       | 2
+"Chituca"                                                                                                                 | 2
+"City Hotel - Bus station or reverse"                                                                                     | 2
+"City Hotel - Cajon de Maipo or reverse"                                                                                  | 2
+"City Hotel - Casa Real Hotel or reverse"                                                                                 | 2
+"City Hotel - Matetic Vineyard or reverse"                                                                                | 2
+"City hotel - Mendoza or reverse"                                                                                         | 2
+"City Hotel - Santa Cruz or reverse"                                                                                      | 2
+"City Hotel - Valpariso hotel or reverse"                                                                                 | 2
+"City Hotel - Valpariso port or reverse"                                                                                  | 2
+"City Hotel - Vina del Mar or reverse"                                                                                    | 2
+"City Hotel - Vina Vik or reverse"                                                                                        | 2
+"Cochamo"                                                                                                                 | 2
+"Cochcrane"                                                                                                               | 2
+"Cochrane to Coyhaique or reverse"                                                                                        | 2
+"Colorada Lagoon"                                                                                                         | 2
+"Cordillera de la Sal"                                                                                                    | 2
+"Coyahaique to Puerto Ingenerio Ibanez or reverse"                                                                        | 2
+"Coyhaique to Puyuhuapi or reverse"                                                                                       | 2
+"Das Cataratas - Bird Park - Das Cataratas"                                                                               | 2
+"EcoCamp Patagonia to Activity or reverse"                                                                                | 2
+"EcoCamp Patagonia to Estancia Dos Elianas or reverse"                                                                    | 2
+"EcoCamp Patagonia to Lake Grey or reverse"                                                                               | 2
+"EcoCamp Patagonia to Pudeto dock or reverse"                                                                             | 2
+"EcoCamp Patgonia to Estancia Vega Castillo or reverse"                                                                   | 2
+"EcoCamp to Lake Pehoe dock or reverse"                                                                                   | 2
+"El Calafate Airport (FTE) to Eolo or reverse"                                                                            | 2
+"El Calafate Airport (FTE) to Explora El Chaltén or reverse"                                                              | 2
+"El Calafate Central Hotel"                                                                                               | 2
+"El Calafate Hotel to Estancia 25 de Mayo or reverse"                                                                     | 2
+"El Calafate to El Calafate Bus Terminal or reverse"                                                                      | 2
+"El Calafate to Eolo"                                                                                                     | 2
+"El Calafate to Eolo or reverse"                                                                                          | 2
+"El Calafate to Explora El Chaltén or reverse"                                                                            | 2
+"El Calafate to Nibepo Aike"                                                                                              | 2
+"El Calafate to Nibepo Aike or reverse"                                                                                   | 2
+"El Calafate to Perito Moreno (Punta Bandera)"                                                                            | 2
+"El Calafate to Punta Bandera or reverse"                                                                                 | 2
+"El Chaltén Hotel"                                                                                                        | 2
+"El Chaltén to El Chaltén Bus Terminal or reverse"                                                                        | 2
+"El Chaltén to La Leona Petrified Forest or reverse"                                                                      | 2
+"El Chaltén to Lago del Desierto or reverse"                                                                              | 2
+"El Chaltén to Perito Moereno (Punta Bandera)"                                                                            | 2
+"El Mirador de Guadal to Activity or reverse"                                                                             | 2
+"El Mirador de Guadal to Jeinimeni National Park or reverse"                                                              | 2
+"El Mirador de Guadal to Leones River Valley or reverse"                                                                  | 2
+"El Mirador de Guadal to Puerto Tranquilo or reverse"                                                                     | 2
+"El Plumerillo International Airport, Mendoza MDZ - Cavas Wine Lodge or reverse"                                          | 2
+"El Plumerillo International Airport, Mendoza MDZ - Chacras or Maipu or reverse"                                          | 2
+"El Plumerillo International Airport, Mendoza MDZ - Downtown Mendoza or reverse"                                          | 2
+"El Plumerillo International Airport, Mendoza MDZ - Uco Valley or reverse"                                                | 2
+"El Tatio Geysers"                                                                                                        | 2
+"Eolo"                                                                                                                    | 2
+"Errante Ecolodge to Activity or reverse"                                                                                 | 2
+"Errante Ecolodge to Beagle Channel or reverse"                                                                           | 2
+"Errante EcoLodge to Omora Ethnobotanical Park or reverse"                                                                | 2
+"Errante EcoLodge to Puerto Navarino or reverse"                                                                          | 2
+"Errante EcoLodge to Puerto Williams or reverse"                                                                          | 2
+"Estancia Cerro Guido to Activity or reverse"                                                                             | 2
+"Estancia Lazo"                                                                                                           | 2
+"Estancia Lazo to Awasi Patagonia or reverse"                                                                             | 2
+"Explora Atacama to Activity or reverse"                                                                                  | 2
+"Explora Atacama to Cordillera de la Sal or reverse"                                                                      | 2
+"Explora Atacama to Láscar Volcano or reverse"                                                                            | 2
+"Explora Atacama to the Domeyko Range or reverse"                                                                         | 2
+"Explora El Chaltén to Activity or reverse"                                                                               | 2
+"Explora El Chaltén to Casa Madsen or reverse"                                                                            | 2
+"Explora El Chaltén to Lago del Desierto or reverse"                                                                      | 2
+"Explora El Chaltén to Laguna Condor or reverse"                                                                          | 2
+"Explora Patagonia National Park"                                                                                         | 2
+"Explora Patagonia National Park to Activity or reverse"                                                                  | 2
+"Explora Patagonia National Park to Edita Lagoon or reverse"                                                              | 2
+"Explora Patagonia NP"                                                                                                    | 2
+"Explora Rapa Hui Hotel - Vinapu"                                                                                         | 2
+"Explora Rapa Nui Hotel - Hanga Poukura or reverse"                                                                       | 2
+"Explora Rapa Nui Hotel - Hanga Roa or reverse"                                                                           | 2
+"Explora Rapa Nui Hotel - Mahatua"                                                                                        | 2
+"Explora Rapa Nui Hotel - Terevaka Volcano"                                                                               | 2
+"Explora Rapa Nui to Activity or reverse"                                                                                 | 2
+"Explora Torres del Paine to Activity or reverse"                                                                         | 2
+"Explora Torres del Paine to Cerro Castill / Cancha Carrera (or reverse)"                                                 | 2
+"Explora Torres del Paine to El Calafate or reverse"                                                                      | 2
+"Foz do Iguaçu International Airport IGU  - Puerto Iguazú Hotel or reverse"                                               | 2
+"Foz do Iguaçu International Airport IGU - Belmond Das Cataratas or reverse"                                              | 2
+"Foz do Iguaçu International Airport IGUR - Grand Melia Iguazu falls or reverse"                                          | 2
+"Futaleufu to Puyuhuapi or reverse"                                                                                       | 2
+"Futangue Hotel to Activity or reverse"                                                                                   | 2
+"Grand Melia Iguazu falls"                                                                                                | 2
+"Hanga Roa"                                                                                                               | 2
+"Hotel Las Torres to Activity or reverse"                                                                                 | 2
+"Hotel Remota to Estancia Puerto Conselo or reverse"                                                                      | 2
+"Hotel Remota to Puerto Natales or reverse"                                                                               | 2
+"Hotel Remota to the Rupestre area or reverse"                                                                            | 2
+"Hotel Río Serrano to Activity or reverse"                                                                                | 2
+"Hotel Río Serrano to Lake Grey or reverse"                                                                               | 2
+"Hotel San Pedro"                                                                                                         | 2
+"Hotel San Pedro - Calama Bus station or reverse"                                                                         | 2
+"Hotel San Pedro - downtown or reverse"                                                                                   | 2
+"Iguazú"                                                                                                                  | 2
+"l Plumerillo International Airport, Mendoza MDZ - Vistalba winery  or reverse"                                           | 2
+"Lago Grey to Serrano Camp or reverse"                                                                                    | 2
+"Lake Bertrand"                                                                                                           | 2
+"Lake Bertrand to Cochrane or reverse"                                                                                    | 2
+"Lake Esmeralda"                                                                                                          | 2
+"Licancabur Volcano"                                                                                                      | 2
+"Machuca"                                                                                                                 | 2
+"Mallin Colorado to Bahia Exploradores or reverse"                                                                        | 2
+"Mallin Colorado to Bahia Mansa or reverse"                                                                               | 2
+"Mallin Colorado to Baker Nef confluence or reverse"                                                                      | 2
+"Mallin Colorado to Exploradores Glacier or reverse"                                                                      | 2
+"Mallin Colorado to Patagonia National Park or reverse"                                                                   | 2
+"Mallin Colorado to Puerto Bertrand or reverse"                                                                           | 2
+"Mallin Colorado to Puerto Guadal or reverse"                                                                             | 2
+"Mataveri International Airport (IPC"                                                                                     | 2
+"Mataveri International Airport (IPC) - Hotel Taha Tai or reverse"                                                        | 2
+"Mataveri International Airport (IPC) to Explora Easter Island or reverse"                                                | 2
+"Mendoza Bus station to Chacras or Maipu or reverse"                                                                      | 2
+"Mendoza Bus station to downtown Mendoza or reverse"                                                                      | 2
+"Mendoza Bus station to Uco Valley or reverse"                                                                            | 2
+"Mendoza Hotel - Cavas Wine Lodge or reverse"                                                                             | 2
+"Mendoza hotel - Chacras or Maipu or reverse"                                                                             | 2
+"Mendoza Hotel - Downtown Mendoza or reverse"                                                                             | 2
+"Mendoza Hotel - Uco Valley or reverse"                                                                                   | 2
+"Mendoza Hotel - Vistalba winery or reverse"                                                                              | 2
+"Ministro Pistarini International Airport, Ezeiza (EZE) - Palermo Hotel or reverse"                                       | 2
+"Ministro Pistarini International Airport, Ezeiza (EZE) - Port or reverse"                                                | 2
+"Ministro Pistarini International Airport, Ezeiza (EZE) - Recoleta Hotel or reverse"                                      | 2
+"Name"                                                                                                                    | 2
+"Noi Casa Atacama to Activity or reverse"                                                                                 | 2
+"Orongo - Explora Rapa Nui Hotel"                                                                                         | 2
+"Pampa Linda"                                                                                                             | 2
+"Papa Vaka"                                                                                                               | 2
+"Patagonia Camp to Australis Cruis Port (PUQ) or reverse"                                                                 | 2
+"Patagonia Camp to Estancia Cerro Guido or reverse"                                                                       | 2
+"Patagonia Camp to Grey Park Ranger Station or reverse"                                                                   | 2
+"Patagonia Camp to Lake Grey or reverse"                                                                                  | 2
+"Patagonia Camp to Las Torres trailhead or reverse"                                                                       | 2
+"Patagonia Camp to Pingo River or reverse"                                                                                | 2
+"Patagonia Camp to Pudeto Dock or reverse"                                                                                | 2
+"Patagonia Camp to Puerto Natales Airport (PNT) or reverse"                                                               | 2
+"Patagonia National Park (Douglas Tompkins Museum) to Cochcrane or reverse"                                               | 2
+"Perito Moreno"                                                                                                           | 2
+"Perito Moreno to El Calafate"                                                                                            | 2
+"Perito Moreno to El Chaltén"                                                                                             | 2
+"Petrohue Falls"                                                                                                          | 2
+"Presidente Carlos Ibáñez del Campo International Airport PUQ - Punta Arenas Bus Station or reverse"                      | 2
+"Presidente Carlos Ibáñez del Campo International Airport PUQ - Punta Arenas Hotel or reverse"                            | 2
+"Presidente Carlos Ibáñez del Campo International Airport PUQ - Punta Arenas Port or reverse"                             | 2
+"Pucon to Huerquehue National Park or reverse"                                                                            | 2
+"Pucon to Parque Futangue (Vira Vira) or reverse"                                                                         | 2
+"Pucon to Parque Futangue or reverse"                                                                                     | 2
+"Pucon to Villarica or reverse"                                                                                           | 2
+"Pucón Hotel to Activity or reverse"                                                                                      | 2
+"Pudeto dock"                                                                                                             | 2
+"Puerto Iguazu (IGR) to Activity or reverse"                                                                              | 2
+"Puerto Iguazú (IGR) or Foz de Iguaçu (IGU) Airports to Awasi Iguazú Hotel or reverse"                                    | 2
+"Puerto Iguazú Hotel - Bird Park - Puerto Iguazú Hotel (excluding Das Cat)"                                               | 2
+"Puerto Iguazú Hotel - Restaurant to Puerto Iguazú Hotel (excluding Das Cat)"                                             | 2
+"Puerto Madryn Airport (PMY)"                                                                                             | 2
+"Puerto Madryn Airport (PMY) to Puerto Madryn or reverse"                                                                 | 2
+"Puerto Madryn Airport (PMY) to Puerto Piramides or reverse"                                                              | 2
+"Puerto Madryn to Activity or reverse"                                                                                    | 2
+"Puerto Montt Airport (PMC) to Barraco Lodge (Tagua Tagua Park) or reverse"                                               | 2
+"Puerto Montt Airport (PMC) to Chiloé Island or reverse"                                                                  | 2
+"Puerto Montt Airport (PMC) to Petrohue or reverse"                                                                       | 2
+"Puerto Montt Airport (PMC) to Puerto Varas or reverse"                                                                   | 2
+"Puerto Montt Airport (PMC) to Refugia Chiloe or reverse"                                                                 | 2
+"Puerto Montt Airport (PMC) to Skorpios Pier or reverse"                                                                  | 2
+"Puerto Montt to Castro (Chiloe) or reverse"                                                                              | 2
+"Puerto Montt to Puerto Varas or reverse"                                                                                 | 2
+"Puerto Natales Airport (PNT) to Explora Torres del Paine (or reverse)"                                                   | 2
+"Puerto Natales Airport (PNT) to Hotel Las Torres or reverse"                                                             | 2
+"Puerto Natales Airport (PNT) to Hotel Rio Serrano or reverse"                                                            | 2
+"Puerto Natales Airport (PNT) to Puerto Natales"                                                                          | 2
+"Puerto Natales Bus Terminal to Puerto Natales"                                                                           | 2
+"Puerto Natales to Awasi Patagonia or reverse"                                                                            | 2
+"Puerto Natales to Explora Patagonia (or reverse)"                                                                        | 2
+"Puerto Natales to Explora Torres del Paine (or reverse)"                                                                 | 2
+"Puerto Natales to Punta Arenas (or reverse)"                                                                             | 2
+"Puerto Natales to Serrano Village/Administration direct Y-290 (or reverse)"                                              | 2
+"Puerto Natales to Skorpios Pier or reverse"                                                                              | 2
+"Puerto Natales to Torres del Paine (Amarga or Pudeto)"                                                                   | 2
+"Puerto Pirámides to Activity or reverse"                                                                                 | 2
+"Puerto Pirámides to Trelew Airport (REL) or reverse"                                                                     | 2
+"Puerto Tranquillo to Mallin Colorado/Pared Sur/Cruce Maiten"                                                             | 2
+"Puerto Tranquilo to Bahía Exploradores or reverse"                                                                       | 2
+"Puerto Tranquilo to Lake Bertrand or reverse"                                                                            | 2
+"Puerto Varas to Activity or reverse"                                                                                     | 2
+"Puerto Varas to Barraco Lodge (Tagua Tagua Park) or reverse"                                                             | 2
+"Puerto Varas to Chiloe or reverse"                                                                                       | 2
+"Puerto Varas to Ensenada or reverse"                                                                                     | 2
+"Puerto Varas to Frutillar or reverse"                                                                                    | 2
+"Puerto Varas to Lake Llanquihue or reverse"                                                                              | 2
+"Puerto Varas to Puerto Varas Aerodrome (for Chaiten flight) or reverse"                                                  | 2
+"Puna Pao"                                                                                                                | 2
+"Puna Pau quarry"                                                                                                         | 2
+"Punta Arenas Airport (PUQ) to Cerro Guido or reverse"                                                                    | 2
+"Punta Arenas Airport (PUQ) to Explora Torres del Paine (or reverse)"                                                     | 2
+"Punta Arenas Airport (PUQ) to Hotel Las Torres or reverse"                                                               | 2
+"Punta Arenas Airport (PUQ) to Hotel Rio Serrano or reverse"                                                              | 2
+"Punta Arenas Australis"                                                                                                  | 2
+"Punta Arenas Hotel - Australis pier or reverse"                                                                          | 2
+"Punta Arenas Hotel - Puerto Natales via Cerro Negro Ranch or reverse"                                                    | 2
+"Punta Arenas Hotel - Puerto Natales, non stop or reverse"                                                                | 2
+"Punta Arenas Hotel - Punta Arenas downtown/other hotel or reverse"                                                       | 2
+"Punta Arenas Hotel - Skorpios pier or reverse"                                                                           | 2
+"Punta Arenas Hotel - Torres del Paine via Cerro Negro Ranch or reverse"                                                  | 2
+"Punta Arenas Hotel - Torres del Paine, non stop or reverse"                                                              | 2
+"Punta Arenas to Australis Cruise Port or reverse"                                                                        | 2
+"Punta Arenas to Punta Arenas Bus Terminal or reverse"                                                                    | 2
+"Punta Arenas to to Refugio Central/EcoCamp/Las Torres via Cerro Castillo (or reverse)"                                   | 2
+"Punta Arenas to Ushuaia (via Rio Grande) or reverse"                                                                     | 2
+"Rano Kau volcano"                                                                                                        | 2
+"Rapa Nui Museum"                                                                                                         | 2
+"Refugia Chiloé to Activity or reverse"                                                                                   | 2
+"Retiro bus station"                                                                                                      | 2
+"Retiro bus station - Recoleta or reverse"                                                                                | 2
+"Río Hermoso Hotel"                                                                                                       | 2
+"Río Hermoso Lodge to Activity or reverse"                                                                                | 2
+"Río Hermoso Lodge to Bariloche or reverse"                                                                               | 2
+"Saciel Volcano"                                                                                                          | 2
+"San Martin to Nahuel Huapi National Park"                                                                                | 2
+"Santiago Bus station - Santiago hotel or reverse"                                                                        | 2
+"Santiago City Central Hotel, via Santiago Restaurant"                                                                    | 2
+"Santiago Hotel to Activity or reverse"                                                                                   | 2
+"Serrano Camp to Activity or reverse"                                                                                     | 2
+"Serrano Camp to Pudeto or reverse"                                                                                       | 2
+"Serrano Camp to Starting point for Hike to Las Torres Lookout or reverse"                                                | 2
+"Skorpios Cruise Port (PNT) to Explora Torres del Paine (or reverse)"                                                     | 2
+"Sol de la Mañana"                                                                                                        | 2
+"Temuco Airport (ZCO) to Parque Futangue (Vira Vira) or reverse"                                                          | 2
+"Temuco Airport (ZCO) to Parque Futangue or reverse"                                                                      | 2
+"Temuco Airport (ZCO) to Pucon or reverse"                                                                                | 2
+"Terevaka Volcano"                                                                                                        | 2
+"Terevaka Volcano - Ahu Tahai"                                                                                            | 2
+"Tierra Atacama"                                                                                                          | 2
+"Tierra Atacama to Activity or reverse"                                                                                   | 2
+"Tierra Del Fuego National Park"                                                                                          | 2
+"Tierra Hotel/Estancia Lazo"                                                                                              | 2
+"Tierra Patagonia to Activity or reverse"                                                                                 | 2
+"Tongariki - Explora Rapa Nui Hotel"                                                                                      | 2
+"Turquiri Lagoon"                                                                                                         | 2
+"Ushuaia Hotel - Port or reverse"                                                                                         | 2
+"Ushuaia Port"                                                                                                            | 2
+"Vinapu"                                                                                                                  | 2
+"Vinapu - Rano Kau crater"                                                                                                | 2
+"Vira Vira to Activity or reverse"                                                                                        | 2
+"Vistalba Winery"                                                                                                         | 2
+"Yerbas Buenas"                                                                                                           | 2
+"Aeroparque Internacional Jorge Newbery (AEP) - City Hotel or reverse"                                                    | 1
+"Aeroparque Internacional Jorge Newbery (AEP) - Ministro Pistarini International Airport, Ezeiza (EZE) or reverse"        | 1
+"Aeroparque Internacional Jorge Newbery (AEP) - Port"                                                                     | 1
+"Aeroparque Internacional Jorge Newbery (AEP) - Port or reverse"                                                          | 1
+"Aeroparque Internacional Jorge Newbery (AEP) - San Antonio de Areco (Estancia La Bamba de Areco) or reverse"             | 1
+"Aeroparque Internacional Jorge Newbery (AEP) - San Antonio de Areco (Estancia La Bandada) or reverse"                    | 1
+"Aguas Arriba"                                                                                                            | 1
+"Aguas Calientes and Tuyajto"                                                                                             | 1
+"Ahu Akivi - Hanga Poukura"                                                                                               | 1
+"Ahu One Makihi - Ahu Tongariki"                                                                                          | 1
+"Ahu Tahai - Hotel Taha Tai"                                                                                              | 1
+"Ahu Tahira"                                                                                                              | 1
+"Ahu Te Pito Kura - Anakena Beach"                                                                                        | 1
+"Ahu Tongariki - Ahu Te Pito Kura"                                                                                        | 1
+"Ahu Tongariki - Explora Rapa Hui Hotel"                                                                                  | 1
+"Ahu Vinapu - Hotel Taha Tai"                                                                                             | 1
+"Akahanga"                                                                                                                | 1
+"Akahanga - Explora Rapa Nui Hotel"                                                                                       | 1
+"ALMA Observatory"                                                                                                        | 1
+"Anakena - Explora Rapa Hui Hotel or reverse"                                                                             | 1
+"Anakena Beach - Hotel Taha Tai"                                                                                          | 1
+"Arturo Merino Benitez International Airport SCL -  Valpariso via Casa Martin winery tour"                                | 1
+"Arturo Merino Benitez International Airport SCL - San Antonio Port or reverse"                                           | 1
+"Arturo Merino Benitez International Airport SCL to Valpariso with stop for tour at Matetic"                              | 1
+"Australis Cruise Port (PUQ) to Refugio Central/EcoCamp/Las Torres via Cerro Castillo (or reverse)"                       | 1
+"Australis Pier"                                                                                                          | 1
+"AWA"                                                                                                                     | 1
+"Awasi Atacama to Aguas Calientes and Tuyajto Salt Flats or reverse"                                                      | 1
+"Awasi Atacama to Puritama Hot Springs or reverse"                                                                        | 1
+"Awasi Atacama to Saciel Volcano or reverse"                                                                              | 1
+"Awasi Atacama to Yerbas Buenas or reverse"                                                                               | 1
+"Bahia Exploradores"                                                                                                      | 1
+"Bahia Mansa"                                                                                                             | 1
+"Bahía Bustamante"                                                                                                        | 1
+"Bahía Exploradores"                                                                                                      | 1
+"Baker Nef confluence"                                                                                                    | 1
+"Barraco Lodge to Cerro Arcoíris or reverse"                                                                              | 1
+"Barraco Lodge to Río Frio or reverse"                                                                                    | 1
+"Buenos Aires City Centre Hotel"                                                                                          | 1
+"Cactus Valley"                                                                                                           | 1
+"Calama Bus station"                                                                                                      | 1
+"Calama, Downtown"                                                                                                        | 1
+"Caleta Gonzalo to Puerto Varas"                                                                                          | 1
+"Campamento Japones"                                                                                                      | 1
+"Castro Mocopuli Airport (MHC)"                                                                                           | 1
+"Cataratas/Puerto Iguazú Hotel"                                                                                           | 1
+"Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Airport (IGR)"                                                            | 1
+"Catedral Ski Center"                                                                                                     | 1
+"Cejar Lagoon"                                                                                                            | 1
+"Cerro Arcoíris"                                                                                                          | 1
+"Cerro Castillo to Cerro Castillo National Park (trailheads)"                                                             | 1
+"Chaitén Airport (WCH)"                                                                                                   | 1
+"Chaitén Volcano to Chaiten"                                                                                              | 1
+"Chile Chico to Lake Jeinimeni"                                                                                           | 1
+"Chiloé Hotel"                                                                                                            | 1
+"Chiloé Island"                                                                                                           | 1
+"Chituca to Explora Uyuni Lodge"                                                                                          | 1
+"City Hotel -  Valpariso via Casa Martin winery tour"                                                                     | 1
+"City Hotel - San Antonio Port or reverse"                                                                                | 1
+"City Hotel to Valpariso with stop for tour at Matetic"                                                                   | 1
+"Colorada Lagoon - Ramaditas Mountain Lodge"                                                                              | 1
+"Coyhaique to Explora Patagonia National Park"                                                                            | 1
+"CQIE"                                                                                                                    | 1
+"Devils Canyon"                                                                                                           | 1
+"Dinosaur Valley"                                                                                                         | 1
+"Domeyko Range"                                                                                                           | 1
+"Downtown Mendoza"                                                                                                        | 1
+"EcoCamp Patagonia to Estancia Lazo or reverse"                                                                           | 1
+"EcoCamp Patagonia to Lago Sarmiento Gate or reverse"                                                                     | 1
+"EcoCamp Patagonia to Salto Grande or reverse"                                                                            | 1
+"Edita Lagoon"                                                                                                            | 1
+"El Amarillo"                                                                                                             | 1
+"El Bote Bay"                                                                                                             | 1
+"El Calafate Bus Terminal"                                                                                                | 1
+"El Calafate to Refugio Central/EcoCamp/Las Torres via Cerro Castillo (or reverse)"                                       | 1
+"El Chaltén Bus Terminal"                                                                                                 | 1
+"El Chaltén to Casa Madsen or reverse"                                                                                    | 1
+"El Condor Viewpoint"                                                                                                     | 1
+"El Condor Viewpoint to EcoCamp Patagonia or reverse"                                                                     | 1
+"El Loa Airport CJC"                                                                                                      | 1
+"Estancia 25 de Mayo"                                                                                                     | 1
+"Estancia Cerro Guido to Puerto Natales (ALL) or reverse"                                                                 | 1
+"Estancia Doe Elianas"                                                                                                    | 1
+"Estancia Puerto Conselo"                                                                                                 | 1
+"Estancia San Luis"                                                                                                       | 1
+"Estancia Vega Castillo"                                                                                                  | 1
+"Explora Atacama - Sol de la Mañana"                                                                                      | 1
+"Explora Atacama to Licancabur Volcano"                                                                                   | 1
+"Explora Atacama to Machuca"                                                                                              | 1
+"Explora Atacama to Puritama hot springs or reverse"                                                                      | 1
+"Explora Atacama to Sairecabur Volcano"                                                                                   | 1
+"Explora Easter Island"                                                                                                   | 1
+"Explora Hotel"                                                                                                           | 1
+"Explora Rapa Hui Hotel - Hanga Kioe or reverse"                                                                          | 1
+"Explora Rapa Hui Hotel - Papa Vaka"                                                                                      | 1
+"Explora Rapa Hui Hotel - Puna Pao"                                                                                       | 1
+"Explora Rapa Nui"                                                                                                        | 1
+"Explora Rapa Nui Hotel - Ahu One Makihi or reverse"                                                                      | 1
+"Explora Rapa Nui Hotel - Rui Hill"                                                                                       | 1
+"Explora Uyuni Lodge to Calama Airport (CJC)"                                                                             | 1
+"Explora Uyuni Lodge to Uyuni Airport (UYU)"                                                                              | 1
+"Exploradores Glacier"                                                                                                    | 1
+"French Valley Trailhead"                                                                                                 | 1
+"Futangue Hotel"                                                                                                          | 1
+"Grey Lookout"                                                                                                            | 1
+"Grey Park Ranger Station"                                                                                                | 1
+"Hanga Kioe"                                                                                                              | 1
+"Hanga Kioe - Rapa Nui Museum"                                                                                            | 1
+"Hanga Kioe Bay"                                                                                                          | 1
+"Hanga Kioe Bay - Explora Rapa Nui Hotel"                                                                                 | 1
+"Hanga Poukura - Hanga Te'e"                                                                                              | 1
+"Hanga Poukura - Puna Pau quarry"                                                                                         | 1
+"Hanga Te'e - Explora Rapa Hui Hotel"                                                                                     | 1
+"Hanga Te'e - Rano Raraku"                                                                                                | 1
+"Hike to Las Torres Lookout"                                                                                              | 1
+"Hnaga Kioe"                                                                                                              | 1
+"Hotel (City Center) - Lake Esmeralda or reverse"                                                                         | 1
+"Hotel (City Center) - TDF National Park or reverse"                                                                      | 1
+"Hotel - restaurant round trip (inc wait time)  or reverse"                                                               | 1
+"Hotel Das Cataratas, via bird park"                                                                                      | 1
+"Hotel Grey"                                                                                                              | 1
+"Hotel Río Serrano"                                                                                                       | 1
+"Hotel Taha Tai -  Hanga Te'e"                                                                                            | 1
+"Hotel Taha Tai - Ahu Akivi"                                                                                              | 1
+"Hotel Taha Tai - Rano Kau volcano"                                                                                       | 1
+"Huerquehue National Park"                                                                                                | 1
+"Jeinimeni National Park"                                                                                                 | 1
+"Lago Grey"                                                                                                               | 1
+"Lago Sarmiento Gate"                                                                                                     | 1
+"Laguna Amarga to Serrano Camp or reverse"                                                                                | 1
+"Laguna Condor"                                                                                                           | 1
+"Laguna Gaviotas"                                                                                                         | 1
+"Lake Jeinimeni"                                                                                                          | 1
+"Lake Llanquihue"                                                                                                         | 1
+"Lake Mascardi"                                                                                                           | 1
+"Lake Pehoe Dock"                                                                                                         | 1
+"Las Torres trailhead"                                                                                                    | 1
+"Leones River"                                                                                                            | 1
+"Licancabur Volcano to Explora Atacama"                                                                                   | 1
+"Loma Guanaco"                                                                                                            | 1
+"Los Glaciares"                                                                                                           | 1
+"Los Huemules Reserve/Explora Chaltén"                                                                                    | 1
+"Los Ríos"                                                                                                                | 1
+"Láscar Volcano"                                                                                                          | 1
+"Machuca to Explora Atacama"                                                                                              | 1
+"Mahatua"                                                                                                                 | 1
+"Mallin Colorado Lodge"                                                                                                   | 1
+"Mallin Colorado to Balmaceda Airport (BBA)"                                                                              | 1
+"Mallin Colorado/Pared Sur/Cruce Maiten"                                                                                  | 1
+"Mataveri International Airport (IPC)"                                                                                    | 1
+"Mataveri International Airport (IPC) - Explora Hotel or reverse"                                                         | 1
+"Mataveri International Airport (IPC) - Explora Rapa Hui Hotel or reverse"                                                | 1
+"Mendoza Downtown"                                                                                                        | 1
+"Ministro Pistarini International Airport, Ezeiza (EZE) - Aeroparque Internacional Jorge Newbery (AEP) or reverse"        | 1
+"Ministro Pistarini International Airport, Ezeiza (EZE) - San Antonio de Areco (Estancia La Bamba de Areco) or reverse"   | 1
+"Ministro Pistarini International Airport, Ezeiza (EZE) - San Antonio de Areco (Estancia La Bandada) or reverse"          | 1
+"Nahuel Huapi National Park"                                                                                              | 1
+"name"                                                                                                                    | 1
+"Navarino Island"                                                                                                         | 1
+"Navimag Cruise Port (PNT)"                                                                                               | 1
+"Nibepo Aike"                                                                                                             | 1
+"Noi Casa Atacama"                                                                                                        | 1
+"Oco's Place"                                                                                                             | 1
+"Oco's Place to Barraco Lodge or reverse"                                                                                 | 1
+"Omora Ethnobotanical Park"                                                                                               | 1
+"Orongo - Ahu Vinapu"                                                                                                     | 1
+"Paine River"                                                                                                             | 1
+"Palermo - San Antonio de Areco (Estancia La Bamba de Areco) or reverse"                                                  | 1
+"Palermo - San Antonio de Areco (Estancia La Bandada) or reverse"                                                         | 1
+"Palermo - San Antonio de Areco or reverse"                                                                               | 1
+"Palermo Hotel - Tigre Delta Tour (5hr)"                                                                                  | 1
+"Palermo Hotel - Tigre Delta Tour (7hr)"                                                                                  | 1
+"Papa Vaka - Anakena"                                                                                                     | 1
+"Patagonia Camp to El Bote Bay or reverse"                                                                                | 1
+"Patagonia Camp to Grey Lookout or reverse"                                                                               | 1
+"Patagonia National Park"                                                                                                 | 1
+"Patagonia NP"                                                                                                            | 1
+"Pehoe/Serrano Village/Administration"                                                                                    | 1
+"Peuma Hue"                                                                                                               | 1
+"Pingo River"                                                                                                             | 1
+"Pingo Valley"                                                                                                            | 1
+"Port"                                                                                                                    | 1
+"Pucon Hotel"                                                                                                             | 1
+"Puerto Aysen"                                                                                                            | 1
+"Puerto Iguazu (IGR)"                                                                                                     | 1
+"Puerto Iguazú (IGR) or Foz de Iguaçu (IGU) Airports"                                                                     | 1
+"Puerto Iguazú Hotel ,via restaurant"                                                                                     | 1
+"Puerto Iguazú Hotel, via bird park"                                                                                      | 1
+"Puerto Ingenerio Ibanez"                                                                                                 | 1
+"Puerto Montt (PMC)"                                                                                                      | 1
+"Puerto Montt Airport (PMC) to Parque Futangue (Vira Vira) or reverse"                                                    | 1
+"Puerto Natales Airport (PNT) to Refugio Central/EcoCamp/Las Torres via Cerro Castillo (or reverse)"                      | 1
+"Puerto Natales Bus Terminal"                                                                                             | 1
+"Puerto Natales Hotel"                                                                                                    | 1
+"Puerto Natales to Pudeto or reverse"                                                                                     | 1
+"Puerto Natales to Torres del Paine (Pudeto / Grey / Las Torres) or reverse"                                              | 1
+"Puerto Natales, Via Cerro Negro Ranch"                                                                                   | 1
+"Puerto Navarino"                                                                                                         | 1
+"Puerto Panuelo"                                                                                                          | 1
+"Puerto Pañuelo"                                                                                                          | 1
+"Puerto Varas (includes ferry from Leptepu to Hornopiren)"                                                                | 1
+"Puerto Varas Aerodrome"                                                                                                  | 1
+"Puerto Varas to Bariloche"                                                                                               | 1
+"Pumalín Douglas Tompkins National Park"                                                                                  | 1
+"Puna Pao - Ahu Huri A Urenga"                                                                                            | 1
+"Puna Pau quarry - Ahu Tahai"                                                                                             | 1
+"Punta Arenas Airport (PUQ) to Punta Arenas or reverse"                                                                   | 1
+"Punta Arenas Airport (PUQ) to Refugio Central/EcoCamp/Las Torres via Cerro Castillo (or reverse)"                        | 1
+"Punta Arenas Bus Station"                                                                                                | 1
+"Punta Arenas Bus Terminal"                                                                                               | 1
+"Punta Arenas Port"                                                                                                       | 1
+"Punta Bandera"                                                                                                           | 1
+"Ramaditas Mountain Lodge - Turquiri Lagoon"                                                                              | 1
+"Rano Kau crater"                                                                                                         | 1
+"Rano Kau volcano - Orongo"                                                                                               | 1
+"Rano Raraku - Ahu Tongariki"                                                                                             | 1
+"Rano Raraku - Explora Rapa Nui Hotel or reverse"                                                                         | 1
+"Rapa Nui Museum - Explora Rapa Nui Hotel"                                                                                | 1
+"Recoleta - San Antonio de Areco (Estancia La Bamba de Areco) or reverse"                                                 | 1
+"Recoleta - San Antonio de Areco (Estancia La Bandada) or reverse"                                                        | 1
+"Recoleta - San Antonio de Areco or reverse"                                                                              | 1
+"Recoleta Hotel - Palermo Hotel or reverse"                                                                               | 1
+"Recoleta Hotel - Tigre Delta Tour (5hr)"                                                                                 | 1
+"Recoleta Hotel - Tigre Delta Tour (7hr)"                                                                                 | 1
+"Rio Electrico"                                                                                                           | 1
+"Rio Frio"                                                                                                                | 1
+"Rui Hill"                                                                                                                | 1
+"Rupestre"                                                                                                                | 1
+"Saciel Volcano to Awasi Atacama"                                                                                         | 1
+"Sairecabur Volcano to Explora Atacama"                                                                                   | 1
+"Salt Lake and Toconao"                                                                                                   | 1
+"San Martin"                                                                                                              | 1
+"San Pedro de Atacam"                                                                                                     | 1
+"San Pedro Hotel to ALMA Observatory or reverse"                                                                          | 1
+"San Pedro Hotel to Moon Valley or reverse"                                                                               | 1
+"San Pedro Hotel to San Pedro Salt Mountains (Cordillera de la Sal)"                                                      | 1
+"San Pedro Hotel to the Atacama Salt Lake and Toconao or reverse"                                                         | 1
+"San Pedro Hotel to Three Lagoons (Miscanti, Meñiques, Piedras Rocas)"                                                    | 1
+"San Pedro Salt Mountains"                                                                                                | 1
+"Serrano Camp to French Valley trailhead or reverse"                                                                      | 1
+"Serrano Camp to Trailhead (Pingo Valley) or reverse"                                                                     | 1
+"Serrano Village/Administration (Y-290)"                                                                                  | 1
+"Skorpios Cruise Port (PNT) to Refugio Central/EcoCamp/Las Torres via Cerro Castillo (or reverse)"                        | 1
+"Skorpios Pier"                                                                                                           | 1
+"Skorpios Pier Puerto Montt"                                                                                              | 1
+"Skorpios Pier Puerto Natales"                                                                                            | 1
+"Sol de la Manana"                                                                                                        | 1
+"Sol de la Mañana - Colorada Lagoon"                                                                                      | 1
+"Sol de la Mañana to Explora Atacama"                                                                                     | 1
+"Tagua Tagua National Park"                                                                                               | 1
+"Temuco Airport"                                                                                                          | 1
+"Termas Lago Rupanco"                                                                                                     | 1
+"Three Lagoons"                                                                                                           | 1
+"Toco Hill"                                                                                                               | 1
+"Tongariki"                                                                                                               | 1
+"Torres Del Paine"                                                                                                        | 1
+"Torres Del Paine, Via Estancia Cerro Negro"                                                                              | 1
+"Trancura River"                                                                                                          | 1
+"Trelew Airport (REL)"                                                                                                    | 1
+"Turquiri Lagoon - Chituca"                                                                                               | 1
+"Ushuaia Hotel to Ushuaia Airport (USH)"                                                                                  | 1
+"Ushuaia Malvinas Argentinas (USH) - Hotel (City Center)  or reverse"                                                     | 1
+"Ushuaia Malvinas Argentinas (USH) - Port"                                                                                | 1
+"Ushuaia Malvinas Argentinas (USH) - Port or reverse"                                                                     | 1
+"Uyuni Airport (UYU)"                                                                                                     | 1
+"Vicente Pérez Rosales National Park"                                                                                     | 1
+"Villarica"                                                                                                               | 1
+"Vira Vira"                                                                                                               | 1
+"Weber Bridge to EcoCamp Patagonia or reverse"                                                                            | 1
+"Weber Bridge to Serrano Camp or reverse"                                                                                 | 1
+"Yates Volcano"                                                                                                           | 1
+
+TYPE: transfer
+--------------------------------------------------------------------------------
+Missing Component                                                              | Occurrences
+---------------------------------------------------------------------------------------------
+"Activity to Explora Rapa Nui  Explora"                                        | 24
+"Puerto Varas to Activity  Birds Chile"                                        | 24
+"Activity to Puerto Varas Birds Chile"                                         | 23
+"Explora Rapa Nui to Activity  Explora"                                        | 23
+"Activity to Puerto Varas Hotel Southbound"                                    | 22
+"Puerto Varas Hotel to Activity Southbound"                                    | 22
+"Activity to Ushuaia Hotel  H&T"                                               | 20
+"Activity to Ushuaia Hotel  Patagon Mountain Agency"                           | 20
+"Activity to Ushuia Hotel  Tierra Turismo"                                     | 20
+"Ushuaia Hotel to Activity H&T"                                                | 20
+"Ushuaia Hotel to Activity Patagon Mountain Agency"                            | 20
+"Ushuaia Hotel to Activity Tierra Turismo"                                     | 20
+"Awasi Patagonia to Activity Awasi  Guided"                                    | 19
+"Activity to Awasi Patagonia  Awasi  Guided"                                   | 18
+"Activity to El Calafate Hotel H&T Argentina Driver Only"                      | 18
+"Activity to El Calafate Hotel Serac"                                          | 18
+"Activity to El Calafate Hotel Walk Patagonia Driver Only"                     | 18
+"El Calafate Hotel to Activity H&T Argentina Driver Only"                      | 18
+"El Calafate Hotel to Activity Serac"                                          | 18
+"Activity to Explora Patagonia National Park Explora  Guided"                  | 17
+"Activity to Futangue Hotel  Southbound"                                       | 17
+"El Chaltén Hotel to Activity Serac"                                           | 17
+"Explora Patagonia National Park to Activity Explora  Guided"                  | 17
+"Futangue Hotel to Activity  Southbound"                                       | 17
+"Activity to El Chaltén Hotel  H&T"                                            | 16
+"Activity to El Chaltén Hotel  Serac"                                          | 16
+"Activity to El Chaltén Hotel  Walk Patagonia"                                 | 16
+"El Calafate Hotel to Activity Walk Patagonia Driver Only"                     | 16
+"El Chaltén Hotel to Activity  H&T Driver Only"                                | 16
+"El Chaltén Hotel to Activity Walk Patagonia  Driver Only"                     | 16
+"Activity to Vira Vira  Southbound"                                            | 15
+"Vira Vira to Activity  Southbound"                                            | 15
+"Patagonia Camp to Activity Patagonia Camp  Driver Only"                       | 13
+"Serrano Camp to Activity  Chile Nativo"                                       | 13
+"Explora El Chaltén to Activity Explora  Guided"                               | 12
+"Activity to Explora El Chaltén Explora  Guided"                               | 11
+"Activity to Explora Torres del Paine Explora  Guided"                         | 11
+"Activity to Patagonia Camp Patagonia Camp  Driver Only"                       | 11
+"Activity to Punta Arenas Hotel  Cascada"                                      | 11
+"Activity to Punta Arenas Hotel  Chile Nativo"                                 | 11
+"Activity to Punta Arenas Hotel  Southbound"                                   | 11
+"Activity to Serrano Camp  Chile Nativo"                                       | 11
+"Activity to Tierra Atacama Tierra Guided"                                     | 11
+"Explora Torres del Paine to Activity Explora  Guided"                         | 11
+"Punta Arenas Hotel to Activity  Cascada"                                      | 11
+"Punta Arenas Hotel to Activity  Chile Nativo"                                 | 11
+"Punta Arenas Hotel to Activity  Southbound"                                   | 11
+"Tierra Patagonia to Activity Tierra"                                          | 11
+"Activity to Puerto Natales Hotel  Cascada"                                    | 10
+"Activity to Puerto Natales Hotel  Chile Nativo"                               | 10
+"Activity to Puerto Natales Hotel  Southbound"                                 | 10
+"Activity to Refugia Chiloe  Refugia Chiloe"                                   | 10
+"Hotel Remota to Activity Chile Nativo  Driver Only"                           | 10
+"Puerto Natales Hotel to Activity  Cascada"                                    | 10
+"Puerto Natales Hotel to Activity  Chile Nativo"                               | 10
+"Puerto Natales Hotel to Activity  Southbound"                                 | 10
+"Refugia Chiloé to Activity  Refugia Chiloe"                                   | 10
+"Activity to Buenos Aires Hotel H&T Argentina Guided"                          | 9
+"Activity to Santiago Hotel Southbound Guided"                                 | 9
+"Activity to Tierra Patagonia  Tierra"                                         | 9
+"Buenos Aires Hotel to Activity H&T Argentina Guided"                          | 9
+"Hotel Río Serrano to Activity  Hotel Rio Serrano"                             | 9
+"Tierra Atacama to Activity  Tierra Guided"                                    | 9
+"Activity to Hotel Remota  Chile Nativo"                                       | 8
+"Activity to Hotel Rio Serrano  Hotel Rio Serrano"                             | 7
+"Activity to Caleta Gonzalo Birds Chile"                                       | 6
+"Awasi Atacama to Cordillera de la Sal Awasi Guided"                           | 6
+"Cordillera de la Sal to Awasi Atacama Awasi Guided"                           | 6
+"Santiago Hotel to Activity Southbound Guided"                                 | 6
+"Activity to Bariloche Andes Track"                                            | 5
+"Bariloche to Activity Andes Track"                                            | 5
+"Explora Atacama to Activity Explora  Guided"                                  | 5
+"Activity to Noi Casa Atacama Southbound Guided"                               | 4
+"Activity to Pucon Hotel  Birds Chile"                                         | 4
+"Activity to Río Hermoso Lodge Andes Track"                                    | 4
+"Estancia Cerro Guido to Activity  Patagonia Camp"                             | 4
+"Noi Casa Atacama to Activity  Southbound Guided"                              | 4
+"Pucon Hotel to Activity  Birds Chile"                                         | 4
+"Río Hermoso Lodge to Activity  Andes Track"                                   | 4
+"Activity to Awasi Iguazu  Awasi"                                              | 3
+"Activity to Chiloé Hotel Birds Chile"                                         | 3
+"Activity to Estancia Cerro Guido  Patagonia Camp"                             | 3
+"Activity to Explora Atacama Explora  Guided"                                  | 3
+"Awasi Iguazu to Activity Awasi"                                               | 3
+"Caleta Gonzalo to Activity Birds Chile"                                       | 3
+"Hotel Las Torres to Activity  Hotel Las Torres"                               | 3
+"La Junta to Barraco Lodge Barraco Lodge  Guided"                              | 3
+"Activity to Castro  Birds Chile"                                              | 2
+"Activity to Hotel Las Torres  Hotel Las Torres"                               | 2
+"Awasi Atacama to Dinosaur Valley Awasi Guided"                                | 2
+"Awasi Patagonia to Loma Guanaco Awasi Guided"                                 | 2
+"Castro to Activity  Birds Chile"                                              | 2
+"Chaiten to El Amarillo (Pumalin Park)  Birds Chile"                           | 2
+"Chiloé Hotel to Activity Birds Chile"                                         | 2
+"Dinosaur Valley to Awasi Atacama Awasi Guided"                                | 2
+"EcoCamp Patagonia to Activity Cascada Guided"                                 | 2
+"El Calafate Hotel to Activity (Walk Pat)"                                     | 2
+"El Condor Viewpoint to EcoCamp Patagonia Cascada Guided"                      | 2
+"Errante Ecolodge to Activity Errante Ecolodge Driver Only"                    | 2
+"Estancia Cerro Guido to Patagonia Camp Patagonia Camp  Driver Only"           | 2
+"Estancia Puerto Conselo to Hotel Remota Chile Nativo  Driver Only"            | 2
+"Explora El Chaltén to Lago del Desierto Explora Guided"                       | 2
+"Explora El Chaltén to Laguna Condor Explora  Guided"                          | 2
+"Hotel Remota to Estancia Puerto Conselo Chile Nativo  Driver Only"            | 2
+"Hotel Remota to Puerto Natales Chile Nativo  Driver Only"                     | 2
+"Lago del Desierto to Explora El Chaltén Explora Guided"                       | 2
+"Laguna Azul to EcoCamp Patagonia Cascada Guided"                              | 2
+"Laguna Condor to Explora El Chaltén Explora  Guided"                          | 2
+"Loma Guanaco to Awasi Patagonia Awasi Guided"                                 | 2
+"Mallin Colorado to Puerto Guadal Aysen Journeys  Driver Only"                 | 2
+"Patagonia Camp to Estancia Cerro Guido Patagonia Camp  Driver Only"           | 2
+"Puerto Guadal to Mallin Colorado Aysen Journeys  Driver Only"                 | 2
+"Puerto Natales to Hotel Remota Chile Nativo  Driver Only"                     | 2
+"Puerto Williams to Errante EcoLodge Errante Ecolodge Driver Only"             | 2
+"Puritama hot springs to Explora Atacama Explora  Guided"                      | 2
+"Activity to Aguas Arriba Lodge Aguas Arriba Lodge"                            | 1
+"Activity to Awasi Atacama Awasi Guided"                                       | 1
+"Activity to Cataratas/Puerto Iguazú Hotel H&T"                                | 1
+"Activity to EcoCamp  Cascada"                                                 | 1
+"Activity to El Mirador de Guadal Birds Chile  On request"                     | 1
+"Activity to Errante Ecolodge Errante Ecolodge Driver Only"                    | 1
+"Activity to Puerto Iguazu (IGR)  H&T"                                         | 1
+"Activity to Puerto Madryn  Causana Viajes"                                    | 1
+"Aguas Arriba Lodge to Activity Aguas Arriba Lodge"                            | 1
+"Awasi Atacama to Activity Awasi Guided"                                       | 1
+"Awasi Atacama to Cactus Valley  Awasi"                                        | 1
+"Awasi Atacama to Cejar Lagoon Awasi Guided"                                   | 1
+"Awasi Atacama to El Tatio Geysers Awasi Guided"                               | 1
+"Awasi Atacama to Saciel Volcano Awasi Guided"                                 | 1
+"Awasi Atacama to Sairecabur Volcano Awasi Guided"                             | 1
+"Awasi Atacama to Toco Hill Awasi Guided"                                      | 1
+"Awasi Atacama to Yerbas Buenas  Awasi"                                        | 1
+"Awasi Patagonia to Estancia Lazo Awasi Guided"                                | 1
+"Awasi Patagonia to Estancia San Luis Awasi Guided"                            | 1
+"Bahia Exploradores to Mallin Colorado Aysen Journeys  Driver Only"            | 1
+"Bahia Mansa to Mallin Colorado Aysen Journeys  Driver Only"                   | 1
+"Baker Nef confluence to Mallin Colorado Aysen Journeys  Driver Only"          | 1
+"Barraco Lodge to Laguna Gaviotas Barraco Lodge  Guided"                       | 1
+"Barraco Lodge to Río Frio Barraco Lodge  Guided"                              | 1
+"Barraco Lodge to Yates Volcano Barraco Lodge  Guided"                         | 1
+"Beagle Channel to Errante Ecolodge Errante Ecolodge Driver Only"              | 1
+"Caleta Gonzalo Lodge to Yelcho Glacier or reverse Birds Chile"                | 1
+"Casa Madsen to Explora El Chaltén Explora Guided"                             | 1
+"Cataratas/Puerto Iguazú Hotel to Activity H&T"                                | 1
+"Cejar Lagoon to Awasi Atacama Awasi Guided"                                   | 1
+"Cerro Arcoíris to Barraco Lodge Barraco Lodge  Guided"                        | 1
+"EcoCamp Patagonia to Estancia Dos Elianas Cascada Driver Only"                | 1
+"EcoCamp Patagonia to Lago Sarmiento Gate Cascada Guided"                      | 1
+"EcoCamp Patagonia to Laguna Azul Cascada Guided"                              | 1
+"EcoCamp Patagonia to Lake Grey Cascada Guided"                                | 1
+"EcoCamp Patagonia to Salto Grande Cascada Guided"                             | 1
+"EcoCamp Patgonia to Estancia Vega Castillo Cascada Guided"                    | 1
+"Edita Lagoon to Explora Patagonia National Park Explora Guided"               | 1
+"El Chaltén Hotel to Activity H&T"                                             | 1
+"El Chaltén Hotel to Activity Walk Patagonia"                                  | 1
+"El Chaltén to Explora El Chaltén Walk Patagonia"                              | 1
+"El Chaltén to Los Huemules Walk Patagonia"                                    | 1
+"El Mirador de Guadal to Activity Birds Chile  On request"                     | 1
+"El Mirador de Guadal to Jeinimeni National Park Birds Chile  Guided"          | 1
+"El Mirador de Guadal to Leones River Valley Birds Chile  On request"          | 1
+"El Mirador de Guadal to Puerto Tranquilo Birds Chile  On request"             | 1
+"Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"              | 1
+"Errante EcoLodge to Omora Ethnobotanical Park Errante Ecolodge Driver Only"   | 1
+"Errante EcoLodge to Puerto Navarino Errante Ecolodge Driver Only"             | 1
+"Errante EcoLodge to Puerto Williams Errante Ecolodge Driver Only"             | 1
+"Estancia Dos Elianas to EcoCamp Patagonia Cascada Driver Only"                | 1
+"Estancia Lazo to Awasi Patagonia Awasi Guided"                                | 1
+"Estancia San Luis to Awasi Patagonia Awasi Guided"                            | 1
+"Estancia Vega Castillo to EcoCamp Patagonia Cascada Guided"                   | 1
+"Explora Atacama to Licancabur Volcano Explora  Guided"                        | 1
+"Explora Atacama to Láscar Volcano Explora  Guided"                            | 1
+"Explora Atacama to Machuca  Explora  Guided"                                  | 1
+"Explora Atacama to Sairecabur Volcano Explora  Guided"                        | 1
+"Explora Atacama to the Domeyko Range Explora  Guided"                         | 1
+"Explora El Chaltén to Casa Madsen Explora Guided"                             | 1
+"Explora Patagonia National Park to Edita Lagoon Explora Guided"               | 1
+"Explora Rapa Nui Hotel - Mahatua Explora Guided"                              | 1
+"Exploradores Glacier to Mallin Colorado Aysen Journeys  Driver Only"          | 1
+"Futaleufú River to Puyuhuapi Birds Chile"                                     | 1
+"Glacier Grey Viewpoint Hike"                                                  | 1
+"Hotel Remota to the Rupestre area Chile Nativo  Driver Only"                  | 1
+"Hotel Río Serrano to Lake Grey Hotel Rio Serrano  Driver Only"                | 1
+"Huerquehue National Park to Pucon  Birds Chile"                               | 1
+"Jeinimeni National Park to El Mirador de Guadal Birds Chile  Guided"          | 1
+"Laguna Gaviotas to Barraco Lodge Barraco Lodge  Guided"                       | 1
+"Lake Grey to EcoCamp Patagonia Cascada Guided"                                | 1
+"Lake Grey to Hotel Río Serrano Hotel Rio Serrano  Driver Only"                | 1
+"Lake Grey to Patagonia Camp Patagonia Camp  Driver Only"                      | 1
+"Leones River Valley to El Mirador de Guadal Birds Chile  On request"          | 1
+"Licancabur Volcano to Explora Atacama Explora  Guided"                        | 1
+"Los Huemules to El Chaltén  Walk Patagonia"                                   | 1
+"Láscar Volcano to Explora Atacama Explora  Guided"                            | 1
+"Machuca to Explora Atacama Explora  Guided"                                   | 1
+"Mallin Colorado to Bahia Exploradores Aysen Journeys  Driver Only"            | 1
+"Mallin Colorado to Bahia Mansa Aysen Journeys  Driver Only"                   | 1
+"Mallin Colorado to Baker Nef confluence Aysen Journeys  Driver Only"          | 1
+"Mallin Colorado to Exploradores Glacier Aysen Journeys  Driver Only"          | 1
+"Mallin Colorado to Patagonia National Park Aysen Journeys  Driver Only"       | 1
+"Mallin Colorado to Puerto Bertrand Aysen Journeys  Driver Only"               | 1
+"Oco's Place to Barraco Lodge Barraco Lodge  Guided"                           | 1
+"Omora Ethnobotanical Park to Errante EcoLodge Errante Ecolodge Driver Only"   | 1
+"Patagonia Camp to El Bote Bay Patagonia Camp  Driver Only"                    | 1
+"Patagonia Camp to Grey Lookout Patagonia Camp  Driver Only"                   | 1
+"Patagonia Camp to Lake Grey Patagonia Camp  Driver Only"                      | 1
+"Patagonia National Park to Mallin Colorado Aysen Journeys  Driver Only"       | 1
+"Pucon to Huerquehue National Park  Birds Chile"                               | 1
+"Puerto Bertrand to Mallin Colorado Aysen Journeys  Driver Only"               | 1
+"Puerto Iguazu (IGR) to Activity H&T"                                          | 1
+"Puerto Madryn to Activity  Causana Viajes"                                    | 1
+"Puerto Navarino to Errante EcoLodge Errante Ecolodge Driver Only"             | 1
+"Puerto Tranquilo to El Mirador de Guadal Birds Chile  On request"             | 1
+"Puritama hot springs to Awasi Atacama Awasi Guided"                           | 1
+"Puyuhuapi to Queulat National Park Birds Chile"                               | 1
+"Queulat National Park to Puyuhuapi Birds Chile"                               | 1
+"Saciel Volcano to Awasi Atacama Awasi Guided"                                 | 1
+"Sairecabur Volcano to Awasi Atacama Awasi Guided"                             | 1
+"Sairecabur Volcano to Explora Atacama Explora  Guided"                        | 1
+"The Domeyko Range to Explora Atacama Explora  Guided"                         | 1
+"The Rupestre area to Hotel Remota Chile Nativo  Driver Only"                  | 1
+"Toco Hill to Awasi Atacama Awasi Guided"                                      | 1
+"Weber Bridge to EcoCamp Patagonia Cascada Guided"                             | 1
+"Weber Bridge to Hotel Remota Chile Nativo  Driver Only"                       | 1
+"Yates Volcano to Barraco Lodge Barraco Lodge  Guided"                         | 1
+"Yelcho Glacier to Futaleufú or reverse Birds Chile"                           | 1
+"Yerbas Buenas to Awasi Atacama Awasi Guided"                                  | 1
+
+TYPE: activity
+--------------------------------------------------------------------------------
+Missing Component                                                             | Occurrences
+--------------------------------------------------------------------------------------------
+"Lago del Desierto Kayak & Huemul Glacier Viewpoint Hike"                     | 3
+"Lago del Desierto Kayaking"                                                  | 3
+"Perito Moreno - Touching the Ice"                                            | 3
+"Tierra del Fuego National Park with Trekking & Canoes including transfers"   | 3
+"Cejar Lagoon Bike Ride"                                                      | 2
+"Allyus Biking"                                                               | 1
+"Buenos Aires Day at Leisure"                                                 | 1
+"Day at Leisure"                                                              | 1
+"Fogon Asado Experience - Buenos Aires"                                       | 1
+"Futaleufú River rafting"                                                     | 1
+"High Peaks Bike"                                                             | 1
+"Hike, Bike & Ride at Eolo"                                                   | 1
+"Piedra de la Coca Hike"                                                      | 1
+"Puerto Pirámides Kayaking"                                                   | 1
+"Queulat National Park Hike"                                                  | 1
+"Trekking to the High Lands along the Maqui Waterfalls"                       | 1
+"Valparaíso Solo Exploration"                                                 | 1
+
+TYPE: 
+--------------------------------------------------------------------------------
+Missing Component                               | Occurrences
+--------------------------------------------------------------
+"Explora Atacama to El Tatio Geysers Explora"   | 1

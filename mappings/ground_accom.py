@@ -59,7 +59,6 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
             "additional_info": f"{get_stripped(row, 'name')}"
         }
     )
-    print(city_id)
 
     # ===== Level 0 → Base schema (empty) =====
     level_0 = {}

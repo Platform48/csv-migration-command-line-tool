@@ -167,15 +167,16 @@ def save_missing_references_log():
                 if row_num is not None and str(row_num).isdigit():
                     row_num = int(row_num) + 1  # adjust for header + 0-based index
                 
-                field = context.get("field", context.get("additional_info", "unknown field"))
-                missing_name = entry["component_name"]
-                comp_type = entry["component_type"]
+                # FIX 1: Handle None values safely
+                field = context.get("field") or context.get("additional_info") or "unknown field"
+                missing_name = entry["component_name"] or "Unknown"
+                comp_type = entry["component_type"] or "Unknown"
                 
                 by_sheet[sheet].append({
                     "row": row_num,
-                    "field": field,
-                    "missing": missing_name,
-                    "type": comp_type
+                    "field": str(field),  # Ensure it's a string
+                    "missing": str(missing_name),  # Ensure it's a string
+                    "type": str(comp_type)  # Ensure it's a string
                 })
         
         # Write each sheet's issues
@@ -186,10 +187,17 @@ def save_missing_references_log():
                 key=lambda x: x["row"] if isinstance(x["row"], int) else 999999
             )
 
-            row_col_width    = max(len(str(issue["row"])) for issue in issues_sorted) + 5
-            field_col_width  = max(len(str(issue["field"])) for issue in issues_sorted) + 2
-            miss_col_width   = max(len(str(issue["missing"])) for issue in issues_sorted) + 2
-            type_col_width   = max(len(str(issue["type"])) for issue in issues_sorted) + 8
+            # FIX 2: Handle edge case where issues_sorted might be empty
+            if not issues_sorted:
+                report_lines.append("No issues found.")
+                report_lines.append("")
+                continue
+
+            # FIX 3: Add minimum widths to prevent zero-width columns
+            row_col_width    = max(max(len(str(issue["row"])) for issue in issues_sorted), 3) + 5
+            field_col_width  = max(max(len(str(issue["field"])) for issue in issues_sorted), 8) + 2
+            miss_col_width   = max(max(len(str(issue["missing"])) for issue in issues_sorted), 16) + 2
+            type_col_width   = max(max(len(str(issue["type"])) for issue in issues_sorted), 4) + 8
             
             report_lines.append("-" * (row_col_width + field_col_width + miss_col_width + type_col_width + 9))
             report_lines.append(
@@ -199,14 +207,19 @@ def save_missing_references_log():
             
             for issue in issues_sorted:
                 row_display = str(issue["row"]) if isinstance(issue["row"], int) else "?"
-                missing_quoted = f'"{issue["missing"]}"'  # wrap BEFORE padding
+                # FIX 4: Handle potential Unicode/special characters
+                missing_quoted = f'"{issue["missing"]}"'
+                field_clean = str(issue["field"])[:50]  # Truncate very long field names
+                type_clean = str(issue["type"])[:20]   # Truncate very long type names
+                
                 report_lines.append(
-                    f'{row_display:<{row_col_width}} | {issue["field"]:<{field_col_width}} | {missing_quoted:<{miss_col_width}} | {issue["type"]:<{type_col_width}}'
+                    f'{row_display:<{row_col_width}} | {field_clean:<{field_col_width}} | {missing_quoted:<{miss_col_width}} | {type_clean:<{type_col_width}}'
                 )
             report_lines.append("")
 
         readable_file = "MISSING_COMPONENTS_REPORT.txt"
-        with open(readable_file, 'w', encoding='utf-8') as f:
+        # FIX 5: More robust file writing with error handling
+        with open(readable_file, 'w', encoding='utf-8', errors='replace') as f:
             f.write('\n'.join(report_lines))
         
         # -----------------------------------------------------------------
@@ -226,7 +239,7 @@ def save_missing_references_log():
         # Group by type
         by_type = {}
         for entry in MISSING_REFERENCES.values():
-            comp_type = entry["component_type"]
+            comp_type = str(entry.get("component_type", "Unknown"))
             if comp_type not in by_type:
                 by_type[comp_type] = []
             by_type[comp_type].append(entry)
@@ -235,25 +248,36 @@ def save_missing_references_log():
             unique_lines.append(f"TYPE: {comp_type}")
             unique_lines.append("-" * 80)
 
+            # FIX 6: Handle edge case where entries might be empty
+            if not entries:
+                unique_lines.append("No entries found.")
+                unique_lines.append("")
+                continue
+
             # Sort alphabetically
             entries_sorted = sorted(
                 entries,
-                key=lambda e: (-e["occurrences"], e["component_name"].lower())
+                key=lambda e: (-e.get("occurrences", 0), str(e.get("component_name", "")).lower())
             )
-            name_width = max(len(e["component_name"]) for e in entries_sorted) + 4
+            
+            # FIX 7: Add minimum width and handle empty component names
+            name_width = max(max(len(str(e.get("component_name", ""))) for e in entries_sorted), 16) + 4
 
             unique_lines.append(f"{'Missing Component':<{name_width}} | Occurrences")
             unique_lines.append("-" * (name_width + 15))
 
             for entry in entries_sorted:
-                missing_quoted = f'"{entry["component_name"]}"'  # wrap BEFORE padding
+                component_name = str(entry.get("component_name", "Unknown"))
+                occurrences = entry.get("occurrences", 0)
+                missing_quoted = f'"{component_name}"'
                 unique_lines.append(
-                    f'{missing_quoted:<{name_width}} | {entry["occurrences"]}'
+                    f'{missing_quoted:<{name_width}} | {occurrences}'
                 )
             unique_lines.append("")
 
         unique_file = "MISSING_COMPONENTS_BY_TYPE.txt"
-        with open(unique_file, 'w', encoding='utf-8') as f:
+        # FIX 8: More robust file writing with error handling
+        with open(unique_file, 'w', encoding='utf-8', errors='replace') as f:
             f.write('\n'.join(unique_lines))
         
         # -----------------------------------------------------------------
@@ -265,6 +289,8 @@ def save_missing_references_log():
 
     except Exception as e:
         print(f"⚠️ Error saving missing references reports: {e}")
+        import traceback
+        traceback.print_exc()  # This will help debug the exact error
 
 
 

@@ -2,7 +2,7 @@
 from utils import get_component_id, get_stripped, safe_float, safe_int, get_location_id
 from .location import map_region_name_to_id
 import pandas as pd
-
+                            
 def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1):
     """
     Map activity component with improved ID lookups and missing reference logging
@@ -48,7 +48,12 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
             component_type=comp1_type.lower(),
             component_name=comp1_name,
             component_id_map=COMPONENT_ID_MAP,
-            context=context,
+            context={
+                **(context or {}),
+                "field": "Component 1",
+                "row_index": row_index,
+                "additional_info": f"{get_stripped(row, 'name')}"
+            },
             required=True
         )
         package_span_items.append( {
@@ -64,7 +69,12 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
             component_type=comp2_type.lower(),
             component_name=comp2_name,
             component_id_map=COMPONENT_ID_MAP,
-            context=context,
+            context={
+                **(context or {}),
+                "field": "Component 2",
+                "row_index": row_index,
+                "additional_info": f"{get_stripped(row, 'name')}"
+            },
             required=True
         )
         package_span_items.append( {
