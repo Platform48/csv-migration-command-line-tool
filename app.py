@@ -13,6 +13,7 @@ from mappings.journey import map_journey_component
 from mappings.tranfer import map_transfer_component
 from mappings.excursions import map_excursion_component
 from mappings.private_tours import map_private_tours_component
+from mappings.all_inclusive_hotels import map_all_inclusive_hotels_component
 
 from validate_csv_dynamic import validate_csv
 from core_data_services import CoreDataService
@@ -32,33 +33,36 @@ COMPONENT_ID_MAP = {}
 COMPONENT_HASH_CACHE = {}
 
 SHEET_TEMPLATE_MAP = {
-    # "Location": [
-    #     "template_aca16a46ec3842ca85d182ee9348f627", # Base
-    #     "template_0c105b25350647b096753b4f863ab06c", # Location
-    # ],
-    # "Journeys": [
-    #     "template_aca16a46ec3842ca85d182ee9348f627", # Base
-    #     "template_14cc18c1408a4b73a16d4e1dad2efca9", # Journeys
-    # ],
-    # "Ground Accom": [
-    #     "template_aca16a46ec3842ca85d182ee9348f627",  # Base
-    #     "template_c265e31c0c2848fa8210050f452d3926",  # Accom
-    #     "template_d32b51f46e7946faa5d3e2aa33e7d29a",  # Gy
-    # yround Accom
-    # ],
-    # "All Activities - For Upload": [
-    #     "template_aca16a46ec3842ca85d182ee9348f627", # Base
-    #     "template_e2f0e9e5343349358037a0564a3366a0"  # Activity
-    # ],
-    # "All Transfers - For Upload": [
-    #     "template_aca16a46ec3842ca85d182ee9348f627", # Base
-    #     "template_901d40ac12214820995880915c5b62f5"
-    # ],
+    "Location": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_0c105b25350647b096753b4f863ab06c", # Location
+    ],
+    "Journeys": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_14cc18c1408a4b73a16d4e1dad2efca9", # Journeys
+    ],
+    "Ground Accom": [
+        "template_aca16a46ec3842ca85d182ee9348f627",  # Base
+        "template_c265e31c0c2848fa8210050f452d3926",  # Accom
+        "template_d32b51f46e7946faa5d3e2aa33e7d29a",  # Gy
+    ],
+    "All Activities - For Upload": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_e2f0e9e5343349358037a0564a3366a0"  # Activity
+    ],
+    "All Transfers - For Upload": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_901d40ac12214820995880915c5b62f5"
+    ],
     "Copy of Excursions Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
     ],
     "Copy of Private Tours Package": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
+    ],
+    "Copy of All Inclusive Hotel Pac": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
     ]
@@ -71,7 +75,8 @@ SHEET_ROW_MAPPERS = {
     "All Activities - For Upload"  : map_activity_component,
     "All Transfers - For Upload"   : map_transfer_component,
     "Copy of Excursions Package"   : map_excursion_component,
-    "Copy of Private Tours Package": map_private_tours_component
+    "Copy of Private Tours Package": map_private_tours_component,
+    "Copy of All Inclusive Hotel Pac": map_all_inclusive_hotels_component
 
 }
 
@@ -89,6 +94,16 @@ PAT_COMPONENTS_PATH = "pat_components.xlsx"
 ANT_COMPONENTS_PATH = "ant_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
+SHEET_PROCESS_ORDER = [
+    # "Location",
+    # "Ground Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "All Transfers - For Upload",
+    "Copy of Excursions Package",
+    "Copy of Private Tours Package",
+    "Copy of All Inclusive Hotel Pac"
+]
 
 def load_component_cache():
     """Load existing component ID mappings from cache file"""
@@ -230,6 +245,7 @@ def run_loop():
                     return new_cols
 
                 for sheet, df_sheet in xls.items():
+                    print(f"checking sheet: '{sheet}'")
                     df_sheet.columns = dedup_columns(df_sheet.columns)
 
                     if sheet == "All Transfers - For Upload":
@@ -247,9 +263,10 @@ def run_loop():
                 print(f"❌ Error reading Excel file: {e}")
                 continue
 
-            for sheet_name, df in xls.items():
-                if sheet_name not in SHEET_TEMPLATE_MAP or sheet_name not in SHEET_ROW_MAPPERS:
-                    continue
+            for sheet_name in SHEET_PROCESS_ORDER:
+                if sheet_name not in xls:
+                    continue  # skip missing sheets
+                df = xls[sheet_name]
 
                 print(f"\n📄 Processing Sheet: {sheet_name}")
 
@@ -307,10 +324,13 @@ def run_loop():
                 if not components_to_upload:
                     print(f"🎉 All components in '{sheet_name}' already exist in cache. Skipping upload.")
                     continue
-                
-                insert = input(f"Upload {len(components_to_upload)} new/changed components from '{sheet_name}'? (y/n): ").strip().lower()
+                insert = ""
+                if FORCE_REUPLOAD: insert = "y"
+                else: insert = input(f"Upload {len(components_to_upload)} new/changed components from '{sheet_name}'? (y/n): ").strip().lower()
                 if insert == "y":
-                    push = input("Confirm upload to database? (y/n): ").strip().lower()
+                    push = ""
+                    if FORCE_REUPLOAD: push = "y"
+                    else: push = input("Confirm upload to database? (y/n): ").strip().lower()
                     if push == "y":
                         print("🛜 Calling API ...")
                         # Upload only new/changed components

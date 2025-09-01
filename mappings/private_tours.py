@@ -69,7 +69,11 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
             
             comp_name = get_stripped(row, comp_name_col)
             comp_type = get_stripped(row, comp_type_col)
-            
+            pkg_aliases = {
+                "Excursion": "package",
+                "Accommodation": "ground_accommodation"
+            }
+            comp_type = pkg_aliases.get(comp_type, comp_type)
             # If no component name, stop processing components for this span
             if not comp_name:
                 break
