@@ -1,3 +1,4 @@
+import math
 import sys
 import pandas as pd
 import json
@@ -89,17 +90,20 @@ def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
 
     def safe_float(val):
         try:
-            return float(val)
+            f = float(val)
+            if math.isnan(f):
+                f = 0.0
+            return f
         except (ValueError, TypeError):
-            return None
+            return 0.0
 
     latitude = safe_float(row.get("latitude"))
     longitude = safe_float(row.get("longitude"))
 
     level_1 = {
         "type": type_value,
-        "latitude": latitude if latitude is not None else 0.0,
-        "longitude": longitude if longitude is not None else 0.0,
+        "latitude": latitude if latitude else 0.0,
+        "longitude": longitude if longitude else 0.0,
         "whatThreeWords": get_stripped("NEWCUSTOMADDRESSWHAT3WORDS") or "",
     }
 
@@ -139,6 +143,7 @@ def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
     # --- Final object ---
     return {
         "templateId": template_ids[1],
+        "isBookable": False,
         "description":{
             "web":get_stripped("description") or "",
             "quote":get_stripped("description") or "",

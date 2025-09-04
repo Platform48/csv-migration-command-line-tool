@@ -81,6 +81,7 @@ def map_journey_component(row, template_ids, COMPONENT_ID_MAP, context=None, row
 
     return {
         "templateId": template_ids[1],
+        "isBookable": False,
         "description": {
             "web": get_stripped(row, "Description") or "",
             "quote": get_stripped(row, "Description") or "",

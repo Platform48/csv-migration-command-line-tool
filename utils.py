@@ -352,6 +352,17 @@ def get_location_id(location_name: str, component_id_map: Dict, context: Optiona
         required=True
     )
 
+def get_journey_id(journey_name: str, component_id_map: Dict, context: Optional[Dict] = None) -> Optional[str]:
+    
+    return get_component_id(
+        component_type="journey",
+        component_name=journey_name,
+        component_id_map=component_id_map,
+        # aliases=LOCATION_ALIASES,
+        context=context,
+        required=True
+    )
+
 # Helper function for your existing mappers
 def get_transfer_id(transfer_name: str, component_id_map: Dict, context: Optional[Dict] = None) -> Optional[str]:
     """Convenience function specifically for location lookups"""

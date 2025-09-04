@@ -3,6 +3,8 @@ import json
 
 import requests
 
+from app import COMPONENT_ID_MAP
+
 class CoreDataService:
     def __init__(self, template_ids):
         self.template_ids = template_ids

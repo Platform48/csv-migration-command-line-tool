@@ -140,6 +140,7 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
 
     return {
         "templateId": template_ids[1],
+        "isBookable": True,
         "description": {
             "web": get_stripped(row, "importantInformationWeb") or "",
             "quote": get_stripped(row, "importantInformationQuote") or "",

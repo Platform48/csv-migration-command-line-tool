@@ -154,6 +154,7 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
 
     return {
         "templateId": template_ids[1],
+        "isBookable": True,
         "description": {
             "web": get_stripped(row, "Description") or "",
             "quote": get_stripped(row, "Description") or "",

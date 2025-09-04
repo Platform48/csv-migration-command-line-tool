@@ -1,5 +1,5 @@
 # activity_mapper.py
-from utils import get_stripped, safe_float, safe_int, get_location_id
+from utils import get_journey_id, get_stripped, safe_float, safe_int, get_location_id
 from .location import map_region_name_to_id
 import pandas as pd
 
@@ -37,8 +37,8 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
 
     # --- Location lookups with improved logging ---
     journey_name = get_stripped(row, "journey")
-    journey_id = get_location_id(
-        location_name=journey_name,
+    journey_id = get_journey_id(
+        journey_name=journey_name,
         component_id_map=COMPONENT_ID_MAP,
         context={
             **(context or {}),
@@ -71,9 +71,15 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         {"templateId": template_ids[1], "data": level_1},
         {"templateId": template_ids[0], "data": level_0},
     ]
-
+    name = row.get("Code")
+    # print(f"Name: {get_stripped(row, "Code")}, {row.get("Code")}")
+    # print(row)
+    # name = f"{row.get( "name")} {row.get("partner")} {row.get("guidesDrivers")}"
+    # print(row)
+    # print(name)
     return {
         "templateId": template_ids[1],
+        "isBookable": True,
         "description": {
             "web": get_stripped(row, "importantInformationWeb") or "",
             "quote": get_stripped(row, "importantInformationQuote") or "",
@@ -81,7 +87,7 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         },
         "partners": [p.strip() for p in get_stripped(row, "partner").split(",") if p.strip()],
         "regions": [r for r in regions if r],  # filter out None values
-        "name": get_stripped(row, "name") or "Untitled",
+        "name": name,
         "pricing": pricing,
         "media": media,
         "componentFields": component_fields,

@@ -194,6 +194,7 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
 
     return {
         "templateId": template_ids[1],
+        "isBookable": True,
         "description": {
             "web": get_stripped(row, "Description") or "",
             "quote": get_stripped(row, "Description") or "",

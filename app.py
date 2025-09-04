@@ -1,5 +1,6 @@
 import os
 import json
+import openpyxl
 import pandas as pd
 from datetime import datetime
 import hashlib
@@ -16,7 +17,6 @@ from mappings.private_tours import map_private_tours_component
 from mappings.all_inclusive_hotels import map_all_inclusive_hotels_component
 
 from validate_csv_dynamic import validate_csv
-from core_data_services import CoreDataService
 from utils import save_missing_references_log, clear_missing_references_session, get_missing_references_summary
 
 
@@ -54,15 +54,15 @@ SHEET_TEMPLATE_MAP = {
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_901d40ac12214820995880915c5b62f5"
     ],
-    "Copy of Excursions Package": [
+    "Excursions Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
     ],
-    "Copy of Private Tours Package": [
+    "Private Tours Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
     ],
-    "Copy of All Inclusive Hotel Pac": [
+    "All Inclusive Hotel Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
     ]
@@ -74,9 +74,9 @@ SHEET_ROW_MAPPERS = {
     "Journeys"                     : map_journey_component,
     "All Activities - For Upload"  : map_activity_component,
     "All Transfers - For Upload"   : map_transfer_component,
-    "Copy of Excursions Package"   : map_excursion_component,
-    "Copy of Private Tours Package": map_private_tours_component,
-    "Copy of All Inclusive Hotel Pac": map_all_inclusive_hotels_component
+    "Excursions Package"           : map_excursion_component,
+    "Private Tours Package"        : map_private_tours_component,
+    "All Inclusive Hotel Package"  : map_all_inclusive_hotels_component
 
 }
 
@@ -95,14 +95,14 @@ ANT_COMPONENTS_PATH = "ant_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    # "Location",
-    # "Ground Accom",
-    # "Journeys",
-    # "All Activities - For Upload",
-    # "All Transfers - For Upload",
-    "Copy of Excursions Package",
-    "Copy of Private Tours Package",
-    "Copy of All Inclusive Hotel Pac"
+    "Location",
+    "Ground Accom",
+    "Journeys",
+    "All Activities - For Upload",
+    "All Transfers - For Upload",
+    "Excursions Package",
+    "Private Tours Package",
+    "All Inclusive Hotel Package"
 ]
 
 def load_component_cache():
@@ -166,6 +166,20 @@ def generate_component_hash(component_data):
     stable_json = json.dumps(hashable_data, sort_keys=True, ensure_ascii=False)
     return hashlib.md5(stable_json.encode('utf-8')).hexdigest()
 
+def generate_component_id(component: dict) -> str:
+    """
+    Generate a deterministic component ID in the format:
+        component_<md5hash>
+    based on name + template type.
+    """
+    try:
+        name = component.get("name", "")
+        template_type = TEMPLATE_TYPES.get(component.get("templateId"), "")
+        base_str = name + template_type
+        hash_str = hashlib.md5(base_str.encode("utf-8")).hexdigest()
+        return f"component_{hash_str}"
+    except:
+        return f"component_error"
 
 def check_component_exists(template_type, name, component_data):
     """Check if component already exists and hasn't changed"""
@@ -229,7 +243,17 @@ def run_loop():
                 continue
 
             try:
-                xls = pd.read_excel(COMPONENTS_PATH, sheet_name=None)
+                def get_visible_sheets(path):
+                    """Return only visible worksheet names (exclude hidden & veryHidden)."""
+                    wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
+                    return [ws.title for ws in wb.worksheets if ws.sheet_state == "visible"]
+
+                # Example usage
+                visible_sheets = get_visible_sheets(COMPONENTS_PATH)
+                print("Visible sheets:", visible_sheets)
+
+                # Load only those into pandas
+                xls = pd.read_excel(COMPONENTS_PATH, sheet_name=visible_sheets)
 
                 # Make duplicate column names unique
                 def dedup_columns(columns):
@@ -245,16 +269,11 @@ def run_loop():
                     return new_cols
 
                 for sheet, df_sheet in xls.items():
-                    print(f"checking sheet: '{sheet}'")
+                    print(f"Sheet: '{sheet}'")
                     df_sheet.columns = dedup_columns(df_sheet.columns)
+                    print(f"Columns: {df_sheet.columns}")
 
-                    if sheet == "All Transfers - For Upload":
-                        # Treat row 2 as header (skip the first row)
-                        df_sheet.columns = df_sheet.iloc[0]  # take row 2 as header
-                        df_sheet = df_sheet.iloc[1:].reset_index(drop=True)
-                    else:
-                        # Normal behavior
-                        df_sheet = df_sheet.iloc[1:].reset_index(drop=True)
+                    df_sheet = df_sheet.iloc[1:].reset_index(drop=True)
 
                     xls[sheet] = df_sheet
 
@@ -384,6 +403,8 @@ class CoreDataService:
     def getSchemaWithArrayLevel(self):
         schemas = []
         for idx, template_id in enumerate(self.template_ids):
+            url = f"{self.service_url}/core-data-service/v1/templates/{template_id}"
+            print(f"URL: {url}")
             res = requests.get(
                 f"{self.service_url}/core-data-service/v1/templates/{template_id}",
                 headers=self.headers
@@ -420,12 +441,20 @@ class CoreDataService:
         uploaded_components = []
         
         for idx, component in enumerate(components):
-            res = requests.post(
-                f"{self.service_url}/core-data-service/v1/components",
-                json=component,
-                headers=self.headers
-            )
-            if res.status_code == 201:
+            pregenerated_id = generate_component_id(component)
+            if pregenerated_id != None:
+                res = requests.post(
+                    f"{self.service_url}/core-data-service/v1/components/{pregenerated_id}",
+                    json=component,
+                    headers=self.headers
+                )
+            else:
+                res = requests.post(
+                    f"{self.service_url}/core-data-service/v1/components",
+                    json=component,
+                    headers=self.headers
+                )             
+            if res.status_code in [200, 201, 202]:
                 try:
                     data = res.json()
                     comp_id = data.get("id")
