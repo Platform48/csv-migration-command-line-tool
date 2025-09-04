@@ -392,6 +392,10 @@ def run_loop():
 
 import requests
 
+import json
+import requests
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
 class CoreDataService:
     def __init__(self, template_ids):
         self.template_ids = template_ids
@@ -400,86 +404,125 @@ class CoreDataService:
             "Authorization": "Bearer supercoolamazingtoken"
         }
 
-    def getSchemaWithArrayLevel(self):
-        schemas = []
-        for idx, template_id in enumerate(self.template_ids):
-            url = f"{self.service_url}/core-data-service/v1/templates/{template_id}"
-            print(f"URL: {url}")
-            res = requests.get(
-                f"{self.service_url}/core-data-service/v1/templates/{template_id}",
-                headers=self.headers
-            )
-            
-            # Debug: check content type and response text
-            try:
-                response = res.json()
-            except json.JSONDecodeError:
-                print("⚠️ JSON decode error. Raw response:")
-                print(res.text)  # show first 500 chars for debugging
-                raise  # re-raise so you can see the issue
+    def _fetch_schema(self, template_id):
+        url = f"{self.service_url}/core-data-service/v1/templates/{template_id}"
+        try:
+            res = requests.get(url, headers=self.headers)
+            res.raise_for_status()
+            response = res.json()
+        except Exception as e:
+            print(f"⚠️ Failed fetching schema for {template_id}: {e}")
+            return {}
 
-            schema_str = response.get("validationSchemas", {}).get("componentSchema")
-            if schema_str:
-                schema = json.loads(schema_str)
-                schemas.append(schema)
-                if idx == len(self.template_ids) - 1:
-                    self.template_name = response.get('name')
-                    self.template_id = response.get('id')
-            else:
-                schemas.append({})
+        schema_str = response.get("validationSchemas", {}).get("componentSchema")
+        if schema_str:
+            try:
+                return json.loads(schema_str)
+            except Exception as e:
+                print(f"⚠️ Failed parsing schema for {template_id}: {e}")
+        return {}
+
+    def getSchemaWithArrayLevel(self, max_workers=50):
+        schemas = []
+
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            future_to_id = {executor.submit(self._fetch_schema, tid): tid for tid in self.template_ids}
+
+            for future in as_completed(future_to_id):
+                tid = future_to_id[future]
+                try:
+                    schema = future.result()
+                    schemas.append(schema)
+                except Exception as e:
+                    print(f"⚠️ Exception for {tid}: {e}")
+                    schemas.append({})
+
         return schemas
 
+    def _upload_component(self, component, template_type, idx, overwrite_on_fail=True):
+        pregenerated_id = generate_component_id(component)
+        url = ""
+        try:
+            if pregenerated_id:
+                url = f"{self.service_url}/core-data-service/v1/components/{pregenerated_id}"
+                res = requests.post(url, json=component, headers=self.headers)
+            else:
+                url = f"{self.service_url}/core-data-service/v1/components"
+                res = requests.post(url, json=component, headers=self.headers)
+        except Exception as e:
+            print(f"❌ Request failed for row {idx+1}: {e}")
+            return None
 
-    def pushValidRowToDB(self, components, template_type):
+        # ✅ Success on POST
+        if res.status_code in [200, 201, 202]:
+            return self._process_success_response(res, component, template_type, idx)
+
+        # 🔄 Retry with PUT if enabled
+        if overwrite_on_fail and pregenerated_id:
+            print(f"🔁 POST failed for row {idx+1}, retrying with PUT ...")
+            try:
+                del component['templateId']
+                del component['name']
+
+                put_res = requests.put(url, json=component, headers=self.headers)
+                if put_res.status_code in [200, 201, 202]:
+                    return self._process_success_response(put_res, component, template_type, idx)
+                else:
+                    try:
+                        print(f"❌ PUT also failed for row {idx+1}. Error: {put_res.json()}")
+                    except Exception:
+                        print(f"❌ PUT also failed for row {idx+1}. HTTP Status: {put_res.status_code}")
+            except Exception as e:
+                print(f"❌ PUT request failed for row {idx+1}: {e}")
+
+        # ❌ Complete failure
+        try:
+            print(f"❌ Failed to upload row {idx+1}. Error: {res.json()}")
+        except Exception:
+            print(f"❌ Failed to upload row {idx+1}. HTTP Status: {res.status_code}")
+        return None
+
+    def _process_success_response(self, res, component, template_type, idx):
+        """Helper to handle successful POST/PUT responses"""
+        try:
+            data = res.json()
+            comp_id = data.get("id")
+            comp_name = component.get("name")
+            template_id = component.get("templateId")
+
+            if comp_id and comp_name and template_id:
+                COMPONENT_ID_MAP[(template_type, comp_name)] = comp_id
+                print(f"✅ Row {idx+1} - ({template_type}, {comp_name}) -> {comp_id}")
+                component['id'] = comp_id
+                return component
+        except Exception as e:
+            print(f"⚠️ Could not parse returned ID for row {idx+1}: {e}")
+        return None
+
+
+    def pushValidRowToDB(self, components, template_type, max_workers=10):
         if DEBUG_MODE:
             print(f"📝 DEBUG MODE ON: Writing {len(components)} components to {DEBUG_OUTPUT_FILE}")
             with open(DEBUG_OUTPUT_FILE, "a", encoding="utf-8") as f:
                 for comp in components:
                     f.write(json.dumps(comp, ensure_ascii=False) + "\n")
             return components
-            
+
         uploaded_components = []
-        
-        for idx, component in enumerate(components):
-            pregenerated_id = generate_component_id(component)
-            if pregenerated_id != None:
-                res = requests.post(
-                    f"{self.service_url}/core-data-service/v1/components/{pregenerated_id}",
-                    json=component,
-                    headers=self.headers
-                )
-            else:
-                res = requests.post(
-                    f"{self.service_url}/core-data-service/v1/components",
-                    json=component,
-                    headers=self.headers
-                )             
-            if res.status_code in [200, 201, 202]:
-                try:
-                    data = res.json()
-                    comp_id = data.get("id")
-                    comp_name = component.get("name")
-                    template_id = component.get("templateId")
-                    
-                    if comp_id and comp_name and template_id:
-                        # Store in global cache
-                        COMPONENT_ID_MAP[(template_type, comp_name)] = comp_id
-                        print(f"✅ Row {idx + 1} - ({template_type}, {comp_name}) -> {comp_id}")
-                        
-                        # Add ID to component for hash caching
-                        component['id'] = comp_id
-                        uploaded_components.append(component)
-                        
-                except Exception as e:
-                    print(f"⚠️ Row {idx + 1} - Could not parse returned ID for row {idx+1}: {e}")
-            else:
-                try:
-                    error_msg = res.json()
-                    print(f"❌ Failed to upload row {idx + 1}. Error: {error_msg}")
-                except Exception:
-                    print(f"❌ Failed to upload row {idx + 1}. HTTP Status: {res.status_code}")
-        
+
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            future_to_idx = {
+                executor.submit(self._upload_component, comp, template_type, idx): idx
+                for idx, comp in enumerate(components)
+            }
+
+            for future in as_completed(future_to_idx):
+                result = future.result()
+                if result:
+                    uploaded_components.append(result)
+
         return uploaded_components
+
 
 
 if __name__ == "__main__":

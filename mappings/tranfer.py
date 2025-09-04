@@ -71,7 +71,7 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         {"templateId": template_ids[1], "data": level_1},
         {"templateId": template_ids[0], "data": level_0},
     ]
-    name = row.get("Code")
+    name = row.get("Code") or "Untitled"
     # print(f"Name: {get_stripped(row, "Code")}, {row.get("Code")}")
     # print(row)
     # name = f"{row.get( "name")} {row.get("partner")} {row.get("guidesDrivers")}"

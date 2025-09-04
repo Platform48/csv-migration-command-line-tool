@@ -5,6 +5,8 @@ import json
 import uuid
 from datetime import datetime, timedelta
 
+from utils import get_stripped, safe_float
+
 with open("swoop.regions.json", "r", encoding="utf-8") as f:
     regions_data = json.load(f)
 
@@ -53,7 +55,7 @@ REGION_ALIASES = {
 }
 
 LOCATION_ALIASES = {
-    "El calafate": "El Calafate"
+    # "El calafate": "El Calafate"
 }
 
 def map_region_name_to_id(region_name):
@@ -76,39 +78,24 @@ def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         "Village","Volcano","Waterfall","Wildlife","Winery"
     }
 
-    def get_stripped(field):
-        val = row.get(field)
-        if pd.isna(val):
-            return ""
-        return str(val).strip()
-
-
 
     # --- Location schema fields ---
-    raw_type = get_stripped("type")
+    raw_type = get_stripped(row, "type")
     type_value = raw_type if raw_type in ALLOWED_TYPES else "Other"
 
-    def safe_float(val):
-        try:
-            f = float(val)
-            if math.isnan(f):
-                f = 0.0
-            return f
-        except (ValueError, TypeError):
-            return 0.0
 
-    latitude = safe_float(row.get("latitude"))
-    longitude = safe_float(row.get("longitude"))
+    latitude = safe_float(row.get("latitude")) or 0.0
+    longitude = safe_float(row.get("longitude")) or 0.0
 
     level_1 = {
         "type": type_value,
-        "latitude": latitude if latitude else 0.0,
-        "longitude": longitude if longitude else 0.0,
-        "whatThreeWords": get_stripped("NEWCUSTOMADDRESSWHAT3WORDS") or "",
+        "latitude": latitude,
+        "longitude": longitude,
+        "whatThreeWords": get_stripped(row, "NEWCUSTOMADDRESSWHAT3WORDS") or "",
     }
 
     # --- Regions ---
-    regions = [r for r in [map_region_name_to_id(get_stripped("regions"))] if r]
+    regions = [r for r in [map_region_name_to_id(get_stripped(row, "regions"))] if r]
 
     # --- Pricing ---
     price_val = None
@@ -122,10 +109,10 @@ def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
     if price_val:
         pricing = {
             "amount": price_val,
-            "currency": get_stripped("currency") or "USD"
+            "currency": get_stripped(row, "currency") or "USD"
         }
     
-    images = get_stripped("images").split("\n")
+    images = get_stripped(row, "images").split("\n")
     for i in images:
         i = i.strip()
 
@@ -145,13 +132,13 @@ def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         "templateId": template_ids[1],
         "isBookable": False,
         "description":{
-            "web":get_stripped("description") or "",
-            "quote":get_stripped("description") or "",
-            "final":get_stripped("description") or ""
+            "web":get_stripped(row, "description") or "",
+            "quote":get_stripped(row, "description") or "",
+            "final":get_stripped(row, "description") or ""
         },
-        "partners": [p.strip() for p in get_stripped("partners").split(",") if p.strip()],
+        "partners": [p.strip() for p in get_stripped(row, "partners").split(",") if p.strip()],
         "regions": regions,
-        "name": get_stripped("name") or "Untitled",
+        "name": get_stripped(row, "name") or "Untitled",
         "pricing": pricing,
         "media": media,
         "componentFields": component_fields,

@@ -1,4 +1,5 @@
 import json
+import math
 import pandas as pd
 
 def printTemplateList(template_list):
@@ -41,7 +42,9 @@ def get_stripped(row, field):
 
 def safe_float(val):
     try:
-        return float(val)
+        v = float(val)
+        if math.isnan(v): return None
+        return v
     except (ValueError, TypeError):
         return None
 
