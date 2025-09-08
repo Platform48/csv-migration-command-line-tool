@@ -65,8 +65,8 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
 
     # ===== Level 1 → Accommodation Details =====
     level_1 = {
-        "location": city_id or "",
-
+        "location": city_id or "Uknown",
+        "type": get_stripped(row, "Type") or "Standard Hotel", 
         "facilities": {
             "bar": get_stripped(row, "facilities.bar") == "TRUE",
             "elevator": get_stripped(row, "facilities.elevator") == "TRUE",
@@ -122,8 +122,7 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
         {"templateId": template_ids[1], "data": level_1},
         {"templateId": template_ids[0], "data": level_0},
     ]
-
-    return {
+    val = {
         "templateId": template_ids[2],
         "isBookable": True,
         "description": {
@@ -139,3 +138,4 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
         "componentFields": component_fields,
         "package": {},
     }
+    return val

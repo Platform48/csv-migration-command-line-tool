@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY SHEET)
-Generated: 2025-09-04 12:11:01
+Generated: 2025-09-08 15:58:53
 
 WHAT TO FIX:
 The following component names in your Excel sheets don't match any uploaded components.
@@ -55,8 +55,6 @@ Row      | Row Name                                                             
 500      | Río Hermoso Lodge to Activity or reverse                                  | "Activity"         | location        
 505      | Noi Casa Atacama to Activity or reverse                                   | "Activity"         | location        
 507      | Bariloche to Activity or reverse                                          | "Activity"         | location        
-512      | Caleta Gonzalo Lodge to Yelcho Glacier or reverse                         | "Yelcho Glacier"   | location        
-513      | Yelcho Glacier to Futaleufú or reverse                                    | "Yelcho Glacier"   | location        
 520      | Remota Lodge to Activity or reverse                                       | "Activity"         | location        
 522      | Hotel Ultimo Paraiso to Activity or reverse                               | "Activity"         | location        
 
@@ -64,68 +62,16 @@ SHEET: All Activities - For Upload
 -----------------------------------------------------------------------------------
 Row      | Row Name                       | Missing Component    | Type            
 -----------------------------------------------------------------------------------
-714      | Japones Camp to Dickson camp   | "Campamento Japones" | location        
+713      | Japones Camp to Dickson camp   | "Campamento Japones" | location        
 
 SHEET: All Transfers - For Upload
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Row      | Row Name                                                              | Missing Component                                                                                                  | Type           
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-32       | Ahu Akivi - Explora Rapa Nui Hotel                                    | "Ahu Akivi - Explora Rapa Nui Hotel"                                                                               | journey        
-33       | Ahu Akivi - Explora Rapa Nui Hotel                                    | "Ahu Akivi - Explora Rapa Nui Hotel"                                                                               | journey        
-47       | Airport EZE - Airport AEP                                             | "Ministro Pistarini International Airport, Ezeiza (EZE) - Aeroparque Internacional Jorge Newbery (AEP) or reverse" | journey        
-138      | Chiloe to Puerto Varas                                                | "Puerto Varas to Chiloe or reverse"                                                                                | journey        
-150      | City Hotel - Restaurant round trip (inc wait time)                    | "Hotel - restaurant round trip (inc wait time)  or reverse"                                                        | journey        
-158      | City Hotel - Valpariso via Casa Martin winery tour                    | "City Hotel -  Valpariso via Casa Martin winery tour"                                                              | journey        
-163      | City Hotel to Valpariso with stop for tour at Mate                    | "City Hotel to Valpariso with stop for tour at Matetic"                                                            | journey        
-179      | Das Cataratas - Bird Park - Das Cataratas                             | "Das Cataratas - Bird Park - Das Cataratas"                                                                        | journey        
-180      | Das Cataratas - Bird Park - Das Cataratas                             | "Das Cataratas - Bird Park - Das Cataratas"                                                                        | journey        
-223      | El Calafate to Eolo                                                   | "El Calafate to Eolo"                                                                                              | journey        
-229      | El Calafate to Nibepo Aike                                            | "El Calafate to Nibepo Aike"                                                                                       | journey        
-233      | El Calafate to Punta Bandera Dock                                     | "El Calafate to Perito Moreno (Punta Bandera)"                                                                     | journey        
-234      | Punta Bandera Dock to El Calafate                                     | "El Calafate to Perito Moreno (Punta Bandera)"                                                                     | journey        
-235      | El Calafate to Punta Bandera (Port for Mayo Spirit                    | "El Calafate to Perito Moreno (Punta Bandera)"                                                                     | journey        
-261      | El Chaltén to Punta Bandera (Port for Mayo Spirit                     | "El Chaltén to Perito Moereno (Punta Bandera)"                                                                     | journey        
-335      | Explora Torres del Paine to Cancha Carrera                            | "Explora Torres del Paine to Cerro Castill / Cancha Carrera (or reverse)"                                          | journey        
-336      | Explora Torres del Paine to Cerro Castillo / Canch                    | "Explora Torres del Paine to Cerro Castill / Cancha Carrera (or reverse)"                                          | journey        
-386      | Hotel Taha Tai to Hanga Te'e                                          | "Hotel Taha Tai -  Hanga Te'e"                                                                                     | journey        
-393      | IGR - Puerto Iguazú Hotel                                             | "Cataratas of Iguazu International Airport IGR  - Puerto Iguazú Hotel or reverse"                                  | journey        
-394      | IGR - Puerto Iguazú Hotel                                             | "Cataratas of Iguazu International Airport IGR  - Puerto Iguazú Hotel or reverse"                                  | journey        
-399      | IGU - Puerto Iguazú Hotel (excluding Melia Hotel)                     | "Foz do Iguaçu International Airport IGU  - Puerto Iguazú Hotel or reverse"                                        | journey        
-400      | IGU - Puerto Iguazú Hotel (excluding Melia Hotel)                     | "Foz do Iguaçu International Airport IGU  - Puerto Iguazú Hotel or reverse"                                        | journey        
-403      | IGU - Grand Melia Iguazu falls                                        | "Foz do Iguaçu International Airport IGUR - Grand Melia Iguazu falls or reverse"                                   | journey        
-404      | IGU - Grand Melia Iguazu falls                                        | "Foz do Iguaçu International Airport IGUR - Grand Melia Iguazu falls or reverse"                                   | journey        
-408      | Lago del Desierto to El Chaltén                                       | "El Chaltén to Lago del Desierto or reverse"                                                                       | journey        
-423      | Lake Pehoé dock to EcoCamp Patagonia                                  | "EcoCamp to Lake Pehoé dock or reverse"                                                                            | journey        
-429      | Los Huemules to El Chaltén                                            | "El Chaltén to Los Huemules Reserve/Explora Chaltén"                                                               | journey        
-430      | Los Huemules to El Chaltén                                            | "El Chaltén to Los Huemules Reserve/Explora Chaltén"                                                               | journey        
-441      | Mataveri International Airport (IPC) to Explora Ho                    | "Mataveri International Airport (IPC) - Explora Hotel or reverse"                                                  | journey        
-447      | MDZ - Downtown Mendoza                                                | "El Plumerillo International Airport, Mendoza MDZ - Downtown Mendoza or reverse"                                   | journey        
-448      | MDZ - Downtown Mendoza                                                | "El Plumerillo International Airport, Mendoza MDZ - Downtown Mendoza or reverse"                                   | journey        
-451      | MDZ to Vistalba winery                                                | "l Plumerillo International Airport, Mendoza MDZ - Vistalba winery  or reverse"                                    | journey        
-452      | MDZ to Vistalba winery                                                | "l Plumerillo International Airport, Mendoza MDZ - Vistalba winery  or reverse"                                    | journey        
-470      | Navimag to EcoCamp                                                    | "Navimag Cruise Port (PNT)"                                                                                        | journey        
-471      | Nibepo Aike to El Calafate                                            | "El Calafate to Nibepo Aike"                                                                                       | journey        
-488      | Parque Futangue to Pucon                                              | "Pucon to Parque Futangue (Vira Vira) or reverse"                                                                  | journey        
-490      | Parque Futangue to Puerto Montt Airport (PMC)                         | "Puerto Montt Airport (PMC) to Parque Futangue (Vira Vira) or reverse"                                             | journey        
-492      | Parque Futangue to Temuco Airport (ZCO)                               | "Temuco Airport (ZCO) to Parque Futangue (Vira Vira) or reverse"                                                   | journey        
-535      | Pucon to Parque Futangue                                              | "Pucon to Parque Futangue (Vira Vira) or reverse"                                                                  | journey        
-573      | Puerto Natales Airport (PNT) to Puerto Natales                        | "Puerto Natales Airport (PNT) to Puerto Natales"                                                                   | journey        
-576      | Puerto Natales bus terminal to Puerto Natales                         | "Puerto Natales Bus Terminal to Puerto Natales"                                                                    | journey        
-582      | Puerto Natales to Explora Torres del Paine                            | "Puerto Natales to Explora Patagonia (or reverse)"                                                                 | journey        
-583      | Puerto Natales to Explora Torres del Paine                            | "Puerto Natales to Explora Patagonia (or reverse)"                                                                 | journey        
-592      | Puerto Natales to Puerto Natales Airport (PNT)                        | "Puerto Natales Airport (PNT) to Puerto Natales"                                                                   | journey        
-593      | Puerto Natales to Puerto Natales bus terminal                         | "Puerto Natales Bus Terminal to Puerto Natales"                                                                    | journey        
-608      | Puerto Varas to Bariloche                                             | "Puerto Varas to Bariloche"                                                                                        | journey        
-612      | Puerto Varas to Chiloe                                                | "Puerto Varas to Chiloe or reverse"                                                                                | journey        
-715      | Santiago Bus station - Santiago hotel                                 | "Santiago Bus station - Santiago hotel or reverse"                                                                 | journey        
-716      | Santiago Bus station - Santiago hotel                                 | "Santiago Bus station - Santiago hotel or reverse"                                                                 | journey        
-718      | SCL - Bus station or reverse                                          | "Arturo Merino Benitez International Airport SCL - Bus station"                                                    | journey        
-719      | SCL - Bus station or reverse                                          | "Arturo Merino Benitez International Airport SCL - Bus station"                                                    | journey        
-737      | SCL - Valpariso via Casa Martin winery tour                           | "Arturo Merino Benitez International Airport SCL -  Valpariso via Casa Martin winery tour"                         | journey        
-756      | Temuco Airport (ZCO) to Parque Futangue                               | "Temuco Airport (ZCO) to Parque Futangue (Vira Vira) or reverse"                                                   | journey        
-780      | Town Hotel - TDF National Park                                        | "Hotel (City Center) - TDF National Park or reverse"                                                               | journey        
-783      | USH - Town Hotel                                                      | "Ushuaia Malvinas Argentinas (USH) - Hotel (City Center)  or reverse"                                              | journey        
-784      | USH to Port                                                           | "Ushuaia Malvinas Argentinas (USH) - Port"                                                                         | journey        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                                  | Missing Component                                                        | Type           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+610      | Puerto Varas Aerodrome (Chaiten flight) to Puerto         | "Puerto Varas to Puerto Varas Aerodrome (for Chaiten flight) or reverse" | journey        
+625      | Puerto Varas to Puerto Varas Aerodrome (Chaiten fl        | "Puerto Varas to Puerto Varas Aerodrome (for Chaiten flight) or reverse" | journey        
+855      | Chaitén Airport (WCH) to Puerto Montt Airport (PMC        | "Chaitén Airport (WCH) to Puerto Montt Airport (PMC) or reverse"         | journey        
+856      | Puerto Montt Airport (PMC) to Chaitén Airport (WCH        | "Chaitén Airport (WCH) to Puerto Montt Airport (PMC) or reverse"         | journey        
 
 SHEET: Excursions Package
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -476,10 +422,14 @@ Row       | Row Name                                                        | Mi
 708       | Alerce Forest E-biking                                          | "Puerto Varas to Activity  Birds Chile"                                                       | transfer        
 712       | Paso Desolacion Trail Biking                                    | "Puerto Varas to Activity  Birds Chile"                                                       | transfer        
 714       | Reloncaví Fjord Kayaking                                        | "Puerto Varas to Activity  Birds Chile"                                                       | transfer        
+714       | Reloncaví Fjord Kayaking                                        | "Reloncaví Fjord Kayaking"                                                                    | activity        
+715       | Reloncaví Fjord Kayaking                                        | "Reloncaví Fjord Kayaking"                                                                    | activity        
 716       | La Poza Lagoon Kayaking                                         | "Puerto Varas to Activity  Birds Chile"                                                       | transfer        
 718       | Petrohué River Rafting                                          | "Puerto Varas to Activity  Birds Chile"                                                       | transfer        
 720       | Termas del Sol (Hot Springs)                                    | "Puerto Varas to Activity  Birds Chile"                                                       | transfer        
 722       | 100km Cooking Experience                                        | "Puerto Varas to Activity  Birds Chile"                                                       | transfer        
+722       | 100km Cooking Experience                                        | "100km Cooking Experience"                                                                    | activity        
+723       | 100km Cooking Experience                                        | "100km Cooking Experience"                                                                    | activity        
 724       | Llanquihue & Frutillar Tour                                     | "Puerto Varas to Activity  Birds Chile"                                                       | transfer        
 726       | Todos los Santos Lake and Villa Peulla Tour                     | "Puerto Varas to Activity  Birds Chile"                                                       | transfer        
 728       | Chiloé Island Day Tour                                          | "Puerto Varas to Activity  Birds Chile"                                                       | transfer        
@@ -523,6 +473,7 @@ Row       | Row Name                                                        | Mi
 840       | Day at Leisure in Ushuaia                                       | "Day at Leisure"                                                                              | activity        
 841       | Hike, Bike & Ride at Hotel Eolo                                 | "Hike, Bike & Ride at Eolo"                                                                   | activity        
 843       | Vicente Perez Rosales National Park Hike                        | "Puerto Varas to Activity  Birds Chile"                                                       | transfer        
+846       | Gastronomy Experience @ El Cazador                              | "Gastronomy Experience @ El Cazador"                                                          | activity        
 849       | Darwin's Frog Trail                                             | "Puerto Varas to Activity  Birds Chile"                                                       | transfer        
 850       | Dock of the Souls and Tepuhueico Park                           | "Castro to Activity  Birds Chile"                                                             | transfer        
 852       | Chonchi Walking Tour                                            | "Castro to Activity  Birds Chile"                                                             | transfer        
@@ -550,6 +501,7 @@ Row       | Row Name                                                        | Mi
 891       | Nahuel Huapi Estancia Horse Riding                              | "Bariloche to Activity Andes Track"                                                           | transfer        
 892       | Colonia Suiza Mountain Biking                                   | "Bariloche to Activity Andes Track"                                                           | transfer        
 895       | El Mirador Trail Hike                                           | "Chaiten to El Amarillo (Pumalin Park)  Birds Chile"                                          | transfer        
+896       | Glaciar Yelcho Hike                                             | "Glaciar Yelcho Hike"                                                                         | activity        
 901       | Laguna de Los Tres and Poincenot Comfort Camp Hike              | "Refugio Condor to Río Electrico Serac"                                                       | transfer        
 904       | Glacier Grey Boat Trip                                          | "Serrano Camp to Activity  Chile Nativo"                                                      | transfer        
 906       | Estancia Day at Estancia San Luis                               | "Serrano Camp to Activity  Chile Nativo"                                                      | transfer        
@@ -981,372 +933,260 @@ Row       | Row Name                                                        | Mi
 ?         | unknown field                                                   | "Activity to Bariloche Andes Track"                                                           | transfer        
 ?         | unknown field                                                   | "Bahía Exploradores to Puerto Tranquilo  Senderos Patagonia Aysen  Guided"                    | transfer        
 
+SHEET: Multi-day Activity Package
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                | Missing Component                                                           | Type                        
+-----------------------------------------------------------------------------------------------------------------------------------------------
+3        |  - Day 1, Component 1   | "Puerto Natales to Torres del Paine (Refugio Central)  Chile Nativo Guided" | transfer                    
+3        |  - Day 3, Component 1   | "French Valley from Refugio Cuernos to Paine Grande Hike"                   | activity                    
+4        |  - Day 1, Component 1   | "Puerto Natales to Pudeto  Chile Nativo Guided"                             | transfer                    
+4        |  - Day 2, Component 4   | "Lago Grey to Serrano Camp  Chile Nativo Guided"                            | transfer                    
+5        |  - Day 3, Component 3   | "French Valley: From Pehoé Lake and back Hike"                              | activity                    
+5        |  - Day 2, Component 4   | "Lago Grey to Serrano Camp  Chile Nativo Guided"                            | transfer                    
+5        |  - Day 3, Component 2   | "Boat across Lago Pehoé (Pudeto to Paine Grande)"                           | transfer                    
+5        |  - Day 3, Component 4   | "Boat across Lago Pehoé (Paine Grande to Paine Pudeto)"                     | activity                    
+5        |  - Day 4, Component 3   | "To Sarmiento Lake Ranger Station"                                          | transfer                    
+6        |  - Day 2, Component 2   | "French Valley: From Pehoé Lake and back Hike"                              | activity                    
+7        |  - Day 6, Component 1   | "French Valley from Refugio Cuernos to Paine Grande Hike"                   | activity                    
+7        |  - Day 1, Component 3   | "Seron Camp"                                                                | ground_accommodation        
+7        |  - Day 2, Component 2   | "Dickson Camp"                                                              | ground_accommodation        
+7        |  - Day 3, Component 2   | "Los Perros Camp"                                                           | ground_accommodation        
+7        |  - Day 4, Component 2   | "Grey Camp"                                                                 | ground_accommodation        
+7        |  - Day 5, Component 3   | "Paine Grande Camp"                                                         | ground_accommodation        
+8        |  - Day 3, Component 1   | "French Valley from Refugio Cuernos to Paine Grande Hike"                   | activity                    
+
 SHEET: Private Tours Package
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Row      | Row Name                                                             | Missing Component                                                                       | Type                        
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3        | Highlights of Los Glaciares - Day 1, Component 1                     | "El Calafate Airport (FTE) to El Chaltén (Private)  Walk Patagonia"                     | transfer                    
-3        | Highlights of Los Glaciares - Day 1, Component 2                     | "Senderos Hosteria"                                                                     | ground_accommodation        
 3        | Highlights of Los Glaciares - Day 2, Component 1                     | "Laguna Torre Hike Walk Patagonia"                                                      | package                     
 3        | Highlights of Los Glaciares - Day 2, Component 2                     | "El Chaltén to El Calafate (Private)  Walk Patagonia"                                   | transfer                    
-3        | Highlights of Los Glaciares - Day 2, Component 3                     | "Kosten Aike"                                                                           | ground_accommodation        
-3        | Highlights of Los Glaciares - Day 3, Component 5                     | "Kosten Aike"                                                                           | ground_accommodation        
 3        | Highlights of Los Glaciares - Day 3, Component 1                     | "Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"                                | package                     
 3        | Highlights of Los Glaciares - Day 3, Component 2                     | "Perito Moreno Glacier kayaking Walk Patagonia"                                         | package                     
 3        | Highlights of Los Glaciares - Day 3, Component 3                     | "Perito Moreno Big Ice Hike Walk Patagonia"                                             | package                     
 3        | Highlights of Los Glaciares - Day 3, Component 4                     | "Perito Moreno Minitrekking I Walk Patagonia"                                           | package                     
 3        | Highlights of Los Glaciares - Day 4, Component 1                     | "El Calafate (Hotels) to El Calafate Airport (FTE) Walk Patagonia"                      | transfer                    
 4        | Santiago Express - Day 1, Component 2                                | "Santiago Half Day City Tour Southbound"                                                | package                     
-4        | Santiago Express - Day 1, Component 3                                | "The Singular Santiago"                                                                 | ground_accommodation        
-5        | The Best of Los Glaciares - Day 1, Component 1                       | "El Calafate Airport (FTE) to El Chaltén (Private)  Walk Patagonia"                     | transfer                    
-5        | The Best of Los Glaciares - Day 1, Component 2                       | "Senderos Hosteria"                                                                     | ground_accommodation        
-5        | The Best of Los Glaciares - Day 2, Component 2                       | "Senderos Hosteria"                                                                     | ground_accommodation        
-5        | The Best of Los Glaciares - Day 3, Component 3                       | "Senderos Hosteria"                                                                     | ground_accommodation        
-5        | The Best of Los Glaciares - Day 4, Component 1                       | "Laguna Torre Hike Walk Patagonia"                                                      | package                     
-5        | The Best of Los Glaciares - Day 4, Component 2                       | "El Chaltén to El Calafate (Private)  Walk Patagonia"                                   | transfer                    
-5        | The Best of Los Glaciares - Day 4, Component 3                       | "Kosten Aike"                                                                           | ground_accommodation        
-5        | The Best of Los Glaciares - Day 5, Component 4                       | "Kosten Aike"                                                                           | ground_accommodation        
-5        | The Best of Los Glaciares - Day 5, Component 3                       | "Perito Moreno Big Ice Hike Walk Patagonia"                                             | package                     
-5        | The Best of Los Glaciares - Day 6, Component 1                       | "El Calafate (Hotels) to El Calafate Airport (FTE) Walk Patagonia"                      | transfer                    
-5        | The Best of Los Glaciares - Day 2, Component 1                       | "Loma del Pliegue Tumbado Hike Walk Patagonia"                                          | package                     
-5        | The Best of Los Glaciares - Day 3, Component 1                       | "El Chaltén to Lago del Desierto"                                                       | transfer                    
-5        | The Best of Los Glaciares - Day 3, Component 2                       | "Lago del Desierto kayak and Hike Walk Patagonia"                                       | package                     
-5        | The Best of Los Glaciares - Day 5, Component 1                       | "El Calafate to Punta Bandera Dock"                                                     | transfer (private)          
-5        | The Best of Los Glaciares - Day 5, Component 2                       | "Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"                                | excursion (shared)          
-6        | Buenos Aires Express - Day 1, Component 2                            | "Buenos Aires City Tour Extended Highlights H&T Argentina"                              | package                     
-6        | Buenos Aires Express - Day 1, Component 3                            | "Casa Sur Recoleta"                                                                     | ground_accommodation        
-6        | Buenos Aires Express - Day 1, Component 4                            | "Buenos Aires Tango Show H&T Argentina"                                                 | package                     
-6        | Buenos Aires Express - Day 1, Component 5                            | "Fogón Asado Experience H&T Argentina"                                                  | package                     
-6        | Buenos Aires Express - Day 1, Component 6                            | "The Argentine Experience H&T Argentina"                                                | package                     
-7        | Best of the Chilean Lake District - Day 1, Compone                   | "Puerto Montt Airport (PMC) Chiloé Island  Birds Chile  On request"                     | transfer                    
-7        | Best of the Chilean Lake District - Day 1, Compone                   | "Puñihuil Penguin Colony Birds Chile"                                                   | package                     
-7        | Best of the Chilean Lake District - Day 1, Compone                   | "Palafito 1326 Hotel Boutique"                                                          | ground_accommodation        
-7        | Best of the Chilean Lake District - Day 2, Compone                   | "Duhatao Bay and Chepu River Hike Birds Chile"                                          | package                     
-7        | Best of the Chilean Lake District - Day 2, Compone                   | "Visit Chepu River Valley Birds Chile"                                                  | package                     
-7        | Best of the Chilean Lake District - Day 2, Compone                   | "Wyndham Puerto Varas Pettra"                                                           | ground_accommodation        
-7        | Best of the Chilean Lake District - Day 3, Compone                   | "Wyndham Puerto Varas Pettra"                                                           | ground_accommodation        
-7        | Best of the Chilean Lake District - Day 4, Compone                   | "Wyndham Puerto Varas Pettra"                                                           | ground_accommodation        
-7        | Best of the Chilean Lake District - Day 3, Compone                   | "Vicente Perez Rosales National Park Hike Birds Chile"                                  | package                     
-7        | Best of the Chilean Lake District - Day 4, Compone                   | "Petrohué River Rafting Birds Chile"                                                    | package                     
-7        | Best of the Chilean Lake District - Day 4, Compone                   | "Bike & Beer Excursion Birds Chile"                                                     | package                     
-7        | Best of the Chilean Lake District - Day 5, Compone                   | "Darwin's Frog Trail Birds Chile"                                                       | package                     
-7        | Best of the Chilean Lake District - Day 5, Compone                   | "Caleta Gonzalo Lodge"                                                                  | ground_accommodation        
-7        | Best of the Chilean Lake District - Day 6, Compone                   | "Caleta Gonzalo Lodge"                                                                  | ground_accommodation        
-7        | Best of the Chilean Lake District - Day 6, Compone                   | "Pumalín Park - Chaitén Volcano Hike Birds Chile"                                       | package                     
-7        | Best of the Chilean Lake District - Day 7, Compone                   | "Chaitén Airport (WCH) to Puerto Montt Airport (PMC)  Birds Chile"                      | transfer                    
-8        | Highlights of Chiloé Island - Day 1, Component 1                     | "Puerto Montt Airport (PMC) Chiloé Island  Birds Chile  On request"                     | transfer                    
-8        | Highlights of Chiloé Island - Day 1, Component 2                     | "Puñihuil Penguin Colony Birds Chile"                                                   | package                     
-8        | Highlights of Chiloé Island - Day 1, Component 3                     | "Palafito 1326 Hotel Boutique"                                                          | ground_accommodation        
-8        | Highlights of Chiloé Island - Day 2, Component 3                     | "Palafito 1326 Hotel Boutique"                                                          | ground_accommodation        
-8        | Highlights of Chiloé Island - Day 3, Component 1                     | "Duhatao Bay and Chepu River Hike Birds Chile"                                          | package                     
-8        | Highlights of Chiloé Island - Day 3, Component 2                     | "Visit Chepu River Valley Birds Chile"                                                  | package                     
-8        | Highlights of Chiloé Island - Day 2, Component 1                     | "Castro Walking Tour Birds Chile"                                                       | package                     
-8        | Highlights of Chiloé Island - Day 2, Component 2                     | "Chonchi Walking Tour Birds Chile"                                                      | package                     
-9        | Best of Pucón - Day 1, Component 2                                   | "Casa Solaria"                                                                          | ground_accommodation        
-9        | Best of Pucón - Day 2, Component 2                                   | "Casa Solaria"                                                                          | ground_accommodation        
-9        | Best of Pucón - Day 3, Component 3                                   | "Casa Solaria"                                                                          | ground_accommodation        
-9        | Best of Pucón - Day 2, Component 1                                   | "Petrified lava flow in Pucón Biking Birds Chile"                                       | package                     
-9        | Best of Pucón - Day 3, Component 1                                   | "Trancura River White-Water Rafting Birds Chile"                                        | package                     
-9        | Best of Pucón - Day 3, Component 2                                   | "Mapuche Community Visit with Dinner Birds Chile"                                       | package                     
-10       | Gentle Adventure in Aysen - Day 1, Component 1                       | "Balmaceda Airport (BBA) to Mallin Colorado Lodge  Aysen Journeys Driver Only"          | transfer                    
-10       | Gentle Adventure in Aysen - Day 1, Component 2                       | "Marble Caves kayaking from Puerto Tranquillo Aysen Journeys"                           | package                     
-10       | Gentle Adventure in Aysen - Day 1, Component 3                       | "Mallín Colorado Lodge"                                                                 | ground_accommodation        
-10       | Gentle Adventure in Aysen - Day 2, Component 2                       | "Mallín Colorado Lodge"                                                                 | ground_accommodation        
-10       | Gentle Adventure in Aysen - Day 3, Component 3                       | "Mallín Colorado Lodge"                                                                 | ground_accommodation        
-10       | Gentle Adventure in Aysen - Day 2, Component 1                       | "Patagonia National Park Museum & Hike Aysen Journeys"                                  | package                     
-10       | Gentle Adventure in Aysen - Day 3, Component 1                       | "Mallin Colorado Trails Hike Aysen Journeys"                                            | package                     
-10       | Gentle Adventure in Aysen - Day 3, Component 2                       | "Mallin Colorado Lagoon Horse Ride Aysen Journeys"                                      | package                     
-11       | Best of Peninsula Valdés - Day 1, Component 1                        | "Puerto Madryn Airport (PMY) to Puerto Madryn  Causana Viajes"                          | transfer                    
-11       | Best of Peninsula Valdés - Day 1, Component 2                        | "Dazzler Puerto Madryn"                                                                 | ground_accommodation        
-11       | Best of Peninsula Valdés - Day 2, Component 1                        | "Peninsula Valdés Tour Causana Viajes"                                                  | package                     
-11       | Best of Peninsula Valdés - Day 2, Component 2                        | "Del Nómade Hosteria"                                                                   | ground_accommodation        
-11       | Best of Peninsula Valdés - Day 3, Component 3                        | "Del Nómade Hosteria"                                                                   | ground_accommodation        
-11       | Best of Peninsula Valdés - Day 3, Component 1                        | "Puerto Pirámides Kayaking Causana Viajes"                                              | package                     
-11       | Best of Peninsula Valdés - Day 3, Component 2                        | "Peninsula Valdés Whale watching Boat Trip Causana Viajes"                              | package                     
-12       | Los Glaciares Winter Experience - Day 1, Component                   | "Senderos Hosteria"                                                                     | ground_accommodation        
-12       | Los Glaciares Winter Experience - Day 2, Component                   | "El Calafate (Hotels) to El Calafate Airport (FTE) Walk Patagonia"                      | transfer                    
-12       | Los Glaciares Winter Experience - Day 1, Component                   | "El Calafate Airport (FTE) to El Calafate (Hotels)  Walk Patagonia"                     | transfer                    
-13       | Highlights of San Martín - Day 1, Component 2                        | "Río Hermoso Lodge"                                                                     | ground_accommodation        
-13       | Highlights of San Martín - Day 2, Component 2                        | "Río Hermoso Lodge"                                                                     | ground_accommodation        
-13       | Highlights of San Martín - Day 3, Component 2                        | "Río Hermoso Lodge"                                                                     | ground_accommodation        
-13       | Highlights of San Martín - Day 2, Component 1                        | "Cerro Falkner Hike Andes Track Expediciones"                                           | package                     
-13       | Highlights of San Martín - Day 3, Component 1                        | "Kayak on Lake Machónico Andes Track Expediciones"                                      | package                     
-13       | Highlights of San Martín - Day 4, Component 1                        | "Río Hermoso Lodge to Bariloche  Andes Track"                                           | transfer                    
-14       | Easter Island Highlights - Day 1, Component 2                        | "Hotel Taha Hai"                                                                        | ground_accommodation        
-14       | Easter Island Highlights - Day 2, Component 2                        | "Hotel Taha Hai"                                                                        | ground_accommodation        
-14       | Easter Island Highlights - Day 2, Component 1                        | "Island Interior and Birdman Cult Southbound"                                           | package                     
-15       | Highlights of Peninsula Valdés - Day 2, Component                    | "Peninsula Valdés Tour Causana Viajes"                                                  | package                     
-15       | Highlights of Peninsula Valdés - Day 1, Component                    | "Del Nómade Hosteria"                                                                   | ground_accommodation        
-15       | Highlights of Peninsula Valdés - Day 2, Component                    | "Del Nómade Hosteria"                                                                   | ground_accommodation        
-15       | Highlights of Peninsula Valdés - Day 1, Component                    | "Trelew Airport (REL) to Puerto Pirámides  Causana Viajes  Driver Only"                 | transfer                    
-15       | Highlights of Peninsula Valdés - Day 3, Component                    | "Puerto Pirámides to Trelew Airport (REL) Causana Viajes  Driver Only"                  | transfer                    
-16       | Self-Drive Argentinian Lake District - Day 1, Comp                   | "Bariloche to Villa La Angostura Self-Drive H&T Argentina"                              | package                     
-16       | Self-Drive Argentinian Lake District - Day 1, Comp                   | "Las Balsas Relais & Châteaux"                                                          | ground_accommodation        
-16       | Self-Drive Argentinian Lake District - Day 2, Comp                   | "Villa La Angostura to San Martín de Los Andes Self-Drive H&T Argentina"                | package                     
-16       | Self-Drive Argentinian Lake District - Day 2, Comp                   | "La Casa de Eugenia"                                                                    | ground_accommodation        
-16       | Self-Drive Argentinian Lake District - Day 3, Comp                   | "La Casa de Eugenia"                                                                    | ground_accommodation        
-16       | Self-Drive Argentinian Lake District - Day 3, Comp                   | "San Martín de Los Andes Day at Leisure H&T Argentina"                                  | package                     
-16       | Self-Drive Argentinian Lake District - Day 4, Comp                   | "San Martín de Los Andes to Bariloche Self-Drive H&T Argentina"                         | package                     
-16       | Self-Drive Argentinian Lake District - Day 4, Comp                   | "Peninsula Petit"                                                                       | ground_accommodation        
-17       | Classic Iguazú Falls - Day 1, Component 1                            | "Iguazú Falls Tour (Brazilian side) H&T Argentina"                                      | package                     
-17       | Classic Iguazú Falls - Day 1, Component 2                            | "Gran Meliá Iguazú"                                                                     | ground_accommodation        
-17       | Classic Iguazú Falls - Day 2, Component 1                            | "Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Airport (IGR) to Activity  H&T"         | transfer                    
-18       | Los Huemules Adventure - Day 1, Component 2                          | "Refugio Puesto Cagliero Hike Walk Patagonia"                                           | package                     
-18       | Los Huemules Adventure - Day 1, Component 3                          | "Refugio Puesto Cagliero"                                                               | ground_accommodation        
-19       | Highlights of the Chilean Lake District - Day 2, C                   | "Bike & Beer Excursion Birds Chile"                                                     | package                     
-19       | Highlights of the Chilean Lake District - Day 1, C                   | "100km Cooking Experience Birds Chile"                                                  | package                     
-19       | Highlights of the Chilean Lake District - Day 1, C                   | "AWA"                                                                                   | ground_accommodation        
-19       | Highlights of the Chilean Lake District - Day 2, C                   | "AWA"                                                                                   | ground_accommodation        
-19       | Highlights of the Chilean Lake District - Day 3, C                   | "AWA"                                                                                   | ground_accommodation        
-19       | Highlights of the Chilean Lake District - Day 3, C                   | "Reloncaví Fjord Kayaking Birds Chile"                                                  | package                     
-19       | Highlights of the Chilean Lake District - Day 4, C                   | "Puerto Varas to Puerto Montt Airport (PMC)  Birds Chile"                               | transfer                    
-20       | Day Hikes in Pucón - Day 1, Component 2                              | "Casa Solaria"                                                                          | ground_accommodation        
-20       | Day Hikes in Pucón - Day 2, Component 3                              | "Casa Solaria"                                                                          | ground_accommodation        
-20       | Day Hikes in Pucón - Day 2, Component 2                              | "Mapuche Community Visit with Dinner Birds Chile"                                       | package                     
-20       | Day Hikes in Pucón - Day 2, Component 1                              | "Huerquehue National Park Trek Birds Chile"                                             | package                     
-21       | Highlights of Pumalín National Park - Day 1, Compo                   | "Darwin's Frog Trail Birds Chile"                                                       | package                     
-21       | Highlights of Pumalín National Park - Day 1, Compo                   | "Caleta Gonzalo Lodge"                                                                  | ground_accommodation        
-21       | Highlights of Pumalín National Park - Day 2, Compo                   | "Pumalín Park - Chaitén Volcano Hike Birds Chile"                                       | package                     
-21       | Highlights of Pumalín National Park - Day 2, Compo                   | "Chaitén Airport (WCH) to Puerto Montt Airport (PMC)  Birds Chile"                      | transfer                    
-21       | Highlights of Pumalín National Park - Day 1, Compo                   | "Puerto Montt Airport (PMC) to Chaitén Airport (WCH)  Birds Chile"                      | transfer                    
-21       | Highlights of Pumalín National Park - Day 1, Compo                   | "Full-day El Amarillo Glacier Hike including transfers"                                 | package                     
-22       | Highlights of the Atacama - Day 1, Component 1                       | "Calama Airport (CJC) to San Pedro de Atacama (All Hotels)  Southbound On request"      | transfer                    
-22       | Highlights of the Atacama - Day 1, Component 2                       | "Salt Mountains/Moon Valley Hike Southbound"                                            | package                     
-22       | Highlights of the Atacama - Day 1, Component 3                       | "Noi Casa Atacama"                                                                      | ground_accommodation        
-22       | Highlights of the Atacama - Day 2, Component 2                       | "Noi Casa Atacama"                                                                      | ground_accommodation        
-22       | Highlights of the Atacama - Day 2, Component 1                       | "Tatio Geysers Southbound"                                                              | package                     
-23       | Classic Santiago, Wines and Valparaíso - Day 1, Co                   | "The Singular Santiago"                                                                 | ground_accommodation        
-23       | Classic Santiago, Wines and Valparaíso - Day 1, Co                   | "Santiago City Sensations Tour Southbound"                                              | package                     
-23       | Classic Santiago, Wines and Valparaíso - Day 2, Co                   | "Valparaíso Solo Exploration Independent"                                               | package                     
-23       | Classic Santiago, Wines and Valparaíso - Day 2, Co                   | "Palacio Astoreca"                                                                      | ground_accommodation        
-24       | Highlights of Bariloche - Day 1, Component 2                         | "Panoramic Tour of Bariloche Andes Track Expediciones"                                  | package                     
-24       | Highlights of Bariloche - Day 1, Component 3                         | "Alma del Lago"                                                                         | ground_accommodation        
-24       | Highlights of Bariloche - Day 2, Component 2                         | "Alma del Lago"                                                                         | ground_accommodation        
-24       | Highlights of Bariloche - Day 3, Component 3                         | "Alma del Lago"                                                                         | ground_accommodation        
-24       | Highlights of Bariloche - Day 2, Component 1                         | "Kayak on Lake Mascardi Andes Track Expediciones"                                       | package                     
-24       | Highlights of Bariloche - Day 3, Component 1                         | "Nahuel Huapi Estancia Horse Riding Andes Track Expediciones"                           | package                     
-24       | Highlights of Bariloche - Day 3, Component 2                         | "Colonia Suiza Mountain Biking Andes Track Expediciones"                                | package                     
-25       | Highlights of Tierra del Fuego - Day 1, Component                    | "Cilene del Fuego Suites & Spa"                                                         | ground_accommodation        
-25       | Highlights of Tierra del Fuego - Day 2, Component                    | "Cilene del Fuego Suites & Spa"                                                         | ground_accommodation        
-25       | Highlights of Tierra del Fuego - Day 3, Component                    | "Cilene del Fuego Suites & Spa"                                                         | ground_accommodation        
-25       | Highlights of Tierra del Fuego - Day 2, Component                    | "4x4 Trip with Canoeing Tierra Turismo"                                                 | package                     
-25       | Highlights of Tierra del Fuego - Day 3, Component                    | "Beagle Foodie Experience Tierra Turismo"                                               | package                     
-26       | Peninsula Valdés Wildlife In Depth - Day 1, Compon                   | "Peninsula Valdés Whale watching Boat Trip Causana Viajes"                              | package                     
-26       | Peninsula Valdés Wildlife In Depth - Day 1, Compon                   | "Trelew Airport (REL) to Puerto Pirámides  Causana Viajes  Driver Only"                 | transfer                    
-26       | Peninsula Valdés Wildlife In Depth - Day 3, Compon                   | "Puerto Pirámides to Trelew Airport (REL) Causana Viajes  Driver Only"                  | transfer                    
-26       | Peninsula Valdés Wildlife In Depth - Day 1, Compon                   | "Estancia Rincón Chico"                                                                 | ground_accommodation        
-26       | Peninsula Valdés Wildlife In Depth - Day 2, Compon                   | "Estancia Rincón Chico"                                                                 | ground_accommodation        
-26       | Peninsula Valdés Wildlife In Depth - Day 2, Compon                   | "Peninsula Valdés Wildlife encounters  Causana Viajes"                                  | package                     
-27       | Northern Carretera Austral Road Trip - Day 1, Comp                   | "Wyndham Puerto Varas Pettra"                                                           | ground_accommodation        
-27       | Northern Carretera Austral Road Trip - Day 1, Comp                   | "Puerto Montt Airport (PMC) to Puerto Varas  Birds Chile"                               | transfer                    
-27       | Northern Carretera Austral Road Trip - Day 2, Comp                   | "Pumalín Park - Chaitén Volcano Hike including transfers"                               | package                     
-27       | Northern Carretera Austral Road Trip - Day 2, Comp                   | "Hotel El Barranco"                                                                     | ground_accommodation        
-27       | Northern Carretera Austral Road Trip - Day 3, Comp                   | "Hotel El Barranco"                                                                     | ground_accommodation        
-27       | Northern Carretera Austral Road Trip - Day 3, Comp                   | "Yelcho Glacier Hike Birds Chile"                                                       | package                     
-27       | Northern Carretera Austral Road Trip - Day 4, Comp                   | "Pangue Lodge"                                                                          | ground_accommodation        
-27       | Northern Carretera Austral Road Trip - Day 5, Comp                   | "Pangue Lodge"                                                                          | ground_accommodation        
-27       | Northern Carretera Austral Road Trip - Day 5, Comp                   | "Queulat National Park Hike Birds Chile"                                                | package                     
-27       | Northern Carretera Austral Road Trip - Day 6, Comp                   | "Los Raices B&B"                                                                        | ground_accommodation        
-28       | Los Glaciares Multisport Adventure - Day 1, Compon                   | "Senderos Hosteria"                                                                     | ground_accommodation        
-28       | Los Glaciares Multisport Adventure - Day 3, Compon                   | "Senderos Hosteria"                                                                     | ground_accommodation        
-28       | Los Glaciares Multisport Adventure - Day 4, Compon                   | "Kosten Aike"                                                                           | ground_accommodation        
-28       | Los Glaciares Multisport Adventure - Day 5, Compon                   | "Kosten Aike"                                                                           | ground_accommodation        
-28       | Los Glaciares Multisport Adventure - Day 1, Compon                   | "El Chaltén Rock Climbing Serac"                                                        | package                     
-28       | Los Glaciares Multisport Adventure - Day 2, Compon                   | "Laguna de Los Tres and Poincenot Comfort Camp Hike Serac"                              | package                     
-28       | Los Glaciares Multisport Adventure - Day 2, Compon                   | "Poincenot Comfort Camp"                                                                | ground_accommodation        
-28       | Los Glaciares Multisport Adventure - Day 3, Compon                   | "Laguna Torre from Poincenot Hike Serac"                                                | package                     
-28       | Los Glaciares Multisport Adventure - Day 4, Compon                   | "Río La Leona kayaking Serac"                                                           | package                     
-28       | Los Glaciares Multisport Adventure - Day 5, Compon                   | "Perito Moreno Minitrekking I Serac"                                                    | package                     
-29       | Day Hikes in Tierra del Fuego - Day 1, Component 2                   | "Cilene del Fuego Suites & Spa"                                                         | ground_accommodation        
-29       | Day Hikes in Tierra del Fuego - Day 2, Component 2                   | "Cilene del Fuego Suites & Spa"                                                         | ground_accommodation        
-29       | Day Hikes in Tierra del Fuego - Day 1, Component 1                   | "Martial Glacier Dinner at Night Tierra Turismo"                                        | package                     
-29       | Day Hikes in Tierra del Fuego - Day 2, Component 1                   | "Vinciguerra Glacier Hike Tierra Turismo"                                               | package                     
-29       | Day Hikes in Tierra del Fuego - Day 3, Component 1                   | "Laguna Esmeralda Hike Tierra Turismo"                                                  | package                     
-30       | Best of Aysen Roadtrip - Day 3, Component 2                          | "Mallín Colorado Lodge"                                                                 | ground_accommodation        
-30       | Best of Aysen Roadtrip - Day 4, Component 2                          | "Mallín Colorado Lodge"                                                                 | ground_accommodation        
-30       | Best of Aysen Roadtrip - Day 8, Component 2                          | "Los Raices B&B"                                                                        | ground_accommodation        
-30       | Best of Aysen Roadtrip - Day 1, Component 1                          | "Balmaceda Airport (BBA) to Cerro Castillo Senderos Patagonia Aysen  Driver Only"       | transfer                    
-30       | Best of Aysen Roadtrip - Day 1, Component 2                          | "B&B and Cabins Cerro Castillo"                                                         | ground_accommodation        
-30       | Best of Aysen Roadtrip - Day 2, Component 2                          | "B&B and Cabins Cerro Castillo"                                                         | ground_accommodation        
-30       | Best of Aysen Roadtrip - Day 2, Component 1                          | "Estero Parada Valley & Laguna Duff Senderos Patagonia Aysén"                           | package                     
-30       | Best of Aysen Roadtrip - Day 3, Component 1                          | "Marble Caves kayaking from Puerto Tranquillo Senderos Patagonia Aysén"                 | package                     
-30       | Best of Aysen Roadtrip - Day 4, Component 1                          | "Half-day San Rafael Lagoon & Glacier Boat Trip Senderos Patagonia Aysén"               | package                     
-30       | Best of Aysen Roadtrip - Day 5, Component 1                          | "Baker River Rafting Senderos Patagonia Aysén"                                          | package                     
-30       | Best of Aysen Roadtrip - Day 5, Component 2                          | "Hotel Ultimo Paraíso"                                                                  | ground_accommodation        
-30       | Best of Aysen Roadtrip - Day 6, Component 2                          | "Hotel Ultimo Paraíso"                                                                  | ground_accommodation        
-30       | Best of Aysen Roadtrip - Day 7, Component 2                          | "Hotel Ultimo Paraíso"                                                                  | ground_accommodation        
-30       | Best of Aysen Roadtrip - Day 6, Component 1                          | "Patagonia Park - Day Hike Senderos Patagonia Aysén"                                    | package                     
-30       | Best of Aysen Roadtrip - Day 7, Component 1                          | "Patagonia Park - Day Hike (Tamango side) Senderos Patagonia Aysén"                     | package                     
-31       | Gentle Adventure in Torres del Paine - Day 1, Comp                   | "Torres del Paine Wildlife Safari Chile Nativo"                                         | package                     
-31       | Gentle Adventure in Torres del Paine - Day 1, Comp                   | "Serrano Camp"                                                                          | ground_accommodation        
-31       | Gentle Adventure in Torres del Paine - Day 2, Comp                   | "Serrano Camp"                                                                          | ground_accommodation        
-31       | Gentle Adventure in Torres del Paine - Day 2, Comp                   | "Lake Sarmiento, Lake Nordenskjöld & Salto Grande Waterfall Tour Chile Nativo"          | package                     
-31       | Gentle Adventure in Torres del Paine - Day 3, Comp                   | "Estancia Day at Estancia San Luis Chile Nativo"                                        | package                     
-32       | Highlights of Aysen Roadtrip - Day 4, Component 2                    | "Los Raices B&B"                                                                        | ground_accommodation        
-32       | Highlights of Aysen Roadtrip - Day 1, Component 2                    | "B&B and Cabins Cerro Castillo"                                                         | ground_accommodation        
-32       | Highlights of Aysen Roadtrip - Day 2, Component 1                    | "Marble Caves kayaking from Puerto Tranquillo Senderos Patagonia Aysén"                 | package                     
-32       | Highlights of Aysen Roadtrip - Day 3, Component 1                    | "Half-day San Rafael Lagoon & Glacier Boat Trip Senderos Patagonia Aysén"               | package                     
-32       | Highlights of Aysen Roadtrip - Day 1, Component 1                    | "Balmaceda Airport (BBA) to Cerro Castillo Senderos Patagonia Aysen  Guided"            | transfer                    
-32       | Highlights of Aysen Roadtrip - Day 2, Component 2                    | "El Puesto"                                                                             | ground_accommodation        
-32       | Highlights of Aysen Roadtrip - Day 3, Component 2                    | "El Puesto"                                                                             | ground_accommodation        
-32       | Highlights of Aysen Roadtrip - Day 5, Component 1                    | "Coyhaique to Balmaceda Airport (BBA) Senderos Patagonia Aysen  Driver Only"            | transfer                    
-33       | Fitz Roy Lakeside Retreat - Day 2, Component 3                       | "Senderos Hosteria"                                                                     | ground_accommodation        
-33       | Fitz Roy Lakeside Retreat - Day 1, Component 1                       | "El Calafate Airport (FTE) to El Calafate (Hotels)  Walk Patagonia"                     | transfer                    
-33       | Fitz Roy Lakeside Retreat - Day 1, Component 2                       | "Los Ponchos Hotel Boutique"                                                            | ground_accommodation        
-33       | Fitz Roy Lakeside Retreat - Day 2, Component 2                       | "Cerro Torre Viewpoint Half-day Hike  Walk Patagonia"                                   | package                     
-33       | Fitz Roy Lakeside Retreat - Day 3, Component 1                       | "Laguna de Los Tres Hike Walk Patagonia"                                                | package                     
-33       | Fitz Roy Lakeside Retreat - Day 3, Component 3                       | "Aguas Arriba Lodge"                                                                    | ground_accommodation        
-33       | Fitz Roy Lakeside Retreat - Day 4, Component 2                       | "Aguas Arriba Lodge"                                                                    | ground_accommodation        
-33       | Fitz Roy Lakeside Retreat - Day 5, Component 2                       | "Aguas Arriba Lodge"                                                                    | ground_accommodation        
-33       | Fitz Roy Lakeside Retreat - Day 4, Component 1                       | "Fitz Roy Viewpoints from Lago del Desierto Hike Aguas Arriba Lodge"                    | package                     
-33       | Fitz Roy Lakeside Retreat - Day 5, Component 1                       | "Aguas Arriba to the Chilean Border Aguas Arriba Lodge"                                 | package                     
-34       | Central Valley Vineyard Retreat - Day 1, Component                   | "SCL - Matetic vineyard (w & w/o guide)  Southbound Guided"                             | transfer                    
-34       | Central Valley Vineyard Retreat - Day 1, Component                   | "La Casona Matetic"                                                                     | ground_accommodation        
-35       | Foodie Adventure in the Chilean Lake District - Da                   | "Puñihuil Penguin Colony Birds Chile"                                                   | package                     
-35       | Foodie Adventure in the Chilean Lake District - Da                   | "Palafito 1326 Hotel Boutique"                                                          | ground_accommodation        
-35       | Foodie Adventure in the Chilean Lake District - Da                   | "Palafito 1326 Hotel Boutique"                                                          | ground_accommodation        
-35       | Foodie Adventure in the Chilean Lake District - Da                   | "Wyndham Puerto Varas Pettra"                                                           | ground_accommodation        
-35       | Foodie Adventure in the Chilean Lake District - Da                   | "Castro Walking Tour Birds Chile"                                                       | package                     
-35       | Foodie Adventure in the Chilean Lake District - Da                   | "Puerto Montt to Puerto Varas  Birds Chile"                                             | transfer                    
-35       | Foodie Adventure in the Chilean Lake District - Da                   | "Walk through Puerto Varas Birds Chile"                                                 | package                     
-35       | Foodie Adventure in the Chilean Lake District - Da                   | "Evening @ Espacio Patagón Birds Chile"                                                 | package                     
-35       | Foodie Adventure in the Chilean Lake District - Da                   | "Curanto Lunch with María Luisa Birds Chile"                                            | package                     
-35       | Foodie Adventure in the Chilean Lake District - Da                   | "Muelle de las Almas (Dock of Souls) Hike Birds Chile"                                  | package                     
-35       | Foodie Adventure in the Chilean Lake District - Da                   | "Gastronomy Experience @ El Cazador Birds Chile"                                        | package                     
-35       | Foodie Adventure in the Chilean Lake District - Da                   | "Castro (Chiloe) to Puerto Montt Airport (PMC)  Birds Chile"                            | transfer                    
-36       | Los Glaciares Gentle Adventure - Day 1, Component                    | "El Calafate Airport (FTE) to El Chaltén (Private)  Walk Patagonia"                     | transfer                    
-36       | Los Glaciares Gentle Adventure - Day 3, Component                    | "El Chaltén to El Calafate (Private)  Walk Patagonia"                                   | transfer                    
-36       | Los Glaciares Gentle Adventure - Day 5, Component                    | "El Calafate (Hotels) to El Calafate Airport (FTE) Walk Patagonia"                      | transfer                    
-36       | Los Glaciares Gentle Adventure - Day 1, Component                    | "Madsen House Tour - El Chaltén Walk Patagonia"                                         | package                     
-36       | Los Glaciares Gentle Adventure - Day 1, Component                    | "Hotel Cumbres Nevadas"                                                                 | ground_accommodation        
-36       | Los Glaciares Gentle Adventure - Day 2, Component                    | "Hotel Cumbres Nevadas"                                                                 | ground_accommodation        
-36       | Los Glaciares Gentle Adventure - Day 2, Component                    | "Lago del Desierto and Huemul Glacier Viewpoint Hike Walk Patagonia"                    | package                     
-36       | Los Glaciares Gentle Adventure - Day 3, Component                    | "Nativo Experience Walk Patagonia"                                                      | package                     
-36       | Los Glaciares Gentle Adventure - Day 3, Component                    | "Sierra Nevada Hotel"                                                                   | ground_accommodation        
-36       | Los Glaciares Gentle Adventure - Day 4, Component                    | "Sierra Nevada Hotel"                                                                   | ground_accommodation        
-36       | Los Glaciares Gentle Adventure - Day 4, Component                    | "Perito Moreno Pioneros Adventure Walk Patagonia"                                       | package                     
-36       | Los Glaciares Gentle Adventure - Day 4, Component                    | "Maria Turquesa Boat Cruise to Perito Moreno Glacier Walk Patagonia"                    | package                     
-37       | Tierra del Fuego Winter Experience - Day 1, Compon                   | "End of the World Train Station and Tierra del Fuego National Park Walk Tierra Turismo" | package                     
-37       | Tierra del Fuego Winter Experience - Day 1, Compon                   | "Hotel Cilene del Fuego"                                                                | ground_accommodation        
-37       | Tierra del Fuego Winter Experience - Day 2, Compon                   | "Hotel Cilene del Fuego"                                                                | ground_accommodation        
-37       | Tierra del Fuego Winter Experience - Day 2, Compon                   | "Andes 4x4 Off-road Adventure Tierra Turismo"                                           | package                     
-38       | The Best of Tierra del Fuego - Day 3, Component 1                    | "Beagle Foodie Experience Tierra Turismo"                                               | package                     
-38       | The Best of Tierra del Fuego - Day 2, Component 1                    | "Laguna Esmeralda Hike Tierra Turismo"                                                  | package                     
-38       | The Best of Tierra del Fuego - Day 1, Component 2                    | "Los Cauquenes Resort and Spa"                                                          | ground_accommodation        
-38       | The Best of Tierra del Fuego - Day 2, Component 2                    | "Los Cauquenes Resort and Spa"                                                          | ground_accommodation        
-38       | The Best of Tierra del Fuego - Day 3, Component 3                    | "Los Cauquenes Resort and Spa"                                                          | ground_accommodation        
-38       | The Best of Tierra del Fuego - Day 3, Component 2                    | "Penguin Watching by Bus & Boat at Martillo Island Tierra Turismo"                      | package                     
-39       | Hike, Ride & Raft in Tierra del Fuego - Day 1, Com                   | "Estancia Túnel Biking Tierra Turismo"                                                  | package                     
-39       | Hike, Ride & Raft in Tierra del Fuego - Day 1, Com                   | "Cilene del Faro"                                                                       | ground_accommodation        
-39       | Hike, Ride & Raft in Tierra del Fuego - Day 2, Com                   | "Cilene del Faro"                                                                       | ground_accommodation        
-39       | Hike, Ride & Raft in Tierra del Fuego - Day 3, Com                   | "Cilene del Faro"                                                                       | ground_accommodation        
-39       | Hike, Ride & Raft in Tierra del Fuego - Day 2, Com                   | "Monte Susana Horse Ride Walk Patagonia"                                                | package                     
-39       | Hike, Ride & Raft in Tierra del Fuego - Day 3, Com                   | "Laguna Turquesa & Carabajal Valley Hike Tierra Turismo"                                | package                     
-40       | Buenos Aires Express - Day 1, Component 2                            | "Buenos Aires City Tour Extended Highlights H&T Argentina"                              | package                     
-40       | Buenos Aires Express - Day 1, Component 6                            | "Casa Sur Recoleta"                                                                     | ground_accommodation        
-40       | Buenos Aires Express - Day 1, Component 3                            | "Buenos Aires Tango Show H&T Argentina"                                                 | package                     
-40       | Buenos Aires Express - Day 1, Component 4                            | "Fogón Asado Experience H&T Argentina"                                                  | package                     
-40       | Buenos Aires Express - Day 1, Component 5                            | "The Argentine Experience H&T Argentina"                                                | package                     
-41       | Buenos Aires In Depth - Day 1, Component 2                           | "Casa Sur Recoleta"                                                                     | ground_accommodation        
-41       | Buenos Aires In Depth - Day 2, Component 2                           | "Casa Sur Recoleta"                                                                     | ground_accommodation        
-41       | Buenos Aires In Depth - Day 2, Component 1                           | "Colonia de Sacramento Day Trip H&T Argentina"                                          | package                     
-42       | Classic Buenos Aires - Day 1, Component 2                            | "Casa Sur Recoleta"                                                                     | ground_accommodation        
-43       | Ushuaia Express - Day 1, Component 2                                 | "Cilene del Fuego Suites & Spa"                                                         | ground_accommodation        
-44       | Relax & Re-energise in Buenos Aires - Day 1, Compo                   | "AEP - San Miguel de Monte (Estancia La Bandada)  H&T Driver Only"                      | transfer                    
-44       | Relax & Re-energise in Buenos Aires - Day 1, Compo                   | "Estancia La Bandada"                                                                   | ground_accommodation        
+6        | The Best of Los Glaciares - Day 1, Component 1                       | "El Calafate Airport (FTE) to El Chaltén (Private)  Walk Patagonia"                     | transfer                    
+6        | The Best of Los Glaciares - Day 4, Component 1                       | "Laguna Torre Hike Walk Patagonia"                                                      | package                     
+6        | The Best of Los Glaciares - Day 4, Component 2                       | "El Chaltén to El Calafate (Private)  Walk Patagonia"                                   | transfer                    
+6        | The Best of Los Glaciares - Day 5, Component 3                       | "Perito Moreno Big Ice Hike Walk Patagonia"                                             | package                     
+6        | The Best of Los Glaciares - Day 6, Component 1                       | "El Calafate (Hotels) to El Calafate Airport (FTE) Walk Patagonia"                      | transfer                    
+6        | The Best of Los Glaciares - Day 2, Component 1                       | "Loma del Pliegue Tumbado Hike Walk Patagonia"                                          | package                     
+6        | The Best of Los Glaciares - Day 3, Component 1                       | "El Chaltén to Lago del Desierto"                                                       | transfer                    
+6        | The Best of Los Glaciares - Day 3, Component 2                       | "Lago del Desierto kayak and Hike Walk Patagonia"                                       | package                     
+6        | The Best of Los Glaciares - Day 5, Component 1                       | "El Calafate to Punta Bandera Dock"                                                     | transfer (private)          
+6        | The Best of Los Glaciares - Day 5, Component 2                       | "Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"                                | excursion (shared)          
+7        | Buenos Aires Express - Day 1, Component 2                            | "Buenos Aires City Tour Extended Highlights H&T Argentina"                              | package                     
+7        | Buenos Aires Express - Day 1, Component 4                            | "Buenos Aires Tango Show H&T Argentina"                                                 | package                     
+7        | Buenos Aires Express - Day 1, Component 5                            | "Fogón Asado Experience H&T Argentina"                                                  | package                     
+7        | Buenos Aires Express - Day 1, Component 6                            | "The Argentine Experience H&T Argentina"                                                | package                     
+9        | Best of the Chilean Lake District - Day 1, Compone                   | "Puerto Montt Airport (PMC) Chiloé Island  Birds Chile  On request"                     | transfer                    
+9        | Best of the Chilean Lake District - Day 1, Compone                   | "Puñihuil Penguin Colony Birds Chile"                                                   | package                     
+9        | Best of the Chilean Lake District - Day 2, Compone                   | "Duhatao Bay and Chepu River Hike Birds Chile"                                          | package                     
+9        | Best of the Chilean Lake District - Day 3, Compone                   | "Desolación Hike Birds Chile"                                                           | package                     
+9        | Best of the Chilean Lake District - Day 4, Compone                   | "Petrohué River Rafting Birds Chile"                                                    | package                     
+9        | Best of the Chilean Lake District - Day 4, Compone                   | "Bike & Beer Excursion Birds Chile"                                                     | package                     
+9        | Best of the Chilean Lake District - Day 5, Compone                   | "Puerto Varas to Puerto Montt Aerodrome (Chaiten flight)"                               | transfer                    
+9        | Best of the Chilean Lake District - Day 5, Compone                   | "Darwin's Frog Trail Birds Chile"                                                       | package                     
+9        | Best of the Chilean Lake District - Day 6, Compone                   | "Pumalín Park - Chaitén Volcano Hike Birds Chile"                                       | package                     
+9        | Best of the Chilean Lake District - Day 7, Compone                   | "Chaitén Airport (WCH) to Puerto Montt Airport (PMC)  Birds Chile"                      | transfer                    
+10       | Highlights of Chiloé Island - Day 1, Component 1                     | "Puerto Montt Airport (PMC) Chiloé Island  Birds Chile  On request"                     | transfer                    
+10       | Highlights of Chiloé Island - Day 1, Component 2                     | "Puñihuil Penguin Colony Birds Chile"                                                   | package                     
+10       | Highlights of Chiloé Island - Day 3, Component 1                     | "Duhatao Bay and Chepu River Hike Birds Chile"                                          | package                     
+10       | Highlights of Chiloé Island - Day 2, Component 1                     | "Castro Walking Tour Birds Chile"                                                       | package                     
+10       | Highlights of Chiloé Island - Day 2, Component 2                     | "Chonchi Walking Tour Birds Chile"                                                      | package                     
+10       | Highlights of Chiloé Island - Day 3, Component 2                     | "Visit Chepu River Valley Birds Chile"                                                  | package                     
+11       | Best of Pucón - Day 2, Component 1                                   | "Petrified lava flow in Pucón Biking Birds Chile"                                       | package                     
+11       | Best of Pucón - Day 3, Component 1                                   | "Trancura River White-Water Rafting Birds Chile"                                        | package                     
+11       | Best of Pucón - Day 3, Component 2                                   | "Mapuche Community Visit with Dinner Birds Chile"                                       | package                     
+12       | Gentle Adventure in Aysen - Day 1, Component 1                       | "Balmaceda Airport (BBA) to Mallin Colorado Lodge  Aysen Journeys Driver Only"          | transfer                    
+12       | Gentle Adventure in Aysen - Day 1, Component 2                       | "Marble Caves kayaking from Puerto Tranquillo Aysen Journeys"                           | package                     
+12       | Gentle Adventure in Aysen - Day 2, Component 1                       | "Patagonia National Park Museum & Hike Aysen Journeys"                                  | package                     
+12       | Gentle Adventure in Aysen - Day 3, Component 1                       | "Mallin Colorado Trails Hike Aysen Journeys"                                            | package                     
+12       | Gentle Adventure in Aysen - Day 3, Component 2                       | "Mallin Colorado Lagoon Horse Ride Aysen Journeys"                                      | package                     
+13       | Best of Peninsula Valdés - Day 1, Component 1                        | "Puerto Madryn Airport (PMY) to Puerto Madryn  Causana Viajes"                          | transfer                    
+13       | Best of Peninsula Valdés - Day 2, Component 1                        | "Peninsula Valdés Tour Causana Viajes"                                                  | package                     
+13       | Best of Peninsula Valdés - Day 3, Component 1                        | "Puerto Pirámides Kayaking Causana Viajes"                                              | package                     
+13       | Best of Peninsula Valdés - Day 3, Component 2                        | "Peninsula Valdés Whale watching Boat Trip Causana Viajes"                              | package                     
+14       | Los Glaciares Winter Experience - Day 2, Component                   | "El Calafate (Hotels) to El Calafate Airport (FTE) Walk Patagonia"                      | transfer                    
+14       | Los Glaciares Winter Experience - Day 1, Component                   | "El Calafate Airport (FTE) to El Calafate (Hotels)  Walk Patagonia"                     | transfer                    
+15       | Highlights of San Martín - Day 2, Component 1                        | "Cerro Falkner Hike Andes Track Expediciones"                                           | package                     
+15       | Highlights of San Martín - Day 3, Component 1                        | "Kayak on Lake Machónico Andes Track Expediciones"                                      | package                     
+15       | Highlights of San Martín - Day 4, Component 1                        | "Río Hermoso Lodge to Bariloche  Andes Track"                                           | transfer                    
+16       | Easter Island Highlights - Day 2, Component 1                        | "Island Interior and Birdman Cult Southbound"                                           | package                     
+17       | Highlights of Peninsula Valdés - Day 2, Component                    | "Peninsula Valdés Tour Causana Viajes"                                                  | package                     
+17       | Highlights of Peninsula Valdés - Day 1, Component                    | "Trelew Airport (REL) to Puerto Pirámides  Causana Viajes  Driver Only"                 | transfer                    
+17       | Highlights of Peninsula Valdés - Day 3, Component                    | "Puerto Pirámides to Trelew Airport (REL) Causana Viajes  Driver Only"                  | transfer                    
+18       | Self-Drive Argentinian Lake District - Day 1, Comp                   | "Bariloche to Villa La Angostura Self-Drive H&T Argentina"                              | package                     
+18       | Self-Drive Argentinian Lake District - Day 2, Comp                   | "Villa La Angostura to San Martín de Los Andes Self-Drive H&T Argentina"                | package                     
+18       | Self-Drive Argentinian Lake District - Day 3, Comp                   | "San Martín de Los Andes Day at Leisure H&T Argentina"                                  | package                     
+18       | Self-Drive Argentinian Lake District - Day 4, Comp                   | "San Martín de Los Andes to Bariloche Self-Drive H&T Argentina"                         | package                     
+19       | Classic Iguazú Falls - Day 1, Component 1                            | "Iguazú Falls Tour (Brazilian side) H&T Argentina"                                      | package                     
+19       | Classic Iguazú Falls - Day 2, Component 1                            | "Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Airport (IGR) to Activity  H&T"         | transfer                    
+20       | Los Huemules Adventure - Day 1, Component 2                          | "Refugio Puesto Cagliero Hike Walk Patagonia"                                           | package                     
+21       | Highlights of the Chilean Lake District - Day 2, C                   | "Bike & Beer Excursion Birds Chile"                                                     | package                     
+21       | Highlights of the Chilean Lake District - Day 1, C                   | "100K Cooking Experience Birds Chile"                                                   | package                     
+21       | Highlights of the Chilean Lake District - Day 3, C                   | "Reloncaví Fjord full-day Kayak"                                                        | package                     
+21       | Highlights of the Chilean Lake District - Day 4, C                   | "Puerto Varas to Puerto Montt Airport (PMC)  Birds Chile"                               | transfer                    
+22       | Day Hikes in Pucón - Day 2, Component 2                              | "Mapuche Community Visit with Dinner Birds Chile"                                       | package                     
+22       | Day Hikes in Pucón - Day 2, Component 1                              | "Huerquehue National Park Trek Birds Chile"                                             | package                     
+23       | Highlights of Pumalín National Park - Day 1, Compo                   | "Darwin's Frog Trail Birds Chile"                                                       | package                     
+23       | Highlights of Pumalín National Park - Day 2, Compo                   | "Pumalín Park - Chaitén Volcano Hike Birds Chile"                                       | package                     
+23       | Highlights of Pumalín National Park - Day 2, Compo                   | "Chaitén Airport (WCH) to Puerto Montt Airport (PMC)  Birds Chile"                      | transfer                    
+23       | Highlights of Pumalín National Park - Day 1, Compo                   | "Puerto Montt Airport (PMC) to Chaitén Airport (WCH)  Birds Chile"                      | transfer                    
+23       | Highlights of Pumalín National Park - Day 1, Compo                   | "Full-day El Amarillo Glacier Hike including transfers"                                 | package                     
+24       | Highlights of the Atacama - Day 1, Component 1                       | "Calama Airport (CJC) to San Pedro de Atacama (All Hotels)  Southbound On request"      | transfer                    
+24       | Highlights of the Atacama - Day 1, Component 2                       | "Salt Mountains/Moon Valley Hike Southbound"                                            | package                     
+24       | Highlights of the Atacama - Day 2, Component 1                       | "Tatio Geysers Southbound"                                                              | package                     
+25       | Classic Santiago, Wines and Valparaíso - Day 1, Co                   | "Santiago City Sensations Tour Southbound"                                              | package                     
+25       | Classic Santiago, Wines and Valparaíso - Day 2, Co                   | "Valparaíso Solo Exploration Independent"                                               | package                     
+26       | Highlights of Bariloche - Day 1, Component 2                         | "Panoramic Tour of Bariloche Andes Track Expediciones"                                  | package                     
+26       | Highlights of Bariloche - Day 2, Component 1                         | "Kayak on Lake Mascardi Andes Track Expediciones"                                       | package                     
+26       | Highlights of Bariloche - Day 3, Component 1                         | "Nahuel Huapi Estancia Horse Riding Andes Track Expediciones"                           | package                     
+26       | Highlights of Bariloche - Day 3, Component 2                         | "Colonia Suiza Mountain Biking Andes Track Expediciones"                                | package                     
+27       | Highlights of Tierra del Fuego - Day 2, Component                    | "4x4 Trip with Canoeing Tierra Turismo"                                                 | package                     
+27       | Highlights of Tierra del Fuego - Day 3, Component                    | "Beagle Foodie Experience Tierra Turismo"                                               | package                     
+28       | Peninsula Valdés Wildlife In Depth - Day 1, Compon                   | "Peninsula Valdés Whale watching Boat Trip Causana Viajes"                              | package                     
+28       | Peninsula Valdés Wildlife In Depth - Day 1, Compon                   | "Trelew Airport (REL) to Puerto Pirámides  Causana Viajes  Driver Only"                 | transfer                    
+28       | Peninsula Valdés Wildlife In Depth - Day 3, Compon                   | "Puerto Pirámides to Trelew Airport (REL) Causana Viajes  Driver Only"                  | transfer                    
+28       | Peninsula Valdés Wildlife In Depth - Day 2, Compon                   | "Peninsula Valdés Wildlife encounters  Causana Viajes"                                  | package                     
+29       | Northern Carretera Austral Road Trip - Day 1, Comp                   | "Puerto Montt Airport (PMC) to Puerto Varas  Birds Chile"                               | transfer                    
+29       | Northern Carretera Austral Road Trip - Day 2, Comp                   | "Pumalín Park - Chaitén Volcano Hike including transfers"                               | package                     
+29       | Northern Carretera Austral Road Trip - Day 3, Comp                   | "Glaciar Yelcho Hike Birds Chile"                                                       | package                     
+29       | Northern Carretera Austral Road Trip - Day 5, Comp                   | "Queulat National Park Hike Birds Chile"                                                | package                     
+30       | Los Glaciares Multisport Adventure - Day 1, Compon                   | "El Chaltén Rock Climbing Serac"                                                        | package                     
+30       | Los Glaciares Multisport Adventure - Day 2, Compon                   | "Laguna de Los Tres and Poincenot Comfort Camp Hike Serac"                              | package                     
+30       | Los Glaciares Multisport Adventure - Day 3, Compon                   | "Laguna Torre from Poincenot Hike Serac"                                                | package                     
+30       | Los Glaciares Multisport Adventure - Day 4, Compon                   | "Río La Leona kayaking Serac"                                                           | package                     
+30       | Los Glaciares Multisport Adventure - Day 5, Compon                   | "Perito Moreno Minitrekking I Serac"                                                    | package                     
+31       | Day Hikes in Tierra del Fuego - Day 1, Component 1                   | "Martial Glacier Dinner at Night Tierra Turismo"                                        | package                     
+31       | Day Hikes in Tierra del Fuego - Day 2, Component 1                   | "Vinciguerra Glacier Hike Tierra Turismo"                                               | package                     
+31       | Day Hikes in Tierra del Fuego - Day 3, Component 1                   | "Laguna Esmeralda Hike Tierra Turismo"                                                  | package                     
+32       | Best of Aysen Roadtrip - Day 1, Component 1                          | "Balmaceda Airport (BBA) to Cerro Castillo Senderos Patagonia Aysen  Driver Only"       | transfer                    
+32       | Best of Aysen Roadtrip - Day 2, Component 1                          | "Estero Parada Valley & Laguna Duff Senderos Patagonia Aysén"                           | package                     
+32       | Best of Aysen Roadtrip - Day 3, Component 1                          | "Marble Caves kayaking from Puerto Tranquillo Senderos Patagonia Aysén"                 | package                     
+32       | Best of Aysen Roadtrip - Day 4, Component 1                          | "Half-day San Rafael Lagoon & Glacier Boat Trip Senderos Patagonia Aysén"               | package                     
+32       | Best of Aysen Roadtrip - Day 5, Component 1                          | "Baker River Rafting Senderos Patagonia Aysén"                                          | package                     
+32       | Best of Aysen Roadtrip - Day 6, Component 1                          | "Patagonia Park - Day Hike Senderos Patagonia Aysén"                                    | package                     
+32       | Best of Aysen Roadtrip - Day 7, Component 1                          | "Patagonia Park - Day Hike (Tamango side) Senderos Patagonia Aysén"                     | package                     
+33       | Gentle Adventure in Torres del Paine - Day 1, Comp                   | "Torres del Paine Wildlife Safari Chile Nativo"                                         | package                     
+33       | Gentle Adventure in Torres del Paine - Day 2, Comp                   | "Lake Sarmiento, Lake Nordenskjöld & Salto Grande Waterfall Tour Chile Nativo"          | package                     
+33       | Gentle Adventure in Torres del Paine - Day 3, Comp                   | "Estancia Day at Estancia San Luis Chile Nativo"                                        | package                     
+34       | Highlights of Aysen Roadtrip - Day 2, Component 1                    | "Marble Caves kayaking from Puerto Tranquillo Senderos Patagonia Aysén"                 | package                     
+34       | Highlights of Aysen Roadtrip - Day 3, Component 1                    | "Half-day San Rafael Lagoon & Glacier Boat Trip Senderos Patagonia Aysén"               | package                     
+34       | Highlights of Aysen Roadtrip - Day 1, Component 1                    | "Balmaceda Airport (BBA) to Cerro Castillo Senderos Patagonia Aysen  Guided"            | transfer                    
+34       | Highlights of Aysen Roadtrip - Day 5, Component 1                    | "Coyhaique to Balmaceda Airport (BBA) Senderos Patagonia Aysen  Driver Only"            | transfer                    
+35       | Fitz Roy Lakeside Retreat - Day 1, Component 1                       | "El Calafate Airport (FTE) to El Calafate (Hotels)  Walk Patagonia"                     | transfer                    
+35       | Fitz Roy Lakeside Retreat - Day 2, Component 2                       | "Cerro Torre Viewpoint Half-day Hike  Walk Patagonia"                                   | package                     
+35       | Fitz Roy Lakeside Retreat - Day 3, Component 1                       | "Laguna de Los Tres Hike Walk Patagonia"                                                | package                     
+35       | Fitz Roy Lakeside Retreat - Day 4, Component 1                       | "Fitz Roy Viewpoints from Lago del Desierto Hike Aguas Arriba Lodge"                    | package                     
+35       | Fitz Roy Lakeside Retreat - Day 5, Component 1                       | "Aguas Arriba to the Chilean Border Aguas Arriba Lodge"                                 | package                     
+36       | Central Valley Vineyard Retreat - Day 1, Component                   | "SCL - Matetic vineyard (w & w/o guide)  Southbound Guided"                             | transfer                    
+37       | Foodie Adventure in the Chilean Lake District - Da                   | "Puñihuil Penguin Colony Birds Chile"                                                   | package                     
+37       | Foodie Adventure in the Chilean Lake District - Da                   | "Castro Walking Tour Birds Chile"                                                       | package                     
+37       | Foodie Adventure in the Chilean Lake District - Da                   | "Puerto Montt to Puerto Varas  Birds Chile"                                             | transfer                    
+37       | Foodie Adventure in the Chilean Lake District - Da                   | "Walk through Puerto Varas Birds Chile"                                                 | package                     
+37       | Foodie Adventure in the Chilean Lake District - Da                   | "Evening @ Espacio Patagón Birds Chile"                                                 | package                     
+37       | Foodie Adventure in the Chilean Lake District - Da                   | "Curanto Lunch with María Luisa Birds Chile"                                            | package                     
+37       | Foodie Adventure in the Chilean Lake District - Da                   | "Muelle de las Almas (Dock of Souls) Hike Birds Chile"                                  | package                     
+37       | Foodie Adventure in the Chilean Lake District - Da                   | "Gastronomy Experience @ El Cazador Birds Chile"                                        | package                     
+37       | Foodie Adventure in the Chilean Lake District - Da                   | "Castro (Chiloe) to Puerto Montt Airport (PMC)  Birds Chile"                            | transfer                    
+38       | Los Glaciares Gentle Adventure - Day 1, Component                    | "El Calafate Airport (FTE) to El Chaltén (Private)  Walk Patagonia"                     | transfer                    
+38       | Los Glaciares Gentle Adventure - Day 3, Component                    | "El Chaltén to El Calafate (Private)  Walk Patagonia"                                   | transfer                    
+38       | Los Glaciares Gentle Adventure - Day 5, Component                    | "El Calafate (Hotels) to El Calafate Airport (FTE) Walk Patagonia"                      | transfer                    
+38       | Los Glaciares Gentle Adventure - Day 1, Component                    | "Madsen House Tour - El Chaltén Walk Patagonia"                                         | package                     
+38       | Los Glaciares Gentle Adventure - Day 2, Component                    | "Lago del Desierto and Huemul Glacier Viewpoint Hike Walk Patagonia"                    | package                     
+38       | Los Glaciares Gentle Adventure - Day 3, Component                    | "Nativo Experience Walk Patagonia"                                                      | package                     
+38       | Los Glaciares Gentle Adventure - Day 4, Component                    | "Perito Moreno Pioneros Adventure Walk Patagonia"                                       | package                     
+38       | Los Glaciares Gentle Adventure - Day 4, Component                    | "Maria Turquesa Boat Cruise to Perito Moreno Glacier Walk Patagonia"                    | package                     
+39       | Tierra del Fuego Winter Experience - Day 1, Compon                   | "End of the World Train Station and Tierra del Fuego National Park Walk Tierra Turismo" | package                     
+39       | Tierra del Fuego Winter Experience - Day 1, Compon                   | "Hotel Cilene del Fuego"                                                                | ground_accommodation        
+39       | Tierra del Fuego Winter Experience - Day 2, Compon                   | "Hotel Cilene del Fuego"                                                                | ground_accommodation        
+39       | Tierra del Fuego Winter Experience - Day 2, Compon                   | "Andes 4x4 Off-road Adventure Tierra Turismo"                                           | package                     
+40       | The Best of Tierra del Fuego - Day 3, Component 1                    | "Beagle Foodie Experience Tierra Turismo"                                               | package                     
+40       | The Best of Tierra del Fuego - Day 2, Component 1                    | "Laguna Esmeralda Hike Tierra Turismo"                                                  | package                     
+40       | The Best of Tierra del Fuego - Day 3, Component 2                    | "Penguin Watching by Bus & Boat at Martillo Island Tierra Turismo"                      | package                     
+41       | Hike, Ride & Raft in Tierra del Fuego - Day 1, Com                   | "Estancia Túnel Biking Tierra Turismo"                                                  | package                     
+41       | Hike, Ride & Raft in Tierra del Fuego - Day 1, Com                   | "Cilene del Faro"                                                                       | ground_accommodation        
+41       | Hike, Ride & Raft in Tierra del Fuego - Day 2, Com                   | "Cilene del Faro"                                                                       | ground_accommodation        
+41       | Hike, Ride & Raft in Tierra del Fuego - Day 3, Com                   | "Cilene del Faro"                                                                       | ground_accommodation        
+41       | Hike, Ride & Raft in Tierra del Fuego - Day 2, Com                   | "Monte Susana Horse Ride Walk Patagonia"                                                | package                     
+41       | Hike, Ride & Raft in Tierra del Fuego - Day 3, Com                   | "Laguna Turquesa & Carabajal Valley Hike Tierra Turismo"                                | package                     
+42       | Buenos Aires In Depth - Day 2, Component 1                           | "Colonia de Sacramento Day Trip H&T Argentina"                                          | package                     
+48       | Relax & Re-energise in Buenos Aires - Day 1, Compo                   | "AEP - San Miguel de Monte (Estancia La Bandada)  H&T Driver Only"                      | transfer                    
 
 SHEET: All Inclusive Hotel Package
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-Row      | Row Name                    | Missing Component                                                                  | Type                        
-----------------------------------------------------------------------------------------------------------------------------------------------------------
-3        |  - Day 1, Component 1       | "Balmaceda Airport (BBA) to Explora Patagonia National Park"                       | transfer                    
-3        |  - Day 2, Component 1       | "Blugrin - Cochrane River and Lake Explora"                                        | package                     
-3        |  - Day 3, Component 1       | "Laguna Chico Hike Explora"                                                        | package                     
-3        |  - Day 4, Component 1       | "Explora Patagonia National Park to Balmaceda Airport (BBA)  Explora  Driver Only" | transfer                    
-3        |  - Full Trip Ground Accom   | "Explora Patagonia National Park"                                                  | ground_accommodation        
-4        |  - Day 1, Component 1       | "Puerto Natales to Patagonia Camp  Patagonia Camp Driver Only"                     | transfer                    
-4        |  - Day 2, Component 1       | "Lake Toro kayaking Patagonia Camp"                                                | package                     
-4        |  - Day 3, Component 1       | "Base of the Towers Viewpoint Hike Patagonia Camp"                                 | package                     
-4        |  - Full Trip Ground Accom   | "Patagonia Camp"                                                                   | ground_accommodation        
-5        |  - Day 2, Component 1       | "Alto del Toro Hike Explora"                                                       | package                     
-5        |  - Day 3, Component 1       | "Lake Linda Horse Riding Explora"                                                  | package                     
-5        |  - Full Trip Ground Accom   | "Explora Torres del Paine"                                                         | ground_accommodation        
-6        |  - Day 1, Component 1       | "Puerto Natales to Tierra Patagonia  Tierra Patagonia Driver Only"                 | transfer                    
-6        |  - Day 2, Component 1       | "Baguales Fossil Trail Hike Tierra"                                                | package                     
-6        |  - Day 3, Component 1       | "Estancia Lazo Horse Ride Tierra"                                                  | package                     
-6        |  - Day 4, Component 1       | "Tierra Patagonia to Puerto Natales  Tierra Patagonia Driver Only"                 | transfer                    
-6        |  - Full Trip Ground Accom   | "Tierra Patagonia"                                                                 | ground_accommodation        
-7        |  - Full Trip Ground Accom   | "Explora Torres del Paine"                                                         | ground_accommodation        
-7        |  - Day 2, Component 1       | "French Valley: From Pehoé Lake and back Hike Explora"                             | package                     
-7        |  - Day 3, Component 1       | "Base of the Towers Viewpoint Hike Explora"                                        | package                     
-8        |  - Day 1, Component 1       | "Puerto Natales (All) to Awasi Patagonia  Awasi Driver Only"                       | transfer                    
-8        |  - Day 2, Component 1       | "Lake Pehoé Boat Ride and French Valley Hike Awasi"                                | package                     
-8        |  - Day 3, Component 1       | "Laguna Azul Hike in Torres del Paine Awasi"                                       | package                     
-8        |  - Full Trip Ground Accom   | "Awasi Patagonia"                                                                  | ground_accommodation        
-9        |  - Day 1, Component 1       | "Calama Airport (CJC) to Tierra Atacama Tierra  Driver Only"                       | transfer                    
-9        |  - Day 1, Component 2       | "Guatin Cactus Valley Hike Tierra"                                                 | package                     
-9        |  - Day 2, Component 1       | "Tatio Geysers Tierra"                                                             | package                     
-9        |  - Day 3, Component 1       | "Purilactis Hike Tierra"                                                           | package                     
-9        |  - Day 4, Component 1       | "Tierra Atacama to Calama Airport (CJC) Tierra  Driver Only"                       | transfer                    
-9        |  - Full Trip Ground Accom   | "Tierra Atacama"                                                                   | ground_accommodation        
-10       |  - Day 2, Component 1       | "Sierra Baguales Hike Patagonia Camp"                                              | package                     
-10       |  - Day 3, Component 1       | "Las Chinas Viewpoint Hike Patagonia Camp"                                         | package                     
-10       |  - Day 4, Component 1       | "Estancia Cerro Guido to Puerto Natales (ALL)  Patagonia Camp  Driver Only"        | transfer                    
-10       |  - Full Trip Ground Accom   | "Estancia Cerro Guido"                                                             | ground_accommodation        
-11       |  - Full Trip Ground Accom   | "Tierra Patagonia"                                                                 | ground_accommodation        
-11       |  - Day 1, Component 1       | "Puerto Natales to Tierra Patagonia  Tierra  Driver Only"                          | transfer                    
-11       |  - Day 2, Component 1       | "Lake Pehoé Boat Ride and French Valley Hike Tierra"                               | package                     
-11       |  - Day 3, Component 1       | "Base of the Towers Viewpoint Hike Tierra"                                         | package                     
-11       |  - Day 4, Component 1       | "Tierra Patagonia to Puerto Natales  Tierra  Driver Only"                          | transfer                    
-12       |  - Day 2, Component 1       | "The Birdman Hike Explora"                                                         | package                     
-12       |  - Day 3, Component 1       | "Puakatiki Hike Explora"                                                           | package                     
-12       |  - Day 3, Component 2       | "Motu Tautara Snorkelling Explora"                                                 | package                     
-12       |  - Day 4, Component 1       | "The Miru Hike Explora"                                                            | package                     
-12       |  - Full Trip Ground Accom   | "Explora Easter Island"                                                            | ground_accommodation        
-13       |  - Day 2, Component 1       | "Glacier Grey Boat Trip Hotel Rio Serrano"                                         | package                     
-13       |  - Day 2, Component 2       | "Hotel Río Serrano Horse Ride Hotel Rio Serrano"                                   | package                     
-13       |  - Day 3, Component 1       | "Sarmiento Lake Hike Hotel Rio Serrano"                                            | package                     
-13       |  - Full Trip Ground Accom   | "Hotel Rio Serrano"                                                                | ground_accommodation        
-14       |  - Day 1, Component 1       | "Calama Airport (CJC) to Explora Atacama  Explora  Driver Only"                    | transfer                    
-14       |  - Day 2, Component 1       | "River Blanco hike & Tatio Geysers Hike Explora"                                   | package                     
-14       |  - Day 2, Component 2       | "Catarpe Bike Ride Explora"                                                        | package                     
-14       |  - Day 3, Component 1       | "Punta del Inca Hike Explora"                                                      | package                     
-14       |  - Day 3, Component 2       | "Gran Salar Tour Explora"                                                          | package                     
-14       |  - Day 4, Component 1       | "Explora Atacama to Calama Airport (CJC)  Explora  Driver Only"                    | transfer                    
-14       |  - Full Trip Ground Accom   | "Explora Atacama"                                                                  | ground_accommodation        
-15       |  - Day 1, Component 1       | "Calama Airport (CJC) to Awasi Atacama Awasi  Driver / Guide"                      | transfer                    
-15       |  - Day 2, Component 1       | "El Tatio Geysers - Full Day Awasi"                                                | package                     
-15       |  - Full Trip Ground Accom   | "Awasi Atacama"                                                                    | ground_accommodation        
-16       |  - Full Trip Ground Accom   | "Explora Torres del Paine"                                                         | ground_accommodation        
-16       |  - Day 2, Component 1       | "Base of the Towers Viewpoint Hike Explora"                                        | package                     
-16       |  - Day 3, Component 1       | "Glacier Grey Hike & Boat Trip Explora"                                            | package                     
-17       |  - Day 1, Component 1       | "Puerto Natales Airport (PNT) to Hotel Las Torres  Hotel Las Torres Driver Only"   | transfer                    
-17       |  - Day 2, Component 1       | "Full Paine - Grey Glacier Tour Hotel Las Torres"                                  | package                     
-17       |  - Day 3, Component 1       | "Fauna Trail Hotel Las Torres"                                                     | package                     
-17       |  - Full Trip Ground Accom   | "Hotel Las Torres"                                                                 | ground_accommodation        
-18       |  - Day 1, Component 1       | "Puerto Natales to EcoCamp  Cascada Driver Only"                                   | transfer                    
-18       |  - Full Trip Ground Accom   | "EcoCamp Patagonia"                                                                | ground_accommodation        
-19       |  - Day 1, Component 1       | "El Calafate Airport (FTE) to Explora El Chaltén  Explora"                         | transfer                    
-19       |  - Full Trip Ground Accom   | "Explora El Chaltén"                                                               | ground_accommodation        
-20       |  - Full Trip Ground Accom   | "Refugia Chiloé"                                                                   | ground_accommodation        
-21       |  - Day 1, Component 1       | "Pucon to Parque Futangue  Southbound"                                             | transfer                    
-21       |  - Day 2, Component 1       | "Parque Futangue to Pucon  Southbound"                                             | transfer                    
-21       |  - Full Trip Ground Accom   | "Vira Vira"                                                                        | ground_accommodation        
-22       |  - Day 1, Component 1       | "Puerto Natales to Hotel Remota Chile Nativo  Driver Only"                         | transfer                    
-22       |  - Day 1, Component 2       | "Estancia Los Rebaños Bike Ride Remota Lodge"                                      | package                     
-22       |  - Day 2, Component 1       | "Lake Grey Boat Trip Remota Lodge"                                                 | package                     
-22       |  - Day 3, Component 1       | "Hotel Remota to Puerto Natales Chile Nativo  Driver Only"                         | transfer                    
-22       |  - Full Trip Ground Accom   | "Remota Lodge"                                                                     | ground_accommodation        
-23       |  - Day 4, Component 1       | "El Calafate (Hotels) to El Calafate Airport (FTE) Walk Patagonia"                 | transfer                    
-23       |  - Day 1, Component 1       | "El Calafate Airport (FTE) to El Calafate (Hotels)  Walk Patagonia"                | transfer                    
-23       |  - Day 2, Component 1       | "Cerro Carnero Hike Walk Patagonia / H&T"                                          | package                     
-23       |  - Day 3, Component 1       | "Los Perros Waterfall Hike Walk Patagonia / H&T"                                   | package                     
-23       |  - Full Trip Ground Accom   | "Estancia Cristina"                                                                | ground_accommodation        
-24       |  - Day 1, Component 1       | "El Calafate Airport (FTE) to Eolo  Eolo"                                          | transfer                    
-24       |  - Day 2, Component 1       | "Hike, Bike & Ride at Hotel Eolo Hotel Eolo"                                       | package                     
-24       |  - Day 3, Component 1       | "Eolo to El Calafate Airport (FTE)  Eolo"                                          | transfer                    
-24       |  - Full Trip Ground Accom   | "EOLO"                                                                             | ground_accommodation        
-25       |  - Day 1, Component 2       | "Iguazú Falls Tour and Bird Park (Brazilian side) Awasi"                           | package                     
-25       |  - Day 2, Component 1       | "Exploration of Yacu-í Private Reserve Awasi"                                      | package                     
-25       |  - Day 3, Component 1       | "Awasi Iguazu to Puerto Iguazú (IGR) or Foz de Iguaçu (IGU) Airports  Awasi"       | transfer                    
-25       |  - Full Trip Ground Accom   | "Awasi Iguazú"                                                                     | ground_accommodation        
+------------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                | Missing Component                                                                  | Type            
+------------------------------------------------------------------------------------------------------------------------------------------
+3        |  - Day 1, Component 1   | "Balmaceda Airport (BBA) to Explora Patagonia National Park"                       | transfer        
+3        |  - Day 2, Component 1   | "Blugrin - Cochrane River and Lake Explora"                                        | package         
+3        |  - Day 3, Component 1   | "Laguna Chico Hike Explora"                                                        | package         
+3        |  - Day 4, Component 1   | "Explora Patagonia National Park to Balmaceda Airport (BBA)  Explora  Driver Only" | transfer        
+4        |  - Day 1, Component 1   | "Puerto Natales to Patagonia Camp  Patagonia Camp Driver Only"                     | transfer        
+4        |  - Day 2, Component 1   | "Lake Toro kayaking Patagonia Camp"                                                | package         
+4        |  - Day 3, Component 1   | "Base of the Towers Viewpoint Hike Patagonia Camp"                                 | package         
+5        |  - Day 2, Component 1   | "Alto del Toro Hike Explora"                                                       | package         
+5        |  - Day 3, Component 1   | "Lake Linda Horse Riding Explora"                                                  | package         
+6        |  - Day 1, Component 1   | "Puerto Natales to Tierra Patagonia  Tierra Patagonia Driver Only"                 | transfer        
+6        |  - Day 2, Component 1   | "Baguales Fossil Trail Hike Tierra"                                                | package         
+6        |  - Day 3, Component 1   | "Estancia Lazo Horse Ride Tierra"                                                  | package         
+6        |  - Day 4, Component 1   | "Tierra Patagonia to Puerto Natales  Tierra Patagonia Driver Only"                 | transfer        
+7        |  - Day 2, Component 1   | "French Valley: From Pehoé Lake and back Hike Explora"                             | package         
+7        |  - Day 3, Component 1   | "Base of the Towers Viewpoint Hike Explora"                                        | package         
+8        |  - Day 1, Component 1   | "Puerto Natales (All) to Awasi Patagonia  Awasi Driver Only"                       | transfer        
+8        |  - Day 2, Component 1   | "Lake Pehoé Boat Ride and French Valley Hike Awasi"                                | package         
+8        |  - Day 3, Component 1   | "Laguna Azul Hike in Torres del Paine Awasi"                                       | package         
+9        |  - Day 1, Component 1   | "Calama Airport (CJC) to Tierra Atacama Tierra  Driver Only"                       | transfer        
+9        |  - Day 1, Component 2   | "Guatin Cactus Valley Hike Tierra"                                                 | package         
+9        |  - Day 2, Component 1   | "Tatio Geysers Tierra"                                                             | package         
+9        |  - Day 3, Component 1   | "Purilactis Hike Tierra"                                                           | package         
+9        |  - Day 4, Component 1   | "Tierra Atacama to Calama Airport (CJC) Tierra  Driver Only"                       | transfer        
+10       |  - Day 2, Component 1   | "Sierra Baguales Hike Patagonia Camp"                                              | package         
+10       |  - Day 3, Component 1   | "Las Chinas Viewpoint Hike Patagonia Camp"                                         | package         
+10       |  - Day 4, Component 1   | "Estancia Cerro Guido to Puerto Natales (ALL)  Patagonia Camp  Driver Only"        | transfer        
+11       |  - Day 1, Component 1   | "Puerto Natales to Tierra Patagonia  Tierra  Driver Only"                          | transfer        
+11       |  - Day 2, Component 1   | "Lake Pehoé Boat Ride and French Valley Hike Tierra"                               | package         
+11       |  - Day 3, Component 1   | "Base of the Towers Viewpoint Hike Tierra"                                         | package         
+11       |  - Day 4, Component 1   | "Tierra Patagonia to Puerto Natales  Tierra  Driver Only"                          | transfer        
+12       |  - Day 2, Component 1   | "The Birdman Hike Explora"                                                         | package         
+12       |  - Day 3, Component 1   | "Puakatiki Hike Explora"                                                           | package         
+12       |  - Day 3, Component 2   | "Motu Tautara Snorkelling Explora"                                                 | package         
+12       |  - Day 4, Component 1   | "The Miru Hike Explora"                                                            | package         
+13       |  - Day 2, Component 1   | "Glacier Grey Boat Trip Hotel Rio Serrano"                                         | package         
+13       |  - Day 2, Component 2   | "Hotel Río Serrano Horse Ride Hotel Rio Serrano"                                   | package         
+13       |  - Day 3, Component 1   | "Sarmiento Lake Hike Hotel Rio Serrano"                                            | package         
+14       |  - Day 1, Component 1   | "Calama Airport (CJC) to Explora Atacama  Explora  Driver Only"                    | transfer        
+14       |  - Day 2, Component 1   | "River Blanco hike & Tatio Geysers Hike Explora"                                   | package         
+14       |  - Day 2, Component 2   | "Catarpe Bike Ride Explora"                                                        | package         
+14       |  - Day 3, Component 1   | "Punta del Inca Hike Explora"                                                      | package         
+14       |  - Day 3, Component 2   | "Gran Salar Tour Explora"                                                          | package         
+14       |  - Day 4, Component 1   | "Explora Atacama to Calama Airport (CJC)  Explora  Driver Only"                    | transfer        
+15       |  - Day 1, Component 1   | "Calama Airport (CJC) to Awasi Atacama Awasi  Driver / Guide"                      | transfer        
+15       |  - Day 2, Component 1   | "El Tatio Geysers - Full Day Awasi"                                                | package         
+16       |  - Day 2, Component 1   | "Base of the Towers Viewpoint Hike Explora"                                        | package         
+16       |  - Day 3, Component 1   | "Glacier Grey Hike & Boat Trip Explora"                                            | package         
+17       |  - Day 1, Component 1   | "Puerto Natales Airport (PNT) to Hotel Las Torres  Hotel Las Torres Driver Only"   | transfer        
+17       |  - Day 2, Component 1   | "Full Paine - Grey Glacier Tour Hotel Las Torres"                                  | package         
+17       |  - Day 3, Component 1   | "Fauna Trail Hotel Las Torres"                                                     | package         
+18       |  - Day 1, Component 1   | "Puerto Natales to EcoCamp  Cascada Driver Only"                                   | transfer        
+19       |  - Day 1, Component 1   | "El Calafate Airport (FTE) to Explora El Chaltén  Explora"                         | transfer        
+20       |  - Day 1, Component 1   | "Puerto Montt Airport (PMC) to Refugia Chiloe Refugia Chiloe"                      | transfer        
+21       |  - Day 1, Component 1   | "Pucon to Parque Futangue  Southbound"                                             | transfer        
+21       |  - Day 2, Component 1   | "Parque Futangue to Pucon  Southbound"                                             | transfer        
+22       |  - Day 1, Component 1   | "Puerto Natales to Hotel Remota Chile Nativo  Driver Only"                         | transfer        
+22       |  - Day 1, Component 2   | "Estancia Los Rebaños Bike Ride Remota Lodge"                                      | package         
+22       |  - Day 2, Component 1   | "Lake Grey Boat Trip Remota Lodge"                                                 | package         
+22       |  - Day 3, Component 1   | "Hotel Remota to Puerto Natales Chile Nativo  Driver Only"                         | transfer        
+23       |  - Day 4, Component 1   | "El Calafate (Hotels) to El Calafate Airport (FTE) Walk Patagonia"                 | transfer        
+23       |  - Day 1, Component 1   | "El Calafate Airport (FTE) to El Calafate (Hotels)  Walk Patagonia"                | transfer        
+23       |  - Day 2, Component 1   | "Cerro Carnero Hike Walk Patagonia / H&T"                                          | package         
+23       |  - Day 3, Component 1   | "Los Perros Waterfall Hike Walk Patagonia / H&T"                                   | package         
+24       |  - Day 1, Component 1   | "El Calafate Airport (FTE) to Eolo  Eolo"                                          | transfer        
+24       |  - Day 2, Component 1   | "Hike, Bike & Ride at Hotel Eolo Hotel Eolo"                                       | package         
+24       |  - Day 3, Component 1   | "Eolo to El Calafate Airport (FTE)  Eolo"                                          | transfer        
+25       |  - Day 1, Component 2   | "Iguazú Falls Tour and Bird Park (Brazilian side) Awasi"                           | package         
+25       |  - Day 2, Component 1   | "Exploration of Yacu-í Private Reserve Awasi"                                      | package         
+25       |  - Day 3, Component 1   | "Awasi Iguazu to Puerto Iguazú (IGR) or Foz de Iguaçu (IGU) Airports  Awasi"       | transfer        

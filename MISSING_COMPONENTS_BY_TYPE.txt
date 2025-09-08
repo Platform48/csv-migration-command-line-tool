@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2025-09-04 12:11:01
+Generated: 2025-09-08 15:58:53
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
@@ -11,65 +11,36 @@ TYPE: location
 Missing Component      | Occurrences
 -------------------------------------
 "Activity"             | 46
-"Yelcho Glacier"       | 2
 "Campamento Japones"   | 1
 
 TYPE: journey
 --------------------------------------------------------------------------------
-Missing Component                                                                                                    | Occurrences
------------------------------------------------------------------------------------------------------------------------------------
-"El Calafate to Perito Moreno (Punta Bandera)"                                                                       | 3
-"Ahu Akivi - Explora Rapa Nui Hotel"                                                                                 | 2
-"Arturo Merino Benitez International Airport SCL - Bus station"                                                      | 2
-"Cataratas of Iguazu International Airport IGR  - Puerto Iguazú Hotel or reverse"                                    | 2
-"Das Cataratas - Bird Park - Das Cataratas"                                                                          | 2
-"El Calafate to Nibepo Aike"                                                                                         | 2
-"El Chaltén to Los Huemules Reserve/Explora Chaltén"                                                                 | 2
-"El Plumerillo International Airport, Mendoza MDZ - Downtown Mendoza or reverse"                                     | 2
-"Explora Torres del Paine to Cerro Castill / Cancha Carrera (or reverse)"                                            | 2
-"Foz do Iguaçu International Airport IGU  - Puerto Iguazú Hotel or reverse"                                          | 2
-"Foz do Iguaçu International Airport IGUR - Grand Melia Iguazu falls or reverse"                                     | 2
-"l Plumerillo International Airport, Mendoza MDZ - Vistalba winery  or reverse"                                      | 2
-"Pucon to Parque Futangue (Vira Vira) or reverse"                                                                    | 2
-"Puerto Natales Airport (PNT) to Puerto Natales"                                                                     | 2
-"Puerto Natales Bus Terminal to Puerto Natales"                                                                      | 2
-"Puerto Natales to Explora Patagonia (or reverse)"                                                                   | 2
-"Puerto Varas to Chiloe or reverse"                                                                                  | 2
-"Santiago Bus station - Santiago hotel or reverse"                                                                   | 2
-"Temuco Airport (ZCO) to Parque Futangue (Vira Vira) or reverse"                                                     | 2
-"Arturo Merino Benitez International Airport SCL -  Valpariso via Casa Martin winery tour"                           | 1
-"City Hotel -  Valpariso via Casa Martin winery tour"                                                                | 1
-"City Hotel to Valpariso with stop for tour at Matetic"                                                              | 1
-"EcoCamp to Lake Pehoé dock or reverse"                                                                              | 1
-"El Calafate to Eolo"                                                                                                | 1
-"El Chaltén to Lago del Desierto or reverse"                                                                         | 1
-"El Chaltén to Perito Moereno (Punta Bandera)"                                                                       | 1
-"Hotel (City Center) - TDF National Park or reverse"                                                                 | 1
-"Hotel - restaurant round trip (inc wait time)  or reverse"                                                          | 1
-"Hotel Taha Tai -  Hanga Te'e"                                                                                       | 1
-"Mataveri International Airport (IPC) - Explora Hotel or reverse"                                                    | 1
-"Ministro Pistarini International Airport, Ezeiza (EZE) - Aeroparque Internacional Jorge Newbery (AEP) or reverse"   | 1
-"Navimag Cruise Port (PNT)"                                                                                          | 1
-"Puerto Montt Airport (PMC) to Parque Futangue (Vira Vira) or reverse"                                               | 1
-"Puerto Varas to Bariloche"                                                                                          | 1
-"Ushuaia Malvinas Argentinas (USH) - Hotel (City Center)  or reverse"                                                | 1
-"Ushuaia Malvinas Argentinas (USH) - Port"                                                                           | 1
+Missing Component                                                          | Occurrences
+-----------------------------------------------------------------------------------------
+"Chaitén Airport (WCH) to Puerto Montt Airport (PMC) or reverse"           | 2
+"Puerto Varas to Puerto Varas Aerodrome (for Chaiten flight) or reverse"   | 2
 
 TYPE: activity
 --------------------------------------------------------------------------------
 Missing Component                                                             | Occurrences
 --------------------------------------------------------------------------------------------
-"French Valley: From Pehoé Lake and back Hike"                                | 11
+"French Valley: From Pehoé Lake and back Hike"                                | 13
 "Fauna Trail"                                                                 | 7
+"French Valley from Refugio Cuernos to Paine Grande Hike"                     | 3
 "Lago del Desierto Kayak & Huemul Glacier Viewpoint Hike"                     | 3
 "Lago del Desierto Kayaking"                                                  | 3
 "Perito Moreno - Touching the Ice"                                            | 3
 "Tierra del Fuego National Park with Trekking & Canoes including transfers"   | 3
+"100km Cooking Experience"                                                    | 2
 "Cejar Lagoon Bike Ride"                                                      | 2
+"Reloncaví Fjord Kayaking"                                                    | 2
 "Allyus Biking"                                                               | 1
+"Boat across Lago Pehoé (Paine Grande to Paine Pudeto)"                       | 1
 "Buenos Aires Day at Leisure"                                                 | 1
 "Day at Leisure"                                                              | 1
 "Fogon Asado Experience - Buenos Aires"                                       | 1
+"Gastronomy Experience @ El Cazador"                                          | 1
+"Glaciar Yelcho Hike"                                                         | 1
 "Glacier Grey Boat Trip & Hike"                                               | 1
 "Glacier Grey Sailing; Touring the Paine Massif"                              | 1
 "Grey Boat Trip and Hanging Bridges Hike"                                     | 1
@@ -161,6 +132,7 @@ Missing Component                                                               
 "Estancia Cerro Guido to Patagonia Camp Patagonia Camp  Driver Only"                            | 2
 "Estancia Puerto Conselo to Remota Lodge Chile Nativo  Driver Only"                             | 2
 "Explora El Chaltén to Laguna Condor Explora  Guided"                                           | 2
+"Lago Grey to Serrano Camp  Chile Nativo Guided"                                                | 2
 "Laguna Condor to Explora El Chaltén Explora  Guided"                                           | 2
 "Mallin Colorado to Puerto Guadal Aysen Journeys  Driver Only"                                  | 2
 "Patagonia Camp to Estancia Cerro Guido Patagonia Camp  Driver Only"                            | 2
@@ -192,6 +164,7 @@ Missing Component                                                               
 "Barraco Lodge to Laguna Gaviotas Barraco Lodge  Guided"                                        | 1
 "Barraco Lodge to Río Frio Barraco Lodge  Guided"                                               | 1
 "Barraco Lodge to Yates Volcano Barraco Lodge  Guided"                                          | 1
+"Boat across Lago Pehoé (Pudeto to Paine Grande)"                                               | 1
 "Calama Airport (CJC) to Awasi Atacama Awasi  Driver / Guide"                                   | 1
 "Calama Airport (CJC) to Explora Atacama  Explora  Driver Only"                                 | 1
 "Calama Airport (CJC) to San Pedro de Atacama (All Hotels)  Southbound On request"              | 1
@@ -251,17 +224,21 @@ Missing Component                                                               
 "Puerto Madryn to Activity  Causana Viajes"                                                     | 1
 "Puerto Montt Airport (PMC) to Chaitén Airport (WCH)  Birds Chile"                              | 1
 "Puerto Montt Airport (PMC) to Puerto Varas  Birds Chile"                                       | 1
+"Puerto Montt Airport (PMC) to Refugia Chiloe Refugia Chiloe"                                   | 1
 "Puerto Montt to Puerto Varas  Birds Chile"                                                     | 1
 "Puerto Natales (All) to Awasi Patagonia  Awasi Driver Only"                                    | 1
 "Puerto Natales Airport (PNT) to Hotel Las Torres  Hotel Las Torres Driver Only"                | 1
 "Puerto Natales to EcoCamp  Cascada Driver Only"                                                | 1
 "Puerto Natales to Hotel Remota Chile Nativo  Driver Only"                                      | 1
 "Puerto Natales to Patagonia Camp  Patagonia Camp Driver Only"                                  | 1
+"Puerto Natales to Pudeto  Chile Nativo Guided"                                                 | 1
 "Puerto Natales to Tierra Patagonia  Tierra  Driver Only"                                       | 1
 "Puerto Natales to Tierra Patagonia  Tierra Patagonia Driver Only"                              | 1
+"Puerto Natales to Torres del Paine (Refugio Central)  Chile Nativo Guided"                     | 1
 "Puerto Tranquilo to Bahía Exploradores  Senderos Patagonia Aysen  Guided"                      | 1
 "Puerto Tranquilo to El Mirador de Guadal Birds Chile  On request"                              | 1
 "Puerto Tranquilo to Mallin Colorado/Pared Sur/Cruce Maiten Senderos Patagonia Aysen  Guided"   | 1
+"Puerto Varas to Puerto Montt Aerodrome (Chaiten flight)"                                       | 1
 "Puerto Varas to Puerto Montt Airport (PMC)  Birds Chile"                                       | 1
 "Refugio Condor to Río Electrico Serac"                                                         | 1
 "Remota Lodge to the Rupestre area Chile Nativo  Driver Only"                                   | 1
@@ -273,6 +250,7 @@ Missing Component                                                               
 "Tierra Atacama to Calama Airport (CJC) Tierra  Driver Only"                                    | 1
 "Tierra Patagonia to Puerto Natales  Tierra  Driver Only"                                       | 1
 "Tierra Patagonia to Puerto Natales  Tierra Patagonia Driver Only"                              | 1
+"To Sarmiento Lake Ranger Station"                                                              | 1
 "Weber Bridge to Remota Lodge Chile Nativo  Driver Only"                                        | 1
 "Yates Volcano to Barraco Lodge Barraco Lodge  Guided"                                          | 1
 
@@ -282,72 +260,6 @@ Missing Component                               | Occurrences
 --------------------------------------------------------------
 "Explora Atacama to El Tatio Geysers Explora"   | 1
 
-TYPE: ground_accommodation
---------------------------------------------------------------------------------
-Missing Component                   | Occurrences
---------------------------------------------------
-"Senderos Hosteria"                 | 8
-"Cilene del Fuego Suites & Spa"     | 6
-"Kosten Aike"                       | 6
-"Casa Solaria"                      | 5
-"Casa Sur Recoleta"                 | 5
-"Mallín Colorado Lodge"             | 5
-"Palafito 1326 Hotel Boutique"      | 5
-"Wyndham Puerto Varas Pettra"       | 5
-"Del Nómade Hosteria"               | 4
-"Aguas Arriba Lodge"                | 3
-"Alma del Lago"                     | 3
-"AWA"                               | 3
-"B&B and Cabins Cerro Castillo"     | 3
-"Caleta Gonzalo Lodge"              | 3
-"Cilene del Faro"                   | 3
-"Explora Torres del Paine"          | 3
-"Hotel Ultimo Paraíso"              | 3
-"Los Cauquenes Resort and Spa"      | 3
-"Los Raices B&B"                    | 3
-"Río Hermoso Lodge"                 | 3
-"El Puesto"                         | 2
-"Estancia Rincón Chico"             | 2
-"Hotel Cilene del Fuego"            | 2
-"Hotel Cumbres Nevadas"             | 2
-"Hotel El Barranco"                 | 2
-"Hotel Taha Hai"                    | 2
-"La Casa de Eugenia"                | 2
-"Noi Casa Atacama"                  | 2
-"Pangue Lodge"                      | 2
-"Serrano Camp"                      | 2
-"Sierra Nevada Hotel"               | 2
-"The Singular Santiago"             | 2
-"Tierra Patagonia"                  | 2
-"Awasi Atacama"                     | 1
-"Awasi Iguazú"                      | 1
-"Awasi Patagonia"                   | 1
-"Dazzler Puerto Madryn"             | 1
-"EcoCamp Patagonia"                 | 1
-"EOLO"                              | 1
-"Estancia Cerro Guido"              | 1
-"Estancia Cristina"                 | 1
-"Estancia La Bandada"               | 1
-"Explora Atacama"                   | 1
-"Explora Easter Island"             | 1
-"Explora El Chaltén"                | 1
-"Explora Patagonia National Park"   | 1
-"Gran Meliá Iguazú"                 | 1
-"Hotel Las Torres"                  | 1
-"Hotel Rio Serrano"                 | 1
-"La Casona Matetic"                 | 1
-"Las Balsas Relais & Châteaux"      | 1
-"Los Ponchos Hotel Boutique"        | 1
-"Palacio Astoreca"                  | 1
-"Patagonia Camp"                    | 1
-"Peninsula Petit"                   | 1
-"Poincenot Comfort Camp"            | 1
-"Refugia Chiloé"                    | 1
-"Refugio Puesto Cagliero"           | 1
-"Remota Lodge"                      | 1
-"Tierra Atacama"                    | 1
-"Vira Vira"                         | 1
-
 TYPE: package
 --------------------------------------------------------------------------------
 Missing Component                                                                         | Occurrences
@@ -356,12 +268,9 @@ Missing Component                                                               
 "Base of the Towers Viewpoint Hike Explora"                                               | 2
 "Beagle Foodie Experience Tierra Turismo"                                                 | 2
 "Bike & Beer Excursion Birds Chile"                                                       | 2
-"Buenos Aires City Tour Extended Highlights H&T Argentina"                                | 2
-"Buenos Aires Tango Show H&T Argentina"                                                   | 2
 "Castro Walking Tour Birds Chile"                                                         | 2
 "Darwin's Frog Trail Birds Chile"                                                         | 2
 "Duhatao Bay and Chepu River Hike Birds Chile"                                            | 2
-"Fogón Asado Experience H&T Argentina"                                                    | 2
 "Half-day San Rafael Lagoon & Glacier Boat Trip Senderos Patagonia Aysén"                 | 2
 "Laguna Esmeralda Hike Tierra Turismo"                                                    | 2
 "Laguna Torre Hike Walk Patagonia"                                                        | 2
@@ -371,9 +280,7 @@ Missing Component                                                               
 "Peninsula Valdés Whale watching Boat Trip Causana Viajes"                                | 2
 "Perito Moreno Big Ice Hike Walk Patagonia"                                               | 2
 "Pumalín Park - Chaitén Volcano Hike Birds Chile"                                         | 2
-"The Argentine Experience H&T Argentina"                                                  | 2
-"Visit Chepu River Valley Birds Chile"                                                    | 2
-"100km Cooking Experience Birds Chile"                                                    | 1
+"100K Cooking Experience Birds Chile"                                                     | 1
 "4x4 Trip with Canoeing Tierra Turismo"                                                   | 1
 "Aguas Arriba to the Chilean Border Aguas Arriba Lodge"                                   | 1
 "Alto del Toro Hike Explora"                                                              | 1
@@ -384,6 +291,8 @@ Missing Component                                                               
 "Base of the Towers Viewpoint Hike Patagonia Camp"                                        | 1
 "Base of the Towers Viewpoint Hike Tierra"                                                | 1
 "Blugrin - Cochrane River and Lake Explora"                                               | 1
+"Buenos Aires City Tour Extended Highlights H&T Argentina"                                | 1
+"Buenos Aires Tango Show H&T Argentina"                                                   | 1
 "Catarpe Bike Ride Explora"                                                               | 1
 "Cerro Carnero Hike Walk Patagonia / H&T"                                                 | 1
 "Cerro Falkner Hike Andes Track Expediciones"                                             | 1
@@ -392,6 +301,7 @@ Missing Component                                                               
 "Colonia de Sacramento Day Trip H&T Argentina"                                            | 1
 "Colonia Suiza Mountain Biking Andes Track Expediciones"                                  | 1
 "Curanto Lunch with María Luisa Birds Chile"                                              | 1
+"Desolación Hike Birds Chile"                                                             | 1
 "El Chaltén Rock Climbing Serac"                                                          | 1
 "El Tatio Geysers - Full Day Awasi"                                                       | 1
 "End of the World Train Station and Tierra del Fuego National Park Walk Tierra Turismo"   | 1
@@ -404,10 +314,12 @@ Missing Component                                                               
 "Exploration of Yacu-í Private Reserve Awasi"                                             | 1
 "Fauna Trail Hotel Las Torres"                                                            | 1
 "Fitz Roy Viewpoints from Lago del Desierto Hike Aguas Arriba Lodge"                      | 1
+"Fogón Asado Experience H&T Argentina"                                                    | 1
 "French Valley: From Pehoé Lake and back Hike Explora"                                    | 1
 "Full Paine - Grey Glacier Tour Hotel Las Torres"                                         | 1
 "Full-day El Amarillo Glacier Hike including transfers"                                   | 1
 "Gastronomy Experience @ El Cazador Birds Chile"                                          | 1
+"Glaciar Yelcho Hike Birds Chile"                                                         | 1
 "Glacier Grey Boat Trip Hotel Rio Serrano"                                                | 1
 "Glacier Grey Hike & Boat Trip Explora"                                                   | 1
 "Gran Salar Tour Explora"                                                                 | 1
@@ -468,7 +380,7 @@ Missing Component                                                               
 "Purilactis Hike Tierra"                                                                  | 1
 "Queulat National Park Hike Birds Chile"                                                  | 1
 "Refugio Puesto Cagliero Hike Walk Patagonia"                                             | 1
-"Reloncaví Fjord Kayaking Birds Chile"                                                    | 1
+"Reloncaví Fjord full-day Kayak"                                                          | 1
 "River Blanco hike & Tatio Geysers Hike Explora"                                          | 1
 "Río La Leona kayaking Serac"                                                             | 1
 "Salt Mountains/Moon Valley Hike Southbound"                                              | 1
@@ -480,16 +392,16 @@ Missing Component                                                               
 "Sierra Baguales Hike Patagonia Camp"                                                     | 1
 "Tatio Geysers Southbound"                                                                | 1
 "Tatio Geysers Tierra"                                                                    | 1
+"The Argentine Experience H&T Argentina"                                                  | 1
 "The Birdman Hike Explora"                                                                | 1
 "The Miru Hike Explora"                                                                   | 1
 "Torres del Paine Wildlife Safari Chile Nativo"                                           | 1
 "Trancura River White-Water Rafting Birds Chile"                                          | 1
 "Valparaíso Solo Exploration Independent"                                                 | 1
-"Vicente Perez Rosales National Park Hike Birds Chile"                                    | 1
 "Villa La Angostura to San Martín de Los Andes Self-Drive H&T Argentina"                  | 1
 "Vinciguerra Glacier Hike Tierra Turismo"                                                 | 1
+"Visit Chepu River Valley Birds Chile"                                                    | 1
 "Walk through Puerto Varas Birds Chile"                                                   | 1
-"Yelcho Glacier Hike Birds Chile"                                                         | 1
 
 TYPE: transfer (private)
 --------------------------------------------------------------------------------
@@ -502,3 +414,15 @@ TYPE: excursion (shared)
 Missing Component                                          | Occurrences
 -------------------------------------------------------------------------
 "Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"   | 1
+
+TYPE: ground_accommodation
+--------------------------------------------------------------------------------
+Missing Component          | Occurrences
+-----------------------------------------
+"Cilene del Faro"          | 3
+"Hotel Cilene del Fuego"   | 2
+"Dickson Camp"             | 1
+"Grey Camp"                | 1
+"Los Perros Camp"          | 1
+"Paine Grande Camp"        | 1
+"Seron Camp"               | 1

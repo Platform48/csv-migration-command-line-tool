@@ -15,6 +15,7 @@ from mappings.tranfer import map_transfer_component
 from mappings.excursions import map_excursion_component
 from mappings.private_tours import map_private_tours_component
 from mappings.all_inclusive_hotels import map_all_inclusive_hotels_component
+from mappings.multi_day_activity import map_multi_day_activity_component
 
 from validate_csv_dynamic import validate_csv
 from utils import save_missing_references_log, clear_missing_references_session, get_missing_references_summary
@@ -43,8 +44,8 @@ SHEET_TEMPLATE_MAP = {
     ],
     "Ground Accom": [
         "template_aca16a46ec3842ca85d182ee9348f627",  # Base
-        "template_c265e31c0c2848fa8210050f452d3926",  # Accom
-        "template_d32b51f46e7946faa5d3e2aa33e7d29a",  # Gy
+        "template_7546d5da287241629b5190f95346840e",  # Accom
+        "template_68c8d409a9f7462aa528a1216cadf2b5",  # Gy
     ],
     "All Activities - For Upload": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
@@ -65,6 +66,10 @@ SHEET_TEMPLATE_MAP = {
     "All Inclusive Hotel Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
+    ],
+    "Multi-day Activity Package": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
     ]
 }
 
@@ -76,18 +81,24 @@ SHEET_ROW_MAPPERS = {
     "All Transfers - For Upload"   : map_transfer_component,
     "Excursions Package"           : map_excursion_component,
     "Private Tours Package"        : map_private_tours_component,
-    "All Inclusive Hotel Package"  : map_all_inclusive_hotels_component
+    "All Inclusive Hotel Package"  : map_all_inclusive_hotels_component,
+    "Multi-day Activity Package"   : map_multi_day_activity_component
 
 }
 
 TEMPLATE_TYPES = {
     "template_0c105b25350647b096753b4f863ab06c": "location",
-    "template_c265e31c0c2848fa8210050f452d3926": "accommodation",
-    "template_d32b51f46e7946faa5d3e2aa33e7d29a": "ground_accommodation",
+    "template_7546d5da287241629b5190f95346840e": "accommodation",
+    "template_68c8d409a9f7462aa528a1216cadf2b5": "ground_accommodation",
     "template_14cc18c1408a4b73a16d4e1dad2efca9": "journey",
     "template_e2f0e9e5343349358037a0564a3366a0": "activity",
     "template_901d40ac12214820995880915c5b62f5": "transfer",
     "template_3b7714dcfa374cd19b9dc97af1510204": "package",
+
+    "template_a6a2dbfd478143de994dca40dc07e054": "excursion",
+    "template_d9081bfcc3b7461987a3728e57ca7363": "private_tour",
+    "template_ba7999ff957c4ca3a5e61496df6178ac": "all_inclusive_hotel",
+    "template_a64e161de5824fcb9515274b0f67d698": "multi_day_activity",
 }
 
 PAT_COMPONENTS_PATH = "pat_components.xlsx"
@@ -100,9 +111,11 @@ SHEET_PROCESS_ORDER = [
     "Journeys",
     "All Activities - For Upload",
     "All Transfers - For Upload",
+
     "Excursions Package",
     "Private Tours Package",
-    "All Inclusive Hotel Package"
+    "All Inclusive Hotel Package",
+    "Multi-day Activity Package"
 ]
 
 def load_component_cache():
@@ -245,7 +258,7 @@ def run_loop():
             try:
                 def get_visible_sheets(path):
                     """Return only visible worksheet names (exclude hidden & veryHidden)."""
-                    wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
+                    wb = openpyxl.load_workbook(path, read_only=False, data_only=True)
                     return [ws.title for ws in wb.worksheets if ws.sheet_state == "visible"]
 
                 # Example usage
@@ -253,10 +266,10 @@ def run_loop():
                 print("Visible sheets:", visible_sheets)
 
                 # Load only those into pandas
-                xls = pd.read_excel(COMPONENTS_PATH, sheet_name=visible_sheets)
+                xls = pd.read_excel(COMPONENTS_PATH, sheet_name=visible_sheets, dtype=str)
 
                 # Make duplicate column names unique
-                def dedup_columns(columns):
+                def old_dedup_columns(columns):
                     seen = {}
                     new_cols = []
                     for col in columns:
@@ -267,11 +280,26 @@ def run_loop():
                             seen[col] += 1
                             new_cols.append(f"{col}.{seen[col]}")
                     return new_cols
+                
+                def dedup_columns(columns):
+                    seen = {}
+                    new_cols = []
+                    for col in list(columns):  # force left-to-right list iteration
+                        col = str(col)  # flatten tuples if MultiIndex
+                        if col not in seen:
+                            seen[col] = 1
+                            new_cols.append(col)
+                        else:
+                            seen[col] += 1
+                            new_cols.append(f"{col}.{seen[col]}")
+                    return new_cols
+
 
                 for sheet, df_sheet in xls.items():
-                    print(f"Sheet: '{sheet}'")
                     df_sheet.columns = dedup_columns(df_sheet.columns)
-                    print(f"Columns: {df_sheet.columns}")
+                    print(f"Columns for {sheet}:")
+                    for i, col in enumerate(df_sheet.columns):
+                        print(i, repr(col))
 
                     df_sheet = df_sheet.iloc[1:].reset_index(drop=True)
 
@@ -422,22 +450,13 @@ class CoreDataService:
                 print(f"⚠️ Failed parsing schema for {template_id}: {e}")
         return {}
 
-    def getSchemaWithArrayLevel(self, max_workers=50):
+    def getSchemaWithArrayLevel(self):
         schemas = []
-
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            future_to_id = {executor.submit(self._fetch_schema, tid): tid for tid in self.template_ids}
-
-            for future in as_completed(future_to_id):
-                tid = future_to_id[future]
-                try:
-                    schema = future.result()
-                    schemas.append(schema)
-                except Exception as e:
-                    print(f"⚠️ Exception for {tid}: {e}")
-                    schemas.append({})
-
+        for tid in self.template_ids:
+            schema = self._fetch_schema(tid)
+            schemas.append(schema)
         return schemas
+
 
     def _upload_component(self, component, template_type, idx, overwrite_on_fail=True):
         pregenerated_id = generate_component_id(component)
