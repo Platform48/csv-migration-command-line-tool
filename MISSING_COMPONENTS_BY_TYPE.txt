@@ -1,264 +1,70 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2025-09-08 15:58:53
+Generated: 2025-09-09 16:12:06
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
 
 ====================================================================================================
 
-TYPE: location
---------------------------------------------------------------------------------
-Missing Component      | Occurrences
--------------------------------------
-"Activity"             | 46
-"Campamento Japones"   | 1
-
-TYPE: journey
---------------------------------------------------------------------------------
-Missing Component                                                          | Occurrences
------------------------------------------------------------------------------------------
-"Chaitén Airport (WCH) to Puerto Montt Airport (PMC) or reverse"           | 2
-"Puerto Varas to Puerto Varas Aerodrome (for Chaiten flight) or reverse"   | 2
-
-TYPE: activity
---------------------------------------------------------------------------------
-Missing Component                                                             | Occurrences
---------------------------------------------------------------------------------------------
-"French Valley: From Pehoé Lake and back Hike"                                | 13
-"Fauna Trail"                                                                 | 7
-"French Valley from Refugio Cuernos to Paine Grande Hike"                     | 3
-"Lago del Desierto Kayak & Huemul Glacier Viewpoint Hike"                     | 3
-"Lago del Desierto Kayaking"                                                  | 3
-"Perito Moreno - Touching the Ice"                                            | 3
-"Tierra del Fuego National Park with Trekking & Canoes including transfers"   | 3
-"100km Cooking Experience"                                                    | 2
-"Cejar Lagoon Bike Ride"                                                      | 2
-"Reloncaví Fjord Kayaking"                                                    | 2
-"Allyus Biking"                                                               | 1
-"Boat across Lago Pehoé (Paine Grande to Paine Pudeto)"                       | 1
-"Buenos Aires Day at Leisure"                                                 | 1
-"Day at Leisure"                                                              | 1
-"Fogon Asado Experience - Buenos Aires"                                       | 1
-"Gastronomy Experience @ El Cazador"                                          | 1
-"Glaciar Yelcho Hike"                                                         | 1
-"Glacier Grey Boat Trip & Hike"                                               | 1
-"Glacier Grey Sailing; Touring the Paine Massif"                              | 1
-"Grey Boat Trip and Hanging Bridges Hike"                                     | 1
-"Half-day San Rafael Lagoon & Glacier Boat Trip"                              | 1
-"High Peaks Bike"                                                             | 1
-"Hike, Bike & Ride at Eolo"                                                   | 1
-"Piedra de la Coca Hike"                                                      | 1
-"Puerto Pirámides Kayaking"                                                   | 1
-"Trekking to the High Lands along the Maqui Waterfalls"                       | 1
-"Valparaíso Solo Exploration"                                                 | 1
-"Western Lakes; Drive and Walk; Glacier Grey Boat Ride"                       | 1
-
 TYPE: transfer
 --------------------------------------------------------------------------------
-Missing Component                                                                               | Occurrences
---------------------------------------------------------------------------------------------------------------
-"Puerto Varas to Activity  Birds Chile"                                                         | 25
-"Activity to Explora Rapa Nui  Explora"                                                         | 24
-"Explora Rapa Nui to Activity  Explora"                                                         | 23
-"Activity to Ushuia Hotel  Tierra Turismo"                                                      | 21
-"Activity to Ushuaia Hotel  H&T"                                                                | 20
-"Activity to Ushuaia Hotel  Patagon Mountain Agency"                                            | 20
-"Awasi Patagonia to Activity Awasi  Guided"                                                     | 19
-"Activity to Awasi Patagonia  Awasi  Guided"                                                    | 18
-"Activity to El Chaltén Hotel  H&T"                                                             | 17
-"Activity to El Chaltén Hotel  Serac"                                                           | 17
-"Activity to El Chaltén Hotel  Walk Patagonia"                                                  | 17
-"Activity to Explora Patagonia National Park Explora  Guided"                                   | 17
-"Activity to Futangue Hotel  Southbound"                                                        | 17
-"El Chaltén Hotel to Activity  H&T Driver Only"                                                 | 17
-"El Chaltén Hotel to Activity Walk Patagonia  Driver Only"                                      | 17
-"Explora Patagonia National Park to Activity Explora  Guided"                                   | 17
-"Futangue Hotel to Activity  Southbound"                                                        | 17
-"Activity to Vira Vira  Southbound"                                                             | 15
-"Serrano Camp to Activity  Chile Nativo"                                                        | 15
-"Vira Vira to Activity  Southbound"                                                             | 15
-"Activity to Serrano Camp  Chile Nativo"                                                        | 13
-"Patagonia Camp to Activity Patagonia Camp  Driver Only"                                        | 13
-"Explora El Chaltén to Activity Explora  Guided"                                                | 12
-"Activity to Explora El Chaltén Explora  Guided"                                                | 11
-"Activity to Explora Torres del Paine Explora  Guided"                                          | 11
-"Activity to Patagonia Camp Patagonia Camp  Driver Only"                                        | 11
-"Activity to Punta Arenas Hotel  Cascada"                                                       | 11
-"Activity to Punta Arenas Hotel  Chile Nativo"                                                  | 11
-"Activity to Punta Arenas Hotel  Southbound"                                                    | 11
-"Punta Arenas Hotel to Activity  Cascada"                                                       | 11
-"Punta Arenas Hotel to Activity  Chile Nativo"                                                  | 11
-"Punta Arenas Hotel to Activity  Southbound"                                                    | 11
-"Remota Lodge to Activity Chile Nativo  Driver Only"                                            | 11
-"Activity to Puerto Natales Hotel  Cascada"                                                     | 10
-"Activity to Puerto Natales Hotel  Chile Nativo"                                                | 10
-"Activity to Puerto Natales Hotel  Southbound"                                                  | 10
-"Activity to Refugia Chiloe  Refugia Chiloe"                                                    | 10
-"Explora Torres del Paine to Activity Explora  Guided"                                          | 10
-"Puerto Natales Hotel to Activity  Cascada"                                                     | 10
-"Puerto Natales Hotel to Activity  Chile Nativo"                                                | 10
-"Puerto Natales Hotel to Activity  Southbound"                                                  | 10
-"Refugia Chiloé to Activity  Refugia Chiloe"                                                    | 10
-"Activity to Remota Lodge  Chile Nativo"                                                        | 9
-"Activity to Tierra Patagonia  Tierra"                                                          | 9
-"Hotel Río Serrano to Activity  Hotel Rio Serrano"                                              | 9
-"Tierra Atacama to Activity  Tierra Guided"                                                     | 9
-"Activity to Hotel Rio Serrano  Hotel Rio Serrano"                                              | 7
-"Activity to Bariloche Andes Track"                                                             | 5
-"Bariloche to Activity Andes Track"                                                             | 5
-"El Calafate (Hotels) to El Calafate Airport (FTE) Walk Patagonia"                              | 5
-"Explora Atacama to Activity Explora  Guided"                                                   | 5
-"Activity to Pucon Hotel  Birds Chile"                                                          | 4
-"Estancia Cerro Guido to Activity  Patagonia Camp"                                              | 4
-"Noi Casa Atacama to Activity  Southbound Guided"                                               | 4
-"Pucon Hotel to Activity  Birds Chile"                                                          | 4
-"Río Hermoso Lodge to Activity  Andes Track"                                                    | 4
-"Activity to Awasi Iguazu  Awasi"                                                               | 3
-"Activity to Castro  Birds Chile"                                                               | 3
-"Activity to Estancia Cerro Guido  Patagonia Camp"                                              | 3
-"Activity to Explora Atacama Explora  Guided"                                                   | 3
-"Castro to Activity  Birds Chile"                                                               | 3
-"El Calafate Airport (FTE) to El Calafate (Hotels)  Walk Patagonia"                             | 3
-"El Calafate Airport (FTE) to El Chaltén (Private)  Walk Patagonia"                             | 3
-"El Chaltén to El Calafate (Private)  Walk Patagonia"                                           | 3
-"Hotel Las Torres to Activity  Hotel Las Torres"                                                | 3
-"La Junta to Barraco Lodge Barraco Lodge  Guided"                                               | 3
-"Santiago Hotel to Activity"                                                                    | 3
-"Activity to Hotel Las Torres  Hotel Las Torres"                                                | 2
-"Cerro Castillo to Puerto Tranquilo (Marble Caves)  Senderos Patagonia Aysen  Guided"           | 2
-"Chaiten to El Amarillo (Pumalin Park)  Birds Chile"                                            | 2
-"Chaitén Airport (WCH) to Puerto Montt Airport (PMC)  Birds Chile"                              | 2
-"El Calafate Hotel to Activity (Walk Pat)"                                                      | 2
-"Estancia Cerro Guido to Patagonia Camp Patagonia Camp  Driver Only"                            | 2
-"Estancia Puerto Conselo to Remota Lodge Chile Nativo  Driver Only"                             | 2
-"Explora El Chaltén to Laguna Condor Explora  Guided"                                           | 2
-"Lago Grey to Serrano Camp  Chile Nativo Guided"                                                | 2
-"Laguna Condor to Explora El Chaltén Explora  Guided"                                           | 2
-"Mallin Colorado to Puerto Guadal Aysen Journeys  Driver Only"                                  | 2
-"Patagonia Camp to Estancia Cerro Guido Patagonia Camp  Driver Only"                            | 2
-"Puerto Guadal to Mallin Colorado Aysen Journeys  Driver Only"                                  | 2
-"Puerto Montt Airport (PMC) Chiloé Island  Birds Chile  On request"                             | 2
-"Puerto Natales to Remota Lodge Chile Nativo  Driver Only"                                      | 2
-"Puerto Pirámides to Trelew Airport (REL) Causana Viajes  Driver Only"                          | 2
-"Puritama hot springs to Explora Atacama Explora  Guided"                                       | 2
-"Remota Lodge to Estancia Puerto Conselo Chile Nativo  Driver Only"                             | 2
-"Remota Lodge to Puerto Natales Chile Nativo  Driver Only"                                      | 2
-"Trelew Airport (REL) to Puerto Pirámides  Causana Viajes  Driver Only"                         | 2
-"Activity to EcoCamp  Cascada"                                                                  | 1
-"Activity to El Mirador de Guadal Birds Chile  On request"                                      | 1
-"Activity to Puerto Iguazu (IGR)  H&T"                                                          | 1
-"Activity to Puerto Madryn  Causana Viajes"                                                     | 1
-"AEP - San Miguel de Monte (Estancia La Bandada)  H&T Driver Only"                              | 1
-"Awasi Atacama to Cactus Valley  Awasi"                                                         | 1
-"Awasi Atacama to El Tatio Geysers"                                                             | 1
-"Awasi Atacama to Yerbas Buenas  Awasi"                                                         | 1
-"Awasi Iguazu to Puerto Iguazú (IGR) or Foz de Iguaçu (IGU) Airports  Awasi"                    | 1
-"Bahia Exploradores to Mallin Colorado Aysen Journeys  Driver Only"                             | 1
-"Bahia Mansa to Mallin Colorado Aysen Journeys  Driver Only"                                    | 1
-"Bahía Exploradores to Puerto Tranquilo  Senderos Patagonia Aysen  Guided"                      | 1
-"Baker Nef confluence to Mallin Colorado Aysen Journeys  Driver Only"                           | 1
-"Balmaceda Airport (BBA) to Cerro Castillo Senderos Patagonia Aysen  Driver Only"               | 1
-"Balmaceda Airport (BBA) to Cerro Castillo Senderos Patagonia Aysen  Guided"                    | 1
-"Balmaceda Airport (BBA) to Explora Patagonia National Park"                                    | 1
-"Balmaceda Airport (BBA) to Mallin Colorado Lodge  Aysen Journeys Driver Only"                  | 1
-"Barraco Lodge to Laguna Gaviotas Barraco Lodge  Guided"                                        | 1
-"Barraco Lodge to Río Frio Barraco Lodge  Guided"                                               | 1
-"Barraco Lodge to Yates Volcano Barraco Lodge  Guided"                                          | 1
-"Boat across Lago Pehoé (Pudeto to Paine Grande)"                                               | 1
-"Calama Airport (CJC) to Awasi Atacama Awasi  Driver / Guide"                                   | 1
-"Calama Airport (CJC) to Explora Atacama  Explora  Driver Only"                                 | 1
-"Calama Airport (CJC) to San Pedro de Atacama (All Hotels)  Southbound On request"              | 1
-"Calama Airport (CJC) to Tierra Atacama Tierra  Driver Only"                                    | 1
-"Castro (Chiloe) to Puerto Montt Airport (PMC)  Birds Chile"                                    | 1
-"Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Airport (IGR) to Activity  H&T"                 | 1
-"Cerro Arcoíris to Barraco Lodge Barraco Lodge  Guided"                                         | 1
-"Coyhaique to Balmaceda Airport (BBA) Senderos Patagonia Aysen  Driver Only"                    | 1
-"El Calafate Airport (FTE) to Eolo  Eolo"                                                       | 1
-"El Calafate Airport (FTE) to Explora El Chaltén  Explora"                                      | 1
-"El Chaltén Hotel to Activity H&T"                                                              | 1
-"El Chaltén Hotel to Activity Walk Patagonia"                                                   | 1
-"El Chaltén to Lago del Desierto"                                                               | 1
-"El Mirador de Guadal to Activity Birds Chile  On request"                                      | 1
-"El Mirador de Guadal to Jeinimeni National Park Birds Chile  Guided"                           | 1
-"El Mirador de Guadal to Leones River Valley Birds Chile  On request"                           | 1
-"El Mirador de Guadal to Puerto Tranquilo Birds Chile  On request"                              | 1
-"Eolo to El Calafate Airport (FTE)  Eolo"                                                       | 1
-"Estancia Cerro Guido to Puerto Natales (ALL)  Patagonia Camp  Driver Only"                     | 1
-"Explora Atacama to Calama Airport (CJC)  Explora  Driver Only"                                 | 1
-"Explora Atacama to Licancabur Volcano Explora  Guided"                                         | 1
-"Explora Atacama to Láscar Volcano Explora  Guided"                                             | 1
-"Explora Atacama to Machuca  Explora  Guided"                                                   | 1
-"Explora Atacama to Sairecabur Volcano Explora  Guided"                                         | 1
-"Explora Atacama to the Domeyko Range Explora  Guided"                                          | 1
-"Explora Patagonia National Park to Balmaceda Airport (BBA)  Explora  Driver Only"              | 1
-"Exploradores Glacier to Mallin Colorado Aysen Journeys  Driver Only"                           | 1
-"Glacier Grey Viewpoint Hike"                                                                   | 1
-"Hotel Remota to Puerto Natales Chile Nativo  Driver Only"                                      | 1
-"Hotel Río Serrano to Lake Grey Hotel Rio Serrano  Driver Only"                                 | 1
-"Huerquehue National Park to Pucon  Birds Chile"                                                | 1
-"Jeinimeni National Park to El Mirador de Guadal Birds Chile  Guided"                           | 1
-"Laguna Gaviotas to Barraco Lodge Barraco Lodge  Guided"                                        | 1
-"Lake Grey to Hotel Río Serrano Hotel Rio Serrano  Driver Only"                                 | 1
-"Lake Grey to Patagonia Camp Patagonia Camp  Driver Only"                                       | 1
-"Leones River Valley to El Mirador de Guadal Birds Chile  On request"                           | 1
-"Licancabur Volcano to Explora Atacama Explora  Guided"                                         | 1
-"Los Huemules to El Chaltén  Walk Patagonia"                                                    | 1
-"Láscar Volcano to Explora Atacama Explora  Guided"                                             | 1
-"Machuca to Explora Atacama Explora  Guided"                                                    | 1
-"Mallin Colorado to Bahia Exploradores Aysen Journeys  Driver Only"                             | 1
-"Mallin Colorado to Bahia Mansa Aysen Journeys  Driver Only"                                    | 1
-"Mallin Colorado to Baker Nef confluence Aysen Journeys  Driver Only"                           | 1
-"Mallin Colorado to Exploradores Glacier Aysen Journeys  Driver Only"                           | 1
-"Mallin Colorado to Patagonia National Park Aysen Journeys  Driver Only"                        | 1
-"Mallin Colorado to Puerto Bertrand Aysen Journeys  Driver Only"                                | 1
-"Oco's Place to Barraco Lodge Barraco Lodge  Guided"                                            | 1
-"Parque Futangue to Pucon  Southbound"                                                          | 1
-"Patagonia Camp to El Bote Bay Patagonia Camp  Driver Only"                                     | 1
-"Patagonia Camp to Grey Lookout Patagonia Camp  Driver Only"                                    | 1
-"Patagonia Camp to Lake Grey Patagonia Camp  Driver Only"                                       | 1
-"Patagonia National Park to Mallin Colorado Aysen Journeys  Driver Only"                        | 1
-"Pucon to Huerquehue National Park  Birds Chile"                                                | 1
-"Pucon to Parque Futangue  Southbound"                                                          | 1
-"Puerto Bertrand to Mallin Colorado Aysen Journeys  Driver Only"                                | 1
-"Puerto Madryn Airport (PMY) to Puerto Madryn  Causana Viajes"                                  | 1
-"Puerto Madryn to Activity  Causana Viajes"                                                     | 1
-"Puerto Montt Airport (PMC) to Chaitén Airport (WCH)  Birds Chile"                              | 1
-"Puerto Montt Airport (PMC) to Puerto Varas  Birds Chile"                                       | 1
-"Puerto Montt Airport (PMC) to Refugia Chiloe Refugia Chiloe"                                   | 1
-"Puerto Montt to Puerto Varas  Birds Chile"                                                     | 1
-"Puerto Natales (All) to Awasi Patagonia  Awasi Driver Only"                                    | 1
-"Puerto Natales Airport (PNT) to Hotel Las Torres  Hotel Las Torres Driver Only"                | 1
-"Puerto Natales to EcoCamp  Cascada Driver Only"                                                | 1
-"Puerto Natales to Hotel Remota Chile Nativo  Driver Only"                                      | 1
-"Puerto Natales to Patagonia Camp  Patagonia Camp Driver Only"                                  | 1
-"Puerto Natales to Pudeto  Chile Nativo Guided"                                                 | 1
-"Puerto Natales to Tierra Patagonia  Tierra  Driver Only"                                       | 1
-"Puerto Natales to Tierra Patagonia  Tierra Patagonia Driver Only"                              | 1
-"Puerto Natales to Torres del Paine (Refugio Central)  Chile Nativo Guided"                     | 1
-"Puerto Tranquilo to Bahía Exploradores  Senderos Patagonia Aysen  Guided"                      | 1
-"Puerto Tranquilo to El Mirador de Guadal Birds Chile  On request"                              | 1
-"Puerto Tranquilo to Mallin Colorado/Pared Sur/Cruce Maiten Senderos Patagonia Aysen  Guided"   | 1
-"Puerto Varas to Puerto Montt Aerodrome (Chaiten flight)"                                       | 1
-"Puerto Varas to Puerto Montt Airport (PMC)  Birds Chile"                                       | 1
-"Refugio Condor to Río Electrico Serac"                                                         | 1
-"Remota Lodge to the Rupestre area Chile Nativo  Driver Only"                                   | 1
-"Río Hermoso Lodge to Bariloche  Andes Track"                                                   | 1
-"Sairecabur Volcano to Explora Atacama Explora  Guided"                                         | 1
-"SCL - Matetic vineyard (w & w/o guide)  Southbound Guided"                                     | 1
-"The Domeyko Range to Explora Atacama Explora  Guided"                                          | 1
-"The Rupestre area to Remota Lodge Chile Nativo  Driver Only"                                   | 1
-"Tierra Atacama to Calama Airport (CJC) Tierra  Driver Only"                                    | 1
-"Tierra Patagonia to Puerto Natales  Tierra  Driver Only"                                       | 1
-"Tierra Patagonia to Puerto Natales  Tierra Patagonia Driver Only"                              | 1
-"To Sarmiento Lake Ranger Station"                                                              | 1
-"Weber Bridge to Remota Lodge Chile Nativo  Driver Only"                                        | 1
-"Yates Volcano to Barraco Lodge Barraco Lodge  Guided"                                          | 1
-
-TYPE: 
---------------------------------------------------------------------------------
-Missing Component                               | Occurrences
---------------------------------------------------------------
-"Explora Atacama to El Tatio Geysers Explora"   | 1
+Missing Component                                                                    | Occurrences
+---------------------------------------------------------------------------------------------------
+"El Calafate (Hotels) to El Calafate Airport (FTE) Walk Patagonia"                   | 5
+"El Calafate Airport (FTE) to El Calafate (Hotels)  Walk Patagonia"                  | 3
+"El Calafate Airport (FTE) to El Chaltén (Private)  Walk Patagonia"                  | 3
+"El Chaltén to El Calafate (Private)  Walk Patagonia"                                | 3
+"Chaitén Airport (WCH) to Puerto Montt Airport (PMC)  Birds Chile"                   | 2
+"Lago Grey to Serrano Camp  Chile Nativo Guided"                                     | 2
+"Puerto Montt Airport (PMC) Chiloé Island  Birds Chile  On request"                  | 2
+"Puerto Pirámides to Trelew Airport (REL) Causana Viajes  Driver Only"               | 2
+"Trelew Airport (REL) to Puerto Pirámides  Causana Viajes  Driver Only"              | 2
+"AEP - San Miguel de Monte (Estancia La Bandada)  H&T Driver Only"                   | 1
+"Awasi Iguazu to Puerto Iguazú (IGR) or Foz de Iguaçu (IGU) Airports  Awasi"         | 1
+"Balmaceda Airport (BBA) to Cerro Castillo Senderos Patagonia Aysen  Driver Only"    | 1
+"Balmaceda Airport (BBA) to Cerro Castillo Senderos Patagonia Aysen  Guided"         | 1
+"Balmaceda Airport (BBA) to Explora Patagonia National Park"                         | 1
+"Balmaceda Airport (BBA) to Mallin Colorado Lodge  Aysen Journeys Driver Only"       | 1
+"Boat across Lago Pehoé (Pudeto to Paine Grande)"                                    | 1
+"Calama Airport (CJC) to Awasi Atacama Awasi  Driver / Guide"                        | 1
+"Calama Airport (CJC) to Explora Atacama  Explora  Driver Only"                      | 1
+"Calama Airport (CJC) to San Pedro de Atacama (All Hotels)  Southbound On request"   | 1
+"Calama Airport (CJC) to Tierra Atacama Tierra  Driver Only"                         | 1
+"Castro (Chiloe) to Puerto Montt Airport (PMC)  Birds Chile"                         | 1
+"Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Airport (IGR) to Activity  H&T"      | 1
+"Coyhaique to Balmaceda Airport (BBA) Senderos Patagonia Aysen  Driver Only"         | 1
+"El Calafate Airport (FTE) to Eolo  Eolo"                                            | 1
+"El Calafate Airport (FTE) to Explora El Chaltén  Explora"                           | 1
+"El Chaltén to Lago del Desierto"                                                    | 1
+"Eolo to El Calafate Airport (FTE)  Eolo"                                            | 1
+"Estancia Cerro Guido to Puerto Natales (ALL)  Patagonia Camp  Driver Only"          | 1
+"Explora Atacama to Calama Airport (CJC)  Explora  Driver Only"                      | 1
+"Explora Patagonia National Park to Balmaceda Airport (BBA)  Explora  Driver Only"   | 1
+"Hotel Remota to Puerto Natales Chile Nativo  Driver Only"                           | 1
+"Parque Futangue to Pucon  Southbound"                                               | 1
+"Pucon to Parque Futangue  Southbound"                                               | 1
+"Puerto Madryn Airport (PMY) to Puerto Madryn  Causana Viajes"                       | 1
+"Puerto Montt Airport (PMC) to Chaitén Airport (WCH)  Birds Chile"                   | 1
+"Puerto Montt Airport (PMC) to Puerto Varas  Birds Chile"                            | 1
+"Puerto Montt Airport (PMC) to Refugia Chiloe Refugia Chiloe"                        | 1
+"Puerto Montt to Puerto Varas  Birds Chile"                                          | 1
+"Puerto Natales (All) to Awasi Patagonia  Awasi Driver Only"                         | 1
+"Puerto Natales Airport (PNT) to Hotel Las Torres  Hotel Las Torres Driver Only"     | 1
+"Puerto Natales to EcoCamp  Cascada Driver Only"                                     | 1
+"Puerto Natales to Hotel Remota Chile Nativo  Driver Only"                           | 1
+"Puerto Natales to Patagonia Camp  Patagonia Camp Driver Only"                       | 1
+"Puerto Natales to Pudeto  Chile Nativo Guided"                                      | 1
+"Puerto Natales to Tierra Patagonia  Tierra  Driver Only"                            | 1
+"Puerto Natales to Tierra Patagonia  Tierra Patagonia Driver Only"                   | 1
+"Puerto Natales to Torres del Paine (Refugio Central)  Chile Nativo Guided"          | 1
+"Puerto Varas to Puerto Montt Aerodrome (Chaiten flight)"                            | 1
+"Puerto Varas to Puerto Montt Airport (PMC)  Birds Chile"                            | 1
+"Río Hermoso Lodge to Bariloche  Andes Track"                                        | 1
+"SCL - Matetic vineyard (w & w/o guide)  Southbound Guided"                          | 1
+"Tierra Atacama to Calama Airport (CJC) Tierra  Driver Only"                         | 1
+"Tierra Patagonia to Puerto Natales  Tierra  Driver Only"                            | 1
+"Tierra Patagonia to Puerto Natales  Tierra Patagonia Driver Only"                   | 1
+"To Sarmiento Lake Ranger Station"                                                   | 1
 
 TYPE: package
 --------------------------------------------------------------------------------
@@ -318,6 +124,7 @@ Missing Component                                                               
 "French Valley: From Pehoé Lake and back Hike Explora"                                    | 1
 "Full Paine - Grey Glacier Tour Hotel Las Torres"                                         | 1
 "Full-day El Amarillo Glacier Hike including transfers"                                   | 1
+"Futaleufú River rafting"                                                                 | 1
 "Gastronomy Experience @ El Cazador Birds Chile"                                          | 1
 "Glaciar Yelcho Hike Birds Chile"                                                         | 1
 "Glacier Grey Boat Trip Hotel Rio Serrano"                                                | 1
@@ -325,6 +132,7 @@ Missing Component                                                               
 "Gran Salar Tour Explora"                                                                 | 1
 "Guatin Cactus Valley Hike Tierra"                                                        | 1
 "Hike, Bike & Ride at Hotel Eolo Hotel Eolo"                                              | 1
+"Horse Riding to the Serrano"                                                             | 1
 "Hotel Río Serrano Horse Ride Hotel Rio Serrano"                                          | 1
 "Huerquehue National Park Trek Birds Chile"                                               | 1
 "Iguazú Falls Tour (Brazilian side) H&T Argentina"                                        | 1
@@ -426,3 +234,11 @@ Missing Component          | Occurrences
 "Los Perros Camp"          | 1
 "Paine Grande Camp"        | 1
 "Seron Camp"               | 1
+
+TYPE: activity
+--------------------------------------------------------------------------------
+Missing Component                                           | Occurrences
+--------------------------------------------------------------------------
+"French Valley from Refugio Cuernos to Paine Grande Hike"   | 3
+"French Valley: From Pehoé Lake and back Hike"              | 2
+"Boat across Lago Pehoé (Paine Grande to Paine Pudeto)"     | 1

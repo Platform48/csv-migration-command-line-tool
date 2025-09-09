@@ -188,12 +188,13 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
     }
 
     component_fields = [
+        {"templateId": template_ids[2], "data": {}},
         {"templateId": template_ids[1], "data": level_1},
         {"templateId": template_ids[0], "data": level_0},
     ]
 
     return {
-        "templateId": template_ids[1],
+        "templateId": template_ids[2],
         "isBookable": True,
         "description": {
             "web": get_stripped(row, "Description") or "",

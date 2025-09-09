@@ -131,6 +131,7 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
 
 
     component_fields = [
+        {"templateId": template_ids[2], "data": {}},
         {"templateId": template_ids[1], "data": level_1},
         {"templateId": template_ids[0], "data": level_0},
     ]
@@ -139,7 +140,7 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
     # print(f"name: {get_stripped(row, "name")}")
 
     return {
-        "templateId": template_ids[1],
+        "templateId": template_ids[2],
         "isBookable": True,
         "description": {
             "web": get_stripped(row, "importantInformationWeb") or "",

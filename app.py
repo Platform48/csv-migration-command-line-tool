@@ -57,19 +57,23 @@ SHEET_TEMPLATE_MAP = {
     ],
     "Excursions Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
-        "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
+        "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
+        "template_a6a2dbfd478143de994dca40dc07e054"
     ],
     "Private Tours Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
-        "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
+        "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
+        "template_d9081bfcc3b7461987a3728e57ca7363"
     ],
     "All Inclusive Hotel Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
-        "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
+        "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
+        "template_ba7999ff957c4ca3a5e61496df6178ac"
     ],
     "Multi-day Activity Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
-        "template_3b7714dcfa374cd19b9dc97af1510204"  # Pkg
+        "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
+        "template_a64e161de5824fcb9515274b0f67d698"
     ]
 }
 
@@ -106,13 +110,13 @@ ANT_COMPONENTS_PATH = "ant_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    "Location",
-    "Ground Accom",
-    "Journeys",
-    "All Activities - For Upload",
-    "All Transfers - For Upload",
+    # "Location",
+    # "Ground Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "All Transfers - For Upload",
 
-    "Excursions Package",
+    # "Excursions Package",
     "Private Tours Package",
     "All Inclusive Hotel Package",
     "Multi-day Activity Package"
