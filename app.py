@@ -6,7 +6,6 @@ from datetime import datetime
 import hashlib
 
 from mappings.activity import map_activity_component
-from mappings.cruise_pkg import map_cruise_bundle
 from mappings.location import map_location_component
 from mappings.ground_accom import map_ground_accommodation_component
 from mappings.ship_accom import map_ship_accommodation_component
@@ -16,6 +15,7 @@ from mappings.excursions import map_excursion_component
 from mappings.private_tours import map_private_tours_component
 from mappings.all_inclusive_hotels import map_all_inclusive_hotels_component
 from mappings.multi_day_activity import map_multi_day_activity_component
+from mappings.cruise import map_cruise_component
 
 from validate_csv_dynamic import validate_csv
 from utils import save_missing_references_log, clear_missing_references_session, get_missing_references_summary
@@ -74,6 +74,11 @@ SHEET_TEMPLATE_MAP = {
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
         "template_a64e161de5824fcb9515274b0f67d698"
+    ],
+    "PAT Cruise Packages ": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
+        "template_63a57a90570c47b89f830d2c7618324f"
     ]
 }
 
@@ -86,8 +91,8 @@ SHEET_ROW_MAPPERS = {
     "Excursions Package"           : map_excursion_component,
     "Private Tours Package"        : map_private_tours_component,
     "All Inclusive Hotel Package"  : map_all_inclusive_hotels_component,
-    "Multi-day Activity Package"   : map_multi_day_activity_component
-
+    "Multi-day Activity Package"   : map_multi_day_activity_component,
+    "PAT Cruise Packages "         : map_cruise_component,
 }
 
 TEMPLATE_TYPES = {
@@ -103,6 +108,7 @@ TEMPLATE_TYPES = {
     "template_d9081bfcc3b7461987a3728e57ca7363": "private_tour",
     "template_ba7999ff957c4ca3a5e61496df6178ac": "all_inclusive_hotel",
     "template_a64e161de5824fcb9515274b0f67d698": "multi_day_activity",
+    "template_63a57a90570c47b89f830d2c7618324f": "cruise",
 }
 
 PAT_COMPONENTS_PATH = "pat_components.xlsx"
@@ -117,9 +123,10 @@ SHEET_PROCESS_ORDER = [
     # "All Transfers - For Upload",
 
     # "Excursions Package",
-    "Private Tours Package",
-    "All Inclusive Hotel Package",
-    "Multi-day Activity Package"
+    # "Private Tours Package",
+    # "All Inclusive Hotel Package",
+    # "Multi-day Activity Package"
+    "PAT Cruise Packages "
 ]
 
 def load_component_cache():
