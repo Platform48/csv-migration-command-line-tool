@@ -4735,7 +4735,15 @@
     "('cruise', 'Luxury Expedition Cruise to Patagonia and Antarctica')": "component_104c8378645807f983a459268a0fa2f1",
     "('cruise', 'Wildlife, Glaciers & Cape Horn Cruise')": "component_a575fd8c70de529a9ba4dd7416cf036b",
     "('cruise', 'Ultimate Patagonia Cruise')": "component_c6b90e3f1266a70937a692615fd57dad",
-    "('cruise', 'Southern Patagonia Glaciers Cruise')": "component_45264719ce680fd9d678d1d80d98d21d"
+    "('cruise', 'Southern Patagonia Glaciers Cruise')": "component_45264719ce680fd9d678d1d80d98d21d",
+    "('ship_accommodation', 'Ventus Australis')": "component_88ec4ac2a36e28d1aa3b279f46d9bcbe",
+    "('ship_accommodation', 'Ocean Nova')": "component_d1ba82db831ff789c2e830a24988e12b",
+    "('ship_accommodation', 'Stella Australis')": "component_cb7f5b3682afbc9b5df32851b0fa2167",
+    "('ship_accommodation', 'Ultramarine')": "component_37a91de228452c6af9d50a0be1f0aff0",
+    "('ship_accommodation', 'Silver Explorer')": "component_6d83f5dac335f5b5285552d321acfb3a",
+    "('ship_accommodation', 'Skorpios II')": "component_61fc7d9114bd0eb116b55b811c263c85",
+    "('ship_accommodation', 'Skorpios III')": "component_0187811ac5bf72b4de6bfa443358f8b6",
+    "('ship_accommodation', 'Silver Endeavour')": "component_4382730e44e5da2de8854a04357c1a78"
   },
   "hash_cache": {
     "location:Amalia Glacier": "25d1d451870fcf6bdbd3bca13b834007",
@@ -9473,8 +9481,16 @@
     "cruise:Luxury Expedition Cruise to Patagonia and Antarctica": "460593adc24017ea78adce0a5ef8c802",
     "cruise:Wildlife, Glaciers & Cape Horn Cruise": "665bf237895d00cc7aeab90b5fab2776",
     "cruise:Ultimate Patagonia Cruise": "d70cd00099b9042e21afc0c9ae5bec96",
-    "cruise:Southern Patagonia Glaciers Cruise": "ff556d5afd420664c48e82e3b25bf60a"
+    "cruise:Southern Patagonia Glaciers Cruise": "ff556d5afd420664c48e82e3b25bf60a",
+    "ship_accommodation:Ventus Australis": "faedaa49cfb73556c1e2d2b38ce3c0ca",
+    "ship_accommodation:Ocean Nova": "b72dc8fb16a5a38e897b43e8245ec762",
+    "ship_accommodation:Stella Australis": "c3421ad548ee48410b93542cb7b48af7",
+    "ship_accommodation:Ultramarine": "1d9ea2af0ea9a043c012f23d17439f18",
+    "ship_accommodation:Silver Explorer": "746dce24404fdafdb4270189c1296d9a",
+    "ship_accommodation:Skorpios II": "1ea8299e83df1871a50a0b564767087a",
+    "ship_accommodation:Skorpios III": "7114813bb77de866043bca1497a91dad",
+    "ship_accommodation:Silver Endeavour": "1af0732009fb7a745d4a3c7b378d6c99"
   },
-  "last_updated": "2025-09-17T15:47:36.704073",
-  "total_components": 4736
+  "last_updated": "2025-09-19T11:28:40.095859",
+  "total_components": 4744
 }

@@ -16,6 +16,7 @@ from mappings.private_tours import map_private_tours_component
 from mappings.all_inclusive_hotels import map_all_inclusive_hotels_component
 from mappings.multi_day_activity import map_multi_day_activity_component
 from mappings.cruise import map_cruise_component
+from mappings.ship_accom import map_ship_accommodation_component
 
 from validate_csv_dynamic import validate_csv
 from utils import save_missing_references_log, clear_missing_references_session, get_missing_references_summary
@@ -46,6 +47,11 @@ SHEET_TEMPLATE_MAP = {
         "template_aca16a46ec3842ca85d182ee9348f627",  # Base
         "template_7546d5da287241629b5190f95346840e",  # Accom
         "template_68c8d409a9f7462aa528a1216cadf2b5",  # Gy
+    ],
+    "Ship Accom": [
+        "template_aca16a46ec3842ca85d182ee9348f627",  # Base
+        "template_7546d5da287241629b5190f95346840e",  # Accom
+        "template_bb8caab1d3104257a75b7cb7dd958136",  # Gy
     ],
     "All Activities - For Upload": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
@@ -85,6 +91,7 @@ SHEET_TEMPLATE_MAP = {
 SHEET_ROW_MAPPERS = {
     "Location"                     : map_location_component,
     "Ground Accom"                 : map_ground_accommodation_component,
+    "Ship Accom"                   : map_ship_accommodation_component,
     "Journeys"                     : map_journey_component,
     "All Activities - For Upload"  : map_activity_component,
     "All Transfers - For Upload"   : map_transfer_component,
@@ -99,6 +106,7 @@ TEMPLATE_TYPES = {
     "template_0c105b25350647b096753b4f863ab06c": "location",
     "template_7546d5da287241629b5190f95346840e": "accommodation",
     "template_68c8d409a9f7462aa528a1216cadf2b5": "ground_accommodation",
+    "template_bb8caab1d3104257a75b7cb7dd958136": "ship_accommodation",
     "template_14cc18c1408a4b73a16d4e1dad2efca9": "journey",
     "template_e2f0e9e5343349358037a0564a3366a0": "activity",
     "template_901d40ac12214820995880915c5b62f5": "transfer",
@@ -118,6 +126,7 @@ COMPONENTS_PATH = PAT_COMPONENTS_PATH
 SHEET_PROCESS_ORDER = [
     # "Location",
     # "Ground Accom",
+    "Ship Accom",
     # "Journeys",
     # "All Activities - For Upload",
     # "All Transfers - For Upload",
@@ -126,7 +135,7 @@ SHEET_PROCESS_ORDER = [
     # "Private Tours Package",
     # "All Inclusive Hotel Package",
     # "Multi-day Activity Package"
-    "PAT Cruise Packages "
+    # "PAT Cruise Packages "
 ]
 
 def load_component_cache():
