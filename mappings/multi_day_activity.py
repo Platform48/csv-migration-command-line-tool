@@ -51,7 +51,6 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
             comp_name = get_stripped(row, comp_name_col)
             comp_type = get_stripped(row, comp_type_col)
             pkg_aliases = {
-                "Excursion": "package",
                 "Accommodation": "ground_accommodation"
                 
             }

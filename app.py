@@ -1,9 +1,13 @@
 import os
 import json
+import hashlib
+import requests
 import openpyxl
 import pandas as pd
 from datetime import datetime
-import hashlib
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from validate_csv_dynamic import validate_csv
+from utils import save_missing_references_log, clear_missing_references_session, get_missing_references_summary
 
 from mappings.activity import map_activity_component
 from mappings.location import map_location_component
@@ -18,11 +22,7 @@ from mappings.multi_day_activity import map_multi_day_activity_component
 from mappings.cruise import map_cruise_component
 from mappings.ship_accom import map_ship_accommodation_component
 
-from validate_csv_dynamic import validate_csv
-from utils import save_missing_references_log, clear_missing_references_session, get_missing_references_summary
-
-
-DEBUG_MODE = False  # toggle this to switch between dry-run and real upload
+DEBUG_MODE = False
 FORCE_REUPLOAD = True
 
 DEBUG_OUTPUT_FILE = "debug_output.ndjson"
@@ -88,6 +88,17 @@ SHEET_TEMPLATE_MAP = {
     ]
 }
 
+DUMMY_TEMPLATE_MAP = {
+    "flights": [
+        "template_aca16a46ec3842ca85d182ee9348f627",
+        "template_4aec70add8e74467814fe7337f4e41b3"
+    ],
+    "independent_arrangements": [
+        "template_aca16a46ec3842ca85d182ee9348f627",
+        "template_932b514e6d804e248bf04a9fa1f836de"
+    ]
+}
+
 SHEET_ROW_MAPPERS = {
     "Location"                     : map_location_component,
     "Ground Accom"                 : map_ground_accommodation_component,
@@ -126,7 +137,7 @@ COMPONENTS_PATH = PAT_COMPONENTS_PATH
 SHEET_PROCESS_ORDER = [
     # "Location",
     # "Ground Accom",
-    "Ship Accom",
+    # "Ship Accom",
     # "Journeys",
     # "All Activities - For Upload",
     # "All Transfers - For Upload",
@@ -134,8 +145,8 @@ SHEET_PROCESS_ORDER = [
     # "Excursions Package",
     # "Private Tours Package",
     # "All Inclusive Hotel Package",
-    # "Multi-day Activity Package"
-    # "PAT Cruise Packages "
+    # "Multi-day Activity Package",
+    # "PAT Cruise Packages ",
 ]
 
 def load_component_cache():
@@ -287,19 +298,6 @@ def run_loop():
 
                 # Load only those into pandas
                 xls = pd.read_excel(COMPONENTS_PATH, sheet_name=visible_sheets, dtype=str)
-
-                # Make duplicate column names unique
-                def old_dedup_columns(columns):
-                    seen = {}
-                    new_cols = []
-                    for col in columns:
-                        if col not in seen:
-                            seen[col] = 1
-                            new_cols.append(col)
-                        else:
-                            seen[col] += 1
-                            new_cols.append(f"{col}.{seen[col]}")
-                    return new_cols
                 
                 def dedup_columns(columns):
                     seen = {}
@@ -314,17 +312,15 @@ def run_loop():
                             new_cols.append(f"{col}.{seen[col]}")
                     return new_cols
 
-
                 for sheet, df_sheet in xls.items():
                     df_sheet.columns = dedup_columns(df_sheet.columns)
-                    print(f"Columns for {sheet}:")
-                    for i, col in enumerate(df_sheet.columns):
-                        print(i, repr(col))
+                    # print(f"Columns for {sheet}:")
+                    # for i, col in enumerate(df_sheet.columns):
+                        # print(i, repr(col))
 
                     df_sheet = df_sheet.iloc[1:].reset_index(drop=True)
 
                     xls[sheet] = df_sheet
-
 
             except Exception as e:
                 print(f"❌ Error reading Excel file: {e}")
@@ -417,6 +413,8 @@ def run_loop():
                     else:
                         print("⏩ Skipping database insert.")
 
+            upload_dummy_components()
+
             # Save missing references log after processing all sheets
             save_missing_references_log()
             
@@ -428,21 +426,56 @@ def run_loop():
             
             for template_type, count in by_type.items():
                 print(f"  {template_type}: {count} components")
-            
             print(f"\n{get_missing_references_summary()}")
-
             print("✅ All sheets processed.")
             break
 
     except KeyboardInterrupt:
         print("\n👋 Exiting the app. Goodbye!")
 
+def upload_dummy_components():
+    
+    cds = CoreDataService([DUMMY_TEMPLATE_MAP["flights"]])
 
-import requests
+    flight_component_fields = [
+        {"templateId": DUMMY_TEMPLATE_MAP["flights"][1], "data": {}},
+        {"templateId": DUMMY_TEMPLATE_MAP["flights"][0], "data": {}},
+    ]
 
-import json
-import requests
-from concurrent.futures import ThreadPoolExecutor, as_completed
+    flight = {
+        "templateId": DUMMY_TEMPLATE_MAP["flights"][1],
+        "isBookable": True,
+        "description":{
+            "web": "",
+            "quote": "",
+            "final": ""
+        },
+        "partners": ["NA"],
+        "regions": [],
+        "name": "Flight",
+        "pricing": {},
+        "media": {
+            "images": [],
+            "videos": []
+        },
+        "componentFields": flight_component_fields,
+        "package": {},
+    }
+    cds.pushValidRowToDB([flight], "Flight")
+
+    independent_arrangements_component_fields = [
+        {"templateId": DUMMY_TEMPLATE_MAP["independent_arrangements"][1], "data": {}},
+        {"templateId": DUMMY_TEMPLATE_MAP["independent_arrangements"][0], "data": {}},
+    ]
+
+    independent_arrangement = flight
+    independent_arrangement["name"] = "Independent Arrangement"
+    independent_arrangement["templateId"] = DUMMY_TEMPLATE_MAP["independent_arrangements"][1]
+    independent_arrangement["componentFields"] = independent_arrangements_component_fields
+    
+    cds = CoreDataService(DUMMY_TEMPLATE_MAP["independent_arrangements"])
+    cds.pushValidRowToDB([independent_arrangement], "Independent Arrangement")
+
 
 class CoreDataService:
     def __init__(self, template_ids):
@@ -492,7 +525,6 @@ class CoreDataService:
             print(f"❌ Request failed for row {idx+1}: {e}")
             return None
 
-        # ✅ Success on POST
         if res.status_code in [200, 201, 202]:
             return self._process_success_response(res, component, template_type, idx)
 
@@ -561,8 +593,6 @@ class CoreDataService:
                     uploaded_components.append(result)
 
         return uploaded_components
-
-
 
 if __name__ == "__main__":
     run_loop()

@@ -149,7 +149,7 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
         },
         "partners": [p.strip() for p in get_stripped(row, "partner").split(",") if p.strip()],
         "regions": [r for r in regions if r],  # filter out None values
-        "name": get_stripped(row, "name") or "Untitled",
+        "name": get_stripped(row, "Code name") or "Untitled",
         "pricing": pricing,
         "media": media,
         "componentFields": component_fields,

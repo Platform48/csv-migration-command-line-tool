@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2025-09-15 13:13:57
+Generated: 2025-09-22 15:39:47
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
@@ -25,14 +25,11 @@ Missing Component                                        | Occurrences
 "Aguas Calientes and Tuyajto"                            | 1
 "Buenos Aires City Centre Hotel"                         | 1
 "Cactus Valley"                                          | 1
-"Campamento Japones"                                     | 1
 "Cerro Arcoíris"                                         | 1
 "EOLO"                                                   | 1
 "Errante EcoLodge"                                       | 1
-"name"                                                   | 1
 "Oco's Place"                                            | 1
 "Refugio Cuernos"                                        | 1
-"Refugio cuernos"                                        | 1
 "Rui Hill"                                               | 1
 "Rupestre"                                               | 1
 "San Pedro Salt Mountains"                               | 1
@@ -46,175 +43,50 @@ Missing Component                                                          | Occ
 "Chaitén Airport (WCH) to Puerto Montt Airport (PMC) or reverse"           | 2
 "Puerto Varas to Puerto Varas Aerodrome (for Chaiten flight) or reverse"   | 2
 
-TYPE: transfer
---------------------------------------------------------------------------------
-Missing Component                                                   | Occurrences
-----------------------------------------------------------------------------------
-"Awasi Atacama to El Tatio Geysers"                                 | 1
-"Chaitén Airport (WCH) to Puerto Montt Aerodrome (SCPF)"            | 1
-"Chaitén Airport (WCH) to Puerto Montt Airport (PMC) Birds Chile"   | 1
-"El Chaltén to Lago del Desierto"                                   | 1
-"Flight from Puerto Montt Aerodrome (SCPF) to Chaiten (WCH)"        | 1
-"Glacier Grey Viewpoint Hike"                                       | 1
-"Puerto Montt Airport (PMC) to Chaitén Airport (WCH) Birds Chile"   | 1
-"Puerto Varas to Puerto Montt Aerodrome (SCPF)"                     | 1
-
 TYPE: activity
 --------------------------------------------------------------------------------
 Missing Component                                                             | Occurrences
 --------------------------------------------------------------------------------------------
 "Tierra del Fuego National Park with Trekking & Canoes including transfers"   | 3
+"Tierra del Fuego National Park Half Day Tour (Private)"                      | 2
+"4x4 Trip with Canoeing"                                                      | 1
+"Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"             | 1
 
-TYPE: excursion
+TYPE: transfer
 --------------------------------------------------------------------------------
-Missing Component                                                                         | Occurrences
---------------------------------------------------------------------------------------------------------
-"Puñihuil Penguin Colony Birds Chile"                                                     | 3
-"Base of the Towers Viewpoint Hike Explora"                                               | 2
-"Beagle Foodie Experience Tierra Turismo"                                                 | 2
-"Bike & Beer Excursion Birds Chile"                                                       | 2
-"Castro Walking Tour Birds Chile"                                                         | 2
-"Duhatao Bay and Chepu River Hike Birds Chile"                                            | 2
-"Half-day San Rafael Lagoon & Glacier Boat Trip Senderos Patagonia Aysén"                 | 2
-"Lago Pehoé Boat Ride and French Valley Hike Chile Nativo"                                | 2
-"Laguna Esmeralda Hike Tierra Turismo"                                                    | 2
-"Laguna Torre Hike Walk Patagonia"                                                        | 2
-"Mapuche Community Visit with Dinner Birds Chile"                                         | 2
-"Marble Caves kayaking from Puerto Tranquillo Senderos Patagonia Aysén"                   | 2
-"Peninsula Valdés Tour Causana Viajes"                                                    | 2
-"Peninsula Valdés Whale watching Boat Trip Causana Viajes"                                | 2
-"Perito Moreno Big Ice Hike Walk Patagonia"                                               | 2
-"4x4 Trip with Canoeing Tierra Turismo"                                                   | 1
-"Aguas Arriba to the Chilean Border Aguas Arriba Lodge"                                   | 1
-"Alto del Toro Hike Explora"                                                              | 1
-"Andes 4x4 Off-road Adventure Tierra Turismo"                                             | 1
-"Baguales Fossil Trail Hike Tierra"                                                       | 1
-"Baker River Rafting Senderos Patagonia Aysén"                                            | 1
-"Bariloche to Villa La Angostura Self-Drive H&T Argentina"                                | 1
-"Base of the Towers Viewpoint Hike Cascada"                                               | 1
-"Base of the Towers Viewpoint Hike Chile Nativo"                                          | 1
-"Base of the Towers Viewpoint Hike Patagonia Camp"                                        | 1
-"Base of the Towers Viewpoint Hike Tierra"                                                | 1
-"Blugrin - Cochrane River and Lake Explora"                                               | 1
-"Buenos Aires City Tour Extended Highlights H&T Argentina"                                | 1
-"Buenos Aires Tango Show H&T Argentina"                                                   | 1
-"Catarpe Bike Ride Explora"                                                               | 1
-"Cerro Carnero Hike Walk Patagonia / H&T"                                                 | 1
-"Cerro Falkner Hike Andes Track Expediciones"                                             | 1
-"Cerro Torre Viewpoint Half-day Hike Walk Patagonia"                                      | 1
-"Chonchi Walking Tour Birds Chile"                                                        | 1
-"Colonia de Sacramento Day Trip H&T Argentina"                                            | 1
-"Colonia Suiza Mountain Biking Andes Track Expediciones"                                  | 1
-"Curanto Lunch with María Luisa Birds Chile"                                              | 1
-"Darwin's Frog Trail Birds Chile"                                                         | 1
-"Darwin's Frog trail Hike"                                                                | 1
-"Desolación Hike Birds Chile"                                                             | 1
-"El Chaltén Rock Climbing Serac"                                                          | 1
-"El Tatio Geysers - Full Day Awasi"                                                       | 1
-"End of the World Train Station and Tierra del Fuego National Park Walk Tierra Turismo"   | 1
-"Estancia Day at Estancia San Luis Chile Nativo"                                          | 1
-"Estancia Lazo Horse Ride Tierra"                                                         | 1
-"Estancia Los Rebaños Bike Ride Remota Lodge"                                             | 1
-"Estancia Túnel Biking Tierra Turismo"                                                    | 1
-"Estero Parada Valley & Laguna Duff Senderos Patagonia Aysén"                             | 1
-"Evening @ Espacio Patagón Birds Chile"                                                   | 1
-"Exploration of Yacu-í Private Reserve Awasi"                                             | 1
-"Fauna Trail Hotel Las Torres"                                                            | 1
-"Fitz Roy Viewpoints from Lago del Desierto Hike Aguas Arriba Lodge"                      | 1
-"Fogón Asado Experience H&T Argentina"                                                    | 1
-"French Valley: From Lago Pehoé and back Hike Explora"                                    | 1
-"Full Paine - Grey Glacier Tour Hotel Las Torres"                                         | 1
-"Full-day El Amarillo Glacier Hike including transfers"                                   | 1
-"Gastronomy Experience @ El Cazador Birds Chile"                                          | 1
-"Glaciar Yelcho Hike Birds Chile"                                                         | 1
-"Glacier Grey Boat Trip Hotel Rio Serrano"                                                | 1
-"Glacier Grey Hike & Boat Trip Cascada"                                                   | 1
-"Glacier Grey Hike & Boat Trip Explora"                                                   | 1
-"Gran Salar Tour Explora"                                                                 | 1
-"Guatin Cactus Valley Hike Tierra"                                                        | 1
-"Hike, Bike & Ride at Hotel Eolo Hotel Eolo"                                              | 1
-"Horse Riding to the Serrano Explora"                                                     | 1
-"Hotel Río Serrano Horse Ride Hotel Rio Serrano"                                          | 1
-"Huerquehue National Park Trek Birds Chile"                                               | 1
-"Iguazú Falls Tour (Brazilian side) H&T Argentina"                                        | 1
-"Iguazú Falls Tour and Bird Park (Brazilian side) Awasi"                                  | 1
-"Island Interior and Birdman Cult Southbound"                                             | 1
-"Kayak on Lake Machónico Andes Track Expediciones"                                        | 1
-"Kayak on Lake Mascardi Andes Track Expediciones"                                         | 1
-"Lago del Desierto and Huemul Glacier Viewpoint Hike Walk Patagonia"                      | 1
-"Lago del Desierto kayak and Hike Walk Patagonia"                                         | 1
-"Lago Grey Boat Trip Remota Lodge"                                                        | 1
-"Lago Pehoé Boat Ride and French Valley Hike Awasi"                                       | 1
-"Lago Pehoé Boat Ride and French Valley Hike Cascada"                                     | 1
-"Lago Pehoé Boat Ride and French Valley Hike Tierra"                                      | 1
-"Laguna Azul Hike in Torres del Paine Awasi"                                              | 1
-"Laguna Chico Hike Explora"                                                               | 1
-"Laguna de Los Tres and Poincenot Comfort Camp Hike Serac"                                | 1
-"Laguna de Los Tres Hike Walk Patagonia"                                                  | 1
-"Laguna Torre from Poincenot Hike Serac"                                                  | 1
-"Laguna Turquesa & Carabajal Valley Hike Tierra Turismo"                                  | 1
-"Lake Linda Horse Riding Explora"                                                         | 1
-"Lake Sarmiento, Lake Nordenskjöld & Salto Grande Waterfall Tour Chile Nativo"            | 1
-"Lake Toro kayaking Patagonia Camp"                                                       | 1
-"Las Chinas Viewpoint Hike Patagonia Camp"                                                | 1
-"Loma del Pliegue Tumbado Hike Walk Patagonia"                                            | 1
-"Los Perros Waterfall Hike Walk Patagonia / H&T"                                          | 1
-"Madsen House Tour - El Chaltén Walk Patagonia"                                           | 1
-"Mallin Colorado Lagoon Horse Ride Aysen Journeys"                                        | 1
-"Mallin Colorado Trails Hike Aysen Journeys"                                              | 1
-"Marble Caves kayaking from Puerto Tranquillo Aysen Journeys"                             | 1
-"Maria Turquesa Boat Cruise to Perito Moreno Glacier Walk Patagonia"                      | 1
-"Martial Glacier Dinner at Night Tierra Turismo"                                          | 1
-"Monte Susana Horse Ride Walk Patagonia"                                                  | 1
-"Motu Tautara Snorkelling Explora"                                                        | 1
-"Muelle de las Almas (Dock of Souls) Hike Birds Chile"                                    | 1
-"Nahuel Huapi Estancia Horse Riding Andes Track Expediciones"                             | 1
-"Nativo Experience Walk Patagonia"                                                        | 1
-"Panoramic Tour of Bariloche Andes Track Expediciones"                                    | 1
-"Patagonia National Park Museum & Hike Aysen Journeys"                                    | 1
-"Patagonia Park - Day Hike (Tamango side) Senderos Patagonia Aysén"                       | 1
-"Patagonia Park - Day Hike Senderos Patagonia Aysén"                                      | 1
-"Penguin Watching by Bus & Boat at Martillo Island Tierra Turismo"                        | 1
-"Peninsula Valdés Wildlife encounters Causana Viajes"                                     | 1
-"Perito Moreno Glacier kayaking Walk Patagonia"                                           | 1
-"Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"                                  | 1
-"Perito Moreno Minitrekking I Serac"                                                      | 1
-"Perito Moreno Minitrekking I Walk Patagonia"                                             | 1
-"Perito Moreno Pioneros Adventure Walk Patagonia"                                         | 1
-"Petrified lava flow in Pucón Biking Birds Chile"                                         | 1
-"Petrohué River Rafting Birds Chile"                                                      | 1
-"Puakatiki Hike Explora"                                                                  | 1
-"Puerto Pirámides Kayaking Causana Viajes"                                                | 1
-"Pumalín Park - Chaitén Volcano Hike Birds Chile"                                         | 1
-"Pumalín Park - Chaitén Volcano Hike including transfers"                                 | 1
-"Punta del Inca Hike Explora"                                                             | 1
-"Purilactis Hike Tierra"                                                                  | 1
-"Queulat National Park Hike Birds Chile"                                                  | 1
-"Refugio Puesto Cagliero Hike Walk Patagonia"                                             | 1
-"River Blanco hike & Tatio Geysers Hike Explora"                                          | 1
-"Río La Leona kayaking Serac"                                                             | 1
-"Salt Mountains/Moon Valley Hike Southbound"                                              | 1
-"San Martín de Los Andes Day at Leisure H&T Argentina"                                    | 1
-"San Martín de Los Andes to Bariloche Self-Drive H&T Argentina"                           | 1
-"Santiago City Sensations Tour Southbound"                                                | 1
-"Santiago Half Day City Tour Southbound"                                                  | 1
-"Sarmiento Lake Hike Hotel Rio Serrano"                                                   | 1
-"Sierra Baguales Hike Patagonia Camp"                                                     | 1
-"Tatio Geysers Southbound"                                                                | 1
-"Tatio Geysers Tierra"                                                                    | 1
-"The Argentine Experience H&T Argentina"                                                  | 1
-"The Birdman Hike Explora"                                                                | 1
-"The Miru Hike Explora"                                                                   | 1
-"Torres del Paine Wildlife Safari Chile Nativo"                                           | 1
-"Trancura River White-Water Rafting Birds Chile"                                          | 1
-"Valparaíso Solo Exploration Independent"                                                 | 1
-"Villa La Angostura to San Martín de Los Andes Self-Drive H&T Argentina"                  | 1
-"Vinciguerra Glacier Hike Tierra Turismo"                                                 | 1
-"Visit Chepu River Valley Birds Chile"                                                    | 1
-"Walk through Puerto Varas Birds Chile"                                                   | 1
+Missing Component                                                   | Occurrences
+----------------------------------------------------------------------------------
+"Awasi Atacama to El Tatio Geysers"                                 | 1
+"Beagle Channel Biking"                                             | 1
+"Chaitén Airport (WCH) to Puerto Montt Aerodrome (SCPF)"            | 1
+"Chaitén Airport (WCH) to Puerto Montt Airport (PMC) Birds Chile"   | 1
+"El Chaltén to Lago del Desierto"                                   | 1
+"Flight from Puerto Montt Aerodrome (SCPF) to Chaiten (WCH)"        | 1
+"Puerto Montt Airport (PMC) to Chaitén Airport (WCH) Birds Chile"   | 1
+"Puerto Varas to Puerto Montt Aerodrome (SCPF)"                     | 1
 
 TYPE: excursion (shared)
 --------------------------------------------------------------------------------
 Missing Component                                          | Occurrences
 -------------------------------------------------------------------------
 "Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"   | 1
+
+TYPE: excursion
+--------------------------------------------------------------------------------
+Missing Component                                                                         | Occurrences
+--------------------------------------------------------------------------------------------------------
+"Peninsula Valdés Tour Causana Viajes"                                                    | 2
+"100K Cooking Experience Birds Chile"                                                     | 1
+"4x4 Trip with Canoeing Tierra Turismo"                                                   | 1
+"Darwin's Frog Trail Birds Chile"                                                         | 1
+"Darwin's Frog trail Hike"                                                                | 1
+"Desolación Hike Birds Chile"                                                             | 1
+"El Amarillo Glacier viewpoint Hike"                                                      | 1
+"End of the World Train Station and Tierra del Fuego National Park Walk Tierra Turismo"   | 1
+"Full-day El Amarillo Glacier Hike including transfers"                                   | 1
+"Futaleufú River rafting"                                                                 | 1
+"Gastronomy Experience @ El Cazador Birds Chile"                                          | 1
+"Monte Susana Horse Ride Walk Patagonia"                                                  | 1
+"Pumalín Park - Chaitén Volcano Hike including transfers"                                 | 1
+"Reloncaví Fjord full-day Kayak"                                                          | 1
+"Vinciguerra Glacier Hike Tierra Turismo"                                                 | 1
