@@ -136,7 +136,7 @@ COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
     # "Location",
-    # "Ground Accom",
+    "Ground Accom",
     # "Ship Accom",
     # "Journeys",
     # "All Activities - For Upload",
@@ -148,6 +148,10 @@ SHEET_PROCESS_ORDER = [
     # "Multi-day Activity Package",
     # "PAT Cruise Packages ",
 ]
+
+AUXILIARY_SHEETS = {
+    "Rooms Cabins": "Ground Accom"  # Rooms data belongs to Ground Accom
+}
 
 def load_component_cache():
     """Load existing component ID mappings from cache file"""
@@ -312,16 +316,23 @@ def run_loop():
                             new_cols.append(f"{col}.{seen[col]}")
                     return new_cols
 
+                # Store auxiliary data for later use
+                auxiliary_data = {}
+
                 for sheet, df_sheet in xls.items():
                     df_sheet.columns = dedup_columns(df_sheet.columns)
                     # print(f"Columns for {sheet}:")
                     # for i, col in enumerate(df_sheet.columns):
-                        # print(i, repr(col))
+                    #     print(i, repr(col))
 
                     df_sheet = df_sheet.iloc[1:].reset_index(drop=True)
-
                     xls[sheet] = df_sheet
-
+                    
+                    # Store auxiliary data separately
+                    if sheet in AUXILIARY_SHEETS:
+                        auxiliary_data[sheet] = df_sheet
+                        print(f"📋 Stored auxiliary data for {sheet}: {len(df_sheet)} rows")
+                
             except Exception as e:
                 print(f"❌ Error reading Excel file: {e}")
                 continue
@@ -338,7 +349,13 @@ def run_loop():
                 core_data_service = CoreDataService(template_ids)
 
                 schemas = core_data_service.getSchemaWithArrayLevel()
-
+                
+                # Prepare auxiliary data for this sheet
+                rooms_data_for_sheet = None
+                if sheet_name == "Ground Accom" and "Rooms Cabins" in auxiliary_data:
+                    rooms_data_for_sheet = auxiliary_data["Rooms Cabins"]
+                    print(f"🏨 Including {len(auxiliary_data['Rooms Cabins'])} rooms for Ground Accom processing")                
+                
                 try:
                     results, parsed_json = validate_csv(
                         df,
@@ -352,7 +369,8 @@ def run_loop():
                                 "sheet_name": sheet_name,
                                 "row_name": row.get("name", "Untitled")
                             },
-                            row_index=row_index
+                            row_index=row_index,
+                            rooms_data=rooms_data_for_sheet  # Pass auxiliary data to mapper
                         )
                     )
                 except Exception as e:

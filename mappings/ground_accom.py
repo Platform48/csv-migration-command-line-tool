@@ -1,8 +1,26 @@
 from utils import get_stripped, safe_float, safe_int, get_location_id
 from .location import LOCATION_ALIASES, map_region_name_to_id
 import pandas as pd
+import re
 
-def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1):
+def parse_room_size(val: str):
+    """
+    Extract numeric size in m² from messy strings like '25m2 - 32m2', '16.5m3', etc.
+    Always returns the first valid number as float, or None.
+    """
+    if not val or not isinstance(val, str):
+        return None
+    
+    # Find all numbers (including decimals) followed by m + digit(s)
+    match = re.findall(r"(\d+(?:\.\d+)?)m\d", val)
+    if match:
+        try:
+            return float(match[0])  # Pick the first one if multiple
+        except ValueError:
+            return None
+    return None
+
+def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None):
     """
     Map ground accommodation component using consistent ID lookup utilities
     """
@@ -26,17 +44,13 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
 
     # --- Media ---
     images = get_stripped(row, "images").split("\n")
-    images = [i.strip() for i in images if i.strip()]  # Clean empty strings
+    images = [i.strip() for i in images if i.strip()]
     media = {"images": images, "videos": []}
 
     # --- Location ID lookup with util ---
     location_name = get_stripped(row, "location")
     if location_name in LOCATION_ALIASES:
         location_name = LOCATION_ALIASES[location_name]
-
-    city_name = get_stripped(row, "city")
-    if city_name in LOCATION_ALIASES:
-        city_name = LOCATION_ALIASES[city_name]
 
     location_id = get_location_id(
         location_name=location_name,
@@ -49,23 +63,14 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
         }
     )
 
-    city_id = get_location_id(
-        location_name=city_name,
-        component_id_map=COMPONENT_ID_MAP,
-        context={
-            **(context or {}),
-            "field": "city",
-            "row_index": row_index,
-            "additional_info": f"{get_stripped(row, 'name')}"
-        }
-    )
+    
 
     # ===== Level 0 → Base schema (empty) =====
     level_0 = {}
 
     # ===== Level 1 → Accommodation Details =====
     level_1 = {
-        "location": location_id or "Uknown",
+        "location": location_id or "Unknown",
         "type": get_stripped(row, "Type") or "Standard Hotel", 
         "facilities": {
             "bar": get_stripped(row, "facilities.bar") == "TRUE",
@@ -112,6 +117,45 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
         ]
     }
 
+    # --- Map Rooms from rooms_data ---
+    if rooms_data is not None and not rooms_data.empty:
+        accom_name = get_stripped(row, "name")
+        matching_rooms = rooms_data[rooms_data["Hotel/Vessel"].str.strip() == accom_name]
+
+    VALID_BEDS = {"Other","Double","Twin","Bunk Bed","Single","Triple","Quad","Quintuple"}
+    VALID_BATHROOMS = {
+        "En-suite","Shower","Sink","Shared Bathroom","WC",
+        "Wetroom","Toilet","Composting Toilet","Combi Bath/Shower"
+    }
+
+    for _, r in matching_rooms.iterrows():
+
+        room_obj = {
+            "sizem2": parse_room_size(str(r.get("Size"))) or -1.0,
+
+            "bedConfigurations": [
+                b.strip()
+                for b in str(r.get("Bed Configurations") if pd.notna(r.get("Bed Configurations")) else "").split(",")
+                if b.strip() in VALID_BEDS
+            ],
+
+            "bathroomConfigurations": [
+                b.strip()
+                for b in str(r.get("Bathroom Type") if pd.notna(r.get("Bathroom Type")) else "").split(",")
+                if b.strip() in VALID_BATHROOMS
+            ],
+
+            "energyType": (
+                ["Renewable"] if str(r.get("Do they use renewable energy?")).strip().lower() == "yes"
+                else ["Non-renewable"]
+            ),
+
+            "name": str(r.get("Room/Cabin name") or "Unnamed Room"),
+            "type": "Hotel" if "Room" in str(r.get("Room/Cabin name")) else "Cabin"
+        }
+
+        level_1["rooms"].append(room_obj)
+
     # ===== Level 2 → Ground Accommodation =====
     level_2 = {
         "type": get_stripped(row, "Type") or "Standard Hotel",
@@ -122,6 +166,7 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
         {"templateId": template_ids[1], "data": level_1},
         {"templateId": template_ids[0], "data": level_0},
     ]
+
     val = {
         "templateId": template_ids[2],
         "isBookable": True,
@@ -130,7 +175,9 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
             "quote": get_stripped(row, "Description") or "",
             "final": get_stripped(row, "Description") or ""
         },
-        "partners": [p.strip() for p in get_stripped(row, "Partner").split(",") if p.strip()],
+        "partners": (
+            [p.strip() for p in get_stripped(row, "Partner").split(",") if p.strip()] or ["NA"]
+        ),
         "regions": [r for r in regions if r],
         "name": get_stripped(row, "name") or "Untitled",
         "pricing": pricing,
