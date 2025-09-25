@@ -135,18 +135,18 @@ ANT_COMPONENTS_PATH = "ant_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    "Location",
-    "Ground Accom",
-    "Ship Accom",
-    "Journeys",
-    "All Activities - For Upload",
-    "All Transfers - For Upload",
+    # "Location",
+    # "Ground Accom",
+    # "Ship Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "All Transfers - For Upload",
 
-    "Excursions Package",
-    "Private Tours Package",
-    "All Inclusive Hotel Package",
-    "Multi-day Activity Package",
-    "PAT Cruise Packages ",
+    # "Excursions Package",
+    # "Private Tours Package",
+    # "All Inclusive Hotel Package",
+    # "Multi-day Activity Package",
+    # "PAT Cruise Packages ",
 ]
 
 AUXILIARY_SHEETS = {
@@ -467,12 +467,7 @@ def upload_dummy_components():
         "destination":"patagonia",
         "state": "Draft",
         "pricing": {"amount":0,"currency":"gbp"},
-        "package": {
-            "title":"NA",
-            "description":"",
-            "startDate":"2000-01-01T00:00:00Z",
-            "endDate":"2000-01-01T00:00:00Z",
-        },
+        "package": None,
         "templateId": DUMMY_TEMPLATE_MAP["flights"][1],
         "isBookable": True,
         "description":{
@@ -489,7 +484,8 @@ def upload_dummy_components():
         },
         "componentFields": flight_component_fields,
     }
-    cds.pushValidRowToDB([flight], "Flight")
+    flight_copy = flight.copy()
+    cds.pushValidRowToDB([flight_copy], "Flight")
 
     independent_arrangements_component_fields = [
         {"templateId": DUMMY_TEMPLATE_MAP["independent_arrangements"][1], "data": {}},
