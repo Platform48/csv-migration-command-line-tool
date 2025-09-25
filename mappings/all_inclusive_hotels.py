@@ -98,6 +98,8 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
                     package_span_items.append({
                         "componentId": comp_id or "",
                         "allDay": True,
+                        "startTime":"",
+                        "endTime":""
                     })
             
             comp_index += 1
@@ -132,7 +134,9 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
         )
         package_span_items.append({
             "componentId": comp_id or "",
-            "allDay": True
+            "allDay": True,
+            "startTime":"",
+            "endTime":""
         })
 
         # Determine last day from existing spans
@@ -214,8 +218,8 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
             "spans": package_spans,
             "title": get_stripped(row, "name") or "NA",
             "description": get_stripped(row, "Description - Quote"),
-            "startDate":"2000-01-01T00:00:00Z",
-            "endDate":"2000-01-01T00:00:00Z",
+            # "startDate":"2000-01-01T00:00:00Z",
+            # "endDate":"2000-01-01T00:00:00Z",
             # "startDate": "2025-08-01T00:00:00Z",
             # "endDate": "2025-08-10T00:00:00Z"
         },

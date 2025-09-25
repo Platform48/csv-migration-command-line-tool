@@ -59,6 +59,8 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
         package_span_items.append( {
             "componentId": comp1_id,
             "allDay": True,
+            "startTime":"",
+            "endTime":""
         })
 
     comp2_name = get_stripped(row, "Component 2")
@@ -80,6 +82,8 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
         package_span_items.append( {
             "componentId": comp2_id,
             "allDay": True,
+            "startTime":"",
+            "endTime":""
         })
 
     comp3_name = get_stripped(row, "Component 3")
@@ -96,6 +100,8 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
         package_span_items.append( {
             "componentId": comp3_id,
             "allDay": True,
+            "startTime":"",
+            "endTime":""
         })
 
     
@@ -170,8 +176,6 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
             ],
             "title": get_stripped(row, "name") or "NA",
             "description": get_stripped(row, "Description - Quote"),
-            "startDate":"2000-01-01T00:00:00Z",
-            "endDate":"2000-01-01T00:00:00Z",
             # "startDate": "2025-08-01T00:00:00Z",
             # "endDate": "2025-08-10T00:00:00Z"
         },

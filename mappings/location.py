@@ -147,10 +147,5 @@ def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         "name": get_stripped(row, "name") or "Untitled",
         "media": media,
         "componentFields": component_fields,
-        "package": {
-            "title":get_stripped(row, "name") or "Untitled",
-            "description":"",
-            "startDate":"2000-01-01T00:00:00Z",
-            "endDate":"2000-01-01T00:00:00Z",
-        },
+        "package": None,
     }

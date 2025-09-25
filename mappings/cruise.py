@@ -99,6 +99,8 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
                     package_span_items.append({
                         "componentId": comp_id or "",
                         "allDay": True,
+                        "startTime":"",
+                        "endTime":""
                     })
             
             comp_index += 1
@@ -133,7 +135,9 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
         )
         package_span_items.append({
             "componentId": comp_id or "",
-            "allDay": True
+            "allDay": True,
+            "startTime":"",
+            "endTime":""
         })
 
         # Determine last day from existing spans
@@ -218,8 +222,6 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             "spans": package_spans,
             "title": get_stripped(row, "Name") or "NA",
             "description": get_stripped(row, "Cruise Description"),
-            "startDate":"2000-01-01T00:00:00Z",
-            "endDate":"2000-01-01T00:00:00Z",
             # "startDate": "2025-08-01T00:00:00Z",
             # "endDate": "2025-08-10T00:00:00Z"
         },
