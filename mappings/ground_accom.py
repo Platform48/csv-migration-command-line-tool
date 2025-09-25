@@ -168,6 +168,17 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
     ]
 
     val = {
+        "orgId":"swoop",
+        "destination":"patagonia",
+        "state": "Draft",
+        "pricing": {"amount":0,"currency":"gbp"},
+        "package": {
+            "title":"NA",
+            "description":"",
+            "startDate":"2000-01-01T00:00:00Z",
+            "endDate":"2000-01-01T00:00:00Z",
+        },
+
         "templateId": template_ids[2],
         "isBookable": True,
         "description": {
@@ -180,9 +191,7 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
         ),
         "regions": [r for r in regions if r],
         "name": get_stripped(row, "name") or "Untitled",
-        "pricing": pricing,
         "media": media,
         "componentFields": component_fields,
-        "package": {},
     }
     return val

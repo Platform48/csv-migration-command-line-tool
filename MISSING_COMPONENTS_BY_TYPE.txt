@@ -1,15 +1,81 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2025-09-23 16:52:14
+Generated: 2025-09-24 16:13:12
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
 
 ====================================================================================================
 
-TYPE: location
+TYPE: activity
 --------------------------------------------------------------------------------
-Missing Component    | Occurrences
------------------------------------
-"EOLO"               | 1
-"Errante EcoLodge"   | 1
-"Refugio Cuernos"    | 1
+Missing Component                                                             | Occurrences
+--------------------------------------------------------------------------------------------
+"French Valley: From Lago Pehoé and back Hike"                                | 10
+"Estancia Lago Pinto - BBQ & Ranch Day"                                       | 3
+"Gable Island & Penguin Colony with Canoeing"                                 | 3
+"Lago del Desierto Kayak & Huemul Glacier Viewpoint Hike"                     | 3
+"Laguna Turquesa & Carabajal Valley Hike"                                     | 3
+"Penguin Watching by Bus & Boat at Martillo Island"                           | 3
+"Perito Moreno Safari Nautico Boat Trip & Walkways"                           | 3
+"Perito Moreno Walkways & Viewing Balconies"                                  | 3
+"Tierra del Fuego National Park with Trekking & Canoes including transfers"   | 3
+"Bike & Beer Excursion"                                                       | 2
+"Cejar Lagoon Hike & Bathe"                                                   | 2
+"Evening @ Espacio Patagón"                                                   | 2
+"Glacier Grey Hike & Boat Trip"                                               | 2
+"Lake District E-bike & Hike"                                                 | 2
+"Llanquihue & Frutillar Tour"                                                 | 2
+"Mirador Ferrier & Monzino Hike"                                              | 2
+"Osorno Volcano - Solitario Hike & Petrohué Waterfalls Hike"                  | 2
+"Tierra del Fuego National Park Half Day Tour (Private)"                      | 2
+"Walking & Birdwatching ta Maullin and Llanquihue"                            | 2
+"4x4 Trip with Canoeing"                                                      | 1
+"Base of the Towers Horse Ride & Hike"                                        | 1
+"Cataraft: Río Manso"                                                         | 1
+"Chepu: Hidden Corners Hike"                                                  | 1
+"Cleopatra’s Needles Biking"                                                  | 1
+"Cleopatra’s Needles Horse Ride"                                              | 1
+"Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"             | 1
+"Estero Parada Valley & Laguna Duff"                                          | 1
+"Glacier Grey Boat Trip & Hike"                                               | 1
+"Glacier Grey Sailing; Touring the Paine Massif"                              | 1
+"Half-day San Rafael Lagoon & Glacier Boat Trip"                              | 1
+"High Plains Lagoons & Piedras Rojas hike"                                    | 1
+"Hike, Bike & Ride at EOLO Lodge"                                             | 1
+"Lago del Desierto Bike Ride & Hike"                                          | 1
+"Laguna Totora & Towers Landscapes"                                           | 1
+"Lake Nordenskjöld & Ascencio Valley Horse Ride"                              | 1
+"Lake Sarmiento, Lake Nordenskjöld & Salto Grande Waterfall Tour"             | 1
+"Lakes Trail Tour/Hike"                                                       | 1
+"Los Valles hike: Fitz Roy and Cerro Torre Hike"                              | 1
+"Neff/Baker River Confluence & National Park Patagonia"                       | 1
+"Patagonia National Park Museum & Hike"                                       | 1
+"Pingo & Grey Beach Hike"                                                     | 1
+"River Blanco hike & Tatio Geysers Hike"                                      | 1
+"Rodas Lagoon & Puesto Verde Hike"                                            | 1
+"Salt Mountains/Moon Valley Hike"                                             | 1
+"San Rafael Lagoon & Glacier Boat Trip"                                       | 1
+"Upsala Glacier lookout & Fossil Canyon hike"                                 | 1
+"Upsala Glacier lookout & South Patagonian Ice Field hike"                    | 1
+"Valparaíso & Viña del Mar Tour"                                              | 1
+"Western Lakes; Drive and Walk; Glacier Grey Boat Trip"                       | 1
+
+TYPE: transfer
+--------------------------------------------------------------------------------
+Missing Component                                                                              | Occurrences
+-------------------------------------------------------------------------------------------------------------
+"Activity to El Calafate Hotel H&T Argentina Driver Only"                                      | 18
+"Activity to Ushuaia Hotel H&T"                                                                | 18
+"El Calafate Hotel to Activity H&T Argentina Driver Only"                                      | 18
+"El Chaltén Hotel to Activity H&T Driver Only"                                                 | 18
+"Ushuaia Hotel to Activity H&T"                                                                | 18
+"Activity to El Chaltén Hotel H&T"                                                             | 17
+"Activity to Buenos Aires Hotel H&T Argentina Guided"                                          | 9
+"Buenos Aires Hotel to Activity H&T Argentina Guided"                                          | 9
+"Activity to Cataratas/Puerto Iguazú Hotel H&T"                                                | 1
+"Activity to Puerto Iguazu (IGR) H&T"                                                          | 1
+"Awasi Atacama to El Tatio Geysers"                                                            | 1
+"Beagle Channel Biking"                                                                        | 1
+"Cataratas/Puerto Iguazú Hotel to Activity H&T"                                                | 1
+"Puerto Iguazu (IGR) to Activity H&T"                                                          | 1
+"Puerto Tranquilo to Mallin Colorado/Pared Sur/Cruce Maiten Senderos Patagonia Aysen Guided"   | 1

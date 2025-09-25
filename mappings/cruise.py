@@ -18,7 +18,7 @@ def normalize_day_string(s: str) -> str:
     else:
         return f"{numbers[0]}-{numbers[1]}"
 
-def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1):
+def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None):
     """
     Map cruise component with improved ID lookups and missing reference logging
     """
@@ -196,6 +196,12 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
     ]
 
     return {
+        "orgId":"swoop",
+        "destination":"patagonia",
+        "state": "Draft",
+        "pricing": {"amount":0,"currency":"gbp"},
+
+
         "templateId": template_ids[2],
         "isBookable": True,
         "description": {
@@ -206,13 +212,14 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
         "partners": [p.strip() for p in get_stripped(row, "Partner").split(",") if p.strip()],
         "regions": [r for r in regions if r],  # filter out None values
         "name": get_stripped(row, "Name") or "Untitled",
-        "pricing": {},
         "media": media,
         "componentFields": component_fields,
         "package": {
             "spans": package_spans,
-            "title": get_stripped(row, "Name"),
+            "title": get_stripped(row, "Name") or "NA",
             "description": get_stripped(row, "Cruise Description"),
+            "startDate":"2000-01-01T00:00:00Z",
+            "endDate":"2000-01-01T00:00:00Z",
             # "startDate": "2025-08-01T00:00:00Z",
             # "endDate": "2025-08-10T00:00:00Z"
         },

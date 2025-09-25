@@ -68,7 +68,7 @@ def map_region_name_to_id(region_name):
         print(f"❌ ERROR: Region '{region_name}' (canonical: '{canonical}') not found in REGION_LOOKUP.")
     return region_id
 
-def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1):
+def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None):
 
     ALLOWED_TYPES = {
         "Other","Airport","Apartments","Bay","Bridge","Campsite","City","Estancia",
@@ -129,6 +129,12 @@ def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
 
     # --- Final object ---
     return {
+        
+        "orgId":"swoop",
+        "destination":"patagonia",
+        "state": "Draft",
+        "pricing": {"amount":0,"currency":"gbp"},
+
         "templateId": template_ids[1],
         "isBookable": False,
         "description":{
@@ -139,8 +145,12 @@ def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         "partners": [p.strip() for p in get_stripped(row, "partners").split(",") if p.strip()],
         "regions": regions,
         "name": get_stripped(row, "name") or "Untitled",
-        "pricing": pricing,
         "media": media,
         "componentFields": component_fields,
-        "package": {},
+        "package": {
+            "title":get_stripped(row, "name") or "Untitled",
+            "description":"",
+            "startDate":"2000-01-01T00:00:00Z",
+            "endDate":"2000-01-01T00:00:00Z",
+        },
     }

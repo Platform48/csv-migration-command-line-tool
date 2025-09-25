@@ -1,10 +1,28 @@
-from utils import get_stripped, safe_float, safe_int, get_location_id
-from .location import LOCATION_ALIASES, map_region_name_to_id
+from utils import get_stripped, safe_float, safe_int
+from .location import map_region_name_to_id
 import pandas as pd
+import re
 
-def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1):
+def parse_room_size(val: str):
     """
-    Map ship accommodation component using consistent ID lookup utilities
+    Extract numeric size in m² from messy strings like '25m2 - 32m2', '16.5m3', etc.
+    Always returns the first valid number as float, or None.
+    """
+    if not val or not isinstance(val, str):
+        return None
+    
+    match = re.findall(r"(\d+(?:\.\d+)?)m\d", val)
+    if match:
+        try:
+            return float(match[0])
+        except ValueError:
+            return None
+    return None
+
+
+def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None):
+    """
+    Map ship accommodation component, including cabin details from Rooms Cabins sheet
     """
 
     # --- Regions ---
@@ -12,7 +30,6 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
     primary_region_id = map_region_name_to_id(raw_region)
     regions = [primary_region_id] if primary_region_id else []
     
-    # Add additional regions if present
     for reg_field in ["Region 2"]:
         additional_region = get_stripped(row, reg_field)
         mapped_id = map_region_name_to_id(additional_region)
@@ -41,19 +58,8 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
     ]
     media = {"images": images, "videos": [get_stripped(row, "Video")] if get_stripped(row, "Video") else []}
 
-    # ===== Level 0 → Ship =====
-    level_2 = {
-        "deckPlan": get_stripped(row, "Deck Plan"),
-        "shipFacilities": {
-            "observationLounge": get_stripped(row, "Observation Lounge").lower() == "true",
-            "mudroom": get_stripped(row, "Mudroom").lower() == "true",
-            "walkingTrackWraparoundDeck": get_stripped(row, "Walking Track/Wraparound Deck").lower() == "true",
-            "openBridgePolicy": get_stripped(row, "Open Bridge Policy").lower() == "true",
-            "igloos": get_stripped(row, "Igloos").lower() == "true",
-            "scienceCentreLaboratory": get_stripped(row, "Science Centre/Laboratory").lower() == "true"
-        },
-        "type": get_stripped(row, "Type") or 'Other'
-    }
+    # ===== Level 0 → Base schema (empty) =====
+    level_0 = {}
 
     # ===== Level 1 → Accommodation =====
     level_1 = {
@@ -85,10 +91,7 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
             "yearBuilt": safe_int(get_stripped(row, "Year Built")),
             "capacity": safe_int(get_stripped(row, "Capacity")),
         },
-        "rooms": [
-            # Note: Ship cabin data would need to be parsed from additional fields
-            # This would require cabin-specific columns in your CSV
-        ],
+        "rooms": [],
         "requirements": {
             "minimumAge": safe_int(get_stripped(row, "Minimum Age")),
         },
@@ -101,8 +104,52 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
         ] if get_stripped(row, "Inspection 1 By") else []
     }
 
-    # ===== Level 0 → Base schema (empty) =====
-    level_0 = {}
+    # --- Map Cabins from rooms_data ---
+    if rooms_data is not None and not rooms_data.empty:
+        vessel_name = get_stripped(row, "Name")
+        matching_rooms = rooms_data[rooms_data["Hotel/Vessel"].str.strip() == vessel_name]
+
+        VALID_BEDS = {"Other","Double","Twin","Bunk Bed","Single","Triple","Quad","Quintuple"}
+        VALID_BATHROOMS = {
+            "En-suite","Shower","Sink","Shared Bathroom","WC",
+            "Wetroom","Toilet","Composting Toilet","Combi Bath/Shower"
+        }
+
+        for _, r in matching_rooms.iterrows():
+            room_obj = {
+                "sizem2": parse_room_size(str(r.get("Size"))) or -1.0,
+                "bedConfigurations": [
+                    b.strip()
+                    for b in str(r.get("Bed Configurations") if pd.notna(r.get("Bed Configurations")) else "").split(",")
+                    if b.strip() in VALID_BEDS
+                ],
+                "bathroomConfigurations": [
+                    b.strip()
+                    for b in str(r.get("Bathroom Type") if pd.notna(r.get("Bathroom Type")) else "").split(",")
+                    if b.strip() in VALID_BATHROOMS
+                ],
+                "energyType": (
+                    ["Renewable"] if str(r.get("Do they use renewable energy?")).strip().lower() == "yes"
+                    else ["Non-renewable"]
+                ),
+                "name": str(r.get("Room/Cabin name") or "Unnamed Cabin"),
+                "type": "Cabin" if "Cabin" in str(r.get("Room/Cabin name")) else "Hotel"
+            }
+            level_1["rooms"].append(room_obj)
+
+    # ===== Level 2 → Ship Accommodation =====
+    level_2 = {
+        "deckPlan": get_stripped(row, "Deck Plan"),
+        "shipFacilities": {
+            "observationLounge": get_stripped(row, "Observation Lounge").lower() == "true",
+            "mudroom": get_stripped(row, "Mudroom").lower() == "true",
+            "walkingTrackWraparoundDeck": get_stripped(row, "Walking Track/Wraparound Deck").lower() == "true",
+            "openBridgePolicy": get_stripped(row, "Open Bridge Policy").lower() == "true",
+            "igloos": get_stripped(row, "Igloos").lower() == "true",
+            "scienceCentreLaboratory": get_stripped(row, "Science Centre/Laboratory").lower() == "true"
+        },
+        "type": get_stripped(row, "Type") or 'Other'
+    }
 
     component_fields = [
         {"templateId": template_ids[2], "data": level_2},
@@ -111,6 +158,17 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
     ]
 
     val = {
+        "orgId":"swoop",
+        "destination":"patagonia",
+        "state": "Draft",
+        "pricing": {"amount":0,"currency":"gbp"},
+        "package": {
+            "title":get_stripped(row, "Name") or "Untitled",
+            "description":"",
+            "startDate":"2000-01-01T00:00:00Z",
+            "endDate":"2000-01-01T00:00:00Z",
+        },
+
         "templateId": template_ids[2],
         "isBookable": False,
         "description": {
@@ -121,9 +179,7 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
         "partners": [p.strip() for p in get_stripped(row, "Partners").split(",") if p.strip()],
         "regions": regions,
         "name": get_stripped(row, "Name") or "Untitled",
-        "pricing": pricing,
         "media": media,
         "componentFields": component_fields,
-        "package": {},
     }
     return val

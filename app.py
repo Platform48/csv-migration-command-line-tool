@@ -136,13 +136,13 @@ COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
     # "Location",
-    "Ground Accom",
+    # "Ground Accom",
     # "Ship Accom",
     # "Journeys",
     # "All Activities - For Upload",
     # "All Transfers - For Upload",
 
-    # "Excursions Package",
+    "Excursions Package",
     # "Private Tours Package",
     # "All Inclusive Hotel Package",
     # "Multi-day Activity Package",
@@ -150,8 +150,9 @@ SHEET_PROCESS_ORDER = [
 ]
 
 AUXILIARY_SHEETS = {
-    "Rooms Cabins": "Ground Accom"  # Rooms data belongs to Ground Accom
+    "Rooms Cabins": ["Ground Accom", "Ship Accom"]
 }
+
 
 def load_component_cache():
     """Load existing component ID mappings from cache file"""
@@ -352,9 +353,10 @@ def run_loop():
                 
                 # Prepare auxiliary data for this sheet
                 rooms_data_for_sheet = None
-                if sheet_name == "Ground Accom" and "Rooms Cabins" in auxiliary_data:
-                    rooms_data_for_sheet = auxiliary_data["Rooms Cabins"]
-                    print(f"🏨 Including {len(auxiliary_data['Rooms Cabins'])} rooms for Ground Accom processing")                
+                if "Rooms Cabins" in auxiliary_data:
+                    if sheet_name in AUXILIARY_SHEETS["Rooms Cabins"]:
+                        rooms_data_for_sheet = auxiliary_data["Rooms Cabins"]
+                        print(f"🏨 Including {len(rooms_data_for_sheet)} rooms for {sheet_name} processing")           
                 
                 try:
                     results, parsed_json = validate_csv(
@@ -461,6 +463,16 @@ def upload_dummy_components():
     ]
 
     flight = {
+        "orgId":"swoop",
+        "destination":"patagonia",
+        "state": "Draft",
+        "pricing": {"amount":0,"currency":"gbp"},
+        "package": {
+            "title":"NA",
+            "description":"",
+            "startDate":"2000-01-01T00:00:00Z",
+            "endDate":"2000-01-01T00:00:00Z",
+        },
         "templateId": DUMMY_TEMPLATE_MAP["flights"][1],
         "isBookable": True,
         "description":{
@@ -471,13 +483,11 @@ def upload_dummy_components():
         "partners": ["NA"],
         "regions": [],
         "name": "Flight",
-        "pricing": {},
         "media": {
             "images": [],
             "videos": []
         },
         "componentFields": flight_component_fields,
-        "package": {},
     }
     cds.pushValidRowToDB([flight], "Flight")
 
@@ -552,6 +562,7 @@ class CoreDataService:
             try:
                 del component['templateId']
                 del component['name']
+                del component['orgId']
 
                 put_res = requests.put(url, json=component, headers=self.headers)
                 if put_res.status_code in [200, 201, 202]:

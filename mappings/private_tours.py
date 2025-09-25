@@ -3,7 +3,7 @@ from utils import get_component_id, get_stripped, safe_float, safe_int, get_loca
 from .location import map_region_name_to_id
 import pandas as pd
                             
-def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1):
+def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None):
     """
     Map activity component with improved ID lookups and missing reference logging
     """
@@ -153,6 +153,11 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
     ]
 
     return {
+        "orgId":"swoop",
+        "destination":"patagonia",
+        "state": "Draft",
+        "pricing": {"amount":0,"currency":"gbp"},
+
         "templateId": template_ids[2],
         "isBookable": True,
         "description": {
@@ -163,13 +168,14 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
         "partners": [p.strip() for p in get_stripped(row, "partner").split(",") if p.strip()],
         "regions": [r for r in regions if r],  # filter out None values
         "name": get_stripped(row, "name") or "Untitled",
-        "pricing": {},
         "media": media,
         "componentFields": component_fields,
         "package": {
             "spans": package_spans,
-            "title": get_stripped(row, "name"),
+            "title": get_stripped(row, "name") or "NA",
             "description": get_stripped(row, "Description - Quote"),
+            "startDate":"2000-01-01T00:00:00Z",
+            "endDate":"2000-01-01T00:00:00Z",
             # "startDate": "2025-08-01T00:00:00Z",
             # "endDate": "2025-08-10T00:00:00Z"
         },

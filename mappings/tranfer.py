@@ -3,7 +3,7 @@ from utils import get_journey_id, get_stripped, safe_float, safe_int, get_locati
 from .location import map_region_name_to_id
 import pandas as pd
 
-def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1):
+def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None):
     """
     Map activity component with improved ID lookups and missing reference logging
     """
@@ -78,6 +78,17 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
     # print(row)
     # print(name)
     return {
+        "orgId":"swoop",
+        "destination":"patagonia",
+        "state": "Draft",
+        "pricing": {"amount":0,"currency":"gbp"},
+        "package": {
+            "title":"NA",
+            "description":"",
+            "startDate":"2000-01-01T00:00:00Z",
+            "endDate":"2000-01-01T00:00:00Z",
+        },
+
         "templateId": template_ids[1],
         "isBookable": True,
         "description": {
@@ -88,8 +99,6 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         "partners": [p.strip() for p in get_stripped(row, "partner").split(",") if p.strip()],
         "regions": [r for r in regions if r],  # filter out None values
         "name": name,
-        "pricing": pricing,
         "media": media,
         "componentFields": component_fields,
-        "package": {},
     }
