@@ -135,7 +135,7 @@ ANT_COMPONENTS_PATH = "ant_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    # "Location",
+    "Location",
     # "Ground Accom",
     # "Ship Accom",
     # "Journeys",
@@ -510,7 +510,7 @@ class CoreDataService:
         }
 
     def _fetch_schema(self, template_id):
-        url = f"{self.service_url}/core-data-service/v1/templates/{template_id}"
+        url = f"{self.service_url}/core-data-service/v1/template/{template_id}"
         try:
             res = requests.get(url, headers=self.headers)
             res.raise_for_status()
@@ -540,10 +540,10 @@ class CoreDataService:
         url = ""
         try:
             if pregenerated_id:
-                url = f"{self.service_url}/core-data-service/v1/components/{pregenerated_id}"
+                url = f"{self.service_url}/core-data-service/v1/component/{pregenerated_id}"
                 res = requests.post(url, json=component, headers=self.headers)
             else:
-                url = f"{self.service_url}/core-data-service/v1/components"
+                url = f"{self.service_url}/core-data-service/v1/component"
                 res = requests.post(url, json=component, headers=self.headers)
         except Exception as e:
             print(f"❌ Request failed for row {idx+1}: {e}")

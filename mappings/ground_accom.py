@@ -114,7 +114,13 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
                 "date":        get_stripped(row, "Date 2"),
                 "notes":       get_stripped(row, "Inspection Notes 2")
             },
-        ]
+        ],
+        "whatWeLike":"",
+        "thingsToNote":"",
+        "recommendations":"",
+        "swooper":"",
+        "swoopSays":"",
+        "importantInformation":""
     }
 
     # --- Map Rooms from rooms_data ---
