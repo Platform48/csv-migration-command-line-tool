@@ -511,6 +511,7 @@ class CoreDataService:
 
     def _fetch_schema(self, template_id):
         url = f"{self.service_url}/core-data-service/v1/template/{template_id}"
+        url = f"{self.service_url}/core-data-service/v1/template/{template_id}"
         try:
             res = requests.get(url, headers=self.headers)
             res.raise_for_status()
@@ -541,8 +542,10 @@ class CoreDataService:
         try:
             if pregenerated_id:
                 url = f"{self.service_url}/core-data-service/v1/component/{pregenerated_id}"
+                url = f"{self.service_url}/core-data-service/v1/component/{pregenerated_id}"
                 res = requests.post(url, json=component, headers=self.headers)
             else:
+                url = f"{self.service_url}/core-data-service/v1/component"
                 url = f"{self.service_url}/core-data-service/v1/component"
                 res = requests.post(url, json=component, headers=self.headers)
         except Exception as e:
