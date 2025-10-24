@@ -13,7 +13,7 @@ class CoreDataService:
     def getSchemaWithArrayLevel(self):
         schemas = []
         for idx, template_id in enumerate(self.template_ids):
-            res = requests.get(f"{self.service_url}/core-data-service/v1/templates/{template_id}")
+            res = requests.get(f"{self.service_url}/core-data-service/v1/template/{template_id}")
             response = res.json()
 
             schema_str = response.get("validationSchemas", {}).get("componentSchema")
@@ -29,7 +29,7 @@ class CoreDataService:
 
     def pushValidRowToDB(self, components):
         for idx, component in enumerate(components):
-            res = requests.post(f"{self.service_url}/core-data-service/v1/components", json=component)
+            res = requests.post(f"{self.service_url}/core-data-service/v1/component", json=component)
             if res.status_code == 201:
                 print(f"✅ Row {idx + 1} has been pushed!")
                 try:

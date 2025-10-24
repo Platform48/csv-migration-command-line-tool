@@ -144,7 +144,7 @@ def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         },
         "partners": [p.strip() for p in get_stripped(row, "partners").split(",") if p.strip()],
         "regions": regions,
-        "name": get_stripped(row, "name") or "Untitled",
+        "name": get_stripped(row, "y") or "Untitled",
         "media": media,
         "componentFields": component_fields,
         "package": None,

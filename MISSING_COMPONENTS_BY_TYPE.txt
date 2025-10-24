@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2025-09-25 12:11:11
+Generated: 2025-10-21 15:29:48
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
@@ -8,81 +8,7 @@ Each entry shows the component name and how many times it was missing.
 
 TYPE: location
 --------------------------------------------------------------------------------
-Missing Component                                        | Occurrences
------------------------------------------------------------------------
-"Punta Arenas Hotel"                                     | 8
-"Refugio Central/EcoCamp/Las Torres"                     | 7
-"Ushuaia Hotel"                                          | 7
-"City Hotel"                                             | 4
-"San Antonio Port"                                       | 4
-"El Calafate Central Hotel"                              | 2
-"El Chaltén Hotel"                                       | 2
-"Tierra Hotel/Estancia Lazo"                             | 2
-"Aguas Calientes and Tuyajto"                            | 1
-"Buenos Aires City Centre Hotel"                         | 1
-"Cactus Valley"                                          | 1
-"Cerro Arcoíris"                                         | 1
-"EOLO"                                                   | 1
-"Errante EcoLodge"                                       | 1
-"Oco's Place"                                            | 1
-"Refugio Cuernos"                                        | 1
-"Rui Hill"                                               | 1
-"Rupestre"                                               | 1
-"San Pedro Salt Mountains"                               | 1
-"Santiago City Central Hotel, via Santiago Restaurant"   | 1
-"Serrano Village/Administration (Y-290)"                 | 1
-
-TYPE: journey
---------------------------------------------------------------------------------
-Missing Component                                                          | Occurrences
------------------------------------------------------------------------------------------
-"Chaitén Airport (WCH) to Puerto Montt Airport (PMC) or reverse"           | 2
-"Puerto Varas to Puerto Varas Aerodrome (for Chaiten flight) or reverse"   | 2
-
-TYPE: activity
---------------------------------------------------------------------------------
-Missing Component                                                             | Occurrences
---------------------------------------------------------------------------------------------
-"Tierra del Fuego National Park with Trekking & Canoes including transfers"   | 3
-"Tierra del Fuego National Park Half Day Tour (Private)"                      | 2
-"4x4 Trip with Canoeing"                                                      | 1
-"Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"             | 1
-
-TYPE: transfer
---------------------------------------------------------------------------------
-Missing Component                                                   | Occurrences
-----------------------------------------------------------------------------------
-"Awasi Atacama to El Tatio Geysers"                                 | 1
-"Beagle Channel Biking"                                             | 1
-"Chaitén Airport (WCH) to Puerto Montt Aerodrome (SCPF)"            | 1
-"Chaitén Airport (WCH) to Puerto Montt Airport (PMC) Birds Chile"   | 1
-"El Chaltén to Lago del Desierto"                                   | 1
-"Flight from Puerto Montt Aerodrome (SCPF) to Chaiten (WCH)"        | 1
-"Puerto Montt Airport (PMC) to Chaitén Airport (WCH) Birds Chile"   | 1
-"Puerto Varas to Puerto Montt Aerodrome (SCPF)"                     | 1
-
-TYPE: excursion (shared)
---------------------------------------------------------------------------------
-Missing Component                                          | Occurrences
--------------------------------------------------------------------------
-"Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"   | 1
-
-TYPE: excursion
---------------------------------------------------------------------------------
-Missing Component                                                                         | Occurrences
---------------------------------------------------------------------------------------------------------
-"Peninsula Valdés Tour Causana Viajes"                                                    | 2
-"100K Cooking Experience Birds Chile"                                                     | 1
-"4x4 Trip with Canoeing Tierra Turismo"                                                   | 1
-"Darwin's Frog Trail Birds Chile"                                                         | 1
-"Darwin's Frog trail Hike"                                                                | 1
-"Desolación Hike Birds Chile"                                                             | 1
-"El Amarillo Glacier viewpoint Hike"                                                      | 1
-"End of the World Train Station and Tierra del Fuego National Park Walk Tierra Turismo"   | 1
-"Full-day El Amarillo Glacier Hike including transfers"                                   | 1
-"Futaleufú River rafting"                                                                 | 1
-"Gastronomy Experience @ El Cazador Birds Chile"                                          | 1
-"Monte Susana Horse Ride Walk Patagonia"                                                  | 1
-"Pumalín Park - Chaitén Volcano Hike including transfers"                                 | 1
-"Reloncaví Fjord full-day Kayak"                                                          | 1
-"Vinciguerra Glacier Hike Tierra Turismo"                                                 | 1
+Missing Component    | Occurrences
+-----------------------------------
+"EOLO"               | 1
+"Errante EcoLodge"   | 1

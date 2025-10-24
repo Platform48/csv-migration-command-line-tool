@@ -158,7 +158,7 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
 
     # ===== Level 2 → Ground Accommodation =====
     level_2 = {
-        "type": get_stripped(row, "Type") or "Standard Hotel",
+        "type": get_stripped(row, "Type") if get_stripped(row, "Type") in ['Luxury Lodge', 'Standard Hotel', 'Premium Hotel', 'Boutique Hotel', 'Premium Boutique Hotel', 'Refugio', 'Camping', 'Lodge', 'Glamping', 'Estancia'] else "Standard Hotel",
     }
 
     component_fields = [
