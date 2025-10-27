@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2025-10-21 15:29:48
+Generated: 2025-10-24 17:17:18
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.

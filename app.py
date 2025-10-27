@@ -1,5 +1,6 @@
 import os
 import json
+import random
 import hashlib
 import requests
 import openpyxl
@@ -135,7 +136,7 @@ ANT_COMPONENTS_PATH = "ant_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-#     "Location",
+    # "Location",
     "Ground Accom",
 #     "Ship Accom",
 #     "Journeys",
@@ -506,7 +507,7 @@ class CoreDataService:
         self.template_ids = template_ids
         self.service_url = 'https://data-api-dev.swoop-adventures.com'
         self.headers = {
-            "Authorization": "Bearer supercoolamazingtoken"
+            "Authorization": "Bearer supercoolamazingtoken",
         }
 
     def _fetch_schema(self, template_id):
@@ -538,6 +539,9 @@ class CoreDataService:
 
     def _upload_component(self, component, template_type, idx, overwrite_on_fail=True):
         pregenerated_id = generate_component_id(component)
+        self.headers["x-datadog-trace-id"] = str(int(random.getrandbits(63)))
+        self.headers["x-datadog-parent-id"] = str(int(random.getrandbits(63)))
+        self.headers["x-datadog-sampling-priority"] = "1"
         url = ""
         try:
             if pregenerated_id:
@@ -557,20 +561,25 @@ class CoreDataService:
 
         # 🔄 Retry with PUT if enabled
         if overwrite_on_fail and pregenerated_id:
-            print(f"🔁 POST failed for row {idx+1}, retrying with PUT ...")
+
+            self.headers["x-datadog-trace-id"] = str(int(random.getrandbits(63)))
+            self.headers["x-datadog-parent-id"] = str(int(random.getrandbits(63)))
+            self.headers["x-datadog-sampling-priority"] = "1"
+
+            print(f"🔁 POST failed for row {idx+1}, retrying with PATCH ...")
             try:
                 del component['templateId']
                 del component['name']
                 del component['orgId']
 
-                put_res = requests.put(url, json=component, headers=self.headers)
+                put_res = requests.patch(url, json=component, headers=self.headers)
                 if put_res.status_code in [200, 201, 202]:
                     return self._process_success_response(put_res, component, template_type, idx)
                 else:
                     try:
                         print(f"❌ PUT also failed for row {idx+1}. Error: {put_res.json()}")
                     except Exception:
-                        print(f"❌ PUT also failed for row {idx+1}. HTTP Status: {put_res.status_code}")
+                        print(f"❌ PUT also failed for row {idx+1}. HTTzP Status: {put_res.status_code}")
             except Exception as e:
                 print(f"❌ PUT request failed for row {idx+1}: {e}")
 

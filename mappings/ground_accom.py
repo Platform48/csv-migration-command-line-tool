@@ -91,9 +91,9 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
             "phoneSignal": get_stripped(row, "Phone Signal") == "TRUE"
         },
         "checkin": {
-            "start": get_stripped(row, "Check in Time"),
-            "end": "",
-            "out": get_stripped(row, "Check Out Time")
+            "start": get_stripped(row, "Check in Time") or "00:00:00",
+            "end": "00:00:00",
+            "out": get_stripped(row, "Check Out Time") or "00:00:00"
         },
         "info": {
             "yearBuilt": safe_int(get_stripped(row, "facts.yearBuilt")),
@@ -105,14 +105,14 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
         },
         "inspections": [
             {
-                "inspectedBy": get_stripped(row, "Inspected by 1"),
-                "date":        get_stripped(row, "Date 1"),
-                "notes":       get_stripped(row, "Inspection Notes 1")
+                "inspectedBy": get_stripped(row, "Inspected by 1") or "",
+                # "date":        get_stripped(row, "Date 1") or "2000-01-01",
+                "notes":       get_stripped(row, "Inspection Notes 1") or ""
             },
             {
                 "inspectedBy": get_stripped(row, "Inspected by 2"),
-                "date":        get_stripped(row, "Date 2"),
-                "notes":       get_stripped(row, "Inspection Notes 2")
+                # "date":        get_stripped(row, "Date 2") or "2000-01-01",
+                "notes":       get_stripped(row, "Inspection Notes 2") or ""
             },
         ],
         "whatWeLike":"",
