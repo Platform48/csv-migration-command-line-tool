@@ -54,6 +54,11 @@ SHEET_TEMPLATE_MAP = {
         "template_7546d5da287241629b5190f95346840e",  # Accom
         "template_bb8caab1d3104257a75b7cb7dd958136",  # Gy
     ],
+    "ANT Ship Accom": [
+        "template_aca16a46ec3842ca85d182ee9348f627",  # Base
+        "template_7546d5da287241629b5190f95346840e",  # Accom
+        "template_bb8caab1d3104257a75b7cb7dd958136",  # Gy
+    ],
     "All Activities - For Upload": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_e2f0e9e5343349358037a0564a3366a0"  # Activity
@@ -86,6 +91,11 @@ SHEET_TEMPLATE_MAP = {
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
         "template_63a57a90570c47b89f830d2c7618324f"
+    ],
+    "ANT Cruise Packages": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
+        "template_63a57a90570c47b89f830d2c7618324f"
     ]
 }
 
@@ -104,6 +114,7 @@ SHEET_ROW_MAPPERS = {
     "Location"                     : map_location_component,
     "Ground Accom"                 : map_ground_accommodation_component,
     "Ship Accom"                   : map_ship_accommodation_component,
+    "ANT Ship Accom"               : map_ship_accommodation_component,
     "Journeys"                     : map_journey_component,
     "All Activities - For Upload"  : map_activity_component,
     "All Transfers - For Upload"   : map_transfer_component,
@@ -112,6 +123,8 @@ SHEET_ROW_MAPPERS = {
     "All Inclusive Hotel Package"  : map_all_inclusive_hotels_component,
     "Multi-day Activity Package"   : map_multi_day_activity_component,
     "PAT Cruise Packages "         : map_cruise_component,
+    "ANT Cruise Packages"         : map_cruise_component,
+
 }
 
 TEMPLATE_TYPES = {
@@ -136,22 +149,24 @@ ANT_COMPONENTS_PATH = "ant_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    "Location",
-    "Ground Accom",
-    "Ship Accom",
-    "Journeys",
-    "All Activities - For Upload",
-    "All Transfers - For Upload",
+    # "Location",
+    # "Ground Accom",
+    # "Ship Accom",
+    # "ANT Ship Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "All Transfers - For Upload",
 
-    "Excursions Package",
-    "Private Tours Package",
-    "All Inclusive Hotel Package",
-    "Multi-day Activity Package",
-    "PAT Cruise Packages ",
+    # "Excursions Package",
+    # "Private Tours Package",
+    # "All Inclusive Hotel Package",
+    # "Multi-day Activity Package",
+    # "PAT Cruise Packages ",
+    "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {
-    "Rooms Cabins": ["Ground Accom", "Ship Accom"]
+    "Rooms Cabins": ["Ground Accom", "Ship Accom", "ANT Ship Accom"]
 }
 
 

@@ -118,18 +118,18 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
         span_index += 1
 
     # --- Add extra span for accommodation (Ground Accom) ---
-    accom_name = get_stripped(row, "Accommodation")
+    accom_name = get_stripped(row, "Ship")
     if accom_name:
         package_span_items = []
         comp_id = get_component_id(
-            component_type="ground_accommodation",
+            component_type="ship_accommodation",
             component_name=accom_name,
             component_id_map=COMPONENT_ID_MAP,
             context={
                 **(context or {}),
-                "field": "Accommodation",
+                "field": "Ship",
                 "row_index": row_index,
-                "additional_info": f"{get_stripped(row, 'name')} - Full Trip Ground Accom"
+                "additional_info": f"{get_stripped(row, 'name')} - Full Trip Ship Accom"
             },
             required=True
         )
@@ -148,7 +148,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
 
         # Add the accommodation span
         package_spans.append({
-            "title": "Ground Accommodation",
+            "title": "Ship Accommodation",
             "description": f"{accom_name} for the entire trip",
             "items": package_span_items,
             "startDay": 1,
@@ -169,6 +169,14 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
     if difficulty_index < 0 or difficulty_index >= len(difficulty_levels):
         difficulty_index = 0
     
+
+    inclusions_raw = re.split(r'[\n\r]*[•\-*•]\s*', get_stripped(row, "Inclusions"))
+    exclusions_raw = re.split(r'[\n\r]*[•\-*•]\s*', get_stripped(row, "Exclusions"))
+
+    # Strip whitespace and drop empty lines
+    inclusions = [i.strip() for i in inclusions_raw if i.strip()]
+    exclusions = [i.strip() for i in exclusions_raw if i.strip()]
+
     level_1 = {
         "private": False,
         "difficulty": difficulty_levels[difficulty_index],
@@ -190,7 +198,9 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             "hasDrinksIncluded": False,
             "hasComplementaryGifts": False,
             "hasNationalParkFee": False
-        }
+        },
+        "inclusions": inclusions,
+        "exclusions": exclusions
     }
 
     component_fields = [
