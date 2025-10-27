@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY SHEET)
-Generated: 2025-10-24 17:17:18
+Generated: 2025-10-27 14:28:44
 
 WHAT TO FIX:
 The following component names in your Excel sheets don't match any uploaded components.
@@ -8,8 +8,137 @@ Please check the spelling or make sure these components exist in the system.
 ====================================================================================================
 
 SHEET: Ground Accom
----------------------------------------------------------------------
-Row      | Row Name           | Missing Component  | Type            
----------------------------------------------------------------------
-112      | EOLO               | "EOLO"             | location        
-113      | Errante EcoLodge   | "Errante EcoLodge" | location        
+---------------------------------------------------------------------------------
+Row      | Row Name                 | Missing Component        | Type            
+---------------------------------------------------------------------------------
+10       | PCQI                     | "PCQI"                   | location        
+110      | Errante EcoLodge         | "Errante EcoLodge"       | location        
+259      | Hotel Rio Serrano        | "Hotel Rio Serrano"      | location        
+389      | Poincenot Comfort Camp   | "Poincenot Comfort Camp" | location        
+
+SHEET: Journeys
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                                                                             | Missing Component                                      | Type            
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3        | Puerto Natales to Refugio Central/EcoCamp/Las Torr                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+5        | Puerto Natales to Serrano Village/Administration d                                                   | "Serrano Village/Administration (Y-290)"               | location        
+6        | Puerto Natales to Pehoé/Serrano Village/Administra                                                   | "Pehoé/Serrano Village/Administration"                 | location        
+7        | Puerto Natales to Tierra Hotel/Estancia Lazo (or r                                                   | "Tierra Hotel/Estancia Lazo"                           | location        
+12       | Puerto Natales Airport (PNT) to Refugio Central/Ec                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+13       | Punta Arenas Airport (PUQ) to Refugio Central/EcoC                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+14       | Australis Cruise Port (PUQ) to Refugio Central/Eco                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+15       | Skorpios Cruise Port (PNT) to Refugio Central/EcoC                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+16       | Navimag Cruise Port (PNT) to Refugio Central/EcoCa                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+23       | Punta Arenas to to Refugio Central/EcoCamp/Las Tor                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+63       | El Chaltén to Los Huemules Reserve/Explora Chaltén                                                   | "Los Huemules Reserve/Explora Chaltén"                 | location        
+164      | Retiro bus station - Recoleta or reverse                                                             | "Retiro bus station"                                   | location        
+170      | Aeroparque Internacional Jorge Newbery (AEP) - Cit                                                   | "City Hotel"                                           | location        
+171      | Ministro Pistarini International Airport, Ezeiza (                                                   | "City Hotel"                                           | location        
+172      | Ushuaia Malvinas Argentinas (USH) - Hotel (City Ce                                                   | "Ushuaia Hotel"                                        | location        
+174      | Hotel (City Center) - Tierra Del Fuego National Pa                                                   | "Ushuaia Hotel"                                        | location        
+175      | Hotel (City Center) - Lake Esmeralda or reverse                                                      | "Ushuaia Hotel"                                        | location        
+177      | Hotel - restaurant round trip (inc wait time)                                                        | "Santiago City Central Hotel, via Santiago Restaurant" | location        
+186      | Arturo Merino Benitez International Airport SCL -                                                    | "Valpariso hotel"                                      | location        
+187      | City Hotel - Valpariso hotel or reverse                                                              | "Valpariso hotel"                                      | location        
+190      | Arturo Merino Benitez International Airport SCL -                                                    | "Valpariso port"                                       | location        
+191      | City Hotel - Valpariso port or reverse                                                               | "Valpariso port"                                       | location        
+213      | Mendoza Bus station to Chacras or Maipu or reverse                                                   | "Mendoza Bus station"                                  | location        
+214      | Mendoza Bus station to Uco Valley or reverse                                                         | "Mendoza Bus station"                                  | location        
+215      | Mendoza Bus station to downtown Mendoza or reverse                                                   | "Mendoza Bus station"                                  | location        
+231      | Punta Arenas Hotel - Puerto Natales, non stop or r                                                   | "Punta Arenas Hotel"                                   | location        
+232      | Punta Arenas Hotel - Puerto Natales via Cerro Negr                                                   | "Punta Arenas Hotel"                                   | location        
+233      | Punta Arenas Hotel - Torres del Paine, non stop or                                                   | "Punta Arenas Hotel"                                   | location        
+234      | Punta Arenas Hotel - Torres del Paine via Cerro Ne                                                   | "Punta Arenas Hotel"                                   | location        
+235      | Punta Arenas Hotel - Punta Arenas downtown/other h                                                   | "Punta Arenas Hotel"                                   | location        
+236      | Punta Arenas Hotel - Skorpios pier or reverse                                                        | "Punta Arenas Hotel"                                   | location        
+237      | Punta Arenas Hotel - Australis pier or reverse                                                       | "Punta Arenas Hotel"                                   | location        
+274      | Hotel Taha Tai - Rano Kau volcano                                                                    | "Rano Kau volcano"                                     | location        
+275      | Rano Kau volcano - Orongo                                                                            | "Rano Kau volcano"                                     | location        
+331      | Retiro bus station - Recoleta or reverse                                                             | "Retiro bus station"                                   | location        
+337      | Aeroparque Internacional Jorge Newbery (AEP) - Cit                                                   | "City Hotel"                                           | location        
+338      | Ministro Pistarini International Airport, Ezeiza (                                                   | "City Hotel"                                           | location        
+339      | Ushuaia Malvinas Argentinas (USH) - Hotel (City Ce                                                   | "Ushuaia Hotel"                                        | location        
+341      | Hotel (City Center) - Tierra Del Fuego National Pa                                                   | "Ushuaia Hotel"                                        | location        
+342      | Hotel (City Center) - Lake Esmeralda or reverse                                                      | "Ushuaia Hotel"                                        | location        
+353      | Arturo Merino Benitez International Airport SCL -                                                    | "Valpariso hotel"                                      | location        
+354      | City Hotel - Valpariso hotel or reverse                                                              | "Valpariso hotel"                                      | location        
+357      | Arturo Merino Benitez International Airport SCL -                                                    | "Valpariso port"                                       | location        
+358      | City Hotel - Valpariso port or reverse                                                               | "Valpariso port"                                       | location        
+372      | Buenos Aires Hotel to Activity or reverse                                                            | "Buenos Aires City Centre Hotel"                       | location        
+375      | El Calafate Hotel to Activity or reverse                                                             | "El Calafate Central Hotel"                            | location        
+394      | El Calafate Hotel to Estancia 25 de Mayo or revers                                                   | "El Calafate Central Hotel"                            | location        
+395      | El Chaltén Hotel to Activity or reverse                                                              | "El Chaltén Hotel"                                     | location        
+396      | El Chaltén to La Leona Petrified Forest or reverse                                                   | "El Chaltén Hotel"                                     | location        
+436      | Oco's Place to Barraco Lodge or reverse                                                              | "Oco's Place"                                          | location        
+439      | Hotel Remota to the Rupestre area or reverse                                                         | "Rupestre"                                             | location        
+441      | EcoCamp to Pudeto dock or reverse                                                                    | "Pudeto dock"                                          | location        
+465      | EcoCamp Patagonia to Pudeto dock or reverse                                                          | "Pudeto dock"                                          | location        
+466      | Patagonia Camp to Pudeto Dock or reverse                                                             | "Pudeto dock"                                          | location        
+485      | Cataratas/Puerto Iguazú Hotel to Activity or rever                                                   | "Cataratas/Puerto Iguazú Hotel"                        | location        
+509      | Ushuaia Hotel to Ushuaia Airport (USH) or reverse                                                    | "Ushuaia Hotel"                                        | location        
+594      | Deseado Lodge to Estancia Josefina or reverse                                                        | "Estancia Josefina"                                    | location        
+
+SHEET: All Activities - For Upload
+-----------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                                             | Missing Component  | Type            
+-----------------------------------------------------------------------------------------------------------------------
+3        | Trek to Lago Pehoé                                                   | "refugio cuernos"  | location        
+3        | Trek to Lago Pehoé                                                   | "refugio cuernos"  | location        
+72       | French Valley Hike from Refugio Cuernos to Paine G                   | "refugio cuernos"  | location        
+106      | Refugio Central to Refugio Cuernos Hike                              | "refugio cuernos"  | location        
+108      | Refugio Paine Grande to Refugio Cuernos via the Fr                   | "refugio cuernos"  | location        
+859      | French Valley: Refugio Paine Grande to Refugio Cue                   | "refugio cuernos"  | location        
+862      | Los Cuernos Trail Hike                                               | "refugio cuernos"  | location        
+
+SHEET: All Transfers - For Upload
+------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                           | Missing Component                                  | Type           
+------------------------------------------------------------------------------------------------------------------------------------
+269      | El Chaltén to Rio Electrico (Laguna de Los Tres)   | "El Chaltén to Rio Electrico (Laguna de Los Tres)" | journey        
+271      | El Chaltén to Rio Electrico (Laguna de Los Tres)   | "El Chaltén to Rio Electrico (Laguna de Los Tres)" | journey        
+272      | El Chaltén to Rio Electrico (Laguna de Los Tres)   | "El Chaltén to Rio Electrico (Laguna de Los Tres)" | journey        
+
+SHEET: Excursions Package
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Row       | Row Name                                        | Missing Component                                                        | Type            
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+158       | Cerro Torre Viewpoint half-day Hike             | "Cerro Torre Viewpoint Hike"                                             | activity        
+159       | Cerro Torre Viewpoint half-day Hike             | "Cerro Torre Viewpoint Hike"                                             | activity        
+160       | Cerro Torre Viewpoint half-day Hike             | "Cerro Torre Viewpoint Hike"                                             | activity        
+231       | Beagle Channel Biking                           | "Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"        | activity        
+231       | Beagle Channel Biking                           | "Beagle Channel Biking"                                                  | transfer        
+334       | Cerro Torre Viewpoint Hike                      | "Cerro Torre Viewpoint Hike"                                             | activity        
+344       | Laguna Torre Hike                               | "Laguna Torre Hike"                                                      | activity        
+362       | Blugrin - Cochrane River and Lake               | "Blugrin - Cochrane River and Lake"                                      | activity        
+367       | Cochrane River                                  | "Cochrane River"                                                         | activity        
+729       | End of the World Train and National Park Walk   | "End of the World Train Station and Tierra del Fuego National Park Walk" | activity        
+730       | End of the World Train and National Park Walk   | "End of the World Train Station and Tierra del Fuego National Park Walk" | activity        
+?         | unknown field                                   | "Awasi Atacama to El Tatio Geysers"                                      | transfer        
+
+SHEET: Multi-day Activity Package
+------------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                                       | Missing Component                           | Type            
+------------------------------------------------------------------------------------------------------------------------------------------
+27       | Chaltén Mountain Escape - Day 2, Component 1                   | "Cerro Torre Viewpoint Hike"                | activity        
+45       | Chaltén Express: Fitz Roy & Cerro Torre - Day 2, C             | "Laguna Torre and Torres Comfort Camp Hike" | activity        
+51       | Ultimate Chaltén Trek - Day 2, Component 1                     | "Laguna Torre and Torres Comfort Camp Hike" | activity        
+
+SHEET: Private Tours Package
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                         | Missing Component                                                   | Type                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+41       | The Best of Los Glaciares - Day 3, Component 2   | "Lago del Desierto kayak and Hike Walk Patagonia"                   | excursion                   
+41       | The Best of Los Glaciares - Day 5, Component 2   | "Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"            | excursion (shared)          
+46       | Fitz Roy Lakeside Retreat - Day 2, Component 2   | "Cerro Torre Viewpoint Half-day Hike Walk Patagonia"                | excursion                   
+46       | Fitz Roy Lakeside Retreat - Day 3, Component 3   | "Aguas Arriba Lodge"                                                | ground_accommodation        
+46       | Fitz Roy Lakeside Retreat - Day 4, Component 2   | "Aguas Arriba Lodge"                                                | ground_accommodation        
+46       | Fitz Roy Lakeside Retreat - Day 5, Component 2   | "Aguas Arriba Lodge"                                                | ground_accommodation        
+60       | Iguazu Falls Express - Day 1, Component 3        | "Iguazú Interactive Six-course Group Dining Experience with Drinks" | actvity                     
+61       | Classic Iguazu Falls - Day 1, Component 3        | "Iguazú Interactive Six-course Group Dining Experience with Drinks" | actvity                     
+62       | Iguazu Falls in Depth - Day 1, Component 2       | "Iguazú Interactive Six-course Group Dining Experience with Drinks" | actvity                     
+
+SHEET: All Inclusive Hotel Package
+------------------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                                                   | Missing Component                    | Type             
+------------------------------------------------------------------------------------------------------------------------------------------------
+3        | Explore Patagonia National Park from a Luxury Lodg                         | "Las Correntadas multisport Explora" | excursion        

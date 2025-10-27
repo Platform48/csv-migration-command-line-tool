@@ -83,9 +83,9 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
             "roomService": get_stripped(row, "Room Service") == "TRUE"
         },
         "checkin": {
-            "start": get_stripped(row, "Check in Time"),
-            "end": "",
-            "out": get_stripped(row, "Check Out Time")
+            "start": get_stripped(row, "Check in Time") or "00:00:00",
+            "end": "00:00:00",
+            "out": get_stripped(row, "Check Out Time") or "00:00:00"
         },
         "info": {
             "yearBuilt": safe_int(get_stripped(row, "Year Built")),

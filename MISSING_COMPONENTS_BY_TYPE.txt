@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2025-10-24 17:17:18
+Generated: 2025-10-27 14:28:44
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
@@ -8,7 +8,83 @@ Each entry shows the component name and how many times it was missing.
 
 TYPE: location
 --------------------------------------------------------------------------------
-Missing Component    | Occurrences
------------------------------------
-"EOLO"               | 1
-"Errante EcoLodge"   | 1
+Missing Component                                        | Occurrences
+-----------------------------------------------------------------------
+"Punta Arenas Hotel"                                     | 7
+"Refugio Central/EcoCamp/Las Torres"                     | 7
+"refugio cuernos"                                        | 7
+"Ushuaia Hotel"                                          | 7
+"City Hotel"                                             | 4
+"Valpariso hotel"                                        | 4
+"Valpariso port"                                         | 4
+"Mendoza Bus station"                                    | 3
+"Pudeto dock"                                            | 3
+"El Calafate Central Hotel"                              | 2
+"El Chaltén Hotel"                                       | 2
+"Rano Kau volcano"                                       | 2
+"Retiro bus station"                                     | 2
+"Buenos Aires City Centre Hotel"                         | 1
+"Cataratas/Puerto Iguazú Hotel"                          | 1
+"Errante EcoLodge"                                       | 1
+"Estancia Josefina"                                      | 1
+"Hotel Rio Serrano"                                      | 1
+"Los Huemules Reserve/Explora Chaltén"                   | 1
+"Oco's Place"                                            | 1
+"PCQI"                                                   | 1
+"Pehoé/Serrano Village/Administration"                   | 1
+"Poincenot Comfort Camp"                                 | 1
+"Rupestre"                                               | 1
+"Santiago City Central Hotel, via Santiago Restaurant"   | 1
+"Serrano Village/Administration (Y-290)"                 | 1
+"Tierra Hotel/Estancia Lazo"                             | 1
+
+TYPE: journey
+--------------------------------------------------------------------------------
+Missing Component                                    | Occurrences
+-------------------------------------------------------------------
+"El Chaltén to Rio Electrico (Laguna de Los Tres)"   | 3
+
+TYPE: transfer
+--------------------------------------------------------------------------------
+Missing Component                     | Occurrences
+----------------------------------------------------
+"Awasi Atacama to El Tatio Geysers"   | 1
+"Beagle Channel Biking"               | 1
+
+TYPE: activity
+--------------------------------------------------------------------------------
+Missing Component                                                          | Occurrences
+-----------------------------------------------------------------------------------------
+"Cerro Torre Viewpoint Hike"                                               | 5
+"End of the World Train Station and Tierra del Fuego National Park Walk"   | 2
+"Laguna Torre and Torres Comfort Camp Hike"                                | 2
+"Blugrin - Cochrane River and Lake"                                        | 1
+"Cochrane River"                                                           | 1
+"Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"          | 1
+"Laguna Torre Hike"                                                        | 1
+
+TYPE: excursion
+--------------------------------------------------------------------------------
+Missing Component                                      | Occurrences
+---------------------------------------------------------------------
+"Cerro Torre Viewpoint Half-day Hike Walk Patagonia"   | 1
+"Lago del Desierto kayak and Hike Walk Patagonia"      | 1
+"Las Correntadas multisport Explora"                   | 1
+
+TYPE: excursion (shared)
+--------------------------------------------------------------------------------
+Missing Component                                          | Occurrences
+-------------------------------------------------------------------------
+"Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"   | 1
+
+TYPE: ground_accommodation
+--------------------------------------------------------------------------------
+Missing Component      | Occurrences
+-------------------------------------
+"Aguas Arriba Lodge"   | 3
+
+TYPE: actvity
+--------------------------------------------------------------------------------
+Missing Component                                                     | Occurrences
+------------------------------------------------------------------------------------
+"Iguazú Interactive Six-course Group Dining Experience with Drinks"   | 3

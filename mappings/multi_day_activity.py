@@ -71,7 +71,7 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
                         **(context or {}),
                         "field": comp_name_col,
                         "row_index": row_index,
-                        "additional_info": f"{get_stripped(row, 'name')} - Day {span_index}, Component {comp_index}"
+                        "additional_info": f"{get_stripped(row, 'Name')} - Day {span_index}, Component {comp_index}"
                     },
                     required=True
                 )
@@ -88,7 +88,7 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
         
         # Add the span (even if it has no valid components)
         package_spans.append({
-            "title": get_stripped(row, title_col),
+            "title": get_stripped(row, title_col) or "Span Title",
             "description": get_stripped(row, desc_col),
             "items": package_span_items,
             "startDay": safe_int(span_day.split('-')[0]),
@@ -153,7 +153,7 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
         "componentFields": component_fields,
         "package": {
             "spans": package_spans,
-            "title": get_stripped(row, "name") or "NA",
+            "title": get_stripped(row, "Name") or "NA",
             "description": get_stripped(row, "Description - Quote"),
         },
     }

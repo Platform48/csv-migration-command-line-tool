@@ -62,8 +62,8 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
             "pickup": get_stripped(row, 'pickupNotes'),
             "schedule": get_stripped(row, 'Schedule Notes for Sales/CX')
         },
-        "departureTime": get_stripped(row, 'Time'),
-        "arrivalTime": ""
+        "departureTime": get_stripped(row, 'Time') or "00:00:00",
+        "arrivalTime": "00:00:00"
     }
 
 

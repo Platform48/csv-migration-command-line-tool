@@ -89,7 +89,7 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
                         **(context or {}),
                         "field": comp_name_col,
                         "row_index": row_index,
-                        "additional_info": f"{get_stripped(row, 'name')} - Day {span_index}, Component {comp_index}"
+                        "additional_info": f"{get_stripped(row, 'Name')} - Day {span_index}, Component {comp_index}"
                     },
                     required=True
                 )
@@ -106,7 +106,7 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
         
         # Add the span (even if it has no valid components)
         package_spans.append({
-            "title": get_stripped(row, title_col),
+            "title": get_stripped(row, title_col) or "Span Title",
             "description": get_stripped(row, desc_col),
             "items": package_span_items,
             "startDay": safe_int(span_day.split('-')[0]),
@@ -128,7 +128,7 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
                 **(context or {}),
                 "field": "Accommodation",
                 "row_index": row_index,
-                "additional_info": f"{get_stripped(row, 'name')} - Full Trip Ground Accom"
+                "additional_info": f"{get_stripped(row, 'Name')} - Full Trip Ground Accom"
             },
             required=True
         )
@@ -187,7 +187,9 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
             "hasDrinksIncluded": False,
             "hasComplementaryGifts": False,
             "hasNationalParkFee": False
-        }
+        },
+        "inclusions": [],
+        "exclusions": [],
     }
 
     component_fields = [
@@ -205,9 +207,9 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
         "templateId": template_ids[2],
         "isBookable": True,
         "description": {
-            "web": get_stripped(row, "Description") or "",
-            "quote": get_stripped(row, "Description") or "",
-            "final": get_stripped(row, "Description") or ""
+            "web": get_stripped(row, "Description") or "NA",
+            "quote": get_stripped(row, "Description") or "NA",
+            "final": get_stripped(row, "Description") or "NA"
         },
         "partners": [p.strip() for p in get_stripped(row, "Partner").split(",") if p.strip()],
         "regions": [r for r in regions if r],  # filter out None values
@@ -216,8 +218,8 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
         "componentFields": component_fields,
         "package": {
             "spans": package_spans,
-            "title": get_stripped(row, "name") or "NA",
-            "description": get_stripped(row, "Description - Quote"),
+            "title": get_stripped(row, "Name") or "NA",
+            "description": get_stripped(row, "Description - Quote") or "NA",
             # "startDate":"2000-01-01T00:00:00Z",
             # "endDate":"2000-01-01T00:00:00Z",
             # "startDate": "2025-08-01T00:00:00Z",
