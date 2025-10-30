@@ -65,14 +65,14 @@ def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
 
     # ===== Level 1 → Activity Details =====
     level_1 = {
-        "journey": f"{start_location_name} to {end_location_name}",
+        # "journey": f"{start_location_name} to {end_location_name}",
         "difficulty": get_stripped(row, "difficulty") or "Other",
         "elevation": {
             "ascentm": safe_int(get_stripped(row, "elevationFieldsifApplicable.totalElevationGainmetres")) or -1,
             "descentm": safe_int(get_stripped(row, "elevationFieldsifApplicable.totalDescentmetres")) or -1
         },
-        # "startLocation": start_location_id or "",
-        # "endLocation": end_location_id or ""
+        "startLocation": start_location_id or "",
+        "endLocation": end_location_id or ""
     }
 
     component_fields = [

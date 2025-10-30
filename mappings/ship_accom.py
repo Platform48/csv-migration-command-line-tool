@@ -98,7 +98,7 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
         "inspections": [
             {
                 "inspectedBy": get_stripped(row, "Inspection 1 By"),
-                "date": get_stripped(row, "Inspection 1 Date"),
+                # "date": get_stripped(row, "Inspection 1 Date") or "01-01-2000",
                 "notes": get_stripped(row, "Inspection 1 Notes")
             }
         ] if get_stripped(row, "Inspection 1 By") else []

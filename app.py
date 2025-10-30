@@ -154,7 +154,7 @@ SHEET_PROCESS_ORDER = [
     # "Ship Accom",
     # "ANT Ship Accom",
     # "Journeys",
-    # "All Activities - For Upload",
+    "All Activities - For Upload",
     # "All Transfers - For Upload",
 
     # "Excursions Package",
@@ -162,7 +162,7 @@ SHEET_PROCESS_ORDER = [
     # "All Inclusive Hotel Package",
     # "Multi-day Activity Package",
     # "PAT Cruise Packages ",
-    "ANT Cruise Packages",
+    # "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {
