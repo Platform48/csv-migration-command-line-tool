@@ -122,8 +122,10 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
             "lowerWeightLimitKg": "",
             "upperWeightLimitKg": -1,
             "lowerHeightLimitM": -1,
-            "upperHeightLimitM": -1
+            "upperHeightLimitM": -1,
+            "other":""
         },
+        "additionalNotes":"",
         "facilities": {
             "isWheelChairAccessible": False,
             "isOkWhenPregnant": False,

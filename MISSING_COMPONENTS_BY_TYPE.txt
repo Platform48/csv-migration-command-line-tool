@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2025-10-29 12:39:37
+Generated: 2025-10-31 16:06:26
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
@@ -8,6 +8,179 @@ Each entry shows the component name and how many times it was missing.
 
 TYPE: location
 --------------------------------------------------------------------------------
-Missing Component    | Occurrences
------------------------------------
-"refugio cuernos"    | 7
+Missing Component                                        | Occurrences
+-----------------------------------------------------------------------
+"Punta Arenas Hotel"                                     | 7
+"Refugio Central/EcoCamp/Las Torres"                     | 7
+"refugio cuernos"                                        | 7
+"Ushuaia Hotel"                                          | 7
+"City Hotel"                                             | 4
+"Valpariso hotel"                                        | 4
+"Valpariso port"                                         | 4
+"Mendoza Bus station"                                    | 3
+"Pudeto dock"                                            | 3
+"El Calafate Central Hotel"                              | 2
+"El Chaltén Hotel"                                       | 2
+"Rano Kau volcano"                                       | 2
+"Retiro bus station"                                     | 2
+"Buenos Aires City Centre Hotel"                         | 1
+"Cataratas/Puerto Iguazú Hotel"                          | 1
+"Errante EcoLodge"                                       | 1
+"Estancia Josefina"                                      | 1
+"Hotel Rio Serrano"                                      | 1
+"Los Huemules Reserve/Explora Chaltén"                   | 1
+"Oco's Place"                                            | 1
+"PCQI"                                                   | 1
+"Pehoé/Serrano Village/Administration"                   | 1
+"Poincenot Comfort Camp"                                 | 1
+"Rupestre"                                               | 1
+"Santiago City Central Hotel, via Santiago Restaurant"   | 1
+"Serrano Village/Administration (Y-290)"                 | 1
+"Tierra Hotel/Estancia Lazo"                             | 1
+
+TYPE: journey
+--------------------------------------------------------------------------------
+Missing Component                                    | Occurrences
+-------------------------------------------------------------------
+"El Chaltén to Rio Electrico (Laguna de Los Tres)"   | 3
+
+TYPE: transfer
+--------------------------------------------------------------------------------
+Missing Component                                                                                                    | Occurrences
+-----------------------------------------------------------------------------------------------------------------------------------
+"Punta Arenas Airport to Hotel"                                                                                      | 28
+"Ushuaia Port to Airport"                                                                                            | 24
+"Ushuaia Airport to Hotel"                                                                                           | 22
+"Punta Arenas Hotel to Airport"                                                                                      | 21
+"Ushuaia hotel to the port"                                                                                          | 18
+"Ushuaia Port to the airport"                                                                                        | 17
+"Ushuaia Airport to the hotel"                                                                                       | 16
+"Ushuaia Port to Airport or Downtown"                                                                                | 15
+"Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"                                                       | 13
+"Charter flight from King George Island to Punta Arenas"                                                             | 11
+"Charter flight from Buenos Aires to Ushuaia"                                                                        | 9
+"Charter flight from Punta Arenas to King George Island"                                                             | 9
+"Charter flight from Santiago to Puerto Williams Airport"                                                            | 9
+"Ushuaia Port to the airport or your downtown hotel"                                                                 | 9
+"Buenos Aires hotel to the airport"                                                                                  | 8
+"Charter flight from Puerto Williams Airport to Santiago Airport"                                                    | 8
+"Hotel to Santiago Airport"                                                                                          | 8
+"Ushuaia Airport to the port"                                                                                        | 8
+"Buenos Aires Airport to the hotel"                                                                                  | 7
+"Puerto Natales Airport to the hotel"                                                                                | 7
+"Puerto Natales hotel to the airport"                                                                                | 7
+"Charter flight from Ushuaia to Buenos Aires Airport (EZE)"                                                          | 6
+"Flight to Buenos Aires' Ezeiza (EZE) Airport from Ushuaia"                                                          | 6
+"Punta Arenas Airport to your hotel"                                                                                 | 6
+"Puerto Williams Port to the airport"                                                                                | 5
+"Santiago hotel to the airport"                                                                                      | 5
+"Ushuaia city centre to the port"                                                                                    | 5
+"Ushuaia Pier to Ship"                                                                                               | 5
+"Ushuaia port to the airport or town"                                                                                | 5
+"Buenos Aires Airport (EZE) to the hotel"                                                                            | 4
+"Buenos Aires Hotel to Airport"                                                                                      | 4
+"Charter flight from King George Island to Puerto Natales"                                                           | 4
+"Charter Flight Punta Arenas to King George Island"                                                                  | 4
+"Flight from Buenos Aires' Aeroparque/AEP Airport to Ushuaia"                                                        | 4
+"Hotel to Punta Arenas Airport"                                                                                      | 4
+"Intercontinental passenger aircraft flight from Antarctica's Union Glacier Camp to Punta Arenas Airport in Chile"   | 4
+"Puerto Williams Airport to the hotel"                                                                               | 4
+"Santiago Airport to the hotel"                                                                                      | 4
+"The Cormorant at 55 South to Puerto Williams Airport"                                                               | 4
+"Ushuaia Port to the airport or city centre"                                                                         | 4
+"Ushuia Port to the airport"                                                                                         | 4
+"Beagle Channel catamaran tour to Ushuaia Port"                                                                      | 3
+"Charter flight from King George Island to Puerto Williams Airport"                                                  | 3
+"Charter flight from Puerto Natales to King George Island"                                                           | 3
+"Charter flight from Puerto Williams to King George Island"                                                          | 3
+"Charter flight from Ushuaia Airport to Buenos Aires"                                                                | 3
+"Charter flight from Ushuaia to Buenos Aires"                                                                        | 3
+"Charter Flight King George Island to Punta Arenas"                                                                  | 3
+"Private transport jet flight from Punta Arenas to Antarctica's Union Glacier Camp"                                  | 3
+"Ushuaia Airport to the Beagle Channel catamaran tour"                                                               | 3
+"Ushuaia airport to the ship"                                                                                        | 3
+"Charter flight from Buenos Aires Airport (EZE) to Ushuaia"                                                          | 2
+"Charter flight from Buenos Aires' Aeroparque/AEP Airport to Ushuaia"                                                | 2
+"Charter flight from Santiago to Ushuaia"                                                                            | 2
+"Charter flight from Ushuaia to Santiago Airport"                                                                    | 2
+"Dunedin Airport to Hotel"                                                                                           | 2
+"Dunedin Hotel to Port"                                                                                              | 2
+"Punta Arenas Port to Airport"                                                                                       | 2
+"Ushuaia Airport to Port"                                                                                            | 2
+"Ushuaia Port to Hotel"                                                                                              | 2
+"Awasi Atacama to El Tatio Geysers"                                                                                  | 1
+"Beagle Channel Biking"                                                                                              | 1
+"Buenos Aires hotel to EZE airport"                                                                                  | 1
+"Charter flight from Buenos Aires to Ushuaia Airport"                                                                | 1
+"Charter flight from King George Island to Punta Arenas Airport"                                                     | 1
+"Charter flight from Punta Arenas Airport to Santiago"                                                               | 1
+"Charter flight from Punta Arenas to Santiago Airport"                                                               | 1
+"Charter flight from Santiago Airport to Ushuaia"                                                                    | 1
+"Charter flight from Santiago to Punta Arenas"                                                                       | 1
+"Charter flight from Santiago to Punta Arenas Airport"                                                               | 1
+"Charter flight from Ushuaia to Santiago"                                                                            | 1
+"Explorers House to Punta Arenas Port"                                                                               | 1
+"Montevideo Airport to your hotel"                                                                                   | 1
+"Montevideo hotel to the port"                                                                                       | 1
+"Port of Bluff to Invergargill or Queenstown airports"                                                               | 1
+"Punta Arenas Airport to the hotel"                                                                                  | 1
+"Punta Arenas hotel to the airport"                                                                                  | 1
+"Punta Arenas port to the airport"                                                                                   | 1
+"Punta Arenas Port to the city centre"                                                                               | 1
+"Queenstown hotel to the Port of Bluff"                                                                              | 1
+"Ski aircraft flight from the emperor penguin rookery to Union Glacier Camp"                                         | 1
+"Ski aircraft flight from the South Pole to Union Glacier Camp"                                                      | 1
+"Ski aircraft flight from Union Glacier Camp to the emperor penguin rookery"                                         | 1
+"Ski aircraft flight from Union Glacier Camp to the South Pole"                                                      | 1
+
+TYPE: activity
+--------------------------------------------------------------------------------
+Missing Component                                                          | Occurrences
+-----------------------------------------------------------------------------------------
+"Cerro Torre Viewpoint Hike"                                               | 5
+"End of the World Train Station and Tierra del Fuego National Park Walk"   | 2
+"Laguna Torre and Torres Comfort Camp Hike"                                | 2
+"Blugrin - Cochrane River and Lake"                                        | 1
+"Cochrane River"                                                           | 1
+"Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"          | 1
+"Laguna Torre Hike"                                                        | 1
+
+TYPE: excursion
+--------------------------------------------------------------------------------
+Missing Component                                      | Occurrences
+---------------------------------------------------------------------
+"Cerro Torre Viewpoint Half-day Hike Walk Patagonia"   | 1
+"Lago del Desierto kayak and Hike Walk Patagonia"      | 1
+"Las Correntadas multisport Explora"                   | 1
+
+TYPE: excursion (shared)
+--------------------------------------------------------------------------------
+Missing Component                                          | Occurrences
+-------------------------------------------------------------------------
+"Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"   | 1
+
+TYPE: ground_accommodation
+--------------------------------------------------------------------------------
+Missing Component        | Occurrences
+---------------------------------------
+"Ushuaia Hotel"          | 37
+"Buenos Aires Hotel"     | 18
+"Punta Arenas Hotel"     | 15
+"Santiago Hotel"         | 14
+"Puerto Natales Hotel"   | 6
+"Aguas Arriba Lodge"     | 3
+"Dunedin Hotel"          | 2
+"Montevideo Hotel"       | 1
+"Queenstown Hotel"       | 1
+
+TYPE: actvity
+--------------------------------------------------------------------------------
+Missing Component                                                     | Occurrences
+------------------------------------------------------------------------------------
+"Iguazú Interactive Six-course Group Dining Experience with Drinks"   | 3
+
+TYPE: ushuaia hotel
+--------------------------------------------------------------------------------
+Missing Component         | Occurrences
+----------------------------------------
+"Ushuaia Hotel to Port"   | 2

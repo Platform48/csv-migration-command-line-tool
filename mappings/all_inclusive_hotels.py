@@ -178,8 +178,10 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
             "lowerWeightLimitKg": "",
             "upperWeightLimitKg": -1,
             "lowerHeightLimitM": -1,
-            "upperHeightLimitM": -1
+            "upperHeightLimitM": -1,
+            "other":""
         },
+        "additionalNotes":"",
         "facilities": {
             "isWheelChairAccessible": False,
             "isOkWhenPregnant": False,

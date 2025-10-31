@@ -101,7 +101,16 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
                 # "date": get_stripped(row, "Inspection 1 Date") or "01-01-2000",
                 "notes": get_stripped(row, "Inspection 1 Notes")
             }
-        ] if get_stripped(row, "Inspection 1 By") else []
+        ] if get_stripped(row, "Inspection 1 By") else [],
+        "breakfastEndTime": "",
+        "boardBasis":{
+            "breakfast": "Breakfast" in get_stripped(row, "Meals Available") or "Breakfast" in get_stripped(row, "Board Basis"),
+            "lunch":     "Lunch"     in get_stripped(row, "Meals Available") or "Lunch"     in get_stripped(row, "Board Basis"),
+            "boxLunch":  "Box Lunch" in get_stripped(row, "Meals Available") or "Box Lunch" in get_stripped(row, "Board Basis"),
+            "dinner":    "Dinner"    in get_stripped(row, "Meals Available") or "Dinner"    in get_stripped(row, "Board Basis"),
+            "snacks":    "Snacks"    in get_stripped(row, "Meals Available") or "Snacks"    in get_stripped(row, "Board Basis"),
+        },
+        "guestToStaffRatio":""
     }
 
     # --- Map Cabins from rooms_data ---

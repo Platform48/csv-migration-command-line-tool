@@ -120,7 +120,15 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
         "recommendations":"",
         "swooper":"",
         "swoopSays":"",
-        "importantInformation":""
+        "importantInformation":"",
+        "breakfastEndTime": get_stripped(row, "Breakfast End Time"),
+        "boardBasis":{
+            "breakfast":False,
+            "lunch":False,
+            "boxLunch":False,
+            "dinner":False,
+            "snacks":False
+        }
     }
 
     # --- Map Rooms from rooms_data ---
