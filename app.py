@@ -149,19 +149,19 @@ COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
     # "Location",
-    "Ground Accom",
-    "Ship Accom",
-    "ANT Ship Accom",
-    "Journeys",
-    "All Activities - For Upload",
-    "All Transfers - For Upload",
+    # "Ground Accom",
+    # "Ship Accom",
+    # "ANT Ship Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "All Transfers - For Upload",
 
-    "Excursions Package",
-    "Private Tours Package",
+    # "Excursions Package",
+    # "Private Tours Package",
     "All Inclusive Hotel Package",
     "Multi-day Activity Package",
-    "PAT Cruise Packages ",
-    "ANT Cruise Packages",
+    # "PAT Cruise Packages ",
+    # "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {

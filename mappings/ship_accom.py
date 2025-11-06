@@ -170,6 +170,7 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
         "orgId":"swoop",
         "destination":"patagonia",
         "state": "Draft",
+        "tripId": "",
         "pricing": {"amount":0,"currency":"gbp"},
         "package": None,
 

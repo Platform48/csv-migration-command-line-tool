@@ -151,6 +151,7 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
         "orgId":"swoop",
         "destination":"patagonia",
         "state": "Draft",
+        "tripId": "",
         "pricing": {"amount":0,"currency":"gbp"},
         
         "templateId": template_ids[2],

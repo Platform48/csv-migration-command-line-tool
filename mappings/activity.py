@@ -84,6 +84,7 @@ def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         "orgId":"swoop",
         "destination":"patagonia",
         "state": "Draft",
+        "tripId": "",
         "pricing": {"amount":0,"currency":"gbp"},
         "package": None,
         "templateId": template_ids[1],

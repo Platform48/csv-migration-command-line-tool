@@ -185,6 +185,7 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
         "orgId":"swoop",
         "destination":"patagonia",
         "state": "Draft",
+        "tripId": "",
         "pricing": {"amount":0,"currency":"gbp"},
         "package": None,
 

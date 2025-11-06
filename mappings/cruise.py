@@ -3,6 +3,7 @@ from utils import get_component_id, get_stripped, safe_float, safe_int, get_loca
 from .location import map_region_name_to_id
 import pandas as pd
 
+import json
 import re
 
 def normalize_day_string(s: str) -> str:
@@ -97,7 +98,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
                 
                 if True or comp_id:  # Only add if we got a valid ID
                     package_span_items.append({
-                        "componentId": comp_id or "",
+                        "componentId": comp_id or "component_00000000000000000000000000000000",
                         "allDay": True,
                         "startTime":"",
                         "endTime":""
@@ -134,7 +135,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             required=True
         )
         package_span_items.append({
-            "componentId": comp_id or "",
+            "componentId": comp_id or "component_00000000000000000000000000000000",
             "allDay": True,
             "startTime":"",
             "endTime":""
@@ -209,10 +210,16 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
         {"templateId": template_ids[0], "data": {}},
     ]
 
-    return {
+
+    tripId = get_stripped(row, "Trip ID") or ""
+    if tripId: 
+        tripId = "ANT-"+tripId
+
+    val = {
         "orgId":"swoop",
         "destination":"patagonia",
         "state": "Draft",
+        "tripId": tripId,
         "pricing": {"amount":0,"currency":"gbp"},
 
 
@@ -236,3 +243,5 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             # "endDate": "2025-08-10T00:00:00Z"
         },
     }
+    # print(json.dumps(val))
+    return val

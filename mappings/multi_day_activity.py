@@ -78,7 +78,7 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
                 
                 if True or comp_id:  # Only add if we got a valid ID
                     package_span_items.append({
-                        "componentId": comp_id or "",
+                        "componentId": comp_id or "component_00000000000000000000000000000000",
                         "allDay": True,
                         "startTime":"",
                         "endTime":""
@@ -139,6 +139,7 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
         "orgId":"swoop",
         "destination":"patagonia",
         "state": "Draft",
+        "tripId": get_stripped(row, "TripID") or "",
         "pricing": {"amount":0,"currency":"gbp"},
 
         "templateId": template_ids[2],
