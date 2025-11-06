@@ -3,7 +3,7 @@ from utils import get_component_id, get_stripped, safe_float, safe_int, get_loca
 from .location import map_region_name_to_id
 import pandas as pd
                             
-def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None):
+def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None, partner_map=None):
     """
     Map activity component with improved ID lookups and missing reference logging
     """
@@ -214,7 +214,13 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
             "quote": get_stripped(row, "Description") or "NA",
             "final": get_stripped(row, "Description") or "NA"
         },
-        "partners": [p.strip() for p in get_stripped(row, "Partner").split(",") if p.strip()],
+        "partners": (
+            [
+                partner_map.get("Patagonia", {}).get(p.strip()) or p.strip()
+                for p in get_stripped(row, "Partner").split(",")
+                if p.strip()
+            ] or ["NA"]
+        ),
         "regions": [r for r in regions if r],  # filter out None values
         "name": get_stripped(row, "Name") or "Untitled",
         "media": media,

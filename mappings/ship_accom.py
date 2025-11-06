@@ -20,7 +20,7 @@ def parse_room_size(val: str):
     return None
 
 
-def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None):
+def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None, partner_map=None):
     """
     Map ship accommodation component, including cabin details from Rooms Cabins sheet
     """
@@ -181,7 +181,13 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
             "quote": get_stripped(row, "Description") or "",
             "final": get_stripped(row, "Description") or ""
         },
-        "partners": [p.strip() for p in get_stripped(row, "Partners").split(",") if p.strip()],
+        "partners": (
+            [
+                partner_map.get("Patagonia", {}).get(p.strip()) or p.strip()
+                for p in get_stripped(row, "Partner").split(",")
+                if p.strip()
+            ] or ["NA"]
+        ),
         "regions": regions,
         "name": get_stripped(row, "Name") or "Untitled",
         "media": media,

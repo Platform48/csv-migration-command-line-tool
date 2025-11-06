@@ -4,7 +4,7 @@ from .location import map_region_name_to_id
 from utils import get_location_id
 import pandas as pd
 
-def map_journey_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None):
+def map_journey_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None, partner_map=None):
     """
     Map journey component with improved ID lookups and missing reference logging
     """
@@ -94,7 +94,13 @@ def map_journey_component(row, template_ids, COMPONENT_ID_MAP, context=None, row
             "quote": get_stripped(row, "Description") or "",
             "final": get_stripped(row, "Description") or ""
         },
-        "partners": [p.strip() for p in get_stripped(row, "Partner").split(",") if p.strip()],
+        "partners": (
+            [
+                partner_map.get("Patagonia", {}).get(p.strip()) or p.strip()
+                for p in get_stripped(row, "Partner").split(",")
+                if p.strip()
+            ] or ["NA"]
+        ),        
         "regions": [r for r in regions if r],  # Filter out None values
         "name": get_stripped(row, "name") or "Untitled",
         "media": media,

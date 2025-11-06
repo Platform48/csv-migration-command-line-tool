@@ -123,7 +123,7 @@ SHEET_ROW_MAPPERS = {
     "All Inclusive Hotel Package"  : map_all_inclusive_hotels_component,
     "Multi-day Activity Package"   : map_multi_day_activity_component,
     "PAT Cruise Packages "         : map_cruise_component,
-    "ANT Cruise Packages"         : map_cruise_component,
+    "ANT Cruise Packages"          : map_cruise_component,
 
 }
 
@@ -148,26 +148,50 @@ PAT_COMPONENTS_PATH = "pat_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    # "Location",
-    # "Ground Accom",
-    # "Ship Accom",
-    # "ANT Ship Accom",
-    # "Journeys",
-    # "All Activities - For Upload",
-    # "All Transfers - For Upload",
+    "Location",
+    "Ground Accom",
+    "Ship Accom",
+    "ANT Ship Accom",
+    "Journeys",
+    "All Activities - For Upload",
+    "All Transfers - For Upload",
 
-    # "Excursions Package",
-    # "Private Tours Package",
+    "Excursions Package",
+    "Private Tours Package",
     "All Inclusive Hotel Package",
     "Multi-day Activity Package",
-    # "PAT Cruise Packages ",
-    # "ANT Cruise Packages",
+    "PAT Cruise Packages ",
+    "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {
     "Rooms Cabins": ["Ground Accom", "Ship Accom", "ANT Ship Accom"]
 }
 
+def get_partners():
+    url="https://data-test.swoop-adventures.com/api/partners?page=1&itemsPerPage=1000"
+    headers = {"Authorization": "bearer 1|eaLBn270PQGlC1onbygdZZ8aptWAd8bU6Ux00RbW52bf7343"}
+    ant_res = requests.get(url+"&region=antarctica", headers=headers)
+    arc_res = requests.get(url+"&region=arctic", headers=headers)
+    pat_res = requests.get(url+"&region=patagonia", headers=headers)
+    ant_data = ant_res.json()
+    arc_data = arc_res.json()
+    pat_data = pat_res.json()
+
+    partner_map = {
+        "ant":{},
+        "arc":{},
+        "Patagonia":{}
+    }
+
+    for partner in ant_data:
+        partner_map["ant"][partner["title"]] = partner["id"]
+    for partner in arc_data:
+        partner_map["arc"][partner["title"]] = partner["id"]
+    for partner in pat_data:
+        partner_map["Patagonia"][partner["title"]] = partner["id"]
+    
+    return partner_map
 
 def load_component_cache():
     """Load existing component ID mappings from cache file"""
@@ -300,6 +324,8 @@ def run_loop():
     load_component_cache()
     clear_missing_references_session()
 
+    partner_map = get_partners()
+
     try:
         while True:
             if not os.path.exists(COMPONENTS_PATH):
@@ -387,7 +413,8 @@ def run_loop():
                                 "row_name": row.get("name", "Untitled")
                             },
                             row_index=row_index,
-                            rooms_data=rooms_data_for_sheet  # Pass auxiliary data to mapper
+                            rooms_data=rooms_data_for_sheet,  # Pass auxiliary data to mapper
+                            partner_map=partner_map
                         )
                     )
                 except Exception as e:

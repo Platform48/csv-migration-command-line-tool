@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY SHEET)
-Generated: 2025-11-05 16:22:23
+Generated: 2025-11-06 15:32:37
 
 WHAT TO FIX:
 The following component names in your Excel sheets don't match any uploaded components.
@@ -7,11 +7,112 @@ Please check the spelling or make sure these components exist in the system.
 
 ====================================================================================================
 
-SHEET: All Inclusive Hotel Package
-------------------------------------------------------------------------------------------------------------------------------------------------
-Row      | Row Name                                                                   | Missing Component                    | Type             
-------------------------------------------------------------------------------------------------------------------------------------------------
-3        | Explore Patagonia National Park from a Luxury Lodg                         | "Las Correntadas multisport Explora" | excursion        
+SHEET: Ground Accom
+---------------------------------------------------------------------------------
+Row      | Row Name                 | Missing Component        | Type            
+---------------------------------------------------------------------------------
+108      | Errante EcoLodge         | "Errante EcoLodge"       | location        
+255      | Hotel Rio Serrano        | "Hotel Rio Serrano"      | location        
+385      | Poincenot Comfort Camp   | "Poincenot Comfort Camp" | location        
+
+SHEET: Journeys
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                                                                             | Missing Component                                      | Type            
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3        | Puerto Natales to Refugio Central/EcoCamp/Las Torr                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+5        | Puerto Natales to Serrano Village/Administration d                                                   | "Serrano Village/Administration (Y-290)"               | location        
+6        | Puerto Natales to Pehoé/Serrano Village/Administra                                                   | "Pehoé/Serrano Village/Administration"                 | location        
+7        | Puerto Natales to Tierra Hotel/Estancia Lazo (or r                                                   | "Tierra Hotel/Estancia Lazo"                           | location        
+12       | Puerto Natales Airport (PNT) to Refugio Central/Ec                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+13       | Punta Arenas Airport (PUQ) to Refugio Central/EcoC                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+14       | Australis Cruise Port (PUQ) to Refugio Central/Eco                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+15       | Skorpios Cruise Port (PNT) to Refugio Central/EcoC                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+16       | Navimag Cruise Port (PNT) to Refugio Central/EcoCa                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+23       | Punta Arenas to to Refugio Central/EcoCamp/Las Tor                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
+63       | El Chaltén to Los Huemules Reserve/Explora Chaltén                                                   | "Los Huemules Reserve/Explora Chaltén"                 | location        
+164      | Retiro bus station - Recoleta or reverse                                                             | "Retiro bus station"                                   | location        
+170      | Aeroparque Internacional Jorge Newbery (AEP) - Cit                                                   | "City Hotel"                                           | location        
+171      | Ministro Pistarini International Airport, Ezeiza (                                                   | "City Hotel"                                           | location        
+172      | Ushuaia Malvinas Argentinas (USH) - Hotel (City Ce                                                   | "Ushuaia Hotel"                                        | location        
+174      | Hotel (City Center) - Tierra Del Fuego National Pa                                                   | "Ushuaia Hotel"                                        | location        
+175      | Hotel (City Center) - Lake Esmeralda or reverse                                                      | "Ushuaia Hotel"                                        | location        
+177      | Hotel - restaurant round trip (inc wait time)                                                        | "Santiago City Central Hotel, via Santiago Restaurant" | location        
+186      | Arturo Merino Benitez International Airport SCL -                                                    | "Valpariso hotel"                                      | location        
+187      | City Hotel - Valpariso hotel or reverse                                                              | "Valpariso hotel"                                      | location        
+190      | Arturo Merino Benitez International Airport SCL -                                                    | "Valpariso port"                                       | location        
+191      | City Hotel - Valpariso port or reverse                                                               | "Valpariso port"                                       | location        
+213      | Mendoza Bus station to Chacras or Maipu or reverse                                                   | "Mendoza Bus station"                                  | location        
+214      | Mendoza Bus station to Uco Valley or reverse                                                         | "Mendoza Bus station"                                  | location        
+215      | Mendoza Bus station to downtown Mendoza or reverse                                                   | "Mendoza Bus station"                                  | location        
+231      | Punta Arenas Hotel - Puerto Natales, non stop or r                                                   | "Punta Arenas Hotel"                                   | location        
+232      | Punta Arenas Hotel - Puerto Natales via Cerro Negr                                                   | "Punta Arenas Hotel"                                   | location        
+233      | Punta Arenas Hotel - Torres del Paine, non stop or                                                   | "Punta Arenas Hotel"                                   | location        
+234      | Punta Arenas Hotel - Torres del Paine via Cerro Ne                                                   | "Punta Arenas Hotel"                                   | location        
+235      | Punta Arenas Hotel - Punta Arenas downtown/other h                                                   | "Punta Arenas Hotel"                                   | location        
+236      | Punta Arenas Hotel - Skorpios pier or reverse                                                        | "Punta Arenas Hotel"                                   | location        
+237      | Punta Arenas Hotel - Australis pier or reverse                                                       | "Punta Arenas Hotel"                                   | location        
+274      | Hotel Taha Tai - Rano Kau volcano                                                                    | "Rano Kau volcano"                                     | location        
+275      | Rano Kau volcano - Orongo                                                                            | "Rano Kau volcano"                                     | location        
+331      | Retiro bus station - Recoleta or reverse                                                             | "Retiro bus station"                                   | location        
+337      | Aeroparque Internacional Jorge Newbery (AEP) - Cit                                                   | "City Hotel"                                           | location        
+338      | Ministro Pistarini International Airport, Ezeiza (                                                   | "City Hotel"                                           | location        
+339      | Ushuaia Malvinas Argentinas (USH) - Hotel (City Ce                                                   | "Ushuaia Hotel"                                        | location        
+341      | Hotel (City Center) - Tierra Del Fuego National Pa                                                   | "Ushuaia Hotel"                                        | location        
+342      | Hotel (City Center) - Lake Esmeralda or reverse                                                      | "Ushuaia Hotel"                                        | location        
+353      | Arturo Merino Benitez International Airport SCL -                                                    | "Valpariso hotel"                                      | location        
+354      | City Hotel - Valpariso hotel or reverse                                                              | "Valpariso hotel"                                      | location        
+357      | Arturo Merino Benitez International Airport SCL -                                                    | "Valpariso port"                                       | location        
+358      | City Hotel - Valpariso port or reverse                                                               | "Valpariso port"                                       | location        
+372      | Buenos Aires Hotel to Activity or reverse                                                            | "Buenos Aires City Centre Hotel"                       | location        
+375      | El Calafate Hotel to Activity or reverse                                                             | "El Calafate Central Hotel"                            | location        
+394      | El Calafate Hotel to Estancia 25 de Mayo or revers                                                   | "El Calafate Central Hotel"                            | location        
+395      | El Chaltén Hotel to Activity or reverse                                                              | "El Chaltén Hotel"                                     | location        
+396      | El Chaltén to La Leona Petrified Forest or reverse                                                   | "El Chaltén Hotel"                                     | location        
+436      | Oco's Place to Barraco Lodge or reverse                                                              | "Oco's Place"                                          | location        
+439      | Hotel Remota to the Rupestre area or reverse                                                         | "Rupestre"                                             | location        
+441      | EcoCamp to Pudeto dock or reverse                                                                    | "Pudeto dock"                                          | location        
+465      | EcoCamp Patagonia to Pudeto dock or reverse                                                          | "Pudeto dock"                                          | location        
+466      | Patagonia Camp to Pudeto Dock or reverse                                                             | "Pudeto dock"                                          | location        
+485      | Cataratas/Puerto Iguazú Hotel to Activity or rever                                                   | "Cataratas/Puerto Iguazú Hotel"                        | location        
+509      | Ushuaia Hotel to Ushuaia Airport (USH) or reverse                                                    | "Ushuaia Hotel"                                        | location        
+594      | Deseado Lodge to Estancia Josefina or reverse                                                        | "Estancia Josefina"                                    | location        
+
+SHEET: All Activities - For Upload
+-----------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                                             | Missing Component  | Type            
+-----------------------------------------------------------------------------------------------------------------------
+3        | Trek to Lago Pehoé                                                   | "refugio cuernos"  | location        
+3        | Trek to Lago Pehoé                                                   | "refugio cuernos"  | location        
+72       | French Valley Hike from Refugio Cuernos to Paine G                   | "refugio cuernos"  | location        
+106      | Refugio Central to Refugio Cuernos Hike                              | "refugio cuernos"  | location        
+108      | Refugio Paine Grande to Refugio Cuernos via the Fr                   | "refugio cuernos"  | location        
+859      | French Valley: Refugio Paine Grande to Refugio Cue                   | "refugio cuernos"  | location        
+862      | Los Cuernos Trail Hike                                               | "refugio cuernos"  | location        
+
+SHEET: All Transfers - For Upload
+------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                           | Missing Component                                  | Type           
+------------------------------------------------------------------------------------------------------------------------------------
+269      | El Chaltén to Rio Electrico (Laguna de Los Tres)   | "El Chaltén to Rio Electrico (Laguna de Los Tres)" | journey        
+271      | El Chaltén to Rio Electrico (Laguna de Los Tres)   | "El Chaltén to Rio Electrico (Laguna de Los Tres)" | journey        
+272      | El Chaltén to Rio Electrico (Laguna de Los Tres)   | "El Chaltén to Rio Electrico (Laguna de Los Tres)" | journey        
+
+SHEET: Excursions Package
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Row       | Row Name                                        | Missing Component                                                        | Type            
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+158       | Cerro Torre Viewpoint half-day Hike             | "Cerro Torre Viewpoint Hike"                                             | activity        
+159       | Cerro Torre Viewpoint half-day Hike             | "Cerro Torre Viewpoint Hike"                                             | activity        
+160       | Cerro Torre Viewpoint half-day Hike             | "Cerro Torre Viewpoint Hike"                                             | activity        
+231       | Beagle Channel Biking                           | "Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"        | activity        
+231       | Beagle Channel Biking                           | "Beagle Channel Biking"                                                  | transfer        
+334       | Cerro Torre Viewpoint Hike                      | "Cerro Torre Viewpoint Hike"                                             | activity        
+344       | Laguna Torre Hike                               | "Laguna Torre Hike"                                                      | activity        
+362       | Blugrin - Cochrane River and Lake               | "Blugrin - Cochrane River and Lake"                                      | activity        
+367       | Cochrane River                                  | "Cochrane River"                                                         | activity        
+729       | End of the World Train and National Park Walk   | "End of the World Train Station and Tierra del Fuego National Park Walk" | activity        
+730       | End of the World Train and National Park Walk   | "End of the World Train Station and Tierra del Fuego National Park Walk" | activity        
+?         | unknown field                                   | "Awasi Atacama to El Tatio Geysers"                                      | transfer        
 
 SHEET: Multi-day Activity Package
 ------------------------------------------------------------------------------------------------------------------------------------------
@@ -20,3 +121,573 @@ Row      | Row Name                                                       | Miss
 27       | Chaltén Mountain Escape - Day 2, Component 1                   | "Cerro Torre Viewpoint Hike"                | activity        
 45       | Chaltén Express: Fitz Roy & Cerro Torre - Day 2, C             | "Laguna Torre and Torres Comfort Camp Hike" | activity        
 51       | Ultimate Chaltén Trek - Day 2, Component 1                     | "Laguna Torre and Torres Comfort Camp Hike" | activity        
+
+SHEET: Private Tours Package
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                         | Missing Component                                                   | Type                      
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+41       | The Best of Los Glaciares - Day 3, Component 2   | "Lago del Desierto kayak and Hike Walk Patagonia"                   | excursion                 
+41       | The Best of Los Glaciares - Day 5, Component 2   | "Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"            | excursion (shared)        
+46       | Fitz Roy Lakeside Retreat - Day 2, Component 2   | "Cerro Torre Viewpoint Half-day Hike Walk Patagonia"                | excursion                 
+60       | Iguazu Falls Express - Day 1, Component 3        | "Iguazú Interactive Six-course Group Dining Experience with Drinks" | actvity                   
+61       | Classic Iguazu Falls - Day 1, Component 3        | "Iguazú Interactive Six-course Group Dining Experience with Drinks" | actvity                   
+62       | Iguazu Falls in Depth - Day 1, Component 2       | "Iguazú Interactive Six-course Group Dining Experience with Drinks" | actvity                   
+
+SHEET: All Inclusive Hotel Package
+------------------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                                                   | Missing Component                    | Type             
+------------------------------------------------------------------------------------------------------------------------------------------------
+3        | Explore Patagonia National Park from a Luxury Lodg                         | "Las Correntadas multisport Explora" | excursion        
+15       | Atacama Ultimate Luxury - Day 2, Component 1                               | "El Tatio Geysers - Full Day Awasi"  | excursion        
+
+SHEET: ANT Cruise Packages
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                 | Missing Component                                                            | Type                        
+-------------------------------------------------------------------------------------------------------------------------------------------------
+3        |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+3        |  - Day 4, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+3        |  - Day 2, Component 1    | "Charter flight from Punta Arenas to King George Island"                     | transfer                    
+3        |  - Day 4, Component 1    | "Charter flight from King George Island to Punta Arenas"                     | transfer                    
+3        |  - Day 5, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+4        |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+4        |  - Day 4, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+4        |  - Day 2, Component 2    | "Charter flight from Punta Arenas to King George Island"                     | transfer                    
+4        |  - Day 4, Component 1    | "Charter flight from King George Island to Punta Arenas"                     | transfer                    
+4        |  - Day 2, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+4        |  - Day 5, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+4        |  - Day 1, Component 2    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+4        |  - Day 2, Component 3    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+5        |  - Day 11, Component 1   | "Ushuaia Port to Airport"                                                    | transfer                    
+6        |  - Day 5, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+7        |  - Day 5, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+8        |  - Day 5, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+9        |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+9        |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+9        |  - Day 2, Component 1    | "Ushuaia Hotel"                                                              | ground_accommodation        
+9        |  - Day 2, Component 2    | "Ushuaia hotel to the port"                                                  | transfer                    
+9        |  - Day 6, Component 1    | "Ushuaia Port to the airport or your downtown hotel"                         | transfer                    
+10       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+10       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+10       |  - Day 2, Component 1    | "Ushuaia Hotel"                                                              | ground_accommodation        
+10       |  - Day 2, Component 2    | "Ushuaia hotel to the port"                                                  | transfer                    
+10       |  - Day 6, Component 1    | "Ushuaia Port to the airport or your downtown hotel"                         | transfer                    
+11       |  - Day 1, Component 1    | "Ushuaia city centre to the port"                                            | transfer                    
+11       |  - Day 6, Component 1    | "Ushuaia port to the airport or town"                                        | transfer                    
+12       |  - Day 1, Component 1    | "Ushuaia city centre to the port"                                            | transfer                    
+12       |  - Day 6, Component 1    | "Ushuaia port to the airport or town"                                        | transfer                    
+13       |  - Day 1, Component 1    | "Ushuaia city centre to the port"                                            | transfer                    
+13       |  - Day 6, Component 1    | "Ushuaia port to the airport or town"                                        | transfer                    
+14       |  - Day 5, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+14       |  - Day 5, Component 1    | "Charter flight from King George Island to Punta Arenas"                     | transfer                    
+14       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+14       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+14       |  - Day 2, Component 1    | "Ushuaia Hotel to Port"                                                      | ushuaia hotel               
+15       |  - Day 5, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+15       |  - Day 5, Component 1    | "Charter flight from King George Island to Punta Arenas"                     | transfer                    
+15       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+15       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+15       |  - Day 2, Component 1    | "Ushuaia Hotel to Port"                                                      | ushuaia hotel               
+16       |  - Day 1, Component 1    | "Santiago Hotel"                                                             | ground_accommodation        
+16       |  - Day 2, Component 1    | "Charter flight from Santiago to Puerto Williams Airport"                    | transfer                    
+16       |  - Day 2, Component 2    | "Puerto Williams Airport to the hotel"                                       | transfer                    
+16       |  - Day 7, Component 2    | "Puerto Williams Airport to the hotel"                                       | transfer                    
+16       |  - Day 3, Component 1    | "Charter flight from Puerto Williams to King George Island"                  | transfer                    
+16       |  - Day 7, Component 1    | "Charter flight from King George Island to Puerto Williams Airport"          | transfer                    
+16       |  - Day 8, Component 1    | "Charter flight from Puerto Williams Airport to Santiago Airport"            | transfer                    
+17       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+17       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+17       |  - Day 2, Component 1    | "Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"               | transfer                    
+17       |  - Day 12, Component 1   | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+18       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+18       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+18       |  - Day 2, Component 1    | "Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"               | transfer                    
+18       |  - Day 12, Component 1   | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+19       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+19       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+19       |  - Day 2, Component 1    | "Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"               | transfer                    
+19       |  - Day 12, Component 1   | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+20       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+20       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+20       |  - Day 2, Component 1    | "Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"               | transfer                    
+20       |  - Day 12, Component 1   | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+21       |  - Day 5, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+22       |  - Day 5, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+23       |  - Day 1, Component 1    | "Santiago Hotel"                                                             | ground_accommodation        
+23       |  - Day 2, Component 2    | "Charter flight from Santiago to Puerto Williams Airport"                    | transfer                    
+23       |  - Day 7, Component 2    | "Puerto Williams Airport to the hotel"                                       | transfer                    
+23       |  - Day 3, Component 2    | "Charter flight from Puerto Williams to King George Island"                  | transfer                    
+23       |  - Day 7, Component 1    | "Charter flight from King George Island to Puerto Williams Airport"          | transfer                    
+23       |  - Day 8, Component 2    | "Charter flight from Puerto Williams Airport to Santiago Airport"            | transfer                    
+23       |  - Day 2, Component 1    | "Hotel to Santiago Airport"                                                  | transfer                    
+23       |  - Day 3, Component 1    | "The Cormorant at 55 South to Puerto Williams Airport"                       | transfer                    
+23       |  - Day 8, Component 1    | "The Cormorant at 55 South to Puerto Williams Airport"                       | transfer                    
+24       |  - Day 1, Component 1    | "Buenos Aires Airport to the hotel"                                          | transfer                    
+24       |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+24       |  - Day 1, Component 3    | "Ushuaia airport to the ship"                                                | transfer                    
+24       |  - Day 2, Component 1    | "Buenos Aires hotel to the airport"                                          | transfer                    
+24       |  - Day 2, Component 2    | "Charter flight from Buenos Aires to Ushuaia"                                | transfer                    
+24       |  - Day 6, Component 1    | "Ushuaia Port to the airport"                                                | transfer                    
+24       |  - Day 6, Component 2    | "Charter flight from Ushuaia to Buenos Aires"                                | transfer                    
+25       |  - Day 1, Component 1    | "Buenos Aires Airport to the hotel"                                          | transfer                    
+25       |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+25       |  - Day 1, Component 3    | "Ushuaia airport to the ship"                                                | transfer                    
+25       |  - Day 2, Component 1    | "Buenos Aires hotel to the airport"                                          | transfer                    
+25       |  - Day 2, Component 2    | "Charter flight from Buenos Aires to Ushuaia"                                | transfer                    
+25       |  - Day 6, Component 1    | "Ushuaia Port to the airport"                                                | transfer                    
+25       |  - Day 6, Component 2    | "Charter flight from Ushuaia to Buenos Aires"                                | transfer                    
+26       |  - Day 8, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+26       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+26       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+26       |  - Day 2, Component 1    | "Ushuaia Pier to Ship"                                                       | transfer                    
+27       |  - Day 12, Component 1   | "Ushuaia Port to Airport"                                                    | transfer                    
+27       |  - Day 1, Component 1    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+27       |  - Day 2, Component 1    | "Charter flight from Buenos Aires' Aeroparque/AEP Airport to Ushuaia"        | transfer                    
+27       |  - Day 2, Component 2    | "Ushuaia Airport to Port"                                                    | transfer                    
+27       |  - Day 12, Component 2   | "Flight to Buenos Aires' Ezeiza (EZE) Airport from Ushuaia"                  | transfer                    
+28       |  - Day 6, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+28       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+28       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+28       |  - Day 2, Component 1    | "Ushuaia Pier to Ship"                                                       | transfer                    
+29       |  - Day 8, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+29       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+29       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+29       |  - Day 2, Component 1    | "Ushuaia Pier to Ship"                                                       | transfer                    
+30       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+30       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+30       |  - Day 2, Component 1    | "Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"               | transfer                    
+30       |  - Day 10, Component 1   | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+31       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+31       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+31       |  - Day 2, Component 1    | "Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"               | transfer                    
+31       |  - Day 7, Component 1    | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+32       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+32       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+32       |  - Day 2, Component 1    | "Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"               | transfer                    
+32       |  - Day 7, Component 1    | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+33       |  - Day 12, Component 1   | "Ushuaia Port to Airport"                                                    | transfer                    
+35       |  - Day 5, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+36       |  - Day 5, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+37       |  - Day 5, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+38       |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+38       |  - Day 4, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+38       |  - Day 2, Component 2    | "Charter flight from Punta Arenas to King George Island"                     | transfer                    
+38       |  - Day 4, Component 1    | "Charter flight from King George Island to Punta Arenas"                     | transfer                    
+38       |  - Day 2, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+38       |  - Day 1, Component 2    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+38       |  - Day 2, Component 3    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+39       |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+39       |  - Day 6, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+39       |  - Day 2, Component 2    | "Charter flight from Punta Arenas to King George Island"                     | transfer                    
+39       |  - Day 6, Component 1    | "Charter flight from King George Island to Punta Arenas"                     | transfer                    
+39       |  - Day 2, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+39       |  - Day 1, Component 2    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+40       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+40       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+40       |  - Day 2, Component 1    | "Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"               | transfer                    
+40       |  - Day 7, Component 1    | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+41       |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+41       |  - Day 2, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+41       |  - Day 1, Component 2    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+41       |  - Day 5, Component 1    | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+41       |  - Day 2, Component 2    | "Charter Flight Punta Arenas to King George Island"                          | transfer                    
+42       |  - Day 14, Component 1   | "Ushuaia Port to Airport"                                                    | transfer                    
+43       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+43       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+43       |  - Day 2, Component 1    | "Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"               | transfer                    
+43       |  - Day 10, Component 1   | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+44       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+44       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+44       |  - Day 2, Component 1    | "Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"               | transfer                    
+44       |  - Day 10, Component 1   | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+45       |  - Day 7, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+46       |  - Day 6, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+46       |  - Day 1, Component 1    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+46       |  - Day 2, Component 2    | "Ushuaia Airport to Port"                                                    | transfer                    
+46       |  - Day 6, Component 2    | "Flight to Buenos Aires' Ezeiza (EZE) Airport from Ushuaia"                  | transfer                    
+46       |  - Day 2, Component 1    | "Flight from Buenos Aires' Aeroparque/AEP Airport to Ushuaia"                | transfer                    
+47       |  - Day 7, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+47       |  - Day 1, Component 1    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+47       |  - Day 2, Component 2    | "Charter flight from Buenos Aires' Aeroparque/AEP Airport to Ushuaia"        | transfer                    
+47       |  - Day 7, Component 2    | "Flight to Buenos Aires' Ezeiza (EZE) Airport from Ushuaia"                  | transfer                    
+47       |  - Day 2, Component 1    | "Buenos Aires Hotel to Airport"                                              | transfer                    
+48       |  - Day 8, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+48       |  - Day 1, Component 1    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+48       |  - Day 8, Component 2    | "Flight to Buenos Aires' Ezeiza (EZE) Airport from Ushuaia"                  | transfer                    
+48       |  - Day 2, Component 2    | "Flight from Buenos Aires' Aeroparque/AEP Airport to Ushuaia"                | transfer                    
+48       |  - Day 2, Component 1    | "Buenos Aires Hotel to Airport"                                              | transfer                    
+49       |  - Day 6, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+49       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+49       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+49       |  - Day 2, Component 1    | "Ushuaia Pier to Ship"                                                       | transfer                    
+50       |  - Day 5, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+50       |  - Day 6, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+50       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+50       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+50       |  - Day 2, Component 1    | "Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"               | transfer                    
+50       |  - Day 5, Component 1    | "Charter Flight King George Island to Punta Arenas"                          | transfer                    
+51       |  - Day 1, Component 1    | "Dunedin Airport to Hotel"                                                   | transfer                    
+51       |  - Day 1, Component 2    | "Dunedin Hotel"                                                              | ground_accommodation        
+51       |  - Day 2, Component 1    | "Dunedin Hotel to Port"                                                      | transfer                    
+52       |  - Day 1, Component 1    | "Dunedin Airport to Hotel"                                                   | transfer                    
+52       |  - Day 1, Component 2    | "Dunedin Hotel"                                                              | ground_accommodation        
+52       |  - Day 2, Component 1    | "Dunedin Hotel to Port"                                                      | transfer                    
+53       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+53       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+53       |  - Day 2, Component 1    | "Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"               | transfer                    
+53       |  - Day 7, Component 1    | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+54       |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+54       |  - Day 2, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+54       |  - Day 1, Component 2    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+54       |  - Day 5, Component 1    | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+55       |  - Day 11, Component 1   | "Ushuaia Port to Airport"                                                    | transfer                    
+56       |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+56       |  - Day 4, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+56       |  - Day 2, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+56       |  - Day 1, Component 2    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+56       |  - Day 2, Component 3    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+56       |  - Day 2, Component 2    | "Charter Flight Punta Arenas to King George Island"                          | transfer                    
+56       |  - Day 4, Component 1    | "Charter Flight King George Island to Punta Arenas"                          | transfer                    
+56       |  - Day 5, Component 1    | "Punta Arenas Port to Airport"                                               | transfer                    
+57       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+57       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+57       |  - Day 2, Component 1    | "Lake Escondido tour to Ushuaia Port or Ushuaia hotel to port"               | transfer                    
+57       |  - Day 6, Component 1    | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+58       |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+58       |  - Day 4, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+58       |  - Day 2, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+58       |  - Day 1, Component 2    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+58       |  - Day 2, Component 3    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+58       |  - Day 2, Component 2    | "Charter Flight Punta Arenas to King George Island"                          | transfer                    
+58       |  - Day 4, Component 1    | "Charter Flight King George Island to Punta Arenas"                          | transfer                    
+58       |  - Day 5, Component 1    | "Punta Arenas Port to Airport"                                               | transfer                    
+59       |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+59       |  - Day 2, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+59       |  - Day 1, Component 2    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+59       |  - Day 5, Component 1    | "Ushuaia Port to Airport or Downtown"                                        | transfer                    
+59       |  - Day 2, Component 2    | "Charter Flight Punta Arenas to King George Island"                          | transfer                    
+61       |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+61       |  - Day 4, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+61       |  - Day 2, Component 2    | "Charter flight from Punta Arenas to King George Island"                     | transfer                    
+61       |  - Day 4, Component 1    | "Charter flight from King George Island to Punta Arenas"                     | transfer                    
+61       |  - Day 2, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+61       |  - Day 5, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+62       |  - Day 5, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+62       |  - Day 5, Component 1    | "Charter flight from King George Island to Punta Arenas"                     | transfer                    
+62       |  - Day 6, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+63       |  - Day 5, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+63       |  - Day 5, Component 1    | "Charter flight from King George Island to Punta Arenas"                     | transfer                    
+63       |  - Day 6, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+64       |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+64       |  - Day 4, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+64       |  - Day 2, Component 2    | "Charter flight from Punta Arenas to King George Island"                     | transfer                    
+64       |  - Day 4, Component 1    | "Charter flight from King George Island to Punta Arenas"                     | transfer                    
+64       |  - Day 2, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+64       |  - Day 5, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+65       |  - Day 8, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+65       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
+65       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+65       |  - Day 2, Component 1    | "Ushuaia Pier to Ship"                                                       | transfer                    
+66       |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+66       |  - Day 2, Component 2    | "Charter flight from Punta Arenas to King George Island"                     | transfer                    
+66       |  - Day 2, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+66       |  - Day 1, Component 2    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+66       |  - Day 5, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+66       |  - Day 5, Component 1    | "Ushuaia Port to Hotel"                                                      | transfer                    
+67       |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+67       |  - Day 2, Component 2    | "Charter flight from Punta Arenas to King George Island"                     | transfer                    
+67       |  - Day 2, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+67       |  - Day 1, Component 2    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+67       |  - Day 5, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+67       |  - Day 5, Component 1    | "Ushuaia Port to Hotel"                                                      | transfer                    
+68       |  - Day 6, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+68       |  - Day 1, Component 1    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+68       |  - Day 6, Component 2    | "Flight to Buenos Aires' Ezeiza (EZE) Airport from Ushuaia"                  | transfer                    
+68       |  - Day 2, Component 2    | "Flight from Buenos Aires' Aeroparque/AEP Airport to Ushuaia"                | transfer                    
+68       |  - Day 2, Component 1    | "Buenos Aires Hotel to Airport"                                              | transfer                    
+69       |  - Day 6, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
+69       |  - Day 1, Component 1    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+69       |  - Day 6, Component 2    | "Flight to Buenos Aires' Ezeiza (EZE) Airport from Ushuaia"                  | transfer                    
+69       |  - Day 2, Component 2    | "Flight from Buenos Aires' Aeroparque/AEP Airport to Ushuaia"                | transfer                    
+69       |  - Day 2, Component 1    | "Buenos Aires Hotel to Airport"                                              | transfer                    
+70       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+70       |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+70       |  - Day 6, Component 1    | "Ushuaia Port to the airport"                                                | transfer                    
+70       |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+71       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+71       |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+71       |  - Day 8, Component 1    | "Ushuaia Port to the airport"                                                | transfer                    
+71       |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+72       |  - Day 10, Component 1   | "Ushuaia Port to the airport"                                                | transfer                    
+72       |  - Day 1, Component 1    | "Montevideo Airport to your hotel"                                           | transfer                    
+72       |  - Day 1, Component 2    | "Montevideo Hotel"                                                           | ground_accommodation        
+72       |  - Day 2, Component 1    | "Montevideo hotel to the port"                                               | transfer                    
+73       |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+73       |  - Day 6, Component 1    | "Ushuaia Port to the airport"                                                | transfer                    
+73       |  - Day 1, Component 1    | "Buenos Aires Airport (EZE) to the hotel"                                    | transfer                    
+73       |  - Day 1, Component 3    | "Ushuaia Airport to the Beagle Channel catamaran tour"                       | transfer                    
+73       |  - Day 1, Component 4    | "Beagle Channel catamaran tour to Ushuaia Port"                              | transfer                    
+73       |  - Day 2, Component 1    | "Buenos Aires hotel to EZE airport"                                          | transfer                    
+73       |  - Day 2, Component 2    | "Charter flight from Buenos Aires Airport (EZE) to Ushuaia"                  | transfer                    
+73       |  - Day 6, Component 2    | "Charter flight from Ushuaia to Buenos Aires Airport (EZE)"                  | transfer                    
+74       |  - Day 1, Component 2    | "Santiago Hotel"                                                             | ground_accommodation        
+74       |  - Day 6, Component 1    | "Ushuaia Port to the airport"                                                | transfer                    
+74       |  - Day 1, Component 3    | "Ushuaia Airport to the Beagle Channel catamaran tour"                       | transfer                    
+74       |  - Day 1, Component 4    | "Beagle Channel catamaran tour to Ushuaia Port"                              | transfer                    
+74       |  - Day 1, Component 1    | "Santiago Airport to the hotel"                                              | transfer                    
+74       |  - Day 2, Component 1    | "Santiago hotel to the airport"                                              | transfer                    
+74       |  - Day 2, Component 2    | "Charter flight from Santiago Airport to Ushuaia"                            | transfer                    
+74       |  - Day 6, Component 2    | "Charter flight from Ushuaia to Santiago Airport"                            | transfer                    
+75       |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+75       |  - Day 10, Component 1   | "Ushuaia Port to the airport"                                                | transfer                    
+75       |  - Day 1, Component 1    | "Buenos Aires Airport (EZE) to the hotel"                                    | transfer                    
+75       |  - Day 1, Component 3    | "Ushuaia Airport to the Beagle Channel catamaran tour"                       | transfer                    
+75       |  - Day 1, Component 4    | "Beagle Channel catamaran tour to Ushuaia Port"                              | transfer                    
+75       |  - Day 2, Component 1    | "Buenos Aires hotel to EZE airport"                                          | transfer                    
+75       |  - Day 2, Component 2    | "Charter flight from Buenos Aires Airport (EZE) to Ushuaia"                  | transfer                    
+75       |  - Day 10, Component 2   | "Charter flight from Ushuaia to Buenos Aires Airport (EZE)"                  | transfer                    
+77       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+77       |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+77       |  - Day 6, Component 1    | "Ushuaia Port to the airport"                                                | transfer                    
+77       |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+78       |  - Day 1, Component 1    | "Punta Arenas Airport to your hotel"                                         | transfer                    
+78       |  - Day 9, Component 2    | "Punta Arenas Airport to your hotel"                                         | transfer                    
+78       |  - Day 2, Component 1    | "Hotel to Punta Arenas Airport"                                              | transfer                    
+78       |  - Day 2, Component 2    | "Flight from Punta Arenas to Antarctica's Union Glacier Camp"                | transfer                    
+78       |  - Day 9, Component 1    | "Flight from Antarctica's Union Glacier Camp to Punta Arenas Airport"        | transfer                    
+79       |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+79       |  - Day 8, Component 1    | "Ushuaia Port to the airport"                                                | transfer                    
+79       |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+80       |  - Day 1, Component 1    | "Queenstown Hotel"                                                           | ground_accommodation        
+80       |  - Day 2, Component 1    | "Queenstown hotel to the Port of Bluff"                                      | transfer                    
+80       |  - Day 12, Component 1   | "Port of Bluff to Invergargill or Queenstown airports"                       | transfer                    
+81       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+81       |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+81       |  - Day 11, Component 1   | "Ushuaia Port to the airport or your downtown hotel"                         | transfer                    
+81       |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+82       |  - Day 1, Component 1    | "Santiago Hotel"                                                             | ground_accommodation        
+82       |  - Day 2, Component 2    | "Charter flight from Santiago to Puerto Williams Airport"                    | transfer                    
+82       |  - Day 15, Component 2   | "Charter flight from Puerto Williams Airport to Santiago Airport"            | transfer                    
+82       |  - Day 2, Component 1    | "Hotel to Santiago Airport"                                                  | transfer                    
+82       |  - Day 15, Component 1   | "Puerto Williams Port to the airport"                                        | transfer                    
+83       |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+83       |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+83       |  - Day 6, Component 1    | "Ushuaia Port to the airport or city centre"                                 | transfer                    
+84       |  - Day 1, Component 1    | "Santiago Hotel"                                                             | ground_accommodation        
+84       |  - Day 2, Component 2    | "Charter flight from Santiago to Puerto Williams Airport"                    | transfer                    
+84       |  - Day 9, Component 2    | "Charter flight from Puerto Williams Airport to Santiago Airport"            | transfer                    
+84       |  - Day 2, Component 1    | "Hotel to Santiago Airport"                                                  | transfer                    
+84       |  - Day 9, Component 1    | "Puerto Williams Port to the airport"                                        | transfer                    
+85       |  - Day 1, Component 1    | "Santiago Hotel"                                                             | ground_accommodation        
+85       |  - Day 2, Component 2    | "Charter flight from Santiago to Puerto Williams Airport"                    | transfer                    
+85       |  - Day 9, Component 2    | "Charter flight from Puerto Williams Airport to Santiago Airport"            | transfer                    
+85       |  - Day 2, Component 1    | "Hotel to Santiago Airport"                                                  | transfer                    
+85       |  - Day 9, Component 1    | "Puerto Williams Port to the airport"                                        | transfer                    
+86       |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+86       |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+86       |  - Day 10, Component 1   | "Ushuaia Port to the airport or city centre"                                 | transfer                    
+87       |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+87       |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+87       |  - Day 10, Component 1   | "Ushuaia Port to the airport or city centre"                                 | transfer                    
+88       |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+88       |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+88       |  - Day 6, Component 1    | "Ushuaia Port to the airport or city centre"                                 | transfer                    
+89       |  - Day 1, Component 1    | "Punta Arenas Airport to your hotel"                                         | transfer                    
+89       |  - Day 5, Component 2    | "Punta Arenas Airport to your hotel"                                         | transfer                    
+89       |  - Day 2, Component 1    | "Hotel to Punta Arenas Airport"                                              | transfer                    
+89       |  - Day 2, Component 2    | "Flight from Punta Arenas to Antarctica's Union Glacier Camp"                | transfer                    
+89       |  - Day 5, Component 1    | "Flight from Antarctica's Union Glacier Camp to Punta Arenas Airport"        | transfer                    
+89       |  - Day 4, Component 1    | "Ski aircraft flight from Union Glacier Camp to the South Pole"              | transfer                    
+89       |  - Day 4, Component 2    | "Ski aircraft flight from the South Pole to Union Glacier Camp"              | transfer                    
+91       |  - Day 8, Component 2    | "Punta Arenas Airport to your hotel"                                         | transfer                    
+91       |  - Day 2, Component 1    | "Hotel to Punta Arenas Airport"                                              | transfer                    
+91       |  - Day 2, Component 2    | "Flight from Punta Arenas to Antarctica's Union Glacier Camp"                | transfer                    
+91       |  - Day 8, Component 1    | "Flight from Antarctica's Union Glacier Camp to Punta Arenas Airport"        | transfer                    
+91       |  - Day 4, Component 1    | "Ski aircraft flight from Union Glacier Camp to the emperor penguin rookery" | transfer                    
+91       |  - Day 6, Component 1    | "Ski aircraft flight from the emperor penguin rookery to Union Glacier Camp" | transfer                    
+92       |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+92       |  - Day 2, Component 1    | "Charter flight from Buenos Aires to Ushuaia"                                | transfer                    
+92       |  - Day 6, Component 1    | "Ushuaia Port to the airport"                                                | transfer                    
+92       |  - Day 1, Component 1    | "Buenos Aires Airport (EZE) to the hotel"                                    | transfer                    
+92       |  - Day 2, Component 2    | "Ushuaia Airport to the port"                                                | transfer                    
+92       |  - Day 6, Component 2    | "Charter flight from Ushuaia Airport to Buenos Aires"                        | transfer                    
+93       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+93       |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+93       |  - Day 8, Component 1    | "Ushuaia Port to the airport or your downtown hotel"                         | transfer                    
+93       |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+94       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+94       |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+94       |  - Day 8, Component 1    | "Ushuaia Port to the airport or your downtown hotel"                         | transfer                    
+94       |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+95       |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+95       |  - Day 2, Component 1    | "Charter flight from Buenos Aires to Ushuaia"                                | transfer                    
+95       |  - Day 7, Component 1    | "Ushuaia Port to the airport"                                                | transfer                    
+95       |  - Day 1, Component 1    | "Buenos Aires Airport (EZE) to the hotel"                                    | transfer                    
+95       |  - Day 2, Component 2    | "Ushuaia Airport to the port"                                                | transfer                    
+95       |  - Day 7, Component 2    | "Charter flight from Ushuaia Airport to Buenos Aires"                        | transfer                    
+96       |  - Day 5, Component 2    | "Punta Arenas Airport to your hotel"                                         | transfer                    
+96       |  - Day 2, Component 1    | "Hotel to Punta Arenas Airport"                                              | transfer                    
+96       |  - Day 6, Component 1    | "Hotel to Punta Arenas Airport"                                              | transfer                    
+96       |  - Day 2, Component 2    | "Flight from Punta Arenas to Antarctica's Union Glacier Camp"                | transfer                    
+96       |  - Day 5, Component 1    | "Flight from Antarctica's Union Glacier Camp to Punta Arenas Airport"        | transfer                    
+97       |  - Day 1, Component 1    | "Ushuaia city centre to the port"                                            | transfer                    
+97       |  - Day 5, Component 1    | "Ushuaia port to the airport or town"                                        | transfer                    
+98       |  - Day 1, Component 1    | "Ushuaia city centre to the port"                                            | transfer                    
+98       |  - Day 7, Component 1    | "Ushuaia port to the airport or town"                                        | transfer                    
+99       |  - Day 7, Component 2    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+99       |  - Day 7, Component 1    | "Charter flight from King George Island to Punta Arenas"                     | transfer                    
+99       |  - Day 8, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+100      |  - Day 1, Component 1    | "Punta Arenas Airport to Hotel"                                              | transfer                    
+100      |  - Day 2, Component 2    | "Charter flight from Punta Arenas to King George Island"                     | transfer                    
+100      |  - Day 2, Component 1    | "Punta Arenas Hotel to Airport"                                              | transfer                    
+100      |  - Day 1, Component 2    | "Punta Arenas Hotel"                                                         | ground_accommodation        
+100      |  - Day 8, Component 1    | "Ushuaia Port to the airport"                                                | transfer                    
+102      |  - Day 1, Component 1    | "Santiago Hotel"                                                             | ground_accommodation        
+102      |  - Day 2, Component 2    | "Charter flight from Santiago to Puerto Williams Airport"                    | transfer                    
+102      |  - Day 2, Component 1    | "Hotel to Santiago Airport"                                                  | transfer                    
+102      |  - Day 11, Component 1   | "Charter flight from King George Island to Punta Arenas Airport"             | transfer                    
+102      |  - Day 11, Component 2   | "Punta Arenas Airport to the hotel"                                          | transfer                    
+102      |  - Day 12, Component 1   | "Punta Arenas hotel to the airport"                                          | transfer                    
+102      |  - Day 12, Component 2   | "Charter flight from Punta Arenas to Santiago Airport"                       | transfer                    
+103      |  - Day 1, Component 1    | "Buenos Aires Airport to the hotel"                                          | transfer                    
+103      |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+103      |  - Day 2, Component 1    | "Buenos Aires hotel to the airport"                                          | transfer                    
+103      |  - Day 2, Component 2    | "Charter flight from Buenos Aires to Ushuaia"                                | transfer                    
+103      |  - Day 6, Component 2    | "Charter flight from Ushuaia to Buenos Aires Airport (EZE)"                  | transfer                    
+103      |  - Day 1, Component 3    | "Ushuaia Airport to the port"                                                | transfer                    
+103      |  - Day 6, Component 1    | "Ushuia Port to the airport"                                                 | transfer                    
+104      |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+104      |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+104      |  - Day 7, Component 1    | "Ushuaia Port to the airport or your downtown hotel"                         | transfer                    
+104      |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+105      |  - Day 1, Component 1    | "Buenos Aires Airport to the hotel"                                          | transfer                    
+105      |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+105      |  - Day 2, Component 1    | "Buenos Aires hotel to the airport"                                          | transfer                    
+105      |  - Day 2, Component 2    | "Charter flight from Buenos Aires to Ushuaia"                                | transfer                    
+105      |  - Day 10, Component 2   | "Charter flight from Ushuaia to Buenos Aires Airport (EZE)"                  | transfer                    
+105      |  - Day 1, Component 3    | "Ushuaia Airport to the port"                                                | transfer                    
+105      |  - Day 10, Component 1   | "Ushuia Port to the airport"                                                 | transfer                    
+106      |  - Day 1, Component 1    | "Buenos Aires Airport to the hotel"                                          | transfer                    
+106      |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+106      |  - Day 2, Component 1    | "Buenos Aires hotel to the airport"                                          | transfer                    
+106      |  - Day 2, Component 2    | "Charter flight from Buenos Aires to Ushuaia"                                | transfer                    
+106      |  - Day 10, Component 2   | "Charter flight from Ushuaia to Buenos Aires Airport (EZE)"                  | transfer                    
+106      |  - Day 1, Component 3    | "Ushuaia Airport to the port"                                                | transfer                    
+106      |  - Day 10, Component 1   | "Ushuia Port to the airport"                                                 | transfer                    
+107      |  - Day 1, Component 1    | "Explorers House to Punta Arenas Port"                                       | transfer                    
+107      |  - Day 9, Component 1    | "Punta Arenas Port to the city centre"                                       | transfer                    
+109      |  - Day 1, Component 1    | "Puerto Natales Airport to the hotel"                                        | transfer                    
+109      |  - Day 4, Component 2    | "Puerto Natales Airport to the hotel"                                        | transfer                    
+109      |  - Day 1, Component 2    | "Puerto Natales Hotel"                                                       | ground_accommodation        
+109      |  - Day 2, Component 3    | "Puerto Natales Hotel"                                                       | ground_accommodation        
+109      |  - Day 2, Component 1    | "Puerto Natales hotel to the airport"                                        | transfer                    
+109      |  - Day 5, Component 1    | "Puerto Natales hotel to the airport"                                        | transfer                    
+109      |  - Day 2, Component 2    | "Charter flight from Puerto Natales to King George Island"                   | transfer                    
+109      |  - Day 4, Component 1    | "Charter flight from King George Island to Puerto Natales"                   | transfer                    
+110      |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+110      |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+110      |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+110      |  - Day 5, Component 2    | "Puerto Natales Airport to the hotel"                                        | transfer                    
+110      |  - Day 6, Component 1    | "Puerto Natales hotel to the airport"                                        | transfer                    
+110      |  - Day 5, Component 1    | "Charter flight from King George Island to Puerto Natales"                   | transfer                    
+111      |  - Day 1, Component 1    | "Puerto Natales Airport to the hotel"                                        | transfer                    
+111      |  - Day 4, Component 2    | "Puerto Natales Airport to the hotel"                                        | transfer                    
+111      |  - Day 1, Component 2    | "Puerto Natales Hotel"                                                       | ground_accommodation        
+111      |  - Day 2, Component 3    | "Puerto Natales Hotel"                                                       | ground_accommodation        
+111      |  - Day 2, Component 1    | "Puerto Natales hotel to the airport"                                        | transfer                    
+111      |  - Day 5, Component 1    | "Puerto Natales hotel to the airport"                                        | transfer                    
+111      |  - Day 2, Component 2    | "Charter flight from Puerto Natales to King George Island"                   | transfer                    
+111      |  - Day 4, Component 1    | "Charter flight from King George Island to Puerto Natales"                   | transfer                    
+112      |  - Day 1, Component 1    | "Puerto Natales Airport to the hotel"                                        | transfer                    
+112      |  - Day 4, Component 2    | "Puerto Natales Airport to the hotel"                                        | transfer                    
+112      |  - Day 1, Component 2    | "Puerto Natales Hotel"                                                       | ground_accommodation        
+112      |  - Day 2, Component 3    | "Puerto Natales Hotel"                                                       | ground_accommodation        
+112      |  - Day 2, Component 1    | "Puerto Natales hotel to the airport"                                        | transfer                    
+112      |  - Day 5, Component 1    | "Puerto Natales hotel to the airport"                                        | transfer                    
+112      |  - Day 2, Component 2    | "Charter flight from Puerto Natales to King George Island"                   | transfer                    
+112      |  - Day 4, Component 1    | "Charter flight from King George Island to Puerto Natales"                   | transfer                    
+113      |  - Day 1, Component 2    | "Santiago Hotel"                                                             | ground_accommodation        
+113      |  - Day 1, Component 1    | "Santiago Airport to the hotel"                                              | transfer                    
+113      |  - Day 2, Component 1    | "Santiago hotel to the airport"                                              | transfer                    
+113      |  - Day 1, Component 3    | "Ushuaia Airport to the port"                                                | transfer                    
+113      |  - Day 2, Component 2    | "Charter flight from Santiago to Ushuaia"                                    | transfer                    
+114      |  - Day 1, Component 2    | "Santiago Hotel"                                                             | ground_accommodation        
+114      |  - Day 12, Component 1   | "Ushuaia Port to the airport"                                                | transfer                    
+114      |  - Day 1, Component 1    | "Santiago Airport to the hotel"                                              | transfer                    
+114      |  - Day 2, Component 1    | "Santiago hotel to the airport"                                              | transfer                    
+114      |  - Day 1, Component 3    | "Ushuaia Airport to the port"                                                | transfer                    
+114      |  - Day 2, Component 2    | "Charter flight from Santiago to Ushuaia"                                    | transfer                    
+114      |  - Day 12, Component 2   | "Charter flight from Ushuaia to Santiago"                                    | transfer                    
+115      |  - Day 1, Component 1    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+115      |  - Day 2, Component 1    | "Buenos Aires hotel to the airport"                                          | transfer                    
+115      |  - Day 6, Component 1    | "Ushuaia Port to the airport"                                                | transfer                    
+115      |  - Day 6, Component 2    | "Charter flight from Ushuaia Airport to Buenos Aires"                        | transfer                    
+115      |  - Day 2, Component 2    | "Charter flight from Buenos Aires to Ushuaia Airport"                        | transfer                    
+116      |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+116      |  - Day 6, Component 1    | "Ushuaia Port to the airport"                                                | transfer                    
+116      |  - Day 1, Component 1    | "Buenos Aires Airport (EZE) to the hotel"                                    | transfer                    
+116      |  - Day 2, Component 2    | "Ushuaia Airport to the Beagle Channel catamaran tour"                       | transfer                    
+116      |  - Day 1, Component 3    | "Beagle Channel catamaran tour to Ushuaia Port"                              | transfer                    
+116      |  - Day 2, Component 1    | "Charter flight from Buenos Aires Airport (EZE) to Ushuaia"                  | transfer                    
+116      |  - Day 6, Component 2    | "Charter flight from Ushuaia to Buenos Aires Airport (EZE)"                  | transfer                    
+117      |  - Day 1, Component 1    | "Santiago Hotel"                                                             | ground_accommodation        
+117      |  - Day 2, Component 1    | "Santiago hotel to the airport"                                              | transfer                    
+117      |  - Day 2, Component 2    | "Charter flight from Santiago to Punta Arenas Airport"                       | transfer                    
+117      |  - Day 10, Component 1   | "Punta Arenas port to the airport"                                           | transfer                    
+117      |  - Day 10, Component 2   | "Charter flight from Punta Arenas Airport to Santiago"                       | transfer                    
+118      |  - Day 1, Component 1    | "Buenos Aires Airport to the hotel"                                          | transfer                    
+118      |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+118      |  - Day 1, Component 3    | "Ushuaia airport to the ship"                                                | transfer                    
+118      |  - Day 2, Component 1    | "Buenos Aires hotel to the airport"                                          | transfer                    
+118      |  - Day 2, Component 2    | "Charter flight from Buenos Aires to Ushuaia"                                | transfer                    
+118      |  - Day 11, Component 1   | "Ushuaia Port to the airport"                                                | transfer                    
+118      |  - Day 11, Component 2   | "Charter flight from Ushuaia to Buenos Aires"                                | transfer                    
+119      |  - Day 1, Component 1    | "Santiago Hotel"                                                             | ground_accommodation        
+119      |  - Day 2, Component 2    | "Charter flight from Santiago to Puerto Williams Airport"                    | transfer                    
+119      |  - Day 9, Component 2    | "Charter flight from Puerto Williams Airport to Santiago Airport"            | transfer                    
+119      |  - Day 2, Component 1    | "Hotel to Santiago Airport"                                                  | transfer                    
+119      |  - Day 9, Component 1    | "Puerto Williams Port to the airport"                                        | transfer                    
+120      |  - Day 1, Component 1    | "Buenos Aires Airport to the hotel"                                          | transfer                    
+120      |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
+120      |  - Day 2, Component 1    | "Buenos Aires hotel to the airport"                                          | transfer                    
+120      |  - Day 2, Component 2    | "Charter flight from Buenos Aires to Ushuaia"                                | transfer                    
+120      |  - Day 6, Component 2    | "Charter flight from Ushuaia to Buenos Aires Airport (EZE)"                  | transfer                    
+120      |  - Day 1, Component 3    | "Ushuaia Airport to the port"                                                | transfer                    
+120      |  - Day 6, Component 1    | "Ushuia Port to the airport"                                                 | transfer                    
+121      |  - Day 1, Component 2    | "Santiago Hotel"                                                             | ground_accommodation        
+121      |  - Day 11, Component 1   | "Ushuaia Port to the airport"                                                | transfer                    
+121      |  - Day 1, Component 1    | "Santiago Airport to the hotel"                                              | transfer                    
+121      |  - Day 2, Component 1    | "Santiago hotel to the airport"                                              | transfer                    
+121      |  - Day 11, Component 2   | "Charter flight from Ushuaia to Santiago Airport"                            | transfer                    
+121      |  - Day 2, Component 2    | "Charter flight from Santiago to Punta Arenas"                               | transfer                    
+122      |  - Day 1, Component 2    | "Santiago Hotel"                                                             | ground_accommodation        
+122      |  - Day 1, Component 1    | "Santiago Airport to the hotel"                                              | transfer                    
+122      |  - Day 2, Component 1    | "Santiago hotel to the airport"                                              | transfer                    
+122      |  - Day 11, Component 2   | "Charter flight from Punta Arenas to Santiago Airport"                       | transfer                    
+122      |  - Day 2, Component 2    | "Charter flight from Santiago to Punta Arenas"                               | transfer                    
+122      |  - Day 11, Component 1   | "Punta Arenas to the airport"                                                | transfer                    
+124      |  - Day 1, Component 1    | "Santiago Hotel"                                                             | ground_accommodation        
+124      |  - Day 2, Component 2    | "Charter flight from Santiago to Puerto Williams Airport"                    | transfer                    
+124      |  - Day 7, Component 2    | "Puerto Williams Airport to the hotel"                                       | transfer                    
+124      |  - Day 7, Component 1    | "Charter flight from King George Island to Puerto Williams Airport"          | transfer                    
+124      |  - Day 8, Component 2    | "Charter flight from Puerto Williams Airport to Santiago Airport"            | transfer                    
+124      |  - Day 2, Component 1    | "Hotel to Santiago Airport"                                                  | transfer                    
+124      |  - Day 8, Component 1    | "The Cormorant at 55 South to Puerto Williams Airport"                       | transfer                    
+125      |  - Day 1, Component 1    | "Santiago Hotel"                                                             | ground_accommodation        
+125      |  - Day 2, Component 2    | "Charter flight from Santiago to Puerto Williams Airport"                    | transfer                    
+125      |  - Day 3, Component 2    | "Charter flight from Puerto Williams to King George Island"                  | transfer                    
+125      |  - Day 8, Component 2    | "Charter flight from Puerto Williams Airport to Santiago Airport"            | transfer                    
+125      |  - Day 2, Component 1    | "Hotel to Santiago Airport"                                                  | transfer                    
+125      |  - Day 3, Component 1    | "The Cormorant at 55 South to Puerto Williams Airport"                       | transfer                    
+125      |  - Day 8, Component 1    | "Puerto Williams Port to the airport"                                        | transfer                    
+126      |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+126      |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+126      |  - Day 7, Component 1    | "Ushuaia Port to the airport or your downtown hotel"                         | transfer                    
+126      |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+127      |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+127      |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+127      |  - Day 7, Component 1    | "Ushuaia Port to the airport or your downtown hotel"                         | transfer                    
+127      |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
+128      |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
+128      |  - Day 2, Component 1    | "Ushuaia hotel to the port"                                                  | transfer                    
+128      |  - Day 11, Component 1   | "Ushuaia Port to the airport or your downtown hotel"                         | transfer                    
+128      |  - Day 1, Component 1    | "Ushuaia Airport to the hotel"                                               | transfer                    
