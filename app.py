@@ -7,6 +7,7 @@ import openpyxl
 import pandas as pd
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from mappings.cruise_activity import map_cruise_activity_component
 from validate_csv_dynamic import validate_csv
 from utils import save_missing_references_log, clear_missing_references_session, get_missing_references_summary
 
@@ -62,6 +63,10 @@ SHEET_TEMPLATE_MAP = {
     "All Activities - For Upload": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_e2f0e9e5343349358037a0564a3366a0"  # Activity
+    ],
+    "ANT Activities": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_12345678123456781234567812345678"  # Activity
     ],
     "All Transfers - For Upload": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
@@ -133,6 +138,7 @@ SHEET_ROW_MAPPERS = {
     "ANT Ship Accom"               : map_ship_accommodation_component,
     "Journeys"                     : map_journey_component,
     "All Activities - For Upload"  : map_activity_component,
+    "ANT Activities"               : map_cruise_activity_component,
     "All Transfers - For Upload"   : map_transfer_component,
     "Excursions Package"           : map_excursion_component,
     "Private Tours Package"        : map_private_tours_component,
@@ -150,6 +156,7 @@ TEMPLATE_TYPES = {
     "template_bb8caab1d3104257a75b7cb7dd958136": "ship_accommodation",
     "template_14cc18c1408a4b73a16d4e1dad2efca9": "journey",
     "template_e2f0e9e5343349358037a0564a3366a0": "activity",
+    "template_12345678123456781234567812345678": "cruise_activity",
     "template_901d40ac12214820995880915c5b62f5": "transfer",
     "template_3b7714dcfa374cd19b9dc97af1510204": "package",
 
@@ -170,6 +177,7 @@ SHEET_PROCESS_ORDER = [
     # "ANT Ship Accom",
     # "Journeys",
     # "All Activities - For Upload",
+    "ANT Activities",
     # "All Transfers - For Upload",
 
     # "Excursions Package",
@@ -177,7 +185,7 @@ SHEET_PROCESS_ORDER = [
     # "All Inclusive Hotel Package",
     # "Multi-day Activity Package",
     # "PAT Cruise Packages ",
-    "ANT Cruise Packages",
+    # "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {

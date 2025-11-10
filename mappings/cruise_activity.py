@@ -3,9 +3,9 @@ from utils import get_stripped, safe_float, safe_int, get_location_id
 from .location import map_region_name_to_id
 import pandas as pd
 
-def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None, partner_map=None, destination_override=None):
+def map_cruise_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None, partner_map=None, destination_override=None):
     """
-    Map activity component with improved ID lookups and missing reference logging
+    Map cruise activity component with improved ID lookups and missing reference logging
     """
 
     # --- Regions ---
@@ -27,7 +27,7 @@ def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         }
 
     # --- Media ---
-    images = get_stripped(row, "images").split("\n")
+    images = get_stripped(row, "Images").split("\n")
     images = [img.strip() for img in images if img.strip()]  # clean empties
 
     media = {
@@ -35,44 +35,21 @@ def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         "videos": []
     }
 
-    # --- Location lookups with improved logging ---
-    start_location_name = get_stripped(row, "startLocation")
-    start_location_id = get_location_id(
-        location_name=start_location_name,
-        component_id_map=COMPONENT_ID_MAP,
-        context={
-            **(context or {}),
-            "field": "startLocation",
-            "row_index": row_index,
-            "additional_info": f"{get_stripped(row, 'name')}"
-        }
-    )
-
-    end_location_name = get_stripped(row, "endLocation")
-    end_location_id = get_location_id(
-        location_name=end_location_name,
-        component_id_map=COMPONENT_ID_MAP,
-        context={
-            **(context or {}),
-            "field": "endLocation",
-            "row_index": row_index,
-            "additional_info": f"{get_stripped(row, 'name')}"
-        }
-    )
 
     # ===== Level 0 → Base schema (empty) =====
     level_0 = {}
 
     # ===== Level 1 → Activity Details =====
     level_1 = {
-        # "journey": f"{start_location_name} to {end_location_name}",
-        "difficulty": get_stripped(row, "difficulty") or "Other",
-        "elevation": {
-            "ascentm": safe_int(get_stripped(row, "elevationFieldsifApplicable.totalElevationGainmetres")) or -1,
-            "descentm": safe_int(get_stripped(row, "elevationFieldsifApplicable.totalDescentmetres")) or -1
-        },
-        "startLocation": start_location_id or "",
-        "endLocation": end_location_id or ""
+        "complementary": get_stripped(row, "At additional cost or Complimentary") == "At additional cost",
+        "preBookingRequired": (get_stripped(row, "Pre-booking required") or "").startswith("Y"),
+        "requirements":{
+            "minimumAge": safe_int( get_stripped(row, "Min age")),
+            "maximumAge": safe_int( get_stripped(row, "Max age")),
+            "minimumHeightm": safe_int( get_stripped(row, "Lower Height Limit (m)") ),
+            "gear": get_stripped(row, "Required gear (comma-list)").split("\n"),
+            "Other":""
+        }
     }
 
     component_fields = [
@@ -82,7 +59,7 @@ def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
 
     return {
         "orgId":"swoop",
-        "destination":"patagonia",
+        "destination":"antarctic",
         "state": "Draft",
         "tripId": "",
         "pricing": {"amount":0,"currency":"gbp"},
@@ -96,13 +73,13 @@ def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         },
         "partners": (
             [
-                partner_map.get(destination_override or get_stripped(row, "destination"), {}).get(p.strip()) or p.strip()
+                partner_map.get(destination_override or get_stripped(row, "Destination"), {}).get(p.strip()) or p.strip()
                 for p in get_stripped(row, "Partner").split(",")
                 if p.strip()
             ] or ["NA"]
         ),
         "regions": [r for r in regions if r],  # filter out None values
-        "name": get_stripped(row, "name") or "Untitled",
+        "name": get_stripped(row, "CODE") or "Untitled",
         "media": media,
         "componentFields": component_fields,
     }

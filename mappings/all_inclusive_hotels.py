@@ -216,7 +216,7 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
         },
         "partners": (
             [
-                partner_map.get(destination_override or get_stripped("Destination"), {}).get(p.strip()) or p.strip()
+                partner_map.get(destination_override or get_stripped(row, "destination"), {}).get(p.strip()) or p.strip()
                 for p in get_stripped(row, "Partner").split(",")
                 if p.strip()
             ] or ["NA"]
