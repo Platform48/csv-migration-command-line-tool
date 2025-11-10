@@ -99,6 +99,22 @@ SHEET_TEMPLATE_MAP = {
     ]
 }
 
+SHEET_DESTINATION_OVERRIDE = {
+    # "Location": None,
+    # "Journeys": None,
+    # "Ground Accom": None,
+    "Ship Accom": "Patagonia",
+    "ANT Ship Accom": "Antarctica",
+    # "All Activities - For Upload": None,
+    # "All Transfers - For Upload": None,
+    # "Excursions Package": None,
+    # "Private Tours Package": None,
+    # "All Inclusive Hotel Package": None,
+    # "Multi-day Activity Package": None,
+    "PAT Cruise Packages ": "Patagonia",
+    "ANT Cruise Packages": "Antarctica",
+}
+
 DUMMY_TEMPLATE_MAP = {
     "flights": [
         "template_aca16a46ec3842ca85d182ee9348f627",
@@ -148,19 +164,19 @@ PAT_COMPONENTS_PATH = "pat_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    "Location",
-    "Ground Accom",
-    "Ship Accom",
-    "ANT Ship Accom",
-    "Journeys",
-    "All Activities - For Upload",
-    "All Transfers - For Upload",
+    # "Location",
+    # "Ground Accom",
+    # "Ship Accom",
+    # "ANT Ship Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "All Transfers - For Upload",
 
-    "Excursions Package",
-    "Private Tours Package",
-    "All Inclusive Hotel Package",
-    "Multi-day Activity Package",
-    "PAT Cruise Packages ",
+    # "Excursions Package",
+    # "Private Tours Package",
+    # "All Inclusive Hotel Package",
+    # "Multi-day Activity Package",
+    # "PAT Cruise Packages ",
     "ANT Cruise Packages",
 ]
 
@@ -179,18 +195,19 @@ def get_partners():
     pat_data = pat_res.json()
 
     partner_map = {
-        "ant":{},
-        "arc":{},
+        "Antarctica":{},
         "Patagonia":{}
     }
 
-    for partner in ant_data:
-        partner_map["ant"][partner["title"]] = partner["id"]
     for partner in arc_data:
-        partner_map["arc"][partner["title"]] = partner["id"]
+        partner_map["Antarctica"][partner["title"]] = partner["id"]
+    for partner in ant_data:
+        partner_map["Antarctica"][partner["title"]] = partner["id"]
     for partner in pat_data:
         partner_map["Patagonia"][partner["title"]] = partner["id"]
     
+    partner_map["Rest of Chile/Argentina"] = partner_map["Patagonia"]
+
     return partner_map
 
 def load_component_cache():
@@ -400,6 +417,8 @@ def run_loop():
                         print(f"🏨 Including {len(rooms_data_for_sheet)} rooms for {sheet_name} processing")           
                 
                 try:
+                    destination_override = SHEET_DESTINATION_OVERRIDE.get(sheet_name, None)
+
                     results, parsed_json = validate_csv(
                         df,
                         schemas,
@@ -414,7 +433,8 @@ def run_loop():
                             },
                             row_index=row_index,
                             rooms_data=rooms_data_for_sheet,  # Pass auxiliary data to mapper
-                            partner_map=partner_map
+                            partner_map=partner_map,
+                            destination_override=destination_override
                         )
                     )
                 except Exception as e:

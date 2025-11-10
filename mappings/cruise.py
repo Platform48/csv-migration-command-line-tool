@@ -19,7 +19,7 @@ def normalize_day_string(s: str) -> str:
     else:
         return f"{numbers[0]}-{numbers[1]}"
 
-def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None, partner_map=None):
+def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None, partner_map=None, destination_override=None):
     """
     Map cruise component with improved ID lookups and missing reference logging
     """
@@ -232,7 +232,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
         },
         "partners": (
             [
-                partner_map.get("Patagonia", {}).get(p.strip()) or p.strip()
+                partner_map.get(destination_override or get_stripped(row, "Destination"), {}).get(p.strip()) or p.strip()
                 for p in get_stripped(row, "Partner").split(",")
                 if p.strip()
             ] or ["NA"]

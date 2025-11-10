@@ -3,7 +3,7 @@ from utils import get_component_id, get_stripped, safe_float, safe_int, get_loca
 from .location import map_region_name_to_id
 import pandas as pd
                             
-def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None, partner_map=None):
+def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None, partner_map=None, destination_override=None):
     """
     Map activity component with improved ID lookups and missing reference logging
     """
@@ -48,10 +48,10 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
             desc_col = "Day Description - Quote"
             comp_suffix = ""
         else:
-            day_col = f"Day.{span_index}"
-            title_col = f"Day Title - Quote.{span_index}"
-            desc_col = f"Day Description - Quote.{span_index}"
-            comp_suffix = f".{span_index}"
+            day_col = f"Day.{span_index - 1}"
+            title_col = f"Day Title - Quote.{span_index - 1}"
+            desc_col = f"Day Description - Quote.{span_index - 1}"
+            comp_suffix = f".{span_index - 1}"
         
         # Check if this day exists
         span_day = get_stripped(row, day_col)
@@ -173,7 +173,7 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
         },
         "partners": (
             [
-                partner_map.get("Patagonia", {}).get(p.strip()) or p.strip()
+                partner_map.get(destination_override or get_stripped("Destination"), {}).get(p.strip()) or p.strip()
                 for p in get_stripped(row, "Partner").split(",")
                 if p.strip()
             ] or ["NA"]

@@ -20,7 +20,7 @@ def parse_room_size(val: str):
             return None
     return None
 
-def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None, partner_map=None):
+def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_index=-1, rooms_data=None, partner_map=None, destination_override=None):
     """
     Map ground accommodation component using consistent ID lookup utilities
     """
@@ -198,7 +198,7 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
         },
         "partners": (
             [
-                partner_map.get("Patagonia", {}).get(p.strip()) or p.strip()
+                partner_map.get(destination_override or get_stripped("Destination"), {}).get(p.strip()) or p.strip()
                 for p in get_stripped(row, "Partner").split(",")
                 if p.strip()
             ] or ["NA"]
