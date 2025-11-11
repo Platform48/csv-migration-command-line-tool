@@ -204,8 +204,31 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
         "exclusions": exclusions
     }
 
+    activities = [a.strip() for a in get_stripped(row, "Activity").split("\n") if a.strip()]
+    deref_activities = []
+
+    for activity_name in activities:
+        comp_id = get_component_id(
+            component_type="cruise_activity",
+            component_name=activity_name,
+            component_id_map=COMPONENT_ID_MAP,
+            context={
+                **(context or {}),
+                "field": "Activity",
+                "row_index": row_index,
+                "additional_info": f"{get_stripped(row, 'name')} - Cruise Activity: {activity_name}"
+            },
+            required=False  # Don't fail entire record if one activity is missing
+        )
+
+        deref_activities.append(comp_id or "component_00000000000000000000000000000000")
+
+    level_2 = {
+        "activities": deref_activities
+    }
+
     component_fields = [
-        {"templateId": template_ids[2], "data": {}},
+        {"templateId": template_ids[2], "data": level_2},
         {"templateId": template_ids[1], "data": level_1},
         {"templateId": template_ids[0], "data": {}},
     ]

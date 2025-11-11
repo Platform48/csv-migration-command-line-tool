@@ -185,7 +185,7 @@ SHEET_PROCESS_ORDER = [
     # "All Inclusive Hotel Package",
     # "Multi-day Activity Package",
     # "PAT Cruise Packages ",
-    # "ANT Cruise Packages",
+    "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {
