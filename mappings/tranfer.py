@@ -71,7 +71,7 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         {"templateId": template_ids[1], "data": level_1},
         {"templateId": template_ids[0], "data": level_0},
     ]
-    name = row.get("Code") or "Untitled"
+    name = get_stripped(row, "Code") or "Untitled"
     # print(f"Name: {get_stripped(row, "Code")}, {row.get("Code")}")
     # print(row)
     # name = f"{row.get( "name")} {row.get("partner")} {row.get("guidesDrivers")}"
@@ -79,7 +79,7 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
     # print(name)
     return {
         "orgId":"swoop",
-        "destination":"patagonia",
+        "destination":(destination_override or get_stripped(row, "destination")).lower(),
         "state": "Draft",
         "tripId": "",
         "pricing": {"amount":0,"currency":"gbp"},

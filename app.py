@@ -72,6 +72,10 @@ SHEET_TEMPLATE_MAP = {
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_901d40ac12214820995880915c5b62f5"
     ],
+    "ANT Transfers": [
+        "template_aca16a46ec3842ca85d182ee9348f627", # Base
+        "template_901d40ac12214820995880915c5b62f5"
+    ],
     "Excursions Package": [
         "template_aca16a46ec3842ca85d182ee9348f627", # Base
         "template_3b7714dcfa374cd19b9dc97af1510204", # Pkg
@@ -140,6 +144,7 @@ SHEET_ROW_MAPPERS = {
     "All Activities - For Upload"  : map_activity_component,
     "ANT Activities"               : map_cruise_activity_component,
     "All Transfers - For Upload"   : map_transfer_component,
+    "ANT Transfers"                : map_transfer_component,
     "Excursions Package"           : map_excursion_component,
     "Private Tours Package"        : map_private_tours_component,
     "All Inclusive Hotel Package"  : map_all_inclusive_hotels_component,
@@ -177,15 +182,15 @@ SHEET_PROCESS_ORDER = [
     # "ANT Ship Accom",
     # "Journeys",
     # "All Activities - For Upload",
-    "ANT Activities",
+    # "ANT Activities",
     # "All Transfers - For Upload",
-
-    # "Excursions Package",
+    # "ANT Transfers",
+    "Excursions Package",
     # "Private Tours Package",
     # "All Inclusive Hotel Package",
     # "Multi-day Activity Package",
     # "PAT Cruise Packages ",
-    "ANT Cruise Packages",
+    # "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {

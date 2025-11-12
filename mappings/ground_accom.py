@@ -115,9 +115,9 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
                 "notes":       get_stripped(row, "Inspection Notes 2") or ""
             },
         ],
-        "whatWeLike":"",
-        "thingsToNote":"",
-        "recommendations":"",
+        "whatWeLike":get_stripped(row, "whatWeLikeAboutThisAccommodation"),
+        "thingsToNote":get_stripped(row, "thingsToNoteAboutThisAccommodation"),
+        "recommendations":get_stripped(row, "Recommendations"),
         "swooper":"",
         "swoopSays":"",
         "importantInformation":"",
@@ -183,7 +183,7 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
 
     val = {
         "orgId":"swoop",
-        "destination":"patagonia",
+        "destination":(destination_override or get_stripped(row, "destination")).lower(),
         "state": "Draft",
         "tripId": "",
         "pricing": {"amount":0,"currency":"gbp"},

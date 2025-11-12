@@ -240,7 +240,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
 
     val = {
         "orgId":"swoop",
-        "destination":"patagonia",
+        "destination":(destination_override or get_stripped(row, "destination")).lower(),
         "state": "Draft",
         "tripId": tripId,
         "pricing": {"amount":0,"currency":"gbp"},

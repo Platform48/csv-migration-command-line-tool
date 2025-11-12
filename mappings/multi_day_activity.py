@@ -137,7 +137,7 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
 
     return {
         "orgId":"swoop",
-        "destination":"patagonia",
+        "destination":(destination_override or get_stripped(row, "destination")).lower(),
         "state": "Draft",
         "tripId": get_stripped(row, "TripID") or "",
         "pricing": {"amount":0,"currency":"gbp"},

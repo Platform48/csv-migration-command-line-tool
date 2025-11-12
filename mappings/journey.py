@@ -81,7 +81,7 @@ def map_journey_component(row, template_ids, COMPONENT_ID_MAP, context=None, row
 
     return {
         "orgId":"swoop",
-        "destination":"patagonia",
+        "destination":(destination_override or get_stripped(row, "destination")).lower(),
         "state": "Draft",
         "tripId": "",
         "pricing": {"amount":0,"currency":"gbp"},
