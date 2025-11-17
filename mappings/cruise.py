@@ -240,7 +240,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
 
     val = {
         "orgId":"swoop",
-        "destination":(destination_override or get_stripped(row, "destination")).lower(),
+        "destination":(destination_override or get_stripped(row, "destination")).lower() or "patagonia",
         "state": "Draft",
         "tripId": tripId,
         "pricing": {"amount":0,"currency":"gbp"},
@@ -255,7 +255,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
         },
         "partners": (
             [
-                partner_map.get(destination_override or get_stripped(row, "Destination"), {}).get(p.strip()) or p.strip()
+                partner_map.get(destination_override or get_stripped(row, "Destination") or "Patagonia", {}).get(p.strip()) or p.strip()
                 for p in get_stripped(row, "Partner").split(",")
                 if p.strip()
             ] or ["NA"]

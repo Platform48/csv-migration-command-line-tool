@@ -176,21 +176,21 @@ PAT_COMPONENTS_PATH = "pat_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    # "Location",
-    # "Ground Accom",
-    # "Ship Accom",
-    # "ANT Ship Accom",
-    # "Journeys",
-    # "All Activities - For Upload",
-    # "ANT Activities",
-    # "All Transfers - For Upload",
-    # "ANT Transfers",
+    "Location",
+    "Ground Accom",
+    "Ship Accom",
+    "ANT Ship Accom",
+    "Journeys",
+    "All Activities - For Upload",
+    "ANT Activities",
+    "All Transfers - For Upload",
+    "ANT Transfers",
     "Excursions Package",
-    # "Private Tours Package",
-    # "All Inclusive Hotel Package",
-    # "Multi-day Activity Package",
-    # "PAT Cruise Packages ",
-    # "ANT Cruise Packages",
+    "Private Tours Package",
+    "All Inclusive Hotel Package",
+    "Multi-day Activity Package",
+    "PAT Cruise Packages ",
+    "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {
@@ -612,6 +612,11 @@ class CoreDataService:
 
 
     def _upload_component(self, component, template_type, idx, overwrite_on_fail=True):
+        if component["name"] == "Untitled":
+            print("Skipping Untitles or Empty row")
+            return None
+        if component["destination"] == "antarctica":
+            component["destination"] = "antarctic"
         pregenerated_id = generate_component_id(component)
         self.headers["x-datadog-trace-id"] = str(int(random.getrandbits(63)))
         self.headers["x-datadog-parent-id"] = str(int(random.getrandbits(63)))

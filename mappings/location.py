@@ -131,7 +131,7 @@ def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
     return {
         
         "orgId":"swoop",
-        "destination":(destination_override or get_stripped(row, "destination")).lower(),
+        "destination":(destination_override or get_stripped(row, "destination")).lower() or "patagonia",
         "state": "Draft",
         "tripId": "",
         "pricing": {"amount":0,"currency":"gbp"},
@@ -145,7 +145,7 @@ def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         },
         "partners": (
             [
-                partner_map.get(destination_override or get_stripped(row, "destination"), {}).get(p.strip()) or p.strip()
+                partner_map.get(destination_override or get_stripped(row, "destination") or "Patagonia", {}).get(p.strip()) or p.strip()
                 for p in get_stripped(row, "Partner").split(",")
                 if p.strip()
             ] or ["NA"]

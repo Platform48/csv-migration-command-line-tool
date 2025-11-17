@@ -73,7 +73,7 @@ def map_cruise_activity_component(row, template_ids, COMPONENT_ID_MAP, context=N
         },
         "partners": (
             [
-                partner_map.get(destination_override or get_stripped(row, "Destination"), {}).get(p.strip()) or p.strip()
+                partner_map.get(destination_override or get_stripped(row, "Destination") or "Patagonia", {}).get(p.strip()) or p.strip()
                 for p in get_stripped(row, "Partner").split(",")
                 if p.strip()
             ] or ["NA"]

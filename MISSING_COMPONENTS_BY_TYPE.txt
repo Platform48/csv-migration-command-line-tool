@@ -1,42 +1,123 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2025-11-12 17:22:41
+Generated: 2025-11-14 12:59:09
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
 
 ====================================================================================================
 
+TYPE: location
+--------------------------------------------------------------------------------
+Missing Component                                        | Occurrences
+-----------------------------------------------------------------------
+"Punta Arenas Hotel"                                     | 7
+"Refugio Central/EcoCamp/Las Torres"                     | 7
+"refugio cuernos"                                        | 7
+"Ushuaia Hotel"                                          | 7
+"City Hotel"                                             | 4
+"Valpariso hotel"                                        | 4
+"Valpariso port"                                         | 4
+"Mendoza Bus station"                                    | 3
+"Pudeto dock"                                            | 3
+"El Calafate Central Hotel"                              | 2
+"El Chaltén Hotel"                                       | 2
+"Rano Kau volcano"                                       | 2
+"Retiro bus station"                                     | 2
+"Buenos Aires City Centre Hotel"                         | 1
+"Cataratas/Puerto Iguazú Hotel"                          | 1
+"Errante EcoLodge"                                       | 1
+"Estancia Josefina"                                      | 1
+"Hotel Rio Serrano"                                      | 1
+"Los Huemules Reserve/Explora Chaltén"                   | 1
+"Oco's Place"                                            | 1
+"Pehoé/Serrano Village/Administration"                   | 1
+"Poincenot Comfort Camp"                                 | 1
+"Rupestre"                                               | 1
+"Santiago City Central Hotel, via Santiago Restaurant"   | 1
+"Serrano Village/Administration (Y-290)"                 | 1
+"Tierra Hotel/Estancia Lazo"                             | 1
+
+TYPE: journey
+--------------------------------------------------------------------------------
+Missing Component                                                           | Occurrences
+------------------------------------------------------------------------------------------
+"Aeroparque Internacional Jorge Newbery (AEP) - City Hotel"                 | 3
+"Arakur Hotel - Port"                                                       | 3
+"City Hotel - Aeroparque Internacional Jorge Newbery (AEP)"                 | 3
+"El Chaltén to Rio Electrico (Laguna de Los Tres)"                          | 3
+"Recoleta Hotel - Ministro Pistarini International Airport, Ezeiza (EZE)"   | 3
+"Ushuaia Malvinas Argentinas (USH) - Arakur"                                | 3
+"Ushuaia Malvinas Argentinas (USH) - Hotel (downtown)"                      | 3
+"Ushuaia Malvinas Argentinas (USH) - Port"                                  | 3
+"City Hotel - Arturo Merino Benitez International Airport SCL"              | 1
+"Las Hayas hotel - Port"                                                    | 1
+"Los Cauquenes - Port"                                                      | 1
+"Ushuaia Malvinas Argentinas (USH) - Las Hayas"                             | 1
+"Ushuaia Malvinas Argentinas (USH) - Los Cauquenes"                         | 1
+
 TYPE: transfer
 --------------------------------------------------------------------------------
-Missing Component                     | Occurrences
-----------------------------------------------------
-"Awasi Atacama to El Tatio Geysers"   | 1
-"Beagle Channel Biking"               | 1
+Missing Component                                                       | Occurrences
+--------------------------------------------------------------------------------------
+"Ushuaia port to the airport or town"                                   | 5
+"Charter Flight Punta Arenas to King George Island"                     | 4
+"Puerto Williams Airport to the hotel"                                  | 4
+"Charter Flight King George Island to Punta Arenas"                     | 3
+"Charter flight from Buenos Aires' Aeroparque/AEP Airport to Ushuaia"   | 2
+"Awasi Atacama to El Tatio Geysers"                                     | 1
+"Beagle Channel Biking"                                                 | 1
+"Charter flight from Ushuaia to Santiago"                               | 1
+"Punta Arenas to the airport"                                           | 1
+"Ski aircraft flight from the South Pole to Union Glacier Camp"         | 1
 
 TYPE: activity
 --------------------------------------------------------------------------------
 Missing Component                                                          | Occurrences
 -----------------------------------------------------------------------------------------
-"Fauna Trail"                                                              | 7
-"Cerro Torre Viewpoint Hike"                                               | 4
-"Lago del Desierto Kayaking"                                               | 3
-"Perito Moreno - Touching the Ice"                                         | 3
-"Darwin's Frog Trail"                                                      | 2
+"Cerro Torre Viewpoint Hike"                                               | 5
 "End of the World Train Station and Tierra del Fuego National Park Walk"   | 2
-"Reloncaví Fjord Kayaking"                                                 | 2
-"Alerce Andino national park Hike"                                         | 1
+"Laguna Torre and Torres Comfort Camp Hike"                                | 2
 "Blugrin - Cochrane River and Lake"                                        | 1
 "Cochrane River"                                                           | 1
-"Desolación Trail Hike"                                                    | 1
-"El Amarillo Glacier viewpoint Hike"                                       | 1
 "Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"          | 1
-"Glaciar Yelcho Hike"                                                      | 1
-"Glacier Grey Boat Trip & Hike"                                            | 1
-"Glacier Grey Sailing; Touring the Paine Massif"                           | 1
-"Grey Boat Trip and Hanging Bridges Hike"                                  | 1
-"Half-day San Rafael Lagoon & Glacier Boat Trip"                           | 1
-"High Peaks Bike"                                                          | 1
 "Laguna Torre Hike"                                                        | 1
-"Piedra de la Coca Hike"                                                   | 1
-"Santiago Central Market & Cooking Class"                                  | 1
-"Trekking to the High Lands along the Maqui Waterfalls"                    | 1
+
+TYPE: excursion
+--------------------------------------------------------------------------------
+Missing Component                                      | Occurrences
+---------------------------------------------------------------------
+"Cerro Torre Viewpoint Half-day Hike Walk Patagonia"   | 2
+"El Tatio Geysers - Full Day Awasi"                    | 1
+"Lago del Desierto kayak and Hike Walk Patagonia"      | 1
+"Las Correntadas multisport Explora"                   | 1
+
+TYPE: excursion (shared)
+--------------------------------------------------------------------------------
+Missing Component                                          | Occurrences
+-------------------------------------------------------------------------
+"Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"   | 1
+
+TYPE: actvity
+--------------------------------------------------------------------------------
+Missing Component                                                     | Occurrences
+------------------------------------------------------------------------------------
+"Iguazú Interactive Six-course Group Dining Experience with Drinks"   | 3
+
+TYPE: ground_accommodation
+--------------------------------------------------------------------------------
+Missing Component        | Occurrences
+---------------------------------------
+"Ushuaia Hotel"          | 37
+"Buenos Aires Hotel"     | 19
+"Punta Arenas Hotel"     | 15
+"Santiago Hotel"         | 15
+"Puerto Natales Hotel"   | 6
+"Dunedin Hotel"          | 2
+"Montevideo Hotel"       | 1
+"Queenstown Hotel"       | 1
+
+TYPE: ushuaia hotel
+--------------------------------------------------------------------------------
+Missing Component         | Occurrences
+----------------------------------------
+"Ushuaia Hotel to Port"   | 2
