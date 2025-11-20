@@ -165,7 +165,8 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
             ),
 
             "name": str(r.get("Room/Cabin name") or "Unnamed Room"),
-            "type": "Hotel" if "Room" in str(r.get("Room/Cabin name")) else "Cabin"
+            "type": "Hotel" if "Room" in str(r.get("Room/Cabin name")) else "Cabin",
+            "description": str(r.get("Room/Cabin description") or "")
         }
 
         level_1["rooms"].append(room_obj)

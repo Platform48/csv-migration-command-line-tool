@@ -176,21 +176,21 @@ PAT_COMPONENTS_PATH = "pat_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    "Location",
+    # "Location",
     "Ground Accom",
     "Ship Accom",
-    "ANT Ship Accom",
-    "Journeys",
-    "All Activities - For Upload",
-    "ANT Activities",
-    "All Transfers - For Upload",
-    "ANT Transfers",
-    "Excursions Package",
-    "Private Tours Package",
-    "All Inclusive Hotel Package",
-    "Multi-day Activity Package",
-    "PAT Cruise Packages ",
-    "ANT Cruise Packages",
+    # "ANT Ship Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "ANT Activities",
+    # "All Transfers - For Upload",
+    # "ANT Transfers",
+    # "Excursions Package",
+    # "Private Tours Package",
+    # "All Inclusive Hotel Package",
+    # "Multi-day Activity Package",
+    # "PAT Cruise Packages ",
+    # "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {
