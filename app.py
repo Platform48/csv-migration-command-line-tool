@@ -176,21 +176,21 @@ PAT_COMPONENTS_PATH = "pat_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    # "Location",
+    "Location",
     "Ground Accom",
     "Ship Accom",
-    # "ANT Ship Accom",
-    # "Journeys",
-    # "All Activities - For Upload",
-    # "ANT Activities",
-    # "All Transfers - For Upload",
-    # "ANT Transfers",
-    # "Excursions Package",
-    # "Private Tours Package",
-    # "All Inclusive Hotel Package",
-    # "Multi-day Activity Package",
-    # "PAT Cruise Packages ",
-    # "ANT Cruise Packages",
+    "ANT Ship Accom",
+    "Journeys",
+    "All Activities - For Upload",
+    "ANT Activities",
+    "All Transfers - For Upload",
+    "ANT Transfers",
+    "Excursions Package",
+    "Private Tours Package",
+    "All Inclusive Hotel Package",
+    "Multi-day Activity Package",
+    "PAT Cruise Packages ",
+    "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {
@@ -618,9 +618,7 @@ class CoreDataService:
         if component["destination"] == "antarctica":
             component["destination"] = "antarctic"
         pregenerated_id = generate_component_id(component)
-        self.headers["x-datadog-trace-id"] = str(int(random.getrandbits(63)))
-        self.headers["x-datadog-parent-id"] = str(int(random.getrandbits(63)))
-        self.headers["x-datadog-sampling-priority"] = "1"
+
         url = ""
         try:
             if pregenerated_id:
@@ -641,9 +639,7 @@ class CoreDataService:
         # 🔄 Retry with PUT if enabled
         if overwrite_on_fail and pregenerated_id:
 
-            self.headers["x-datadog-trace-id"] = str(int(random.getrandbits(63)))
-            self.headers["x-datadog-parent-id"] = str(int(random.getrandbits(63)))
-            self.headers["x-datadog-sampling-priority"] = "1"
+
 
             print(f"🔁 POST failed for row {idx+1}, retrying with PATCH ...")
             try:

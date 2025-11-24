@@ -148,7 +148,7 @@ def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
                 partner_map.get(destination_override or get_stripped(row, "destination") or "Patagonia", {}).get(p.strip()) or p.strip()
                 for p in get_stripped(row, "Partner").split(",")
                 if p.strip()
-            ] or ["NA"]
+            ]
         ),
         "regions": regions,
         "name": get_stripped(row, "name") or "Untitled",

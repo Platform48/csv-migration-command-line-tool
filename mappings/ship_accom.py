@@ -187,7 +187,7 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
                 partner_map.get(destination_override or get_stripped(row, "Destination") or "Patagonia", {}).get(p.strip()) or p.strip()
                 for p in get_stripped(row, "Partners").split(",")
                 if p.strip()
-            ] or ["NA"]
+            ]
         ),
         "regions": regions,
         "name": get_stripped(row, "Name") or "Untitled",

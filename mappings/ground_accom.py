@@ -202,7 +202,7 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
                 partner_map.get(destination_override or get_stripped(row, "destination") or "Patagonia", {}).get(p.strip()) or p.strip()
                 for p in get_stripped(row, "Partner").split(",")
                 if p.strip()
-            ] or ["NA"]
+            ]
         ),
         "regions": [r for r in regions if r],
         "name": get_stripped(row, "name") or "Untitled",
