@@ -177,20 +177,20 @@ COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
     "Location",
-    "Ground Accom",
-    "Ship Accom",
-    "ANT Ship Accom",
-    "Journeys",
-    "All Activities - For Upload",
-    "ANT Activities",
-    "All Transfers - For Upload",
-    "ANT Transfers",
-    "Excursions Package",
-    "Private Tours Package",
-    "All Inclusive Hotel Package",
-    "Multi-day Activity Package",
-    "PAT Cruise Packages ",
-    "ANT Cruise Packages",
+    # "Ground Accom",
+    # "Ship Accom",
+    # "ANT Ship Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "ANT Activities",
+    # "All Transfers - For Upload",
+    # "ANT Transfers",
+    # "Excursions Package",
+    # "Private Tours Package",
+    # "All Inclusive Hotel Package",
+    # "Multi-day Activity Package",
+    # "PAT Cruise Packages ",
+    # "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {
@@ -348,18 +348,20 @@ def filter_components_for_upload(components, template_type):
 
 
 def run_loop():
-    print("🔁 XLSX Validator and Migration App (Ctrl+C or type 'exit' to quit)")
+    log_file = setup_logging()
+    logging.info("🔁 Starting XLSX Validator and Migration")
     
-    # Load existing cache and clear session missing references
+    tracker = MigrationTracker()
+    tracker.start()
+    
     load_component_cache()
     clear_missing_references_session()
-
     partner_map = get_partners()
 
     try:
         while True:
             if not os.path.exists(COMPONENTS_PATH):
-                print("❌ File not found.")
+                logging.error("❌ File not found.")
                 continue
 
             try:
@@ -368,18 +370,16 @@ def run_loop():
                     wb = openpyxl.load_workbook(path, read_only=False, data_only=True)
                     return [ws.title for ws in wb.worksheets if ws.sheet_state == "visible"]
 
-                # Example usage
                 visible_sheets = get_visible_sheets(COMPONENTS_PATH)
-                print("Visible sheets:", visible_sheets)
+                logging.info(f"Visible sheets: {visible_sheets}")
 
-                # Load only those into pandas
                 xls = pd.read_excel(COMPONENTS_PATH, sheet_name=visible_sheets, dtype=str)
                 
                 def dedup_columns(columns):
                     seen = {}
                     new_cols = []
-                    for col in list(columns):  # force left-to-right list iteration
-                        col = str(col)  # flatten tuples if MultiIndex
+                    for col in list(columns):
+                        col = str(col)
                         if col not in seen:
                             seen[col] = 1
                             new_cols.append(col)
@@ -388,46 +388,47 @@ def run_loop():
                             new_cols.append(f"{col}.{seen[col]}")
                     return new_cols
 
-                # Store auxiliary data for later use
                 auxiliary_data = {}
 
                 for sheet, df_sheet in xls.items():
                     df_sheet.columns = dedup_columns(df_sheet.columns)
-                    # print(f"Columns for {sheet}:")
-                    # for i, col in enumerate(df_sheet.columns):
-                    #     print(i, repr(col))
-
                     df_sheet = df_sheet.iloc[1:].reset_index(drop=True)
                     xls[sheet] = df_sheet
                     
-                    # Store auxiliary data separately
                     if sheet in AUXILIARY_SHEETS:
                         auxiliary_data[sheet] = df_sheet
-                        print(f"📋 Stored auxiliary data for {sheet}: {len(df_sheet)} rows")
+                        logging.info(f"📋 Stored auxiliary data for {sheet}: {len(df_sheet)} rows")
                 
             except Exception as e:
-                print(f"❌ Error reading Excel file: {e}")
+                logging.error(f"❌ Error reading Excel file: {e}", exc_info=True)
                 continue
 
             for sheet_name in SHEET_PROCESS_ORDER:
                 if sheet_name not in xls:
-                    continue  # skip missing sheets
+                    continue
+                
+                sheet_start = datetime.now()
                 df = xls[sheet_name]
-
-                print(f"\n📄 Processing Sheet: {sheet_name}")
-
+                
+                logging.info(f"📄 Processing Sheet: {sheet_name} ({len(df)} rows)")
+                
+                # Initialize sheet summary
+                tracker.sheets[sheet_name] = SheetSummary(
+                    sheet_name=sheet_name,
+                    total_rows=len(df)
+                )
+            
                 template_ids = SHEET_TEMPLATE_MAP[sheet_name]
                 row_mapper = SHEET_ROW_MAPPERS[sheet_name]
-                core_data_service = CoreDataService(template_ids)
+                core_data_service = CoreDataService(template_ids, tracker=tracker, sheet_name=sheet_name)
 
                 schemas = core_data_service.getSchemaWithArrayLevel()
                 
-                # Prepare auxiliary data for this sheet
                 rooms_data_for_sheet = None
                 if "Rooms Cabins" in auxiliary_data:
                     if sheet_name in AUXILIARY_SHEETS["Rooms Cabins"]:
                         rooms_data_for_sheet = auxiliary_data["Rooms Cabins"]
-                        print(f"🏨 Including {len(rooms_data_for_sheet)} rooms for {sheet_name} processing")           
+                        logging.info(f"🏨 Including {len(rooms_data_for_sheet)} rooms for {sheet_name} processing")           
                 
                 try:
                     destination_override = SHEET_DESTINATION_OVERRIDE.get(sheet_name, None)
@@ -445,54 +446,100 @@ def run_loop():
                                 "row_name": row.get("name", "Untitled")
                             },
                             row_index=row_index,
-                            rooms_data=rooms_data_for_sheet,  # Pass auxiliary data to mapper
+                            rooms_data=rooms_data_for_sheet,
                             partner_map=partner_map,
                             destination_override=destination_override
-                        )
+                        ),
+                        tracker=tracker,
+                        sheet_name=sheet_name
                     )
+                    
+                    # Track validation results
+                    for r in results:
+                        if not r["valid"]:
+                            for error in r["errors"]:
+                                tracker.add_sheet_result(RowResult(
+                                    sheet_name=sheet_name,
+                                    row_number=r["row"],
+                                    component_name=error.get("component_name", "Unknown"),
+                                    status=OperationStatus.VALIDATION_ERROR,
+                                    error_details=error
+                                ))
+                                logging.warning(f"Validation error at row {r['row']}: {error.get('message', 'Unknown error')}")
+                        
                 except Exception as e:
-                    print(f"❌ Validation error in '{sheet_name}': {e}")
+                    logging.error(f"❌ Validation error in '{sheet_name}': {e}", exc_info=True)
+                    tracker.add_sheet_result(RowResult(
+                        sheet_name=sheet_name,
+                        row_number=0,
+                        component_name="Sheet Validation",
+                        status=OperationStatus.VALIDATION_ERROR,
+                        error_details={"message": str(e), "type": type(e).__name__}
+                    ))
                     continue
 
                 invalid = [r for r in results if not r["valid"]]
                 if invalid:
-                    print(f"\n❌ Validation failed for sheet '{sheet_name}' on the following rows:")
-                    for r in invalid:
+                    logging.error(f"\n❌ Validation failed for sheet '{sheet_name}' on {len(invalid)} rows")
+                    for r in invalid[:5]:  # Log first 5 errors
                         for err in r["errors"]:
-                            print(f"  - {err}")
-                    print("Please correct the above before retry.")
+                            logging.error(f"  Row {r['row']}: {err}")
+                    if len(invalid) > 5:
+                        logging.error(f"  ... and {len(invalid) - 5} more errors")
                     continue
 
-                print(f"\n✅ All rows in sheet '{sheet_name}' are valid!")
+                logging.info(f"✅ All rows in sheet '{sheet_name}' are valid!")
                 
-                # Get template type for caching - use the component's actual templateId
-                # We'll determine this from the first component since they should all have the same templateId
                 template_type = "unknown"
                 if parsed_json:
                     component_template_id = parsed_json[0].get("templateId")
                     template_type = TEMPLATE_TYPES.get(component_template_id, "unknown")
                     if template_type == "unknown":
-                        print(f"⚠️ Warning: Unknown template type for templateId: {component_template_id}")
+                        logging.warning(f"⚠️ Unknown template type for templateId: {component_template_id}")
                 
-                # Filter components based on cache
+                # Filter components and track cached ones
                 components_to_upload, cached_components = filter_components_for_upload(
                     parsed_json, template_type
                 )
                 
+                # Track cached components
+                for cached in cached_components:
+                    tracker.add_sheet_result(RowResult(
+                        sheet_name=sheet_name,
+                        row_number=0,  # We don't have row numbers here
+                        component_name=cached['name'],
+                        component_id=cached['id'],
+                        status=OperationStatus.CACHED,
+                        template_type=template_type
+                    ))
+                
                 if not components_to_upload:
-                    print(f"🎉 All components in '{sheet_name}' already exist in cache. Skipping upload.")
+                    logging.info(f"🎉 All components in '{sheet_name}' already exist in cache. Skipping upload.")
+                    sheet_duration = (datetime.now() - sheet_start).total_seconds()
+                    tracker.sheets[sheet_name].duration_seconds = sheet_duration
                     continue
+                    
                 insert = ""
-                if FORCE_REUPLOAD: insert = "y"
-                else: insert = input(f"Upload {len(components_to_upload)} new/changed components from '{sheet_name}'? (y/n): ").strip().lower()
+                if FORCE_REUPLOAD: 
+                    insert = "y"
+                else: 
+                    insert = input(f"Upload {len(components_to_upload)} new/changed components from '{sheet_name}'? (y/n): ").strip().lower()
+                    
                 if insert == "y":
                     push = ""
-                    if FORCE_REUPLOAD: push = "y"
-                    else: push = input("Confirm upload to database? (y/n): ").strip().lower()
+                    if FORCE_REUPLOAD: 
+                        push = "y"
+                    else: 
+                        push = input("Confirm upload to database? (y/n): ").strip().lower()
+                        
                     if push == "y":
-                        print("🛜 Calling API ...")
-                        # Upload only new/changed components
-                        newly_uploaded = core_data_service.pushValidRowToDB(components_to_upload, template_type)
+                        logging.info("🛜 Calling API ...")
+                        
+                        # Upload and track results
+                        newly_uploaded = core_data_service.pushValidRowToDB(
+                            components_to_upload, 
+                            template_type
+                        )
                         
                         # Update cache with newly uploaded components
                         for component in newly_uploaded:
@@ -500,33 +547,75 @@ def run_loop():
                             component_hash = generate_component_hash(component)
                             COMPONENT_HASH_CACHE[f"{template_type}:{name}"] = component_hash
                         
-                        # Save updated cache
                         save_component_cache()
                         
-                        print(f"✅ {len(components_to_upload)} new components uploaded from '{sheet_name}'.")
-                        print(f"♻️  {len(cached_components)} components were reused from cache.")
+                        logging.info(f"✅ {len(newly_uploaded)} new components uploaded from '{sheet_name}'.")
+                        logging.info(f"♻️  {len(cached_components)} components were reused from cache.")
                     else:
-                        print("⏩ Skipping database insert.")
+                        logging.info("⏩ Skipping database insert.")
+                        # Track as skipped
+                        for component in components_to_upload:
+                            tracker.add_sheet_result(RowResult(
+                                sheet_name=sheet_name,
+                                row_number=0,
+                                component_name=component.get('name', 'Untitled'),
+                                status=OperationStatus.UPLOAD_ERROR,
+                                error_details={"message": "Upload cancelled by user"}
+                            ))
+                
+                sheet_duration = (datetime.now() - sheet_start).total_seconds()
+                tracker.sheets[sheet_name].duration_seconds = sheet_duration
+                logging.info(f"✅ Sheet '{sheet_name}' completed in {sheet_duration:.2f}s")
 
             upload_dummy_components()
-
-            # Save missing references log after processing all sheets
             save_missing_references_log()
             
-            print(f"\n📋 Session Summary:")
-            print(f"Final Component ID Map Statistics: {len(COMPONENT_ID_MAP)} total components")
+            # End tracking and generate reports
+            tracker.end()
+            
+            # Generate and display text report
+            report = tracker.generate_report()
+            print("\n" + "=" * 80)
+            print(report)
+            logging.info("\n" + report)
+            
+            # Save JSON report
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            json_report_path = f"logs/migration_report_{timestamp}.json"
+            tracker.export_to_json(json_report_path)
+            logging.info(f"📊 Detailed JSON report saved to: {json_report_path}")
+            
+            # Save HTML report
+            html_report_path = f"logs/migration_report_{timestamp}.html"
+            tracker.export_to_html(html_report_path)
+            logging.info(f"📊 HTML report saved to: {html_report_path}")
+            
+            # Summary stats
+            logging.info(f"\n📋 Final Statistics:")
+            logging.info(f"   Component ID Map: {len(COMPONENT_ID_MAP)} total components")
             by_type = {}
             for (template_type, name), comp_id in COMPONENT_ID_MAP.items():
                 by_type[template_type] = by_type.get(template_type, 0) + 1
             
-            for template_type, count in by_type.items():
-                print(f"  {template_type}: {count} components")
-            print(f"\n{get_missing_references_summary()}")
-            print("✅ All sheets processed.")
+            for template_type, count in sorted(by_type.items()):
+                logging.info(f"   {template_type}: {count} components")
+            
+            logging.info(f"\n{get_missing_references_summary()}")
+            logging.info("✅ All sheets processed successfully.")
             break
 
     except KeyboardInterrupt:
-        print("\n👋 Exiting the app. Goodbye!")
+        logging.warning("\n👋 Migration interrupted by user")
+        tracker.end()
+        # Still generate reports on interrupt
+        report = tracker.generate_report()
+        print(report)
+    except Exception as e:
+        logging.error(f"💥 Fatal error in main loop: {e}", exc_info=True)
+        tracker.end()
+    finally:
+        save_component_cache()
+
 
 def upload_dummy_components():
     
@@ -576,16 +665,23 @@ def upload_dummy_components():
     cds.pushValidRowToDB([independent_arrangement], "Independent Arrangement")
 
 
+import json
+import requests
+from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from tracker import MigrationTracker, OperationStatus, RowResult, SheetSummary
+
 class CoreDataService:
-    def __init__(self, template_ids):
+    def __init__(self, template_ids, tracker=None, sheet_name=None):
         self.template_ids = template_ids
         self.service_url = 'https://data-api-dev.swoop-adventures.com'
         self.headers = {
             "Authorization": "Bearer supercoolamazingtoken",
         }
+        self.tracker = tracker
+        self.sheet_name = sheet_name
 
     def _fetch_schema(self, template_id):
-        url = f"{self.service_url}/core-data-service/v1/template/{template_id}"
         url = f"{self.service_url}/core-data-service/v1/template/{template_id}"
         try:
             res = requests.get(url, headers=self.headers)
@@ -610,80 +706,167 @@ class CoreDataService:
             schemas.append(schema)
         return schemas
 
-
     def _upload_component(self, component, template_type, idx, overwrite_on_fail=True):
-        if component["name"] == "Untitled":
-            print("Skipping Untitles or Empty row")
+        start_time = datetime.now()
+        component_name = component.get("name", "Untitled")
+        
+        if component_name == "Untitled":
+            print("Skipping Untitled or Empty row")
+            if self.tracker and self.sheet_name:
+                self.tracker.add_sheet_result(RowResult(
+                    sheet_name=self.sheet_name,
+                    row_number=idx + 2,
+                    component_name=component_name,
+                    status=OperationStatus.UPLOAD_ERROR,
+                    error_details={"message": "Skipped: Untitled component"},
+                    template_type=template_type
+                ))
             return None
+            
         if component["destination"] == "antarctica":
             component["destination"] = "antarctic"
+        
         pregenerated_id = generate_component_id(component)
 
         url = ""
         try:
             if pregenerated_id:
                 url = f"{self.service_url}/core-data-service/v1/component/{pregenerated_id}"
-                url = f"{self.service_url}/core-data-service/v1/component/{pregenerated_id}"
                 res = requests.post(url, json=component, headers=self.headers)
             else:
-                url = f"{self.service_url}/core-data-service/v1/component"
                 url = f"{self.service_url}/core-data-service/v1/component"
                 res = requests.post(url, json=component, headers=self.headers)
         except Exception as e:
             print(f"❌ Request failed for row {idx+1}: {e}")
+            if self.tracker and self.sheet_name:
+                duration_ms = (datetime.now() - start_time).total_seconds() * 1000
+                self.tracker.add_sheet_result(RowResult(
+                    sheet_name=self.sheet_name,
+                    row_number=idx + 2,
+                    component_name=component_name,
+                    status=OperationStatus.UPLOAD_ERROR,
+                    error_details={"message": f"Request failed: {str(e)}", "type": type(e).__name__},
+                    duration_ms=duration_ms,
+                    template_type=template_type
+                ))
             return None
 
         if res.status_code in [200, 201, 202]:
-            return self._process_success_response(res, component, template_type, idx)
+            duration_ms = (datetime.now() - start_time).total_seconds() * 1000
+            result = self._process_success_response(res, component, template_type, idx, duration_ms)
+            return result
 
-        # 🔄 Retry with PUT if enabled
+        # 🔄 Retry with PATCH if enabled
         if overwrite_on_fail and pregenerated_id:
-
-
-
             print(f"🔁 POST failed for row {idx+1}, retrying with PATCH ...")
             try:
-                del component['templateId']
-                del component['name']
-                del component['orgId']
+                component_copy = component.copy()
+                component_copy.pop('templateId', None)
+                component_copy.pop('name', None)
+                component_copy.pop('orgId', None)
 
-                put_res = requests.patch(url, json=component, headers=self.headers)
-                if put_res.status_code in [200, 201, 202]:
-                    return self._process_success_response(put_res, component, template_type, idx)
+                patch_res = requests.patch(url, json=component_copy, headers=self.headers)
+                if patch_res.status_code in [200, 201, 202]:
+                    duration_ms = (datetime.now() - start_time).total_seconds() * 1000
+                    return self._process_success_response(patch_res, component, template_type, idx, duration_ms)
                 else:
+                    error_msg = None
                     try:
-                        print(f"❌ PUT also failed for row {idx+1}. Error: {put_res.json()}")
+                        error_msg = patch_res.json()
                     except Exception:
-                        print(f"❌ PUT also failed for row {idx+1}. HTTzP Status: {put_res.status_code}")
+                        error_msg = f"HTTP {patch_res.status_code}"
+                    print(f"❌ PATCH also failed for row {idx+1}. Error: {error_msg}")
+                    
+                    if self.tracker and self.sheet_name:
+                        duration_ms = (datetime.now() - start_time).total_seconds() * 1000
+                        self.tracker.add_sheet_result(RowResult(
+                            sheet_name=self.sheet_name,
+                            row_number=idx + 2,
+                            component_name=component_name,
+                            status=OperationStatus.UPLOAD_ERROR,
+                            error_details={"message": f"PATCH failed: {error_msg}", "status_code": patch_res.status_code},
+                            duration_ms=duration_ms,
+                            template_type=template_type
+                        ))
             except Exception as e:
-                print(f"❌ PUT request failed for row {idx+1}: {e}")
+                print(f"❌ PATCH request failed for row {idx+1}: {e}")
+                if self.tracker and self.sheet_name:
+                    duration_ms = (datetime.now() - start_time).total_seconds() * 1000
+                    self.tracker.add_sheet_result(RowResult(
+                        sheet_name=self.sheet_name,
+                        row_number=idx + 2,
+                        component_name=component_name,
+                        status=OperationStatus.UPLOAD_ERROR,
+                        error_details={"message": f"PATCH exception: {str(e)}", "type": type(e).__name__},
+                        duration_ms=duration_ms,
+                        template_type=template_type
+                    ))
 
         # ❌ Complete failure
+        error_msg = None
         try:
-            print(f"❌ Failed to upload row {idx+1}. Error: {res.json()}")
+            error_msg = res.json()
         except Exception:
-            print(f"❌ Failed to upload row {idx+1}. HTTP Status: {res.status_code}")
+            error_msg = f"HTTP {res.status_code}"
+        print(f"❌ Failed to upload row {idx+1}. Error: {error_msg}")
+        
+        if self.tracker and self.sheet_name:
+            duration_ms = (datetime.now() - start_time).total_seconds() * 1000
+            self.tracker.add_sheet_result(RowResult(
+                sheet_name=self.sheet_name,
+                row_number=idx + 2,
+                component_name=component_name,
+                status=OperationStatus.UPLOAD_ERROR,
+                error_details={"message": f"Upload failed: {error_msg}", "status_code": res.status_code},
+                duration_ms=duration_ms,
+                template_type=template_type
+            ))
         return None
 
-    def _process_success_response(self, res, component, template_type, idx):
-        """Helper to handle successful POST/PUT responses"""
+    def _process_success_response(self, res, component, template_type, idx, duration_ms):
+        """Helper to handle successful POST/PATCH responses"""
+        
+        component_name = component.get("name", "Untitled")
+        
         try:
             data = res.json()
             comp_id = data.get("id")
-            comp_name = component.get("name")
             template_id = component.get("templateId")
 
-            if comp_id and comp_name and template_id:
-                COMPONENT_ID_MAP[(template_type, comp_name)] = comp_id
-                print(f"✅ Row {idx+1} - ({template_type}, {comp_name}) -> {comp_id}")
+            if comp_id and component_name and template_id:
+                COMPONENT_ID_MAP[(template_type, component_name)] = comp_id
+                print(f"✅ Row {idx+1} - ({template_type}, {component_name}) -> {comp_id}")
                 component['id'] = comp_id
+                
+                # Track successful upload
+                if self.tracker and self.sheet_name:
+                    self.tracker.add_sheet_result(RowResult(
+                        sheet_name=self.sheet_name,
+                        row_number=idx + 2,
+                        component_name=component_name,
+                        component_id=comp_id,
+                        status=OperationStatus.SUCCESS,
+                        duration_ms=duration_ms,
+                        template_type=template_type
+                    ))
+                
                 return component
         except Exception as e:
             print(f"⚠️ Could not parse returned ID for row {idx+1}: {e}")
+            if self.tracker and self.sheet_name:
+                self.tracker.add_sheet_result(RowResult(
+                    sheet_name=self.sheet_name,
+                    row_number=idx + 2,
+                    component_name=component_name,
+                    status=OperationStatus.UPLOAD_ERROR,
+                    error_details={"message": f"Failed to parse response: {str(e)}"},
+                    duration_ms=duration_ms,
+                    template_type=template_type
+                ))
         return None
 
-
     def pushValidRowToDB(self, components, template_type, max_workers=10):
+        
         if DEBUG_MODE:
             print(f"📝 DEBUG MODE ON: Writing {len(components)} components to {DEBUG_OUTPUT_FILE}")
             with open(DEBUG_OUTPUT_FILE, "a", encoding="utf-8") as f:
@@ -705,6 +888,27 @@ class CoreDataService:
                     uploaded_components.append(result)
 
         return uploaded_components
+
+import logging
+from datetime import datetime
+
+# Setup logging configuration
+def setup_logging():
+    log_dir = "logs"
+    os.makedirs(log_dir, exist_ok=True)
+    
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_file = f"{log_dir}/migration_{timestamp}.log"
+    
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s | %(levelname)-8s | %(message)s',
+        handlers=[
+            logging.FileHandler(log_file, encoding='utf-8'),
+            logging.StreamHandler()  # Also print to console
+        ]
+    )
+    return log_file
 
 if __name__ == "__main__":
     run_loop()

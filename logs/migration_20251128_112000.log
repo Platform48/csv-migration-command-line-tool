@@ -1,0 +1,15 @@
+2025-11-28 11:20:00,987 | INFO     | 🔁 Starting XLSX Validator and Migration
+2025-11-28 11:20:21,696 | INFO     | Visible sheets: ['Journeys', 'Ground Accom', 'Location', 'Hotels Emergency Contact Info', 'Rooms Cabins', 'All Activities - For Upload', 'All Transfers - For Upload', 'PAT Cruise Packages ', 'ANT Cruise Packages', 'Excursions Package', 'Transfers - Atacama DesertEaste', 'LG and CL Activities - for Uplo', 'LG Hikes (David)', 'Private Tours Package', 'All Inclusive Hotel Package', 'Multi-day Activity Package', 'Region', 'Ship Accom', 'ANT Ship Accom', 'ANT Activities', 'ANT Transfers']
+2025-11-28 11:20:40,372 | INFO     | 📋 Stored auxiliary data for Rooms Cabins: 1281 rows
+2025-11-28 11:20:40,378 | INFO     | 📄 Processing Sheet: Location (1257 rows)
+2025-11-28 11:20:55,283 | INFO     | ✅ All rows in sheet 'Location' are valid!
+2025-11-28 11:20:55,408 | INFO     | 🛜 Calling API ...
+2025-11-28 11:20:55,410 | ERROR    | 💥 Fatal error in main loop: No module named 'main'
+Traceback (most recent call last):
+  File "C:\Users\caleb\Documents\Platform48\csv-migration-command-line-tool\app.py", line 539, in run_loop
+    newly_uploaded = core_data_service.pushValidRowToDB(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb\Documents\Platform48\csv-migration-command-line-tool\app.py", line 871, in pushValidRowToDB
+    from main import DEBUG_MODE, DEBUG_OUTPUT_FILE  # Import here
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'main'
