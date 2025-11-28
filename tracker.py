@@ -134,16 +134,69 @@ class MigrationTracker:
         return "\n".join(lines)
     
     def export_to_json(self, filepath: str):
-        """Export detailed results to JSON for further analysis"""
+        """Export detailed results to JSON for further analysis with field completeness stats"""
         data = {
             "start_time": self.start_time.isoformat() if self.start_time else None,
             "end_time": self.end_time.isoformat() if self.end_time else None,
             "duration_seconds": (self.end_time - self.start_time).total_seconds() 
-                               if self.start_time and self.end_time else None,
-            "sheets": {}
+                                if self.start_time and self.end_time else None,
+            "sheets": {},
+            "overall_field_completeness": {}
         }
-        
+
+        # Fields to check
+        fields_to_check = [
+            "description.web",
+            "description.quote",
+            "description.final",
+            "destination",
+            "tripId",
+            "partners",
+            "regions",
+            "media.images",
+            "package"
+        ]
+
+        # Overall counters
+        overall_counts = {f: 0 for f in fields_to_check}
+        overall_total_rows = 0
+
+        def get_nested_value(obj, path):
+            """Utility to get nested value from dict using dot notation"""
+            keys = path.split(".")
+            val = obj
+            for k in keys:
+                if isinstance(val, dict):
+                    val = val.get(k)
+                else:
+                    return None
+            return val
+
         for sheet_name, summary in self.sheets.items():
+            sheet_counts = {f: 0 for f in fields_to_check}
+            sheet_total_rows = len(summary.rows)
+            overall_total_rows += sheet_total_rows
+
+            for r in summary.rows:
+                comp = r.component or {}
+                for f in fields_to_check:
+                    val = get_nested_value(comp, f)
+                    # Special handling for lists
+                    if isinstance(val, list):
+                        if val:
+                            sheet_counts[f] += 1
+                            overall_counts[f] += 1
+                    # Check truthy values
+                    elif val not in (None, "", {}):
+                        sheet_counts[f] += 1
+                        overall_counts[f] += 1
+
+            # Per-sheet completeness percentages
+            sheet_completeness = {
+                f: (sheet_counts[f] / sheet_total_rows * 100 if sheet_total_rows else 0)
+                for f in fields_to_check
+            }
+
             data["sheets"][sheet_name] = {
                 "total_rows": summary.total_rows,
                 "success_count": summary.success_count,
@@ -152,6 +205,7 @@ class MigrationTracker:
                 "upload_errors": summary.upload_errors,
                 "mapping_errors": summary.mapping_errors,
                 "success_rate": summary.success_rate(),
+                "field_completeness": sheet_completeness,
                 "rows": [
                     {
                         "row_number": r.row_number,
@@ -160,12 +214,19 @@ class MigrationTracker:
                         "component_id": r.component_id,
                         "error_details": r.error_details,
                         "duration_ms": r.duration_ms,
-                        "template_type": r.template_type,
-                        "component": r.component,
+                        # "template_type": r.template_type,
+                        # "component": r.component,
                     }
                     for r in summary.rows
                 ]
             }
-        
+
+        # Overall completeness percentages
+        overall_field_completeness = {
+            f: (overall_counts[f] / overall_total_rows * 100 if overall_total_rows else 0)
+            for f in fields_to_check
+        }
+        data["overall_field_completeness"] = overall_field_completeness
+
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
