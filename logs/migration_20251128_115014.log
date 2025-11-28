@@ -1,0 +1,15 @@
+2025-11-28 11:50:14,189 | INFO     | 🔁 Starting XLSX Validator and Migration
+2025-11-28 11:50:35,098 | INFO     | Visible sheets: ['Journeys', 'Ground Accom', 'Location', 'Hotels Emergency Contact Info', 'Rooms Cabins', 'All Activities - For Upload', 'All Transfers - For Upload', 'PAT Cruise Packages ', 'ANT Cruise Packages', 'Excursions Package', 'Transfers - Atacama DesertEaste', 'LG and CL Activities - for Uplo', 'LG Hikes (David)', 'Private Tours Package', 'All Inclusive Hotel Package', 'Multi-day Activity Package', 'Region', 'Ship Accom', 'ANT Ship Accom', 'ANT Activities', 'ANT Transfers']
+2025-11-28 11:50:53,819 | INFO     | 📋 Stored auxiliary data for Rooms Cabins: 1281 rows
+2025-11-28 11:50:53,823 | INFO     | 📄 Processing Sheet: Location (1257 rows)
+2025-11-28 11:51:05,051 | INFO     | ✅ All rows in sheet 'Location' are valid!
+2025-11-28 11:51:05,053 | INFO     | 🛜 Calling API ...
+2025-11-28 11:51:05,053 | ERROR    | 💥 Fatal error in main loop: 'list' object has no attribute 'items'
+Traceback (most recent call last):
+  File "C:\Users\caleb\Documents\Platform48\csv-migration-command-line-tool\app.py", line 573, in run_loop
+    with Live(renderable=render_live(), refresh_per_second=5, console=console) as live:
+                         ^^^^^^^^^^^^^
+  File "C:\Users\caleb\Documents\Platform48\csv-migration-command-line-tool\app.py", line 48, in render_live
+    for task_id, task in progress.tasks.items():
+                         ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'items'

@@ -21,6 +21,7 @@ class RowResult:
     error_details: Optional[Dict] = None
     duration_ms: Optional[float] = None
     template_type: Optional[str] = None
+    component: Optional[Dict] = None
 
 @dataclass
 class SheetSummary:
@@ -159,7 +160,8 @@ class MigrationTracker:
                         "component_id": r.component_id,
                         "error_details": r.error_details,
                         "duration_ms": r.duration_ms,
-                        "template_type": r.template_type
+                        "template_type": r.template_type,
+                        "component": r.component,
                     }
                     for r in summary.rows
                 ]

@@ -3,13 +3,15 @@ import json
 import random
 import hashlib
 import requests
+import warnings
 import openpyxl
+warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 import pandas as pd
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from mappings.cruise_activity import map_cruise_activity_component
 from validate_csv_dynamic import validate_csv
-from utils import save_missing_references_log, clear_missing_references_session, get_missing_references_summary, ts_print
+from utils import save_missing_references_log, clear_missing_references_session, get_missing_references_summary
 from mappings.activity import map_activity_component
 from mappings.location import map_location_component
 from mappings.ground_accom import map_ground_accommodation_component
@@ -22,6 +24,18 @@ from mappings.all_inclusive_hotels import map_all_inclusive_hotels_component
 from mappings.multi_day_activity import map_multi_day_activity_component
 from mappings.cruise import map_cruise_component
 from mappings.ship_accom import map_ship_accommodation_component
+
+
+from collections import deque
+import threading
+
+
+log_lock = threading.Lock()
+
+def ts_print(msg):
+    with log_lock:
+        print(msg)
+
 
 DEBUG_MODE = False
 FORCE_REUPLOAD = True
@@ -347,7 +361,6 @@ def filter_components_for_upload(components, template_type):
 
 
 def run_loop():
-    log_file = setup_logging()
     logging.info("🔁 Starting XLSX Validator and Migration")
     
     tracker = MigrationTracker()
@@ -408,7 +421,6 @@ def run_loop():
                 
                 sheet_start = datetime.now()
                 df = xls[sheet_name]
-                
                 logging.info(f"📄 Processing Sheet: {sheet_name} ({len(df)} rows)")
                 
                 # Initialize sheet summary
@@ -462,7 +474,8 @@ def run_loop():
                                     row_number=r["row"],
                                     component_name=error.get("component_name", "Unknown"),
                                     status=OperationStatus.VALIDATION_ERROR,
-                                    error_details=error
+                                    error_details=error,
+                                    component={}
                                 ))
                                 logging.warning(f"Validation error at row {r['row']}: {error.get('message', 'Unknown error')}")
                         
@@ -473,7 +486,8 @@ def run_loop():
                         row_number=0,
                         component_name="Sheet Validation",
                         status=OperationStatus.VALIDATION_ERROR,
-                        error_details={"message": str(e), "type": type(e).__name__}
+                        error_details={"message": str(e), "type": type(e).__name__},
+                        component={}
                     ))
                     continue
 
@@ -500,7 +514,6 @@ def run_loop():
                 components_to_upload, cached_components = filter_components_for_upload(
                     parsed_json, template_type
                 )
-                
                 # Track cached components
                 for cached in cached_components:
                     tracker.add_sheet_result(RowResult(
@@ -509,7 +522,8 @@ def run_loop():
                         component_name=cached['name'],
                         component_id=cached['id'],
                         status=OperationStatus.CACHED,
-                        template_type=template_type
+                        template_type=template_type,
+                        component={}
                     ))
                 
                 if not components_to_upload:
@@ -533,7 +547,6 @@ def run_loop():
                         
                     if push == "y":
                         logging.info("🛜 Calling API ...")
-                        
                         # Upload and track results
                         newly_uploaded = core_data_service.pushValidRowToDB(
                             components_to_upload, 
@@ -559,7 +572,8 @@ def run_loop():
                                 row_number=0,
                                 component_name=component.get('name', 'Untitled'),
                                 status=OperationStatus.UPLOAD_ERROR,
-                                error_details={"message": "Upload cancelled by user"}
+                                error_details={"message": "Upload cancelled by user"},
+                                component=component
                             ))
                 
                 sheet_duration = (datetime.now() - sheet_start).total_seconds()
@@ -584,10 +598,10 @@ def run_loop():
             tracker.export_to_json(json_report_path)
             logging.info(f"📊 Detailed JSON report saved to: {json_report_path}")
             
-            # Save HTML report
-            html_report_path = f"logs/migration_report_{timestamp}.html"
-            tracker.export_to_html(html_report_path)
-            logging.info(f"📊 HTML report saved to: {html_report_path}")
+            # # Save HTML report
+            # html_report_path = f"logs/migration_report_{timestamp}.html"
+            # tracker.export_to_html(html_report_path)
+            # logging.info(f"📊 HTML report saved to: {html_report_path}")
             
             # Summary stats
             logging.info(f"\n📋 Final Statistics:")
@@ -718,7 +732,8 @@ class CoreDataService:
                     component_name=component_name,
                     status=OperationStatus.UPLOAD_ERROR,
                     error_details={"message": "Skipped: Untitled component"},
-                    template_type=template_type
+                    template_type=template_type,
+                    component=component
                 ))
             return None
 
@@ -783,7 +798,8 @@ class CoreDataService:
                 status=OperationStatus.UPLOAD_ERROR,
                 error_details={"message": f"Upload failed: {final_error}"},
                 duration_ms=duration_ms,
-                template_type=template_type
+                template_type=template_type,
+                component=component
             ))
 
         return None
@@ -812,7 +828,8 @@ class CoreDataService:
                         component_id=comp_id,
                         status=OperationStatus.SUCCESS,
                         duration_ms=duration_ms,
-                        template_type=template_type
+                        template_type=template_type,
+                        component=component
                     ))
                 
                 return component
@@ -826,33 +843,31 @@ class CoreDataService:
                     status=OperationStatus.UPLOAD_ERROR,
                     error_details={"message": f"Failed to parse response: {str(e)}"},
                     duration_ms=duration_ms,
-                    template_type=template_type
+                    template_type=template_type,
+                    component=component
                 ))
         return None
 
     def pushValidRowToDB(self, components, template_type, max_workers=10):
-        
-        if DEBUG_MODE:
-            ts_print(f"📝 DEBUG MODE ON: Writing {len(components)} components to {DEBUG_OUTPUT_FILE}")
-            with open(DEBUG_OUTPUT_FILE, "a", encoding="utf-8") as f:
-                for comp in components:
-                    f.write(json.dumps(comp, ensure_ascii=False) + "\n")
-            return components
-
         uploaded_components = []
+
+
+        def upload_and_update(comp_idx, comp):
+            result = self._upload_component(comp, template_type, comp_idx)
+            return result
 
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             future_to_idx = {
-                executor.submit(self._upload_component, comp, template_type, idx): idx
+                executor.submit(upload_and_update, idx, comp): idx
                 for idx, comp in enumerate(components)
             }
-
             for future in as_completed(future_to_idx):
                 result = future.result()
                 if result:
                     uploaded_components.append(result)
 
         return uploaded_components
+
 
 import logging
 from datetime import datetime

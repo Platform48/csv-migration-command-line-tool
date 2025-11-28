@@ -1,0 +1,21 @@
+2025-11-28 11:59:04,678 | INFO     | 🔁 Starting XLSX Validator and Migration
+2025-11-28 11:59:24,472 | INFO     | Visible sheets: ['Journeys', 'Ground Accom', 'Location', 'Hotels Emergency Contact Info', 'Rooms Cabins', 'All Activities - For Upload', 'All Transfers - For Upload', 'PAT Cruise Packages ', 'ANT Cruise Packages', 'Excursions Package', 'Transfers - Atacama DesertEaste', 'LG and CL Activities - for Uplo', 'LG Hikes (David)', 'Private Tours Package', 'All Inclusive Hotel Package', 'Multi-day Activity Package', 'Region', 'Ship Accom', 'ANT Ship Accom', 'ANT Activities', 'ANT Transfers']
+2025-11-28 11:59:42,760 | INFO     | 📋 Stored auxiliary data for Rooms Cabins: 1281 rows
+2025-11-28 11:59:42,765 | INFO     | 📄 Processing Sheet: Location (1257 rows)
+2025-11-28 11:59:54,166 | INFO     | ✅ All rows in sheet 'Location' are valid!
+2025-11-28 11:59:54,166 | INFO     | 🛜 Calling API ...
+2025-11-28 11:59:54,218 | ERROR    | 💥 Fatal error in main loop: Only one live display may be active at once
+Traceback (most recent call last):
+  File "C:\Users\caleb\Documents\Platform48\csv-migration-command-line-tool\app.py", line 582, in run_loop
+    newly_uploaded = core_data_service.pushValidRowToDB(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb\Documents\Platform48\csv-migration-command-line-tool\app.py", line 888, in pushValidRowToDB
+    with Live(render_live(), refresh_per_second=5, console=console) as live:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caleb\AppData\Local\Programs\Python\Python312\Lib\site-packages\rich\live.py", line 166, in __enter__
+    self.start(refresh=self._renderable is not None)
+  File "C:\Users\caleb\AppData\Local\Programs\Python\Python312\Lib\site-packages\rich\live.py", line 113, in start
+    self.console.set_live(self)
+  File "C:\Users\caleb\AppData\Local\Programs\Python\Python312\Lib\site-packages\rich\console.py", line 835, in set_live
+    raise errors.LiveError("Only one live display may be active at once")
+rich.errors.LiveError: Only one live display may be active at once

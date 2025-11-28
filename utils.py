@@ -2,16 +2,6 @@ import json
 import math
 import pandas as pd
 
-import threading
-
-print_lock = threading.Lock()
-
-def ts_print(*args, **kwargs):
-    """Thread-safe print"""
-    with print_lock:
-        print(*args, **kwargs)
-
-
 def printTemplateList(template_list):
     for idx, t in enumerate(template_list):
         json_schema = json.loads(t['jsonSchema'])
