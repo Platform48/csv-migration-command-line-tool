@@ -680,7 +680,7 @@
     "location:Catarpe": "4cca9c221122601462c58e9861943d2b",
     "location:Cerro Benitez": "282e6f090cf829b3bc4dc5cd93369b3a",
     "location:Cerro Avanzado Bay": "f466c6156c86c62cdd5361261b60ade7",
-    "location:Cerro Bandera": "2eb9163ef0c2d32a64efe4c5d3b4e280",
+    "location:Cerro Bandera": "54c9fed758d75421e3a4c033efe041ad",
     "location:Catedral de Marmol": "8fd75b9d4ba37385b5b8e11235ce793d",
     "location:Cerro Bonete (5,004m)": "d628a0fb87027337ac83d05b742fffa7",
     "location:Cerro Bastión": "a1d32bd2647f3fd36527a80f18d22070",
@@ -1107,7 +1107,7 @@
     "location:Río Chico Camp": "f20c47987f7a7948026c328a1bf0d881",
     "location:Rio Chimehuin": "c78e3d9d6db719b3669d6e1f661f219b",
     "location:Rio Futaleufu": "9f22b7fe4af47b4b32f94e44bf6c939a",
-    "location:Rio Grande": "d408ca718609483b11e02e8d53ea63d8",
+    "location:Rio Grande": "2a04a2a772b44304f8643024c40e6735",
     "location:Rio Gallegos Airport (RGL)": "04c7dce1c5f6495e627258ef3395bbf8",
     "location:Rio Gallegos": "9e1e44452480165d0d1662fcf12b5642",
     "location:Rio Manso": "99b90a2b67fd40fa8d1fd47b7d9a42f5",
@@ -1227,6 +1227,6 @@
     "location:Laguna Nimez": "ac45b14d53a3e4e85f50253e61dce433",
     "location:Isla de Los Estados": "cd7b2b66346691dbc8e1ffa14baad287"
   },
-  "last_updated": "2025-11-28T11:26:45.262020",
+  "last_updated": "2025-11-28T11:44:17.608210",
   "total_components": 612
 }

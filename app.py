@@ -9,8 +9,7 @@ from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from mappings.cruise_activity import map_cruise_activity_component
 from validate_csv_dynamic import validate_csv
-from utils import save_missing_references_log, clear_missing_references_session, get_missing_references_summary
-
+from utils import save_missing_references_log, clear_missing_references_session, get_missing_references_summary, ts_print
 from mappings.activity import map_activity_component
 from mappings.location import map_location_component
 from mappings.ground_accom import map_ground_accommodation_component
@@ -238,14 +237,14 @@ def load_component_cache():
                 COMPONENT_ID_MAP = {eval(k) if k.startswith('(') else k: v 
                                    for k, v in COMPONENT_ID_MAP.items()}
                 
-                print(f"📥 Loaded {len(COMPONENT_ID_MAP)} component mappings from cache")
+                ts_print(f"📥 Loaded {len(COMPONENT_ID_MAP)} component mappings from cache")
                 
         except Exception as e:
-            print(f"⚠️ Error loading cache: {e}. Starting with empty cache.")
+            ts_print(f"⚠️ Error loading cache: {e}. Starting with empty cache.")
             COMPONENT_ID_MAP = {}
             COMPONENT_HASH_CACHE = {}
     else:
-        print("📝 No cache file found. Starting with empty cache.")
+        ts_print("📝 No cache file found. Starting with empty cache.")
 
 
 def save_component_cache():
@@ -264,10 +263,10 @@ def save_component_cache():
         with open(COMPONENT_CACHE_FILE, 'w', encoding='utf-8') as f:
             json.dump(cache_data, f, indent=2, ensure_ascii=False)
             
-        print(f"💾 Saved {len(COMPONENT_ID_MAP)} component mappings to cache")
+        ts_print(f"💾 Saved {len(COMPONENT_ID_MAP)} component mappings to cache")
         
     except Exception as e:
-        print(f"⚠️ Error saving cache: {e}")
+        ts_print(f"⚠️ Error saving cache: {e}")
 
 
 def generate_component_hash(component_data):
@@ -304,7 +303,7 @@ def check_component_exists(template_type, name, component_data):
     cache_key = (template_type, name)
     
     if FORCE_REUPLOAD:
-        print(f"🔁 Force re-upload enabled for: {name}")
+        ts_print(f"🔁 Force re-upload enabled for: {name}")
         return False, COMPONENT_ID_MAP.get(cache_key)
     
     if cache_key not in COMPONENT_ID_MAP:
@@ -315,10 +314,10 @@ def check_component_exists(template_type, name, component_data):
     cached_hash = COMPONENT_HASH_CACHE.get(f"{template_type}:{name}")
     
     if cached_hash == current_hash:
-        print(f"♻️  Using cached component: {name} (ID: {component_id})")
+        ts_print(f"♻️  Using cached component: {name} (ID: {component_id})")
         return True, component_id
     else:
-        print(f"🔄 Component changed, will re-upload: {name}")
+        ts_print(f"🔄 Component changed, will re-upload: {name}")
         return False, component_id
 
 
@@ -340,9 +339,9 @@ def filter_components_for_upload(components, template_type):
         else:
             components_to_upload.append(component)
     
-    print(f"📊 Upload Summary:")
-    print(f"   • Cached (skipping): {len(cached_components)}")
-    print(f"   • New/Changed (uploading): {len(components_to_upload)}")
+    ts_print(f"📊 Upload Summary:")
+    ts_print(f"   • Cached (skipping): {len(cached_components)}")
+    ts_print(f"   • New/Changed (uploading): {len(components_to_upload)}")
     
     return components_to_upload, cached_components
 
@@ -575,8 +574,8 @@ def run_loop():
             
             # Generate and display text report
             report = tracker.generate_report()
-            print("\n" + "=" * 80)
-            print(report)
+            ts_print("\n" + "=" * 80)
+            ts_print(report)
             logging.info("\n" + report)
             
             # Save JSON report
@@ -609,7 +608,7 @@ def run_loop():
         tracker.end()
         # Still generate reports on interrupt
         report = tracker.generate_report()
-        print(report)
+        ts_print(report)
     except Exception as e:
         logging.error(f"💥 Fatal error in main loop: {e}", exc_info=True)
         tracker.end()
@@ -688,7 +687,7 @@ class CoreDataService:
             res.raise_for_status()
             response = res.json()
         except Exception as e:
-            print(f"⚠️ Failed fetching schema for {template_id}: {e}")
+            ts_print(f"⚠️ Failed fetching schema for {template_id}: {e}")
             return {}
 
         schema_str = response.get("validationSchemas", {}).get("componentSchema")
@@ -696,7 +695,7 @@ class CoreDataService:
             try:
                 return json.loads(schema_str)
             except Exception as e:
-                print(f"⚠️ Failed parsing schema for {template_id}: {e}")
+                ts_print(f"⚠️ Failed parsing schema for {template_id}: {e}")
         return {}
 
     def getSchemaWithArrayLevel(self):
@@ -711,7 +710,7 @@ class CoreDataService:
         component_name = component.get("name", "Untitled")
         
         if component_name == "Untitled":
-            print("Skipping Untitled or Empty row")
+            ts_print("Skipping Untitled or Empty row")
             if self.tracker and self.sheet_name:
                 self.tracker.add_sheet_result(RowResult(
                     sheet_name=self.sheet_name,
@@ -722,13 +721,14 @@ class CoreDataService:
                     template_type=template_type
                 ))
             return None
-            
+
         if component["destination"] == "antarctica":
             component["destination"] = "antarctic"
-        
-        pregenerated_id = generate_component_id(component)
 
+        pregenerated_id = generate_component_id(component)
         url = ""
+        final_error = None  # <- keep the last failure here
+
         try:
             if pregenerated_id:
                 url = f"{self.service_url}/core-data-service/v1/component/{pregenerated_id}"
@@ -737,28 +737,16 @@ class CoreDataService:
                 url = f"{self.service_url}/core-data-service/v1/component"
                 res = requests.post(url, json=component, headers=self.headers)
         except Exception as e:
-            print(f"❌ Request failed for row {idx+1}: {e}")
-            if self.tracker and self.sheet_name:
-                duration_ms = (datetime.now() - start_time).total_seconds() * 1000
-                self.tracker.add_sheet_result(RowResult(
-                    sheet_name=self.sheet_name,
-                    row_number=idx + 2,
-                    component_name=component_name,
-                    status=OperationStatus.UPLOAD_ERROR,
-                    error_details={"message": f"Request failed: {str(e)}", "type": type(e).__name__},
-                    duration_ms=duration_ms,
-                    template_type=template_type
-                ))
-            return None
+            final_error = f"Request failed: {e}"
+            res = None
 
-        if res.status_code in [200, 201, 202]:
+        # Success on POST
+        if res and res.status_code in [200, 201, 202]:
             duration_ms = (datetime.now() - start_time).total_seconds() * 1000
-            result = self._process_success_response(res, component, template_type, idx, duration_ms)
-            return result
+            return self._process_success_response(res, component, template_type, idx, duration_ms)
 
-        # 🔄 Retry with PATCH if enabled
-        if overwrite_on_fail and pregenerated_id:
-            print(f"🔁 POST failed for row {idx+1}, retrying with PATCH ...")
+        # Retry with PATCH
+        if overwrite_on_fail and pregenerated_id and res is not None:
             try:
                 component_copy = component.copy()
                 component_copy.pop('templateId', None)
@@ -770,46 +758,22 @@ class CoreDataService:
                     duration_ms = (datetime.now() - start_time).total_seconds() * 1000
                     return self._process_success_response(patch_res, component, template_type, idx, duration_ms)
                 else:
-                    error_msg = None
                     try:
-                        error_msg = patch_res.json()
-                    except Exception:
-                        error_msg = f"HTTP {patch_res.status_code}"
-                    print(f"❌ PATCH also failed for row {idx+1}. Error: {error_msg}")
-                    
-                    if self.tracker and self.sheet_name:
-                        duration_ms = (datetime.now() - start_time).total_seconds() * 1000
-                        self.tracker.add_sheet_result(RowResult(
-                            sheet_name=self.sheet_name,
-                            row_number=idx + 2,
-                            component_name=component_name,
-                            status=OperationStatus.UPLOAD_ERROR,
-                            error_details={"message": f"PATCH failed: {error_msg}", "status_code": patch_res.status_code},
-                            duration_ms=duration_ms,
-                            template_type=template_type
-                        ))
+                        final_error = patch_res.json()
+                    except:
+                        final_error = f"PATCH HTTP {patch_res.status_code}"
             except Exception as e:
-                print(f"❌ PATCH request failed for row {idx+1}: {e}")
-                if self.tracker and self.sheet_name:
-                    duration_ms = (datetime.now() - start_time).total_seconds() * 1000
-                    self.tracker.add_sheet_result(RowResult(
-                        sheet_name=self.sheet_name,
-                        row_number=idx + 2,
-                        component_name=component_name,
-                        status=OperationStatus.UPLOAD_ERROR,
-                        error_details={"message": f"PATCH exception: {str(e)}", "type": type(e).__name__},
-                        duration_ms=duration_ms,
-                        template_type=template_type
-                    ))
+                final_error = f"PATCH exception: {e}"
 
-        # ❌ Complete failure
-        error_msg = None
-        try:
-            error_msg = res.json()
-        except Exception:
-            error_msg = f"HTTP {res.status_code}"
-        print(f"❌ Failed to upload row {idx+1}. Error: {error_msg}")
-        
+        # FINAL FAILURE — only tracked once
+        if final_error is None and res is not None:
+            try:
+                final_error = res.json()
+            except:
+                final_error = f"HTTP {res.status_code}"
+
+        ts_print(f"❌ Failed to upload row {idx+1}. Error: {final_error}")
+
         if self.tracker and self.sheet_name:
             duration_ms = (datetime.now() - start_time).total_seconds() * 1000
             self.tracker.add_sheet_result(RowResult(
@@ -817,12 +781,13 @@ class CoreDataService:
                 row_number=idx + 2,
                 component_name=component_name,
                 status=OperationStatus.UPLOAD_ERROR,
-                error_details={"message": f"Upload failed: {error_msg}", "status_code": res.status_code},
+                error_details={"message": f"Upload failed: {final_error}"},
                 duration_ms=duration_ms,
                 template_type=template_type
             ))
-        return None
 
+        return None
+       
     def _process_success_response(self, res, component, template_type, idx, duration_ms):
         """Helper to handle successful POST/PATCH responses"""
         
@@ -835,7 +800,7 @@ class CoreDataService:
 
             if comp_id and component_name and template_id:
                 COMPONENT_ID_MAP[(template_type, component_name)] = comp_id
-                print(f"✅ Row {idx+1} - ({template_type}, {component_name}) -> {comp_id}")
+                ts_print(f"✅ Row {idx+1} - ({template_type}, {component_name}) -> {comp_id}")
                 component['id'] = comp_id
                 
                 # Track successful upload
@@ -852,7 +817,7 @@ class CoreDataService:
                 
                 return component
         except Exception as e:
-            print(f"⚠️ Could not parse returned ID for row {idx+1}: {e}")
+            ts_print(f"⚠️ Could not parse returned ID for row {idx+1}: {e}")
             if self.tracker and self.sheet_name:
                 self.tracker.add_sheet_result(RowResult(
                     sheet_name=self.sheet_name,
@@ -868,7 +833,7 @@ class CoreDataService:
     def pushValidRowToDB(self, components, template_type, max_workers=10):
         
         if DEBUG_MODE:
-            print(f"📝 DEBUG MODE ON: Writing {len(components)} components to {DEBUG_OUTPUT_FILE}")
+            ts_print(f"📝 DEBUG MODE ON: Writing {len(components)} components to {DEBUG_OUTPUT_FILE}")
             with open(DEBUG_OUTPUT_FILE, "a", encoding="utf-8") as f:
                 for comp in components:
                     f.write(json.dumps(comp, ensure_ascii=False) + "\n")
