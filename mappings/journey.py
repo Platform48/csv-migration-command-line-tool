@@ -10,7 +10,7 @@ def map_journey_component(row, template_ids, COMPONENT_ID_MAP, context=None, row
     """
     
     # --- Regions ---
-    regions = [map_region_name_to_id(get_stripped(row, "Region"))]
+    regions = [map_region_name_to_id(get_stripped(row, "regions"))]
     
     # --- Pricing ---
     price_val = None

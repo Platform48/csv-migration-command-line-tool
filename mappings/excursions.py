@@ -9,7 +9,7 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
     """
 
     # --- Regions ---
-    regions = [map_region_name_to_id(get_stripped(row, "regions"))]
+    regions = [map_region_name_to_id(get_stripped(row, "region"))]
 
     # --- Pricing ---
     price_val = None
