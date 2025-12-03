@@ -29,8 +29,9 @@ from mappings.ship_accom import map_ship_accommodation_component
 from collections import deque
 import threading
 
-ACCESS_TOKEN = "ya29.a0ATi6K2vRb2I8VAal5sq_4bracGg8p9j1oidtU7gezPtnn4RSi12vN8FxMpyWK4STo-RZKP-pvi6VXSDcYaIMQZn4b5Soi6cSFJq3MlcfNsJyg52dozF5JoeD43gqZRdcHFJ-g3ILgBHwnU_s30Z04bJ_ZYS4YQYUbV3nE_z3upFKK5dtdnfFWc1raU6_kcNkIQiSN4RZ1MUaaCgYKAWYSARUSFQHGX2Mijbz70rnZcOfZYw9heZI5Zg0211"
-               
+ACCESS_TOKEN = ""
+
+
 log_lock = threading.Lock()
 
 def ts_print(msg):
