@@ -96,8 +96,8 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
                     package_span_items.append({
                         "componentId": comp_id or "component_00000000000000000000000000000000",
                         "allDay": True,
-                        "startTime":"",
-                        "endTime":""
+                        # "startTime":"",
+                        # "endTime":""
             
                     })
             
@@ -185,6 +185,6 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
         "package": {
             "spans": package_spans,
             "title": get_stripped(row, "name") or "NA",
-            "description": get_stripped(row, "Description - Quote"),
+            # "description": get_stripped(row, "Description - Quote"),
         },
     }

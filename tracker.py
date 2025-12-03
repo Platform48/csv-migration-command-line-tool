@@ -26,7 +26,6 @@ class RowResult:
 @dataclass
 class SheetSummary:
     sheet_name: str
-    total_rows: int
     success_count: int = 0
     cached_count: int = 0
     validation_errors: int = 0
@@ -34,6 +33,10 @@ class SheetSummary:
     mapping_errors: int = 0
     duration_seconds: float = 0
     rows: List[RowResult] = field(default_factory=list)
+
+    @property
+    def total_rows(self) -> int:
+        return len(self.rows)
     
     def add_result(self, result: RowResult):
         self.rows.append(result)
@@ -66,6 +69,7 @@ class MigrationTracker:
         self.end_time = datetime.now()
     
     def add_sheet_result(self, result: RowResult):
+        if result.component_name == "Untitled": return
         if result.sheet_name not in self.sheets:
             self.sheets[result.sheet_name] = SheetSummary(
                 sheet_name=result.sheet_name,

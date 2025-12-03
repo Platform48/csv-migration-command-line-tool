@@ -80,8 +80,8 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
                     package_span_items.append({
                         "componentId": comp_id or "component_00000000000000000000000000000000",
                         "allDay": True,
-                        "startTime":"",
-                        "endTime":""
+                        # "startTime":"",
+                        # "endTime":""
                     })
             
             comp_index += 1
@@ -163,6 +163,6 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
         "package": {
             "spans": package_spans,
             "title": get_stripped(row, "Name") or "NA",
-            "description": get_stripped(row, "Description - Quote"),
+            # "description": get_stripped(row, "Description - Quote"),
         },
     }

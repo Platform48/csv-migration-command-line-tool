@@ -9,7 +9,7 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
     """
 
     # --- Regions ---
-    regions = [map_region_name_to_id(get_stripped(row, "region"))]
+    regions = [map_region_name_to_id(get_stripped(row, "Region Tags"))]
 
     # --- Pricing ---
     # price_val = None
@@ -98,8 +98,8 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
                     package_span_items.append({
                         "componentId": comp_id or "component_00000000000000000000000000000000",
                         "allDay": True,
-                        "startTime":"",
-                        "endTime":""
+                        # "startTime":"",
+                        # "endTime":""
                     })
             
             comp_index += 1
@@ -135,8 +135,8 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
         package_span_items.append({
             "componentId": comp_id or "component_00000000000000000000000000000000",
             "allDay": True,
-            "startTime":"",
-            "endTime":""
+            # "startTime":"",
+            # "endTime":""
         })
 
         # Determine last day from existing spans
@@ -210,9 +210,9 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
         "templateId": template_ids[2],
         "isBookable": True,
         "description": {
-            "web": get_stripped(row, "Description") or "NA",
-            "quote": get_stripped(row, "Description") or "NA",
-            "final": get_stripped(row, "Description") or "NA"
+            "web": get_stripped(row, "Description") or "",
+            "quote": get_stripped(row, "Description") or "",
+            "final": get_stripped(row, "Description") or ""
         },
         "partners": (
             [
@@ -228,7 +228,7 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
         "package": {
             "spans": package_spans,
             "title": get_stripped(row, "Name") or "NA",
-            "description": get_stripped(row, "Description - Quote") or "NA",
+            # "description": get_stripped(row, "Description - Quote") or "NA",
             # "startDate":"2000-01-01T00:00:00Z",
             # "endDate":"2000-01-01T00:00:00Z",
             # "startDate": "2025-08-01T00:00:00Z",

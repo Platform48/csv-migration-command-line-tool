@@ -29,7 +29,8 @@ from mappings.ship_accom import map_ship_accommodation_component
 from collections import deque
 import threading
 
-
+ACCESS_TOKEN = "ya29.a0ATi6K2vRb2I8VAal5sq_4bracGg8p9j1oidtU7gezPtnn4RSi12vN8FxMpyWK4STo-RZKP-pvi6VXSDcYaIMQZn4b5Soi6cSFJq3MlcfNsJyg52dozF5JoeD43gqZRdcHFJ-g3ILgBHwnU_s30Z04bJ_ZYS4YQYUbV3nE_z3upFKK5dtdnfFWc1raU6_kcNkIQiSN4RZ1MUaaCgYKAWYSARUSFQHGX2Mijbz70rnZcOfZYw9heZI5Zg0211"
+               
 log_lock = threading.Lock()
 
 def ts_print(msg):
@@ -426,7 +427,6 @@ def run_loop():
                 # Initialize sheet summary
                 tracker.sheets[sheet_name] = SheetSummary(
                     sheet_name=sheet_name,
-                    total_rows=len(df)
                 )
             
                 template_ids = SHEET_TEMPLATE_MAP[sheet_name]
@@ -689,7 +689,7 @@ class CoreDataService:
         self.template_ids = template_ids
         self.service_url = 'https://data-api-dev.swoop-adventures.com'
         self.headers = {
-            "Authorization": "Bearer supercoolamazingtoken",
+            "Authorization": f"Bearer {ACCESS_TOKEN}",
         }
         self.tracker = tracker
         self.sheet_name = sheet_name

@@ -178,9 +178,9 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
         "templateId": template_ids[2],
         "isBookable": False,
         "description": {
-            "web": get_stripped(row, "Description") or "",
-            "quote": get_stripped(row, "Description") or "",
-            "final": get_stripped(row, "Description") or ""
+            "web": get_stripped(row, "Description") or get_stripped(row, "Ship overview (for Ship page)") or "",
+            "quote": get_stripped(row, "Description") or get_stripped(row, "Ship overview (for Ship page)") or "",
+            "final": get_stripped(row, "Description") or get_stripped(row, "Ship overview (for Ship page)") or "",
         },
         "partners": (
             [

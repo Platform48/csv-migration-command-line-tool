@@ -25,7 +25,8 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
     """
 
     # --- Regions ---
-    regions = [map_region_name_to_id(get_stripped(row, "Region"))]
+    region_names = get_stripped(row, "Region").split("\n")
+    regions = [map_region_name_to_id(r) for r in region_names]
 
     # --- Media ---
     images = get_stripped(row, "Trip Images").split(",")
@@ -100,8 +101,8 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
                     package_span_items.append({
                         "componentId": comp_id or "component_00000000000000000000000000000000",
                         "allDay": True,
-                        "startTime":"",
-                        "endTime":""
+                        # "startTime":"",
+                        # "endTime":""
                     })
             
             comp_index += 1
@@ -137,8 +138,8 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
         package_span_items.append({
             "componentId": comp_id or "component_00000000000000000000000000000000",
             "allDay": True,
-            "startTime":"",
-            "endTime":""
+            # "startTime":"",
+            # "endTime":""
         })
 
         # Determine last day from existing spans
@@ -267,7 +268,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
         "package": {
             "spans": package_spans,
             "title": get_stripped(row, "Name") or "NA",
-            "description": get_stripped(row, "Cruise Description"),
+            # "description": get_stripped(row, "Cruise Description"),
             # "startDate": "2025-08-01T00:00:00Z",
             # "endDate": "2025-08-10T00:00:00Z"
         },

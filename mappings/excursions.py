@@ -59,8 +59,8 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
         package_span_items.append( {
             "componentId": comp1_id,
             "allDay": True,
-            "startTime":"",
-            "endTime":""
+            # "startTime":"",
+            # "endTime":""
         })
 
     comp2_name = get_stripped(row, "Component 2")
@@ -82,8 +82,8 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
         package_span_items.append( {
             "componentId": comp2_id,
             "allDay": True,
-            "startTime":"",
-            "endTime":""
+            # "startTime":"",
+            # "endTime":""
         })
 
     comp3_name = get_stripped(row, "Component 3")
@@ -100,8 +100,8 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
         package_span_items.append( {
             "componentId": comp3_id,
             "allDay": True,
-            "startTime":"",
-            "endTime":""
+            # "startTime":"",
+            # "endTime":""
         })
 
     
@@ -157,9 +157,9 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
         "templateId": template_ids[2],
         "isBookable": True,
         "description": {
-            "web": get_stripped(row, "importantInformationWeb") or "",
-            "quote": get_stripped(row, "importantInformationQuote") or "",
-            "final": get_stripped(row, "importantInformationFinal") or ""
+            "web": get_stripped(row, "Description - Quote") or "",
+            "quote": get_stripped(row, "Description - Quote") or "",
+            "final": get_stripped(row, "Description - Quote") or ""
         },
         "partners": (
             [
@@ -184,7 +184,7 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
                 },
             ],
             "title": get_stripped(row, "name") or "NA",
-            "description": get_stripped(row, "Description - Quote"),
+            # "description": get_stripped(row, "Description - Quote"),
             # "startDate": "2025-08-01T00:00:00Z",
             # "endDate": "2025-08-10T00:00:00Z"
         },
