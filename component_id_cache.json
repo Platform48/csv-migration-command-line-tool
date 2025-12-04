@@ -4855,7 +4855,8 @@
     "('cruise', 'Antarctica & Patagonia In Depth - 1 day less')": "component_f03727333bf8d42155d4d5d9c8fde95d",
     "('cruise', 'Quintessential Luxury Antarctic Fly & Sail')": "component_b7f14761ce340aff50b52a9270f23712",
     "('cruise', 'Classic Antarctica & South Shetlands')": "component_bbbbfd68f66c0996178d77a774ea2305",
-    "('cruise', 'Classic Antarctica & South Shetlands - 10 days')": "component_1d79ad287f1838e28ea11593ea8df93d"
+    "('cruise', 'Classic Antarctica & South Shetlands - 10 days')": "component_1d79ad287f1838e28ea11593ea8df93d",
+    "('Fee', 'Fee')": "component_eb7297e94e2cb86e90a6ead067666717"
   },
   "hash_cache": {
     "location:Ainsworth Bay": "e0f79b5c9f3aa84d2c577440ac1d1689",
@@ -9715,6 +9716,6 @@
     "cruise:Classic Antarctica & South Shetlands": "8f78c9a033b5b0f9fa93ebcc4e80a06a",
     "cruise:Classic Antarctica & South Shetlands - 10 days": "3bd391c517e9c84b9702c35f52305d49"
   },
-  "last_updated": "2025-12-03T17:38:56.500363",
-  "total_components": 4856
+  "last_updated": "2025-12-04T10:12:17.908733",
+  "total_components": 4857
 }

@@ -147,6 +147,10 @@ DUMMY_TEMPLATE_MAP = {
     "independent_arrangements": [
         "template_aca16a46ec3842ca85d182ee9348f627",
         "template_932b514e6d804e248bf04a9fa1f836de"
+    ],
+    "fee": [
+        "template_aca16a46ec3842ca85d182ee9348f627",
+        "template_fee81bfcc3b7461987a3728e57ca7363"  
     ]
 }
 
@@ -191,21 +195,21 @@ PAT_COMPONENTS_PATH = "pat_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    "Location",
-    "Ground Accom",
-    "Ship Accom",
-    "ANT Ship Accom",
-    "Journeys",
-    "All Activities - For Upload",
-    "ANT Activities",
-    "All Transfers - For Upload",
-    "ANT Transfers",
-    "Excursions Package",
-    "Private Tours Package",
-    "All Inclusive Hotel Package",
-    "Multi-day Activity Package",
-    "PAT Cruise Packages ",
-    "ANT Cruise Packages",
+    # "Location",
+    # "Ground Accom",
+    # "Ship Accom",
+    # "ANT Ship Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "ANT Activities",
+    # "All Transfers - For Upload",
+    # "ANT Transfers",
+    # "Excursions Package",
+    # "Private Tours Package",
+    # "All Inclusive Hotel Package",
+    # "Multi-day Activity Package",
+    # "PAT Cruise Packages ",
+    # "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {
@@ -640,7 +644,7 @@ def upload_dummy_components():
         {"templateId": DUMMY_TEMPLATE_MAP["flights"][0], "data": {}},
     ]
 
-    flight = {
+    base = {
         "orgId":"swoop",
         "destination":"patagonia",
         "state": "Draft",
@@ -662,7 +666,7 @@ def upload_dummy_components():
         },
         "componentFields": flight_component_fields,
     }
-    flight_copy = flight.copy()
+    flight_copy = base.copy()
     cds.pushValidRowToDB([flight_copy], "Flight")
 
     independent_arrangements_component_fields = [
@@ -670,7 +674,7 @@ def upload_dummy_components():
         {"templateId": DUMMY_TEMPLATE_MAP["independent_arrangements"][0], "data": {}},
     ]
 
-    independent_arrangement = flight
+    independent_arrangement = base.copy()
     independent_arrangement["name"] = "Independent Arrangement"
     independent_arrangement["templateId"] = DUMMY_TEMPLATE_MAP["independent_arrangements"][1]
     independent_arrangement["componentFields"] = independent_arrangements_component_fields
@@ -678,6 +682,18 @@ def upload_dummy_components():
     cds = CoreDataService(DUMMY_TEMPLATE_MAP["independent_arrangements"])
     cds.pushValidRowToDB([independent_arrangement], "Independent Arrangement")
 
+    fee_component_fields = [
+        {"templateId": DUMMY_TEMPLATE_MAP["fee"][1], "data": {}},
+        {"templateId": DUMMY_TEMPLATE_MAP["fee"][0], "data": {}},
+    ]
+
+    independent_arrangement = base.copy()
+    independent_arrangement["name"] = "Fee"
+    independent_arrangement["templateId"] = DUMMY_TEMPLATE_MAP["fee"][1]
+    independent_arrangement["componentFields"] = fee_component_fields
+    
+    cds = CoreDataService(DUMMY_TEMPLATE_MAP["fee"])
+    cds.pushValidRowToDB([independent_arrangement], "Fee")
 
 import json
 import requests
