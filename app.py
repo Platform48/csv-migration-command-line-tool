@@ -29,7 +29,7 @@ from mappings.ship_accom import map_ship_accommodation_component
 from collections import deque
 import threading
 
-ACCESS_TOKEN = "ya29.a0ATi6K2vra6o2QkDy00Lb3eoKmFH-tbjil-2JLHixi0i7hCPprumUbafWR0ptrhq8WScq6Ys0SsJ74EmYKiCbefxoRmmdT5Hy5TRks42cV4l0AI7stvq3YuYtNKImeUbSxTOP3dq2fwc435-2gr1hHXN4GoaZwaiP-j9uEtJrrkRdJXXXJOwK9qmVzndT8WAUYzU7heNk9NjHaCgYKAYMSARUSFQHGX2Mi6sEy5SABmKebWdYgVW1K9Q0211"
+ACCESS_TOKEN = "ya29.a0ATi6K2vYm5XW0WJwv3Ko8YNXi1qRrRXlsY_q5NpNe-WVTUV4dor4T2WY31I1pjtsDbVRbWgMjKr68MzbdmS_O3UmeyWnBcoUo8adjrT67_9O1vMnhp7OlyVkiTV-JY2cJAG-UMbRlM9wylXxuZYehoe0LD9fXPOEBkq_DoS_eyn5IB9UyTw6MpHgBLTxX2RwLO13C9ZK--iAOwaCgYKAToSARUSFQHGX2MiIjNddPzaY5hnZ3HLRHI8uA0213"
 
 
 log_lock = threading.Lock()
@@ -186,20 +186,20 @@ PAT_COMPONENTS_PATH = "pat_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    "Location",
-    "Ground Accom",
-    "Ship Accom",
-    "ANT Ship Accom",
-    "Journeys",
-    "All Activities - For Upload",
-    "ANT Activities",
-    "All Transfers - For Upload",
-    "ANT Transfers",
-    "Excursions Package",
-    "Private Tours Package",
-    "All Inclusive Hotel Package",
-    "Multi-day Activity Package",
-    "PAT Cruise Packages ",
+    # "Location",
+    # "Ground Accom",
+    # "Ship Accom",
+    # "ANT Ship Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "ANT Activities",
+    # "All Transfers - For Upload",
+    # "ANT Transfers",
+    # "Excursions Package",
+    # "Private Tours Package",
+    # "All Inclusive Hotel Package",
+    # "Multi-day Activity Package",
+    # "PAT Cruise Packages ",
     "ANT Cruise Packages",
 ]
 
@@ -751,6 +751,9 @@ class CoreDataService:
         pregenerated_id = generate_component_id(component)
         url = ""
         final_error = None  # <- keep the last failure here
+
+        if pregenerated_id == "component_233e8508350b0c88403302eb57f563c1":
+            pass
 
         try:
             if pregenerated_id:
