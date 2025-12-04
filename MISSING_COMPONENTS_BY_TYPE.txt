@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2025-12-03 17:38:56
+Generated: 2025-12-04 12:18:50
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
@@ -430,52 +430,143 @@ Missing Component                                                           | Oc
 
 TYPE: transfer
 --------------------------------------------------------------------------------
-Missing Component                                                       | Occurrences
---------------------------------------------------------------------------------------
-"Punta Arenas Airport to Hotel"                                         | 28
-"Punta Arenas Hotel to Airport"                                         | 21
-"Charter flight from King George Island to Punta Arenas"                | 11
-"Charter flight from Punta Arenas to King George Island"                | 9
-"Charter flight from Puerto Williams Airport to Santiago Airport"       | 8
-"Puerto Natales Airport to the hotel"                                   | 7
-"Puerto Natales hotel to the airport"                                   | 7
-"Punta Arenas Airport to your hotel"                                    | 6
-"Hotel to Punta Arenas Airport"                                         | 5
-"Puerto Williams Port to the airport"                                   | 5
-"Ushuaia port to the airport or town"                                   | 5
-"Charter flight from King George Island to Puerto Natales"              | 4
-"Charter Flight Punta Arenas to King George Island"                     | 4
-"Flight from Punta Arenas to Antarctica's Union Glacier Camp"           | 4
-"Puerto Williams Airport to the hotel"                                  | 4
-"The Cormorant at 55 South to Puerto Williams Airport"                  | 4
-"Charter flight from King George Island to Puerto Williams Airport"     | 3
-"Charter flight from Puerto Natales to King George Island"              | 3
-"Charter flight from Puerto Williams to King George Island"             | 3
-"Charter flight from Ushuaia to Buenos Aires"                           | 3
-"Charter Flight King George Island to Punta Arenas"                     | 3
-"Charter flight from Buenos Aires' Aeroparque/AEP Airport to Ushuaia"   | 2
-"Charter flight from Punta Arenas to Santiago Airport"                  | 2
-"Dunedin Airport to Hotel"                                              | 2
-"Dunedin Hotel to Port"                                                 | 2
-"Punta Arenas Port to Airport"                                          | 2
-"Awasi Atacama to El Tatio Geysers"                                     | 1
-"Beagle Channel Biking"                                                 | 1
-"Charter flight from King George Island to Punta Arenas Airport"        | 1
-"Charter flight from Punta Arenas Airport to Santiago"                  | 1
-"Charter flight from Ushuaia to Santiago"                               | 1
-"El Calafate Airport (FTE) to Explora El Chaltén Explora"               | 1
-"Explorers House to Punta Arenas Port"                                  | 1
-"Montevideo Airport to your hotel"                                      | 1
-"Montevideo hotel to the port"                                          | 1
-"Port of Bluff to Invergargill or Queenstown airports"                  | 1
-"Punta Arenas Airport to the hotel"                                     | 1
-"Punta Arenas hotel to the airport"                                     | 1
-"Punta Arenas port to the airport"                                      | 1
-"Punta Arenas Port to the city centre"                                  | 1
-"Punta Arenas to EcoCamp Cascada Driver Only"                           | 1
-"Punta Arenas to the airport"                                           | 1
-"Queenstown hotel to the Port of Bluff"                                 | 1
-"Ski aircraft flight from the South Pole to Union Glacier Camp"         | 1
+Missing Component                                                                | Occurrences
+-----------------------------------------------------------------------------------------------
+"Punta Arenas Airport to Hotel"                                                  | 28
+"Activity to Remota Lodge Remota Lodge"                                          | 24
+"Remota Lodge to Activity Remota Lodge"                                          | 24
+"Punta Arenas Hotel to Airport"                                                  | 21
+"Activity to Ushuaia Hotel H&T"                                                  | 18
+"Ushuaia Hotel to Activity H&T"                                                  | 18
+"El Chaltén Hotel to Activity H&T Driver Only"                                   | 15
+"Activity to El Chaltén Hotel H&T"                                               | 14
+"Activity to Tierra Atacama Tierra Guided"                                       | 11
+"Charter flight from King George Island to Punta Arenas"                         | 11
+"Tierra Patagonia to Activity Tierra"                                            | 11
+"Activity to Tierra Patagonia Tierra"                                            | 9
+"Charter flight from Punta Arenas to King George Island"                         | 9
+"Tierra Atacama to Activity Tierra Guided"                                       | 9
+"Airport EZE - Recoleta Hotels H&T Guided"                                       | 8
+"Buenos Aires Hotel to AEP Airport H&T Driver Only"                              | 8
+"Charter flight from Puerto Williams Airport to Santiago Airport"                | 8
+"Puerto Natales Airport to the hotel"                                            | 7
+"Puerto Natales hotel to the airport"                                            | 7
+"Flight to Buenos Aires' Ezeiza (EZE) Airport from Ushuaia"                      | 6
+"Punta Arenas Airport to your hotel"                                             | 6
+"Activity to Bariloche Andestrack Guided"                                        | 5
+"Bariloche to Activity Andestrack Guided"                                        | 5
+"Hotel to Punta Arenas Airport"                                                  | 5
+"Puerto Williams Port to the airport"                                            | 5
+"Remota Lodge to Puerto Natales Remota Lodge Driver Only"                        | 5
+"Ushuaia city centre to the port"                                                | 5
+"Ushuaia Pier to Ship"                                                           | 5
+"Ushuaia port to the airport or town"                                            | 5
+"Activity to Río Hermoso Lodge Andestrack"                                       | 4
+"Buenos Aires Hotel to Airport"                                                  | 4
+"Charter flight from King George Island to Puerto Natales"                       | 4
+"Charter Flight Punta Arenas to King George Island"                              | 4
+"Flight from Antarctica's Union Glacier Camp to Punta Arenas Airport"            | 4
+"Flight from Buenos Aires' Aeroparque/AEP Airport to Ushuaia"                    | 4
+"Flight from Punta Arenas to Antarctica's Union Glacier Camp"                    | 4
+"Puerto Williams Airport to the hotel"                                           | 4
+"Río Hermoso Lodge to Activity Andestrack"                                       | 4
+"The Cormorant at 55 South to Puerto Williams Airport"                           | 4
+"Beagle Channel to Errante Ecolodge Errante Ecolodge Driver Only"                | 3
+"Charter flight from King George Island to Puerto Williams Airport"              | 3
+"Charter flight from Puerto Natales to King George Island"                       | 3
+"Charter flight from Puerto Williams to King George Island"                      | 3
+"Charter flight from Ushuaia to Buenos Aires"                                    | 3
+"Charter Flight King George Island to Punta Arenas"                              | 3
+"IGR - Puerto Iguazú Hotel H&T Driver Only"                                      | 3
+"MDZ - Downtown Mendoza H&T Driver Only"                                         | 3
+"Activity to Errante Ecolodge Errante Ecolodge Driver Only"                      | 2
+"Balmaceda Camp to Puerto Bories Kayak en Patagonia Guided"                      | 2
+"Charter flight from Buenos Aires' Aeroparque/AEP Airport to Ushuaia"            | 2
+"Charter flight from Punta Arenas to Santiago Airport"                           | 2
+"Coyhaique to Balmaceda Airport (BBA) Senderos Patagonia Aysén"                  | 2
+"Dunedin Airport to Hotel"                                                       | 2
+"Dunedin Hotel to Port"                                                          | 2
+"Errante Ecolodge to Activity Errante Ecolodge Driver Only"                      | 2
+"Errante Ecolodge to Beagle Channel Errante Ecolodge Driver Only"                | 2
+"Lago Pehoé: Pudeto Dock to Paine Grande Dock Hotel Río Serrano"                 | 2
+"Lago Pehoé: Pudeto Dock to Paine Grande Dock Remota Lodge"                      | 2
+"Puerto Bories to Puerto Natales Kayak en Patagonia Guided"                      | 2
+"Puerto Iguazú Hotel - IGR H&T Driver Only"                                      | 2
+"Puerto Natales to Lago Grey Kayak en Patagonia"                                 | 2
+"Puerto Natales to Remota Lodge Remota Lodge Driver Only"                        | 2
+"Puerto Tranquilo to Coyhaique Senderos Patagonia Aysén"                         | 2
+"Punta Arenas Port to Airport"                                                   | 2
+"Ushuaia Airport to Port"                                                        | 2
+"Ushuaia Port to Hotel"                                                          | 2
+"Activity to Aguas Arriba Lodge Aguas Arriba Lodge"                              | 1
+"Activity to Cataratas/Puerto Iguazú Hotel H&T"                                  | 1
+"Activity to Puerto Iguazu (IGR) H&T"                                            | 1
+"AEP - San Antonio de Areco (Estancia La Bamba de Areco) H&T Driver Only"        | 1
+"AEP - San Miguel de Monte (Estancia La Bandada) H&T Driver Only"                | 1
+"Aguas Arriba Lodge to Activity Aguas Arriba Lodge"                              | 1
+"Altas Hike to Hotel Ultimo Paraiso Senderos Patagonia Aysén"                    | 1
+"Aviles Hike to Hotel Ultimo Paraiso Senderos Patagonia Aysén"                   | 1
+"Awasi Atacama to El Tatio Geysers"                                              | 1
+"Bariloche Airport (BRC) to Bariloche Andestrack Guided"                         | 1
+"Bariloche to Bariloche Airport (BRC) Andestrack Guided"                         | 1
+"Bariloche to Catedral Ski Center Andestrack Guided"                             | 1
+"Bariloche to Río Hermoso Lodge Andestrack"                                      | 1
+"Beagle Channel Biking"                                                          | 1
+"Calama Airport (CJC) to Tierra Atacama Tierra Driver Only"                      | 1
+"Cataratas/Puerto Iguazú Hotel to Activity H&T"                                  | 1
+"Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Airport (IGR) to Activity H&T"   | 1
+"Charter flight from Buenos Aires to Ushuaia Airport"                            | 1
+"Charter flight from King George Island to Punta Arenas Airport"                 | 1
+"Charter flight from Punta Arenas Airport to Santiago"                           | 1
+"Charter flight from Santiago to Punta Arenas Airport"                           | 1
+"Charter flight from Ushuaia to Santiago"                                        | 1
+"Cochrane to Coyhaique Senderos Patagonia Aysén"                                 | 1
+"Cochrane to Puerto Tranquilo Senderos Patagonia Aysén"                          | 1
+"Coyahique to Chile Chico Senderos Patagonia Aysén"                              | 1
+"El Calafate Airport (FTE) to Explora El Chaltén Explora"                        | 1
+"Errante EcoLodge to Omora Ethnobotanical Park Errante Ecolodge Driver Only"     | 1
+"Errante EcoLodge to Puerto Navarino Errante Ecolodge Driver Only"               | 1
+"Errante EcoLodge to Puerto Williams Errante Ecolodge Driver Only"               | 1
+"Explorers House to Punta Arenas Port"                                           | 1
+"Hotel Ultimo Paraiso to Altas Hike Senderos Patagonia Aysén"                    | 1
+"Hotel Ultimo Paraiso to Aviles Hike Senderos Patagonia Aysén"                   | 1
+"Lago Alto to Villa Cerro Castillo Senderos Patagonia Aysén"                     | 1
+"Lago Pehoé: Paine Grande Dock to Pudeto Dock Tierra Patagonia"                  | 1
+"Lago Pehoé: Pudeto Dock to Paine Grande Dock Tierra Patagonia"                  | 1
+"Mallín Colorado to Puerto Bertrand Senderos Patagonia Aysén"                    | 1
+"Montevideo Airport to your hotel"                                               | 1
+"Montevideo hotel to the port"                                                   | 1
+"Omora Ethnobotanical Park to Errante EcoLodge Errante Ecolodge Driver Only"     | 1
+"Port of Bluff to Invergargill or Queenstown airports"                           | 1
+"Puerto Betrand to Cochrane Senderos Patagonia Aysén"                            | 1
+"Puerto Iguazu (IGR) to Activity H&T"                                            | 1
+"Puerto Montt Airport (PMC) to Refugia Chiloe Refugia Chiloé"                    | 1
+"Puerto Natales to Cerro Guido Cerro Guido Driver Only"                          | 1
+"Puerto Natales to Serrano River Kayak en Patagonia Guided"                      | 1
+"Puerto Natales to Tierra Patagonia Tierra Driver Only"                          | 1
+"Puerto Natales to Tierra Patagonia Tierra Patagonia Driver Only"                | 1
+"Puerto Navarino to Errante EcoLodge Errante Ecolodge Driver Only"               | 1
+"Puerto Williams to Errante EcoLodge Errante Ecolodge Driver Only"               | 1
+"Punta Arenas Airport to the hotel"                                              | 1
+"Punta Arenas hotel to the airport"                                              | 1
+"Punta Arenas port to the airport"                                               | 1
+"Punta Arenas Port to the city centre"                                           | 1
+"Punta Arenas to EcoCamp Cascada Driver Only"                                    | 1
+"Punta Arenas to the airport"                                                    | 1
+"Queenstown hotel to the Port of Bluff"                                          | 1
+"Río Hermoso Lodge to Bariloche Andestrack"                                      | 1
+"San Antonio de Areco (Estancia La Bamba de Areco) - AEP H&T Driver Only"        | 1
+"San Martín de los Andes to the Auquinco Valley Andestrack"                      | 1
+"San Miguel de Monte (Estancia La Bandada) - AEP H&T Driver Only"                | 1
+"Ski aircraft flight from the emperor penguin rookery to Union Glacier Camp"     | 1
+"Ski aircraft flight from the South Pole to Union Glacier Camp"                  | 1
+"Ski aircraft flight from Union Glacier Camp to the emperor penguin rookery"     | 1
+"Ski aircraft flight from Union Glacier Camp to the South Pole"                  | 1
+"Tierra Atacama to Calama Airport (CJC) Tierra Driver Only"                      | 1
+"Tierra Patagonia to Puerto Natales Tierra Driver Only"                          | 1
+"Tierra Patagonia to Puerto Natales Tierra Patagonia Driver Only"                | 1
+"Trailhead on Ruta 77 to Bariloche Andestrack"                                   | 1
+"Villa Cerro Castillo to Lago Alto Senderos Patagonia Aysén"                     | 1
 
 TYPE: activity
 --------------------------------------------------------------------------------
@@ -503,28 +594,38 @@ Missing Component                      | Occurrences
 "Kosten Aike"                          | 10
 "Palladio Hotel"                       | 9
 "Villa Mansa"                          | 8
+"B&B and Cabins Cerro Castillo"        | 6
+"La Casa de Eugenia"                   | 6
+"Mallín Colorado Lodge"                | 6
 "Puerto Natales Hotel"                 | 6
 "Cabo de Hornos"                       | 5
+"Del Nómade Hosteria"                  | 5
 "Fitz Roy Comfort Camp"                | 5
 "Hotel Diego de Almagro"               | 5
 "Hotel Las Torres"                     | 5
+"Los Raices B&B"                       | 5
 "Refugio Cuernos"                      | 5
 "Refugio Grey"                         | 5
+"Alma del Lago"                        | 4
 "Eco Camp Carlos III"                  | 4
 "Hotel Rio Serrano"                    | 4
 "Laguna Toro wild campsite"            | 4
 "Refugio Central"                      | 4
 "Refugio Dickson"                      | 4
+"Río Hermoso Lodge"                    | 4
 "Bahía de los Tempanos wild camp"      | 3
 "Balmaceda Camp"                       | 3
 "Camping Perros"                       | 3
 "Estancia Cerro Guido"                 | 3
+"Estancia Rincón Chico"                | 3
 "Hosteria El Pilar"                    | 3
 "Hostería Yendegaia"                   | 3
+"Hotel Ultimo Paraíso"                 | 3
 "Torre Comfort Camp"                   | 3
 "Avellano Camp"                        | 2
 "Camping Serón"                        | 2
 "Casa Museo Alberto Baeriswyl"         | 2
+"Dazzler Puerto Madryn"                | 2
 "Dunedin Hotel"                        | 2
 "El Puesto"                            | 2
 "Estancia La Bandada"                  | 2
@@ -532,9 +633,11 @@ Missing Component                      | Occurrences
 "Hotel Capitan Eberhard"               | 2
 "Hotel El Barranco"                    | 2
 "Hotel Lago Grey"                      | 2
+"Hotel Las Marianas"                   | 2
 "La Casa Museo"                        | 2
 "La Casona"                            | 2
 "Lago Filo Hua Hum Camp"               | 2
+"Las Balsas Relais & Châteaux"         | 2
 "Los Hielos Inn"                       | 2
 "Los Renos Cabins"                     | 2
 "Palacio Astoreca"                     | 2
@@ -582,6 +685,7 @@ Missing Component                      | Occurrences
 "North Pass wild camp"                 | 1
 "North Valley wild camp"               | 1
 "Nunatak Domes"                        | 1
+"Peninsula Petit"                      | 1
 "Petrohué Lodge"                       | 1
 "Puesto La Rosada"                     | 1
 "Queenstown Hotel"                     | 1
@@ -596,6 +700,7 @@ Missing Component                      | Occurrences
 "Refugio Soto"                         | 1
 "Refugio Upsala"                       | 1
 "Reloncavi Fjord wild camp"            | 1
+"Remota Lodge"                         | 1
 "Río Aviles Camp"                      | 1
 "Seno Moyano wild camp"                | 1
 "Tyndall wild camp"                    | 1
@@ -605,13 +710,51 @@ Missing Component                      | Occurrences
 
 TYPE: excursion
 --------------------------------------------------------------------------------
-Missing Component                                          | Occurrences
--------------------------------------------------------------------------
-"Cerro Torre Viewpoint Half-day Hike Walk Patagonia"       | 2
-"El Tatio Geysers - Full Day Awasi"                        | 1
-"Lago del Desierto kayak and Hike Walk Patagonia"          | 1
-"Las Correntadas multisport Explora"                       | 1
-"Matetic Vineyard Exploration & Wine Tasting Southbound"   | 1
+Missing Component                                                           | Occurrences
+------------------------------------------------------------------------------------------
+"Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"        | 5
+"Iguazú Falls Tour (Brazilian side) H&T Argentina"                          | 4
+"Cerro Torre Viewpoint Half-day Hike Walk Patagonia"                        | 2
+"Half-day San Rafael Lagoon & Glacier Boat Trip Senderos Patagonia Aysén"   | 2
+"Laguna Cerro Castillo Hike Senderos Patagonia Aysén"                       | 2
+"Marble Caves kayaking from Puerto Tranquillo Senderos Patagonia Aysén"     | 2
+"Aguas Arriba to the Chilean Border Aguas Arriba Lodge"                     | 1
+"Atacama Salt Flats tour Tierra"                                            | 1
+"Baguales Fossil Trail Hike Tierra"                                         | 1
+"Baker River Rafting Senderos Patagonia Aysén"                              | 1
+"Base of the Towers Viewpoint Hike Remota Lodge"                            | 1
+"Base of the Towers Viewpoint Hike Tierra"                                  | 1
+"Cejar Lagoon Hike & Bathe Tierra"                                          | 1
+"Cerro Bellavista Hike Andestrack"                                          | 1
+"Cerro Carnero Hike Walk Patagonia / H&T"                                   | 1
+"Cerro Falkner Hike Andestrack"                                             | 1
+"Cerro Goye Hike Andestrack"                                                | 1
+"Colonia Suiza Mountain Biking Andestrack"                                  | 1
+"Córdoba Pass Biking Andestrack"                                            | 1
+"El Tatio Geysers - Full Day Awasi"                                         | 1
+"Estancia Lazo Horse Ride Tierra"                                           | 1
+"Estancia Los Rebaños Bike Ride Remota Lodge"                               | 1
+"Estero Parada Valley & Laguna Duff Senderos Patagonia Aysén"               | 1
+"Falkner Lake Biking Andestrack"                                            | 1
+"Fitz Roy Viewpoints from Lago del Desierto Hike Aguas Arriba Lodge"        | 1
+"Glacier Grey Boat Trip & Hike Tierra"                                      | 1
+"Glacier Grey Sailing; Touring the Paine Massif Tierra"                     | 1
+"Guatin Cactus Valley Hike Tierra"                                          | 1
+"Hike, Bike & Ride at Hotel Eolo Hotel Eolo"                                | 1
+"Kayak on Lake Machónico Andestrack"                                        | 1
+"Kayak on Lake Mascardi Andestrack"                                         | 1
+"Lago del Desierto kayak and Hike Walk Patagonia"                           | 1
+"Lago Grey Boat Trip Remota Lodge"                                          | 1
+"Lago Pehoé Boat Ride and French Valley Hike Tierra"                        | 1
+"Las Correntadas multisport Explora"                                        | 1
+"Los Perros Waterfall Hike Walk Patagonia / H&T"                            | 1
+"Matetic Vineyard Exploration & Wine Tasting Southbound"                    | 1
+"Nahuel Huapi Estancia Horse Riding Andestrack"                             | 1
+"Panoramic Tour of Bariloche Andestrack"                                    | 1
+"Patagonia Park - Day Hike (Tamango side) Senderos Patagonia Aysén"         | 1
+"Patagonia Park - Day Hike Senderos Patagonia Aysén"                        | 1
+"Purilactis Hike Tierra"                                                    | 1
+"Tatio Geysers Tierra"                                                      | 1
 
 TYPE: excursion (shared)
 --------------------------------------------------------------------------------

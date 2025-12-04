@@ -29,7 +29,7 @@ from mappings.ship_accom import map_ship_accommodation_component
 from collections import deque
 import threading
 
-ACCESS_TOKEN = ""
+ACCESS_TOKEN = "ya29.a0ATi6K2vra6o2QkDy00Lb3eoKmFH-tbjil-2JLHixi0i7hCPprumUbafWR0ptrhq8WScq6Ys0SsJ74EmYKiCbefxoRmmdT5Hy5TRks42cV4l0AI7stvq3YuYtNKImeUbSxTOP3dq2fwc435-2gr1hHXN4GoaZwaiP-j9uEtJrrkRdJXXXJOwK9qmVzndT8WAUYzU7heNk9NjHaCgYKAYMSARUSFQHGX2Mi6sEy5SABmKebWdYgVW1K9Q0211"
 
 
 log_lock = threading.Lock()
@@ -124,17 +124,8 @@ SHEET_TEMPLATE_MAP = {
 }
 
 SHEET_DESTINATION_OVERRIDE = {
-    # "Location": None,
-    # "Journeys": None,
-    # "Ground Accom": None,
     "Ship Accom": "Patagonia",
     "ANT Ship Accom": "Antarctica",
-    # "All Activities - For Upload": None,
-    # "All Transfers - For Upload": None,
-    # "Excursions Package": None,
-    # "Private Tours Package": None,
-    # "All Inclusive Hotel Package": None,
-    # "Multi-day Activity Package": None,
     "PAT Cruise Packages ": "Patagonia",
     "ANT Cruise Packages": "Antarctica",
 }
@@ -195,21 +186,21 @@ PAT_COMPONENTS_PATH = "pat_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    # "Location",
-    # "Ground Accom",
-    # "Ship Accom",
-    # "ANT Ship Accom",
-    # "Journeys",
-    # "All Activities - For Upload",
-    # "ANT Activities",
-    # "All Transfers - For Upload",
-    # "ANT Transfers",
-    # "Excursions Package",
-    # "Private Tours Package",
-    # "All Inclusive Hotel Package",
-    # "Multi-day Activity Package",
-    # "PAT Cruise Packages ",
-    # "ANT Cruise Packages",
+    "Location",
+    "Ground Accom",
+    "Ship Accom",
+    "ANT Ship Accom",
+    "Journeys",
+    "All Activities - For Upload",
+    "ANT Activities",
+    "All Transfers - For Upload",
+    "ANT Transfers",
+    "Excursions Package",
+    "Private Tours Package",
+    "All Inclusive Hotel Package",
+    "Multi-day Activity Package",
+    "PAT Cruise Packages ",
+    "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {
