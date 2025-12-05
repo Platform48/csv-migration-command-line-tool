@@ -94,13 +94,18 @@ def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
             "quote": get_stripped(row, "description") or "",
             "final": get_stripped(row, "description") or ""
         },
-        "partners": (
-            [
-                partner_map.get(destination_override or get_stripped(row, "destination") or "Patagonia", {}).get(p.strip()) or p.strip()
-                for p in get_stripped(row, "partner").split(",")
-                if p.strip()
+        "partners": [
+            partner_id
+            for p in get_stripped(row, "partner").split(",")
+            if p.strip()
+            for partner_id in [
+                partner_map.get(
+                    destination_override or get_stripped(row, "destination") or "Patagonia",
+                    {}
+                ).get(p.strip())
             ]
-        ),
+            if partner_id  # only include if found
+        ],
         "regions": [r for r in regions if r],  # filter out None values
         "name": get_stripped(row, "name") or "Untitled",
         "media": media,

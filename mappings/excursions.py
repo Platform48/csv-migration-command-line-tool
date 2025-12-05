@@ -161,13 +161,18 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
             "quote": get_stripped(row, "Description - Quote") or "",
             "final": get_stripped(row, "Description - Quote") or ""
         },
-        "partners": (
-            [
-                partner_map.get(destination_override or get_stripped(row, "Destination") or "Patagonia", {}).get(p.strip()) or p.strip()
-                for p in get_stripped(row, "Partner").split(",")
-                if p.strip()
+        "partners": [
+            partner_id
+            for p in get_stripped(row, "Partner").split(",")
+            if p.strip()
+            for partner_id in [
+                partner_map.get(
+                    destination_override or get_stripped(row, "Destination") or "Patagonia",
+                    {}
+                ).get(p.strip())
             ]
-        ),
+            if partner_id  # only include if found
+        ],
         "regions": [r for r in regions if r],  # filter out None values
         "name": get_stripped(row, "Code name") or "Untitled",
         "media": media,

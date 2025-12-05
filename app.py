@@ -29,7 +29,7 @@ from mappings.ship_accom import map_ship_accommodation_component
 from collections import deque
 import threading
 
-ACCESS_TOKEN = ""
+ACCESS_TOKEN = "ya29.a0ATi6K2vYm5XW0WJwv3Ko8YNXi1qRrRXlsY_q5NpNe-WVTUV4dor4T2WY31I1pjtsDbVRbWgMjKr68MzbdmS_O3UmeyWnBcoUo8adjrT67_9O1vMnhp7OlyVkiTV-JY2cJAG-UMbRlM9wylXxuZYehoe0LD9fXPOEBkq_DoS_eyn5IB9UyTw6MpHgBLTxX2RwLO13C9ZK--iAOwaCgYKAToSARUSFQHGX2MiIjNddPzaY5hnZ3HLRHI8uA0213"
 
 
 log_lock = threading.Lock()
@@ -124,17 +124,8 @@ SHEET_TEMPLATE_MAP = {
 }
 
 SHEET_DESTINATION_OVERRIDE = {
-    # "Location": None,
-    # "Journeys": None,
-    # "Ground Accom": None,
     "Ship Accom": "Patagonia",
     "ANT Ship Accom": "Antarctica",
-    # "All Activities - For Upload": None,
-    # "All Transfers - For Upload": None,
-    # "Excursions Package": None,
-    # "Private Tours Package": None,
-    # "All Inclusive Hotel Package": None,
-    # "Multi-day Activity Package": None,
     "PAT Cruise Packages ": "Patagonia",
     "ANT Cruise Packages": "Antarctica",
 }
@@ -147,6 +138,10 @@ DUMMY_TEMPLATE_MAP = {
     "independent_arrangements": [
         "template_aca16a46ec3842ca85d182ee9348f627",
         "template_932b514e6d804e248bf04a9fa1f836de"
+    ],
+    "fee": [
+        "template_aca16a46ec3842ca85d182ee9348f627",
+        "template_fee81bfcc3b7461987a3728e57ca7363"  
     ]
 }
 
@@ -191,8 +186,8 @@ PAT_COMPONENTS_PATH = "pat_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    "Location",
-    "Ground Accom",
+    # "Location",
+    # "Ground Accom",
     # "Ship Accom",
     # "ANT Ship Accom",
     # "Journeys",
@@ -205,7 +200,7 @@ SHEET_PROCESS_ORDER = [
     # "All Inclusive Hotel Package",
     # "Multi-day Activity Package",
     # "PAT Cruise Packages ",
-    # "ANT Cruise Packages",
+    "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {
@@ -640,7 +635,7 @@ def upload_dummy_components():
         {"templateId": DUMMY_TEMPLATE_MAP["flights"][0], "data": {}},
     ]
 
-    flight = {
+    base = {
         "orgId":"swoop",
         "destination":"patagonia",
         "state": "Draft",
@@ -662,7 +657,7 @@ def upload_dummy_components():
         },
         "componentFields": flight_component_fields,
     }
-    flight_copy = flight.copy()
+    flight_copy = base.copy()
     cds.pushValidRowToDB([flight_copy], "Flight")
 
     independent_arrangements_component_fields = [
@@ -670,7 +665,7 @@ def upload_dummy_components():
         {"templateId": DUMMY_TEMPLATE_MAP["independent_arrangements"][0], "data": {}},
     ]
 
-    independent_arrangement = flight
+    independent_arrangement = base.copy()
     independent_arrangement["name"] = "Independent Arrangement"
     independent_arrangement["templateId"] = DUMMY_TEMPLATE_MAP["independent_arrangements"][1]
     independent_arrangement["componentFields"] = independent_arrangements_component_fields
@@ -678,6 +673,18 @@ def upload_dummy_components():
     cds = CoreDataService(DUMMY_TEMPLATE_MAP["independent_arrangements"])
     cds.pushValidRowToDB([independent_arrangement], "Independent Arrangement")
 
+    fee_component_fields = [
+        {"templateId": DUMMY_TEMPLATE_MAP["fee"][1], "data": {}},
+        {"templateId": DUMMY_TEMPLATE_MAP["fee"][0], "data": {}},
+    ]
+
+    independent_arrangement = base.copy()
+    independent_arrangement["name"] = "Fee"
+    independent_arrangement["templateId"] = DUMMY_TEMPLATE_MAP["fee"][1]
+    independent_arrangement["componentFields"] = fee_component_fields
+    
+    cds = CoreDataService(DUMMY_TEMPLATE_MAP["fee"])
+    cds.pushValidRowToDB([independent_arrangement], "Fee")
 
 import json
 import requests
@@ -744,6 +751,9 @@ class CoreDataService:
         pregenerated_id = generate_component_id(component)
         url = ""
         final_error = None  # <- keep the last failure here
+
+        if pregenerated_id == "component_233e8508350b0c88403302eb57f563c1":
+            pass
 
         try:
             if pregenerated_id:

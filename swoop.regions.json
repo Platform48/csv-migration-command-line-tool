@@ -1,566 +1,593 @@
-[{
-  "_id": "region_2a615502c16f4e02addc3c720cece234",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T11:16:46.401Z"
+[
+  {
+    "_id": "region_2a615502c16f4e02addc3c720cece234",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T11:16:46.401Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Los Glaciares",
+    "description": "The massive South Patagonian Ice Cap feeds the many glaciers that give Argentina's most famous national park its name. Hikers and climbers flock to the hub towns of El Calafate and El Chaltén to explore the famous Fitz Roy massif, Perito Moreno glacier or the giant ice sheet itself on day hikes, long treks or boat trips.",
+    "destination": "Patagonia",
+    "images": [
+      "https://imgix.swoop-patagonia.com/SWO_5_ALL_SydneyMiller-laguna-tres-fitzroy-hike-gallery.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_LeahManning_ALL_Glacier-Perito-Moreno-gallery.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_5_ALL_BurnhamArlidge-glaciares-cerro-torre-gallery.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_ALL_Charlie-chalten-town-mirador-condores-view-gallery.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_ALL_SydneyMiller-cerro-torre-laguna-glaciares-gallery.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_Chloe_Perito-Moreno-ice-hike-gallery.jpg"
+    ]
   },
-  "name": "Los Glaciares",
-  "description": "The massive South Patagonian Ice Cap feeds the many glaciers that give Argentina's most famous national park its name. Hikers and climbers flock to the hub towns of El Calafate and El Chaltén to explore the famous Fitz Roy massif, Perito Moreno glacier or the giant ice sheet itself on day hikes, long treks or boat trips.",
-  "destination": "Patagonia",
-  "images": [
-    "https://imgix.swoop-patagonia.com/SWO_5_ALL_SydneyMiller-laguna-tres-fitzroy-hike-gallery.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_LeahManning_ALL_Glacier-Perito-Moreno-gallery.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_5_ALL_BurnhamArlidge-glaciares-cerro-torre-gallery.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_ALL_Charlie-chalten-town-mirador-condores-view-gallery.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_ALL_SydneyMiller-cerro-torre-laguna-glaciares-gallery.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_Chloe_Perito-Moreno-ice-hike-gallery.jpg"
-  ]
-},
-{
-  "_id": "region_1dbf08878468421d86e547bc976e6d28",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T16:30:12.942Z"
+  {
+    "_id": "region_1dbf08878468421d86e547bc976e6d28",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T16:30:12.942Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Salta & Jujuy",
+    "description": "Salta and Jujuy provinces, nestled in Argentina’s northwest, offer breathtaking landscapes, rich culture, and colonial charm. Tourists can hike to the stunning Hill of Seven Colours, follow ancient Inca trails, and explore vibrant indigenous markets. Salta’s wine region and historic architecture add depth, while Jujuy’s dramatic Quebrada de Humahuaca captivates with its opportunity for outdoor activites.",
+    "destination": "Rest of Chile/Argentina",
+    "images": [
+      "https://imgix.swoop-patagonia.com/Salta.jpg",
+      "https://imgix.swoop-patagonia.com/HeaderImage-Salta.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_LewisMorecombe_ALL_Horseriding-near-Salta-Argentina.jpg"
+    ]
   },
-  "name": "Salta & Jujuy",
-  "description": "Salta and Jujuy provinces, nestled in Argentina’s northwest, offer breathtaking landscapes, rich culture, and colonial charm. Tourists can hike to the stunning Hill of Seven Colours, follow ancient Inca trails, and explore vibrant indigenous markets. Salta’s wine region and historic architecture add depth, while Jujuy’s dramatic Quebrada de Humahuaca captivates with its opportunity for outdoor activites.",
-  "destination": "Rest of Chile/Argentina",
-  "images": [
-    "https://imgix.swoop-patagonia.com/Salta.jpg",
-    "https://imgix.swoop-patagonia.com/HeaderImage-Salta.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_LewisMorecombe_ALL_Horseriding-near-Salta-Argentina.jpg"
-  ]
-},
-{
-  "_id": "region_304833c101aa4bd3923105a68a6f567c",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-24T10:24:09.834Z"
+  {
+    "_id": "region_304833c101aa4bd3923105a68a6f567c",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-24T10:24:09.834Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Peninsula",
+    "description": "A cruise to the Antarctic Peninsula is the classic way to experience the White Continent. The majority of all visitors to Antarctica come here, drawn by the unbelievable drama of its frozen landscapes and the penguin and whale encounters that make this one of the world's greatest wildlife watching destinations.",
+    "destination": "Antarctica",
+    "images": [
+      "https://imgix.swoop-antarctica.com/SWO_4_ALL_DanielBrooks_gentoo-penguins-petermann-gallery.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_5_ALL_BurnhamArlidge-Wilhemina-zodiac-sunset-gallery.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_5_ALL_BurnhamArlidge-lemaire-channel-gallery.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_4_ALL_DanielBrooks-paddleboarding-gallery.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_5_ALL_BurnhamArlidge_humpback-fluke-gallery.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_4_ALL_DanielBrooks-boat-deception-island-whalers-bay-gallery.jpg"
+    ]
   },
-  "name": "Peninsula",
-  "description": "A cruise to the Antarctic Peninsula is the classic way to experience the White Continent. The majority of all visitors to Antarctica come here, drawn by the unbelievable drama of its frozen landscapes and the penguin and whale encounters that make this one of the world's greatest wildlife watching destinations.",
-  "destination": "Antarctica",
-  "images": [
-    "https://imgix.swoop-antarctica.com/SWO_4_ALL_DanielBrooks_gentoo-penguins-petermann-gallery.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_5_ALL_BurnhamArlidge-Wilhemina-zodiac-sunset-gallery.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_5_ALL_BurnhamArlidge-lemaire-channel-gallery.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_4_ALL_DanielBrooks-paddleboarding-gallery.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_5_ALL_BurnhamArlidge_humpback-fluke-gallery.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_4_ALL_DanielBrooks-boat-deception-island-whalers-bay-gallery.jpg"
-  ]
-},
-{
-  "_id": "region_7d49cd9b52744b249a92f091d684b9e2",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-24T10:28:02.227Z"
+  {
+    "_id": "region_7d49cd9b52744b249a92f091d684b9e2",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-24T10:28:02.227Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Falklands",
+    "description": "The tiny Falkland Islands punch well above their size when it comes to what they offer to visitors. Their rugged landscapes hold plenty of treats for wildlife lovers and are rich in birdlife and marine mammals as well as history - elements that make them the perfect place to add to an Antarctic and South Georgia adventure.",
+    "destination": "Antarctica",
+    "images": [
+      "https://imgix.swoop-antarctica.com/SWO_5_ALL_Burnham_West-point-rockhopper-penguin-falklands.jpg",
+      "https://imgix.swoop-antarctica.com/FTB_3_FTB_ALL_lady-elizabeth-from-the-air.jpg",
+      "https://imgix.swoop-antarctica.com/OCE_3_Martin-van-Lokven_RTD_ALBATROSSCOLONYFALKLANDS.jpg",
+      "https://imgix.swoop-antarctica.com/PL_4_PL_ALL-saunders-falkland-photographer.jpg",
+      "https://imgix.swoop-antarctica.com/POS_3_POS_RTD_Sea-Spirit-Falklands.jpg"
+    ]
   },
-  "name": "Falklands",
-  "description": "The tiny Falkland Islands punch well above their size when it comes to what they offer to visitors. Their rugged landscapes hold plenty of treats for wildlife lovers and are rich in birdlife and marine mammals as well as history - elements that make them the perfect place to add to an Antarctic and South Georgia adventure.",
-  "destination": "Antarctica",
-  "images": [
-    "https://imgix.swoop-antarctica.com/SWO_5_ALL_Burnham_West-point-rockhopper-penguin-falklands.jpg",
-    "https://imgix.swoop-antarctica.com/FTB_3_FTB_ALL_lady-elizabeth-from-the-air.jpg",
-    "https://imgix.swoop-antarctica.com/OCE_3_Martin-van-Lokven_RTD_ALBATROSSCOLONYFALKLANDS.jpg",
-    "https://imgix.swoop-antarctica.com/PL_4_PL_ALL-saunders-falkland-photographer.jpg",
-    "https://imgix.swoop-antarctica.com/POS_3_POS_RTD_Sea-Spirit-Falklands.jpg"
-  ]
-},
-{
-  "_id": "region_5f50de0e6c3e4dfe8e1000c4443f3e46",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-06-27T13:47:53.922Z"
+  {
+    "_id": "region_5f50de0e6c3e4dfe8e1000c4443f3e46",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-06-27T13:47:53.922Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Torres del Paine",
+    "description": "Torres del Paine National Park, with its iconic granite towers, is one of the most popular destinations in Patagonia. Most famous for the W Trek, it also offers a lot of wilder hiking, horseback riding on remote estancias, ice hiking on glaciers, kayaking among icebergs and biking on tough mountain trails.",
+    "destination": "Patagonia",
+    "images": [
+      "https://imgix.swoop-patagonia.com/CN_5_RTD_CN_w-trek-group.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_5_ALL_DannyMiddleton_puma-paine-gallery.jpg",
+      "https://imgix.swoop-patagonia.com/Glacier_Grey.jpg",
+      "https://imgix.swoop-patagonia.com/CAS_5_RTD_CAS_mountain-biking-paine-laguna-azul-gallery.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_5_ALL_SydneyMiller-ecocamp-dome-flowers-panorama-gallery.jpeg",
+      "https://imgix.swoop-patagonia.com/CN_5_RTD_CN-o-cricuirt-grey-glacier.jpg"
+    ]
   },
-  "name": "Torres del Paine",
-  "description": "Torres del Paine National Park, with its iconic granite towers, is one of the most popular destinations in Patagonia. Most famous for the W Trek, it also offers a lot of wilder hiking, horseback riding on remote estancias, ice hiking on glaciers, kayaking among icebergs and biking on tough mountain trails.",
-  "destination": "Patagonia",
-  "images": [
-    "https://imgix.swoop-patagonia.com/CN_5_RTD_CN_w-trek-group.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_5_ALL_DannyMiddleton_puma-paine-gallery.jpg",
-    "https://imgix.swoop-patagonia.com/Glacier_Grey.jpg",
-    "https://imgix.swoop-patagonia.com/CAS_5_RTD_CAS_mountain-biking-paine-laguna-azul-gallery.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_5_ALL_SydneyMiller-ecocamp-dome-flowers-panorama-gallery.jpeg",
-    "https://imgix.swoop-patagonia.com/CN_5_RTD_CN-o-cricuirt-grey-glacier.jpg"
-  ]
-},
-{
-  "_id": "region_245b7d88ae1b47828a5cf54f18f55679",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T16:02:22.352Z"
+  {
+    "_id": "region_245b7d88ae1b47828a5cf54f18f55679",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T16:02:22.352Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Ruta 40",
+    "description": "One of the longest highways in the world, travelling along the Ruta 40 is internationally renowned as a classic road trip. Beginning at the Bolivian border, it runs parallel to the Andes all the way to Río Gallegos. The Patagonia stretch, at the heart of the route, runs between Bariloche and El Calafate.",
+    "destination": "Patagonia",
+    "images": [
+      "https://imgix.swoop-patagonia.com/SWO_4_SWO_ALL_Santa-Cruz-1.jpg",
+      "https://imgix.swoop-patagonia.com/WP_4_WP_RTD_WELSH-PAT-River-Chubut-2.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_SWO_ALL_Santa-Cruz-Cueva-Manos-5.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_SWO_ALL_Santa-Cruz-Cueva-Manos-7.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_SWO_ALL_RUTA-40-Bariloche-behind-Llao-Llao.JPG"
+    ]
   },
-  "name": "Ruta 40",
-  "description": "One of the longest highways in the world, travelling along the Ruta 40 is internationally renowned as a classic road trip. Beginning at the Bolivian border, it runs parallel to the Andes all the way to Río Gallegos. The Patagonia stretch, at the heart of the route, runs between Bariloche and El Calafate.",
-  "destination": "Patagonia",
-  "images": [
-    "https://imgix.swoop-patagonia.com/SWO_4_SWO_ALL_Santa-Cruz-1.jpg",
-    "https://imgix.swoop-patagonia.com/WP_4_WP_RTD_WELSH-PAT-River-Chubut-2.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_SWO_ALL_Santa-Cruz-Cueva-Manos-5.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_SWO_ALL_Santa-Cruz-Cueva-Manos-7.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_SWO_ALL_RUTA-40-Bariloche-behind-Llao-Llao.JPG"
-  ]
-},
-{
-  "_id": "region_837723abf0854609b0c7894e4e06187b",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-24T10:26:35.800Z"
+  {
+    "_id": "region_837723abf0854609b0c7894e4e06187b",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-24T10:26:35.800Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Circle",
+    "description": "For many polar travellers, it's the romance of the Antarctic Circle that magnetically pulls them one step further south than all the rest. To cross this line of latitude is to pass into a true zone of the imagination, as the White Continent shows its wildest face for the ultimate polar experience.",
+    "destination": "Antarctica",
+    "images": [
+      "https://imgix.swoop-antarctica.com/SHU_3_SHU_ALL_passenger-deck-iceberg.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_5_ALL-LizzieWilliams-tonington-marguerite-circle-gallery-1.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_4_ALL_LouiseMessenger-blue-iceberg-gallery.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_5_ALL_BurnhamArlidge_lemaire-channel-view.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_5_ALL_BurnhamAlridge_humpack-whale-fluke-Patagonia-bay-circle-gallery.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_5_ALL_Katehiggs_leopard-seal-Patagonia-bay--circle-gallery.jpeg"
+    ]
   },
-  "name": "Circle",
-  "description": "For many polar travellers, it's the romance of the Antarctic Circle that magnetically pulls them one step further south than all the rest. To cross this line of latitude is to pass into a true zone of the imagination, as the White Continent shows its wildest face for the ultimate polar experience.",
-  "destination": "Antarctica",
-  "images": [
-    "https://imgix.swoop-antarctica.com/SHU_3_SHU_ALL_passenger-deck-iceberg.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_5_ALL-LizzieWilliams-tonington-marguerite-circle-gallery-1.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_4_ALL_LouiseMessenger-blue-iceberg-gallery.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_5_ALL_BurnhamArlidge_lemaire-channel-view.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_5_ALL_BurnhamAlridge_humpack-whale-fluke-Patagonia-bay-circle-gallery.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_5_ALL_Katehiggs_leopard-seal-Patagonia-bay--circle-gallery.jpeg"
-  ]
-},
-{
-  "_id": "region_4935da979e2b40efa1f3cfd90578aa79",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T16:34:52.781Z"
+  {
+    "_id": "region_4935da979e2b40efa1f3cfd90578aa79",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T16:34:52.781Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Iguazú",
+    "description": "This chain of gigantic waterfalls, set amongst a teeming rainforest in northern Argentina, is one of the world’s most beautiful natural wonders. Nothing can prepare you for the power and noise of Iguazú Falls' towering cascades. Stretching almost 3km along the border of Argentina and Brazil, the falls are made up of around 275 vertical drops, with heights up to 82 metres.",
+    "destination": "Rest of Chile/Argentina",
+    "images": [
+      "https://imgix.swoop-patagonia.com/SW_4_SALL-DODGE_OPEN_IGUAZU-FALLS-3.JPG",
+      "https://imgix.swoop-patagonia.com/SW_4_SALL-DODGE_OPEN_IGUAZU-FALLS-4.JPG",
+      "https://imgix.swoop-patagonia.com/SW_4_SALL-DODGE_OPEN_IGUAZU-FALLS-1.JPG",
+      "https://imgix.swoop-patagonia.com/Awasi_Iguazu_RTD_4_Excursions-RainbowFalls-Evan-Austen.jpg",
+      "https://imgix.swoop-patagonia.com/Awasi_Iguazu_RTD_4_Alto-Parana-PH-Federico-Garcia.jpg",
+      "https://imgix.swoop-patagonia.com/Awasi_Iguazu_RTD_4_Birds_Josefina-Stagnaro.jpg"
+    ]
   },
-  "name": "Iguazú",
-  "description": "This chain of gigantic waterfalls, set amongst a teeming rainforest in northern Argentina, is one of the world’s most beautiful natural wonders. Nothing can prepare you for the power and noise of Iguazú Falls' towering cascades. Stretching almost 3km along the border of Argentina and Brazil, the falls are made up of around 275 vertical drops, with heights up to 82 metres.",
-  "destination": "Rest of Chile/Argentina",
-  "images": [
-    "https://imgix.swoop-patagonia.com/SW_4_SALL-DODGE_OPEN_IGUAZU-FALLS-3.JPG",
-    "https://imgix.swoop-patagonia.com/SW_4_SALL-DODGE_OPEN_IGUAZU-FALLS-4.JPG",
-    "https://imgix.swoop-patagonia.com/SW_4_SALL-DODGE_OPEN_IGUAZU-FALLS-1.JPG",
-    "https://imgix.swoop-patagonia.com/Awasi_Iguazu_RTD_4_Excursions-RainbowFalls-Evan-Austen.jpg",
-    "https://imgix.swoop-patagonia.com/Awasi_Iguazu_RTD_4_Alto-Parana-PH-Federico-Garcia.jpg",
-    "https://imgix.swoop-patagonia.com/Awasi_Iguazu_RTD_4_Birds_Josefina-Stagnaro.jpg"
-  ]
-},
-{
-  "_id": "region_bb9f9f3b63b349efa92b353b2746ffcf",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T16:06:17.483Z"
+  {
+    "_id": "region_bb9f9f3b63b349efa92b353b2746ffcf",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T16:06:17.483Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Santiago",
+    "description": "Chile’s cosmopolitan capital, Santiago, is a city packed with culture and grand views, from its gorgeous architecture to its panoramic backdrop of the Andes Mountains. With a rich food culture and some of the country’s best wineries nearby, there’s always something to raise a glass to here.",
+    "destination": "Rest of Chile/Argentina",
+    "images": [
+      "https://imgix.swoop-patagonia.com/PRO_4_PRO_RTD_Santiago(3).jpg",
+      "https://imgix.swoop-patagonia.com/SWO_3_Ian_ALL_Lastarria-Santago-bike-street-1.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_MATETIC_RTD_VINEYARDTOUR.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_ALL_NickySaville_Valparaiso_city_View.JPG",
+      "https://imgix.swoop-patagonia.com/SB_5_RTD_Southbound-yerba-loca-santiago-hike.jpg"
+    ]
   },
-  "name": "Santiago",
-  "description": "Chile’s cosmopolitan capital, Santiago, is a city packed with culture and grand views, from its gorgeous architecture to its panoramic backdrop of the Andes Mountains. With a rich food culture and some of the country’s best wineries nearby, there’s always something to raise a glass to here.",
-  "destination": "Rest of Chile/Argentina",
-  "images": [
-    "https://imgix.swoop-patagonia.com/PRO_4_PRO_RTD_Santiago(3).jpg",
-    "https://imgix.swoop-patagonia.com/SWO_3_Ian_ALL_Lastarria-Santago-bike-street-1.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_MATETIC_RTD_VINEYARDTOUR.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_ALL_NickySaville_Valparaiso_city_View.JPG",
-    "https://imgix.swoop-patagonia.com/SB_5_RTD_Southbound-yerba-loca-santiago-hike.jpg"
-  ]
-},
-{
-  "_id": "region_a8a8b90f58434c82a00ee1f15b1e45b7",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T16:10:21.635Z"
+  {
+    "_id": "region_a8a8b90f58434c82a00ee1f15b1e45b7",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T16:10:21.635Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Easter Island",
+    "description": "Located in the South Pacific, more than 2,000 miles west of the Chilean coast, is the remote Easter Island. It's famed for archaeological sites and hundreds of monumental statues known as moai, along with its windswept and volcanic, scarred landscape. Easter Island was named a UNESCO World Heritage Site in 1995.",
+    "destination": "Rest of Chile/Argentina",
+    "images": [
+      "https://imgix.swoop-patagonia.com/Easter_Island_1.jpg",
+      "https://imgix.swoop-patagonia.com/EIS_3_EIS_RTD_MAOI-DAY.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_5_EXPLORA_RTD-Rapa-Nui-Easter-Island-statues.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_5_EXPLORA_RTD-Rapa-Nui-Easter-Island-beaches.JPG",
+      "https://imgix.swoop-patagonia.com/SWO_5_EXPLORA_RTD-Rapa-Nui-Easter-Island.jpg",
+      "https://imgix.swoop-patagonia.com/EIS_3_EIS_RTD_MAOI-HEADS.jpg"
+    ]
   },
-  "name": "Easter Island",
-  "description": "Located in the South Pacific, more than 2,000 miles west of the Chilean coast, is the remote Easter Island. It's famed for archaeological sites and hundreds of monumental statues known as moai, along with its windswept and volcanic, scarred landscape. Easter Island was named a UNESCO World Heritage Site in 1995.",
-  "destination": "Rest of Chile/Argentina",
-  "images": [
-    "https://imgix.swoop-patagonia.com/Easter_Island_1.jpg",
-    "https://imgix.swoop-patagonia.com/EIS_3_EIS_RTD_MAOI-DAY.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_5_EXPLORA_RTD-Rapa-Nui-Easter-Island-statues.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_5_EXPLORA_RTD-Rapa-Nui-Easter-Island-beaches.JPG",
-    "https://imgix.swoop-patagonia.com/SWO_5_EXPLORA_RTD-Rapa-Nui-Easter-Island.jpg",
-    "https://imgix.swoop-patagonia.com/EIS_3_EIS_RTD_MAOI-HEADS.jpg"
-  ]
-},
-{
-  "_id": "region_0bc7683bb1694831a1412a72057dfb1c",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T11:38:57.480Z"
+  {
+    "_id": "region_0bc7683bb1694831a1412a72057dfb1c",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T11:38:57.480Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Chilean Lake District",
+    "description": "A stunning mix of glistening lakes, smouldering volcanoes, temperate rain forests and meandering rivers rich in fish and bird life. The most culturally interesting part of Chile, a true boiling pot of intriguing cultures with indigenous Mapuche communities, traditional fishing villages and German settlers from the 1850s.",
+    "destination": "Patagonia",
+    "images": [
+      "https://imgix.swoop-patagonia.com/SWO_5_Chloe_ALL_Villarrica-Volcano-Pucon.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_5_SWO_ALL_Osorno-Saltos-Petrohue.jpg",
+      "https://imgix.swoop-patagonia.com/Huequehue_Banner_Sally.jpg",
+      "https://imgix.swoop-patagonia.com/BIRDSC_5_BIRDSC_RTD_Alerce-Andino-hike.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_ALL_HarrietPike_Chiloe-Tepuheiuco-hiking.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_5_Burnham_ALL_Chiloe-Castro-Palafito.jpg"
+    ]
   },
-  "name": "Chilean Lake District",
-  "description": "A stunning mix of glistening lakes, smouldering volcanoes, temperate rain forests and meandering rivers rich in fish and bird life. The most culturally interesting part of Chile, a true boiling pot of intriguing cultures with indigenous Mapuche communities, traditional fishing villages and German settlers from the 1850s.",
-  "destination": "Patagonia",
-  "images": [
-    "https://imgix.swoop-patagonia.com/SWO_5_Chloe_ALL_Villarrica-Volcano-Pucon.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_5_SWO_ALL_Osorno-Saltos-Petrohue.jpg",
-    "https://imgix.swoop-patagonia.com/Huequehue_Banner_Sally.jpg",
-    "https://imgix.swoop-patagonia.com/BIRDSC_5_BIRDSC_RTD_Alerce-Andino-hike.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_ALL_HarrietPike_Chiloe-Tepuheiuco-hiking.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_5_Burnham_ALL_Chiloe-Castro-Palafito.jpg"
-  ]
-},
-{
-  "_id": "region_8ab269bb427a48b6b8b14ff459ae10f2",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-24T10:34:11.287Z"
+  {
+    "_id": "region_8ab269bb427a48b6b8b14ff459ae10f2",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-24T10:34:11.287Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Weddell Sea",
+    "description": "The Weddell Sea is Antarctica at its most raw and untamed. Accessible for only a few short months of the year, it offers a wild beauty parade of immense tabular icebergs unparalleled on the continent. This is where Shackleton made his name, and today’s adventurous travellers still follow in his footsteps, in search of the most dramatic ice and remote emperor penguin colonies.",
+    "destination": "Antarctica",
+    "images": [
+      "https://imgix.swoop-antarctica.com/SWO_5_ALL-emperor-penguin-snow-hill-weddell-gallery.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_4_NardusErasmus-tabular-iceberg-weddell-gallery.JPG",
+      "https://imgix.swoop-antarctica.com/SWO_5_ALL_DanielBrooks_Antarctic-sound-weddell-gateway-sunset.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_4_NardusErasmus-weddell-pack-ice-gallery.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_5_ALL-DanielBrooks-adelie-penguins-gallery.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_4_NardusErasmus-crabeater-seal-weddell-gallery.JPG"
+    ]
   },
-  "name": "Weddell Sea",
-  "description": "The Weddell Sea is Antarctica at its most raw and untamed. Accessible for only a few short months of the year, it offers a wild beauty parade of immense tabular icebergs unparalleled on the continent. This is where Shackleton made his name, and today’s adventurous travellers still follow in his footsteps, in search of the most dramatic ice and remote emperor penguin colonies.",
-  "destination": "Antarctica",
-  "images": [
-    "https://imgix.swoop-antarctica.com/SWO_5_ALL-emperor-penguin-snow-hill-weddell-gallery.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_4_NardusErasmus-tabular-iceberg-weddell-gallery.JPG",
-    "https://imgix.swoop-antarctica.com/SWO_5_ALL_DanielBrooks_Antarctic-sound-weddell-gateway-sunset.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_4_NardusErasmus-weddell-pack-ice-gallery.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_5_ALL-DanielBrooks-adelie-penguins-gallery.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_4_NardusErasmus-crabeater-seal-weddell-gallery.JPG"
-  ]
-},
-{
-  "_id": "region_1fac19c445e04377a8bfb4e25a2e92c5",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-24T10:29:47.477Z"
+  {
+    "_id": "region_1fac19c445e04377a8bfb4e25a2e92c5",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-24T10:29:47.477Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Interior South Pole",
+    "description": "The South Pole is one of the most talismanic spots on the map – and is now accessible as never before for a new generation of adventure travellers. From mountains bursting from glacial plateaus to remote emperor penguin colonies, the Antarctic interior offers the chance to experience our planet at its rawest and most beautiful.",
+    "destination": "Antarctica",
+    "images": [
+      "https://imgix.swoop-antarctica.com/WD_4_RTDWhiteDesert-emperor-penguins-interior.JPG",
+      "https://imgix.swoop-antarctica.com/WD_4_RTDWhiteDesert-south-pole-header.jpg",
+      "https://imgix.swoop-antarctica.com/WD_5_RTDWhiteDesert-snow-runway-airplane-interior.JPG",
+      "https://imgix.swoop-antarctica.com/WD_5_RTDWhiteDesert-champagne-luxury-camp-white-fang.JPG",
+      "https://imgix.swoop-antarctica.com/WD_5_RTD_WhiteDesert-glacial-lake-interior.jpg",
+      "https://imgix.swoop-antarctica.com/WD_5_RTDWhiteDesert-echo-camp-domes-landscape.jpg"
+    ]
   },
-  "name": "Interior South Pole",
-  "description": "The South Pole is one of the most talismanic spots on the map – and is now accessible as never before for a new generation of adventure travellers. From mountains bursting from glacial plateaus to remote emperor penguin colonies, the Antarctic interior offers the chance to experience our planet at its rawest and most beautiful.",
-  "destination": "Antarctica",
-  "images": [
-    "https://imgix.swoop-antarctica.com/WD_4_RTDWhiteDesert-emperor-penguins-interior.JPG",
-    "https://imgix.swoop-antarctica.com/WD_4_RTDWhiteDesert-south-pole-header.jpg",
-    "https://imgix.swoop-antarctica.com/WD_5_RTDWhiteDesert-snow-runway-airplane-interior.JPG",
-    "https://imgix.swoop-antarctica.com/WD_5_RTDWhiteDesert-champagne-luxury-camp-white-fang.JPG",
-    "https://imgix.swoop-antarctica.com/WD_5_RTD_WhiteDesert-glacial-lake-interior.jpg",
-    "https://imgix.swoop-antarctica.com/WD_5_RTDWhiteDesert-echo-camp-domes-landscape.jpg"
-  ]
-},
-{
-  "_id": "region_877d6340b3d44a70ab814da21efe5a5e",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T11:43:45.042Z"
+  {
+    "_id": "region_877d6340b3d44a70ab814da21efe5a5e",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T11:43:45.042Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Argentine Lake District",
+    "description": "Combining shimmering lakes, jagged peaks, white water rapids and biking trails, the Argentinian Lake District has something for everyone. Just a stone's throw away are the wide expanses of the Patagonian Steppe, where a horse is your best mode of transport.",
+    "destination": "Patagonia",
+    "images": [
+      "https://imgix.swoop-patagonia.com/Trekking-Northern-Patagonia-SENZ.jpg",
+      "https://imgix.swoop-patagonia.com/LakeDistrictView-AT.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_5_Harriet_ALL_Lanin-park-volcano-1.jpg",
+      "https://imgix.swoop-patagonia.com/SLimiti_Bariloche_Bikes_1.jpg",
+      "https://imgix.swoop-patagonia.com/Mult-Activity-Kayak-Bariloche-SENZA.jpg",
+      "https://imgix.swoop-patagonia.com/ANP_487.jpg"
+    ]
   },
-  "name": "Argentine Lake District",
-  "description": "Combining shimmering lakes, jagged peaks, white water rapids and biking trails, the Argentinian Lake District has something for everyone. Just a stone's throw away are the wide expanses of the Patagonian Steppe, where a horse is your best mode of transport.",
-  "destination": "Patagonia",
-  "images": [
-    "https://imgix.swoop-patagonia.com/Trekking-Northern-Patagonia-SENZ.jpg",
-    "https://imgix.swoop-patagonia.com/LakeDistrictView-AT.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_5_Harriet_ALL_Lanin-park-volcano-1.jpg",
-    "https://imgix.swoop-patagonia.com/SLimiti_Bariloche_Bikes_1.jpg",
-    "https://imgix.swoop-patagonia.com/Mult-Activity-Kayak-Bariloche-SENZA.jpg",
-    "https://imgix.swoop-patagonia.com/ANP_487.jpg"
-  ]
-},
-{
-  "_id": "region_ca1eea715d784d5dabe18d6dfff4572d",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T16:39:44.823Z"
+  {
+    "_id": "region_ca1eea715d784d5dabe18d6dfff4572d",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T16:39:44.823Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Buenos Aires",
+    "description": "If you're visiting Argentinian Patagonia you'll almost certainly pass through vibrant Buenos Aires. One of the greatest cities in South America, it’s somewhere to immerse yourself, from walking and bike tours exploring its rich cultural heritage, to delicious foodie experiences, and late nights dancing in the city where tango was born.",
+    "destination": "Rest of Chile/Argentina",
+    "images": [
+      "https://imgix.swoop-patagonia.com/SWO_4_ALL_Charlie_Buenos-Aires-guitar.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_ALL_EmmaCarlton-bike-tour-buenos-aires.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_ALL_RubyNorona-buenos-aires-tango.jpg",
+      "https://imgix.swoop-patagonia.com/HT_4_HT_RTD_Buenos-Aires.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_5_CarolaZorzoli_ALL_Jacaranda-trees-in-the-Spring-Buenos-Aires.jpeg",
+      "https://imgix.swoop-patagonia.com/SWO_4_DAVID-HILTON_ALL_Boca-District-Buenos-Aires.jpg"
+    ]
   },
-  "name": "Buenos Aires",
-  "description": "If you're visiting Argentinian Patagonia you'll almost certainly pass through vibrant Buenos Aires. One of the greatest cities in South America, it’s somewhere to immerse yourself, from walking and bike tours exploring its rich cultural heritage, to delicious foodie experiences, and late nights dancing in the city where tango was born.",
-  "destination": "Rest of Chile/Argentina",
-  "images": [
-    "https://imgix.swoop-patagonia.com/SWO_4_ALL_Charlie_Buenos-Aires-guitar.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_ALL_EmmaCarlton-bike-tour-buenos-aires.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_ALL_RubyNorona-buenos-aires-tango.jpg",
-    "https://imgix.swoop-patagonia.com/HT_4_HT_RTD_Buenos-Aires.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_5_CarolaZorzoli_ALL_Jacaranda-trees-in-the-Spring-Buenos-Aires.jpeg",
-    "https://imgix.swoop-patagonia.com/SWO_4_DAVID-HILTON_ALL_Boca-District-Buenos-Aires.jpg"
-  ]
-},
-{
-  "_id": "region_e188b39f1add4553a77b33fa0cf9b273",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T16:43:17.095Z"
+  {
+    "_id": "region_e188b39f1add4553a77b33fa0cf9b273",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T16:43:17.095Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Mendoza",
+    "description": "On the edge of the mountains of the arid Cuyo region, Mendoza is one of the great wine capitals of the world and the perfect launchpad to explore the surrounding vineyards. Its bustling city boasts wide boulevards, packed plazas and a renowned nightlife. If you plan on summiting Aconcagua, then you will likely fly into Mendoza.",
+    "destination": "Rest of Chile/Argentina",
+    "images": [
+      "https://imgix.swoop-patagonia.com/SW_4_SW_OPEN_MENDOZA-AERIAL.jpg",
+      "https://imgix.swoop-patagonia.com/SW_4_SW_OPEN_MENDOZA-STATUE.jpg",
+      "https://imgix.swoop-patagonia.com/SW_4_SW_OPEN_MENDOZA-CANAL.jpg",
+      "https://imgix.swoop-patagonia.com/SW_4_SW_OPEN_MEDOZA-STEAK.jpg",
+      "https://imgix.swoop-patagonia.com/SW_4_SW_OPEN_MENDOZA-VINEYARD.jpg"
+    ]
   },
-  "name": "Mendoza",
-  "description": "On the edge of the mountains of the arid Cuyo region, Mendoza is one of the great wine capitals of the world and the perfect launchpad to explore the surrounding vineyards. Its bustling city boasts wide boulevards, packed plazas and a renowned nightlife. If you plan on summiting Aconcagua, then you will likely fly into Mendoza.",
-  "destination": "Rest of Chile/Argentina",
-  "images": [
-    "https://imgix.swoop-patagonia.com/SW_4_SW_OPEN_MENDOZA-AERIAL.jpg",
-    "https://imgix.swoop-patagonia.com/SW_4_SW_OPEN_MENDOZA-STATUE.jpg",
-    "https://imgix.swoop-patagonia.com/SW_4_SW_OPEN_MENDOZA-CANAL.jpg",
-    "https://imgix.swoop-patagonia.com/SW_4_SW_OPEN_MEDOZA-STEAK.jpg",
-    "https://imgix.swoop-patagonia.com/SW_4_SW_OPEN_MENDOZA-VINEYARD.jpg"
-  ]
-},
-{
-  "_id": "region_7d9b3db3fc47419c86865761fc98737f",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-24T10:31:19.202Z"
+  {
+    "_id": "region_7d9b3db3fc47419c86865761fc98737f",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-24T10:31:19.202Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Ross Sea",
+    "description": "Remote and hauntingly beautiful, the Ross Sea is inaccessible for much of the year due to sea ice. As a result it only welcomes a lucky few to its frozen shores every season. Those who visit are rewarded with the chance to get close to the greatest ice shelf on earth, the hushed silences of the early explorers' huts and the trumpeting call of the emperor penguin.",
+    "destination": "Antarctica",
+    "images": [
+      "https://imgix.swoop-antarctica.com/SHU_5_SHU_ALL_Cape-Adare-Penguin-Colony-Letterbox.jpg",
+      "https://imgix.swoop-antarctica.com/SHU_5_SHU_ALL_shackleton-hut-cape-royds-letterbox.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_5_CassiaJackson_ALL_TransantarcticMountains.jpg",
+      "https://imgix.swoop-antarctica.com/SHU_5_SHU_ALL_Macquarie-Penguins-Letterbox.jpg",
+      "https://imgix.swoop-antarctica.com/SHU_5_SHU_ALL_Tabular-Iceberg-letterbox.jpg",
+      "https://imgix.swoop-antarctica.com/STOCK_4_UnaMiller_ALL_Ross-Sea-From-Helicopter.jpg"
+    ]
   },
-  "name": "Ross Sea",
-  "description": "Remote and hauntingly beautiful, the Ross Sea is inaccessible for much of the year due to sea ice. As a result it only welcomes a lucky few to its frozen shores every season. Those who visit are rewarded with the chance to get close to the greatest ice shelf on earth, the hushed silences of the early explorers' huts and the trumpeting call of the emperor penguin.",
-  "destination": "Antarctica",
-  "images": [
-    "https://imgix.swoop-antarctica.com/SHU_5_SHU_ALL_Cape-Adare-Penguin-Colony-Letterbox.jpg",
-    "https://imgix.swoop-antarctica.com/SHU_5_SHU_ALL_shackleton-hut-cape-royds-letterbox.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_5_CassiaJackson_ALL_TransantarcticMountains.jpg",
-    "https://imgix.swoop-antarctica.com/SHU_5_SHU_ALL_Macquarie-Penguins-Letterbox.jpg",
-    "https://imgix.swoop-antarctica.com/SHU_5_SHU_ALL_Tabular-Iceberg-letterbox.jpg",
-    "https://imgix.swoop-antarctica.com/STOCK_4_UnaMiller_ALL_Ross-Sea-From-Helicopter.jpg"
-  ]
-},
-{
-  "_id": "region_4ae12840ef124fe282a7257763c25e0b",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T11:20:46.003Z"
+  {
+    "_id": "region_4ae12840ef124fe282a7257763c25e0b",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T11:20:46.003Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Tierra del Feugo",
+    "description": "At the foot of the continent, this rugged region can be explored by wilderness treks to Isla Navarino from the town of Ushuaia, or voyages along historic sailing routes through the Magellan Strait, down the Beagle Channel and around Cape Horn.",
+    "destination": "Patagonia",
+    "images": [
+      "https://imgix.swoop-patagonia.com/SWO_3_ALL_NicoSorhaburu-torres-rio-chico-gallery.jpeg",
+      "https://imgix.swoop-patagonia.com/SWO_3_ALL_Lujan_Cape-horn-Monument.jpeg",
+      "https://imgix.swoop-patagonia.com/CRUC_4_CRUC_RTD_MAGDALENAISLANDPENGUINS.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_ALL_FelipeCruzat-Laguna-Esmeralda-hike-Ushuaia.jpeg",
+      "https://imgix.swoop-patagonia.com/SWO_4_AL_ChloeMazille-Cab0san-pablo-shipwreck.jpg"
+    ]
   },
-  "name": "Tierra del Feugo",
-  "description": "At the foot of the continent, this rugged region can be explored by wilderness treks to Isla Navarino from the town of Ushuaia, or voyages along historic sailing routes through the Magellan Strait, down the Beagle Channel and around Cape Horn.",
-  "destination": "Patagonia",
-  "images": [
-    "https://imgix.swoop-patagonia.com/SWO_3_ALL_NicoSorhaburu-torres-rio-chico-gallery.jpeg",
-    "https://imgix.swoop-patagonia.com/SWO_3_ALL_Lujan_Cape-horn-Monument.jpeg",
-    "https://imgix.swoop-patagonia.com/CRUC_4_CRUC_RTD_MAGDALENAISLANDPENGUINS.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_ALL_FelipeCruzat-Laguna-Esmeralda-hike-Ushuaia.jpeg",
-    "https://imgix.swoop-patagonia.com/SWO_4_AL_ChloeMazille-Cab0san-pablo-shipwreck.jpg"
-  ]
-},
-{
-  "_id": "region_82a5fc18acf648c691c42d0861e8e084",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T11:28:15.018Z"
+  {
+    "_id": "region_82a5fc18acf648c691c42d0861e8e084",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T11:28:15.018Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Aysén",
+    "description": "Aysén is a land of three contrasting landscapes: the steppe, the glaciated Andes and the coastal temperate rainforest. Until relatively recently this region was untamed and untouched and it continues to have a pioneering feel being much less frequently visited than other regions of Patagonia. The Carretera Austral weaves its way through the region and giving access to some true wilderness and isolated communities.",
+    "destination": "Patagonia",
+    "images": [
+      "https://imgix.swoop-patagonia.com/SWO_4_DavidHilton-Cerro-Castillo-Ardilla-loop-gallery.JPG",
+      "https://imgix.swoop-patagonia.com/SWO_4_ALL_FelipeCruzat_marble-caves-inside-kayak.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_ALL_FelipeCruzat-cerro-castillo-morro-lake-view-gallery.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_5_ALL_BurnhamArlidge-carretera-austral-lago-general-carrera.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_3_ALL_ChloeMazille-san-rafael-skorpios-cruise.jpg",
+      "https://imgix.swoop-patagonia.com/SEND_3_SEND_RTD_AVELLANO6-gallery.JPG",
+      "https://imgix.swoop-patagonia.com/SWO_4_AL_SydenyMiller-day-hike-cerro-castillo-gallery.JPG"
+    ]
   },
-  "name": "Aysén",
-  "description": "Aysén is a land of three contrasting landscapes: the steppe, the glaciated Andes and the coastal temperate rainforest. Until relatively recently this region was untamed and untouched and it continues to have a pioneering feel being much less frequently visited than other regions of Patagonia. The Carretera Austral weaves its way through the region and giving access to some true wilderness and isolated communities.",
-  "destination": "Patagonia",
-  "images": [
-    "https://imgix.swoop-patagonia.com/SWO_4_DavidHilton-Cerro-Castillo-Ardilla-loop-gallery.JPG",
-    "https://imgix.swoop-patagonia.com/SWO_4_ALL_FelipeCruzat_marble-caves-inside-kayak.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_ALL_FelipeCruzat-cerro-castillo-morro-lake-view-gallery.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_5_ALL_BurnhamArlidge-carretera-austral-lago-general-carrera.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_3_ALL_ChloeMazille-san-rafael-skorpios-cruise.jpg",
-    "https://imgix.swoop-patagonia.com/SEND_3_SEND_RTD_AVELLANO6-gallery.JPG",
-    "https://imgix.swoop-patagonia.com/SWO_4_AL_SydenyMiller-day-hike-cerro-castillo-gallery.JPG"
-  ]
-},
-{
-  "_id": "region_43f6d70d7b92462fa488530cc2384970",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T16:14:13.606Z"
+  {
+    "_id": "region_43f6d70d7b92462fa488530cc2384970",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T16:14:13.606Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Atacama Desert",
+    "description": "Chile's Atacama Desert is one of the driest places on Earth, and home to a staggering diversity of landscapes from salt mountains and green oases to cactus-studded canyons and epic high altitude plains. Throw in a human history that both stretches back millennia while pointing to a future in the stars, and the Atacama becomes the perfect add-on to any Patagonia adventure.",
+    "destination": "Rest of Chile/Argentina",
+    "images": [
+      "https://imgix.swoop-patagonia.com/SWO_4_Peter_ALL_Atacama-Vallecito-.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_DannyMiddleton_ALL_Trekking-through-the-Salt-Mountain-Range-in-the-Atacama-Desert.jpeg",
+      "https://imgix.swoop-patagonia.com/SWO_4_Peter_ALL_guatin-cactus-atacama.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_5_Danny_ALL_explora-astronomy-atacama.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_5_Danny_ALL_tatios-geyser-atacama.jpg"
+    ]
   },
-  "name": "Atacama Desert",
-  "description": "Chile's Atacama Desert is one of the driest places on Earth, and home to a staggering diversity of landscapes from salt mountains and green oases to cactus-studded canyons and epic high altitude plains. Throw in a human history that both stretches back millennia while pointing to a future in the stars, and the Atacama becomes the perfect add-on to any Patagonia adventure.",
-  "destination": "Rest of Chile/Argentina",
-  "images": [
-    "https://imgix.swoop-patagonia.com/SWO_4_Peter_ALL_Atacama-Vallecito-.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_DannyMiddleton_ALL_Trekking-through-the-Salt-Mountain-Range-in-the-Atacama-Desert.jpeg",
-    "https://imgix.swoop-patagonia.com/SWO_4_Peter_ALL_guatin-cactus-atacama.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_5_Danny_ALL_explora-astronomy-atacama.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_5_Danny_ALL_tatios-geyser-atacama.jpg"
-  ]
-},
-{
-  "_id": "region_bd3afc54a30040f6b535873d57257504",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-24T10:32:44.261Z"
+  {
+    "_id": "region_bd3afc54a30040f6b535873d57257504",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-24T10:32:44.261Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "South Georgia",
+    "description": "South Georgia is a mere speck in the Southern Ocean, but those that make it here discover a true gem: an island covered with spectacular mountains and glaciers traversed by the polar explorer Shackleton and mind-boggling numbers of king penguins and fur seals. A visit here is like stepping into a real-life nature documentary.",
+    "destination": "Antarctica",
+    "images": [
+      "https://imgix.swoop-antarctica.com/AUR_4_Castleden_ALL_south-georgia-gold-harbour.jpg",
+      "https://imgix.swoop-antarctica.com/QUA_3_Kaltham_RTD_Stromness.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_5_Burnham_ALL_king-penguin-fortuna.jpg",
+      "https://imgix.swoop-antarctica.com/SWO_5_Burnham_ALL-grytviken-whaling-station-seal.jpg",
+      "https://imgix.swoop-antarctica.com/PON_3_PON_RTD_ship-bow-Fjord-Drygalski-SG.JPEG"
+    ]
   },
-  "name": "South Georgia",
-  "description": "South Georgia is a mere speck in the Southern Ocean, but those that make it here discover a true gem: an island covered with spectacular mountains and glaciers traversed by the polar explorer Shackleton and mind-boggling numbers of king penguins and fur seals. A visit here is like stepping into a real-life nature documentary.",
-  "destination": "Antarctica",
-  "images": [
-    "https://imgix.swoop-antarctica.com/AUR_4_Castleden_ALL_south-georgia-gold-harbour.jpg",
-    "https://imgix.swoop-antarctica.com/QUA_3_Kaltham_RTD_Stromness.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_5_Burnham_ALL_king-penguin-fortuna.jpg",
-    "https://imgix.swoop-antarctica.com/SWO_5_Burnham_ALL-grytviken-whaling-station-seal.jpg",
-    "https://imgix.swoop-antarctica.com/PON_3_PON_RTD_ship-bow-Fjord-Drygalski-SG.JPEG"
-  ]
-},
-{
-  "_id": "region_ee410ad5cfae4ec48de98cdd527b3da3",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T11:54:44.025Z"
+  {
+    "_id": "region_ee410ad5cfae4ec48de98cdd527b3da3",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T11:54:44.025Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Chilean Fjords",
+    "description": "Access areas of Patagonia's rugged, ragged landscape that even the hardiest hiker can't reach. Voyages to the depths of the Chilean fjords or remote Cape Horn run on a range of vessels from four-berth yachts to larger liners, with excursions and guides bringing you close to the scenery and wildlife of the region.",
+    "destination": "Patagonia",
+    "images": [
+      "https://imgix.swoop-patagonia.com/AUS_5_AUS_ALL_Stella_1.jpg",
+      "https://imgix.swoop-patagonia.com/CRUC_4_CRUC_RTD_PIAGLACIER.jpg",
+      "https://imgix.swoop-patagonia.com/SKO_5_SKO_ALL_skorpiosIII(6).JPG",
+      "https://imgix.swoop-patagonia.com/SKOR_4_SKOR_RTD_SKORPIOSII.jpg",
+      "https://imgix.swoop-patagonia.com/AUST_4_AUST_PRIV_capehorn2.jpg",
+      "https://imgix.swoop-patagonia.com/AUS_5_RTD_Australis_glacier-cruise-hiker.jpg"
+    ]
   },
-  "name": "Chilean Fjords",
-  "description": "Access areas of Patagonia's rugged, ragged landscape that even the hardiest hiker can't reach. Voyages to the depths of the Chilean fjords or remote Cape Horn run on a range of vessels from four-berth yachts to larger liners, with excursions and guides bringing you close to the scenery and wildlife of the region.",
-  "destination": "Patagonia",
-  "images": [
-    "https://imgix.swoop-patagonia.com/AUS_5_AUS_ALL_Stella_1.jpg",
-    "https://imgix.swoop-patagonia.com/CRUC_4_CRUC_RTD_PIAGLACIER.jpg",
-    "https://imgix.swoop-patagonia.com/SKO_5_SKO_ALL_skorpiosIII(6).JPG",
-    "https://imgix.swoop-patagonia.com/SKOR_4_SKOR_RTD_SKORPIOSII.jpg",
-    "https://imgix.swoop-patagonia.com/AUST_4_AUST_PRIV_capehorn2.jpg",
-    "https://imgix.swoop-patagonia.com/AUS_5_RTD_Australis_glacier-cruise-hiker.jpg"
-  ]
-},
-{
-  "_id": "region_cdd3ea52b7134435af69cc9a1b8a53d1",
-  "metadata": {
-    "version": 1,
-    "createdAt": {
-      "$date": "2025-07-03T11:50:52.468Z"
+  {
+    "_id": "region_cdd3ea52b7134435af69cc9a1b8a53d1",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T11:50:52.468Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
     },
-    "lastModified": {
-      "$date": "2025-07-28T14:25:55.536Z"
-    },
-    "createdById": "system",
-    "modifiedById": "system"
+    "name": "Peninsula Valdés",
+    "description": "The Valdés Peninsula is a unique land formation and global conservation site – its shores are home to an abundance of marine life, as well as many weird and wonderful land mammals and birds. There is some fascinating history to be discovered here, as well as some stunning scenery, from vast open steppe to steep sandstone cliffs and salt flats at 42m below sea level.",
+    "destination": "Patagonia",
+    "images": [
+      "https://imgix.swoop-patagonia.com/SWO_5_Charlie_ALL_Penguins-in-Valdes.jpg",
+      "https://imgix.swoop-patagonia.com/Carlos_Passera_4_ALL_Valdes_whale_watching.jpg",
+      "https://imgix.swoop-patagonia.com/Carlos_Passera_4_ALL_Valdes_Southern_Right_7.JPG",
+      "https://imgix.swoop-patagonia.com/39194064272_a123459ee8_o.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_CHLOE_ALL_Valdes_sea_lions_seals_cliff_.jpg",
+      "https://imgix.swoop-patagonia.com/Carlos_Passera_4_ALL_Valdes_armadillo.JPG"
+    ]
   },
-  "name": "Peninsula Valdés",
-  "description": "The Valdés Peninsula is a unique land formation and global conservation site – its shores are home to an abundance of marine life, as well as many weird and wonderful land mammals and birds. There is some fascinating history to be discovered here, as well as some stunning scenery, from vast open steppe to steep sandstone cliffs and salt flats at 42m below sea level.",
-  "destination": "Patagonia",
-  "images": [
-    "https://imgix.swoop-patagonia.com/SWO_5_Charlie_ALL_Penguins-in-Valdes.jpg",
-    "https://imgix.swoop-patagonia.com/Carlos_Passera_4_ALL_Valdes_whale_watching.jpg",
-    "https://imgix.swoop-patagonia.com/Carlos_Passera_4_ALL_Valdes_Southern_Right_7.JPG",
-    "https://imgix.swoop-patagonia.com/39194064272_a123459ee8_o.jpg",
-    "https://imgix.swoop-patagonia.com/SWO_4_CHLOE_ALL_Valdes_sea_lions_seals_cliff_.jpg",
-    "https://imgix.swoop-patagonia.com/Carlos_Passera_4_ALL_Valdes_armadillo.JPG"
-  ]
-}]
+  {
+    "_id": "region_cdd3ea52b7134435af69cc9a1b8a53d1",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T11:50:52.468Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
+    },
+    "name": "FSG",
+    "description": "This is a test region",
+    "destination": "Patagonia",
+    "images": [
+      "https://imgix.swoop-patagonia.com/SWO_5_Charlie_ALL_Penguins-in-Valdes.jpg",
+      "https://imgix.swoop-patagonia.com/Carlos_Passera_4_ALL_Valdes_whale_watching.jpg",
+      "https://imgix.swoop-patagonia.com/Carlos_Passera_4_ALL_Valdes_Southern_Right_7.JPG",
+      "https://imgix.swoop-patagonia.com/39194064272_a123459ee8_o.jpg",
+      "https://imgix.swoop-patagonia.com/SWO_4_CHLOE_ALL_Valdes_sea_lions_seals_cliff_.jpg",
+      "https://imgix.swoop-patagonia.com/Carlos_Passera_4_ALL_Valdes_armadillo.JPG"
+    ]
+  }
+]

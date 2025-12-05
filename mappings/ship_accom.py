@@ -182,13 +182,18 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
             "quote": get_stripped(row, "Description") or get_stripped(row, "Ship overview (for Ship page)") or "",
             "final": get_stripped(row, "Description") or get_stripped(row, "Ship overview (for Ship page)") or "",
         },
-        "partners": (
-            [
-                partner_map.get(destination_override or get_stripped(row, "Destination") or "Patagonia", {}).get(p.strip()) or p.strip()
-                for p in get_stripped(row, "Partners").split(",")
-                if p.strip()
+        "partners": [
+            partner_id
+            for p in get_stripped(row, "Partners").split(",")
+            if p.strip()
+            for partner_id in [
+                partner_map.get(
+                    destination_override or get_stripped(row, "Destination") or "Patagonia",
+                    {}
+                ).get(p.strip())
             ]
-        ),
+            if partner_id  # only include if found
+        ],
         "regions": regions,
         "name": get_stripped(row, "Name") or "Untitled",
         "media": media,
