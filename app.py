@@ -29,7 +29,7 @@ from mappings.ship_accom import map_ship_accommodation_component
 from collections import deque
 import threading
 
-ACCESS_TOKEN = ""
+ACCESS_TOKEN = "ya29.a0ATi6K2tkn-QChCSx-ZrozipxpD46fqvauRlGZC6kRNVToUS_K0bixtkJVMXI4ygJyO4eq7IIkCwxmXAFTwUxzkARwSCFqn1z1PgpMoarBTy9lex7ZiqYeCoInrOXutKOTiXtUb6qTkeoFQWpC9EVDovb9n_tKp5K4I1hfRSbCucuFhSF46Av4y3xwm8Lj9RJECUhNQ8GZOa0rwaCgYKAd0SARUSFQHGX2MiE8EeXkyMIK820VfUnAhu9g0213"
 
 
 log_lock = threading.Lock()
@@ -193,19 +193,19 @@ COMPONENTS_PATH = PAT_COMPONENTS_PATH
 SHEET_PROCESS_ORDER = [
     "Location",
     "Ground Accom",
-    "Ship Accom",
-    "ANT Ship Accom",
-    "Journeys",
-    "All Activities - For Upload",
-    "ANT Activities",
-    "All Transfers - For Upload",
-    "ANT Transfers",
-    "Excursions Package",
-    "Private Tours Package",
-    "All Inclusive Hotel Package",
-    "Multi-day Activity Package",
-    "PAT Cruise Packages ",
-    "ANT Cruise Packages",
+    # "Ship Accom",
+    # "ANT Ship Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "ANT Activities",
+    # "All Transfers - For Upload",
+    # "ANT Transfers",
+    # "Excursions Package",
+    # "Private Tours Package",
+    # "All Inclusive Hotel Package",
+    # "Multi-day Activity Package",
+    # "PAT Cruise Packages ",
+    # "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {

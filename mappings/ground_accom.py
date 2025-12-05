@@ -70,7 +70,7 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
 
     # ===== Level 1 → Accommodation Details =====
     level_1 = {
-        "location": location_id or "Unknown",
+        "location": location_id or "",
         "type": get_stripped(row, "Type") or "Standard Hotel", 
         "facilities": {
             "bar": get_stripped(row, "facilities.bar") == "TRUE",
