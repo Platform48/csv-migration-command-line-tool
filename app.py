@@ -29,7 +29,7 @@ from mappings.ship_accom import map_ship_accommodation_component
 from collections import deque
 import threading
 
-ACCESS_TOKEN = "ya29.a0ATi6K2vYm5XW0WJwv3Ko8YNXi1qRrRXlsY_q5NpNe-WVTUV4dor4T2WY31I1pjtsDbVRbWgMjKr68MzbdmS_O3UmeyWnBcoUo8adjrT67_9O1vMnhp7OlyVkiTV-JY2cJAG-UMbRlM9wylXxuZYehoe0LD9fXPOEBkq_DoS_eyn5IB9UyTw6MpHgBLTxX2RwLO13C9ZK--iAOwaCgYKAToSARUSFQHGX2MiIjNddPzaY5hnZ3HLRHI8uA0213"
+ACCESS_TOKEN = ""
 
 
 log_lock = threading.Lock()
@@ -186,7 +186,7 @@ PAT_COMPONENTS_PATH = "pat_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    # "Location",
+    "Location",
     # "Ground Accom",
     # "Ship Accom",
     # "ANT Ship Accom",
@@ -200,7 +200,7 @@ SHEET_PROCESS_ORDER = [
     # "All Inclusive Hotel Package",
     # "Multi-day Activity Package",
     # "PAT Cruise Packages ",
-    "ANT Cruise Packages",
+    # "ANT Cruise Packages",
 ]
 
 AUXILIARY_SHEETS = {
@@ -695,7 +695,9 @@ from tracker import MigrationTracker, OperationStatus, RowResult, SheetSummary
 class CoreDataService:
     def __init__(self, template_ids, tracker=None, sheet_name=None):
         self.template_ids = template_ids
-        self.service_url = 'https://data-api-dev.swoop-adventures.com'
+        # self.service_url = 'https://data-api-dev.swoop-adventures.com'
+        self.service_url = 'http://localhost:8080'
+
         self.headers = {
             "Authorization": f"Bearer {ACCESS_TOKEN}",
         }
@@ -730,7 +732,7 @@ class CoreDataService:
     def _upload_component(self, component, template_type, idx, overwrite_on_fail=True):
         start_time = datetime.now()
         component_name = component.get("name", "Untitled")
-        
+
         if component_name == "Untitled":
             ts_print("Skipping Untitled or Empty row")
             if self.tracker and self.sheet_name:
@@ -745,15 +747,12 @@ class CoreDataService:
                 ))
             return None
 
-        if component["destination"] == "antarctica":
+        if component.get("destination") == "antarctica":
             component["destination"] = "antarctic"
 
         pregenerated_id = generate_component_id(component)
         url = ""
-        final_error = None  # <- keep the last failure here
-
-        if pregenerated_id == "component_233e8508350b0c88403302eb57f563c1":
-            pass
+        final_error = None
 
         try:
             if pregenerated_id:
@@ -771,8 +770,13 @@ class CoreDataService:
             duration_ms = (datetime.now() - start_time).total_seconds() * 1000
             return self._process_success_response(res, component, template_type, idx, duration_ms)
 
-        # Retry with PATCH
-        if overwrite_on_fail and pregenerated_id and res is not None:
+        # Retry with PATCH ONLY if status code is 409 (conflict)
+        if (
+            overwrite_on_fail
+            and pregenerated_id
+            and res is not None
+            and res.status_code == 409
+        ):
             try:
                 component_copy = component.copy()
                 component_copy.pop('templateId', None)
@@ -780,6 +784,7 @@ class CoreDataService:
                 component_copy.pop('orgId', None)
 
                 patch_res = requests.patch(url, json=component_copy, headers=self.headers)
+
                 if patch_res.status_code in [200, 201, 202]:
                     duration_ms = (datetime.now() - start_time).total_seconds() * 1000
                     return self._process_success_response(patch_res, component, template_type, idx, duration_ms)
@@ -791,7 +796,7 @@ class CoreDataService:
             except Exception as e:
                 final_error = f"PATCH exception: {e}"
 
-        # FINAL FAILURE — only tracked once
+        # FINAL FAILURE
         if final_error is None and res is not None:
             try:
                 final_error = res.json()
@@ -814,6 +819,7 @@ class CoreDataService:
             ))
 
         return None
+
        
     def _process_success_response(self, res, component, template_type, idx, duration_ms):
         """Helper to handle successful POST/PATCH responses"""
