@@ -1,11 +1,11 @@
 import os
 import json
-import random
 import hashlib
 import requests
 import warnings
 import openpyxl
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
+import threading
 import pandas as pd
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -26,10 +26,26 @@ from mappings.cruise import map_cruise_component
 from mappings.ship_accom import map_ship_accommodation_component
 
 
-from collections import deque
-import threading
-
 ACCESS_TOKEN = ""
+
+SHEET_PROCESS_ORDER = [
+    # "Location",
+    # "Ground Accom",
+    # "Ship Accom",
+    # "ANT Ship Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "ANT Activities",
+    # "All Transfers - For Upload",
+    # "ANT Transfers",
+    # "Excursions Package",
+    # "Private Tours Package",
+    # "All Inclusive Hotel Package",
+    # "Multi-day Activity Package",
+    # "PAT Cruise Packages ",
+    # "ANT Cruise Packages",
+]
+
 
 
 log_lock = threading.Lock()
@@ -37,7 +53,6 @@ log_lock = threading.Lock()
 def ts_print(msg):
     with log_lock:
         print(msg)
-
 
 DEBUG_MODE = False
 FORCE_REUPLOAD = True
@@ -185,23 +200,6 @@ TEMPLATE_TYPES = {
 PAT_COMPONENTS_PATH = "pat_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
-SHEET_PROCESS_ORDER = [
-    # "Location",
-    # "Ground Accom",
-    # "Ship Accom",
-    # "ANT Ship Accom",
-    # "Journeys",
-    # "All Activities - For Upload",
-    # "ANT Activities",
-    # "All Transfers - For Upload",
-    # "ANT Transfers",
-    # "Excursions Package",
-    # "Private Tours Package",
-    # "All Inclusive Hotel Package",
-    # "Multi-day Activity Package",
-    # "PAT Cruise Packages ",
-    # "ANT Cruise Packages",
-]
 
 AUXILIARY_SHEETS = {
     "Rooms Cabins": ["Ground Accom", "Ship Accom", "ANT Ship Accom"]
