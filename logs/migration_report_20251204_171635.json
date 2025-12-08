@@ -1,0 +1,1158 @@
+{
+  "start_time": "2025-12-04T17:15:27.211387",
+  "end_time": "2025-12-04T17:16:35.970026",
+  "duration_seconds": 68.758639,
+  "sheets": {
+    "ANT Cruise Packages": {
+      "total_rows": 126,
+      "success_count": 71,
+      "cached_count": 0,
+      "validation_errors": 0,
+      "upload_errors": 55,
+      "mapping_errors": 0,
+      "success_rate": 56.34920634920635,
+      "field_completeness": {
+        "description.web": 100.0,
+        "description.quote": 100.0,
+        "description.final": 100.0,
+        "destination": 100.0,
+        "tripId": 77.77777777777779,
+        "partners": 69.04761904761905,
+        "regions": 80.15873015873017,
+        "media.images": 100.0,
+        "package": 100.0
+      },
+      "rows": [
+        {
+          "row_number": 10,
+          "component_name": "South Shetland Islands & Antarctica Voyage",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_e00c5943af28a4995b6f66bd71e7b7f8' does not exist yet referenced by update entity\", 'span': 4383767536972723910, 'trace': 7548643908375010042}"
+          },
+          "duration_ms": 286.18
+        },
+        {
+          "row_number": 11,
+          "component_name": "South Shetland Islands & Antarctica Voyage - 11 day voyage aiming to visit Weddell Sea",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_2e8507f9e669634b48d2e2945fc86902' does not exist yet referenced by update entity\", 'span': 1349526023650381350, 'trace': 8978649230580237987}"
+          },
+          "duration_ms": 303.24600000000004
+        },
+        {
+          "row_number": 2,
+          "component_name": "Original Fly & Cruise Luxury Adventure",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_845a85673728ea047e7dbe785a6a7cc9' does not exist yet referenced by update entity\", 'span': 9015659007233112778, 'trace': 5288800667809853776}"
+          },
+          "duration_ms": 333.071
+        },
+        {
+          "row_number": 4,
+          "component_name": "Falklands, South Georgia & Antarctic Adventure",
+          "status": "success",
+          "component_id": "component_b9bb41e3f128d3d190365d38e2f32e60",
+          "error_details": null,
+          "duration_ms": 371.96000000000004
+        },
+        {
+          "row_number": 3,
+          "component_name": "Fly & Cruise the Antarctic Peninsula",
+          "status": "success",
+          "component_id": "component_30c4ec9c36c5be4579dfc4302bcbb247",
+          "error_details": null,
+          "duration_ms": 470.522
+        },
+        {
+          "row_number": 5,
+          "component_name": "Onto the Antarctic Ice",
+          "status": "success",
+          "component_id": "component_3b69de06d5498251f038979cbad143b5",
+          "error_details": null,
+          "duration_ms": 470.461
+        },
+        {
+          "row_number": 14,
+          "component_name": "Sail & Fly Antarctica in Style - BA charter flight",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_4e4d67064bbbbc492bda24bbb888dbb2' does not exist yet referenced by update entity\", 'span': 3277846973813126554, 'trace': 4814618674237058242}"
+          },
+          "duration_ms": 914.5419999999999
+        },
+        {
+          "row_number": 12,
+          "component_name": "South Shetland Islands & Antarctica Voyage - 9 day voyage",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_09bd49972ac48250c9c656c153c258af' does not exist yet referenced by update entity\", 'span': 5780259021645033027, 'trace': 1416046656724011627}"
+          },
+          "duration_ms": 958.783
+        },
+        {
+          "row_number": 13,
+          "component_name": "Sail & Fly Antarctica in Style",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_88d2432b7906ca8ae1f164ac0747de6a' does not exist yet referenced by update entity\", 'span': 7646160027598315065, 'trace': 9138746322661034080}"
+          },
+          "duration_ms": 26289.794
+        },
+        {
+          "row_number": 9,
+          "component_name": "Antarctic Peninsula Classic - 11 days",
+          "status": "success",
+          "component_id": "component_c28baab6d6ca90a29e669f9094aaba1f",
+          "error_details": null,
+          "duration_ms": 26611.158
+        },
+        {
+          "row_number": 16,
+          "component_name": "Discover South Georgia, Antarctica and Falklands",
+          "status": "success",
+          "component_id": "component_f71a4baeb6ed26f1f1851749b18a63dc",
+          "error_details": null,
+          "duration_ms": 26147.855
+        },
+        {
+          "row_number": 15,
+          "component_name": "Quintessential Antarctic Luxury Fly & Cruise",
+          "status": "success",
+          "component_id": "component_52c1150f650c8b014b3a969b2cf74e2c",
+          "error_details": null,
+          "duration_ms": 26246.319
+        },
+        {
+          "row_number": 8,
+          "component_name": "Antarctic Peninsula Classic",
+          "status": "success",
+          "component_id": "component_c60617877c4ff3fcd5c3f9b735e6e3a6",
+          "error_details": null,
+          "duration_ms": 26615.171
+        },
+        {
+          "row_number": 6,
+          "component_name": "Onto the Antarctic Ice - Weddell Sea Route",
+          "status": "success",
+          "component_id": "component_b65f779b02dd75f971f9bf44643648db",
+          "error_details": null,
+          "duration_ms": 26617.252
+        },
+        {
+          "row_number": 17,
+          "component_name": "Discover South Georgia, Antarctica and Falklands - 20 days fly back",
+          "status": "success",
+          "component_id": "component_e4f53347dbef7e12eff604d613a792d8",
+          "error_details": null,
+          "duration_ms": 26147.258
+        },
+        {
+          "row_number": 7,
+          "component_name": "Onto the Antarctic Ice - 10 days",
+          "status": "success",
+          "component_id": "component_4b89923ada5d0c824804611d6478c11f",
+          "error_details": null,
+          "duration_ms": 26617.401
+        },
+        {
+          "row_number": 20,
+          "component_name": "Antarctic Basecamp Adventure",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_c0d93d0c37f5d708ea96a83011af40ca' does not exist yet referenced by update entity\", 'span': 2142306901897537830, 'trace': 63137113101754956}"
+          },
+          "duration_ms": 993.256
+        },
+        {
+          "row_number": 23,
+          "component_name": "Antarctic Peninsula in Focus",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_36ad1f3b52826d6fa9afd9e3d3db18dc' does not exist yet referenced by update entity\", 'span': 8245966312524186304, 'trace': 6529274811642341563}"
+          },
+          "duration_ms": 1043.765
+        },
+        {
+          "row_number": 27,
+          "component_name": "Antarctic Explorer",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_ca419f3796ac212932583a5fc6443ec6' does not exist yet referenced by update entity\", 'span': 1930651276208121467, 'trace': 6925956876718994210}"
+          },
+          "duration_ms": 1036.7679999999998
+        },
+        {
+          "row_number": 24,
+          "component_name": "Antarctic Peninsula in Focus",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_36ad1f3b52826d6fa9afd9e3d3db18dc' does not exist yet referenced by update entity\", 'span': 8273434776594960691, 'trace': 635327993211855094}"
+          },
+          "duration_ms": 1043.653
+        },
+        {
+          "row_number": 22,
+          "component_name": "Ultimate Luxury Antarctic Fly & Cruise",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_4b2df66993219ebe5e7677bfa66d6fab' does not exist yet referenced by update entity\", 'span': 5263151821699879195, 'trace': 8891853220991157329}"
+          },
+          "duration_ms": 1048.3700000000001
+        },
+        {
+          "row_number": 25,
+          "component_name": "Antarctic Circle Odyssey",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_ccbf956025e8ea55492797fcbcec8b93' does not exist yet referenced by update entity\", 'span': 7977436009781105914, 'trace': 618734142901252787}"
+          },
+          "duration_ms": 1044.864
+        },
+        {
+          "row_number": 21,
+          "component_name": "Antarctic Basecamp Adventure - Weddell Sea voyage",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_ece6131a49c22d7a5f3eabd0bf3a271a' does not exist yet referenced by update entity\", 'span': 5832295580941625594, 'trace': 3907820998057551772}"
+          },
+          "duration_ms": 1052.6580000000001
+        },
+        {
+          "row_number": 26,
+          "component_name": "Ultimate Antarctica: South Georgia & Antarctic Circle",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_6dc601baf0fe3aec30f648996405548d' does not exist yet referenced by update entity\", 'span': 7554067616328457561, 'trace': 5646576923487917377}"
+          },
+          "duration_ms": 1046.712
+        },
+        {
+          "row_number": 18,
+          "component_name": "Discover South Georgia, Antarctica and Falklands - 20 days fly back",
+          "status": "success",
+          "component_id": "component_e4f53347dbef7e12eff604d613a792d8",
+          "error_details": null,
+          "duration_ms": 26419.609
+        },
+        {
+          "row_number": 28,
+          "component_name": "Antarctica, South Georgia & Falklands In Style",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_5d6fb53264354306430f90a8fa349ea1' does not exist yet referenced by update entity\", 'span': 7607589553968370901, 'trace': 2556029024151858228}"
+          },
+          "duration_ms": 677.359
+        },
+        {
+          "row_number": 33,
+          "component_name": "Southern Atlantic Odyssey",
+          "status": "success",
+          "component_id": "component_53d251a2c7323f9d7a26b7341ff67002",
+          "error_details": null,
+          "duration_ms": 605.085
+        },
+        {
+          "row_number": 32,
+          "component_name": "Spring Quest to Antarctica, Falklands and South Georgia",
+          "status": "success",
+          "component_id": "component_7d9e9ba418fea9209daf11f0d86cebb0",
+          "error_details": null,
+          "duration_ms": 636.242
+        },
+        {
+          "row_number": 37,
+          "component_name": "Antarctic Fly & Cruise Safari",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_cf90f7c4cbc2bab4ac2d748191edf726' does not exist yet referenced by update entity\", 'span': 8761908847965456071, 'trace': 1180983167810701458}"
+          },
+          "duration_ms": 1421.4279999999999
+        },
+        {
+          "row_number": 29,
+          "component_name": "Quest for Shackleton: South Georgia and Antarctica",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_31b08aa8b75181d3c790cd9867460afa' does not exist yet referenced by update entity\", 'span': 3942400754559351202, 'trace': 7638052482549204561}"
+          },
+          "duration_ms": 2065.275
+        },
+        {
+          "row_number": 38,
+          "component_name": "Fly & Cruise Polar Circle",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_0575932980bc5f90cb0170ab1c29c09d' does not exist yet referenced by update entity\", 'span': 2050225220172469170, 'trace': 4014730121465964348}"
+          },
+          "duration_ms": 1455.005
+        },
+        {
+          "row_number": 31,
+          "component_name": "Crossing the Antarctic Circle - sail-fly",
+          "status": "success",
+          "component_id": "component_5d1f2a619f5f558d5c1177e016bcac23",
+          "error_details": null,
+          "duration_ms": 2175.746
+        },
+        {
+          "row_number": 30,
+          "component_name": "Crossing the Antarctic Circle",
+          "status": "success",
+          "component_id": "component_f719b71b6eb4d757fde0c9f6c0f9bfd1",
+          "error_details": null,
+          "duration_ms": 2177.1569999999997
+        },
+        {
+          "row_number": 36,
+          "component_name": "South of the Antarctic Circle - 15 day Weddell Sea",
+          "status": "success",
+          "component_id": "component_7e5c4292923ffa350ef3d719b54e6807",
+          "error_details": null,
+          "duration_ms": 2183.115
+        },
+        {
+          "row_number": 34,
+          "component_name": "South of the Antarctic Circle",
+          "status": "success",
+          "component_id": "component_b71be7431dade66c818af0ee50de5fab",
+          "error_details": null,
+          "duration_ms": 2186.089
+        },
+        {
+          "row_number": 35,
+          "component_name": "South of the Antarctic Circle - 13 days",
+          "status": "success",
+          "component_id": "component_762d6880460321a863fa86d68d7c23dd",
+          "error_details": null,
+          "duration_ms": 2201.6040000000003
+        },
+        {
+          "row_number": 40,
+          "component_name": "Antarctic Fly & Sail Combination",
+          "status": "success",
+          "component_id": "component_705f9570b8c48bf1087506bb31d3f363",
+          "error_details": null,
+          "duration_ms": 533.7330000000001
+        },
+        {
+          "row_number": 42,
+          "component_name": "As you sail towards the Falkland Islands, there is still plenty to keep you occupied on board. The expedition team will continue to share their wealth of knowledge about wildlife, history and the natural world as part of the onboard lecture series. You will have time to enjoy observing seabirds from the stern of the ship and keep a close watch for whales and other marine wildlife.",
+          "status": "success",
+          "component_id": "component_c3e4f7cfe474ffdaf2ecc7b25e0e3d7c",
+          "error_details": null,
+          "duration_ms": 597.2760000000001
+        },
+        {
+          "row_number": 39,
+          "component_name": "Antarctic Peninsula Explorer",
+          "status": "success",
+          "component_id": "component_5a7880e601619a3cc5be0658d04ba1d0",
+          "error_details": null,
+          "duration_ms": 2089.313
+        },
+        {
+          "row_number": 48,
+          "component_name": "Antarctic Explorer Refined",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_047795294a28bfe30b7756bcf58b4406' does not exist yet referenced by update entity\", 'span': 7029244667006790083, 'trace': 5842107486957163036}"
+          },
+          "duration_ms": 215.63199999999998
+        },
+        {
+          "row_number": 44,
+          "component_name": "Quest for the Emperor Penguins of Snow Hill Island",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_21c320fb11a9c03bb3ffa697bc782aed' does not exist yet referenced by update entity\", 'span': 7749955175929535620, 'trace': 6462925994004448803}"
+          },
+          "duration_ms": 615.122
+        },
+        {
+          "row_number": 46,
+          "component_name": "Emperor Penguin Expedition in Style",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_4195e4c5481d95e3cbdd130079689220' does not exist yet referenced by update entity\", 'span': 4838991627531860611, 'trace': 312977038482540644}"
+          },
+          "duration_ms": 644.2750000000001
+        },
+        {
+          "row_number": 45,
+          "component_name": "Antarctic Explorer in Style",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_0d4fbb0930b8543f637ecb51c39e82da' does not exist yet referenced by update entity\", 'span': 4056515154744393369, 'trace': 1586155898864428498}"
+          },
+          "duration_ms": 646.5649999999999
+        },
+        {
+          "row_number": 47,
+          "component_name": "Crossing the Circle in Style",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_cffab631a176301aa3f58fb3ef363073' does not exist yet referenced by update entity\", 'span': 2017758414055363078, 'trace': 1313022493856388825}"
+          },
+          "duration_ms": 648.299
+        },
+        {
+          "row_number": 41,
+          "component_name": "Falklands, South Georgia & The Polar Circle",
+          "status": "success",
+          "component_id": "component_cc9f06ed1f70b6f5cd059016a1d3e223",
+          "error_details": null,
+          "duration_ms": 836.8109999999999
+        },
+        {
+          "row_number": 50,
+          "component_name": "Ross Sea & Subantarctic Islands Explorer",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_dc4fec259577e1f0262b4f08e66635ad' does not exist yet referenced by update entity\", 'span': 7125521653202664347, 'trace': 8771160010248067235}"
+          },
+          "duration_ms": 390.805
+        },
+        {
+          "row_number": 51,
+          "component_name": "Ross Sea & Subantarctic Islands Explorer - Reverse & Longer Itinerary",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_bd302a97f450cd66e3310fb0086306bf' does not exist yet referenced by update entity\", 'span': 2307960892213327581, 'trace': 3680932808049646796}"
+          },
+          "duration_ms": 453.411
+        },
+        {
+          "row_number": 53,
+          "component_name": "Untamed Weddell Sea Adventure",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_cfa8d6d17db753561fd514ea5742dc83' does not exist yet referenced by update entity\", 'span': 7695728149060664108, 'trace': 6576434605533135446}"
+          },
+          "duration_ms": 393.63300000000004
+        },
+        {
+          "row_number": 54,
+          "component_name": "Uncharted Antarctica & South Georgia Odyssey",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_3eba21d5b89ebdc0e701349377827ee8' does not exist yet referenced by update entity\", 'span': 1316029228716041023, 'trace': 2310659129803353671}"
+          },
+          "duration_ms": 421.995
+        },
+        {
+          "row_number": 52,
+          "component_name": "Active Antarctic Adventure",
+          "status": "success",
+          "component_id": "component_e82822f6a9cdd61ef9e9579850863274",
+          "error_details": null,
+          "duration_ms": 1484.562
+        },
+        {
+          "row_number": 55,
+          "component_name": "Women-Only Antarctic Fly & Cruise",
+          "status": "success",
+          "component_id": "component_a1043016f25baa214799f75f36ce50fe",
+          "error_details": null,
+          "duration_ms": 1419.511
+        },
+        {
+          "row_number": 56,
+          "component_name": "Express Antarctica",
+          "status": "success",
+          "component_id": "component_4123f88692b87138e4fc8a1801295054",
+          "error_details": null,
+          "duration_ms": 1376.577
+        },
+        {
+          "row_number": 59,
+          "component_name": "Antarctic Peninsula Revealed",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_47c0c71ab668a7f5bdb6dca7d95aaa22' does not exist yet referenced by update entity\", 'span': 758716232156330793, 'trace': 5304315019729117106}"
+          },
+          "duration_ms": 1071.474
+        },
+        {
+          "row_number": 58,
+          "component_name": "Antarctic Peninsula Fly & Sail Photo Safari",
+          "status": "success",
+          "component_id": "component_7c0379ed6734aaa01b0a546aa4993beb",
+          "error_details": null,
+          "duration_ms": 4113.821
+        },
+        {
+          "row_number": 49,
+          "component_name": "Antarctic Sail & Fly Combination",
+          "status": "success",
+          "component_id": "component_6bb4bc287d9ea16a18b45bdaeff25827",
+          "error_details": null,
+          "duration_ms": 4733.661
+        },
+        {
+          "row_number": 43,
+          "component_name": "Immense Discovery: Falklands, South Georgia & the Peninsula - Reverse Itinerary",
+          "status": "success",
+          "component_id": "component_6de1b90682c7077ed4394782dcd9935f",
+          "error_details": null,
+          "duration_ms": 5219.716
+        },
+        {
+          "row_number": 19,
+          "component_name": "Discover South Georgia, Antarctica and Falklands - 22 days reverse itinerary",
+          "status": "success",
+          "component_id": "component_233e8508350b0c88403302eb57f563c1",
+          "error_details": null,
+          "duration_ms": 33823.553
+        },
+        {
+          "row_number": 65,
+          "component_name": "Fly & Sail Antarctica in Style",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_836ba98c0f78428b8f9b764c37226296' does not exist yet referenced by update entity\", 'span': 4522140922758092391, 'trace': 6577906810423268548}"
+          },
+          "duration_ms": 217.316
+        },
+        {
+          "row_number": 63,
+          "component_name": "Original Fly & Cruise Expedition Cruise",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_37d1694a05e9c387325577d3279bcecd' does not exist yet referenced by update entity\", 'span': 2421797320654809658, 'trace': 967856235461623013}"
+          },
+          "duration_ms": 3303.703
+        },
+        {
+          "row_number": 61,
+          "component_name": "Express Tour of Antarctica",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_a28b4d942713ef23a860614ebda8fb3e' does not exist yet referenced by update entity\", 'span': 8933582747440321942, 'trace': 602128353917809798}"
+          },
+          "duration_ms": 3306.828
+        },
+        {
+          "row_number": 62,
+          "component_name": "Express Tour of Antarctica - Reverse Itinerary",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_e346f129edc09bbffc98631ad86f1506' does not exist yet referenced by update entity\", 'span': 5940580042862685425, 'trace': 3382318442227181265}"
+          },
+          "duration_ms": 3308.135
+        },
+        {
+          "row_number": 64,
+          "component_name": "Express South Georgia & Antarctica Wildlife Safari",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_a23923580156256118200090ddd2df34' does not exist yet referenced by update entity\", 'span': 9043221764895903734, 'trace': 3759871771049081179}"
+          },
+          "duration_ms": 3290.19
+        },
+        {
+          "row_number": 60,
+          "component_name": "66 Degrees South Fly Cruise",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_cb97b3cc3bbf39e3627961981f0f494d' does not exist yet referenced by update entity\", 'span': 6487686338792917828, 'trace': 7899023802707134064}"
+          },
+          "duration_ms": 4342.5779999999995
+        },
+        {
+          "row_number": 67,
+          "component_name": "Antarctic Peninsula Helicopter Safari",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_cd8690a138c44713622c3d3b3a4cea1b' does not exist yet referenced by update entity\", 'span': 7666971483104652792, 'trace': 8632891137423764982}"
+          },
+          "duration_ms": 219.352
+        },
+        {
+          "row_number": 66,
+          "component_name": "Fly & Sail Antarctica in Style - Charter Flight Included",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_ed1c3a30370743bc89be798feef4935e' does not exist yet referenced by update entity\", 'span': 6937709104247790390, 'trace': 191991664330979542}"
+          },
+          "duration_ms": 220.652
+        },
+        {
+          "row_number": 68,
+          "component_name": "Antarctic Peninsula Discovered",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_f8b802e1d4ffb513bae3c4355576eb9f' does not exist yet referenced by update entity\", 'span': 8357293409389392535, 'trace': 1850858526397972137}"
+          },
+          "duration_ms": 214.73600000000002
+        },
+        {
+          "row_number": 57,
+          "component_name": "Crossing the Antarctic Circle Fly & Cruise",
+          "status": "success",
+          "component_id": "component_9cf6786f64994bc38b1e66d5b70bd036",
+          "error_details": null,
+          "duration_ms": 4545.589
+        },
+        {
+          "row_number": 71,
+          "component_name": "Springtime in South Georgia, Falklands and Antarctica",
+          "status": "success",
+          "component_id": "component_bfea443785d331d8c9c99aedf2c4ea8d",
+          "error_details": null,
+          "duration_ms": 200.804
+        },
+        {
+          "row_number": 74,
+          "component_name": "South Georgia, Falklands and Antarctica In Depth",
+          "status": "success",
+          "component_id": "component_8294847fc27444185b400e32d62a1602",
+          "error_details": null,
+          "duration_ms": 896.131
+        },
+        {
+          "row_number": 75,
+          "component_name": "South Georgia, Falklands and Antarctica In Depth - Reverse Itinerary",
+          "status": "success",
+          "component_id": "component_e3d7976516b94c91d21874e4480be15d",
+          "error_details": null,
+          "duration_ms": 885.756
+        },
+        {
+          "row_number": 77,
+          "component_name": "Climb Mount Vinson",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_2acdf665e9f841760036b60d807e950a' does not exist yet referenced by update entity\", 'span': 3103971017284221035, 'trace': 1878560224228527642}"
+          },
+          "duration_ms": 883.835
+        },
+        {
+          "row_number": 78,
+          "component_name": "Destination Antarctica, Falklands & South Georgia",
+          "status": "success",
+          "component_id": "component_8223e4e621a29fc51dbb1ee2760d4255",
+          "error_details": null,
+          "duration_ms": 847.64
+        },
+        {
+          "row_number": 79,
+          "component_name": "Ross Sea Discovery: In Scott & Shackleton's Footsteps",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_6214a2e436798ba7d4943398f02a80f7' does not exist yet referenced by update entity\", 'span': 964339217345257246, 'trace': 4823030352067223113}"
+          },
+          "duration_ms": 738.2990000000001
+        },
+        {
+          "row_number": 69,
+          "component_name": "Antarctica Classic in Depth",
+          "status": "success",
+          "component_id": "component_e464e6762962e3f4f62227d547173df1",
+          "error_details": null,
+          "duration_ms": 1037.191
+        },
+        {
+          "row_number": 70,
+          "component_name": "Quest for the Antarctic Circle",
+          "status": "success",
+          "component_id": "component_4543fc4da1764eb50ab38524dd191047",
+          "error_details": null,
+          "duration_ms": 1019.0729999999999
+        },
+        {
+          "row_number": 72,
+          "component_name": "Explore the Antarctic Peninsula - BA to USH",
+          "status": "success",
+          "component_id": "component_eeba77d8447726769f3baf65cd25fa1e",
+          "error_details": null,
+          "duration_ms": 1017.0110000000001
+        },
+        {
+          "row_number": 73,
+          "component_name": "Explore the Antarctic Peninsula - SCL to USH",
+          "status": "success",
+          "component_id": "component_a63c9b6f0a2ca230bb201881ffd90b1c",
+          "error_details": null,
+          "duration_ms": 1025.2060000000001
+        },
+        {
+          "row_number": 76,
+          "component_name": "Classic Peninsula Voyage",
+          "status": "success",
+          "component_id": "component_338ae8461b6b3ba0701c74de13a36e62",
+          "error_details": null,
+          "duration_ms": 1095.211
+        },
+        {
+          "row_number": 80,
+          "component_name": "South Georgia, Antarctica and Falklands Explorer",
+          "status": "success",
+          "component_id": "component_5495f6578996bff996c933ceed35f243",
+          "error_details": null,
+          "duration_ms": 232.882
+        },
+        {
+          "row_number": 81,
+          "component_name": "Luxury Falklands, South Georgia & Antarctica",
+          "status": "success",
+          "component_id": "component_69b04884138a9451a9c26359f014a7a7",
+          "error_details": null,
+          "duration_ms": 236.033
+        },
+        {
+          "row_number": 86,
+          "component_name": "Explore Antarctica, South Georgia and Falklands - 23 days ending in BA",
+          "status": "success",
+          "component_id": "component_b3d6e767383c5ee8e7504b9d655fd58a",
+          "error_details": null,
+          "duration_ms": 901.9150000000001
+        },
+        {
+          "row_number": 85,
+          "component_name": "Explore Antarctica, South Georgia and Falklands",
+          "status": "success",
+          "component_id": "component_7189f55289d428b07ebc87f606acf1a8",
+          "error_details": null,
+          "duration_ms": 908.617
+        },
+        {
+          "row_number": 89,
+          "component_name": "Fly to the South Pole - 7 days",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_902110fa55ccfd68134401f6bb30ef05' does not exist yet referenced by update entity\", 'span': 1554665259765864770, 'trace': 5713294144989213685}"
+          },
+          "duration_ms": 805.1239999999999
+        },
+        {
+          "row_number": 88,
+          "component_name": "Fly to the South Pole",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_f24e20e809801cd8a24f8f7cb5d0f374' does not exist yet referenced by update entity\", 'span': 5948134604108331816, 'trace': 9203007705717146293}"
+          },
+          "duration_ms": 904.2900000000001
+        },
+        {
+          "row_number": 90,
+          "component_name": "Camp with Emperor Penguins",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_e632c80e84575a58f71d082f9de8ff9c' does not exist yet referenced by update entity\", 'span': 6693223841164349200, 'trace': 2116241378374810190}"
+          },
+          "duration_ms": 790.048
+        },
+        {
+          "row_number": 83,
+          "component_name": "Luxury Highlights of the Antarctic Peninsula",
+          "status": "success",
+          "component_id": "component_ef8b13c42285d0191bed0e05ce1da58b",
+          "error_details": null,
+          "duration_ms": 1071.321
+        },
+        {
+          "row_number": 82,
+          "component_name": "Polar Circle Adventure",
+          "status": "success",
+          "component_id": "component_8422d3fdebb58e43ddd37268276e9051",
+          "error_details": null,
+          "duration_ms": 1079.008
+        },
+        {
+          "row_number": 84,
+          "component_name": "Luxury Highlights of the Antarctic Peninsula - 13 days long",
+          "status": "success",
+          "component_id": "component_cea38a54226e59a2a2e4ef992c951505",
+          "error_details": null,
+          "duration_ms": 1066.356
+        },
+        {
+          "row_number": 91,
+          "component_name": "Heart of Antarctica",
+          "status": "success",
+          "component_id": "component_c0bb1f0eacb110e2f88c9ebca85aa4a9",
+          "error_details": null,
+          "duration_ms": 967.958
+        },
+        {
+          "row_number": 87,
+          "component_name": "Cruise to the Antarctic Peninsula",
+          "status": "success",
+          "component_id": "component_743f9acd1242410552eaf9f3dfeff3d3",
+          "error_details": null,
+          "duration_ms": 1107.6209999999999
+        },
+        {
+          "row_number": 95,
+          "component_name": "Skydiving over Antarctica",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_da9a8bad827fbbaf01538f2f7b2e5a64' does not exist yet referenced by update entity\", 'span': 3115493035900496974, 'trace': 183162960023341481}"
+          },
+          "duration_ms": 886.839
+        },
+        {
+          "row_number": 96,
+          "component_name": "Encounter the Antarctic Circle",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_7d609e475101ce26dac7c96c08d5cc3b' does not exist yet referenced by update entity\", 'span': 6581583387774563496, 'trace': 3123990559849060688}"
+          },
+          "duration_ms": 886.8190000000001
+        },
+        {
+          "row_number": 94,
+          "component_name": "Antarctica, Falklands & South Georgia in Comfort",
+          "status": "success",
+          "component_id": "component_1d6ee06ac133cd83c9582f11d56a5c75",
+          "error_details": null,
+          "duration_ms": 971.093
+        },
+        {
+          "row_number": 98,
+          "component_name": "Fly-Sail Antarctica & South Georgia - SG first",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_347df1317b2f0d7c8b7c632763417861' does not exist yet referenced by update entity\", 'span': 2210984243883846578, 'trace': 3440505762474985273}"
+          },
+          "duration_ms": 924.0310000000001
+        },
+        {
+          "row_number": 100,
+          "component_name": "Antarctic Yacht Expedition",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_db920b8bfdebbc915d3698ea071f99bc' does not exist yet referenced by update entity\", 'span': 5300289234490437610, 'trace': 71918457029307889}"
+          },
+          "duration_ms": 808.164
+        },
+        {
+          "row_number": 97,
+          "component_name": "Antarctica, South Georgia & Falklands Revealed",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_901c24a8f12c1ca12dbddf0a67c136a3' does not exist yet referenced by update entity\", 'span': 7082511198332468130, 'trace': 4200969901427667778}"
+          },
+          "duration_ms": 950.294
+        },
+        {
+          "row_number": 99,
+          "component_name": "Fly-Sail Antarctica & South Georgia - ANT first",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_8745d4f8395653fc232afa226377fbda' does not exist yet referenced by update entity\", 'span': 8862116103834395575, 'trace': 456306163159688331}"
+          },
+          "duration_ms": 947.746
+        },
+        {
+          "row_number": 101,
+          "component_name": "Luxury South Georgia & Antarctica Fly & Cruise",
+          "status": "success",
+          "component_id": "component_35b50fcd9885be98dd6cecf101ce335a",
+          "error_details": null,
+          "duration_ms": 825.7330000000001
+        },
+        {
+          "row_number": 92,
+          "component_name": "Traversing the Antarctic Circle",
+          "status": "success",
+          "component_id": "component_f93e22a127d917e6b6d173bb7ba44de4",
+          "error_details": null,
+          "duration_ms": 1077.461
+        },
+        {
+          "row_number": 93,
+          "component_name": "Traversing the Antarctic Circle - 15 days",
+          "status": "success",
+          "component_id": "component_9b4482719671a7730b591501154a297f",
+          "error_details": null,
+          "duration_ms": 1074.527
+        },
+        {
+          "row_number": 104,
+          "component_name": "Elegant Falklands, South Georgia & Antarctica",
+          "status": "success",
+          "component_id": "component_20f6097ad8baf0fb37af05171913f4af",
+          "error_details": null,
+          "duration_ms": 208.505
+        },
+        {
+          "row_number": 105,
+          "component_name": "Elegant Falklands, South Georgia & Antarctica - Reverse Itinerary",
+          "status": "success",
+          "component_id": "component_a08f778951e1d0d947f678bfa93a0d33",
+          "error_details": null,
+          "duration_ms": 197.44
+        },
+        {
+          "row_number": 106,
+          "component_name": "South Georgia & Falklands Wildlife Safari",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_a0644dce755424cb8a650a475ddcc417' does not exist yet referenced by update entity\", 'span': 1239257067841450550, 'trace': 2846086763901588230}"
+          },
+          "duration_ms": 895.882
+        },
+        {
+          "row_number": 107,
+          "component_name": "Ross Sea in Luxury",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_860d556d6e48090d3f78fb2ddd67f09c' does not exist yet referenced by update entity\", 'span': 7230456122777951179, 'trace': 8436236356187293070}"
+          },
+          "duration_ms": 876.07
+        },
+        {
+          "row_number": 112,
+          "component_name": "Luxury Weddell Sea Explorer",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_08255d61c81dc5afef0c93953719173d' does not exist yet referenced by update entity\", 'span': 3687912217524590307, 'trace': 7767581552295985124}"
+          },
+          "duration_ms": 819.79
+        },
+        {
+          "row_number": 103,
+          "component_name": "Multi-activity Antarctic Peninsula",
+          "status": "success",
+          "component_id": "component_c8b312afbc0a501631cdb4660e1c7505",
+          "error_details": null,
+          "duration_ms": 1119.026
+        },
+        {
+          "row_number": 102,
+          "component_name": "Elegant Antarctic Peninsula",
+          "status": "success",
+          "component_id": "component_8a8567874bc2e4bc6db971c943339c50",
+          "error_details": null,
+          "duration_ms": 1122.2069999999999
+        },
+        {
+          "row_number": 108,
+          "component_name": "Antarctic Express Fly & Cruise",
+          "status": "success",
+          "component_id": "component_f54fe83fba35984341d80f8c2a4da1e6",
+          "error_details": null,
+          "duration_ms": 1051.591
+        },
+        {
+          "row_number": 109,
+          "component_name": "Antarctic Express Sail & Fly",
+          "status": "success",
+          "component_id": "component_983ca508ae04d716e3504783d3e26e6f",
+          "error_details": null,
+          "duration_ms": 1051.537
+        },
+        {
+          "row_number": 114,
+          "component_name": "Antarctic Peninsula Redefined",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_10d98b42810f2ce2557a383f13d3c6c9' does not exist yet referenced by update entity\", 'span': 8728872712567046745, 'trace': 474859039070339432}"
+          },
+          "duration_ms": 224.232
+        },
+        {
+          "row_number": 111,
+          "component_name": "Antarctic Fly & Cruise In Depth - 10 days",
+          "status": "success",
+          "component_id": "component_62dfad8dc4d28a6367b5e5e8548b3789",
+          "error_details": null,
+          "duration_ms": 1121.167
+        },
+        {
+          "row_number": 113,
+          "component_name": "Icebreaker Antarctic Circle Voyage",
+          "status": "success",
+          "component_id": "component_690748f6d0e3ff463a0af7524f1c1186",
+          "error_details": null,
+          "duration_ms": 1012.5280000000001
+        },
+        {
+          "row_number": 110,
+          "component_name": "Antarctic Fly & Cruise In Depth",
+          "status": "success",
+          "component_id": "component_566f9da1241018e83c7c40fbc7c9694f",
+          "error_details": null,
+          "duration_ms": 1141.365
+        },
+        {
+          "row_number": 117,
+          "component_name": "Falklands, South Georgia & Antarctica in Focus",
+          "status": "success",
+          "component_id": "component_506843ef5d9a7775b940c71c1b9539cf",
+          "error_details": null,
+          "duration_ms": 195.45499999999998
+        },
+        {
+          "row_number": 116,
+          "component_name": "Antarctica, Falklands & South Georgia Redefined",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_d4d2f20f60d6245a0421c99e95c4efce' does not exist yet referenced by update entity\", 'span': 6046194882483832155, 'trace': 3469692251773813375}"
+          },
+          "duration_ms": 893.077
+        },
+        {
+          "row_number": 118,
+          "component_name": "Luxury South Georgia & Antarctica Combination",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_f8d9b5ac39eeb2f07e17745fa5c9064b' does not exist yet referenced by update entity\", 'span': 3024826194856665356, 'trace': 5067465545876525924}"
+          },
+          "duration_ms": 880.409
+        },
+        {
+          "row_number": 115,
+          "component_name": "Antarctic Circle In Depth",
+          "status": "success",
+          "component_id": "component_3e73c7b1ffa20b5870e27fcc93f4162a",
+          "error_details": null,
+          "duration_ms": 1126.809
+        },
+        {
+          "row_number": 125,
+          "component_name": "Classic Antarctica & South Shetlands",
+          "status": "success",
+          "component_id": "component_bbbbfd68f66c0996178d77a774ea2305",
+          "error_details": null,
+          "duration_ms": 1004.7379999999999
+        },
+        {
+          "row_number": 122,
+          "component_name": "Antarctica & Patagonia In Depth - 1 day less",
+          "status": "success",
+          "component_id": "component_f03727333bf8d42155d4d5d9c8fde95d",
+          "error_details": null,
+          "duration_ms": 1028.588
+        },
+        {
+          "row_number": 127,
+          "component_name": "Epic Explorer: Falklands, South Georgia & the Antarctic Circle",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not update component: before update hook failed: componentId 'component_c696ff46f6e539779b5bcbb877effaab' does not exist yet referenced by update entity\", 'span': 8417177252484075276, 'trace': 7084655386019563022}"
+          },
+          "duration_ms": 997.381
+        },
+        {
+          "row_number": 123,
+          "component_name": "Quintessential Luxury Antarctic Sail & Fly",
+          "status": "success",
+          "component_id": "component_a8334f5f2ad357d7245eeec9b58c530c",
+          "error_details": null,
+          "duration_ms": 1815.5349999999999
+        },
+        {
+          "row_number": 120,
+          "component_name": "Patagonia & Antarctica In Depth",
+          "status": "success",
+          "component_id": "component_600e475777b1d8d3066cb3fa28d1a3f3",
+          "error_details": null,
+          "duration_ms": 1948.008
+        },
+        {
+          "row_number": 119,
+          "component_name": "Elegant Antarctic Peninsula In Depth",
+          "status": "success",
+          "component_id": "component_e669d79ff580073699efbf7d7586eaf2",
+          "error_details": null,
+          "duration_ms": 1949.049
+        },
+        {
+          "row_number": 121,
+          "component_name": "Antarctica & Patagonia In Depth",
+          "status": "success",
+          "component_id": "component_5cd6d20313bf3be48ed957035d05c316",
+          "error_details": null,
+          "duration_ms": 1906.426
+        },
+        {
+          "row_number": 124,
+          "component_name": "Quintessential Luxury Antarctic Fly & Sail",
+          "status": "success",
+          "component_id": "component_b7f14761ce340aff50b52a9270f23712",
+          "error_details": null,
+          "duration_ms": 1817.734
+        },
+        {
+          "row_number": 126,
+          "component_name": "Classic Antarctica & South Shetlands - 10 days",
+          "status": "success",
+          "component_id": "component_1d79ad287f1838e28ea11593ea8df93d",
+          "error_details": null,
+          "duration_ms": 1183.548
+        }
+      ]
+    }
+  },
+  "overall_field_completeness": {
+    "description.web": 100.0,
+    "description.quote": 100.0,
+    "description.final": 100.0,
+    "destination": 100.0,
+    "tripId": 77.77777777777779,
+    "partners": 69.04761904761905,
+    "regions": 80.15873015873017,
+    "media.images": 100.0,
+    "package": 100.0
+  }
+}

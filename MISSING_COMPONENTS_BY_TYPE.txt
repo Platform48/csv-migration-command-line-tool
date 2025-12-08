@@ -1,0 +1,362 @@
+MISSING COMPONENT REFERENCES REPORT (BY TYPE)
+Generated: 2025-12-05 10:35:24
+
+This report groups all unique missing component references by type.
+Each entry shows the component name and how many times it was missing.
+
+====================================================================================================
+
+TYPE: location
+--------------------------------------------------------------------------------
+Missing Component                                      | Occurrences
+---------------------------------------------------------------------
+"Albatros"                                             | 1
+"Aldea Naukana Posada Boutique"                        | 1
+"Algodon Mansion"                                      | 1
+"Alma del Lago"                                        | 1
+"Altiplánico Atacama"                                  | 1
+"Altiplánico Santiago"                                 | 1
+"Alto Andino"                                          | 1
+"Alvear Palace Hotel"                                  | 1
+"Amonite"                                              | 1
+"Anselmo Buenos Aires Curio Collection"                | 1
+"Antiguo Convento"                                     | 1
+"Apart Hotel Quillango"                                | 1
+"Apart Hotel Roble del Sur"                            | 1
+"Aquaterra Lodge"                                      | 1
+"Arakur"                                               | 1
+"Atton El Bosque"                                      | 1
+"Awasi Iguazú"                                         | 1
+"Ayres De Recoleta"                                    | 1
+"Ayres de Salta Hotel"                                 | 1
+"B&B and Cabins Cerro Castillo"                        | 1
+"Bader Climber's Camp"                                 | 1
+"Bahía Bustamante Lodge"                               | 1
+"Big Bang Patagonia"                                   | 1
+"Big Sur"                                              | 1
+"Blanca Patagonia"                                     | 1
+"BoBo Hotel"                                           | 1
+"Bosque de Nahuel"                                     | 1
+"Boutique Hotel Sizigia"                               | 1
+"Cabañas del Paine"                                    | 1
+"Cabañas Don Niba"                                     | 1
+"Cabañas Javi"                                         | 1
+"Cabañas Lago Tyndall"                                 | 1
+"Cabañas Parque Metreñehue"                            | 1
+"Cabo de Hornos"                                       | 1
+"Cacique Inacayal Lake & Spa Hotel"                    | 1
+"Calafate Parque Hotel"                                | 1
+"Caleta Gonzalo Lodge"                                 | 1
+"Camping Italiano"                                     | 1
+"Camping Japonés"                                      | 1
+"Camping Paso"                                         | 1
+"Camping Perros"                                       | 1
+"Carpa Manzano"                                        | 1
+"Casa Bueras Boutique (formerly Lastarria Boutique)"   | 1
+"Casa DeTodos B&B"                                     | 1
+"Casa Galos"                                           | 1
+"Casa Kalfu"                                           | 1
+"Casa Solaria"                                         | 1
+"Casa Sur Recoleta"                                    | 1
+"CasaSur Bellini"                                      | 1
+"CasaSur Palermo Hotel"                                | 1
+"CasaSur Recoleta"                                     | 1
+"Castillo Rojo"                                        | 1
+"Chaltén Camp"                                         | 1
+"Chaltén Suites"                                       | 1
+"Chil-Hue"                                             | 1
+"Cilene del Faro Suites and Spa"                       | 1
+"Cilene del Fuego Suites & Spa"                        | 1
+"Claridge Hotel"                                       | 1
+"Club Tapiz"                                           | 1
+"Continental 725"                                      | 1
+"Correntoso Lake River Hotel"                          | 1
+"Crowne Plaza Santiago"                                | 1
+"Dazzler Palermo"                                      | 1
+"Dazzler Puerto Madryn"                                | 1
+"Deco Recoleta Hotel"                                  | 1
+"Del Nómade Hosteria"                                  | 1
+"Desertica"                                            | 1
+"Design Suites Bariloche"                              | 1
+"Design Suites Calafate"                               | 1
+"Destino Sur"                                          | 1
+"Don Tomas"                                            | 1
+"Dreams Coyhaique"                                     | 1
+"Duhau Palace - Park Hyatt"                            | 1
+"El Casco"                                             | 1
+"El Muelle Hotel Boutique"                             | 1
+"El Pedral Lodge"                                      | 1
+"El Puesto"                                            | 1
+"El Quijote Hotel"                                     | 1
+"El Reloj"                                             | 1
+"Errante EcoLodge"                                     | 1
+"Esplendor Palermo Soho"                               | 1
+"Estancia 440"                                         | 1
+"Estancia Cueva de las Manos"                          | 1
+"Estancia El Condor"                                   | 1
+"Estancia La Josefina"                                 | 1
+"Estancia La Península"                                | 1
+"Explora Easter Island"                                | 1
+"Faro Punta Delgada"                                   | 1
+"Fauna Hotel"                                          | 1
+"French Domes"                                         | 1
+"Gran Meliá Iguazú"                                    | 1
+"Hanga Roa Eco Village"                                | 1
+"Hilton Garden Inn Santiago Airport"                   | 1
+"Holiday Inn Ezeiza"                                   | 1
+"Home Hotel"                                           | 1
+"Hospedaje La Casona"                                  | 1
+"Hostal Alamo Patagonico"                              | 1
+"Hostal de los Castillos"                              | 1
+"Hostal El Mosco"                                      | 1
+"Hostal Francis Drake"                                 | 1
+"Hostal Gladys"                                        | 1
+"Hostal La Tetera"                                     | 1
+"Hostal Natales"                                       | 1
+"Hostal Nuevo Muno"                                    | 1
+"Hostal Patagonia"                                     | 1
+"Hostal Schilling"                                     | 1
+"Hostel Keoken"                                        | 1
+"Hosteria de la Patagonia"                             | 1
+"Hosteria El Puma"                                     | 1
+"Hosteria Hainen"                                      | 1
+"Hosteria La Estepa"                                   | 1
+"Hosteria Mi Vida"                                     | 1
+"Hosteria Mirador del Payne"                           | 1
+"Hosteria Patagonia Rebelde"                           | 1
+"Hosteria Pehoé"                                       | 1
+"Hosteria Posta Sur"                                   | 1
+"Hosteria y Cabañas Rucapillan"                        | 1
+"Hostería Cauquenes de Nimez"                          | 1
+"Hostería El Paraíso"                                  | 1
+"Hostería El Álamo"                                    | 1
+"Hostería Yendegaia"                                   | 1
+"Hotel Almasur"                                        | 1
+"Hotel Altiplanico Bellas Artes"                       | 1
+"Hotel Altiplanico Easter Island"                      | 1
+"Hotel Altiplanico Puerto Natales"                     | 1
+"Hotel Altos Ushuaia"                                  | 1
+"Hotel Ancud"                                          | 1
+"Hotel Antumalal"                                      | 1
+"Hotel Augustos Copacabana"                            | 1
+"Hotel Babel Boutique"                                 | 1
+"Hotel Bellavista"                                     | 1
+"Hotel Bidasoa"                                        | 1
+"Hotel Cabañas del Lago"                               | 1
+"Hotel Campanilla"                                     | 1
+"Hotel Casa Higueras"                                  | 1
+"Hotel Casa Real"                                      | 1
+"Hotel Cirilo Armstrong"                               | 1
+"Hotel Civico"                                         | 1
+"Hotel Clásico"                                        | 1
+"Hotel Colonos del Sur Mirador"                        | 1
+"Hotel Costaustralis"                                  | 1
+"Hotel Cumbres Lastarria"                              | 1
+"Hotel Cumbres Nevadas"                                | 1
+"Hotel Cumbres San Pedro de Atacama"                   | 1
+"Hotel Dandi Royal"                                    | 1
+"Hotel Dazzler BUENOS AIRES Palermo"                   | 1
+"Hotel De Los Andes"                                   | 1
+"Hotel Diego de Almagro"                               | 1
+"Hotel Diego de Almagro Providencia (DA)"              | 1
+"Hotel Director"                                       | 1
+"Hotel Dreams Punta Arenas"                            | 1
+"Hotel El Barranco"                                    | 1
+"Hotel Emperador"                                      | 1
+"Hotel Esplendor"                                      | 1
+"Hotel Factoria"                                       | 1
+"Hotel Fueguino"                                       | 1
+"Hotel Imago"                                          | 1
+"Hotel Iorana"                                         | 1
+"Hotel Kalenshen"                                      | 1
+"Hotel Kapenke"                                        | 1
+"Hotel Kran Kreen"                                     | 1
+"Hotel La Cantera"                                     | 1
+"Hotel Lacolet"                                        | 1
+"Hotel Ladera"                                         | 1
+"Hotel Lady Florence Dixie"                            | 1
+"Hotel Las Bayas"                                      | 1
+"Hotel Las Marianas"                                   | 1
+"Hotel Legado Mitico Salta"                            | 1
+"Hotel Lodge Landhaus San Sebastian"                   | 1
+"Hotel Los Canelos"                                    | 1
+"Hotel Luciano K"                                      | 1
+"Hotel Lunajuim"                                       | 1
+"Hotel Madero"                                         | 1
+"Hotel Magnolia"                                       | 1
+"Hotel Malalhue"                                       | 1
+"Hotel Manavai"                                        | 1
+"Hotel Manoir Atkinson"                                | 1
+"Hotel Martin Gusinde"                                 | 1
+"Hotel Mil810"                                         | 1
+"Hotel MM450"                                          | 1
+"Hotel Naguilan"                                       | 1
+"Hotel Natalino"                                       | 1
+"Hotel NH Buenos Aires Tango"                          | 1
+"Hotel Orly"                                           | 1
+"Hotel Patagonia Green"                                | 1
+"Hotel Peninsula Valdés"                               | 1
+"Hotel Peulla"                                         | 1
+"Hotel Piren"                                          | 1
+"Hotel Plaza"                                          | 1
+"Hotel Plaza El Bosque Ebro"                           | 1
+"Hotel Portillo"                                       | 1
+"Hotel Posada La Sorgente"                             | 1
+"Hotel Puelche"                                        | 1
+"Hotel Puku Vai"                                       | 1
+"Hotel Residencia Linares"                             | 1
+"Hotel Rio Serrano"                                    | 1
+"Hotel Santiago (ex Hyatt)"                            | 1
+"Hotel Santiago Park Plaza"                            | 1
+"Hotel Selknam"                                        | 1
+"Hotel Sheraton Libertador"                            | 1
+"Hotel Simple Patagonia"                               | 1
+"Hotel Solace"                                         | 1
+"Hotel Taha Hai"                                       | 1
+"Hotel Takha Takha"                                    | 1
+"Hotel Tayka de Piedra"                                | 1
+"Hotel Tayka de Sal"                                   | 1
+"Hotel Tayka del Desierto"                             | 1
+"Hotel Territorio Puerto Madryn"                       | 1
+"Hotel Tierra del Fuego"                               | 1
+"Hotel Veat"                                           | 1
+"Hotel Verso"                                          | 1
+"Huilo Huilo Nothofagus Hotel"                         | 1
+"Ilaia Hotel"                                          | 1
+"Inlandsis Hostal"                                     | 1
+"Innata Casa"                                          | 1
+"Intersur Recoleta"                                    | 1
+"Ismael Hotel"                                         | 1
+"Jardin Escondido"                                     | 1
+"Jose Nogueira"                                        | 1
+"Kau Kaleshen"                                         | 1
+"Kau Yatun Hotel de Campo"                             | 1
+"Kaulem"                                               | 1
+"Kimal"                                                | 1
+"Koi Aiken"                                            | 1
+"Kosten Aike"                                          | 1
+"La Cantera Jungle Lodge"                              | 1
+"La Casa de Eugenia"                                   | 1
+"La Cascada"                                           | 1
+"La Casona"                                            | 1
+"La Casona Matetic"                                    | 1
+"La Merced del Alto Boutique Hotel (2,280m)"           | 1
+"La Posada del Posadas"                                | 1
+"Las Balsas Relais & Châteaux"                         | 1
+"Las Hayas"                                            | 1
+"Las Lengas"                                           | 1
+"Le Chatelet"                                          | 1
+"Le Reve"                                              | 1
+"Legado Mitico"                                        | 1
+"Llao Llao Resort Golf and Spa"                        | 1
+"Loi Suites"                                           | 1
+"Loi Suites Iguazú"                                    | 1
+"Lord Patagonia Outdoor"                               | 1
+"Los Acebos Hotel"                                     | 1
+"Los Cauquenes Resort and Spa"                         | 1
+"Los Cerros"                                           | 1
+"Los Ponchos Hotel Boutique"                           | 1
+"Los Raices B&B"                                       | 1
+"Los Sauces Casas Patagonia"                           | 1
+"Los Ñires Hotel"                                      | 1
+"Madre Tierra Patagonia"                               | 1
+"Maison Italia 1029"                                   | 1
+"Mallín Colorado Lodge"                                | 1
+"Mandarin Oriental Santiago"                           | 1
+"Marina Fuy Hotel Boutique"                            | 1
+"Mendoza"                                              | 1
+"Mercure Iguazu - Hotel Iru"                           | 1
+"Meridiano Sur Petit Hotel"                            | 1
+"Mero Gaucho"                                          | 1
+"Mine Hotel"                                           | 1
+"Mio Hotel"                                            | 1
+"Mirador del Lago"                                     | 1
+"Mountain Lodge Cochamó"                               | 1
+"Nayara Alto Atacama"                                  | 1
+"Nayara Rapa Nui"                                      | 1
+"Noi Vitacura"                                         | 1
+"Nomades Hotel Boutique"                               | 1
+"Nothofagus B+B"                                       | 1
+"Nuss"                                                 | 1
+"Nuss Buenos Aires Soho"                               | 1
+"Oceano Patagonia"                                     | 1
+"Oceano Rayentray"                                     | 1
+"Ocio Territorial Hotel"                               | 1
+"Oporto Hotel Boutique"                                | 1
+"Own Recoleta"                                         | 1
+"Palacio Astoreca"                                     | 1
+"Palacio Duhau - Park Hyatt Hotel"                     | 1
+"Palafito 1326 Hotel Boutique"                         | 1
+"Palafito Waiwen"                                      | 1
+"Palladio Hotel"                                       | 1
+"Palo Santo"                                           | 1
+"Pampa del Corral"                                     | 1
+"Pampa Lodge"                                          | 1
+"Panamericana Hotel Providencia"                       | 1
+"Pangue Lodge"                                         | 1
+"Panoramic Grand Hotel"                                | 1
+"Paradise"                                             | 1
+"Parque Factoría Lodge"                                | 1
+"Patagonia Hostel"                                     | 1
+"Patagonia House"                                      | 1
+"Patagonia Jarké"                                      | 1
+"Patagonia Queen"                                      | 1
+"Patios de San Telmo"                                  | 1
+"Peninsula Petit"                                      | 1
+"Petrohué Lodge"                                       | 1
+"Pleno Palermo Hotel"                                  | 1
+"Poblado Kimal"                                        | 1
+"Poincenot Comfort Camp"                               | 1
+"Porto Bay Hotel"                                      | 1
+"Posada Buena Vida Social Club"                        | 1
+"Posada con los Angeles"                               | 1
+"Posada Del Fin Del Mundo"                             | 1
+"Posada del Río"                                       | 1
+"Posada Karut Josh"                                    | 1
+"Posada Los Alamos"                                    | 1
+"Posada los Juncos"                                    | 1
+"Posada Los Mimbres"                                   | 1
+"Posada Queulat"                                       | 1
+"Puyuhuapi Lodge"                                      | 1
+"Rayentray Grand Hotel Puerto Madryn"                  | 1
+"Rayentray Puerto Piramides"                           | 1
+"Recoleta Grand"                                       | 1
+"Refugio Central"                                      | 1
+"Refugio Chileno"                                      | 1
+"Refugio Cochamó"                                      | 1
+"Refugio Condor"                                       | 1
+"Remota Lodge"                                         | 1
+"Rio Palena Lodge"                                     | 1
+"Río Hermoso Lodge"                                    | 1
+"San Telmo Luxury Suites"                              | 1
+"Santiago Airport Holiday Inn"                         | 1
+"Santiago Marriott Hotel"                              | 1
+"Senderos Hosteria"                                    | 1
+"Sierra Nevada Hotel"                                  | 1
+"Sofitel Buenos Aires Recoleta"                        | 1
+"Stannum Boutique Hotel"                               | 1
+"Su Merced Hotel Boutique"                             | 1
+"Terra Luna Lodge"                                     | 1
+"Terrantai"                                            | 1
+"The Aubrey"                                           | 1
+"The Ritz-Carlton Santiago"                            | 1
+"The Singular Patagonia"                               | 1
+"The Singular Santiago"                                | 1
+"Tierra de Leyendas"                                   | 1
+"Tin House Patagonia"                                  | 1
+"Tolkeyen Hotel"                                       | 1
+"Tres Rios Lodge"                                      | 1
+"Valle Chacabuco Lodge"                                | 1
+"Vendaval"                                             | 1
+"Vinnhaus"                                             | 1
+"Vitrum Hotel"                                         | 1
+"W Santiago Hotel"                                     | 1
+"Waldorf Hotel Buenos Aires"                           | 1
+"Weisser Haus Hotel"                                   | 1
+"Weskar Lodge"                                         | 1
+"Wesley Hosteria Boutique"                             | 1
+"Wyndham Puerto Varas Pettra"                          | 1
+"Xelena"                                               | 1
+"Yagan House"                                          | 1
+"Yegua Loca"                                           | 1
+"Yvera Hotel"                                          | 1

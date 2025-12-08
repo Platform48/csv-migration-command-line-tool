@@ -1,0 +1,363 @@
+MISSING COMPONENT REFERENCES REPORT (BY SHEET)
+Generated: 2025-12-05 10:35:24
+
+WHAT TO FIX:
+The following component names in your Excel sheets don't match any uploaded components.
+Please check the spelling or make sure these components exist in the system.
+
+====================================================================================================
+
+SHEET: Ground Accom
+-----------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                             | Missing Component                                    | Type            
+-----------------------------------------------------------------------------------------------------------------------------------------
+4        | Albatros                                             | "Albatros"                                           | location        
+5        | Aldea Naukana Posada Boutique                        | "Aldea Naukana Posada Boutique"                      | location        
+6        | Algodon Mansion                                      | "Algodon Mansion"                                    | location        
+7        | Alma del Lago                                        | "Alma del Lago"                                      | location        
+8        | Altiplánico Atacama                                  | "Altiplánico Atacama"                                | location        
+9        | Altiplánico Santiago                                 | "Altiplánico Santiago"                               | location        
+10       | Alto Andino                                          | "Alto Andino"                                        | location        
+12       | Alvear Palace Hotel                                  | "Alvear Palace Hotel"                                | location        
+13       | Amonite                                              | "Amonite"                                            | location        
+14       | Anselmo Buenos Aires Curio Collection                | "Anselmo Buenos Aires Curio Collection"              | location        
+15       | Antiguo Convento                                     | "Antiguo Convento"                                   | location        
+16       | Apart Hotel Quillango                                | "Apart Hotel Quillango"                              | location        
+17       | Apart Hotel Roble del Sur                            | "Apart Hotel Roble del Sur"                          | location        
+18       | Aquaterra Lodge                                      | "Aquaterra Lodge"                                    | location        
+19       | Arakur                                               | "Arakur"                                             | location        
+20       | Atton El Bosque                                      | "Atton El Bosque"                                    | location        
+25       | Awasi Iguazú                                         | "Awasi Iguazú"                                       | location        
+26       | Awasi Mendoza                                        | "Mendoza"                                            | location        
+28       | Ayres De Recoleta                                    | "Ayres De Recoleta"                                  | location        
+29       | Ayres de Salta Hotel                                 | "Ayres de Salta Hotel"                               | location        
+30       | B&B and Cabins Cerro Castillo                        | "B&B and Cabins Cerro Castillo"                      | location        
+31       | Bader Climber's Camp                                 | "Bader Climber's Camp"                               | location        
+32       | Bahía Bustamante Lodge                               | "Bahía Bustamante Lodge"                             | location        
+37       | Big Bang Patagonia                                   | "Big Bang Patagonia"                                 | location        
+38       | Big Sur                                              | "Big Sur"                                            | location        
+39       | Blanca Patagonia                                     | "Blanca Patagonia"                                   | location        
+40       | BoBo Hotel                                           | "BoBo Hotel"                                         | location        
+41       | Bosque de Nahuel                                     | "Bosque de Nahuel"                                   | location        
+42       | Boutique Hotel Sizigia                               | "Boutique Hotel Sizigia"                             | location        
+43       | Cabañas del Paine                                    | "Cabañas del Paine"                                  | location        
+44       | Cabañas Don Niba                                     | "Cabañas Don Niba"                                   | location        
+45       | Cabañas Javi                                         | "Cabañas Javi"                                       | location        
+46       | Cabañas Lago Tyndall                                 | "Cabañas Lago Tyndall"                               | location        
+47       | Cabañas Parque Metreñehue                            | "Cabañas Parque Metreñehue"                          | location        
+48       | Cabo de Hornos                                       | "Cabo de Hornos"                                     | location        
+49       | Cacique Inacayal Lake & Spa Hotel                    | "Cacique Inacayal Lake & Spa Hotel"                  | location        
+50       | Calafate Parque Hotel                                | "Calafate Parque Hotel"                              | location        
+51       | Caleta Gonzalo Lodge                                 | "Caleta Gonzalo Lodge"                               | location        
+55       | Camping Italiano                                     | "Camping Italiano"                                   | location        
+56       | Camping Japonés                                      | "Camping Japonés"                                    | location        
+57       | Camping Paso                                         | "Camping Paso"                                       | location        
+58       | Camping Perros                                       | "Camping Perros"                                     | location        
+60       | Carpa Manzano                                        | "Carpa Manzano"                                      | location        
+62       | Casa Bueras Boutique (formerly Lastarria Boutique)   | "Casa Bueras Boutique (formerly Lastarria Boutique)" | location        
+63       | Casa DeTodos B&B                                     | "Casa DeTodos B&B"                                   | location        
+64       | Casa Galos                                           | "Casa Galos"                                         | location        
+65       | Casa Kalfu                                           | "Casa Kalfu"                                         | location        
+67       | Casa Solaria                                         | "Casa Solaria"                                       | location        
+68       | Casa Sur Recoleta                                    | "Casa Sur Recoleta"                                  | location        
+70       | CasaSur Bellini                                      | "CasaSur Bellini"                                    | location        
+71       | CasaSur Palermo Hotel                                | "CasaSur Palermo Hotel"                              | location        
+72       | CasaSur Recoleta                                     | "CasaSur Recoleta"                                   | location        
+73       | Castillo Rojo                                        | "Castillo Rojo"                                      | location        
+74       | Chaltén Camp                                         | "Chaltén Camp"                                       | location        
+75       | Chaltén Suites                                       | "Chaltén Suites"                                     | location        
+76       | Chil-Hue                                             | "Chil-Hue"                                           | location        
+78       | Cilene del Faro Suites and Spa                       | "Cilene del Faro Suites and Spa"                     | location        
+79       | Cilene del Fuego Suites & Spa                        | "Cilene del Fuego Suites & Spa"                      | location        
+81       | Claridge Hotel                                       | "Claridge Hotel"                                     | location        
+82       | Club Tapiz                                           | "Club Tapiz"                                         | location        
+83       | Continental 725                                      | "Continental 725"                                    | location        
+84       | Correntoso Lake River Hotel                          | "Correntoso Lake River Hotel"                        | location        
+85       | Crowne Plaza Santiago                                | "Crowne Plaza Santiago"                              | location        
+86       | Dazzler Palermo                                      | "Dazzler Palermo"                                    | location        
+87       | Dazzler Puerto Madryn                                | "Dazzler Puerto Madryn"                              | location        
+88       | Deco Recoleta Hotel                                  | "Deco Recoleta Hotel"                                | location        
+89       | Del Nómade Hosteria                                  | "Del Nómade Hosteria"                                | location        
+91       | Desertica                                            | "Desertica"                                          | location        
+92       | Design Suites Bariloche                              | "Design Suites Bariloche"                            | location        
+93       | Design Suites Calafate                               | "Design Suites Calafate"                             | location        
+94       | Destino Sur                                          | "Destino Sur"                                        | location        
+95       | Don Tomas                                            | "Don Tomas"                                          | location        
+96       | Dreams Coyhaique                                     | "Dreams Coyhaique"                                   | location        
+97       | Duhau Palace - Park Hyatt                            | "Duhau Palace - Park Hyatt"                          | location        
+100      | El Casco                                             | "El Casco"                                           | location        
+101      | El Muelle Hotel Boutique                             | "El Muelle Hotel Boutique"                           | location        
+102      | El Pedral Lodge                                      | "El Pedral Lodge"                                    | location        
+103      | El Puesto                                            | "El Puesto"                                          | location        
+104      | El Quijote Hotel                                     | "El Quijote Hotel"                                   | location        
+105      | El Reloj                                             | "El Reloj"                                           | location        
+108      | Errante EcoLodge                                     | "Errante EcoLodge"                                   | location        
+109      | Esplendor Palermo Soho                               | "Esplendor Palermo Soho"                             | location        
+110      | Estancia 440                                         | "Estancia 440"                                       | location        
+113      | Estancia Cueva de las Manos                          | "Estancia Cueva de las Manos"                        | location        
+114      | Estancia El Condor                                   | "Estancia El Condor"                                 | location        
+117      | Estancia La Josefina                                 | "Estancia La Josefina"                               | location        
+118      | Estancia La Península                                | "Estancia La Península"                              | location        
+128      | Explora Easter Island                                | "Explora Easter Island"                              | location        
+133      | Faro Punta Delgada                                   | "Faro Punta Delgada"                                 | location        
+134      | Fauna Hotel                                          | "Fauna Hotel"                                        | location        
+136      | French Domes                                         | "French Domes"                                       | location        
+139      | Gran Meliá Iguazú                                    | "Gran Meliá Iguazú"                                  | location        
+140      | Hanga Roa Eco Village                                | "Hanga Roa Eco Village"                              | location        
+142      | Hilton Garden Inn Santiago Airport                   | "Hilton Garden Inn Santiago Airport"                 | location        
+143      | Holiday Inn Ezeiza                                   | "Holiday Inn Ezeiza"                                 | location        
+144      | Home Hotel                                           | "Home Hotel"                                         | location        
+145      | Hospedaje La Casona                                  | "Hospedaje La Casona"                                | location        
+146      | Hostal Alamo Patagonico                              | "Hostal Alamo Patagonico"                            | location        
+148      | Hostal de los Castillos                              | "Hostal de los Castillos"                            | location        
+149      | Hostal El Mosco                                      | "Hostal El Mosco"                                    | location        
+150      | Hostal Francis Drake                                 | "Hostal Francis Drake"                               | location        
+151      | Hostal Gladys                                        | "Hostal Gladys"                                      | location        
+152      | Hostal La Tetera                                     | "Hostal La Tetera"                                   | location        
+153      | Hostal Natales                                       | "Hostal Natales"                                     | location        
+154      | Hostal Nuevo Muno                                    | "Hostal Nuevo Muno"                                  | location        
+155      | Hostal Patagonia                                     | "Hostal Patagonia"                                   | location        
+156      | Hostal Schilling                                     | "Hostal Schilling"                                   | location        
+157      | Hostel Keoken                                        | "Hostel Keoken"                                      | location        
+158      | Hostería Cauquenes de Nimez                          | "Hostería Cauquenes de Nimez"                        | location        
+159      | Hosteria de la Patagonia                             | "Hosteria de la Patagonia"                           | location        
+160      | Hostería El Álamo                                    | "Hostería El Álamo"                                  | location        
+161      | Hostería El Paraíso                                  | "Hostería El Paraíso"                                | location        
+163      | Hosteria El Puma                                     | "Hosteria El Puma"                                   | location        
+164      | Hosteria Hainen                                      | "Hosteria Hainen"                                    | location        
+166      | Hosteria La Estepa                                   | "Hosteria La Estepa"                                 | location        
+167      | Hosteria Mi Vida                                     | "Hosteria Mi Vida"                                   | location        
+168      | Hosteria Mirador del Payne                           | "Hosteria Mirador del Payne"                         | location        
+169      | Hosteria Patagonia Rebelde                           | "Hosteria Patagonia Rebelde"                         | location        
+170      | Hosteria Pehoé                                       | "Hosteria Pehoé"                                     | location        
+171      | Hosteria Posta Sur                                   | "Hosteria Posta Sur"                                 | location        
+173      | Hosteria y Cabañas Rucapillan                        | "Hosteria y Cabañas Rucapillan"                      | location        
+174      | Hostería Yendegaia                                   | "Hostería Yendegaia"                                 | location        
+176      | Hotel Almasur                                        | "Hotel Almasur"                                      | location        
+177      | Hotel Altiplanico Bellas Artes                       | "Hotel Altiplanico Bellas Artes"                     | location        
+178      | Hotel Altiplanico Easter Island                      | "Hotel Altiplanico Easter Island"                    | location        
+179      | Hotel Altiplanico Puerto Natales                     | "Hotel Altiplanico Puerto Natales"                   | location        
+180      | Hotel Altos Ushuaia                                  | "Hotel Altos Ushuaia"                                | location        
+181      | Hotel Ancud                                          | "Hotel Ancud"                                        | location        
+182      | Hotel Antumalal                                      | "Hotel Antumalal"                                    | location        
+183      | Hotel Augustos Copacabana                            | "Hotel Augustos Copacabana"                          | location        
+184      | Hotel Babel Boutique                                 | "Hotel Babel Boutique"                               | location        
+185      | Hotel Bellavista                                     | "Hotel Bellavista"                                   | location        
+186      | Hotel Bidasoa                                        | "Hotel Bidasoa"                                      | location        
+187      | Hotel Cabañas del Lago                               | "Hotel Cabañas del Lago"                             | location        
+188      | Hotel Campanilla                                     | "Hotel Campanilla"                                   | location        
+190      | Hotel Casa Higueras                                  | "Hotel Casa Higueras"                                | location        
+191      | Hotel Casa Real                                      | "Hotel Casa Real"                                    | location        
+192      | Hotel Cirilo Armstrong                               | "Hotel Cirilo Armstrong"                             | location        
+193      | Hotel Civico                                         | "Hotel Civico"                                       | location        
+194      | Hotel Clásico                                        | "Hotel Clásico"                                      | location        
+195      | Hotel Colonos del Sur Mirador                        | "Hotel Colonos del Sur Mirador"                      | location        
+196      | Hotel Costaustralis                                  | "Hotel Costaustralis"                                | location        
+197      | Hotel Cumbres Lastarria                              | "Hotel Cumbres Lastarria"                            | location        
+198      | Hotel Cumbres Nevadas                                | "Hotel Cumbres Nevadas"                              | location        
+199      | Hotel Cumbres San Pedro de Atacama                   | "Hotel Cumbres San Pedro de Atacama"                 | location        
+200      | Hotel Dandi Royal                                    | "Hotel Dandi Royal"                                  | location        
+202      | Hotel Dazzler BUENOS AIRES Palermo                   | "Hotel Dazzler BUENOS AIRES Palermo"                 | location        
+203      | Hotel De Los Andes                                   | "Hotel De Los Andes"                                 | location        
+204      | Hotel Diego de Almagro                               | "Hotel Diego de Almagro"                             | location        
+205      | Hotel Diego de Almagro Providencia (DA)              | "Hotel Diego de Almagro Providencia (DA)"            | location        
+206      | Hotel Director                                       | "Hotel Director"                                     | location        
+207      | Hotel Dreams Punta Arenas                            | "Hotel Dreams Punta Arenas"                          | location        
+208      | Hotel El Barranco                                    | "Hotel El Barranco"                                  | location        
+210      | Hotel Emperador                                      | "Hotel Emperador"                                    | location        
+211      | Hotel Esplendor                                      | "Hotel Esplendor"                                    | location        
+212      | Hotel Factoria                                       | "Hotel Factoria"                                     | location        
+213      | Hotel Fueguino                                       | "Hotel Fueguino"                                     | location        
+214      | Hotel Imago                                          | "Hotel Imago"                                        | location        
+215      | Hotel Iorana                                         | "Hotel Iorana"                                       | location        
+216      | Hotel Kalenshen                                      | "Hotel Kalenshen"                                    | location        
+217      | Hotel Kapenke                                        | "Hotel Kapenke"                                      | location        
+218      | Hotel Kran Kreen                                     | "Hotel Kran Kreen"                                   | location        
+219      | Hotel La Cantera                                     | "Hotel La Cantera"                                   | location        
+220      | Hotel Lacolet                                        | "Hotel Lacolet"                                      | location        
+221      | Hotel Ladera                                         | "Hotel Ladera"                                       | location        
+222      | Hotel Lady Florence Dixie                            | "Hotel Lady Florence Dixie"                          | location        
+224      | Hotel Las Bayas                                      | "Hotel Las Bayas"                                    | location        
+225      | Hotel Las Marianas                                   | "Hotel Las Marianas"                                 | location        
+227      | Hotel Legado Mitico Salta                            | "Hotel Legado Mitico Salta"                          | location        
+228      | Hotel Lodge Landhaus San Sebastian                   | "Hotel Lodge Landhaus San Sebastian"                 | location        
+229      | Hotel Los Canelos                                    | "Hotel Los Canelos"                                  | location        
+230      | Hotel Luciano K                                      | "Hotel Luciano K"                                    | location        
+231      | Hotel Lunajuim                                       | "Hotel Lunajuim"                                     | location        
+232      | Hotel Madero                                         | "Hotel Madero"                                       | location        
+233      | Hotel Magnolia                                       | "Hotel Magnolia"                                     | location        
+234      | Hotel Malalhue                                       | "Hotel Malalhue"                                     | location        
+235      | Hotel Manavai                                        | "Hotel Manavai"                                      | location        
+236      | Hotel Manoir Atkinson                                | "Hotel Manoir Atkinson"                              | location        
+237      | Hotel Martin Gusinde                                 | "Hotel Martin Gusinde"                               | location        
+238      | Hotel Mil810                                         | "Hotel Mil810"                                       | location        
+239      | Hotel MM450                                          | "Hotel MM450"                                        | location        
+240      | Hotel Naguilan                                       | "Hotel Naguilan"                                     | location        
+241      | Hotel Natalino                                       | "Hotel Natalino"                                     | location        
+242      | Hotel NH Buenos Aires Tango                          | "Hotel NH Buenos Aires Tango"                        | location        
+243      | Hotel Orly                                           | "Hotel Orly"                                         | location        
+244      | Hotel Patagonia Green                                | "Hotel Patagonia Green"                              | location        
+245      | Hotel Peninsula Valdés                               | "Hotel Peninsula Valdés"                             | location        
+246      | Hotel Peulla                                         | "Hotel Peulla"                                       | location        
+247      | Hotel Piren                                          | "Hotel Piren"                                        | location        
+248      | Hotel Plaza                                          | "Hotel Plaza"                                        | location        
+249      | Hotel Plaza El Bosque Ebro                           | "Hotel Plaza El Bosque Ebro"                         | location        
+250      | Hotel Portillo                                       | "Hotel Portillo"                                     | location        
+251      | Hotel Posada La Sorgente                             | "Hotel Posada La Sorgente"                           | location        
+252      | Hotel Puelche                                        | "Hotel Puelche"                                      | location        
+253      | Hotel Puku Vai                                       | "Hotel Puku Vai"                                     | location        
+254      | Hotel Residencia Linares                             | "Hotel Residencia Linares"                           | location        
+255      | Hotel Rio Serrano                                    | "Hotel Rio Serrano"                                  | location        
+256      | Hotel Santiago (ex Hyatt)                            | "Hotel Santiago (ex Hyatt)"                          | location        
+257      | Hotel Santiago Park Plaza                            | "Hotel Santiago Park Plaza"                          | location        
+258      | Hotel Selknam                                        | "Hotel Selknam"                                      | location        
+259      | Hotel Sheraton Libertador                            | "Hotel Sheraton Libertador"                          | location        
+260      | Hotel Simple Patagonia                               | "Hotel Simple Patagonia"                             | location        
+261      | Hotel Solace                                         | "Hotel Solace"                                       | location        
+262      | Hotel Taha Hai                                       | "Hotel Taha Hai"                                     | location        
+263      | Hotel Takha Takha                                    | "Hotel Takha Takha"                                  | location        
+264      | Hotel Tayka de Piedra                                | "Hotel Tayka de Piedra"                              | location        
+265      | Hotel Tayka de Sal                                   | "Hotel Tayka de Sal"                                 | location        
+266      | Hotel Tayka del Desierto                             | "Hotel Tayka del Desierto"                           | location        
+267      | Hotel Territorio Puerto Madryn                       | "Hotel Territorio Puerto Madryn"                     | location        
+268      | Hotel Tierra del Fuego                               | "Hotel Tierra del Fuego"                             | location        
+270      | Hotel Veat                                           | "Hotel Veat"                                         | location        
+271      | Hotel Verso                                          | "Hotel Verso"                                        | location        
+272      | Huilo Huilo Nothofagus Hotel                         | "Huilo Huilo Nothofagus Hotel"                       | location        
+273      | Ilaia Hotel                                          | "Ilaia Hotel"                                        | location        
+274      | Inlandsis Hostal                                     | "Inlandsis Hostal"                                   | location        
+275      | Innata Casa                                          | "Innata Casa"                                        | location        
+276      | Intersur Recoleta                                    | "Intersur Recoleta"                                  | location        
+277      | Ismael Hotel                                         | "Ismael Hotel"                                       | location        
+278      | Jardin Escondido                                     | "Jardin Escondido"                                   | location        
+279      | Jose Nogueira                                        | "Jose Nogueira"                                      | location        
+280      | Kau Kaleshen                                         | "Kau Kaleshen"                                       | location        
+282      | Kau Yatun Hotel de Campo                             | "Kau Yatun Hotel de Campo"                           | location        
+283      | Kaulem                                               | "Kaulem"                                             | location        
+284      | Kimal                                                | "Kimal"                                              | location        
+285      | Koi Aiken                                            | "Koi Aiken"                                          | location        
+286      | Kosten Aike                                          | "Kosten Aike"                                        | location        
+288      | La Cantera Jungle Lodge                              | "La Cantera Jungle Lodge"                            | location        
+289      | La Casa de Eugenia                                   | "La Casa de Eugenia"                                 | location        
+291      | La Cascada                                           | "La Cascada"                                         | location        
+293      | La Casona                                            | "La Casona"                                          | location        
+294      | La Casona Matetic                                    | "La Casona Matetic"                                  | location        
+295      | La Merced del Alto Boutique Hotel (2,280m)           | "La Merced del Alto Boutique Hotel (2,280m)"         | location        
+297      | La Posada del Posadas                                | "La Posada del Posadas"                              | location        
+310      | Las Balsas Relais & Châteaux                         | "Las Balsas Relais & Châteaux"                       | location        
+312      | Las Hayas                                            | "Las Hayas"                                          | location        
+313      | Las Lengas                                           | "Las Lengas"                                         | location        
+314      | Le Chatelet                                          | "Le Chatelet"                                        | location        
+315      | Le Reve                                              | "Le Reve"                                            | location        
+316      | Legado Mitico                                        | "Legado Mitico"                                      | location        
+317      | Llao Llao Resort Golf and Spa                        | "Llao Llao Resort Golf and Spa"                      | location        
+318      | Loi Suites                                           | "Loi Suites"                                         | location        
+319      | Loi Suites Iguazú                                    | "Loi Suites Iguazú"                                  | location        
+320      | Lord Patagonia Outdoor                               | "Lord Patagonia Outdoor"                             | location        
+321      | Los Acebos Hotel                                     | "Los Acebos Hotel"                                   | location        
+322      | Los Cauquenes Resort and Spa                         | "Los Cauquenes Resort and Spa"                       | location        
+323      | Los Cerros                                           | "Los Cerros"                                         | location        
+325      | Los Ñires Hotel                                      | "Los Ñires Hotel"                                    | location        
+326      | Los Ponchos Hotel Boutique                           | "Los Ponchos Hotel Boutique"                         | location        
+327      | Los Raices B&B                                       | "Los Raices B&B"                                     | location        
+329      | Los Sauces Casas Patagonia                           | "Los Sauces Casas Patagonia"                         | location        
+330      | Madre Tierra Patagonia                               | "Madre Tierra Patagonia"                             | location        
+331      | Maison Italia 1029                                   | "Maison Italia 1029"                                 | location        
+332      | Mallín Colorado Lodge                                | "Mallín Colorado Lodge"                              | location        
+333      | Mandarin Oriental Santiago                           | "Mandarin Oriental Santiago"                         | location        
+334      | Marina Fuy Hotel Boutique                            | "Marina Fuy Hotel Boutique"                          | location        
+335      | Mercure Iguazu - Hotel Iru                           | "Mercure Iguazu - Hotel Iru"                         | location        
+336      | Meridiano Sur Petit Hotel                            | "Meridiano Sur Petit Hotel"                          | location        
+337      | Mero Gaucho                                          | "Mero Gaucho"                                        | location        
+338      | Mine Hotel                                           | "Mine Hotel"                                         | location        
+339      | Mio Hotel                                            | "Mio Hotel"                                          | location        
+340      | Mirador del Lago                                     | "Mirador del Lago"                                   | location        
+342      | Mountain Lodge Cochamó                               | "Mountain Lodge Cochamó"                             | location        
+344      | Nayara Alto Atacama                                  | "Nayara Alto Atacama"                                | location        
+346      | Nayara Rapa Nui                                      | "Nayara Rapa Nui"                                    | location        
+349      | Noi Vitacura                                         | "Noi Vitacura"                                       | location        
+350      | Nomades Hotel Boutique                               | "Nomades Hotel Boutique"                             | location        
+353      | Nothofagus B+B                                       | "Nothofagus B+B"                                     | location        
+355      | Nuss                                                 | "Nuss"                                               | location        
+356      | Nuss Buenos Aires Soho                               | "Nuss Buenos Aires Soho"                             | location        
+357      | Oceano Patagonia                                     | "Oceano Patagonia"                                   | location        
+358      | Oceano Rayentray                                     | "Oceano Rayentray"                                   | location        
+359      | Ocio Territorial Hotel                               | "Ocio Territorial Hotel"                             | location        
+360      | Oporto Hotel Boutique                                | "Oporto Hotel Boutique"                              | location        
+361      | Own Recoleta                                         | "Own Recoleta"                                       | location        
+362      | Palacio Astoreca                                     | "Palacio Astoreca"                                   | location        
+363      | Palacio Duhau - Park Hyatt Hotel                     | "Palacio Duhau - Park Hyatt Hotel"                   | location        
+364      | Palafito 1326 Hotel Boutique                         | "Palafito 1326 Hotel Boutique"                       | location        
+365      | Palafito Waiwen                                      | "Palafito Waiwen"                                    | location        
+366      | Palladio Hotel                                       | "Palladio Hotel"                                     | location        
+367      | Palo Santo                                           | "Palo Santo"                                         | location        
+368      | Pampa del Corral                                     | "Pampa del Corral"                                   | location        
+369      | Pampa Lodge                                          | "Pampa Lodge"                                        | location        
+370      | Panamericana Hotel Providencia                       | "Panamericana Hotel Providencia"                     | location        
+371      | Pangue Lodge                                         | "Pangue Lodge"                                       | location        
+372      | Panoramic Grand Hotel                                | "Panoramic Grand Hotel"                              | location        
+373      | Paradise                                             | "Paradise"                                           | location        
+374      | Parque Factoría Lodge                                | "Parque Factoría Lodge"                              | location        
+376      | Patagonia Hostel                                     | "Patagonia Hostel"                                   | location        
+377      | Patagonia House                                      | "Patagonia House"                                    | location        
+378      | Patagonia Jarké                                      | "Patagonia Jarké"                                    | location        
+379      | Patagonia Queen                                      | "Patagonia Queen"                                    | location        
+380      | Patios de San Telmo                                  | "Patios de San Telmo"                                | location        
+381      | Peninsula Petit                                      | "Peninsula Petit"                                    | location        
+382      | Petrohué Lodge                                       | "Petrohué Lodge"                                     | location        
+383      | Pleno Palermo Hotel                                  | "Pleno Palermo Hotel"                                | location        
+384      | Poblado Kimal                                        | "Poblado Kimal"                                      | location        
+385      | Poincenot Comfort Camp                               | "Poincenot Comfort Camp"                             | location        
+386      | Porto Bay Hotel                                      | "Porto Bay Hotel"                                    | location        
+387      | Posada Buena Vida Social Club                        | "Posada Buena Vida Social Club"                      | location        
+388      | Posada con los Angeles                               | "Posada con los Angeles"                             | location        
+389      | Posada Del Fin Del Mundo                             | "Posada Del Fin Del Mundo"                           | location        
+390      | Posada del Río                                       | "Posada del Río"                                     | location        
+391      | Posada Karut Josh                                    | "Posada Karut Josh"                                  | location        
+392      | Posada Los Alamos                                    | "Posada Los Alamos"                                  | location        
+393      | Posada los Juncos                                    | "Posada los Juncos"                                  | location        
+394      | Posada Los Mimbres                                   | "Posada Los Mimbres"                                 | location        
+395      | Posada Queulat                                       | "Posada Queulat"                                     | location        
+399      | Puyuhuapi Lodge                                      | "Puyuhuapi Lodge"                                    | location        
+403      | Rayentray Grand Hotel Puerto Madryn                  | "Rayentray Grand Hotel Puerto Madryn"                | location        
+404      | Rayentray Puerto Piramides                           | "Rayentray Puerto Piramides"                         | location        
+405      | Recoleta Grand                                       | "Recoleta Grand"                                     | location        
+407      | Refugio Central                                      | "Refugio Central"                                    | location        
+408      | Refugio Chileno                                      | "Refugio Chileno"                                    | location        
+409      | Refugio Cochamó                                      | "Refugio Cochamó"                                    | location        
+410      | Refugio Condor                                       | "Refugio Condor"                                     | location        
+426      | Remota Lodge                                         | "Remota Lodge"                                       | location        
+429      | Río Hermoso Lodge                                    | "Río Hermoso Lodge"                                  | location        
+430      | Rio Palena Lodge                                     | "Rio Palena Lodge"                                   | location        
+432      | San Telmo Luxury Suites                              | "San Telmo Luxury Suites"                            | location        
+433      | Santiago Airport Holiday Inn                         | "Santiago Airport Holiday Inn"                       | location        
+434      | Santiago Marriott Hotel                              | "Santiago Marriott Hotel"                            | location        
+435      | Senderos Hosteria                                    | "Senderos Hosteria"                                  | location        
+438      | Sierra Nevada Hotel                                  | "Sierra Nevada Hotel"                                | location        
+439      | Sofitel Buenos Aires Recoleta                        | "Sofitel Buenos Aires Recoleta"                      | location        
+440      | Stannum Boutique Hotel                               | "Stannum Boutique Hotel"                             | location        
+441      | Su Merced Hotel Boutique                             | "Su Merced Hotel Boutique"                           | location        
+442      | Terra Luna Lodge                                     | "Terra Luna Lodge"                                   | location        
+443      | Terrantai                                            | "Terrantai"                                          | location        
+444      | The Aubrey                                           | "The Aubrey"                                         | location        
+445      | The Ritz-Carlton Santiago                            | "The Ritz-Carlton Santiago"                          | location        
+446      | The Singular Patagonia                               | "The Singular Patagonia"                             | location        
+447      | The Singular Santiago                                | "The Singular Santiago"                              | location        
+450      | Tierra de Leyendas                                   | "Tierra de Leyendas"                                 | location        
+452      | Tin House Patagonia                                  | "Tin House Patagonia"                                | location        
+453      | Tolkeyen Hotel                                       | "Tolkeyen Hotel"                                     | location        
+455      | Tres Rios Lodge                                      | "Tres Rios Lodge"                                    | location        
+459      | Valle Chacabuco Lodge                                | "Valle Chacabuco Lodge"                              | location        
+461      | Vendaval                                             | "Vendaval"                                           | location        
+463      | Vinnhaus                                             | "Vinnhaus"                                           | location        
+465      | Vitrum Hotel                                         | "Vitrum Hotel"                                       | location        
+466      | W Santiago Hotel                                     | "W Santiago Hotel"                                   | location        
+467      | Waldorf Hotel Buenos Aires                           | "Waldorf Hotel Buenos Aires"                         | location        
+468      | Weisser Haus Hotel                                   | "Weisser Haus Hotel"                                 | location        
+469      | Weskar Lodge                                         | "Weskar Lodge"                                       | location        
+470      | Wesley Hosteria Boutique                             | "Wesley Hosteria Boutique"                           | location        
+471      | Wyndham Puerto Varas Pettra                          | "Wyndham Puerto Varas Pettra"                        | location        
+472      | Xelena                                               | "Xelena"                                             | location        
+473      | Yagan House                                          | "Yagan House"                                        | location        
+474      | Yegua Loca                                           | "Yegua Loca"                                         | location        
+476      | Yvera Hotel                                          | "Yvera Hotel"                                        | location        
