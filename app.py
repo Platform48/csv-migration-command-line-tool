@@ -186,7 +186,7 @@ PAT_COMPONENTS_PATH = "pat_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
 SHEET_PROCESS_ORDER = [
-    "Location",
+    # "Location",
     # "Ground Accom",
     # "Ship Accom",
     # "ANT Ship Accom",
@@ -648,7 +648,7 @@ def upload_dummy_components():
             "quote": "",
             "final": ""
         },
-        "partners": ["NA"],
+        "partners": [],
         "regions": [],
         "name": "Flight",
         "media": {
@@ -695,8 +695,8 @@ from tracker import MigrationTracker, OperationStatus, RowResult, SheetSummary
 class CoreDataService:
     def __init__(self, template_ids, tracker=None, sheet_name=None):
         self.template_ids = template_ids
-        # self.service_url = 'https://data-api-dev.swoop-adventures.com'
-        self.service_url = 'http://localhost:8080'
+        self.service_url = 'https://data-api-dev.swoop-adventures.com'
+        # self.service_url = 'http://localhost:8080'
 
         self.headers = {
             "Authorization": f"Bearer {ACCESS_TOKEN}",
@@ -820,7 +820,7 @@ class CoreDataService:
 
         return None
 
-       
+
     def _process_success_response(self, res, component, template_type, idx, duration_ms):
         """Helper to handle successful POST/PATCH responses"""
         

@@ -4382,7 +4382,9 @@
     "('cruise', 'Luxury South Georgia & Antarctica Fly & Cruise')": "component_35b50fcd9885be98dd6cecf101ce335a",
     "('cruise', 'Elegant Falklands, South Georgia & Antarctica')": "component_20f6097ad8baf0fb37af05171913f4af",
     "('cruise', 'Elegant Falklands, South Georgia & Antarctica - Reverse Itinerary')": "component_a08f778951e1d0d947f678bfa93a0d33",
-    "('cruise', 'Falklands, South Georgia & Antarctica in Focus')": "component_506843ef5d9a7775b940c71c1b9539cf"
+    "('cruise', 'Falklands, South Georgia & Antarctica in Focus')": "component_506843ef5d9a7775b940c71c1b9539cf",
+    "('Flight', 'Flight')": "component_98415a6f570af1d10bebd54f054ce4b4",
+    "('Independent Arrangement', 'Independent Arrangement')": "component_0e138c7228a8d3a8095dcb49dab4f7ad"
   },
   "hash_cache": {
     "location:Almirante Marcos A. Zar Airport (REL), Trelew": "752891f9f30da2e72681c25c2d3726de",
@@ -8802,6 +8804,6 @@
     "location:Luján de Cayo": "14c4937e42348d85a7b41c47d1fbc42f",
     "location:Fitz Roy Comfort Camp": "5fb3117786f1b66d6e00ef8c73024ddf"
   },
-  "last_updated": "2025-12-05T14:03:26.786793",
-  "total_components": 4383
+  "last_updated": "2025-12-08T11:28:51.578933",
+  "total_components": 4385
 }
