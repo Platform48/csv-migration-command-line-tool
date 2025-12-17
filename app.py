@@ -26,7 +26,7 @@ from mappings.cruise import map_cruise_component
 from mappings.ship_accom import map_ship_accommodation_component
 
 
-ACCESS_TOKEN = ""
+ACCESS_TOKEN = "ya29.a0Aa7pCA8c8BMh0xAGYTh6lNbmr6LJYt13Mwta6VRawvDi-QDFtctAYMFvPT6qHqFzkksONk2tW9wz0k9mUZena_jub7F5IY3_rAcn3zM3cJz25ZJ56ikEpLf013ecBBYYUgfQp8OdRSF3p4LTiLL_poUyB7D88a2QTFGi2yu6pdsTfb4Pg1OGmfy4OLQBJ06Bp0SCKE4px9gBaCgYKAWcSARUSFQHGX2MiBcHXCzZT8SpsFcWYpDijHA0211"
 
 SHEET_PROCESS_ORDER = [
     # "Location",
@@ -38,12 +38,12 @@ SHEET_PROCESS_ORDER = [
     # "ANT Activities",
     # "All Transfers - For Upload",
     # "ANT Transfers",
-    # "Excursions Package",
-    # "Private Tours Package",
-    # "All Inclusive Hotel Package",
-    # "Multi-day Activity Package",
-    # "PAT Cruise Packages ",
-    # "ANT Cruise Packages",
+    "Excursions Package",
+    "Private Tours Package",
+    "All Inclusive Hotel Package",
+    "Multi-day Activity Package",
+    "PAT Cruise Packages ",
+    "ANT Cruise Packages",
 ]
 
 
@@ -209,10 +209,10 @@ def get_partners():
     url="https://data-test.swoop-adventures.com/api/partners?page=1&itemsPerPage=1000"
     headers = {"Authorization": "bearer 1|eaLBn270PQGlC1onbygdZZ8aptWAd8bU6Ux00RbW52bf7343"}
     ant_res = requests.get(url+"&region=antarctica", headers=headers)
-    arc_res = requests.get(url+"&region=arctic", headers=headers)
+    # arc_res = requests.get(url+"&region=arctic", headers=headers)
     pat_res = requests.get(url+"&region=patagonia", headers=headers)
     ant_data = ant_res.json()
-    arc_data = arc_res.json()
+    # arc_data = arc_res.json()
     pat_data = pat_res.json()
 
     partner_map = {
@@ -220,8 +220,8 @@ def get_partners():
         "Patagonia":{}
     }
 
-    for partner in arc_data:
-        partner_map["Antarctica"][partner["title"]] = partner["id"]
+    # for partner in arc_data:
+    #     partner_map["Antarctica"][partner["title"]] = partner["id"]
     for partner in ant_data:
         partner_map["Antarctica"][partner["title"]] = partner["id"]
     for partner in pat_data:

@@ -1,0 +1,17 @@
+{
+  "start_time": "2025-12-17T09:18:05.611992",
+  "end_time": "2025-12-17T09:18:51.548822",
+  "duration_seconds": 45.93683,
+  "sheets": {},
+  "overall_field_completeness": {
+    "description.web": 0,
+    "description.quote": 0,
+    "description.final": 0,
+    "destination": 0,
+    "tripId": 0,
+    "partners": 0,
+    "regions": 0,
+    "media.images": 0,
+    "package": 0
+  }
+}

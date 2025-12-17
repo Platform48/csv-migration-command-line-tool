@@ -254,18 +254,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             "quote": get_stripped(row, "Cruise Description") or "",
             "final": get_stripped(row, "Cruise Description") or ""
         },
-        "partners": [
-            partner_id
-            for p in get_stripped(row, "Partner").split(",")
-            if p.strip()
-            for partner_id in [
-                partner_map.get(
-                    destination_override or get_stripped(row, "Destination") or "Patagonia",
-                    {}
-                ).get(p.strip())
-            ]
-            if partner_id  # only include if found
-        ],
+        "partners": [destination_override[:3].upper()+"-"+get_stripped(row, "Partner ID")],
         "regions": [r for r in regions if r],  # filter out None values
         "name": get_stripped(row, "Name") or "Untitled",
         "media": media,

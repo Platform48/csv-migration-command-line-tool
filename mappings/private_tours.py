@@ -172,16 +172,7 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
             "final": get_stripped(row, "Description") or ""
         },
         "partners": [
-            partner_id
-            for p in get_stripped(row, "partner").split(",")
-            if p.strip()
-            for partner_id in [
-                partner_map.get(
-                    destination_override or get_stripped(row, "destination") or "Patagonia",
-                    {}
-                ).get(p.strip())
-            ]
-            if partner_id  # only include if found
+            get_stripped(row, "TripID")[:3]+"-"+get_stripped(row, "PartnerID")
         ],
         "regions": [r for r in regions if r],  # filter out None values
         "name": get_stripped(row, "name") or "Untitled",
