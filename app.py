@@ -25,28 +25,25 @@ from mappings.multi_day_activity import map_multi_day_activity_component
 from mappings.cruise import map_cruise_component
 from mappings.ship_accom import map_ship_accommodation_component
 
-
-ACCESS_TOKEN = ""
+ACCESS_TOKEN = "ya29.a0Aa7pCA9dyoXsMgw7pYvYwzOxfNC7ubaourAZ4xpvAYRc6DJ5CgUzuGXSZrmAYcpCa6kVqfocLg0INSdVB7sD40cWzuYyW6nyKvDKJF0-ETtr03DeaPllYn4fwa024t-HM-LpcCiJAUo311n09BFT9bAeOL9lHYLlDmzg1OhFOItv4o8mRb8M22lpmkLI_LggKWhXM2EKJ5FWaCgYKAc4SARUSFQHGX2MiR6n8xZaaGGaUoMw263NjUg0211"
 
 SHEET_PROCESS_ORDER = [
-    # "Location",
+    "Location",
     "Ground Accom",
-    # "Ship Accom",
-    # "ANT Ship Accom",
-    # "Journeys",
-    # "All Activities - For Upload",
-    # "ANT Activities",
-    # "All Transfers - For Upload",
-    # "ANT Transfers",
-    # "Excursions Package",
-    # "Private Tours Package",
-    # "All Inclusive Hotel Package",
-    # "Multi-day Activity Package",
-    # "PAT Cruise Packages ",
-    # "ANT Cruise Packages",
+    "Ship Accom",
+    "ANT Ship Accom",
+    "Journeys",
+    "All Activities - For Upload",
+    "ANT Activities",
+    "All Transfers - For Upload",
+    "ANT Transfers",
+    "Excursions Package",
+    "Private Tours Package",
+    "All Inclusive Hotel Package",
+    "Multi-day Activity Package",
+    "PAT Cruise Packages ",
+    "ANT Cruise Packages",
 ]
-
-
 
 log_lock = threading.Lock()
 
@@ -224,6 +221,7 @@ def get_partners():
     #     partner_map["Antarctica"][partner["title"]] = partner["id"]
     for partner in ant_data:
         partner_map["Antarctica"][partner["title"]] = partner["id"]
+        print(partner["title"] + " " + partner["id"])
     for partner in pat_data:
         partner_map["Patagonia"][partner["title"]] = partner["id"]
     
