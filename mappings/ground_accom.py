@@ -2,6 +2,8 @@ from utils import get_stripped, safe_float, safe_int, get_location_id
 from .location import LOCATION_ALIASES, map_region_name_to_id
 import pandas as pd
 import re
+from datetime import datetime
+
 
 def parse_room_size(val: str):
     """
@@ -103,18 +105,7 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
         "requirements": {
             "minimumAge": safe_int(get_stripped(row, "minimumAge"))
         },
-        "inspections": [
-            {
-                "inspectedBy": get_stripped(row, "Inspected by 1") or "",
-                # "date":        get_stripped(row, "Date 1") or "2000-01-01",
-                "notes":       get_stripped(row, "Inspection Notes 1") or ""
-            },
-            {
-                "inspectedBy": get_stripped(row, "Inspected by 2"),
-                # "date":        get_stripped(row, "Date 2") or "2000-01-01",
-                "notes":       get_stripped(row, "Inspection Notes 2") or ""
-            },
-        ],
+        "inspections": [],
         "whatWeLike":get_stripped(row, "whatWeLikeAboutThisAccommodation"),
         "thingsToNote":get_stripped(row, "thingsToNoteAboutThisAccommodation"),
         "recommendations":get_stripped(row, "Recommendations"),
@@ -131,6 +122,27 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
         }
     }
 
+
+    for i in (1, 2):
+        date = get_stripped(row, f"Date {i}")
+        if not date:
+            continue
+
+        # Convert yyyy-mm-dd → dd-mm-yyyy
+        try:
+            parsed = datetime.strptime(date, "%Y-%m-%d %H:%M:%S")
+            date_formatted = parsed.strftime("%Y-%m-%d")
+        except ValueError:
+            # Fallback if date is not in expected format
+            date_formatted = date
+
+        level_1["inspections"].append({
+            "inspectedBy": get_stripped(row, f"Inspected by {i}") or "",
+            "notes":       get_stripped(row, f"Inspection Notes {i}") or "",
+            "date":        date_formatted
+        })
+
+        
     # --- Map Rooms from rooms_data ---
     if rooms_data is not None and not rooms_data.empty:
         accom_name = get_stripped(row, "name")
