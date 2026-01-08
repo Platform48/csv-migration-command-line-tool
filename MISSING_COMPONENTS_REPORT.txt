@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY SHEET)
-Generated: 2026-01-05 16:13:12
+Generated: 2026-01-07 15:43:33
 
 WHAT TO FIX:
 The following component names in your Excel sheets don't match any uploaded components.
@@ -8,130 +8,13 @@ Please check the spelling or make sure these components exist in the system.
 ====================================================================================================
 
 SHEET: Ground Accom
--------------------------------------------------------------------------------------------------------------------------
-Row      | Row Name                                     | Missing Component                            | Type            
--------------------------------------------------------------------------------------------------------------------------
-26       | Awasi Mendoza                                | "Mendoza"                                    | location        
-32       | Bahía Bustamante Lodge                       | "Bahía Bustamante Lodge"                     | location        
-68       | Casa Sur Recoleta                            | "Casa Sur Recoleta"                          | location        
-79       | Cilene del Fuego Suites & Spa                | "Cilene del Fuego Suites & Spa"              | location        
-83       | Continental 725                              | "Continental 725"                            | location        
-86       | Dazzler Palermo                              | "Dazzler Palermo"                            | location        
-89       | Del Nómade Hosteria                          | "Del Nómade Hosteria"                        | location        
-91       | Desertica                                    | "Desertica"                                  | location        
-97       | Duhau Palace - Park Hyatt                    | "Duhau Palace - Park Hyatt"                  | location        
-105      | El Reloj                                     | "El Reloj"                                   | location        
-108      | Errante EcoLodge                             | "Errante EcoLodge"                           | location        
-114      | Estancia El Condor                           | "Estancia El Condor"                         | location        
-117      | Estancia La Josefina                         | "Estancia La Josefina"                       | location        
-134      | Fauna Hotel                                  | "Fauna Hotel"                                | location        
-139      | Gran Meliá Iguazú                            | "Gran Meliá Iguazú"                          | location        
-151      | Hostal Gladys                                | "Hostal Gladys"                              | location        
-183      | Hotel Augustos Copacabana                    | "Hotel Augustos Copacabana"                  | location        
-190      | Hotel Casa Higueras                          | "Hotel Casa Higueras"                        | location        
-192      | Hotel Cirilo Armstrong                       | "Hotel Cirilo Armstrong"                     | location        
-193      | Hotel Civico                                 | "Hotel Civico"                               | location        
-208      | Hotel El Barranco                            | "Hotel El Barranco"                          | location        
-236      | Hotel Manoir Atkinson                        | "Hotel Manoir Atkinson"                      | location        
-239      | Hotel MM450                                  | "Hotel MM450"                                | location        
-255      | Hotel Rio Serrano                            | "Hotel Rio Serrano"                          | location        
-264      | Hotel Tayka de Piedra                        | "Hotel Tayka de Piedra"                      | location        
-265      | Hotel Tayka de Sal                           | "Hotel Tayka de Sal"                         | location        
-266      | Hotel Tayka del Desierto                     | "Hotel Tayka del Desierto"                   | location        
-267      | Hotel Territorio Puerto Madryn               | "Hotel Territorio Puerto Madryn"             | location        
-268      | Hotel Tierra del Fuego                       | "Hotel Tierra del Fuego"                     | location        
-270      | Hotel Veat                                   | "Hotel Veat"                                 | location        
-271      | Hotel Verso                                  | "Hotel Verso"                                | location        
-272      | Huilo Huilo Nothofagus Hotel                 | "Huilo Huilo Nothofagus Hotel"               | location        
-273      | Ilaia Hotel                                  | "Ilaia Hotel"                                | location        
-274      | Inlandsis Hostal                             | "Inlandsis Hostal"                           | location        
-275      | Innata Casa                                  | "Innata Casa"                                | location        
-276      | Intersur Recoleta                            | "Intersur Recoleta"                          | location        
-277      | Ismael Hotel                                 | "Ismael Hotel"                               | location        
-278      | Jardin Escondido                             | "Jardin Escondido"                           | location        
-279      | Jose Nogueira                                | "Jose Nogueira"                              | location        
-280      | Kau Kaleshen                                 | "Kau Kaleshen"                               | location        
-282      | Kau Yatun Hotel de Campo                     | "Kau Yatun Hotel de Campo"                   | location        
-283      | Kaulem                                       | "Kaulem"                                     | location        
-284      | Kimal                                        | "Kimal"                                      | location        
-285      | Koi Aiken                                    | "Koi Aiken"                                  | location        
-286      | Kosten Aike                                  | "Kosten Aike"                                | location        
-288      | La Cantera Jungle Lodge                      | "La Cantera Jungle Lodge"                    | location        
-289      | La Casa de Eugenia                           | "La Casa de Eugenia"                         | location        
-291      | La Cascada                                   | "La Cascada"                                 | location        
-293      | La Casona                                    | "La Casona"                                  | location        
-294      | La Casona Matetic                            | "La Casona Matetic"                          | location        
-295      | La Merced del Alto Boutique Hotel (2,280m)   | "La Merced del Alto Boutique Hotel (2,280m)" | location        
-297      | La Posada del Posadas                        | "La Posada del Posadas"                      | location        
-310      | Las Balsas Relais & Châteaux                 | "Las Balsas Relais & Châteaux"               | location        
-312      | Las Hayas                                    | "Las Hayas"                                  | location        
-313      | Las Lengas                                   | "Las Lengas"                                 | location        
-314      | Le Chatelet                                  | "Le Chatelet"                                | location        
-315      | Le Reve                                      | "Le Reve"                                    | location        
-316      | Legado Mitico                                | "Legado Mitico"                              | location        
-317      | Llao Llao Resort Golf and Spa                | "Llao Llao Resort Golf and Spa"              | location        
-318      | Loi Suites                                   | "Loi Suites"                                 | location        
-319      | Loi Suites Iguazú                            | "Loi Suites Iguazú"                          | location        
-320      | Lord Patagonia Outdoor                       | "Lord Patagonia Outdoor"                     | location        
-321      | Los Acebos Hotel                             | "Los Acebos Hotel"                           | location        
-322      | Los Cauquenes Resort and Spa                 | "Los Cauquenes Resort and Spa"               | location        
-323      | Los Cerros                                   | "Los Cerros"                                 | location        
-325      | Los Ñires Hotel                              | "Los Ñires Hotel"                            | location        
-326      | Los Ponchos Hotel Boutique                   | "Los Ponchos Hotel Boutique"                 | location        
-327      | Los Raices B&B                               | "Los Raices B&B"                             | location        
-329      | Los Sauces Casas Patagonia                   | "Los Sauces Casas Patagonia"                 | location        
-330      | Madre Tierra Patagonia                       | "Madre Tierra Patagonia"                     | location        
-331      | Maison Italia 1029                           | "Maison Italia 1029"                         | location        
-332      | Mallín Colorado Lodge                        | "Mallín Colorado Lodge"                      | location        
-333      | Mandarin Oriental Santiago                   | "Mandarin Oriental Santiago"                 | location        
-334      | Marina Fuy Hotel Boutique                    | "Marina Fuy Hotel Boutique"                  | location        
-335      | Mercure Iguazu - Hotel Iru                   | "Mercure Iguazu - Hotel Iru"                 | location        
-336      | Meridiano Sur Petit Hotel                    | "Meridiano Sur Petit Hotel"                  | location        
-337      | Mero Gaucho                                  | "Mero Gaucho"                                | location        
-338      | Mine Hotel                                   | "Mine Hotel"                                 | location        
-339      | Mio Hotel                                    | "Mio Hotel"                                  | location        
-340      | Mirador del Lago                             | "Mirador del Lago"                           | location        
-342      | Mountain Lodge Cochamó                       | "Mountain Lodge Cochamó"                     | location        
-362      | Palacio Astoreca                             | "Palacio Astoreca"                           | location        
-373      | Paradise                                     | "Paradise"                                   | location        
-374      | Parque Factoría Lodge                        | "Parque Factoría Lodge"                      | location        
-385      | Poincenot Comfort Camp                       | "Poincenot Comfort Camp"                     | location        
-386      | Porto Bay Hotel                              | "Porto Bay Hotel"                            | location        
-390      | Posada del Río                               | "Posada del Río"                             | location        
-404      | Rayentray Puerto Piramides                   | "Rayentray Puerto Piramides"                 | location        
-408      | Refugio Chileno                              | "Refugio Chileno"                            | location        
-409      | Refugio Cochamó                              | "Refugio Cochamó"                            | location        
-426      | Remota Lodge                                 | "Remota Lodge"                               | location        
-440      | Stannum Boutique Hotel                       | "Stannum Boutique Hotel"                     | location        
-
-SHEET: All Activities - For Upload
------------------------------------------------------------------------------------------------------------------------
-Row      | Row Name                                                             | Missing Component  | Type            
------------------------------------------------------------------------------------------------------------------------
-3        | Trek to Lago Pehoé                                                   | "refugio cuernos"  | location        
-3        | Trek to Lago Pehoé                                                   | "refugio cuernos"  | location        
-63       | Darwin's Frog Trail Hike                                             | "El Amarillo"      | location        
-72       | French Valley Hike from Refugio Cuernos to Paine G                   | "refugio cuernos"  | location        
-106      | Refugio Central to Refugio Cuernos Hike                              | "refugio cuernos"  | location        
-108      | Refugio Paine Grande to Refugio Cuernos via the Fr                   | "refugio cuernos"  | location        
-679      | El Amarillo Ventisquero Glacier Hike                                 | "El Amarillo"      | location        
-679      | El Amarillo Ventisquero Glacier Hike                                 | "El Amarillo"      | location        
-715      | El Mirador Trail Hike                                                | "El Amarillo"      | location        
-715      | El Mirador Trail Hike                                                | "El Amarillo"      | location        
-859      | French Valley: Refugio Paine Grande to Refugio Cue                   | "refugio cuernos"  | location        
-862      | Los Cuernos Trail Hike                                               | "refugio cuernos"  | location        
-878      | Mendoza Day at Leisure                                               | "Mendoza"          | location        
-878      | Mendoza Day at Leisure                                               | "Mendoza"          | location        
-886      | Lújan de Cuyo Wine Region Tour                                       | "Mendoza"          | location        
-886      | Lújan de Cuyo Wine Region Tour                                       | "Mendoza"          | location        
-889      | Uco Valley Wine Tour                                                 | "Mendoza"          | location        
-889      | Uco Valley Wine Tour                                                 | "Mendoza"          | location        
-890      | Vineyards Horse Ride                                                 | "Mendoza"          | location        
-890      | Vineyards Horse Ride                                                 | "Mendoza"          | location        
-891      | Luján de Cuyo Cycling Wine Tour                                      | "Mendoza"          | location        
-891      | Luján de Cuyo Cycling Wine Tour                                      | "Mendoza"          | location        
-892      | Vineyard Hop in the Uco Valley                                       | "Mendoza"          | location        
-892      | Vineyard Hop in the Uco Valley                                       | "Mendoza"          | location        
+---------------------------------------------------------------------------------
+Row      | Row Name                 | Missing Component        | Type            
+---------------------------------------------------------------------------------
+108      | Errante EcoLodge         | "Errante EcoLodge"       | location        
+271      | Hotel Verso              | "Hotel Verso"            | location        
+294      | La Casona Matetic        | "La Casona Matetic"      | location        
+385      | Poincenot Comfort Camp   | "Poincenot Comfort Camp" | location        
 
 SHEET: Journeys
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -148,7 +31,6 @@ Row      | Row Name                                                             
 16       | Navimag Cruise Port (PNT) to Refugio Central/EcoCa                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
 23       | Punta Arenas to to Refugio Central/EcoCamp/Las Tor                                                   | "Refugio Central/EcoCamp/Las Torres"                   | location        
 63       | El Chaltén to Los Huemules Reserve/Explora Chaltén                                                   | "Los Huemules Reserve/Explora Chaltén"                 | location        
-103      | Chaiten to El Amarillo (Pumalin Park) or reverse                                                     | "El Amarillo"                                          | location        
 164      | Retiro bus station - Recoleta or reverse                                                             | "Retiro bus station"                                   | location        
 170      | Aeroparque Internacional Jorge Newbery (AEP) - Cit                                                   | "City Hotel"                                           | location        
 171      | Ministro Pistarini International Airport, Ezeiza (                                                   | "City Hotel"                                           | location        
@@ -164,8 +46,6 @@ Row      | Row Name                                                             
 187      | City Hotel - Valpariso hotel or reverse                                                              | "Valpariso hotel"                                      | location        
 190      | Arturo Merino Benitez International Airport SCL -                                                    | "Valpariso port"                                       | location        
 191      | City Hotel - Valpariso port or reverse                                                               | "Valpariso port"                                       | location        
-211      | El Plumerillo International Airport, Mendoza MDZ -                                                   | "Vistalba Winery"                                      | location        
-212      | Mendoza Hotel - Vistalba winery or reverse                                                           | "Vistalba Winery"                                      | location        
 213      | Mendoza Bus station to Chacras or Maipu or reverse                                                   | "Mendoza Bus station"                                  | location        
 214      | Mendoza Bus station to Uco Valley or reverse                                                         | "Mendoza Bus station"                                  | location        
 215      | Mendoza Bus station to downtown Mendoza or reverse                                                   | "Mendoza Bus station"                                  | location        
@@ -176,13 +56,9 @@ Row      | Row Name                                                             
 235      | Punta Arenas Hotel - Punta Arenas downtown/other h                                                   | "Punta Arenas Hotel"                                   | location        
 236      | Punta Arenas Hotel - Skorpios pier or reverse                                                        | "Punta Arenas Hotel"                                   | location        
 237      | Punta Arenas Hotel - Australis pier or reverse                                                       | "Punta Arenas Hotel"                                   | location        
-244      | San Pedro Hotel to Devils Canyon or reverse                                                          | "Devil's Canyon"                                       | location        
 246      | San Pedro Hotel to Yerbas Buenas or reverse                                                          | "Yerbas Buenas"                                        | location        
-256      | Ramaditas Mountain Lodge - Turquiri Lagoon                                                           | "Turquiri Lagoon"                                      | location        
-257      | Turquiri Lagoon - Chituca                                                                            | "Turquiri Lagoon"                                      | location        
 274      | Hotel Taha Tai - Rano Kau volcano                                                                    | "Rano Kau volcano"                                     | location        
 275      | Rano Kau volcano - Orongo                                                                            | "Rano Kau volcano"                                     | location        
-306      | Explora Rapa Nui Hotel - Mahatua                                                                     | "Mahatua"                                              | location        
 331      | Retiro bus station - Recoleta or reverse                                                             | "Retiro bus station"                                   | location        
 337      | Aeroparque Internacional Jorge Newbery (AEP) - Cit                                                   | "City Hotel"                                           | location        
 338      | Ministro Pistarini International Airport, Ezeiza (                                                   | "City Hotel"                                           | location        
@@ -203,20 +79,26 @@ Row      | Row Name                                                             
 395      | El Chaltén Hotel to Activity or reverse                                                              | "El Chaltén Hotel"                                     | location        
 396      | El Chaltén to La Leona Petrified Forest or reverse                                                   | "El Chaltén Hotel"                                     | location        
 436      | Oco's Place to Barraco Lodge or reverse                                                              | "Oco's Place"                                          | location        
-437      | Barraco Lodge to Laguna Gaviotas or reverse                                                          | "Laguna Gaviotas"                                      | location        
 439      | Hotel Remota to the Rupestre area or reverse                                                         | "Rupestre"                                             | location        
 441      | EcoCamp to Pudeto dock or reverse                                                                    | "Pudeto dock"                                          | location        
-451      | Awasi Patagonia to Loma Guanaco or reverse                                                           | "Loma Guanaco"                                         | location        
-454      | Awasi Atacama to Dinosaur Valley or reverse                                                          | "Dinosaur Valley"                                      | location        
 457      | Awasi Atacama to Yerbas Buenas or reverse                                                            | "Yerbas Buenas"                                        | location        
 465      | EcoCamp Patagonia to Pudeto dock or reverse                                                          | "Pudeto dock"                                          | location        
 466      | Patagonia Camp to Pudeto Dock or reverse                                                             | "Pudeto dock"                                          | location        
 485      | Cataratas/Puerto Iguazú Hotel to Activity or rever                                                   | "Cataratas/Puerto Iguazú Hotel"                        | location        
 509      | Ushuaia Hotel to Ushuaia Airport (USH) or reverse                                                    | "Ushuaia Hotel"                                        | location        
-536      | Remota Lodge to Estancia Puerto Consuelo or revers                                                   | "Remota Lodge"                                         | location        
-538      | Remota Lodge to the Rupestre area or reverse                                                         | "Remota Lodge"                                         | location        
-539      | Weber Bridge to Remota Lodge or reverse                                                              | "Remota Lodge"                                         | location        
 594      | Deseado Lodge to Estancia Josefina or reverse                                                        | "Estancia Josefina"                                    | location        
+
+SHEET: All Activities - For Upload
+-----------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                                             | Missing Component  | Type            
+-----------------------------------------------------------------------------------------------------------------------
+3        | Trek to Lago Pehoé                                                   | "refugio cuernos"  | location        
+3        | Trek to Lago Pehoé                                                   | "refugio cuernos"  | location        
+72       | French Valley Hike from Refugio Cuernos to Paine G                   | "refugio cuernos"  | location        
+106      | Refugio Central to Refugio Cuernos Hike                              | "refugio cuernos"  | location        
+108      | Refugio Paine Grande to Refugio Cuernos via the Fr                   | "refugio cuernos"  | location        
+859      | French Valley: Refugio Paine Grande to Refugio Cue                   | "refugio cuernos"  | location        
+862      | Los Cuernos Trail Hike                                               | "refugio cuernos"  | location        
 
 SHEET: All Transfers - For Upload
 ----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -987,9 +869,7 @@ Row      | Row Name                 | Missing Component                         
 23       |  - Day 3, Component 1    | "The Cormorant at 55 South to Puerto Williams Airport"                       | transfer                    
 23       |  - Day 8, Component 1    | "The Cormorant at 55 South to Puerto Williams Airport"                       | transfer                    
 24       |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
-24       |  - Day 6, Component 2    | "Charter flight from Ushuaia to Buenos Aires"                                | transfer                    
 25       |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
-25       |  - Day 6, Component 2    | "Charter flight from Ushuaia to Buenos Aires"                                | transfer                    
 26       |  - Day 8, Component 1    | "Ushuaia Port to Airport"                                                    | transfer                    
 26       |  - Day 1, Component 1    | "Ushuaia Airport to Hotel"                                                   | transfer                    
 26       |  - Day 1, Component 2    | "Ushuaia Hotel"                                                              | ground_accommodation        
@@ -1300,7 +1180,6 @@ Row      | Row Name                 | Missing Component                         
 117      |  - Day 10, Component 1   | "Punta Arenas port to the airport"                                           | transfer                    
 117      |  - Day 10, Component 2   | "Charter flight from Punta Arenas Airport to Santiago"                       | transfer                    
 118      |  - Day 1, Component 2    | "Buenos Aires Hotel"                                                         | ground_accommodation        
-118      |  - Day 11, Component 2   | "Charter flight from Ushuaia to Buenos Aires"                                | transfer                    
 119      |  - Day 1, Component 1    | "Santiago Hotel"                                                             | ground_accommodation        
 119      |  - Day 2, Component 2    | "Charter flight from Santiago to Puerto Williams Airport"                    | transfer                    
 119      |  - Day 9, Component 2    | "Charter flight from Puerto Williams Airport to Santiago Airport"            | transfer                    

@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2026-01-05 16:13:12
+Generated: 2026-01-07 15:43:33
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
@@ -10,14 +10,11 @@ TYPE: location
 --------------------------------------------------------------------------------
 Missing Component                                        | Occurrences
 -----------------------------------------------------------------------
-"Mendoza"                                                | 13
 "Punta Arenas Hotel"                                     | 7
 "Refugio Central/EcoCamp/Las Torres"                     | 7
 "refugio cuernos"                                        | 7
 "Ushuaia Hotel"                                          | 7
-"El Amarillo"                                            | 6
 "City Hotel"                                             | 4
-"Remota Lodge"                                           | 4
 "Santa Cruz"                                             | 4
 "Valpariso hotel"                                        | 4
 "Valpariso port"                                         | 4
@@ -28,113 +25,20 @@ Missing Component                                        | Occurrences
 "El Chaltén Hotel"                                       | 2
 "Rano Kau volcano"                                       | 2
 "Retiro bus station"                                     | 2
-"Turquiri Lagoon"                                        | 2
-"Vistalba Winery"                                        | 2
 "Yerbas Buenas"                                          | 2
-"Bahía Bustamante Lodge"                                 | 1
 "Buenos Aires City Centre Hotel"                         | 1
-"Casa Sur Recoleta"                                      | 1
 "Cataratas/Puerto Iguazú Hotel"                          | 1
-"Cilene del Fuego Suites & Spa"                          | 1
-"Continental 725"                                        | 1
-"Dazzler Palermo"                                        | 1
-"Del Nómade Hosteria"                                    | 1
-"Desertica"                                              | 1
-"Devil's Canyon"                                         | 1
-"Dinosaur Valley"                                        | 1
-"Duhau Palace - Park Hyatt"                              | 1
-"El Reloj"                                               | 1
 "Errante EcoLodge"                                       | 1
-"Estancia El Condor"                                     | 1
 "Estancia Josefina"                                      | 1
-"Estancia La Josefina"                                   | 1
-"Fauna Hotel"                                            | 1
-"Gran Meliá Iguazú"                                      | 1
-"Hostal Gladys"                                          | 1
-"Hotel Augustos Copacabana"                              | 1
-"Hotel Casa Higueras"                                    | 1
-"Hotel Cirilo Armstrong"                                 | 1
-"Hotel Civico"                                           | 1
-"Hotel El Barranco"                                      | 1
-"Hotel Manoir Atkinson"                                  | 1
-"Hotel MM450"                                            | 1
-"Hotel Rio Serrano"                                      | 1
-"Hotel Tayka de Piedra"                                  | 1
-"Hotel Tayka de Sal"                                     | 1
-"Hotel Tayka del Desierto"                               | 1
-"Hotel Territorio Puerto Madryn"                         | 1
-"Hotel Tierra del Fuego"                                 | 1
-"Hotel Veat"                                             | 1
 "Hotel Verso"                                            | 1
-"Huilo Huilo Nothofagus Hotel"                           | 1
-"Ilaia Hotel"                                            | 1
-"Inlandsis Hostal"                                       | 1
-"Innata Casa"                                            | 1
-"Intersur Recoleta"                                      | 1
-"Ismael Hotel"                                           | 1
-"Jardin Escondido"                                       | 1
-"Jose Nogueira"                                          | 1
-"Kau Kaleshen"                                           | 1
-"Kau Yatun Hotel de Campo"                               | 1
-"Kaulem"                                                 | 1
-"Kimal"                                                  | 1
-"Koi Aiken"                                              | 1
-"Kosten Aike"                                            | 1
-"La Cantera Jungle Lodge"                                | 1
-"La Casa de Eugenia"                                     | 1
-"La Cascada"                                             | 1
-"La Casona"                                              | 1
 "La Casona Matetic"                                      | 1
-"La Merced del Alto Boutique Hotel (2,280m)"             | 1
-"La Posada del Posadas"                                  | 1
-"Laguna Gaviotas"                                        | 1
-"Las Balsas Relais & Châteaux"                           | 1
-"Las Hayas"                                              | 1
-"Las Lengas"                                             | 1
-"Le Chatelet"                                            | 1
-"Le Reve"                                                | 1
-"Legado Mitico"                                          | 1
-"Llao Llao Resort Golf and Spa"                          | 1
-"Loi Suites"                                             | 1
-"Loi Suites Iguazú"                                      | 1
-"Loma Guanaco"                                           | 1
-"Lord Patagonia Outdoor"                                 | 1
-"Los Acebos Hotel"                                       | 1
-"Los Cauquenes Resort and Spa"                           | 1
-"Los Cerros"                                             | 1
 "Los Huemules Reserve/Explora Chaltén"                   | 1
-"Los Ponchos Hotel Boutique"                             | 1
-"Los Raices B&B"                                         | 1
-"Los Sauces Casas Patagonia"                             | 1
-"Los Ñires Hotel"                                        | 1
-"Madre Tierra Patagonia"                                 | 1
-"Mahatua"                                                | 1
-"Maison Italia 1029"                                     | 1
-"Mallín Colorado Lodge"                                  | 1
-"Mandarin Oriental Santiago"                             | 1
-"Marina Fuy Hotel Boutique"                              | 1
-"Mercure Iguazu - Hotel Iru"                             | 1
-"Meridiano Sur Petit Hotel"                              | 1
-"Mero Gaucho"                                            | 1
-"Mine Hotel"                                             | 1
-"Mio Hotel"                                              | 1
-"Mirador del Lago"                                       | 1
-"Mountain Lodge Cochamó"                                 | 1
 "Oco's Place"                                            | 1
-"Palacio Astoreca"                                       | 1
-"Paradise"                                               | 1
-"Parque Factoría Lodge"                                  | 1
 "Pehoé/Serrano Village/Administration"                   | 1
 "Poincenot Comfort Camp"                                 | 1
-"Porto Bay Hotel"                                        | 1
-"Posada del Río"                                         | 1
-"Rayentray Puerto Piramides"                             | 1
-"Refugio Chileno"                                        | 1
-"Refugio Cochamó"                                        | 1
 "Rupestre"                                               | 1
 "Santiago City Central Hotel, via Santiago Restaurant"   | 1
 "Serrano Village/Administration (Y-290)"                 | 1
-"Stannum Boutique Hotel"                                 | 1
 "Tierra Hotel/Estancia Lazo"                             | 1
 
 TYPE: journey
@@ -216,7 +120,6 @@ Missing Component                                                               
 "Charter flight from King George Island to Puerto Williams Airport"              | 3
 "Charter flight from Puerto Natales to King George Island"                       | 3
 "Charter flight from Puerto Williams to King George Island"                      | 3
-"Charter flight from Ushuaia to Buenos Aires"                                    | 3
 "Charter Flight King George Island to Punta Arenas"                              | 3
 "IGR - Puerto Iguazú Hotel H&T Driver Only"                                      | 3
 "MDZ - Downtown Mendoza H&T Driver Only"                                         | 3
