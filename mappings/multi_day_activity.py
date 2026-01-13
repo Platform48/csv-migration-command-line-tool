@@ -1,6 +1,5 @@
 # activity_mapper.py
-import re
-from utils import get_component_id, get_stripped, safe_float, safe_int, get_location_id
+from utils import get_component_id, get_stripped, safe_float, safe_int, get_location_id, parse_html_list
 from .location import map_region_name_to_id
 import pandas as pd
                             
@@ -8,28 +7,6 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
     """
     Map activity component with improved ID lookups and missing reference logging
     """
-
-    def parse_list_field(field_name: str):
-        """
-        Parse an HTML bullet list into a list of strings.
-        Enforces <li> presence; otherwise logs and returns empty.
-        """
-        text = get_stripped(row, field_name)
-        if not text:
-            return []
-
-        if "<li" not in text.lower():
-            print(f"[WARNING] Expected HTML list with <li> for '{field_name}', got: {text[:80]}.")
-            return []
-
-        items = re.findall(r"<li[^>]*>(.*?)</li>", text, flags=re.IGNORECASE | re.DOTALL)
-        cleaned = []
-        for item in items:
-            no_tags = re.sub(r"<[^>]+>", " ", item)
-            cleaned_item = " ".join(no_tags.split()).strip()
-            if cleaned_item:
-                cleaned.append(cleaned_item)
-        return cleaned
 
     # --- Regions ---
     regions = [map_region_name_to_id(get_stripped(row, "Region Tags"))]
@@ -40,8 +17,8 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
     }
 
     # --- Inclusions / Exclusions ---
-    inclusions = parse_list_field("Inclusions")
-    exclusions = parse_list_field("Exclusions")
+    inclusions = parse_html_list(get_stripped(row, "Inclusions"), "Inclusions")
+    exclusions = parse_html_list(get_stripped(row, "Exclusions"), "Exclusions")
 
     # --- Dynamic Package Spans ---
     package_spans = []
