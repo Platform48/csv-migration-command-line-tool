@@ -1,0 +1,1146 @@
+{
+  "start_time": "2026-01-13T11:15:49.480893",
+  "end_time": "2026-01-13T11:19:12.479476",
+  "duration_seconds": 202.998583,
+  "sheets": {
+    "ANT Cruise Packages": {
+      "total_rows": 126,
+      "success_count": 77,
+      "cached_count": 0,
+      "validation_errors": 0,
+      "upload_errors": 49,
+      "mapping_errors": 0,
+      "success_rate": 61.111111111111114,
+      "field_completeness": {
+        "description.web": 100.0,
+        "description.quote": 100.0,
+        "description.final": 100.0,
+        "destination": 100.0,
+        "tripId": 100.0,
+        "partners": 100.0,
+        "regions": 61.111111111111114,
+        "media.images": 100.0,
+        "package": 100.0
+      },
+      "rows": [
+        {
+          "row_number": 4,
+          "component_name": "Falklands, South Georgia & Antarctic Adventure",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 6899245726728955620, 'trace': 5683040279575605757}"
+          },
+          "duration_ms": 397.10200000000003
+        },
+        {
+          "row_number": 2,
+          "component_name": "Original Fly & Cruise Luxury Adventure",
+          "status": "success",
+          "component_id": "component_845a85673728ea047e7dbe785a6a7cc9",
+          "error_details": null,
+          "duration_ms": 1986.9969999999998
+        },
+        {
+          "row_number": 5,
+          "component_name": "Onto the Antarctic Ice",
+          "status": "success",
+          "component_id": "component_3b69de06d5498251f038979cbad143b5",
+          "error_details": null,
+          "duration_ms": 2002.1270000000002
+        },
+        {
+          "row_number": 8,
+          "component_name": "Antarctic Peninsula Classic",
+          "status": "success",
+          "component_id": "component_c60617877c4ff3fcd5c3f9b735e6e3a6",
+          "error_details": null,
+          "duration_ms": 2068.8650000000002
+        },
+        {
+          "row_number": 9,
+          "component_name": "Antarctic Peninsula Classic - 11 days",
+          "status": "success",
+          "component_id": "component_c28baab6d6ca90a29e669f9094aaba1f",
+          "error_details": null,
+          "duration_ms": 2165.829
+        },
+        {
+          "row_number": 6,
+          "component_name": "Onto the Antarctic Ice - Weddell Sea Route",
+          "status": "success",
+          "component_id": "component_b65f779b02dd75f971f9bf44643648db",
+          "error_details": null,
+          "duration_ms": 2230.638
+        },
+        {
+          "row_number": 3,
+          "component_name": "Fly & Cruise the Antarctic Peninsula",
+          "status": "success",
+          "component_id": "component_30c4ec9c36c5be4579dfc4302bcbb247",
+          "error_details": null,
+          "duration_ms": 2341.993
+        },
+        {
+          "row_number": 7,
+          "component_name": "Onto the Antarctic Ice - 10 days",
+          "status": "success",
+          "component_id": "component_4b89923ada5d0c824804611d6478c11f",
+          "error_details": null,
+          "duration_ms": 2407.108
+        },
+        {
+          "row_number": 10,
+          "component_name": "South Shetland Islands & Antarctica Voyage",
+          "status": "success",
+          "component_id": "component_e00c5943af28a4995b6f66bd71e7b7f8",
+          "error_details": null,
+          "duration_ms": 2480.3959999999997
+        },
+        {
+          "row_number": 11,
+          "component_name": "South Shetland Islands & Antarctica Voyage - 11 day voyage aiming to visit Weddell Sea",
+          "status": "success",
+          "component_id": "component_2e8507f9e669634b48d2e2945fc86902",
+          "error_details": null,
+          "duration_ms": 2555.565
+        },
+        {
+          "row_number": 12,
+          "component_name": "South Shetland Islands & Antarctica Voyage - 9 day voyage",
+          "status": "success",
+          "component_id": "component_09bd49972ac48250c9c656c153c258af",
+          "error_details": null,
+          "duration_ms": 2351.086
+        },
+        {
+          "row_number": 16,
+          "component_name": "Discover South Georgia, Antarctica and Falklands",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 9036845745497731002, 'trace': 6502604551899041274}"
+          },
+          "duration_ms": 1151.6580000000001
+        },
+        {
+          "row_number": 17,
+          "component_name": "Discover South Georgia, Antarctica and Falklands - 20 days fly back",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 5992301781290053808, 'trace': 6548474147445434961}"
+          },
+          "duration_ms": 1137.01
+        },
+        {
+          "row_number": 18,
+          "component_name": "Discover South Georgia, Antarctica and Falklands - 20 days fly back",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 4110929511260021428, 'trace': 634931286156432475}"
+          },
+          "duration_ms": 1186.556
+        },
+        {
+          "row_number": 20,
+          "component_name": "Antarctic Basecamp Adventure",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 2422241410678516161, 'trace': 6793092840553652625}"
+          },
+          "duration_ms": 1286.442
+        },
+        {
+          "row_number": 21,
+          "component_name": "Antarctic Basecamp Adventure - Weddell Sea voyage",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 548110536715585637, 'trace': 1475843375873295231}"
+          },
+          "duration_ms": 1298.557
+        },
+        {
+          "row_number": 19,
+          "component_name": "Discover South Georgia, Antarctica and Falklands - 22 days reverse itinerary",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 6757272372523809717, 'trace': 2660563592274263431}"
+          },
+          "duration_ms": 1580.6299999999999
+        },
+        {
+          "row_number": 22,
+          "component_name": "Ultimate Luxury Antarctic Fly & Cruise",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 2923614174610469944, 'trace': 7848246958028617212}"
+          },
+          "duration_ms": 1351.1779999999999
+        },
+        {
+          "row_number": 13,
+          "component_name": "Sail & Fly Antarctica in Style",
+          "status": "success",
+          "component_id": "component_88d2432b7906ca8ae1f164ac0747de6a",
+          "error_details": null,
+          "duration_ms": 2165.2019999999998
+        },
+        {
+          "row_number": 14,
+          "component_name": "Sail & Fly Antarctica in Style - BA charter flight",
+          "status": "success",
+          "component_id": "component_4e4d67064bbbbc492bda24bbb888dbb2",
+          "error_details": null,
+          "duration_ms": 2381.8199999999997
+        },
+        {
+          "row_number": 23,
+          "component_name": "Antarctic Peninsula in Focus",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 235184171443632766, 'trace': 9032034402210551395}"
+          },
+          "duration_ms": 1120.625
+        },
+        {
+          "row_number": 15,
+          "component_name": "Quintessential Antarctic Luxury Fly & Cruise",
+          "status": "success",
+          "component_id": "component_52c1150f650c8b014b3a969b2cf74e2c",
+          "error_details": null,
+          "duration_ms": 2433.651
+        },
+        {
+          "row_number": 24,
+          "component_name": "Antarctic Peninsula in Focus",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 5719502068369485453, 'trace': 6091123831625170964}"
+          },
+          "duration_ms": 1200.283
+        },
+        {
+          "row_number": 28,
+          "component_name": "Antarctica, South Georgia & Falklands In Style",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 4893979999944172701, 'trace': 8008021188694240817}"
+          },
+          "duration_ms": 1099.385
+        },
+        {
+          "row_number": 29,
+          "component_name": "Quest for Shackleton: South Georgia and Antarctica",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 7157075944443089170, 'trace': 5226275948544043973}"
+          },
+          "duration_ms": 1306.2549999999999
+        },
+        {
+          "row_number": 32,
+          "component_name": "Spring Quest to Antarctica, Falklands and South Georgia",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 1130075301831031491, 'trace': 3950370308046050756}"
+          },
+          "duration_ms": 1219.5990000000002
+        },
+        {
+          "row_number": 33,
+          "component_name": "Southern Atlantic Odyssey",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 1288622303084262991, 'trace': 2716596539894353966}"
+          },
+          "duration_ms": 1266.4189999999999
+        },
+        {
+          "row_number": 25,
+          "component_name": "Antarctic Circle Odyssey",
+          "status": "success",
+          "component_id": "component_ccbf956025e8ea55492797fcbcec8b93",
+          "error_details": null,
+          "duration_ms": 2669.129
+        },
+        {
+          "row_number": 26,
+          "component_name": "Ultimate Antarctica: South Georgia & Antarctic Circle",
+          "status": "success",
+          "component_id": "component_6dc601baf0fe3aec30f648996405548d",
+          "error_details": null,
+          "duration_ms": 2520.0840000000003
+        },
+        {
+          "row_number": 27,
+          "component_name": "Antarctic Explorer",
+          "status": "success",
+          "component_id": "component_ca419f3796ac212932583a5fc6443ec6",
+          "error_details": null,
+          "duration_ms": 2518.98
+        },
+        {
+          "row_number": 30,
+          "component_name": "Crossing the Antarctic Circle",
+          "status": "success",
+          "component_id": "component_f719b71b6eb4d757fde0c9f6c0f9bfd1",
+          "error_details": null,
+          "duration_ms": 2496.479
+        },
+        {
+          "row_number": 31,
+          "component_name": "Crossing the Antarctic Circle - sail-fly",
+          "status": "success",
+          "component_id": "component_5d1f2a619f5f558d5c1177e016bcac23",
+          "error_details": null,
+          "duration_ms": 2455.099
+        },
+        {
+          "row_number": 34,
+          "component_name": "South of the Antarctic Circle",
+          "status": "success",
+          "component_id": "component_b71be7431dade66c818af0ee50de5fab",
+          "error_details": null,
+          "duration_ms": 2561.997
+        },
+        {
+          "row_number": 35,
+          "component_name": "South of the Antarctic Circle - 13 days",
+          "status": "success",
+          "component_id": "component_762d6880460321a863fa86d68d7c23dd",
+          "error_details": null,
+          "duration_ms": 2275.546
+        },
+        {
+          "row_number": 36,
+          "component_name": "South of the Antarctic Circle - 15 day Weddell Sea",
+          "status": "success",
+          "component_id": "component_7e5c4292923ffa350ef3d719b54e6807",
+          "error_details": null,
+          "duration_ms": 2257.4230000000002
+        },
+        {
+          "row_number": 37,
+          "component_name": "Antarctic Fly & Cruise Safari",
+          "status": "success",
+          "component_id": "component_cf90f7c4cbc2bab4ac2d748191edf726",
+          "error_details": null,
+          "duration_ms": 2200.102
+        },
+        {
+          "row_number": 38,
+          "component_name": "Fly & Cruise Polar Circle",
+          "status": "success",
+          "component_id": "component_0575932980bc5f90cb0170ab1c29c09d",
+          "error_details": null,
+          "duration_ms": 2231.824
+        },
+        {
+          "row_number": 44,
+          "component_name": "Quest for the Emperor Penguins of Snow Hill Island",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 1501284043248719841, 'trace': 6555517411146395677}"
+          },
+          "duration_ms": 1143.021
+        },
+        {
+          "row_number": 39,
+          "component_name": "Antarctic Peninsula Explorer",
+          "status": "success",
+          "component_id": "component_5a7880e601619a3cc5be0658d04ba1d0",
+          "error_details": null,
+          "duration_ms": 2150.156
+        },
+        {
+          "row_number": 40,
+          "component_name": "Antarctic Fly & Sail Combination",
+          "status": "success",
+          "component_id": "component_705f9570b8c48bf1087506bb31d3f363",
+          "error_details": null,
+          "duration_ms": 2241.1850000000004
+        },
+        {
+          "row_number": 41,
+          "component_name": "Falklands, South Georgia & The Polar Circle",
+          "status": "success",
+          "component_id": "component_cc9f06ed1f70b6f5cd059016a1d3e223",
+          "error_details": null,
+          "duration_ms": 2383.791
+        },
+        {
+          "row_number": 46,
+          "component_name": "Emperor Penguin Expedition in Style",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 2943062071498379236, 'trace': 6258717306520234940}"
+          },
+          "duration_ms": 1201.732
+        },
+        {
+          "row_number": 50,
+          "component_name": "Ross Sea & Subantarctic Islands Explorer",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 356300271782663846, 'trace': 2864140370610335944}"
+          },
+          "duration_ms": 1140.22
+        },
+        {
+          "row_number": 51,
+          "component_name": "Ross Sea & Subantarctic Islands Explorer - Reverse & Longer Itinerary",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 8365705060780623377, 'trace': 8127145092336389479}"
+          },
+          "duration_ms": 1204.852
+        },
+        {
+          "row_number": 45,
+          "component_name": "Antarctic Explorer in Style",
+          "status": "success",
+          "component_id": "component_0d4fbb0930b8543f637ecb51c39e82da",
+          "error_details": null,
+          "duration_ms": 2407.149
+        },
+        {
+          "row_number": 42,
+          "component_name": "Immense Discovery: Falklands, South Georgia & the Peninsula",
+          "status": "success",
+          "component_id": "component_4d38611a92ef7de14f3e83be2753cd47",
+          "error_details": null,
+          "duration_ms": 3180.279
+        },
+        {
+          "row_number": 43,
+          "component_name": "Immense Discovery: Falklands, South Georgia & the Peninsula - Reverse Itinerary",
+          "status": "success",
+          "component_id": "component_6de1b90682c7077ed4394782dcd9935f",
+          "error_details": null,
+          "duration_ms": 3214.484
+        },
+        {
+          "row_number": 53,
+          "component_name": "Untamed Weddell Sea Adventure",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 5604658384206512550, 'trace': 2580712123140515329}"
+          },
+          "duration_ms": 1226.974
+        },
+        {
+          "row_number": 47,
+          "component_name": "Crossing the Circle in Style",
+          "status": "success",
+          "component_id": "component_cffab631a176301aa3f58fb3ef363073",
+          "error_details": null,
+          "duration_ms": 2308.46
+        },
+        {
+          "row_number": 48,
+          "component_name": "Antarctic Explorer Refined",
+          "status": "success",
+          "component_id": "component_047795294a28bfe30b7756bcf58b4406",
+          "error_details": null,
+          "duration_ms": 2367.107
+        },
+        {
+          "row_number": 54,
+          "component_name": "Uncharted Antarctica & South Georgia Odyssey",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 3426277122888966562, 'trace': 1398956249695102503}"
+          },
+          "duration_ms": 1004.5519999999999
+        },
+        {
+          "row_number": 49,
+          "component_name": "Antarctic Sail & Fly Combination",
+          "status": "success",
+          "component_id": "component_6bb4bc287d9ea16a18b45bdaeff25827",
+          "error_details": null,
+          "duration_ms": 2280.8540000000003
+        },
+        {
+          "row_number": 52,
+          "component_name": "Active Antarctic Adventure",
+          "status": "success",
+          "component_id": "component_e82822f6a9cdd61ef9e9579850863274",
+          "error_details": null,
+          "duration_ms": 2399.3030000000003
+        },
+        {
+          "row_number": 55,
+          "component_name": "Women-Only Antarctic Fly & Cruise",
+          "status": "success",
+          "component_id": "component_a1043016f25baa214799f75f36ce50fe",
+          "error_details": null,
+          "duration_ms": 2125.713
+        },
+        {
+          "row_number": 56,
+          "component_name": "Express Antarctica",
+          "status": "success",
+          "component_id": "component_4123f88692b87138e4fc8a1801295054",
+          "error_details": null,
+          "duration_ms": 2210.746
+        },
+        {
+          "row_number": 57,
+          "component_name": "Crossing the Antarctic Circle Fly & Cruise",
+          "status": "success",
+          "component_id": "component_9cf6786f64994bc38b1e66d5b70bd036",
+          "error_details": null,
+          "duration_ms": 2238.547
+        },
+        {
+          "row_number": 64,
+          "component_name": "Express South Georgia & Antarctica Wildlife Safari",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 2507616942193866480, 'trace': 6009534363514556171}"
+          },
+          "duration_ms": 1003.59
+        },
+        {
+          "row_number": 58,
+          "component_name": "Antarctic Peninsula Fly & Sail Photo Safari",
+          "status": "success",
+          "component_id": "component_7c0379ed6734aaa01b0a546aa4993beb",
+          "error_details": null,
+          "duration_ms": 2163.966
+        },
+        {
+          "row_number": 59,
+          "component_name": "Antarctic Peninsula Revealed",
+          "status": "success",
+          "component_id": "component_47c0c71ab668a7f5bdb6dca7d95aaa22",
+          "error_details": null,
+          "duration_ms": 2340.886
+        },
+        {
+          "row_number": 60,
+          "component_name": "66 Degrees South Fly Cruise",
+          "status": "success",
+          "component_id": "component_cb97b3cc3bbf39e3627961981f0f494d",
+          "error_details": null,
+          "duration_ms": 2343.549
+        },
+        {
+          "row_number": 61,
+          "component_name": "Express Tour of Antarctica",
+          "status": "success",
+          "component_id": "component_a28b4d942713ef23a860614ebda8fb3e",
+          "error_details": null,
+          "duration_ms": 2208.3849999999998
+        },
+        {
+          "row_number": 62,
+          "component_name": "Express Tour of Antarctica - Reverse Itinerary",
+          "status": "success",
+          "component_id": "component_e346f129edc09bbffc98631ad86f1506",
+          "error_details": null,
+          "duration_ms": 2192.847
+        },
+        {
+          "row_number": 63,
+          "component_name": "Original Fly & Cruise Expedition Cruise",
+          "status": "success",
+          "component_id": "component_37d1694a05e9c387325577d3279bcecd",
+          "error_details": null,
+          "duration_ms": 2199.017
+        },
+        {
+          "row_number": 71,
+          "component_name": "Springtime in South Georgia, Falklands and Antarctica",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 1565283266988548857, 'trace': 6782024636058832456}"
+          },
+          "duration_ms": 833.413
+        },
+        {
+          "row_number": 65,
+          "component_name": "Fly & Sail Antarctica in Style",
+          "status": "success",
+          "component_id": "component_836ba98c0f78428b8f9b764c37226296",
+          "error_details": null,
+          "duration_ms": 1985.9
+        },
+        {
+          "row_number": 66,
+          "component_name": "Fly & Sail Antarctica in Style - Charter Flight Included",
+          "status": "success",
+          "component_id": "component_ed1c3a30370743bc89be798feef4935e",
+          "error_details": null,
+          "duration_ms": 2134.22
+        },
+        {
+          "row_number": 74,
+          "component_name": "South Georgia, Falklands and Antarctica In Depth",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 8764735749606083925, 'trace': 5858372235888728573}"
+          },
+          "duration_ms": 1417.133
+        },
+        {
+          "row_number": 67,
+          "component_name": "Antarctic Peninsula Helicopter Safari",
+          "status": "success",
+          "component_id": "component_cd8690a138c44713622c3d3b3a4cea1b",
+          "error_details": null,
+          "duration_ms": 2175.529
+        },
+        {
+          "row_number": 68,
+          "component_name": "Antarctic Peninsula Discovered",
+          "status": "success",
+          "component_id": "component_f8b802e1d4ffb513bae3c4355576eb9f",
+          "error_details": null,
+          "duration_ms": 2139.761
+        },
+        {
+          "row_number": 69,
+          "component_name": "Antarctica Classic in Depth",
+          "status": "success",
+          "component_id": "component_e464e6762962e3f4f62227d547173df1",
+          "error_details": null,
+          "duration_ms": 2229.386
+        },
+        {
+          "row_number": 75,
+          "component_name": "South Georgia, Falklands and Antarctica In Depth - Reverse Itinerary",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 8960334377062130446, 'trace': 7514843360615107286}"
+          },
+          "duration_ms": 1185.343
+        },
+        {
+          "row_number": 70,
+          "component_name": "Quest for the Antarctic Circle",
+          "status": "success",
+          "component_id": "component_4543fc4da1764eb50ab38524dd191047",
+          "error_details": null,
+          "duration_ms": 2111.8610000000003
+        },
+        {
+          "row_number": 72,
+          "component_name": "Explore the Antarctic Peninsula - BA to USH",
+          "status": "success",
+          "component_id": "component_eeba77d8447726769f3baf65cd25fa1e",
+          "error_details": null,
+          "duration_ms": 2218.276
+        },
+        {
+          "row_number": 73,
+          "component_name": "Explore the Antarctic Peninsula - SCL to USH",
+          "status": "success",
+          "component_id": "component_a63c9b6f0a2ca230bb201881ffd90b1c",
+          "error_details": null,
+          "duration_ms": 2232.4579999999996
+        },
+        {
+          "row_number": 77,
+          "component_name": "Climb Mount Vinson",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 7842803394639601555, 'trace': 802663453051528873}"
+          },
+          "duration_ms": 908.55
+        },
+        {
+          "row_number": 78,
+          "component_name": "Destination Antarctica, Falklands & South Georgia",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 5137118557349671479, 'trace': 2503096394250025614}"
+          },
+          "duration_ms": 966.579
+        },
+        {
+          "row_number": 79,
+          "component_name": "Ross Sea Discovery: In Scott & Shackleton's Footsteps",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 7721971724400694141, 'trace': 7182114199694163693}"
+          },
+          "duration_ms": 1038.489
+        },
+        {
+          "row_number": 80,
+          "component_name": "South Georgia, Antarctica and Falklands Explorer",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 991329886127324362, 'trace': 5556320267998092135}"
+          },
+          "duration_ms": 1085.422
+        },
+        {
+          "row_number": 81,
+          "component_name": "Luxury Falklands, South Georgia & Antarctica",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 1586290465130090379, 'trace': 7300162697936325396}"
+          },
+          "duration_ms": 1356.786
+        },
+        {
+          "row_number": 76,
+          "component_name": "Classic Peninsula Voyage",
+          "status": "success",
+          "component_id": "component_338ae8461b6b3ba0701c74de13a36e62",
+          "error_details": null,
+          "duration_ms": 2275.4759999999997
+        },
+        {
+          "row_number": 85,
+          "component_name": "Explore Antarctica, South Georgia and Falklands",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 933414328453662005, 'trace': 968367184103533218}"
+          },
+          "duration_ms": 1276.289
+        },
+        {
+          "row_number": 86,
+          "component_name": "Explore Antarctica, South Georgia and Falklands - 23 days ending in BA",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 2291110526606387545, 'trace': 2738730319773052664}"
+          },
+          "duration_ms": 1277.1200000000001
+        },
+        {
+          "row_number": 88,
+          "component_name": "Fly to the South Pole",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 981442552647209804, 'trace': 9006365724555664890}"
+          },
+          "duration_ms": 1246.874
+        },
+        {
+          "row_number": 89,
+          "component_name": "Fly to the South Pole - 7 days",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 4655101878316878236, 'trace': 5336105870050889038}"
+          },
+          "duration_ms": 1303.413
+        },
+        {
+          "row_number": 82,
+          "component_name": "Polar Circle Adventure",
+          "status": "success",
+          "component_id": "component_8422d3fdebb58e43ddd37268276e9051",
+          "error_details": null,
+          "duration_ms": 2451.445
+        },
+        {
+          "row_number": 90,
+          "component_name": "Camp with Emperor Penguins",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 3697763182537206630, 'trace': 4744839759196273341}"
+          },
+          "duration_ms": 1216.1200000000001
+        },
+        {
+          "row_number": 83,
+          "component_name": "Luxury Highlights of the Antarctic Peninsula",
+          "status": "success",
+          "component_id": "component_ef8b13c42285d0191bed0e05ce1da58b",
+          "error_details": null,
+          "duration_ms": 2575.48
+        },
+        {
+          "row_number": 84,
+          "component_name": "Luxury Highlights of the Antarctic Peninsula - 13 days long",
+          "status": "success",
+          "component_id": "component_cea38a54226e59a2a2e4ef992c951505",
+          "error_details": null,
+          "duration_ms": 2585.271
+        },
+        {
+          "row_number": 87,
+          "component_name": "Cruise to the Antarctic Peninsula",
+          "status": "success",
+          "component_id": "component_743f9acd1242410552eaf9f3dfeff3d3",
+          "error_details": null,
+          "duration_ms": 2513.219
+        },
+        {
+          "row_number": 94,
+          "component_name": "Antarctica, Falklands & South Georgia in Comfort",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 8899609794713342760, 'trace': 7579720302789433469}"
+          },
+          "duration_ms": 1202.421
+        },
+        {
+          "row_number": 97,
+          "component_name": "Antarctica, South Georgia & Falklands Revealed",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 3756117802727317048, 'trace': 3806645414191117979}"
+          },
+          "duration_ms": 946.561
+        },
+        {
+          "row_number": 98,
+          "component_name": "Fly-Sail Antarctica & South Georgia - SG first",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 5757697554380483726, 'trace': 6299871345945214513}"
+          },
+          "duration_ms": 932.5459999999999
+        },
+        {
+          "row_number": 92,
+          "component_name": "Traversing the Antarctic Circle",
+          "status": "success",
+          "component_id": "component_f93e22a127d917e6b6d173bb7ba44de4",
+          "error_details": null,
+          "duration_ms": 2104.4049999999997
+        },
+        {
+          "row_number": 91,
+          "component_name": "Heart of Antarctica",
+          "status": "success",
+          "component_id": "component_c0bb1f0eacb110e2f88c9ebca85aa4a9",
+          "error_details": null,
+          "duration_ms": 2241.3720000000003
+        },
+        {
+          "row_number": 99,
+          "component_name": "Fly-Sail Antarctica & South Georgia - ANT first",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 8337960553004726100, 'trace': 9027036458295404455}"
+          },
+          "duration_ms": 1016.9580000000001
+        },
+        {
+          "row_number": 100,
+          "component_name": "Antarctic Yacht Expedition",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 1780883621814610194, 'trace': 5115965434075645627}"
+          },
+          "duration_ms": 777.747
+        },
+        {
+          "row_number": 93,
+          "component_name": "Traversing the Antarctic Circle - 15 days",
+          "status": "success",
+          "component_id": "component_9b4482719671a7730b591501154a297f",
+          "error_details": null,
+          "duration_ms": 2252.4579999999996
+        },
+        {
+          "row_number": 101,
+          "component_name": "Luxury South Georgia & Antarctica Fly & Cruise",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 2747174648186122242, 'trace': 6674470897178305909}"
+          },
+          "duration_ms": 1273.813
+        },
+        {
+          "row_number": 96,
+          "component_name": "Encounter the Antarctic Circle",
+          "status": "success",
+          "component_id": "component_7d609e475101ce26dac7c96c08d5cc3b",
+          "error_details": null,
+          "duration_ms": 2124.993
+        },
+        {
+          "row_number": 104,
+          "component_name": "Elegant Falklands, South Georgia & Antarctica",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 5591936897646040023, 'trace': 2846891406014269058}"
+          },
+          "duration_ms": 841.774
+        },
+        {
+          "row_number": 105,
+          "component_name": "Elegant Falklands, South Georgia & Antarctica - Reverse Itinerary",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 2988659197881719361, 'trace': 5889050986273498506}"
+          },
+          "duration_ms": 900.5600000000001
+        },
+        {
+          "row_number": 95,
+          "component_name": "Skydiving over Antarctica",
+          "status": "success",
+          "component_id": "component_da9a8bad827fbbaf01538f2f7b2e5a64",
+          "error_details": null,
+          "duration_ms": 2681.1440000000002
+        },
+        {
+          "row_number": 106,
+          "component_name": "South Georgia & Falklands Wildlife Safari",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 4358761057299366094, 'trace': 4950630415125870276}"
+          },
+          "duration_ms": 1029.137
+        },
+        {
+          "row_number": 107,
+          "component_name": "Ross Sea in Luxury",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 6329981099919359425, 'trace': 3042286656330019186}"
+          },
+          "duration_ms": 1110.548
+        },
+        {
+          "row_number": 102,
+          "component_name": "Elegant Antarctic Peninsula",
+          "status": "success",
+          "component_id": "component_8a8567874bc2e4bc6db971c943339c50",
+          "error_details": null,
+          "duration_ms": 1968.983
+        },
+        {
+          "row_number": 103,
+          "component_name": "Multi-activity Antarctic Peninsula",
+          "status": "success",
+          "component_id": "component_c8b312afbc0a501631cdb4660e1c7505",
+          "error_details": null,
+          "duration_ms": 1957.5620000000001
+        },
+        {
+          "row_number": 112,
+          "component_name": "Luxury Weddell Sea Explorer",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 7205320967458933186, 'trace': 2668365127553123968}"
+          },
+          "duration_ms": 973.0569999999999
+        },
+        {
+          "row_number": 108,
+          "component_name": "Antarctic Express Fly & Cruise",
+          "status": "success",
+          "component_id": "component_f54fe83fba35984341d80f8c2a4da1e6",
+          "error_details": null,
+          "duration_ms": 2306.0570000000002
+        },
+        {
+          "row_number": 116,
+          "component_name": "Antarctica, Falklands & South Georgia Redefined",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 6740724833360471014, 'trace': 2157206036312768002}"
+          },
+          "duration_ms": 1078.309
+        },
+        {
+          "row_number": 117,
+          "component_name": "Falklands, South Georgia & Antarctica in Focus",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 8479005545974193299, 'trace': 593438490261645211}"
+          },
+          "duration_ms": 1192.671
+        },
+        {
+          "row_number": 109,
+          "component_name": "Antarctic Express Sail & Fly",
+          "status": "success",
+          "component_id": "component_983ca508ae04d716e3504783d3e26e6f",
+          "error_details": null,
+          "duration_ms": 2262.443
+        },
+        {
+          "row_number": 111,
+          "component_name": "Antarctic Fly & Cruise In Depth - 10 days",
+          "status": "success",
+          "component_id": "component_62dfad8dc4d28a6367b5e5e8548b3789",
+          "error_details": null,
+          "duration_ms": 2364.225
+        },
+        {
+          "row_number": 118,
+          "component_name": "Luxury South Georgia & Antarctica Combination",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 8903754895220770550, 'trace': 2140649350048504702}"
+          },
+          "duration_ms": 1266.012
+        },
+        {
+          "row_number": 110,
+          "component_name": "Antarctic Fly & Cruise In Depth",
+          "status": "success",
+          "component_id": "component_566f9da1241018e83c7c40fbc7c9694f",
+          "error_details": null,
+          "duration_ms": 2529.506
+        },
+        {
+          "row_number": 113,
+          "component_name": "Icebreaker Antarctic Circle Voyage",
+          "status": "success",
+          "component_id": "component_690748f6d0e3ff463a0af7524f1c1186",
+          "error_details": null,
+          "duration_ms": 2481.353
+        },
+        {
+          "row_number": 114,
+          "component_name": "Antarctic Peninsula Redefined",
+          "status": "success",
+          "component_id": "component_10d98b42810f2ce2557a383f13d3c6c9",
+          "error_details": null,
+          "duration_ms": 2556.497
+        },
+        {
+          "row_number": 115,
+          "component_name": "Antarctic Circle In Depth",
+          "status": "success",
+          "component_id": "component_3e73c7b1ffa20b5870e27fcc93f4162a",
+          "error_details": null,
+          "duration_ms": 2553.884
+        },
+        {
+          "row_number": 127,
+          "component_name": "Epic Explorer: Falklands, South Georgia & the Antarctic Circle",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 8133796800273122083, 'trace': 2416522558529787486}"
+          },
+          "duration_ms": 1094.8629999999998
+        },
+        {
+          "row_number": 119,
+          "component_name": "Elegant Antarctic Peninsula In Depth",
+          "status": "success",
+          "component_id": "component_e669d79ff580073699efbf7d7586eaf2",
+          "error_details": null,
+          "duration_ms": 2471.163
+        },
+        {
+          "row_number": 120,
+          "component_name": "Patagonia & Antarctica In Depth",
+          "status": "success",
+          "component_id": "component_600e475777b1d8d3066cb3fa28d1a3f3",
+          "error_details": null,
+          "duration_ms": 2448.884
+        },
+        {
+          "row_number": 121,
+          "component_name": "Antarctica & Patagonia In Depth",
+          "status": "success",
+          "component_id": "component_5cd6d20313bf3be48ed957035d05c316",
+          "error_details": null,
+          "duration_ms": 2471.591
+        },
+        {
+          "row_number": 123,
+          "component_name": "Quintessential Luxury Antarctic Sail & Fly",
+          "status": "success",
+          "component_id": "component_a8334f5f2ad357d7245eeec9b58c530c",
+          "error_details": null,
+          "duration_ms": 2292.9
+        },
+        {
+          "row_number": 122,
+          "component_name": "Antarctica & Patagonia In Depth - 1 day less",
+          "status": "success",
+          "component_id": "component_f03727333bf8d42155d4d5d9c8fde95d",
+          "error_details": null,
+          "duration_ms": 2528.73
+        },
+        {
+          "row_number": 124,
+          "component_name": "Quintessential Luxury Antarctic Fly & Sail",
+          "status": "success",
+          "component_id": "component_b7f14761ce340aff50b52a9270f23712",
+          "error_details": null,
+          "duration_ms": 2386.752
+        },
+        {
+          "row_number": 125,
+          "component_name": "Classic Antarctica & South Shetlands",
+          "status": "success",
+          "component_id": "component_bbbbfd68f66c0996178d77a774ea2305",
+          "error_details": null,
+          "duration_ms": 2385.203
+        },
+        {
+          "row_number": 126,
+          "component_name": "Classic Antarctica & South Shetlands - 10 days",
+          "status": "success",
+          "component_id": "component_1d79ad287f1838e28ea11593ea8df93d",
+          "error_details": null,
+          "duration_ms": 2367.906
+        }
+      ]
+    }
+  },
+  "overall_field_completeness": {
+    "description.web": 100.0,
+    "description.quote": 100.0,
+    "description.final": 100.0,
+    "destination": 100.0,
+    "tripId": 100.0,
+    "partners": 100.0,
+    "regions": 61.111111111111114,
+    "media.images": 100.0,
+    "package": 100.0
+  }
+}

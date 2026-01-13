@@ -59,7 +59,7 @@ def map_cruise_activity_component(row, template_ids, COMPONENT_ID_MAP, context=N
 
     return {
         "orgId":"swoop",
-        "destination":"antarctic",
+        "destination":"antarctica",
         "state": "Draft",
         "tripId": "",
         "pricing": {"amount":0,"currency":"gbp"},

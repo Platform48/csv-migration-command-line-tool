@@ -25,23 +25,23 @@ from mappings.multi_day_activity import map_multi_day_activity_component
 from mappings.cruise import map_cruise_component
 from mappings.ship_accom import map_ship_accommodation_component
 
-ACCESS_TOKEN = "ya29.a0Aa7pCA-Es7ipWkzkCe9SCccx271W4fue1a5XYOJ-UR_DYaZotsbkIG_RrrRpkGfPm5OZTK2Gy1sFNk-LKK0VbToq8ZS7rIe7X3Q_DC_tqAsM0csT-dWJwVNQurv8kq2lx2Lw8NHkMISgTiAUtSTEsO2KhkMPRTQXM-e1E9bgE_gzbmlaaD2QL4sRurxZIb9gORSO2ONnSgvfaCgYKAYYSARUSFQHGX2MicrEK8j3eOpxey39YENLT8w0211"
+ACCESS_TOKEN = ""
 
 SHEET_PROCESS_ORDER = [
-    "Location",
-    "Ground Accom",
-    "Ship Accom",
-    "ANT Ship Accom",
-    "Journeys",
-    "All Activities - For Upload",
-    "ANT Activities",
-    "All Transfers - For Upload",
-    "ANT Transfers",
-    "Excursions Package",
-    "Private Tours Package",
-    "All Inclusive Hotel Package",
-    "Multi-day Activity Package",
-    "PAT Cruise Packages ",
+    # "Location",
+    # "Ground Accom",
+    # "Ship Accom",
+    # "ANT Ship Accom",
+    # "Journeys",
+    # "All Activities - For Upload",
+    # "ANT Activities",
+    # "All Transfers - For Upload",
+    # "ANT Transfers",
+    # "Excursions Package",
+    # "Private Tours Package",
+    # "All Inclusive Hotel Package",
+    # "Multi-day Activity Package",
+    # "PAT Cruise Packages ",
     "ANT Cruise Packages",
 ]
 
@@ -743,8 +743,8 @@ class CoreDataService:
                 ))
             return None
 
-        if component.get("destination") == "antarctica":
-            component["destination"] = "antarctic"
+        if component.get("destination") == "antarctic":
+            component["destination"] = "antarctica"
 
         pregenerated_id = generate_component_id(component)
         url = ""

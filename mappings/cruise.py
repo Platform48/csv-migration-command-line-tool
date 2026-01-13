@@ -26,7 +26,11 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
 
     # --- Regions ---
     region_names = get_stripped(row, "Region").split("\n")
+    for i, r in enumerate(region_names):
+        if r == "FSG":
+            region_names[i] = "Falklands"
     regions = [map_region_name_to_id(r) for r in region_names]
+    regions = [r for r in regions if r]
 
     # --- Media ---
     images = get_stripped(row, "Trip Images").split(",")
@@ -239,6 +243,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
     if tripId: 
         tripId = "ANT-"+tripId
 
+
     val = {
         "orgId":"swoop",
         "destination":(destination_override or get_stripped(row, "destination")).lower() or "patagonia",
@@ -255,7 +260,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
             "final": get_stripped(row, "Cruise Description") or ""
         },
         "partners": [destination_override[:3].upper()+"-"+get_stripped(row, "Partner ID")],
-        "regions": [r for r in regions if r],  # filter out None values
+        "regions": regions,  # filter out None values
         "name": get_stripped(row, "Name") or "Untitled",
         "media": media,
         "componentFields": component_fields,
