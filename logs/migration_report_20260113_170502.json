@@ -1,0 +1,1236 @@
+{
+  "start_time": "2026-01-13T17:03:57.866832",
+  "end_time": "2026-01-13T17:05:02.407020",
+  "duration_seconds": 64.540188,
+  "sheets": {
+    "Private Tours Package": {
+      "total_rows": 145,
+      "success_count": 127,
+      "cached_count": 0,
+      "validation_errors": 0,
+      "upload_errors": 18,
+      "mapping_errors": 0,
+      "success_rate": 87.58620689655172,
+      "field_completeness": {
+        "description.web": 45.51724137931035,
+        "description.quote": 45.51724137931035,
+        "description.final": 45.51724137931035,
+        "destination": 100.0,
+        "tripId": 45.51724137931035,
+        "partners": 100.0,
+        "regions": 98.62068965517241,
+        "media.images": 0.0,
+        "package": 100.0
+      },
+      "rows": [
+        {
+          "row_number": 4,
+          "component_name": "Gentle Adventure in Aysen",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 1 regex errors: component_95b487aaee17ca26a48f72799bb5f0a7: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 2397490616686846995, 'trace': 4545551489764905188}"
+          },
+          "duration_ms": 161.758
+        },
+        {
+          "row_number": 10,
+          "component_name": "Highlights of Pumalín National Park",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 3 regex errors: component_5027eb0db4829cf293dac99fca80f4d8: field Title with value '' failed regex ^.+$, component_5027eb0db4829cf293dac99fca80f4d8: field Title with value '' failed regex ^.+$, component_5027eb0db4829cf293dac99fca80f4d8: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 8580402168547751339, 'trace': 3039926167057942166}"
+          },
+          "duration_ms": 154.535
+        },
+        {
+          "row_number": 9,
+          "component_name": "Day Hikes in Pucón",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 4 regex errors: component_bcf54e998e4409266cef484fe2762c6d: field Title with value '' failed regex ^.+$, component_bcf54e998e4409266cef484fe2762c6d: field Title with value '' failed regex ^.+$, component_bcf54e998e4409266cef484fe2762c6d: field Title with value '' failed regex ^.+$, component_bcf54e998e4409266cef484fe2762c6d: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 9170736369121829613, 'trace': 2722053605239845444}"
+          },
+          "duration_ms": 157.019
+        },
+        {
+          "row_number": 14,
+          "component_name": "Highlights of Peninsula Valdés",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 2 regex errors: component_658308d23ff9cdda8289d973455cfcad: field Title with value '' failed regex ^.+$, component_658308d23ff9cdda8289d973455cfcad: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 2829705433091271649, 'trace': 667291223127062723}"
+          },
+          "duration_ms": 140.173
+        },
+        {
+          "row_number": 15,
+          "component_name": "Peninsula Valdés Wildlife In Depth",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 4 regex errors: component_714c0a5c62bfce0a4139034172056ffa: field Title with value '' failed regex ^.+$, component_714c0a5c62bfce0a4139034172056ffa: field Title with value '' failed regex ^.+$, component_714c0a5c62bfce0a4139034172056ffa: field Title with value '' failed regex ^.+$, component_714c0a5c62bfce0a4139034172056ffa: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 8040945743717692216, 'trace': 1123572375459991176}"
+          },
+          "duration_ms": 837.393
+        },
+        {
+          "row_number": 8,
+          "component_name": "Highlights of the Chilean Lake District",
+          "status": "success",
+          "component_id": "component_a3b4b7b36fb0534314c871d71eb06d9a",
+          "error_details": null,
+          "duration_ms": 1342.47
+        },
+        {
+          "row_number": 6,
+          "component_name": "Highlights of Chiloé Island",
+          "status": "success",
+          "component_id": "component_07ac8606fc12251cbb7e884c030fccc4",
+          "error_details": null,
+          "duration_ms": 1346.215
+        },
+        {
+          "row_number": 7,
+          "component_name": "Best of Pucón",
+          "status": "success",
+          "component_id": "component_61fc091ccecd9ab39525db8e95735f10",
+          "error_details": null,
+          "duration_ms": 1346.396
+        },
+        {
+          "row_number": 2,
+          "component_name": "Highlights of Bariloche",
+          "status": "success",
+          "component_id": "component_9a7e6a6177e97ac3f7baf604bea08f3d",
+          "error_details": null,
+          "duration_ms": 1355.4630000000002
+        },
+        {
+          "row_number": 12,
+          "component_name": "Foodie Adventure in the Chilean Lake District",
+          "status": "success",
+          "component_id": "component_22d91dd24a0cf618f4a8942a64ade01d",
+          "error_details": null,
+          "duration_ms": 1191.173
+        },
+        {
+          "row_number": 5,
+          "component_name": "Best of the Chilean Lake District",
+          "status": "success",
+          "component_id": "component_b9616497e5a859e262b691db4782c88f",
+          "error_details": null,
+          "duration_ms": 1351.625
+        },
+        {
+          "row_number": 3,
+          "component_name": "Luxury Mendoza",
+          "status": "success",
+          "component_id": "component_235947d1aa49307dfc1f2cdcf5db28ed",
+          "error_details": null,
+          "duration_ms": 1358.122
+        },
+        {
+          "row_number": 11,
+          "component_name": "Northern Carretera Austral Road Trip",
+          "status": "success",
+          "component_id": "component_5a58bae91ff26fa9aae5dde95403e845",
+          "error_details": null,
+          "duration_ms": 1346.8100000000002
+        },
+        {
+          "row_number": 13,
+          "component_name": "Best of Peninsula Valdés",
+          "status": "success",
+          "component_id": "component_d4301030798e8a48234184eb86010531",
+          "error_details": null,
+          "duration_ms": 1282.549
+        },
+        {
+          "row_number": 19,
+          "component_name": "Classic Buenos Aires",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 2 regex errors: component_04de883b7674f06b09e56c72c38ff8c3: field Title with value '' failed regex ^.+$, component_04de883b7674f06b09e56c72c38ff8c3: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 5826241038695257375, 'trace': 3260278557074696703}"
+          },
+          "duration_ms": 161.685
+        },
+        {
+          "row_number": 16,
+          "component_name": "Gentle Adventure in Torres del Paine",
+          "status": "success",
+          "component_id": "component_dbd945f4d4087c63f74a8fdbe18db2e0",
+          "error_details": null,
+          "duration_ms": 464.712
+        },
+        {
+          "row_number": 22,
+          "component_name": "Buenos Aires Express",
+          "status": "success",
+          "component_id": "component_bf373c62516bed024519145e3fcda413",
+          "error_details": null,
+          "duration_ms": 940.914
+        },
+        {
+          "row_number": 21,
+          "component_name": "Buenos Aires Express",
+          "status": "success",
+          "component_id": "component_bf373c62516bed024519145e3fcda413",
+          "error_details": null,
+          "duration_ms": 1020.23
+        },
+        {
+          "row_number": 24,
+          "component_name": "Classic Iguazú Falls",
+          "status": "success",
+          "component_id": "component_2a19e3707287fa8174282eacebec7445",
+          "error_details": null,
+          "duration_ms": 1073.973
+        },
+        {
+          "row_number": 17,
+          "component_name": "Luxury Atacama",
+          "status": "success",
+          "component_id": "component_00072d9f9fb20308c53169f35bd02520",
+          "error_details": null,
+          "duration_ms": 1085.886
+        },
+        {
+          "row_number": 23,
+          "component_name": "Self-Drive Argentinian Lake District",
+          "status": "success",
+          "component_id": "component_c256171b211723c616fcf4f28f4f292b",
+          "error_details": null,
+          "duration_ms": 1083.741
+        },
+        {
+          "row_number": 20,
+          "component_name": "Relax & Re-energise in Buenos Aires",
+          "status": "success",
+          "component_id": "component_fc13376a2e0af7d5df1cc9340bedbb07",
+          "error_details": null,
+          "duration_ms": 1836.263
+        },
+        {
+          "row_number": 25,
+          "component_name": "Buenos Aires In Depth",
+          "status": "success",
+          "component_id": "component_22ce708395220b46e70ad3ad1661e67d",
+          "error_details": null,
+          "duration_ms": 1752.773
+        },
+        {
+          "row_number": 18,
+          "component_name": "Buenos Aires In Depth",
+          "status": "success",
+          "component_id": "component_22ce708395220b46e70ad3ad1661e67d",
+          "error_details": null,
+          "duration_ms": 1849.086
+        },
+        {
+          "row_number": 27,
+          "component_name": "Relax & Re-energise in Buenos Aires",
+          "status": "success",
+          "component_id": "component_fc13376a2e0af7d5df1cc9340bedbb07",
+          "error_details": null,
+          "duration_ms": 1649.9250000000002
+        },
+        {
+          "row_number": 26,
+          "component_name": "Classic Buenos Aires",
+          "status": "success",
+          "component_id": "component_04de883b7674f06b09e56c72c38ff8c3",
+          "error_details": null,
+          "duration_ms": 1751.822
+        },
+        {
+          "row_number": 28,
+          "component_name": "Active Buenos Aires",
+          "status": "success",
+          "component_id": "component_3f500850d8820b9910abb9fce05c3260",
+          "error_details": null,
+          "duration_ms": 1160.546
+        },
+        {
+          "row_number": 32,
+          "component_name": "Iguazu Falls in Depth",
+          "status": "success",
+          "component_id": "component_266b109756f7004a55592f126b1a7ae0",
+          "error_details": null,
+          "duration_ms": 1027.577
+        },
+        {
+          "row_number": 30,
+          "component_name": "Iguazu Falls Express",
+          "status": "success",
+          "component_id": "component_bda9d633b621ac34ec47a52fdef5263c",
+          "error_details": null,
+          "duration_ms": 1036.859
+        },
+        {
+          "row_number": 31,
+          "component_name": "Classic Iguazu Falls",
+          "status": "success",
+          "component_id": "component_210400e328a98710eb0570be8d0c0732",
+          "error_details": null,
+          "duration_ms": 1044.008
+        },
+        {
+          "row_number": 29,
+          "component_name": "Buenos Aires Foodie",
+          "status": "success",
+          "component_id": "component_9c0e2f0a77813a4f8af77174f65b858b",
+          "error_details": null,
+          "duration_ms": 1109.4660000000001
+        },
+        {
+          "row_number": 42,
+          "component_name": "Highlights of the Atacama",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 2 regex errors: component_457903314216a192afbdeac8de72e2a0: field Title with value '' failed regex ^.+$, component_457903314216a192afbdeac8de72e2a0: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 5989319197286990178, 'trace': 5830556344240215386}"
+          },
+          "duration_ms": 669.613
+        },
+        {
+          "row_number": 33,
+          "component_name": "Mendoza Express",
+          "status": "success",
+          "component_id": "component_2a296f9f6640ae799a07bbdcd08a0024",
+          "error_details": null,
+          "duration_ms": 1117.0420000000001
+        },
+        {
+          "row_number": 35,
+          "component_name": "Mendoza in Depth",
+          "status": "success",
+          "component_id": "component_f2e12f9c8274bf2d361b68bc8a001bde",
+          "error_details": null,
+          "duration_ms": 1115.515
+        },
+        {
+          "row_number": 34,
+          "component_name": "Classic Mendoza",
+          "status": "success",
+          "component_id": "component_a319ed2ef4d419fd83d361ed0f05d1b7",
+          "error_details": null,
+          "duration_ms": 1237.186
+        },
+        {
+          "row_number": 40,
+          "component_name": "Santiago Express",
+          "status": "success",
+          "component_id": "component_4ee775d3165e89598a4a1d9fb6e8a7d2",
+          "error_details": null,
+          "duration_ms": 1744.6280000000002
+        },
+        {
+          "row_number": 39,
+          "component_name": "Santiago Express",
+          "status": "success",
+          "component_id": "component_4ee775d3165e89598a4a1d9fb6e8a7d2",
+          "error_details": null,
+          "duration_ms": 1783.045
+        },
+        {
+          "row_number": 43,
+          "component_name": "Classic Santiago, Wines and Valparaíso",
+          "status": "success",
+          "component_id": "component_02a1169165336e87cb30fa282a18728b",
+          "error_details": null,
+          "duration_ms": 1101.909
+        },
+        {
+          "row_number": 36,
+          "component_name": "Best of Aysen Roadtrip",
+          "status": "success",
+          "component_id": "component_03e46b93b79850a5b4f26fa0d185dddd",
+          "error_details": null,
+          "duration_ms": 2006.9180000000001
+        },
+        {
+          "row_number": 41,
+          "component_name": "Easter Island Highlights",
+          "status": "success",
+          "component_id": "component_05d47193afb0cbc552a2dad63285b538",
+          "error_details": null,
+          "duration_ms": 1788.668
+        },
+        {
+          "row_number": 38,
+          "component_name": "Los Glaciares Multisport Adventure",
+          "status": "success",
+          "component_id": "component_b5a51f5a9640b6ed90e467939634f738",
+          "error_details": null,
+          "duration_ms": 1814.771
+        },
+        {
+          "row_number": 37,
+          "component_name": "Highlights of Aysen Roadtrip",
+          "status": "success",
+          "component_id": "component_3d89123cf36f0f6b083f5b7e135de182",
+          "error_details": null,
+          "duration_ms": 2015.616
+        },
+        {
+          "row_number": 46,
+          "component_name": "Santiago In Depth",
+          "status": "success",
+          "component_id": "component_6cb15685d0c330aaf41a9a90d785925b",
+          "error_details": null,
+          "duration_ms": 1019.363
+        },
+        {
+          "row_number": 45,
+          "component_name": "Classic Santiago",
+          "status": "success",
+          "component_id": "component_dee5c1e2642fea4521129f227b163477",
+          "error_details": null,
+          "duration_ms": 1140.325
+        },
+        {
+          "row_number": 44,
+          "component_name": "Central Valley Vineyard Retreat",
+          "status": "success",
+          "component_id": "component_e31f432b289cb806bad6e9a1492bcf15",
+          "error_details": null,
+          "duration_ms": 1166.266
+        },
+        {
+          "row_number": 55,
+          "component_name": "The Best of Tierra del Fuego",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 5 regex errors: component_ff63239dfd9b6df1fafb2fb6de6c13a8: field Title with value '' failed regex ^.+$, component_ff63239dfd9b6df1fafb2fb6de6c13a8: field Title with value '' failed regex ^.+$, component_ff63239dfd9b6df1fafb2fb6de6c13a8: field Title with value '' failed regex ^.+$, component_ff63239dfd9b6df1fafb2fb6de6c13a8: field Title with value '' failed regex ^.+$, component_ff63239dfd9b6df1fafb2fb6de6c13a8: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 353997620671675118, 'trace': 848739647224725251}"
+          },
+          "duration_ms": 687.933
+        },
+        {
+          "row_number": 47,
+          "component_name": "Active Santiago",
+          "status": "success",
+          "component_id": "component_5de3aa4ae9c976652ff4992f2518a4d5",
+          "error_details": null,
+          "duration_ms": 1086.244
+        },
+        {
+          "row_number": 49,
+          "component_name": "Relax & Re-energise in Santiago",
+          "status": "success",
+          "component_id": "component_03af65dcf7c9c876f473f6c4bb7e878c",
+          "error_details": null,
+          "duration_ms": 1051.809
+        },
+        {
+          "row_number": 48,
+          "component_name": "Foodie Santiago",
+          "status": "success",
+          "component_id": "component_8436ce07789403e2ac04e37cd8635e38",
+          "error_details": null,
+          "duration_ms": 1062.171
+        },
+        {
+          "row_number": 51,
+          "component_name": "Active Atacama",
+          "status": "success",
+          "component_id": "component_146daf3bd345c04371838f77d81aac01",
+          "error_details": null,
+          "duration_ms": 1158.476
+        },
+        {
+          "row_number": 52,
+          "component_name": "Highlights of Tierra del Fuego",
+          "status": "success",
+          "component_id": "component_d6f4f2120fb061231e4821aa497ae4f4",
+          "error_details": null,
+          "duration_ms": 1152.957
+        },
+        {
+          "row_number": 50,
+          "component_name": "Classic Atacama",
+          "status": "success",
+          "component_id": "component_d4705fd6258ba1765be38bc61b78327e",
+          "error_details": null,
+          "duration_ms": 1181.971
+        },
+        {
+          "row_number": 53,
+          "component_name": "Day Hikes in Tierra del Fuego",
+          "status": "success",
+          "component_id": "component_fe0bdd3b0f579325daff0acd4a88e9dc",
+          "error_details": null,
+          "duration_ms": 1176.2520000000002
+        },
+        {
+          "row_number": 57,
+          "component_name": "Ushuaia Express",
+          "status": "success",
+          "component_id": "component_74ae88fdc275bb758b32b497ced8c9c8",
+          "error_details": null,
+          "duration_ms": 1101.0120000000002
+        },
+        {
+          "row_number": 56,
+          "component_name": "Hike, Ride & Raft in Tierra del Fuego",
+          "status": "success",
+          "component_id": "component_647cb7e70ad20813261757a95a38d7f7",
+          "error_details": null,
+          "duration_ms": 1809.953
+        },
+        {
+          "row_number": 54,
+          "component_name": "Tierra del Fuego Winter Experience",
+          "status": "success",
+          "component_id": "component_8b36e32034f2237d1aa41c946dc7b793",
+          "error_details": null,
+          "duration_ms": 1828.797
+        },
+        {
+          "row_number": 58,
+          "component_name": "Ushuaia Express",
+          "status": "success",
+          "component_id": "component_74ae88fdc275bb758b32b497ced8c9c8",
+          "error_details": null,
+          "duration_ms": 1095.669
+        },
+        {
+          "row_number": 83,
+          "component_name": "Custom Santiago",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 1 regex errors: component_db8ad960cb01002eb7959c3a0a8e80c6: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 7873895895710145018, 'trace': 189378309471112609}"
+          },
+          "duration_ms": 744.348
+        },
+        {
+          "row_number": 62,
+          "component_name": "Highlights of Los Glaciares",
+          "status": "success",
+          "component_id": "component_51e8db6601d95b15f9fab39961c0a122",
+          "error_details": null,
+          "duration_ms": 1822.422
+        },
+        {
+          "row_number": 64,
+          "component_name": "Los Glaciares Winter Experience",
+          "status": "success",
+          "component_id": "component_562dab0e557dfeef99c7b94f782f6221",
+          "error_details": null,
+          "duration_ms": 1799.839
+        },
+        {
+          "row_number": 60,
+          "component_name": "Ushuaia Classic",
+          "status": "success",
+          "component_id": "component_75b6c9d3cb92b7cbb9b6753621ecb7a5",
+          "error_details": null,
+          "duration_ms": 1943.4750000000001
+        },
+        {
+          "row_number": 59,
+          "component_name": "Ushuaia Foodie",
+          "status": "success",
+          "component_id": "component_1ece422c3ae992be926b4964efe45a96",
+          "error_details": null,
+          "duration_ms": 1954.304
+        },
+        {
+          "row_number": 61,
+          "component_name": "Active Ushuaia",
+          "status": "success",
+          "component_id": "component_f6a256e5d53a447846a82f76efd7b55a",
+          "error_details": null,
+          "duration_ms": 1862.566
+        },
+        {
+          "row_number": 84,
+          "component_name": "Custom Buenos Aires",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 1 regex errors: component_053b76a8559c7e4c5d0cf42b6fd454c6: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 3081710744978051936, 'trace': 4359368256739250973}"
+          },
+          "duration_ms": 148.48600000000002
+        },
+        {
+          "row_number": 63,
+          "component_name": "The Best of Los Glaciares",
+          "status": "success",
+          "component_id": "component_7bd655770e5c2327d0f0c4c3a29385ea",
+          "error_details": null,
+          "duration_ms": 1862.44
+        },
+        {
+          "row_number": 85,
+          "component_name": "Custom Los Glaciares",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 1 regex errors: component_5b4dcc834067ffdf0fe9cb1daa89bcfc: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 6402154595269927836, 'trace': 5603160618857005286}"
+          },
+          "duration_ms": 150.18300000000002
+        },
+        {
+          "row_number": 86,
+          "component_name": "Custom Los Glaciares",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 1 regex errors: component_5b4dcc834067ffdf0fe9cb1daa89bcfc: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 4975700284401543871, 'trace': 7335247941741962537}"
+          },
+          "duration_ms": 150.418
+        },
+        {
+          "row_number": 88,
+          "component_name": "Custom Tierra del Fuego",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 1 regex errors: component_a2bab164832312bd37a059281afbbca8: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 471798727612854105, 'trace': 1081815551613217777}"
+          },
+          "duration_ms": 144.171
+        },
+        {
+          "row_number": 87,
+          "component_name": "Valparaiso Express",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 1 regex errors: component_7f135fbdc1de370ce448c9797710b78e: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 6530428695551855705, 'trace': 9154185665259659603}"
+          },
+          "duration_ms": 157.226
+        },
+        {
+          "row_number": 90,
+          "component_name": "Custom Puerto Natales",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 1 regex errors: component_cf5a153cd980c0b2a63c00f4c7b45594: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 262260982732628779, 'trace': 9212768198991973185}"
+          },
+          "duration_ms": 137.82
+        },
+        {
+          "row_number": 89,
+          "component_name": "Custom Ushuaia",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': \"could not create component with overridden id: entity validation failed: found 1 regex errors: component_99a65351b1268e420b59554d64ed6fd4: field Title with value '' failed regex ^.+$ - please ensure all patterns match\", 'span': 907143698817246778, 'trace': 6355874319106439700}"
+          },
+          "duration_ms": 146.341
+        },
+        {
+          "row_number": 66,
+          "component_name": "Fitz Roy Lakeside Retreat",
+          "status": "success",
+          "component_id": "component_75c4d4678927e68e1ac40f8ed1687acd",
+          "error_details": null,
+          "duration_ms": 1196.062
+        },
+        {
+          "row_number": 65,
+          "component_name": "Los Huemules Adventure",
+          "status": "success",
+          "component_id": "component_9eb8f86fa8c62a0050d70b037fde3cf8",
+          "error_details": null,
+          "duration_ms": 1241.038
+        },
+        {
+          "row_number": 67,
+          "component_name": "Los Glaciares Gentle Adventure",
+          "status": "success",
+          "component_id": "component_37ee76c66f4ebad6f1e43deba8c77e3c",
+          "error_details": null,
+          "duration_ms": 1210.043
+        },
+        {
+          "row_number": 97,
+          "component_name": "Punta Arenas & Isla Magdalena",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 451068892529542732, 'trace': 9173515349935801461}"
+          },
+          "duration_ms": 703.274
+        },
+        {
+          "row_number": 91,
+          "component_name": "Custom Puerto Natales",
+          "status": "success",
+          "component_id": "component_cf5a153cd980c0b2a63c00f4c7b45594",
+          "error_details": null,
+          "duration_ms": 992.778
+        },
+        {
+          "row_number": 99,
+          "component_name": "Colchagua Valley & Santiago",
+          "status": "success",
+          "component_id": "component_2efb696bb619dea85a9fd341610b6197",
+          "error_details": null,
+          "duration_ms": 1768.889
+        },
+        {
+          "row_number": 96,
+          "component_name": "Highlights of Northwest Argentina",
+          "status": "success",
+          "component_id": "component_dc58dfc6dbbc51b85b6f21c1c1b473c7",
+          "error_details": null,
+          "duration_ms": 1825.8909999999998
+        },
+        {
+          "row_number": 101,
+          "component_name": "La Barrosa Adventure",
+          "status": "success",
+          "component_id": "component_29ff69984c4a5926f8af76c681e5cc90",
+          "error_details": null,
+          "duration_ms": 1765.061
+        },
+        {
+          "row_number": 98,
+          "component_name": "Highlights of Mendoza",
+          "status": "success",
+          "component_id": "component_54caaeb636e7d2547ab93b724b147c66",
+          "error_details": null,
+          "duration_ms": 1781.036
+        },
+        {
+          "row_number": 94,
+          "component_name": "Custom Puerto Varas",
+          "status": "success",
+          "component_id": "component_c934773d85dcdcdf48d07a219c56787c",
+          "error_details": null,
+          "duration_ms": 1854.141
+        },
+        {
+          "row_number": 95,
+          "component_name": "El Calafate Express",
+          "status": "success",
+          "component_id": "component_e84c3b9cb3952222dbdcd5c2c8539679",
+          "error_details": null,
+          "duration_ms": 1847.308
+        },
+        {
+          "row_number": 92,
+          "component_name": "El Calafate Express",
+          "status": "success",
+          "component_id": "component_e84c3b9cb3952222dbdcd5c2c8539679",
+          "error_details": null,
+          "duration_ms": 1867.077
+        },
+        {
+          "row_number": 102,
+          "component_name": "Coyhaique River Lodge Adventure",
+          "status": "success",
+          "component_id": "component_5530c9c8bccb582793c779f85079a066",
+          "error_details": null,
+          "duration_ms": 1131.968
+        },
+        {
+          "row_number": 93,
+          "component_name": "Custom Los Glaciares Mountaineering",
+          "status": "success",
+          "component_id": "component_2e75a84b6e638039b758069f38900cd6",
+          "error_details": null,
+          "duration_ms": 1862.1799999999998
+        },
+        {
+          "row_number": 104,
+          "component_name": "Fly-fishing at Río Palena Lodge",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component with overridden id: before create hook failed: component type requires at least one region', 'span': 419153687863830253, 'trace': 4748882090001638519}"
+          },
+          "duration_ms": 126.197
+        },
+        {
+          "row_number": 103,
+          "component_name": "Hotel Casa Real Vineyard Retreat",
+          "status": "success",
+          "component_id": "component_c89051accf4002b32dcae4b680ff64f5",
+          "error_details": null,
+          "duration_ms": 1167.577
+        },
+        {
+          "row_number": 108,
+          "component_name": "Santiago Half Day City Tour",
+          "status": "success",
+          "component_id": "component_708c42111aa5f53f673ee098a6580864",
+          "error_details": null,
+          "duration_ms": 1054.006
+        },
+        {
+          "row_number": 113,
+          "component_name": "Walkways & Safari Nautico Boat Trip",
+          "status": "success",
+          "component_id": "component_3b7af53d415f5fcbc3ed94837fd8fdcd",
+          "error_details": null,
+          "duration_ms": 1047.568
+        },
+        {
+          "row_number": 112,
+          "component_name": "Mayo Spirit Boat & Hike",
+          "status": "success",
+          "component_id": "component_4b8e1b62062964a2802c6218d766ba89",
+          "error_details": null,
+          "duration_ms": 1054.889
+        },
+        {
+          "row_number": 110,
+          "component_name": "Isla Magdalena Tour (Add-on for Cascada Trips)",
+          "status": "success",
+          "component_id": "component_4e8e2c47f080aa55b14e295b98b54536",
+          "error_details": null,
+          "duration_ms": 1062.906
+        },
+        {
+          "row_number": 111,
+          "component_name": "Mayo Spirit Boat & Hike",
+          "status": "success",
+          "component_id": "component_4b8e1b62062964a2802c6218d766ba89",
+          "error_details": null,
+          "duration_ms": 1062.896
+        },
+        {
+          "row_number": 114,
+          "component_name": "Perito Moreno Glacier - Minitrekking 1",
+          "status": "success",
+          "component_id": "component_bbc35f7c96f1867f8e1ec38d357b6672",
+          "error_details": null,
+          "duration_ms": 1056.86
+        },
+        {
+          "row_number": 107,
+          "component_name": "Buenos Aires City Tour",
+          "status": "success",
+          "component_id": "component_fa8ab1f3bd1b2449baed423d27f03e6d",
+          "error_details": null,
+          "duration_ms": 1067.9540000000002
+        },
+        {
+          "row_number": 109,
+          "component_name": "Santiago City Sensations Tour",
+          "status": "success",
+          "component_id": "component_a70f782dccff8055abeb9f498293a4a6",
+          "error_details": null,
+          "duration_ms": 1065.906
+        },
+        {
+          "row_number": 115,
+          "component_name": "Visit to Perito Moreno Glacier including Minitrekking on the Ice",
+          "status": "success",
+          "component_id": "component_6db09bafb6935baf04aa560687938a23",
+          "error_details": null,
+          "duration_ms": 1854.9750000000001
+        },
+        {
+          "row_number": 116,
+          "component_name": "Visit to Perito Moreno Glacier including Big Ice Hike",
+          "status": "success",
+          "component_id": "component_0b7e5482b7e58a7da8a1bec365455490",
+          "error_details": null,
+          "duration_ms": 1787.907
+        },
+        {
+          "row_number": 122,
+          "component_name": "Colonia Tour from Buenos Aires",
+          "status": "success",
+          "component_id": "component_1ee5542a29f4882d965d3ece4340220c",
+          "error_details": null,
+          "duration_ms": 1913.683
+        },
+        {
+          "row_number": 120,
+          "component_name": "Kayaking at Lago del Desierto",
+          "status": "success",
+          "component_id": "component_cb6a4bb88c179cced49cdc3b2512afa0",
+          "error_details": null,
+          "duration_ms": 1916.7510000000002
+        },
+        {
+          "row_number": 121,
+          "component_name": "Perito Moreno Glacier with Pioneros Excursion",
+          "status": "success",
+          "component_id": "component_ae89b2bfb75bc42276a50afd61a6115d",
+          "error_details": null,
+          "duration_ms": 1926.028
+        },
+        {
+          "row_number": 123,
+          "component_name": "Estancia San Antonio de Areco",
+          "status": "success",
+          "component_id": "component_8523a8f39fcc11ff03d0726532f27920",
+          "error_details": null,
+          "duration_ms": 1923.988
+        },
+        {
+          "row_number": 124,
+          "component_name": "Buenos Aires Tango Show - Gala",
+          "status": "success",
+          "component_id": "component_7b4997780280a2d07256ffc9d0fb448e",
+          "error_details": null,
+          "duration_ms": 1923.811
+        },
+        {
+          "row_number": 117,
+          "component_name": "Visit to Perito Moreno Glacier including Big Ice Hike",
+          "status": "success",
+          "component_id": "component_0b7e5482b7e58a7da8a1bec365455490",
+          "error_details": null,
+          "duration_ms": 1949.733
+        },
+        {
+          "row_number": 119,
+          "component_name": "Estancia Cristina Discovery",
+          "status": "success",
+          "component_id": "component_953d124de0ddc2bc6b0b163b9379ecc9",
+          "error_details": null,
+          "duration_ms": 1942.356
+        },
+        {
+          "row_number": 118,
+          "component_name": "Estancia Cristina Discovery",
+          "status": "success",
+          "component_id": "component_953d124de0ddc2bc6b0b163b9379ecc9",
+          "error_details": null,
+          "duration_ms": 1952.2820000000002
+        },
+        {
+          "row_number": 126,
+          "component_name": "Buenos Aires Graffiti Tour",
+          "status": "success",
+          "component_id": "component_f2853cdaa6386c51080ab6cde6e8d939",
+          "error_details": null,
+          "duration_ms": 1185.923
+        },
+        {
+          "row_number": 125,
+          "component_name": "El Querandi Tango Show & Dinner",
+          "status": "success",
+          "component_id": "component_fc9cada8d679619d54b20bb855509b44",
+          "error_details": null,
+          "duration_ms": 1245.598
+        },
+        {
+          "row_number": 134,
+          "component_name": "Private Casablanca Valley with Vineyards Tour",
+          "status": "success",
+          "component_id": "component_f2a8b592abfc3485c33add9714709fe1",
+          "error_details": null,
+          "duration_ms": 1021.517
+        },
+        {
+          "row_number": 128,
+          "component_name": "Buenos Aires Cycling City Tour",
+          "status": "success",
+          "component_id": "component_b3da38efaf8499eab1b5a05277fd1b3e",
+          "error_details": null,
+          "duration_ms": 1046.503
+        },
+        {
+          "row_number": 129,
+          "component_name": "Buenos Aires Day at Leisure",
+          "status": "success",
+          "component_id": "component_6f9a2318fa4bd95bb180adb70a6c1202",
+          "error_details": null,
+          "duration_ms": 1040.0
+        },
+        {
+          "row_number": 131,
+          "component_name": "Valparaiso Street Art Tour",
+          "status": "success",
+          "component_id": "component_9a4f3c41269ae66901884e3b461abcc3",
+          "error_details": null,
+          "duration_ms": 1039.955
+        },
+        {
+          "row_number": 132,
+          "component_name": "Valparaiso and Viña Full Day City Tour",
+          "status": "success",
+          "component_id": "component_99c9111e4037bd060adb816b18c3d252",
+          "error_details": null,
+          "duration_ms": 1040.554
+        },
+        {
+          "row_number": 133,
+          "component_name": "Full day wine tasting excursion in the Casablanca Valley",
+          "status": "success",
+          "component_id": "component_c05eebf3c06661287a65bae61d6724f0",
+          "error_details": null,
+          "duration_ms": 1040.554
+        },
+        {
+          "row_number": 127,
+          "component_name": "Argentine Experience",
+          "status": "success",
+          "component_id": "component_fd8dccb9919a306d0e95e98bcd7a1375",
+          "error_details": null,
+          "duration_ms": 1065.1219999999998
+        },
+        {
+          "row_number": 130,
+          "component_name": "Valparaiso City Tour",
+          "status": "success",
+          "component_id": "component_80b457e2de9dac3a7acb52dfad9f05e6",
+          "error_details": null,
+          "duration_ms": 1126.092
+        },
+        {
+          "row_number": 135,
+          "component_name": "Full Day Beagle Channel Cruise to Estancia Harberton & Isla Martillo",
+          "status": "success",
+          "component_id": "component_01f75fef548fa909863c3ed3e9836b87",
+          "error_details": null,
+          "duration_ms": 1008.6059999999999
+        },
+        {
+          "row_number": 136,
+          "component_name": "Beagle Channel Cruise: Penguin Island and Sea Lion Colony",
+          "status": "success",
+          "component_id": "component_d16b8467d2958ae1bbf62320dba9c43f",
+          "error_details": null,
+          "duration_ms": 977.332
+        },
+        {
+          "row_number": 138,
+          "component_name": "Tierra del Fuego National Park Half Day Tour",
+          "status": "success",
+          "component_id": "component_ad6c40e7faf318c7076e4a0956bea70b",
+          "error_details": null,
+          "duration_ms": 1155.031
+        },
+        {
+          "row_number": 139,
+          "component_name": "Tierra del Fuego National Park with Trekking & Canoes",
+          "status": "success",
+          "component_id": "component_32bd5581cac4d5f3372d443c8a801865",
+          "error_details": null,
+          "duration_ms": 1955.288
+        },
+        {
+          "row_number": 143,
+          "component_name": "Half day Beagle channel yacht excursion",
+          "status": "success",
+          "component_id": "component_582bb44528b8d132237d69352a1c2e22",
+          "error_details": null,
+          "duration_ms": 1945.189
+        },
+        {
+          "row_number": 141,
+          "component_name": "Half day Tierra del Fuego National Park hike",
+          "status": "success",
+          "component_id": "component_6be8d23449c81c000c0b58041311bba7",
+          "error_details": null,
+          "duration_ms": 1951.335
+        },
+        {
+          "row_number": 137,
+          "component_name": "Day at Leisure in Ushuaia",
+          "status": "success",
+          "component_id": "component_ae83e32e913b442aff9e7a565063e078",
+          "error_details": null,
+          "duration_ms": 1965.204
+        },
+        {
+          "row_number": 145,
+          "component_name": "Full Day Off-road Adventure in the Andes in a 4x4",
+          "status": "success",
+          "component_id": "component_5bba661d3f4317d7071afcf4414e5cf2",
+          "error_details": null,
+          "duration_ms": 1801.094
+        },
+        {
+          "row_number": 146,
+          "component_name": "Kayaking, Penguins and Estancia Harberton",
+          "status": "success",
+          "component_id": "component_4be7d15edd259125973c189362306819",
+          "error_details": null,
+          "duration_ms": 1795.881
+        },
+        {
+          "row_number": 144,
+          "component_name": "Full day Estancia Rolito and Cape San Pablo",
+          "status": "success",
+          "component_id": "component_3cf2bfcb9ae4f201f9861bbbb1dea272",
+          "error_details": null,
+          "duration_ms": 1886.156
+        },
+        {
+          "row_number": 142,
+          "component_name": "4x4 and canoeing",
+          "status": "success",
+          "component_id": "component_fc42c3f9c0a6eefddce762460b106d4c",
+          "error_details": null,
+          "duration_ms": 1961.5249999999999
+        },
+        {
+          "row_number": 140,
+          "component_name": "Morning excursion to walk with penguins on Isla Martillo",
+          "status": "success",
+          "component_id": "component_9653bcca4d40cfcade5b0176329ed4c3",
+          "error_details": null,
+          "duration_ms": 1973.748
+        },
+        {
+          "row_number": 147,
+          "component_name": "Estancia Harberton, Martillo Island Penguins and Hiking on Gable Island",
+          "status": "success",
+          "component_id": "component_c6c59b6ef1b92a5dcee22cf610b3a877",
+          "error_details": null,
+          "duration_ms": 1010.8209999999999
+        },
+        {
+          "row_number": 148,
+          "component_name": "Full Day Beagle Channel, Isla Martillo and Estancia Harberton Excursion",
+          "status": "success",
+          "component_id": "component_970a6be74532186fe66805dfd08f0229",
+          "error_details": null,
+          "duration_ms": 1053.316
+        },
+        {
+          "row_number": 153,
+          "component_name": "Rafting Río de Las Vueltas",
+          "status": "success",
+          "component_id": "component_b7e3786a7dd89a9bbd29e70116365141",
+          "error_details": null,
+          "duration_ms": 1045.276
+        },
+        {
+          "row_number": 155,
+          "component_name": "Kayaking La Leona",
+          "status": "success",
+          "component_id": "component_810a81a7ecb3faa28bafaa0643b0abcc",
+          "error_details": null,
+          "duration_ms": 1036.02
+        },
+        {
+          "row_number": 149,
+          "component_name": "Tigre & San Isidro Tour",
+          "status": "success",
+          "component_id": "component_085ecaad8eb149c29b189e747c2f8329",
+          "error_details": null,
+          "duration_ms": 1053.49
+        },
+        {
+          "row_number": 154,
+          "component_name": "Los Huemules Hike",
+          "status": "success",
+          "component_id": "component_09f98579cf5c7d3b32d3e087ea593c0f",
+          "error_details": null,
+          "duration_ms": 1038.3819999999998
+        },
+        {
+          "row_number": 151,
+          "component_name": "Laguna Torre Hike",
+          "status": "success",
+          "component_id": "component_f74b5030c572bb823f3c97ebfb841580",
+          "error_details": null,
+          "duration_ms": 1049.573
+        },
+        {
+          "row_number": 152,
+          "component_name": "Loma del Pliegue Tumbado hike",
+          "status": "success",
+          "component_id": "component_6da1122751996dd3dda146fe4a451eb2",
+          "error_details": null,
+          "duration_ms": 1054.089
+        },
+        {
+          "row_number": 150,
+          "component_name": "Laguna de Los Tres Hike",
+          "status": "success",
+          "component_id": "component_c3cb6249ac1775527e1a5a52ebbac18d",
+          "error_details": null,
+          "duration_ms": 1063.08
+        },
+        {
+          "row_number": 156,
+          "component_name": "Visit to Perito Moreno Glacier including minitrekking on the Ice",
+          "status": "success",
+          "component_id": "component_e1c72eabb9389f6591ed23d02c9d13a6",
+          "error_details": null,
+          "duration_ms": 1145.827
+        },
+        {
+          "row_number": 157,
+          "component_name": "Visit to Perito Moreno Glacier including Kayaking",
+          "status": "success",
+          "component_id": "component_c671b0069a46823cf6e139dfee96b0a0",
+          "error_details": null,
+          "duration_ms": 1017.293
+        },
+        {
+          "row_number": 159,
+          "component_name": "Beer & Bike (35km)",
+          "status": "success",
+          "component_id": "component_95a3b906f499ab0f7aea0d72b038bdfc",
+          "error_details": null,
+          "duration_ms": 1137.559
+        },
+        {
+          "row_number": 160,
+          "component_name": "100km Cooking Class",
+          "status": "success",
+          "component_id": "component_84a7cba49c5251f42c77ea8ac82efe0b",
+          "error_details": null,
+          "duration_ms": 1136.0529999999999
+        },
+        {
+          "row_number": 163,
+          "component_name": "Lago del Desierto and Huemul Glacier Viewpoint Hike",
+          "status": "success",
+          "component_id": "component_179ee2fdd62d8c5b3d7ca5f047e4185a",
+          "error_details": null,
+          "duration_ms": 1135.741
+        },
+        {
+          "row_number": 158,
+          "component_name": "Tierra del Fuego National Park Half Day Tour (Private)",
+          "status": "success",
+          "component_id": "component_682da0e368e1ce7ffde3701c59a530da",
+          "error_details": null,
+          "duration_ms": 1157.316
+        },
+        {
+          "row_number": 162,
+          "component_name": "Huemules Reserve & Puesto Cagliero",
+          "status": "success",
+          "component_id": "component_3d7a89fb490832ed20a0d1b3dade4274",
+          "error_details": null,
+          "duration_ms": 1153.047
+        },
+        {
+          "row_number": 161,
+          "component_name": "Horseback Riding Estancia La Estela",
+          "status": "success",
+          "component_id": "component_7e8c8cdebdf8aa991cb6a35e138102c5",
+          "error_details": null,
+          "duration_ms": 1157.135
+        },
+        {
+          "row_number": 164,
+          "component_name": "Lago del Desierto Kayak & Hike",
+          "status": "success",
+          "component_id": "component_b853435b6d15381f823a0817418530fd",
+          "error_details": null,
+          "duration_ms": 1152.405
+        }
+      ]
+    }
+  },
+  "overall_field_completeness": {
+    "description.web": 45.51724137931035,
+    "description.quote": 45.51724137931035,
+    "description.final": 45.51724137931035,
+    "destination": 100.0,
+    "tripId": 45.51724137931035,
+    "partners": 100.0,
+    "regions": 98.62068965517241,
+    "media.images": 0.0,
+    "package": 100.0
+  }
+}
