@@ -39,8 +39,8 @@ SHEET_PROCESS_ORDER = [
     # "ANT Transfers",
     # "Excursions Package",
     # "Private Tours Package",
-    # "All Inclusive Hotel Package",
-    "Multi-day Activity Package",
+    "All Inclusive Hotel Package",
+    # "Multi-day Activity Package",
     # "PAT Cruise Packages ",
     # "ANT Cruise Packages",
 ]

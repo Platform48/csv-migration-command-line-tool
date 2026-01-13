@@ -1,135 +1,59 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2026-01-13 14:00:18
+Generated: 2026-01-13 14:30:33
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
 
 ====================================================================================================
 
+TYPE: excursion
+--------------------------------------------------------------------------------
+Missing Component                                         | Occurrences
+------------------------------------------------------------------------
+"Atacama Salt Flats tour Tierra"                          | 1
+"Baguales Fossil Trail Hike Tierra"                       | 1
+"Base of the Towers Viewpoint Hike Remota Lodge"          | 1
+"Base of the Towers Viewpoint Hike Tierra"                | 1
+"Cejar Lagoon Hike & Bathe Tierra"                        | 1
+"El Tatio Geysers - Full Day Awasi"                       | 1
+"Estancia Lazo Horse Ride Tierra"                         | 1
+"Estancia Los Rebaños Bike Ride Remota Lodge"             | 1
+"Glacier Grey Boat Trip & Hike Tierra"                    | 1
+"Glacier Grey Sailing; Touring the Paine Massif Tierra"   | 1
+"Guatin Cactus Valley Hike Tierra"                        | 1
+"Lago Grey Boat Trip Remota Lodge"                        | 1
+"Lago Pehoé Boat Ride and French Valley Hike Tierra"      | 1
+"Las Correntadas multisport Explora"                      | 1
+"Purilactis Hike Tierra"                                  | 1
+"Tatio Geysers Tierra"                                    | 1
+
 TYPE: ground_accommodation
 --------------------------------------------------------------------------------
-Missing Component                      | Occurrences
------------------------------------------------------
-"Refugio Paine Grande"                 | 14
-"Hotel El Ovejero"                     | 12
-"Serrano Camp"                         | 12
-"Hotel Diego de Almagro"               | 5
-"Refugio Cuernos"                      | 5
-"Refugio Grey"                         | 5
-"Eco Camp Carlos III"                  | 4
-"Fitz Roy Comfort Camp"                | 4
-"Hotel Las Torres"                     | 4
-"Kosten Aike"                          | 4
-"La Casa de Eugenia"                   | 4
-"Laguna Toro wild campsite"            | 4
-"Refugio Central"                      | 4
-"Refugio Dickson"                      | 4
-"Bahía de los Tempanos wild camp"      | 3
-"Balmaceda Camp"                       | 3
-"Camping Perros"                       | 3
-"Hostería Yendegaia"                   | 3
-"Hotel Rio Serrano"                    | 3
-"Torre Comfort Camp"                   | 3
-"Avellano Camp"                        | 2
-"Camping Serón"                        | 2
-"Casa Museo Alberto Baeriswyl"         | 2
-"Estancia Cerro Guido"                 | 2
-"Hosteria El Pilar"                    | 2
-"Hosteria Posta Sur"                   | 2
-"Hotel Capitan Eberhard"               | 2
-"Hotel Lago Grey"                      | 2
-"Hotel Las Marianas"                   | 2
-"La Casa Museo"                        | 2
-"La Casona"                            | 2
-"Lago Filo Hua Hum Camp"               | 2
-"Los Hielos Inn"                       | 2
-"Los Raices B&B"                       | 2
-"Los Renos Cabins"                     | 2
-"Puesto 3 de Abril"                    | 2
-"Puesto Ibarra wild camp"              | 2
-"Rancho Julian wild camp"              | 2
-"Refugio Paso del Viento"              | 2
-"Río Chico Camp"                       | 2
-"Alto Traful"                          | 1
-"Aquaterra Lodge"                      | 1
-"Auquinco Valley wild camp"            | 1
-"B&B and Cabins Cerro Castillo"        | 1
-"Beban Dome"                           | 1
-"Camp Bosque"                          | 1
-"Camp Porteadores"                     | 1
-"Camp Turbio"                          | 1
-"Camping Japonés"                      | 1
-"Carrson Hotel"                        | 1
-"Casa Vieja wild camp"                 | 1
-"Circo de los Altares wild camp"       | 1
-"Enchanted Bay Camp"                   | 1
-"French Domes"                         | 1
-"Golfo San José Camp"                  | 1
-"Hermoso Camp"                         | 1
-"Hosteria de la Patagonia"             | 1
-"Hosteria Kaiken"                      | 1
-"Hosteria Tunkelen"                    | 1
-"Hotel 381"                            | 1
-"La Cascadas Lodge"                    | 1
-"La Mesita wild camp"                  | 1
-"Lago Brush Camp"                      | 1
-"Lago Ferrari wild camp"               | 1
-"Laguna Anita wild camp"               | 1
-"Laguna Azul Camping"                  | 1
-"Laguna Los Guanacos wild camp"        | 1
-"Laguna Martillo wild camp"            | 1
-"Laguna Salto wild camp"               | 1
-"Laguna Verde Camp"                    | 1
-"Lake Paimún Camp"                     | 1
-"Lakutaia Lodge"                       | 1
-"Las Gaviotas Lodge"                   | 1
-"Mt Bettinelli wild camp"              | 1
-"North Pass wild camp"                 | 1
-"North Valley wild camp"               | 1
-"Nunatak Domes"                        | 1
-"Petrohué Lodge"                       | 1
-"Puesto La Rosada"                     | 1
-"Raleigh Camp"                         | 1
-"Ramaditas Mountain Lodge (Explora)"   | 1
-"Refugio El Callao"                    | 1
-"Refugio Otto Meiling"                 | 1
-"Refugio Rocca"                        | 1
-"Refugio Soto"                         | 1
-"Refugio Upsala"                       | 1
-"Reloncavi Fjord wild camp"            | 1
-"Río Aviles Camp"                      | 1
-"Seno Moyano wild camp"                | 1
-"Tyndall wild camp"                    | 1
-"Ushuaia apartment"                    | 1
-"Valle Carbajal wild camp"             | 1
-"Valle de los 14 wild camp"            | 1
+Missing Component         | Occurrences
+----------------------------------------
+"Estancia Cerro Guido"    | 1
+"Explora Easter Island"   | 1
+"Hotel Las Torres"        | 1
+"Hotel Rio Serrano"       | 1
+"PCQI"                    | 1
+"Remota Lodge"            | 1
 
 TYPE: transfer
 --------------------------------------------------------------------------------
-Missing Component                                                 | Occurrences
---------------------------------------------------------------------------------
-"Balmaceda Camp to Puerto Bories Kayak en Patagonia Guided"       | 2
-"Puerto Bories to Puerto Natales Kayak en Patagonia Guided"       | 2
-"Puerto Natales to Lago Grey Kayak en Patagonia"                  | 2
-"Cochrane to Puerto Tranquilo Senderos Patagonia Aysén"           | 1
-"Coyahique to Chile Chico Senderos Patagonia Aysén"               | 1
-"Coyhaique to Balmaceda Airport (BBA) Senderos Patagonia Aysén"   | 1
-"Lago Alto to Villa Cerro Castillo Senderos Patagonia Aysén"      | 1
-"Puerto Natales to Serrano River Kayak en Patagonia Guided"       | 1
-"Puerto Tranquilo to Coyhaique Senderos Patagonia Aysén"          | 1
-"Punta Arenas to EcoCamp Cascada Driver Only"                     | 1
-"San Martín de los Andes to the Auquinco Valley Andestrack"       | 1
-"Villa Cerro Castillo to Lago Alto Senderos Patagonia Aysén"      | 1
+Missing Component                                                   | Occurrences
+----------------------------------------------------------------------------------
+"Calama Airport (CJC) to Tierra Atacama Tierra Driver Only"         | 1
+"El Calafate Airport (FTE) to Explora El Chaltén Explora"           | 1
+"Puerto Montt Airport (PMC) to Refugia Chiloe Refugia Chiloé"       | 1
+"Puerto Natales to Cerro Guido Cerro Guido Driver Only"             | 1
+"Puerto Natales to Tierra Patagonia Tierra Driver Only"             | 1
+"Puerto Natales to Tierra Patagonia Tierra Patagonia Driver Only"   | 1
+"Tierra Atacama to Calama Airport (CJC) Tierra Driver Only"         | 1
+"Tierra Patagonia to Puerto Natales Tierra Driver Only"             | 1
+"Tierra Patagonia to Puerto Natales Tierra Patagonia Driver Only"   | 1
 
-TYPE: pqi
+TYPE: pqie
 --------------------------------------------------------------------------------
 Missing Component    | Occurrences
 -----------------------------------
-"PQI"                | 6
-
-TYPE: activity
---------------------------------------------------------------------------------
-Missing Component                             | Occurrences
-------------------------------------------------------------
-"Laguna Torre and Torres Comfort Camp Hike"   | 2
-"Cerro Torre Viewpoint Hike"                  | 1
+"PQIE"               | 13

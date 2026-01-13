@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY SHEET)
-Generated: 2026-01-13 14:00:18
+Generated: 2026-01-13 14:30:33
 
 WHAT TO FIX:
 The following component names in your Excel sheets don't match any uploaded components.
@@ -7,227 +7,51 @@ Please check the spelling or make sure these components exist in the system.
 
 ====================================================================================================
 
-SHEET: Multi-day Activity Package
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Row      | Row Name                                                                            | Missing Component                                               | Type                        
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-3        | Argentinian Lakes Gravel Biking - Day 1, Component                                  | "La Casa de Eugenia"                                            | ground_accommodation        
-3        | Argentinian Lakes Gravel Biking - Day 5, Component                                  | "La Casa de Eugenia"                                            | ground_accommodation        
-3        | Argentinian Lakes Gravel Biking - Day 2, Component                                  | "Alto Traful"                                                   | ground_accommodation        
-3        | Argentinian Lakes Gravel Biking - Day 3, Component                                  | "Lago Filo Hua Hum Camp"                                        | ground_accommodation        
-3        | Argentinian Lakes Gravel Biking - Day 4, Component                                  | "Lago Filo Hua Hum Camp"                                        | ground_accommodation        
-4        | Trekking in the Shadow of Lanín Volcano - Day 1, C                                  | "La Casa de Eugenia"                                            | ground_accommodation        
-4        | Trekking in the Shadow of Lanín Volcano - Day 5, C                                  | "La Casa de Eugenia"                                            | ground_accommodation        
-4        | Trekking in the Shadow of Lanín Volcano - Day 2, C                                  | "San Martín de los Andes to the Auquinco Valley Andestrack"     | transfer                    
-4        | Trekking in the Shadow of Lanín Volcano - Day 2, C                                  | "Auquinco Valley wild camp"                                     | ground_accommodation        
-4        | Trekking in the Shadow of Lanín Volcano - Day 3, C                                  | "Laguna Verde Camp"                                             | ground_accommodation        
-4        | Trekking in the Shadow of Lanín Volcano - Day 4, C                                  | "Lake Paimún Camp"                                              | ground_accommodation        
-5        | Paso de Las Nubes Trek Bariloche - Day 1, Componen                                  | "Hotel Las Marianas"                                            | ground_accommodation        
-5        | Paso de Las Nubes Trek Bariloche - Day 4, Componen                                  | "Hotel Las Marianas"                                            | ground_accommodation        
-5        | Paso de Las Nubes Trek Bariloche - Day 2, Componen                                  | "Refugio Otto Meiling"                                          | ground_accommodation        
-5        | Paso de Las Nubes Trek Bariloche - Day 3, Componen                                  | "Refugio Rocca"                                                 | ground_accommodation        
-6        | W Trek for Groups - Day 1, Component 3                                              | "Laguna Azul Camping"                                           | ground_accommodation        
-6        | W Trek for Groups - Day 2, Component 4                                              | "Refugio Paine Grande"                                          | ground_accommodation        
-8        | Hike and Kayak in Cochamo - Day 1, Component 3                                      | "Reloncavi Fjord wild camp"                                     | ground_accommodation        
-9        | Trekking in the Land of Volcanoes - Day 1, Compone                                  | "Petrohué Lodge"                                                | ground_accommodation        
-9        | Trekking in the Land of Volcanoes - Day 2, Compone                                  | "Refugio El Callao"                                             | ground_accommodation        
-9        | Trekking in the Land of Volcanoes - Day 3, Compone                                  | "Las Gaviotas Lodge"                                            | ground_accommodation        
-10       | Hike, Bike and Raft in the Chilean Lake District -                                  | "Hotel 381"                                                     | ground_accommodation        
-10       | Hike, Bike and Raft in the Chilean Lake District -                                  | "La Cascadas Lodge"                                             | ground_accommodation        
-11       | W Trek Glamping Highlights - Day 2, Component 3                                     | "Refugio Paine Grande"                                          | ground_accommodation        
-12       | 9-Day Torres del Paine Circuit - Day 5, Component                                   | "Refugio Paine Grande"                                          | ground_accommodation        
-12       | 9-Day Torres del Paine Circuit - Day 1, Component                                   | "Camping Serón"                                                 | ground_accommodation        
-12       | 9-Day Torres del Paine Circuit - Day 2, Component                                   | "Refugio Dickson"                                               | ground_accommodation        
-12       | 9-Day Torres del Paine Circuit - Day 3, Component                                   | "Camping Perros"                                                | ground_accommodation        
-12       | 9-Day Torres del Paine Circuit - Day 4, Component                                   | "Refugio Grey"                                                  | ground_accommodation        
-12       | 9-Day Torres del Paine Circuit - Day 6, Component                                   | "French Domes"                                                  | ground_accommodation        
-13       | Glamping W Trek - Day 3, Component 2                                                | "Refugio Paine Grande"                                          | ground_accommodation        
-13       | Glamping W Trek - Day 2, Component 2                                                | "Refugio Cuernos"                                               | ground_accommodation        
-14       | Dientes de Navarino Trek - Day 1, Component 3                                       | "Laguna Salto wild camp"                                        | ground_accommodation        
-14       | Dientes de Navarino Trek - Day 2, Component 2                                       | "Mt Bettinelli wild camp"                                       | ground_accommodation        
-14       | Dientes de Navarino Trek - Day 3, Component 2                                       | "Laguna Martillo wild camp"                                     | ground_accommodation        
-14       | Dientes de Navarino Trek - Day 4, Component 2                                       | "Laguna Los Guanacos wild camp"                                 | ground_accommodation        
-14       | Dientes de Navarino Trek - Day 5, Component 2                                       | "Lakutaia Lodge"                                                | ground_accommodation        
-15       | Patagonia Southern Explorer - Day 1, Component 1                                    | "Punta Arenas to EcoCamp Cascada Driver Only"                   | transfer                    
-15       | Patagonia Southern Explorer - Day 6, Component 3                                    | "Los Hielos Inn"                                                | ground_accommodation        
-15       | Patagonia Southern Explorer - Day 7, Component 4                                    | "Los Hielos Inn"                                                | ground_accommodation        
-17       | W Trek with Lake Brush Extension - Day 3, Componen                                  | "Refugio Paine Grande"                                          | ground_accommodation        
-17       | W Trek with Lake Brush Extension - Day 4, Componen                                  | "Refugio Cuernos"                                               | ground_accommodation        
-17       | W Trek with Lake Brush Extension - Day 1, Componen                                  | "Lago Brush Camp"                                               | ground_accommodation        
-17       | W Trek with Lake Brush Extension - Day 2, Componen                                  | "Hotel Lago Grey"                                               | ground_accommodation        
-18       | Peninsula Valdés Wildlife Kayaking - Day 1, Compon                                  | "Golfo San José Camp"                                           | ground_accommodation        
-18       | Peninsula Valdés Wildlife Kayaking - Day 2, Compon                                  | "Enchanted Bay Camp"                                            | ground_accommodation        
-19       | The Original Torres del Paine W Trek - Day 3, Comp                                  | "Refugio Paine Grande"                                          | ground_accommodation        
-19       | The Original Torres del Paine W Trek - Day 4, Comp                                  | "Refugio Grey"                                                  | ground_accommodation        
-19       | The Original Torres del Paine W Trek - Day 2, Comp                                  | "Refugio Cuernos"                                               | ground_accommodation        
-19       | The Original Torres del Paine W Trek - Day 1, Comp                                  | "Refugio Central"                                               | ground_accommodation        
-20       | W Trek, 3 days - Day 1, Component 4                                                 | "Serrano Camp"                                                  | ground_accommodation        
-20       | W Trek, 3 days - Day 2, Component 6                                                 | "Serrano Camp"                                                  | ground_accommodation        
-21       | 5-Day W Trek from Serrano Base Camp - Day 1, Compo                                  | "Serrano Camp"                                                  | ground_accommodation        
-21       | 5-Day W Trek from Serrano Base Camp - Day 2, Compo                                  | "Serrano Camp"                                                  | ground_accommodation        
-21       | 5-Day W Trek from Serrano Base Camp - Day 3, Compo                                  | "Serrano Camp"                                                  | ground_accommodation        
-21       | 5-Day W Trek from Serrano Base Camp - Day 4, Compo                                  | "Serrano Camp"                                                  | ground_accommodation        
-22       | Self-guided W Trek - Day 3, Component 2                                             | "Refugio Paine Grande"                                          | ground_accommodation        
-22       | Self-guided W Trek - Day 4, Component 3                                             | "Refugio Grey"                                                  | ground_accommodation        
-22       | Self-guided W Trek - Day 2, Component 2                                             | "Refugio Cuernos"                                               | ground_accommodation        
-22       | Self-guided W Trek - Day 1, Component 3                                             | "Refugio Central"                                               | ground_accommodation        
-23       | The Fjord Trail - Day 1, Component 3                                                | "Nunatak Domes"                                                 | ground_accommodation        
-24       | Glaciers of Paine on Horseback - Day 2, Component                                   | "Serrano Camp"                                                  | ground_accommodation        
-24       | Glaciers of Paine on Horseback - Day 3, Component                                   | "Serrano Camp"                                                  | ground_accommodation        
-25       | 7-Day Torres del Paine Circuit - Day 6, Component                                   | "Refugio Paine Grande"                                          | ground_accommodation        
-25       | 7-Day Torres del Paine Circuit - Day 2, Component                                   | "Camping Serón"                                                 | ground_accommodation        
-25       | 7-Day Torres del Paine Circuit - Day 3, Component                                   | "Refugio Dickson"                                               | ground_accommodation        
-25       | 7-Day Torres del Paine Circuit - Day 4, Component                                   | "Camping Perros"                                                | ground_accommodation        
-25       | 7-Day Torres del Paine Circuit - Day 5, Component                                   | "Refugio Grey"                                                  | ground_accommodation        
-25       | 7-Day Torres del Paine Circuit - Day 1, Component                                   | "Refugio Central"                                               | ground_accommodation        
-26       | W Trek in Winter - Day 2, Component 3                                               | "Refugio Paine Grande"                                          | ground_accommodation        
-26       | W Trek in Winter - Day 3, Component 2                                               | "Refugio Paine Grande"                                          | ground_accommodation        
-26       | W Trek in Winter - Day 4, Component 2                                               | "Refugio Paine Grande"                                          | ground_accommodation        
-26       | W Trek in Winter - Day 1, Component 4                                               | "Hotel Lago Grey"                                               | ground_accommodation        
-27       | Paine O Circuit with Oggioni Pass - Day 6, Compone                                  | "Refugio Paine Grande"                                          | ground_accommodation        
-27       | Paine O Circuit with Oggioni Pass - Day 2, Compone                                  | "Refugio Dickson"                                               | ground_accommodation        
-27       | Paine O Circuit with Oggioni Pass - Day 3, Compone                                  | "Refugio Dickson"                                               | ground_accommodation        
-27       | Paine O Circuit with Oggioni Pass - Day 4, Compone                                  | "Camping Perros"                                                | ground_accommodation        
-27       | Paine O Circuit with Oggioni Pass - Day 5, Compone                                  | "Refugio Grey"                                                  | ground_accommodation        
-27       | Paine O Circuit with Oggioni Pass - Day 1, Compone                                  | "Camping Japonés"                                               | ground_accommodation        
-28       | Riding Torres del Paine Estancias - Day 3, Compone                                  | "Serrano Camp"                                                  | ground_accommodation        
-29       | Baguales Fossil Canyon - Day 3, Component 2                                         | "La Casa Museo"                                                 | ground_accommodation        
-29       | Baguales Fossil Canyon - Day 4, Component 2                                         | "La Casa Museo"                                                 | ground_accommodation        
-30       | Journey to the End of the Earth - Day 2, Component                                  | "Casa Museo Alberto Baeriswyl"                                  | ground_accommodation        
-30       | Journey to the End of the Earth - Day 3, Component                                  | "Casa Museo Alberto Baeriswyl"                                  | ground_accommodation        
-31       | Explore Uyuni Salt Flats and Atacama - Day 3, Comp                                  | "Ramaditas Mountain Lodge (Explora)"                            | ground_accommodation        
-32       | King Penguin Encounter - Day 1, Component 3                                         | "Hostería Yendegaia"                                            | ground_accommodation        
-33       | Puma Tracking from a Luxury Lodge - Day 1, Compone                                  | "Estancia Cerro Guido"                                          | ground_accommodation        
-33       | Puma Tracking from a Luxury Lodge - Day 2, Compone                                  | "Estancia Cerro Guido"                                          | ground_accommodation        
-34       | Pumas, Penguins & Whales; Wildlife Tour - Day 6, C                                  | "Hostería Yendegaia"                                            | ground_accommodation        
-34       | Pumas, Penguins & Whales; Wildlife Tour - Day 1, C                                  | "Hotel El Ovejero"                                              | ground_accommodation        
-34       | Pumas, Penguins & Whales; Wildlife Tour - Day 2, C                                  | "Hotel El Ovejero"                                              | ground_accommodation        
-34       | Pumas, Penguins & Whales; Wildlife Tour - Day 3, C                                  | "Hotel El Ovejero"                                              | ground_accommodation        
-34       | Pumas, Penguins & Whales; Wildlife Tour - Day 4, C                                  | "Hotel El Ovejero"                                              | ground_accommodation        
-34       | Pumas, Penguins & Whales; Wildlife Tour - Day 5, C                                  | "Hotel Diego de Almagro"                                        | ground_accommodation        
-34       | Pumas, Penguins & Whales; Wildlife Tour - Day 7, C                                  | "Hotel Diego de Almagro"                                        | ground_accommodation        
-34       | Pumas, Penguins & Whales; Wildlife Tour - Day 10,                                   | "Hotel Diego de Almagro"                                        | ground_accommodation        
-34       | Pumas, Penguins & Whales; Wildlife Tour - Day 8, C                                  | "Eco Camp Carlos III"                                           | ground_accommodation        
-34       | Pumas, Penguins & Whales; Wildlife Tour - Day 9, C                                  | "Eco Camp Carlos III"                                           | ground_accommodation        
-35       | Pumas of Torres del Paine - Day 1, Component 2                                      | "Hotel El Ovejero"                                              | ground_accommodation        
-35       | Pumas of Torres del Paine - Day 2, Component 2                                      | "Hotel El Ovejero"                                              | ground_accommodation        
-35       | Pumas of Torres del Paine - Day 3, Component 2                                      | "Hotel El Ovejero"                                              | ground_accommodation        
-35       | Pumas of Torres del Paine - Day 4, Component 2                                      | "Hotel El Ovejero"                                              | ground_accommodation        
-35       | Pumas of Torres del Paine - Day 5, Component 2                                      | "Hotel El Ovejero"                                              | ground_accommodation        
-36       | Patagonia Photo Expedition - Day 5, Component 3                                     | "Hostería Yendegaia"                                            | ground_accommodation        
-36       | Patagonia Photo Expedition - Day 6, Component 2                                     | "Hotel Diego de Almagro"                                        | ground_accommodation        
-36       | Patagonia Photo Expedition - Day 1, Component 3                                     | "Hotel Rio Serrano"                                             | ground_accommodation        
-36       | Patagonia Photo Expedition - Day 2, Component 2                                     | "Hotel Rio Serrano"                                             | ground_accommodation        
-36       | Patagonia Photo Expedition - Day 3, Component 2                                     | "Hotel Rio Serrano"                                             | ground_accommodation        
-37       | Pumas and Birds of Southern Patagonia - Day 3, Com                                  | "Hotel El Ovejero"                                              | ground_accommodation        
-37       | Pumas and Birds of Southern Patagonia - Day 4, Com                                  | "Hotel El Ovejero"                                              | ground_accommodation        
-37       | Pumas and Birds of Southern Patagonia - Day 5, Com                                  | "Hotel El Ovejero"                                              | ground_accommodation        
-37       | Pumas and Birds of Southern Patagonia - Day 6, Com                                  | "Hotel Diego de Almagro"                                        | ground_accommodation        
-37       | Pumas and Birds of Southern Patagonia - Day 1, Com                                  | "Hosteria Tunkelen"                                             | ground_accommodation        
-38       | Iconic Sights of Southern Patagonia Tour - Day 8,                                   | "Refugio Paine Grande"                                          | ground_accommodation        
-38       | Iconic Sights of Southern Patagonia Tour - Day 7,                                   | "Serrano Camp"                                                  | ground_accommodation        
-38       | Iconic Sights of Southern Patagonia Tour - Day 1,                                   | "Carrson Hotel"                                                 | ground_accommodation        
-38       | Iconic Sights of Southern Patagonia Tour - Day 4,                                   | "Hosteria Posta Sur"                                            | ground_accommodation        
-38       | Iconic Sights of Southern Patagonia Tour - Day 5,                                   | "Hosteria Posta Sur"                                            | ground_accommodation        
-38       | Iconic Sights of Southern Patagonia Tour - Day 6,                                   | "Hotel Capitan Eberhard"                                        | ground_accommodation        
-38       | Iconic Sights of Southern Patagonia Tour - Day 9,                                   | "Hotel Capitan Eberhard"                                        | ground_accommodation        
-39       | W Trek: Heart of Torres - Day 1, Component 2                                        | "Hotel Las Torres"                                              | ground_accommodation        
-39       | W Trek: Heart of Torres - Day 2, Component 2                                        | "Hotel Las Torres"                                              | ground_accommodation        
-39       | W Trek: Heart of Torres - Day 3, Component 2                                        | "Hotel Las Torres"                                              | ground_accommodation        
-39       | W Trek: Heart of Torres - Day 4, Component 5                                        | "Hotel Las Torres"                                              | ground_accommodation        
-40       | Kayak from Paine to Natales: 2 Days - Day 1, Compo                                  | "Puerto Natales to Serrano River Kayak en Patagonia Guided"     | transfer                    
-40       | Kayak from Paine to Natales: 2 Days - Day 1, Compo                                  | "Balmaceda Camp"                                                | ground_accommodation        
-40       | Kayak from Paine to Natales: 2 Days - Day 2, Compo                                  | "Balmaceda Camp to Puerto Bories Kayak en Patagonia Guided"     | transfer                    
-40       | Kayak from Paine to Natales: 2 Days - Day 2, Compo                                  | "Puerto Bories to Puerto Natales Kayak en Patagonia Guided"     | transfer                    
-41       | Kayak Paine's Ice Route: 4 Days - Day 1, Component                                  | "Serrano Camp"                                                  | ground_accommodation        
-41       | Kayak Paine's Ice Route: 4 Days - Day 3, Component                                  | "Balmaceda Camp"                                                | ground_accommodation        
-41       | Kayak Paine's Ice Route: 4 Days - Day 1, Component                                  | "Puerto Natales to Lago Grey Kayak en Patagonia"                | transfer                    
-41       | Kayak Paine's Ice Route: 4 Days - Day 2, Component                                  | "Tyndall wild camp"                                             | ground_accommodation        
-42       | Kayak Paine's Grey & Serrano Rivers: 3 Days - Day                                   | "Serrano Camp"                                                  | ground_accommodation        
-42       | Kayak Paine's Grey & Serrano Rivers: 3 Days - Day                                   | "Balmaceda Camp"                                                | ground_accommodation        
-42       | Kayak Paine's Grey & Serrano Rivers: 3 Days - Day                                   | "Balmaceda Camp to Puerto Bories Kayak en Patagonia Guided"     | transfer                    
-42       | Kayak Paine's Grey & Serrano Rivers: 3 Days - Day                                   | "Puerto Bories to Puerto Natales Kayak en Patagonia Guided"     | transfer                    
-42       | Kayak Paine's Grey & Serrano Rivers: 3 Days - Day                                   | "Puerto Natales to Lago Grey Kayak en Patagonia"                | transfer                    
-43       | Trekking Deep into Tierra del Fuego - Day 1, Compo                                  | "Beban Dome"                                                    | ground_accommodation        
-43       | Trekking Deep into Tierra del Fuego - Day 2, Compo                                  | "Los Renos Cabins"                                              | ground_accommodation        
-43       | Trekking Deep into Tierra del Fuego - Day 3, Compo                                  | "Los Renos Cabins"                                              | ground_accommodation        
-43       | Trekking Deep into Tierra del Fuego - Day 4, Compo                                  | "Valle Carbajal wild camp"                                      | ground_accommodation        
-44       | Torres del Río Chico Basecamp Trek - Day 1, Compon                                  | "Río Chico Camp"                                                | ground_accommodation        
-44       | Torres del Río Chico Basecamp Trek - Day 2, Compon                                  | "Río Chico Camp"                                                | ground_accommodation        
-45       | Mitre Peninsula Trek - Day 2, Component 3                                           | "Casa Vieja wild camp"                                          | ground_accommodation        
-45       | Mitre Peninsula Trek - Day 3, Component 2                                           | "Puesto Ibarra wild camp"                                       | ground_accommodation        
-45       | Mitre Peninsula Trek - Day 6, Component 2                                           | "Puesto Ibarra wild camp"                                       | ground_accommodation        
-45       | Mitre Peninsula Trek - Day 4, Component 2                                           | "Rancho Julian wild camp"                                       | ground_accommodation        
-45       | Mitre Peninsula Trek - Day 5, Component 2                                           | "Rancho Julian wild camp"                                       | ground_accommodation        
-45       | Mitre Peninsula Trek - Day 7, Component 2                                           | "La Mesita wild camp"                                           | ground_accommodation        
-45       | Mitre Peninsula Trek - Day 8, Component 3                                           | "Ushuaia apartment"                                             | ground_accommodation        
-46       | PCQI - Day 1, Component 1                                                           | "PQI"                                                           | pqi                         
-46       | PCQI - Day 1, Component 2                                                           | "PQI"                                                           | pqi                         
-46       | PCQI - Day 1, Component 3                                                           | "PQI"                                                           | pqi                         
-46       | PCQI - Day 1, Component 4                                                           | "PQI"                                                           | pqi                         
-46       | PCQI - Day 1, Component 5                                                           | "PQI"                                                           | pqi                         
-46       | PCQI - Day 1, Component 6                                                           | "PQI"                                                           | pqi                         
-47       | Cerro Castillo National Park Trek - Day 1, Compone                                  | "La Casona"                                                     | ground_accommodation        
-47       | Cerro Castillo National Park Trek - Day 5, Compone                                  | "La Casona"                                                     | ground_accommodation        
-47       | Cerro Castillo National Park Trek - Day 2, Compone                                  | "Camp Turbio"                                                   | ground_accommodation        
-47       | Cerro Castillo National Park Trek - Day 3, Compone                                  | "Camp Bosque"                                                   | ground_accommodation        
-47       | Cerro Castillo National Park Trek - Day 4, Compone                                  | "Camp Porteadores"                                              | ground_accommodation        
-48       | Trekking to the Patagonia National Park: Jeinimeni                                  | "Los Raices B&B"                                                | ground_accommodation        
-48       | Trekking to the Patagonia National Park: Jeinimeni                                  | "Los Raices B&B"                                                | ground_accommodation        
-48       | Trekking to the Patagonia National Park: Jeinimeni                                  | "Coyahique to Chile Chico Senderos Patagonia Aysén"             | transfer                    
-48       | Trekking to the Patagonia National Park: Jeinimeni                                  | "Hosteria de la Patagonia"                                      | ground_accommodation        
-48       | Trekking to the Patagonia National Park: Jeinimeni                                  | "Raleigh Camp"                                                  | ground_accommodation        
-48       | Trekking to the Patagonia National Park: Jeinimeni                                  | "Hermoso Camp"                                                  | ground_accommodation        
-48       | Trekking to the Patagonia National Park: Jeinimeni                                  | "Río Aviles Camp"                                               | ground_accommodation        
-48       | Trekking to the Patagonia National Park: Jeinimeni                                  | "Cochrane to Puerto Tranquilo Senderos Patagonia Aysén"         | transfer                    
-48       | Trekking to the Patagonia National Park: Jeinimeni                                  | "Puerto Tranquilo to Coyhaique Senderos Patagonia Aysén"        | transfer                    
-48       | Trekking to the Patagonia National Park: Jeinimeni                                  | "Coyhaique to Balmaceda Airport (BBA) Senderos Patagonia Aysén" | transfer                    
-49       | Aysen Horse Riding to the Avellano Valley - Day 2,                                  | "Villa Cerro Castillo to Lago Alto Senderos Patagonia Aysén"    | transfer                    
-49       | Aysen Horse Riding to the Avellano Valley - Day 2,                                  | "Avellano Camp"                                                 | ground_accommodation        
-49       | Aysen Horse Riding to the Avellano Valley - Day 3,                                  | "Avellano Camp"                                                 | ground_accommodation        
-49       | Aysen Horse Riding to the Avellano Valley - Day 4,                                  | "Lago Alto to Villa Cerro Castillo Senderos Patagonia Aysén"    | transfer                    
-49       | Aysen Horse Riding to the Avellano Valley - Day 4,                                  | "B&B and Cabins Cerro Castillo"                                 | ground_accommodation        
-50       | El Chaltén Highlights - Day 1, Component 3                                          | "Hosteria El Pilar"                                             | ground_accommodation        
-50       | El Chaltén Highlights - Day 2, Component 4                                          | "Hosteria El Pilar"                                             | ground_accommodation        
-50       | El Chaltén Highlights - Day 3, Component 2                                          | "Fitz Roy Comfort Camp"                                         | ground_accommodation        
-51       | South Patagonian Ice Field Expedition - Day 1, Com                                  | "Valle de los 14 wild camp"                                     | ground_accommodation        
-51       | South Patagonian Ice Field Expedition - Day 2, Com                                  | "Refugio Soto"                                                  | ground_accommodation        
-51       | South Patagonian Ice Field Expedition - Day 3, Com                                  | "Circo de los Altares wild camp"                                | ground_accommodation        
-51       | South Patagonian Ice Field Expedition - Day 4, Com                                  | "Lago Ferrari wild camp"                                        | ground_accommodation        
-51       | South Patagonian Ice Field Expedition - Day 5, Com                                  | "Bahía de los Tempanos wild camp"                               | ground_accommodation        
-52       | The Huemul Circuit - Day 3, Component 2                                             | "Bahía de los Tempanos wild camp"                               | ground_accommodation        
-52       | The Huemul Circuit - Day 1, Component 2                                             | "Laguna Toro wild campsite"                                     | ground_accommodation        
-52       | The Huemul Circuit - Day 2, Component 2                                             | "Refugio Paso del Viento"                                       | ground_accommodation        
-53       | Chaltén Mountain Escape - Day 1, Component 3                                        | "Fitz Roy Comfort Camp"                                         | ground_accommodation        
-53       | Chaltén Mountain Escape - Day 3, Component 2                                        | "Laguna Toro wild campsite"                                     | ground_accommodation        
-53       | Chaltén Mountain Escape - Day 4, Component 2                                        | "Laguna Toro wild campsite"                                     | ground_accommodation        
-53       | Chaltén Mountain Escape - Day 2, Component 1                                        | "Cerro Torre Viewpoint Hike"                                    | activity                    
-53       | Chaltén Mountain Escape - Day 2, Component 2                                        | "Torre Comfort Camp"                                            | ground_accommodation        
-54       | Chaltén Express: Fitz Roy & Cerro Torre - Day 1, C                                  | "Fitz Roy Comfort Camp"                                         | ground_accommodation        
-54       | Chaltén Express: Fitz Roy & Cerro Torre - Day 2, C                                  | "Torre Comfort Camp"                                            | ground_accommodation        
-54       | Chaltén Express: Fitz Roy & Cerro Torre - Day 2, C                                  | "Laguna Torre and Torres Comfort Camp Hike"                     | activity                    
-55       | Ultimate Chaltén Trek - Day 1, Component 3                                          | "Fitz Roy Comfort Camp"                                         | ground_accommodation        
-55       | Ultimate Chaltén Trek - Day 5, Component 2                                          | "Bahía de los Tempanos wild camp"                               | ground_accommodation        
-55       | Ultimate Chaltén Trek - Day 3, Component 2                                          | "Laguna Toro wild campsite"                                     | ground_accommodation        
-55       | Ultimate Chaltén Trek - Day 4, Component 2                                          | "Refugio Paso del Viento"                                       | ground_accommodation        
-55       | Ultimate Chaltén Trek - Day 2, Component 2                                          | "Torre Comfort Camp"                                            | ground_accommodation        
-55       | Ultimate Chaltén Trek - Day 2, Component 1                                          | "Laguna Torre and Torres Comfort Camp Hike"                     | activity                    
-56       | Los Glaciares Wilderness Trek - Day 2, Component 3                                  | "Seno Moyano wild camp"                                         | ground_accommodation        
-56       | Los Glaciares Wilderness Trek - Day 3, Component 2                                  | "North Pass wild camp"                                          | ground_accommodation        
-56       | Los Glaciares Wilderness Trek - Day 4, Component 2                                  | "North Valley wild camp"                                        | ground_accommodation        
-56       | Los Glaciares Wilderness Trek - Day 5, Component 2                                  | "Laguna Anita wild camp"                                        | ground_accommodation        
-56       | Los Glaciares Wilderness Trek - Day 6, Component 2                                  | "Refugio Upsala"                                                | ground_accommodation        
-57       | Highlights of Tierra del Fuego Roadtrip - Day 2, C                                  | "Hosteria Kaiken"                                               | ground_accommodation        
-58       | Independent Trek in Paine & Chaltén - Day 4, Compo                                  | "Refugio Paine Grande"                                          | ground_accommodation        
-58       | Independent Trek in Paine & Chaltén - Day 3, Compo                                  | "Refugio Cuernos"                                               | ground_accommodation        
-58       | Independent Trek in Paine & Chaltén - Day 2, Compo                                  | "Refugio Central"                                               | ground_accommodation        
-58       | Independent Trek in Paine & Chaltén - Day 1, Compo                                  | "Aquaterra Lodge"                                               | ground_accommodation        
-58       | Independent Trek in Paine & Chaltén - Day 9, Compo                                  | "Kosten Aike"                                                   | ground_accommodation        
-58       | Independent Trek in Paine & Chaltén - Day 10, Comp                                  | "Kosten Aike"                                                   | ground_accommodation        
-59       | Riding to Hidden Glaciers - Day 1, Component 1                                      | "Kosten Aike"                                                   | ground_accommodation        
-59       | Riding to Hidden Glaciers - Day 6, Component 2                                      | "Kosten Aike"                                                   | ground_accommodation        
-59       | Riding to Hidden Glaciers - Day 2, Component 3                                      | "Puesto La Rosada"                                              | ground_accommodation        
-59       | Riding to Hidden Glaciers - Day 3, Component 2                                      | "Puesto 3 de Abril"                                             | ground_accommodation        
-59       | Riding to Hidden Glaciers - Day 4, Component 3                                      | "Puesto 3 de Abril"                                             | ground_accommodation        
-60       | Humpback Whale Watching Adventure - Day 1, Compone                                  | "Eco Camp Carlos III"                                           | ground_accommodation        
-60       | Humpback Whale Watching Adventure - Day 2, Compone                                  | "Eco Camp Carlos III"                                           | ground_accommodation        
+SHEET: All Inclusive Hotel Package
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                                                                   | Missing Component                                                 | Type                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3        | Atacama Ultimate Luxury - Day 3, Component 1                               | "El Tatio Geysers - Full Day Awasi"                               | excursion                   
+6        | Explore Patagonia National Park from a Luxury Lodg                         | "Las Correntadas multisport Explora"                              | excursion                   
+9        | Explore Easter Island from a Luxury Lodge - Full T                         | "Explora Easter Island"                                           | ground_accommodation        
+12       | Explore Fitz Roy from a Luxury Lodge - Day 1, Comp                         | "El Calafate Airport (FTE) to Explora El Chaltén Explora"         | transfer                    
+13       | Highlights of Torres del Paine - Full Trip Ground                          | "Hotel Las Torres"                                                | ground_accommodation        
+14       | Torres del Paine Day Tours - Full Trip Ground Acco                         | "Hotel Rio Serrano"                                               | ground_accommodation        
+16       | Torres del Paine from a Luxury Estancia - Day 1, C                         | "Puerto Natales to Cerro Guido Cerro Guido Driver Only"           | transfer                    
+16       | Torres del Paine from a Luxury Estancia - Full Tri                         | "Estancia Cerro Guido"                                            | ground_accommodation        
+17       |  - Day 1, Component 1                                                      | "PQIE"                                                            | pqie                        
+17       |  - Day 1, Component 2                                                      | "PQIE"                                                            | pqie                        
+17       |  - Day 1, Component 3                                                      | "PQIE"                                                            | pqie                        
+17       |  - Day 2, Component 1                                                      | "PQIE"                                                            | pqie                        
+17       |  - Day 2, Component 2                                                      | "PQIE"                                                            | pqie                        
+17       |  - Day 2, Component 3                                                      | "PQIE"                                                            | pqie                        
+17       |  - Day 3, Component 1                                                      | "PQIE"                                                            | pqie                        
+17       |  - Day 3, Component 2                                                      | "PQIE"                                                            | pqie                        
+17       |  - Day 3, Component 3                                                      | "PQIE"                                                            | pqie                        
+17       |  - Day 4, Component 1                                                      | "PQIE"                                                            | pqie                        
+17       |  - Day 4, Component 2                                                      | "PQIE"                                                            | pqie                        
+17       |  - Day 5, Component 1                                                      | "PQIE"                                                            | pqie                        
+17       |  - Day 5, Component 2                                                      | "PQIE"                                                            | pqie                        
+17       |  - Full Trip Ground Accom                                                  | "PCQI"                                                            | ground_accommodation        
+18       | Explore Chiloé Island by Land and Sea - Day 1, Com                         | "Puerto Montt Airport (PMC) to Refugia Chiloe Refugia Chiloé"     | transfer                    
+19       | Puerto Natales Luxury Lodge - Day 1, Component 2                           | "Estancia Los Rebaños Bike Ride Remota Lodge"                     | excursion                   
+19       | Puerto Natales Luxury Lodge - Day 2, Component 1                           | "Base of the Towers Viewpoint Hike Remota Lodge"                  | excursion                   
+19       | Puerto Natales Luxury Lodge - Day 3, Component 1                           | "Lago Grey Boat Trip Remota Lodge"                                | excursion                   
+19       | Puerto Natales Luxury Lodge - Full Trip Ground Acc                         | "Remota Lodge"                                                    | ground_accommodation        
+21       | Torres del Paine Luxury Adventure Retreat - Day 1,                         | "Puerto Natales to Tierra Patagonia Tierra Patagonia Driver Only" | transfer                    
+21       | Torres del Paine Luxury Adventure Retreat - Day 2,                         | "Glacier Grey Sailing; Touring the Paine Massif Tierra"           | excursion                   
+21       | Torres del Paine Luxury Adventure Retreat - Day 3,                         | "Baguales Fossil Trail Hike Tierra"                               | excursion                   
+21       | Torres del Paine Luxury Adventure Retreat - Day 4,                         | "Estancia Lazo Horse Ride Tierra"                                 | excursion                   
+21       | Torres del Paine Luxury Adventure Retreat - Day 5,                         | "Tierra Patagonia to Puerto Natales Tierra Patagonia Driver Only" | transfer                    
+22       | Atacama Luxury Adventure Retreat - Day 1, Componen                         | "Calama Airport (CJC) to Tierra Atacama Tierra Driver Only"       | transfer                    
+22       | Atacama Luxury Adventure Retreat - Day 1, Componen                         | "Guatin Cactus Valley Hike Tierra"                                | excursion                   
+22       | Atacama Luxury Adventure Retreat - Day 2, Componen                         | "Cejar Lagoon Hike & Bathe Tierra"                                | excursion                   
+22       | Atacama Luxury Adventure Retreat - Day 2, Componen                         | "Atacama Salt Flats tour Tierra"                                  | excursion                   
+22       | Atacama Luxury Adventure Retreat - Day 3, Componen                         | "Tatio Geysers Tierra"                                            | excursion                   
+22       | Atacama Luxury Adventure Retreat - Day 4, Componen                         | "Purilactis Hike Tierra"                                          | excursion                   
+22       | Atacama Luxury Adventure Retreat - Day 5, Componen                         | "Tierra Atacama to Calama Airport (CJC) Tierra Driver Only"       | transfer                    
+23       | W Trek Luxury Adventure Retreat - Day 1, Component                         | "Puerto Natales to Tierra Patagonia Tierra Driver Only"           | transfer                    
+23       | W Trek Luxury Adventure Retreat - Day 2, Component                         | "Glacier Grey Boat Trip & Hike Tierra"                            | excursion                   
+23       | W Trek Luxury Adventure Retreat - Day 3, Component                         | "Lago Pehoé Boat Ride and French Valley Hike Tierra"              | excursion                   
+23       | W Trek Luxury Adventure Retreat - Day 4, Component                         | "Base of the Towers Viewpoint Hike Tierra"                        | excursion                   
+23       | W Trek Luxury Adventure Retreat - Day 5, Component                         | "Tierra Patagonia to Puerto Natales Tierra Driver Only"           | transfer                    

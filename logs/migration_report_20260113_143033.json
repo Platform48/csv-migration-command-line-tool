@@ -1,0 +1,216 @@
+{
+  "start_time": "2026-01-13T14:29:54.499385",
+  "end_time": "2026-01-13T14:30:33.451190",
+  "duration_seconds": 38.951805,
+  "sheets": {
+    "All Inclusive Hotel Package": {
+      "total_rows": 22,
+      "success_count": 22,
+      "cached_count": 0,
+      "validation_errors": 0,
+      "upload_errors": 0,
+      "mapping_errors": 0,
+      "success_rate": 100.0,
+      "field_completeness": {
+        "description.web": 100.0,
+        "description.quote": 100.0,
+        "description.final": 100.0,
+        "destination": 100.0,
+        "tripId": 100.0,
+        "partners": 100.0,
+        "regions": 100.0,
+        "media.images": 0.0,
+        "package": 100.0
+      },
+      "rows": [
+        {
+          "row_number": 8,
+          "component_name": "Explore Easter Island from a Luxury Lodge",
+          "status": "success",
+          "component_id": "component_6ba7eb3b090105dc7aba9752502353d9",
+          "error_details": null,
+          "duration_ms": 1308.863
+        },
+        {
+          "row_number": 6,
+          "component_name": "Explore Torres del Paine from a Luxury Lodge",
+          "status": "success",
+          "component_id": "component_13dc2a714eacaea68f63e3331fe11934",
+          "error_details": null,
+          "duration_ms": 1314.215
+        },
+        {
+          "row_number": 10,
+          "component_name": "Explore Torres del Paine in Winter from a Luxury Lodge",
+          "status": "success",
+          "component_id": "component_baf7f3ee5a22a26e38d1a09fa172e7d3",
+          "error_details": null,
+          "duration_ms": 1311.2330000000002
+        },
+        {
+          "row_number": 4,
+          "component_name": "Safari in Southern Patagonia",
+          "status": "success",
+          "component_id": "component_f804567c9f97b273d36b754e1e3cd2fa",
+          "error_details": null,
+          "duration_ms": 1320.066
+        },
+        {
+          "row_number": 9,
+          "component_name": "Explore Atacama from a Luxury Lodge",
+          "status": "success",
+          "component_id": "component_e23fac76975561e131d4ff3cb31d5344",
+          "error_details": null,
+          "duration_ms": 1315.854
+        },
+        {
+          "row_number": 7,
+          "component_name": "W Trek from a Luxury Lodge",
+          "status": "success",
+          "component_id": "component_55f5b88bb2306e5bc934154682f25e5b",
+          "error_details": null,
+          "duration_ms": 1318.613
+        },
+        {
+          "row_number": 2,
+          "component_name": "Atacama Ultimate Luxury",
+          "status": "success",
+          "component_id": "component_1b23e6c65c262c77e69f5dec4a61000c",
+          "error_details": null,
+          "duration_ms": 1324.5430000000001
+        },
+        {
+          "row_number": 3,
+          "component_name": "Iguazú Ultimate Luxury",
+          "status": "success",
+          "component_id": "component_ff69c9bb82262af76f635b00db419a93",
+          "error_details": null,
+          "duration_ms": 1325.543
+        },
+        {
+          "row_number": 11,
+          "component_name": "Explore Fitz Roy from a Luxury Lodge",
+          "status": "success",
+          "component_id": "component_08b5cef3943266cae9a21ec9a156f884",
+          "error_details": null,
+          "duration_ms": 1316.2050000000002
+        },
+        {
+          "row_number": 5,
+          "component_name": "Explore Patagonia National Park from a Luxury Lodge",
+          "status": "success",
+          "component_id": "component_9dc11eb5955e6dfa64953039104ff5f4",
+          "error_details": null,
+          "duration_ms": 1329.1519999999998
+        },
+        {
+          "row_number": 19,
+          "component_name": "Explore the Chilean Lakes from a Luxury Lodge",
+          "status": "success",
+          "component_id": "component_bb30cc15d7e0432cab5ff2125c3e6b37",
+          "error_details": null,
+          "duration_ms": 1018.264
+        },
+        {
+          "row_number": 21,
+          "component_name": "Atacama Luxury Adventure Retreat",
+          "status": "success",
+          "component_id": "component_acbadc5f572953f25ea78bb697ba3fae",
+          "error_details": null,
+          "duration_ms": 1013.8849999999999
+        },
+        {
+          "row_number": 17,
+          "component_name": "Explore Chiloé Island by Land and Sea",
+          "status": "success",
+          "component_id": "component_43a50f55e427065369eedf844fbb40dd",
+          "error_details": null,
+          "duration_ms": 1026.0739999999998
+        },
+        {
+          "row_number": 22,
+          "component_name": "W Trek Luxury Adventure Retreat",
+          "status": "success",
+          "component_id": "component_95f53739c513e387a5eb9a0f108f338b",
+          "error_details": null,
+          "duration_ms": 1022.0169999999999
+        },
+        {
+          "row_number": 14,
+          "component_name": "Experience Paine's Nature and Wildlife",
+          "status": "success",
+          "component_id": "component_16d234a67ef79e1c58b92364dd221514",
+          "error_details": null,
+          "duration_ms": 1031.715
+        },
+        {
+          "row_number": 13,
+          "component_name": "Torres del Paine Day Tours",
+          "status": "success",
+          "component_id": "component_bc786f0c1373fe57d3d446231f94a3a6",
+          "error_details": null,
+          "duration_ms": 1036.223
+        },
+        {
+          "row_number": 15,
+          "component_name": "Torres del Paine from a Luxury Estancia",
+          "status": "success",
+          "component_id": "component_587a553968eec2f1fc7d23eeb1b5712f",
+          "error_details": null,
+          "duration_ms": 1033.367
+        },
+        {
+          "row_number": 12,
+          "component_name": "Highlights of Torres del Paine",
+          "status": "success",
+          "component_id": "component_800572d1ccd4cfc9df0479b5981a07b1",
+          "error_details": null,
+          "duration_ms": 1042.4940000000001
+        },
+        {
+          "row_number": 18,
+          "component_name": "Puerto Natales Luxury Lodge",
+          "status": "success",
+          "component_id": "component_4db2426af6dd00cf7e295d364815e128",
+          "error_details": null,
+          "duration_ms": 1168.837
+        },
+        {
+          "row_number": 20,
+          "component_name": "Torres del Paine Luxury Adventure Retreat",
+          "status": "success",
+          "component_id": "component_c5672732f0f0eec26f1a3a44113296fc",
+          "error_details": null,
+          "duration_ms": 1176.556
+        },
+        {
+          "row_number": 24,
+          "component_name": "El Calafate from a Luxury Lodge",
+          "status": "success",
+          "component_id": "component_e1e76276dbb30fd750d16ffe4ea87816",
+          "error_details": null,
+          "duration_ms": 985.665
+        },
+        {
+          "row_number": 23,
+          "component_name": "Los Glaciares Wilderness Estancia",
+          "status": "success",
+          "component_id": "component_ea6dd0d0ac69cbb316ec2d0d24530318",
+          "error_details": null,
+          "duration_ms": 1170.385
+        }
+      ]
+    }
+  },
+  "overall_field_completeness": {
+    "description.web": 100.0,
+    "description.quote": 100.0,
+    "description.final": 100.0,
+    "destination": 100.0,
+    "tripId": 100.0,
+    "partners": 100.0,
+    "regions": 100.0,
+    "media.images": 0.0,
+    "package": 100.0
+  }
+}
