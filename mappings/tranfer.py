@@ -72,12 +72,13 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         {"templateId": template_ids[0], "data": level_0},
     ]
     name = get_stripped(row, "Code") or "Untitled"
+    external_name = get_stripped(row, "name")
     # print(f"Name: {get_stripped(row, "Code")}, {row.get("Code")}")
     # print(row)
     # name = f"{row.get( "name")} {row.get("partner")} {row.get("guidesDrivers")}"
     # print(row)
     # print(name)
-    return {
+    payload = {
         "orgId":"swoop",
         "destination":(destination_override or get_stripped(row, "destination")).lower() or "patagonia",
         "state": "Draft",
@@ -109,3 +110,7 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         "media": media,
         "componentFields": component_fields,
     }
+    # Send an external display name when available (schema update pending)
+    if external_name:
+        payload["externalName"] = external_name
+    return payload
