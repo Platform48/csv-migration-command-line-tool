@@ -35,10 +35,10 @@ SHEET_PROCESS_ORDER = [
     # "Journeys",
     # "All Activities - For Upload",
     # "ANT Activities",
-    # "All Transfers - For Upload",
-    # "ANT Transfers",
+    "All Transfers - For Upload",
+    "ANT Transfers",
     # "Excursions Package",
-    "Private Tours Package",
+    # "Private Tours Package",
     # "All Inclusive Hotel Package",
     # "Multi-day Activity Package",
     # "PAT Cruise Packages ",
@@ -221,7 +221,7 @@ def get_partners():
     #     partner_map["Antarctica"][partner["title"]] = partner["id"]
     for partner in ant_data:
         partner_map["Antarctica"][partner["title"]] = partner["id"]
-        print(partner["title"] + " " + partner["id"])
+        #print(partner["title"] + " " + partner["id"])
     for partner in pat_data:
         partner_map["Patagonia"][partner["title"]] = partner["id"]
     

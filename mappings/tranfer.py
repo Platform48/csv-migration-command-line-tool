@@ -78,7 +78,7 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
     # name = f"{row.get( "name")} {row.get("partner")} {row.get("guidesDrivers")}"
     # print(row)
     # print(name)
-    payload = {
+    return {
         "orgId":"swoop",
         "destination":(destination_override or get_stripped(row, "destination")).lower() or "patagonia",
         "state": "Draft",
@@ -107,10 +107,7 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         ],
         "regions": [r for r in regions if r],  # filter out None values
         "name": name,
+        "externalName": external_name,
         "media": media,
         "componentFields": component_fields,
     }
-    # Send an external display name when available (schema update pending)
-    if external_name:
-        payload["externalName"] = external_name
-    return payload

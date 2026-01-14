@@ -1,5 +1,5 @@
 MISSING COMPONENT REFERENCES REPORT (BY SHEET)
-Generated: 2026-01-13 17:05:02
+Generated: 2026-01-14 17:07:00
 
 WHAT TO FIX:
 The following component names in your Excel sheets don't match any uploaded components.
@@ -7,140 +7,52 @@ Please check the spelling or make sure these components exist in the system.
 
 ====================================================================================================
 
-SHEET: Private Tours Package
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Row      | Row Name                                                      | Missing Component                                                              | Type                        
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-3        | Highlights of Bariloche - Day 1, Component 1                  | "Bariloche Airport (BRC) to Bariloche Andestrack Guided"                       | transfer                    
-3        | Highlights of Bariloche - Day 1, Component 3                  | "Alma del Lago"                                                                | ground_accommodation        
-3        | Highlights of Bariloche - Day 2, Component 3                  | "Alma del Lago"                                                                | ground_accommodation        
-3        | Highlights of Bariloche - Day 3, Component 2                  | "Alma del Lago"                                                                | ground_accommodation        
-3        | Highlights of Bariloche - Day 4, Component 3                  | "Alma del Lago"                                                                | ground_accommodation        
-3        | Highlights of Bariloche - Day 2, Component 1                  | "Cerro Bellavista Hike Andestrack"                                             | excursion                   
-3        | Highlights of Bariloche - Day 2, Component 2                  | "Cerro Goye Hike Andestrack"                                                   | excursion                   
-3        | Highlights of Bariloche - Day 3, Component 1                  | "Kayak on Lake Mascardi Andestrack"                                            | excursion                   
-3        | Highlights of Bariloche - Day 4, Component 1                  | "Nahuel Huapi Estancia Horse Riding Andestrack"                                | excursion                   
-3        | Highlights of Bariloche - Day 4, Component 2                  | "Colonia Suiza Mountain Biking Andestrack"                                     | excursion                   
-3        | Highlights of Bariloche - Day 5, Component 1                  | "Bariloche to Bariloche Airport (BRC) Andestrack Guided"                       | transfer                    
-5        | Gentle Adventure in Aysen - Day 1, Component 3                | "Mallín Colorado Lodge"                                                        | ground_accommodation        
-5        | Gentle Adventure in Aysen - Day 2, Component 2                | "Mallín Colorado Lodge"                                                        | ground_accommodation        
-5        | Gentle Adventure in Aysen - Day 3, Component 2                | "Mallín Colorado Lodge"                                                        | ground_accommodation        
-5        | Gentle Adventure in Aysen - Day 4, Component 3                | "Mallín Colorado Lodge"                                                        | ground_accommodation        
-12       | Northern Carretera Austral Road Trip - Day 3, Comp            | "Hotel El Barranco"                                                            | ground_accommodation        
-12       | Northern Carretera Austral Road Trip - Day 4, Comp            | "Hotel El Barranco"                                                            | ground_accommodation        
-12       | Northern Carretera Austral Road Trip - Day 5, Comp            | "Pangue Lodge"                                                                 | ground_accommodation        
-12       | Northern Carretera Austral Road Trip - Day 6, Comp            | "Pangue Lodge"                                                                 | ground_accommodation        
-12       | Northern Carretera Austral Road Trip - Day 7, Comp            | "Los Raices B&B"                                                               | ground_accommodation        
-14       | Best of Peninsula Valdés - Day 1, Component 2                 | "Dazzler Puerto Madryn"                                                        | ground_accommodation        
-14       | Best of Peninsula Valdés - Day 2, Component 2                 | "Dazzler Puerto Madryn"                                                        | ground_accommodation        
-14       | Best of Peninsula Valdés - Day 3, Component 2                 | "Del Nómade Hosteria"                                                          | ground_accommodation        
-14       | Best of Peninsula Valdés - Day 4, Component 3                 | "Del Nómade Hosteria"                                                          | ground_accommodation        
-15       | Highlights of Peninsula Valdés - Day 1, Component             | "Del Nómade Hosteria"                                                          | ground_accommodation        
-15       | Highlights of Peninsula Valdés - Day 2, Component             | "Del Nómade Hosteria"                                                          | ground_accommodation        
-15       | Highlights of Peninsula Valdés - Day 3, Component             | "Del Nómade Hosteria"                                                          | ground_accommodation        
-16       | Peninsula Valdés Wildlife In Depth - Day 1, Compon            | "Estancia Rincón Chico"                                                        | ground_accommodation        
-16       | Peninsula Valdés Wildlife In Depth - Day 2, Compon            | "Estancia Rincón Chico"                                                        | ground_accommodation        
-16       | Peninsula Valdés Wildlife In Depth - Day 3, Compon            | "Estancia Rincón Chico"                                                        | ground_accommodation        
-17       | Gentle Adventure in Torres del Paine - Day 1, Comp            | "Serrano Camp"                                                                 | ground_accommodation        
-17       | Gentle Adventure in Torres del Paine - Day 2, Comp            | "Serrano Camp"                                                                 | ground_accommodation        
-17       | Gentle Adventure in Torres del Paine - Day 3, Comp            | "Serrano Camp"                                                                 | ground_accommodation        
-19       | Buenos Aires In Depth - Day 1, Component 1                    | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-19       | Buenos Aires In Depth - Day 4, Component 1                    | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-20       | Classic Buenos Aires - Day 1, Component 1                     | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-20       | Classic Buenos Aires - Day 3, Component 1                     | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-21       | Relax & Re-energise in Buenos Aires - Day 1, Compo            | "AEP - San Miguel de Monte (Estancia La Bandada) H&T Driver Only"              | transfer                    
-21       | Relax & Re-energise in Buenos Aires - Day 1, Compo            | "Estancia La Bandada"                                                          | ground_accommodation        
-21       | Relax & Re-energise in Buenos Aires - Day 2, Compo            | "Estancia La Bandada"                                                          | ground_accommodation        
-21       | Relax & Re-energise in Buenos Aires - Day 3, Compo            | "San Miguel de Monte (Estancia La Bandada) - AEP H&T Driver Only"              | transfer                    
-22       | Buenos Aires Express - Day 1, Component 1                     | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-22       | Buenos Aires Express - Day 2, Component 1                     | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-23       | Buenos Aires Express - Day 1, Component 1                     | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-23       | Buenos Aires Express - Day 2, Component 1                     | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-24       | Self-Drive Argentinian Lake District - Day 1, Comp            | "Las Balsas Relais & Châteaux"                                                 | ground_accommodation        
-24       | Self-Drive Argentinian Lake District - Day 2, Comp            | "Las Balsas Relais & Châteaux"                                                 | ground_accommodation        
-24       | Self-Drive Argentinian Lake District - Day 3, Comp            | "La Casa de Eugenia"                                                           | ground_accommodation        
-24       | Self-Drive Argentinian Lake District - Day 4, Comp            | "La Casa de Eugenia"                                                           | ground_accommodation        
-24       | Self-Drive Argentinian Lake District - Day 5, Comp            | "Peninsula Petit"                                                              | ground_accommodation        
-25       | Classic Iguazú Falls - Day 1, Component 1                     | "Iguazú Falls Tour (Brazilian side) H&T Argentina"                             | excursion                   
-25       | Classic Iguazú Falls - Day 2, Component 1                     | "Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"           | excursion                   
-25       | Classic Iguazú Falls - Day 3, Component 1                     | "Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Airport (IGR) to Activity H&T" | transfer                    
-26       | Buenos Aires In Depth - Day 1, Component 1                    | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-26       | Buenos Aires In Depth - Day 4, Component 1                    | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-26       | Buenos Aires In Depth - Day 1, Component 2                    | "Palladio Hotel"                                                               | ground_accommodation        
-26       | Buenos Aires In Depth - Day 2, Component 2                    | "Palladio Hotel"                                                               | ground_accommodation        
-26       | Buenos Aires In Depth - Day 3, Component 2                    | "Palladio Hotel"                                                               | ground_accommodation        
-27       | Classic Buenos Aires - Day 1, Component 1                     | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-27       | Classic Buenos Aires - Day 3, Component 1                     | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-27       | Classic Buenos Aires - Day 1, Component 2                     | "Palladio Hotel"                                                               | ground_accommodation        
-27       | Classic Buenos Aires - Day 2, Component 4                     | "Palladio Hotel"                                                               | ground_accommodation        
-28       | Relax & Re-energise in Buenos Aires - Day 1, Compo            | "AEP - San Antonio de Areco (Estancia La Bamba de Areco) H&T Driver Only"      | transfer                    
-28       | Relax & Re-energise in Buenos Aires - Day 3, Compo            | "San Antonio de Areco (Estancia La Bamba de Areco) - AEP H&T Driver Only"      | transfer                    
-29       | Active Buenos Aires - Day 1, Component 1                      | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-29       | Active Buenos Aires - Day 3, Component 1                      | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-29       | Active Buenos Aires - Day 1, Component 3                      | "Palladio Hotel"                                                               | ground_accommodation        
-29       | Active Buenos Aires - Day 2, Component 2                      | "Palladio Hotel"                                                               | ground_accommodation        
-30       | Buenos Aires Foodie - Day 1, Component 1                      | "Airport EZE - Recoleta Hotels H&T Guided"                                     | transfer                    
-30       | Buenos Aires Foodie - Day 3, Component 1                      | "Buenos Aires Hotel to AEP Airport H&T Driver Only"                            | transfer                    
-30       | Buenos Aires Foodie - Day 1, Component 3                      | "Palladio Hotel"                                                               | ground_accommodation        
-30       | Buenos Aires Foodie - Day 2, Component 3                      | "Palladio Hotel"                                                               | ground_accommodation        
-31       | Iguazu Falls Express - Day 1, Component 2                     | "Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"           | excursion                   
-31       | Iguazu Falls Express - Day 2, Component 1                     | "Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"           | excursion                   
-31       | Iguazu Falls Express - Day 1, Component 1                     | "IGR - Puerto Iguazú Hotel H&T Driver Only"                                    | transfer                    
-31       | Iguazu Falls Express - Day 1, Component 3                     | "Iguazú Interactive Six-course Group Dining Experience with Drinks"            | actvity                     
-31       | Iguazu Falls Express - Day 2, Component 2                     | "Puerto Iguazú Hotel - IGR H&T Driver Only"                                    | transfer                    
-32       | Classic Iguazu Falls - Day 1, Component 2                     | "Iguazú Falls Tour (Brazilian side) H&T Argentina"                             | excursion                   
-32       | Classic Iguazu Falls - Day 3, Component 1                     | "Iguazú Falls Tour (Brazilian side) H&T Argentina"                             | excursion                   
-32       | Classic Iguazu Falls - Day 2, Component 1                     | "Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"           | excursion                   
-32       | Classic Iguazu Falls - Day 1, Component 1                     | "IGR - Puerto Iguazú Hotel H&T Driver Only"                                    | transfer                    
-32       | Classic Iguazu Falls - Day 1, Component 3                     | "Iguazú Interactive Six-course Group Dining Experience with Drinks"            | actvity                     
-33       | Iguazu Falls in Depth - Day 3, Component 1                    | "Iguazú Falls Tour (Brazilian side) H&T Argentina"                             | excursion                   
-33       | Iguazu Falls in Depth - Day 2, Component 1                    | "Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"           | excursion                   
-33       | Iguazu Falls in Depth - Day 1, Component 1                    | "IGR - Puerto Iguazú Hotel H&T Driver Only"                                    | transfer                    
-33       | Iguazu Falls in Depth - Day 1, Component 2                    | "Iguazú Interactive Six-course Group Dining Experience with Drinks"            | actvity                     
-33       | Iguazu Falls in Depth - Day 4, Component 1                    | "Puerto Iguazú Hotel - IGR H&T Driver Only"                                    | transfer                    
-34       | Mendoza Express - Day 1, Component 1                          | "MDZ - Downtown Mendoza H&T Driver Only"                                       | transfer                    
-34       | Mendoza Express - Day 1, Component 2                          | "Villa Mansa"                                                                  | ground_accommodation        
-34       | Mendoza Express - Day 2, Component 2                          | "Villa Mansa"                                                                  | ground_accommodation        
-35       | Classic Mendoza - Day 1, Component 1                          | "MDZ - Downtown Mendoza H&T Driver Only"                                       | transfer                    
-35       | Classic Mendoza - Day 1, Component 2                          | "Villa Mansa"                                                                  | ground_accommodation        
-35       | Classic Mendoza - Day 2, Component 2                          | "Villa Mansa"                                                                  | ground_accommodation        
-35       | Classic Mendoza - Day 3, Component 2                          | "Villa Mansa"                                                                  | ground_accommodation        
-36       | Mendoza in Depth - Day 1, Component 1                         | "MDZ - Downtown Mendoza H&T Driver Only"                                       | transfer                    
-36       | Mendoza in Depth - Day 1, Component 2                         | "Villa Mansa"                                                                  | ground_accommodation        
-36       | Mendoza in Depth - Day 2, Component 2                         | "Villa Mansa"                                                                  | ground_accommodation        
-36       | Mendoza in Depth - Day 3, Component 2                         | "Villa Mansa"                                                                  | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 4, Component 2                   | "Mallín Colorado Lodge"                                                        | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 5, Component 2                   | "Mallín Colorado Lodge"                                                        | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 9, Component 2                   | "Los Raices B&B"                                                               | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 1, Component 2                   | "B&B and Cabins Cerro Castillo"                                                | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 2, Component 2                   | "B&B and Cabins Cerro Castillo"                                                | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 3, Component 2                   | "B&B and Cabins Cerro Castillo"                                                | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 6, Component 1                   | "Baker River Rafting Senderos Patagonia Aysén"                                 | excursion                   
-37       | Best of Aysen Roadtrip - Day 6, Component 2                   | "Hotel Ultimo Paraíso"                                                         | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 7, Component 2                   | "Hotel Ultimo Paraíso"                                                         | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 8, Component 2                   | "Hotel Ultimo Paraíso"                                                         | ground_accommodation        
-37       | Best of Aysen Roadtrip - Day 7, Component 1                   | "Patagonia Park - Day Hike Senderos Patagonia Aysén"                           | excursion                   
-37       | Best of Aysen Roadtrip - Day 8, Component 1                   | "Patagonia Park - Day Hike (Tamango side) Senderos Patagonia Aysén"            | excursion                   
-37       | Best of Aysen Roadtrip - Day 9, Component 1                   | "Cochrane to Coyhaique Senderos Patagonia Aysén"                               | transfer                    
-37       | Best of Aysen Roadtrip - Day 10, Component 1                  | "Coyhaique to Balmaceda Airport (BBA) Senderos Patagonia Aysén"                | transfer                    
-38       | Highlights of Aysen Roadtrip - Day 5, Component 2             | "Los Raices B&B"                                                               | ground_accommodation        
-38       | Highlights of Aysen Roadtrip - Day 1, Component 2             | "B&B and Cabins Cerro Castillo"                                                | ground_accommodation        
-38       | Highlights of Aysen Roadtrip - Day 2, Component 2             | "B&B and Cabins Cerro Castillo"                                                | ground_accommodation        
-38       | Highlights of Aysen Roadtrip - Day 3, Component 2             | "El Puesto"                                                                    | ground_accommodation        
-38       | Highlights of Aysen Roadtrip - Day 4, Component 2             | "El Puesto"                                                                    | ground_accommodation        
-38       | Highlights of Aysen Roadtrip - Day 5, Component 1             | "Puerto Tranquilo to Coyhaique Senderos Patagonia Aysén"                       | transfer                    
-39       | Los Glaciares Multisport Adventure - Day 2, Compon            | "Hosteria El Pilar"                                                            | ground_accommodation        
-39       | Los Glaciares Multisport Adventure - Day 3, Compon            | "Fitz Roy Comfort Camp"                                                        | ground_accommodation        
-39       | Los Glaciares Multisport Adventure - Day 5, Compon            | "Kosten Aike"                                                                  | ground_accommodation        
-39       | Los Glaciares Multisport Adventure - Day 6, Compon            | "Kosten Aike"                                                                  | ground_accommodation        
-44       | Classic Santiago, Wines and Valparaíso - Day 2, Co            | "Palacio Astoreca"                                                             | ground_accommodation        
-44       | Classic Santiago, Wines and Valparaíso - Day 3, Co            | "Palacio Astoreca"                                                             | ground_accommodation        
-50       | Relax & Re-energise in Santiago - Day 2, Component            | "Matetic Vineyard Exploration & Wine Tasting Southbound"                       | excursion                   
-63       | Highlights of Los Glaciares - Day 3, Component 3              | "Kosten Aike"                                                                  | ground_accommodation        
-63       | Highlights of Los Glaciares - Day 4, Component 6              | "Kosten Aike"                                                                  | ground_accommodation        
-64       | The Best of Los Glaciares - Day 5, Component 3                | "Kosten Aike"                                                                  | ground_accommodation        
-64       | The Best of Los Glaciares - Day 6, Component 4                | "Kosten Aike"                                                                  | ground_accommodation        
-64       | The Best of Los Glaciares - Day 4, Component 2                | "Lago del Desierto kayak and Hike Walk Patagonia"                              | excursion                   
-64       | The Best of Los Glaciares - Day 6, Component 2                | "Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"                       | excursion (shared)          
-67       | Fitz Roy Lakeside Retreat - Day 3, Component 2                | "Cerro Torre Viewpoint Half-day Hike Walk Patagonia"                           | excursion                   
-68       | Los Glaciares Gentle Adventure - Day 2, Component             | "Cerro Torre Viewpoint Half-day Hike Walk Patagonia"                           | excursion                   
+SHEET: All Transfers - For Upload
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Row       | Row Name                                           | Missing Component                                                 | Type           
+----------------------------------------------------------------------------------------------------------------------------------------------------
+195       | EcoCamp to El Calafate                             | "Puerto Natales to El Calafate (or reverse)"                      | journey        
+269       | El Chaltén to Rio Electrico (Laguna de Los Tres)   | "El Chaltén to Rio Electrico (Laguna de Los Tres)"                | journey        
+271       | El Chaltén to Rio Electrico (Laguna de Los Tres)   | "El Chaltén to Rio Electrico (Laguna de Los Tres)"                | journey        
+272       | El Chaltén to Rio Electrico (Laguna de Los Tres)   | "El Chaltén to Rio Electrico (Laguna de Los Tres)"                | journey        
+530       | Public Bus El Calafate to Puerto Natales           | "Puerto Natales to El Calafate (or reverse)"                      | journey        
+531       | Public Bus El Calafate to Puerto Natales           | "Puerto Natales to El Calafate (or reverse)"                      | journey        
+535       | Public Bus Puerto Natales to El Calafate           | "Puerto Natales to El Calafate (or reverse)"                      | journey        
+617       | Puerto Varas to Bariloche                          | "Puerto Varas to Bariloche or reverse"                            | journey        
+789       | Town Hotel - Lake Esmeralda                        | "Hotel (City Center) - Lake Esmeralda or reverse"                 | journey        
+790       | Town Hotel - TDF National Park                     | "Hotel (City Center) - Tierra Del Fuego National Park or reverse" | journey        
+792       | USH - Port                                         | "Ushuaia Malvinas Argentinas (USH) - Port or reverse"             | journey        
+794       | USH to Port                                        | "Ushuaia Malvinas Argentinas (USH) - Port or reverse"             | journey        
+1043      | Puerto Natales to El Calafate                      | "Puerto Natales to El Calafate (or reverse)"                      | journey        
+1062      | El Calafate to Puerto Natales                      | "Puerto Natales to El Calafate (or reverse)"                      | journey        
+
+SHEET: ANT Transfers
+--------------------------------------------------------------------------------------------------------------------------------------
+Row      | Row Name                      | Missing Component                                                         | Type           
+--------------------------------------------------------------------------------------------------------------------------------------
+3        | AEP - City Hotel              | "Aeroparque Internacional Jorge Newbery (AEP) - City Hotel"               | journey        
+4        | AEP - City Hotel              | "Aeroparque Internacional Jorge Newbery (AEP) - City Hotel"               | journey        
+5        | AEP - City Hotel              | "Aeroparque Internacional Jorge Newbery (AEP) - City Hotel"               | journey        
+6        | City Hotel - EZE              | "Recoleta Hotel - Ministro Pistarini International Airport, Ezeiza (EZE)" | journey        
+7        | City Hotel - EZE              | "Recoleta Hotel - Ministro Pistarini International Airport, Ezeiza (EZE)" | journey        
+8        | City Hotel - EZE              | "Recoleta Hotel - Ministro Pistarini International Airport, Ezeiza (EZE)" | journey        
+9        | City Hotel - AEP              | "City Hotel - Aeroparque Internacional Jorge Newbery (AEP)"               | journey        
+10       | City Hotel - AEP              | "City Hotel - Aeroparque Internacional Jorge Newbery (AEP)"               | journey        
+11       | City Hotel - AEP              | "City Hotel - Aeroparque Internacional Jorge Newbery (AEP)"               | journey        
+15       | USH to Hotel (City Centre)    | "Ushuaia Malvinas Argentinas (USH) - Hotel (downtown)"                    | journey        
+16       | USH to Hotel (City Centre)    | "Ushuaia Malvinas Argentinas (USH) - Hotel (downtown)"                    | journey        
+17       | USH to Hotel (City Centre)    | "Ushuaia Malvinas Argentinas (USH) - Hotel (downtown)"                    | journey        
+18       | USH to Port                   | "Ushuaia Malvinas Argentinas (USH) - Port"                                | journey        
+19       | USH to Port                   | "Ushuaia Malvinas Argentinas (USH) - Port"                                | journey        
+20       | USH to Port                   | "Ushuaia Malvinas Argentinas (USH) - Port"                                | journey        
+21       | USH to Los Acebos/Las Hayas   | "Ushuaia Malvinas Argentinas (USH) - Las Hayas"                           | journey        
+22       | USH to Arakur Hotel           | "Ushuaia Malvinas Argentinas (USH) - Arakur"                              | journey        
+23       | USH to Arakur Hotel           | "Ushuaia Malvinas Argentinas (USH) - Arakur"                              | journey        
+24       | USH to Arakur Hotel           | "Ushuaia Malvinas Argentinas (USH) - Arakur"                              | journey        
+25       | USH to Los Cauquenes          | "Ushuaia Malvinas Argentinas (USH) - Los Cauquenes"                       | journey        
+26       | Los Acebos/Las Hayas - Port   | "Las Hayas hotel - Port"                                                  | journey        
+27       | Arakur Hotel - Port           | "Arakur Hotel - Port"                                                     | journey        
+28       | Arakur Hotel - Port           | "Arakur Hotel - Port"                                                     | journey        
+29       | Arakur Hotel - Port           | "Arakur Hotel - Port"                                                     | journey        
+30       | Los Cauquenes - Port          | "Los Cauquenes - Port"                                                    | journey        
+31       | City Hotel - SCL              | "City Hotel - Arturo Merino Benitez International Airport SCL"            | journey        

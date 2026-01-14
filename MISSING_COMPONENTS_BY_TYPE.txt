@@ -1,84 +1,30 @@
 MISSING COMPONENT REFERENCES REPORT (BY TYPE)
-Generated: 2026-01-13 17:05:02
+Generated: 2026-01-14 17:07:00
 
 This report groups all unique missing component references by type.
 Each entry shows the component name and how many times it was missing.
 
 ====================================================================================================
 
-TYPE: transfer
+TYPE: journey
 --------------------------------------------------------------------------------
-Missing Component                                                                | Occurrences
------------------------------------------------------------------------------------------------
-"Airport EZE - Recoleta Hotels H&T Guided"                                       | 8
-"Buenos Aires Hotel to AEP Airport H&T Driver Only"                              | 8
-"IGR - Puerto Iguazú Hotel H&T Driver Only"                                      | 3
-"MDZ - Downtown Mendoza H&T Driver Only"                                         | 3
-"Puerto Iguazú Hotel - IGR H&T Driver Only"                                      | 2
-"AEP - San Antonio de Areco (Estancia La Bamba de Areco) H&T Driver Only"        | 1
-"AEP - San Miguel de Monte (Estancia La Bandada) H&T Driver Only"                | 1
-"Bariloche Airport (BRC) to Bariloche Andestrack Guided"                         | 1
-"Bariloche to Bariloche Airport (BRC) Andestrack Guided"                         | 1
-"Cataratas/Puerto Iguazú Hotel to Puerto Iguazú Airport (IGR) to Activity H&T"   | 1
-"Cochrane to Coyhaique Senderos Patagonia Aysén"                                 | 1
-"Coyhaique to Balmaceda Airport (BBA) Senderos Patagonia Aysén"                  | 1
-"Puerto Tranquilo to Coyhaique Senderos Patagonia Aysén"                         | 1
-"San Antonio de Areco (Estancia La Bamba de Areco) - AEP H&T Driver Only"        | 1
-"San Miguel de Monte (Estancia La Bandada) - AEP H&T Driver Only"                | 1
-
-TYPE: ground_accommodation
---------------------------------------------------------------------------------
-Missing Component                 | Occurrences
-------------------------------------------------
-"Palladio Hotel"                  | 9
-"Villa Mansa"                     | 8
-"Kosten Aike"                     | 6
-"Mallín Colorado Lodge"           | 6
-"B&B and Cabins Cerro Castillo"   | 5
-"Del Nómade Hosteria"             | 5
-"Alma del Lago"                   | 4
-"Estancia Rincón Chico"           | 3
-"Hotel Ultimo Paraíso"            | 3
-"Los Raices B&B"                  | 3
-"Serrano Camp"                    | 3
-"Dazzler Puerto Madryn"           | 2
-"El Puesto"                       | 2
-"Estancia La Bandada"             | 2
-"Hotel El Barranco"               | 2
-"La Casa de Eugenia"              | 2
-"Las Balsas Relais & Châteaux"    | 2
-"Palacio Astoreca"                | 2
-"Pangue Lodge"                    | 2
-"Fitz Roy Comfort Camp"           | 1
-"Hosteria El Pilar"               | 1
-"Peninsula Petit"                 | 1
-
-TYPE: excursion
---------------------------------------------------------------------------------
-Missing Component                                                      | Occurrences
--------------------------------------------------------------------------------------
-"Iguazú Falls Tour with Train Ride (Argentinian side) H&T Argentina"   | 5
-"Iguazú Falls Tour (Brazilian side) H&T Argentina"                     | 4
-"Cerro Torre Viewpoint Half-day Hike Walk Patagonia"                   | 2
-"Baker River Rafting Senderos Patagonia Aysén"                         | 1
-"Cerro Bellavista Hike Andestrack"                                     | 1
-"Cerro Goye Hike Andestrack"                                           | 1
-"Colonia Suiza Mountain Biking Andestrack"                             | 1
-"Kayak on Lake Mascardi Andestrack"                                    | 1
-"Lago del Desierto kayak and Hike Walk Patagonia"                      | 1
-"Matetic Vineyard Exploration & Wine Tasting Southbound"               | 1
-"Nahuel Huapi Estancia Horse Riding Andestrack"                        | 1
-"Patagonia Park - Day Hike (Tamango side) Senderos Patagonia Aysén"    | 1
-"Patagonia Park - Day Hike Senderos Patagonia Aysén"                   | 1
-
-TYPE: actvity
---------------------------------------------------------------------------------
-Missing Component                                                     | Occurrences
-------------------------------------------------------------------------------------
-"Iguazú Interactive Six-course Group Dining Experience with Drinks"   | 3
-
-TYPE: excursion (shared)
---------------------------------------------------------------------------------
-Missing Component                                          | Occurrences
--------------------------------------------------------------------------
-"Perito Moreno Mayo Spirit Boat and Hike Walk Patagonia"   | 1
+Missing Component                                                           | Occurrences
+------------------------------------------------------------------------------------------
+"Puerto Natales to El Calafate (or reverse)"                                | 6
+"Aeroparque Internacional Jorge Newbery (AEP) - City Hotel"                 | 3
+"Arakur Hotel - Port"                                                       | 3
+"City Hotel - Aeroparque Internacional Jorge Newbery (AEP)"                 | 3
+"El Chaltén to Rio Electrico (Laguna de Los Tres)"                          | 3
+"Recoleta Hotel - Ministro Pistarini International Airport, Ezeiza (EZE)"   | 3
+"Ushuaia Malvinas Argentinas (USH) - Arakur"                                | 3
+"Ushuaia Malvinas Argentinas (USH) - Hotel (downtown)"                      | 3
+"Ushuaia Malvinas Argentinas (USH) - Port"                                  | 3
+"Ushuaia Malvinas Argentinas (USH) - Port or reverse"                       | 2
+"City Hotel - Arturo Merino Benitez International Airport SCL"              | 1
+"Hotel (City Center) - Lake Esmeralda or reverse"                           | 1
+"Hotel (City Center) - Tierra Del Fuego National Park or reverse"           | 1
+"Las Hayas hotel - Port"                                                    | 1
+"Los Cauquenes - Port"                                                      | 1
+"Puerto Varas to Bariloche or reverse"                                      | 1
+"Ushuaia Malvinas Argentinas (USH) - Las Hayas"                             | 1
+"Ushuaia Malvinas Argentinas (USH) - Los Cauquenes"                         | 1
