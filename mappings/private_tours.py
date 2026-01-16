@@ -1,5 +1,5 @@
 # activity_mapper.py
-from utils import get_component_id, get_stripped, safe_float, safe_int, get_location_id
+from utils import get_component_id, get_stripped, safe_float, safe_int, get_location_id, parse_html_list
 from .location import map_region_name_to_id
 import pandas as pd
                             
@@ -148,7 +148,9 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
             "hasDrinksIncluded": False,
             "hasComplementaryGifts": False,
             "hasNationalParkFee": False
-        }
+        },
+        "inclusions": parse_html_list(get_stripped(row, "Inclusions"), "Inclusions"),
+        "exclusions": parse_html_list(get_stripped(row, "Exclusions"), "Exclusions")
     }
 
     component_fields = [

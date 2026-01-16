@@ -72,6 +72,7 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         {"templateId": template_ids[0], "data": level_0},
     ]
     name = get_stripped(row, "Code") or "Untitled"
+    external_name = get_stripped(row, "name")
     # print(f"Name: {get_stripped(row, "Code")}, {row.get("Code")}")
     # print(row)
     # name = f"{row.get( "name")} {row.get("partner")} {row.get("guidesDrivers")}"
@@ -106,6 +107,7 @@ def map_transfer_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         ],
         "regions": [r for r in regions if r],  # filter out None values
         "name": name,
+        "externalName": external_name,
         "media": media,
         "componentFields": component_fields,
     }

@@ -1,5 +1,5 @@
 # activity_mapper.py
-from utils import get_component_id, get_stripped, safe_float, safe_int, get_location_id
+from utils import get_component_id, get_stripped, safe_float, safe_int, get_location_id, parse_html_list
 from .location import map_region_name_to_id
 import pandas as pd
                             
@@ -105,9 +105,12 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
             comp_index += 1
         
         # Add the span (even if it has no valid components)
+        title_val = get_stripped(row, title_col) or get_stripped(row, title_col.replace("Quote", "Web"))
+        desc_val = get_stripped(row, desc_col) or get_stripped(row, desc_col.replace("Quote", "Web"))
+
         package_spans.append({
-            "title": get_stripped(row, title_col) or "Span Title",
-            "description": get_stripped(row, desc_col),
+            "title": title_val or "Span Title",
+            "description": desc_val,
             "items": package_span_items,
             "startDay": safe_int(span_day.split('-')[0]),
             "endDay": safe_int(span_day.split('-')[-1]),
@@ -190,8 +193,8 @@ def map_all_inclusive_hotels_component(row, template_ids, COMPONENT_ID_MAP, cont
             "hasComplementaryGifts": False,
             "hasNationalParkFee": False
         },
-        "inclusions": [],
-        "exclusions": [],
+        "inclusions": parse_html_list(get_stripped(row, "Inclusions"), "Inclusions"),
+        "exclusions": parse_html_list(get_stripped(row, "Exclusions"), "Exclusions"),
     }
 
     component_fields = [

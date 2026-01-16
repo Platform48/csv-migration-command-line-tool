@@ -1,5 +1,6 @@
 import json
 import math
+import re
 import pandas as pd
 
 def printTemplateList(template_list):
@@ -54,6 +55,32 @@ def safe_int(val, default=-1):
         return v
     except (ValueError, TypeError):
         return default
+
+
+def parse_html_list(text: str, field_name: str):
+    """
+    Parse an HTML bullet point list into a list of strings.
+    Args:
+        text: The text to parse
+        field_name: The name of the field to parse
+    Returns:
+        A list of strings
+    """
+    if not text:
+        return []
+
+    if "<li" not in text.lower():
+        print(f"[WARNING] Expected HTML list with <li> for '{field_name}', got: {text[:80]}.")
+        return []
+
+    items = re.findall(r"<li[^>]*>(.*?)</li>", text, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = []
+    for item in items:
+        no_tags = re.sub(r"<[^>]+>", " ", item)
+        cleaned_item = " ".join(no_tags.split()).strip()
+        if cleaned_item:
+            cleaned.append(cleaned_item)
+    return cleaned
 
 import json
 import os
