@@ -636,5 +636,23 @@
     "description": "",
     "destination": "Patagonia",
     "images": []
+  },
+  {
+    "_id": "region_2789ea52b7134435af69cc9a1b8a53d1",
+    "metadata": {
+      "version": 1,
+      "createdAt": {
+        "$date": "2025-07-03T11:50:52.468Z"
+      },
+      "lastModified": {
+        "$date": "2025-07-28T14:25:55.536Z"
+      },
+      "createdById": "system",
+      "modifiedById": "system"
+    },
+    "name": "Chile Central Valley",
+    "description": "",
+    "destination": "Patagonia",
+    "images": []
   }
 ]
