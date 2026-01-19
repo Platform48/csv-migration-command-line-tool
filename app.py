@@ -25,7 +25,7 @@ from mappings.multi_day_activity import map_multi_day_activity_component
 from mappings.cruise import map_cruise_component
 from mappings.ship_accom import map_ship_accommodation_component
 
-ACCESS_TOKEN = ""
+ACCESS_TOKEN = "ya29.a0AUMWg_I9a2VMPv3M4MKfL58yvNLUDKK2jFDCq8yEBviFMWpb97ZYwtqGQoM4d--48Ic7_5RSt0o-GFSIcBDOwZM-gkJcq_omgU5TFi6zjWlnYChSkoyaE1qXGtwg-vyfOjbFShlUGvciJQxHAHmGka8qPzPV1tM99j1HpvkxMjCngbJt-GPsEYg4fAkcpp6ejjYdaJ11V3IQaCgYKAXoSARUSFQHGX2Mi3p6Xq_AY8bnJ3ryIXLEt4Q0211"
 
 SHEET_PROCESS_ORDER = [
     # "Location",
@@ -39,10 +39,10 @@ SHEET_PROCESS_ORDER = [
     # "ANT Transfers",
     # "Excursions Package",
     # "Private Tours Package",
-    "All Inclusive Hotel Package",
-    "Multi-day Activity Package",
-    "PAT Cruise Packages ",
-    "ANT Cruise Packages",
+    # "All Inclusive Hotel Package",
+    # "Multi-day Activity Package",
+    # "PAT Cruise Packages ",
+    # "ANT Cruise Packages",
 ]
 
 log_lock = threading.Lock()
@@ -153,7 +153,7 @@ DUMMY_TEMPLATE_MAP = {
     ],
     "fee": [
         "template_aca16a46ec3842ca85d182ee9348f627",
-        "template_fee81bfcc3b7461987a3728e57ca7363"  
+        "template_d15cc4ab72034fb8a098d9a9ec791a7d"  
     ]
 }
 

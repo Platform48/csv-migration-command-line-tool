@@ -4878,7 +4878,8 @@
     "('cruise', 'Classic Antarctica & South Shetlands')": "component_bbbbfd68f66c0996178d77a774ea2305",
     "('cruise', 'Classic Antarctica & South Shetlands - 10 days')": "component_1d79ad287f1838e28ea11593ea8df93d",
     "('Flight', 'Flight')": "component_98415a6f570af1d10bebd54f054ce4b4",
-    "('Independent Arrangement', 'Independent Arrangement')": "component_0e138c7228a8d3a8095dcb49dab4f7ad"
+    "('Independent Arrangement', 'Independent Arrangement')": "component_0e138c7228a8d3a8095dcb49dab4f7ad",
+    "('Fee', 'Fee')": "component_eb7297e94e2cb86e90a6ead067666717"
   },
   "hash_cache": {
     "location:Ahu One Makihi": "4c2830f7e41d5e50237a44c3b97f3668",
@@ -9759,6 +9760,6 @@
     "cruise:Classic Antarctica & South Shetlands": "48a78a8bcf6d6f6ac6ce8a0854178a00",
     "cruise:Classic Antarctica & South Shetlands - 10 days": "e00c1a5e83ba6b31752448fc8cb6cafe"
   },
-  "last_updated": "2026-01-19T13:25:11.739924",
-  "total_components": 4879
+  "last_updated": "2026-01-19T15:16:18.459774",
+  "total_components": 4880
 }
