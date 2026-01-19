@@ -157,6 +157,7 @@ def map_location_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         ],
         "regions": regions,
         "name": get_stripped(row, "name") or "Untitled",
+        "externalName": get_stripped(row, "name") or "Untitled",
         "media": media,
         "componentFields": component_fields,
         "package": None,

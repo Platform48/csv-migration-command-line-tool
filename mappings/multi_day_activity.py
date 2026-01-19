@@ -160,6 +160,7 @@ def map_multi_day_activity_component(row, template_ids, COMPONENT_ID_MAP, contex
         ],
         "regions": [r for r in regions if r],  # filter out None values
         "name": get_stripped(row, "Name") or "Untitled",
+        "externalName": get_stripped(row, "Name") or "Untitled",
         "media": media,
         "componentFields": component_fields,
         "package": {

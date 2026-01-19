@@ -108,6 +108,7 @@ def map_journey_component(row, template_ids, COMPONENT_ID_MAP, context=None, row
         ],  
         "regions": [r for r in regions if r],  # Filter out None values
         "name": get_stripped(row, "name") or "Untitled",
+        "externalName": get_stripped(row, "name") or "Untitled",
         "media": media,
         "componentFields": component_fields,
     }

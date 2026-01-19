@@ -223,6 +223,7 @@ def map_ground_accommodation_component(row, template_ids, COMPONENT_ID_MAP, cont
         ],
         "regions": [r for r in regions if r],
         "name": get_stripped(row, "name") or "Untitled",
+        "externalName": get_stripped(row, "name") or "Untitled",
         "media": media,
         "componentFields": component_fields,
     }

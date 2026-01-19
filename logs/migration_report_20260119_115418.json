@@ -1,0 +1,260 @@
+{
+  "start_time": "2026-01-19T11:46:44.164719",
+  "end_time": "2026-01-19T11:54:18.780384",
+  "duration_seconds": 454.615665,
+  "sheets": {
+    "All Inclusive Hotel Package": {
+      "total_rows": 22,
+      "success_count": 0,
+      "cached_count": 0,
+      "validation_errors": 0,
+      "upload_errors": 22,
+      "mapping_errors": 0,
+      "success_rate": 0.0,
+      "field_completeness": {
+        "description.web": 100.0,
+        "description.quote": 100.0,
+        "description.final": 100.0,
+        "destination": 100.0,
+        "tripId": 100.0,
+        "partners": 100.0,
+        "regions": 100.0,
+        "media.images": 0.0,
+        "package": 100.0
+      },
+      "rows": [
+        {
+          "row_number": 8,
+          "component_name": "Explore Easter Island from a Luxury Lodge",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 3547212658644825502, 'trace': 3030156465367247670}"
+          },
+          "duration_ms": 171.734
+        },
+        {
+          "row_number": 9,
+          "component_name": "Explore Atacama from a Luxury Lodge",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 1886595672609501401, 'trace': 5572065411344565710}"
+          },
+          "duration_ms": 170.454
+        },
+        {
+          "row_number": 10,
+          "component_name": "Explore Torres del Paine in Winter from a Luxury Lodge",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 9210283939420411795, 'trace': 3265659266805254222}"
+          },
+          "duration_ms": 169.957
+        },
+        {
+          "row_number": 4,
+          "component_name": "Safari in Southern Patagonia",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 5992439106084632830, 'trace': 2434385379444439925}"
+          },
+          "duration_ms": 181.225
+        },
+        {
+          "row_number": 11,
+          "component_name": "Explore Fitz Roy from a Luxury Lodge",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 6721516427637584653, 'trace': 6837761379181182644}"
+          },
+          "duration_ms": 172.38899999999998
+        },
+        {
+          "row_number": 7,
+          "component_name": "W Trek from a Luxury Lodge",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 5475163484268266078, 'trace': 3951922328392007768}"
+          },
+          "duration_ms": 179.614
+        },
+        {
+          "row_number": 6,
+          "component_name": "Explore Torres del Paine from a Luxury Lodge",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 5282434857165007353, 'trace': 4947938043669954714}"
+          },
+          "duration_ms": 183.87800000000001
+        },
+        {
+          "row_number": 5,
+          "component_name": "Explore Patagonia National Park from a Luxury Lodge",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 3051389077185327095, 'trace': 1156183820015327568}"
+          },
+          "duration_ms": 184.784
+        },
+        {
+          "row_number": 3,
+          "component_name": "Iguazú Ultimate Luxury",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 7000683858324603697, 'trace': 1453051627232181983}"
+          },
+          "duration_ms": 186.993
+        },
+        {
+          "row_number": 2,
+          "component_name": "Atacama Ultimate Luxury",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 6853393348417183574, 'trace': 2268998175117626223}"
+          },
+          "duration_ms": 190.852
+        },
+        {
+          "row_number": 15,
+          "component_name": "Torres del Paine from a Luxury Estancia",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 6484508651151272259, 'trace': 1176770666137557675}"
+          },
+          "duration_ms": 203.93200000000002
+        },
+        {
+          "row_number": 12,
+          "component_name": "Highlights of Torres del Paine",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 4060740325223135150, 'trace': 5840889778130387691}"
+          },
+          "duration_ms": 207.831
+        },
+        {
+          "row_number": 20,
+          "component_name": "Torres del Paine Luxury Adventure Retreat",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 5957674652076192868, 'trace': 5153440818405223297}"
+          },
+          "duration_ms": 200.464
+        },
+        {
+          "row_number": 14,
+          "component_name": "Experience Paine's Nature and Wildlife",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 5895687108462522929, 'trace': 1739719013814144432}"
+          },
+          "duration_ms": 208.288
+        },
+        {
+          "row_number": 13,
+          "component_name": "Torres del Paine Day Tours",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 3084099727354487263, 'trace': 768261638936410386}"
+          },
+          "duration_ms": 209.929
+        },
+        {
+          "row_number": 22,
+          "component_name": "W Trek Luxury Adventure Retreat",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 282616283846886878, 'trace': 788555210144840969}"
+          },
+          "duration_ms": 200.338
+        },
+        {
+          "row_number": 18,
+          "component_name": "Puerto Natales Luxury Lodge",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 7852569157719632530, 'trace': 6681588574480687055}"
+          },
+          "duration_ms": 205.207
+        },
+        {
+          "row_number": 21,
+          "component_name": "Atacama Luxury Adventure Retreat",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 1937171003458862585, 'trace': 7285115073619325283}"
+          },
+          "duration_ms": 201.613
+        },
+        {
+          "row_number": 17,
+          "component_name": "Explore Chiloé Island by Land and Sea",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 2459021005640581795, 'trace': 8087240313778318189}"
+          },
+          "duration_ms": 206.26
+        },
+        {
+          "row_number": 19,
+          "component_name": "Explore the Chilean Lakes from a Luxury Lodge",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 4887071112011323152, 'trace': 5542677373306274958}"
+          },
+          "duration_ms": 205.216
+        },
+        {
+          "row_number": 23,
+          "component_name": "Los Glaciares Wilderness Estancia",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 5361423452396516472, 'trace': 1099022281844571614}"
+          },
+          "duration_ms": 201.92399999999998
+        },
+        {
+          "row_number": 24,
+          "component_name": "El Calafate from a Luxury Lodge",
+          "status": "upload_error",
+          "component_id": null,
+          "error_details": {
+            "message": "Upload failed: {'message': 'could not create component: failed to bind create request: no value given for required property externalName', 'span': 1836234862772788492, 'trace': 8768546843780067441}"
+          },
+          "duration_ms": 201.236
+        }
+      ]
+    }
+  },
+  "overall_field_completeness": {
+    "description.web": 100.0,
+    "description.quote": 100.0,
+    "description.final": 100.0,
+    "destination": 100.0,
+    "tripId": 100.0,
+    "partners": 100.0,
+    "regions": 100.0,
+    "media.images": 0.0,
+    "package": 100.0
+  }
+}

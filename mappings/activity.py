@@ -108,6 +108,7 @@ def map_activity_component(row, template_ids, COMPONENT_ID_MAP, context=None, ro
         ],
         "regions": [r for r in regions if r],  # filter out None values
         "name": get_stripped(row, "name") or "Untitled",
+        "externalName": get_stripped(row, "name") or "Untitled",
         "media": media,
         "componentFields": component_fields,
     }

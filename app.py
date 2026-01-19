@@ -35,14 +35,14 @@ SHEET_PROCESS_ORDER = [
     # "Journeys",
     # "All Activities - For Upload",
     # "ANT Activities",
-    "All Transfers - For Upload",
-    "ANT Transfers",
+    # "All Transfers - For Upload",
+    # "ANT Transfers",
     # "Excursions Package",
     # "Private Tours Package",
-    # "All Inclusive Hotel Package",
-    # "Multi-day Activity Package",
-    # "PAT Cruise Packages ",
-    # "ANT Cruise Packages",
+    "All Inclusive Hotel Package",
+    "Multi-day Activity Package",
+    "PAT Cruise Packages ",
+    "ANT Cruise Packages",
 ]
 
 log_lock = threading.Lock()
@@ -647,6 +647,7 @@ def upload_dummy_components():
         "partners": [],
         "regions": [],
         "name": "Flight",
+        "externalName":"Flight",
         "media": {
             "images": [],
             "videos": []
@@ -663,6 +664,8 @@ def upload_dummy_components():
 
     independent_arrangement = base.copy()
     independent_arrangement["name"] = "Independent Arrangement"
+    independent_arrangement["externalName"] = "Independent Arrangement"
+
     independent_arrangement["templateId"] = DUMMY_TEMPLATE_MAP["independent_arrangements"][1]
     independent_arrangement["componentFields"] = independent_arrangements_component_fields
     
@@ -676,6 +679,7 @@ def upload_dummy_components():
 
     independent_arrangement = base.copy()
     independent_arrangement["name"] = "Fee"
+    independent_arrangement["externalName"] = "Fee"
     independent_arrangement["templateId"] = DUMMY_TEMPLATE_MAP["fee"][1]
     independent_arrangement["componentFields"] = fee_component_fields
     

@@ -262,6 +262,7 @@ def map_cruise_component(row, template_ids, COMPONENT_ID_MAP, context=None, row_
         "partners": [destination_override[:3].upper()+"-"+get_stripped(row, "Partner ID")],
         "regions": regions,  # filter out None values
         "name": get_stripped(row, "Name") or "Untitled",
+        "externalName": get_stripped(row, "Name") or "Untitled",
         "media": media,
         "componentFields": component_fields,
         "package": {

@@ -201,6 +201,7 @@ def map_ship_accommodation_component(row, template_ids, COMPONENT_ID_MAP, contex
         ],
         "regions": regions,
         "name": get_stripped(row, "Name") or "Untitled",
+        "externalName": get_stripped(row, "Name") or "Untitled",
         "media": media,
         "componentFields": component_fields,
     }
