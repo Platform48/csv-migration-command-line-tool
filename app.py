@@ -25,7 +25,7 @@ from mappings.multi_day_activity import map_multi_day_activity_component
 from mappings.cruise import map_cruise_component
 from mappings.ship_accom import map_ship_accommodation_component
 
-ACCESS_TOKEN = "ya29.a0AUMWg_I9a2VMPv3M4MKfL58yvNLUDKK2jFDCq8yEBviFMWpb97ZYwtqGQoM4d--48Ic7_5RSt0o-GFSIcBDOwZM-gkJcq_omgU5TFi6zjWlnYChSkoyaE1qXGtwg-vyfOjbFShlUGvciJQxHAHmGka8qPzPV1tM99j1HpvkxMjCngbJt-GPsEYg4fAkcpp6ejjYdaJ11V3IQaCgYKAXoSARUSFQHGX2Mi3p6Xq_AY8bnJ3ryIXLEt4Q0211"
+ACCESS_TOKEN = ""
 
 SHEET_PROCESS_ORDER = [
     # "Location",
