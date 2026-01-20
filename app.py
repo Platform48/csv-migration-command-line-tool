@@ -194,6 +194,10 @@ TEMPLATE_TYPES = {
     "template_63a57a90570c47b89f830d2c7618324f": "cruise",
 }
 
+COMPONENT_BLACKLIST = [
+    "The Original Torres del Paine W Trek (Under 4 people)"
+]
+
 PAT_COMPONENTS_PATH = "pat_components.xlsx"
 COMPONENTS_PATH = PAT_COMPONENTS_PATH
 
@@ -733,15 +737,15 @@ class CoreDataService:
         start_time = datetime.now()
         component_name = component.get("name", "Untitled")
 
-        if component_name == "Untitled":
-            ts_print("Skipping Untitled or Empty row")
+        if component_name in COMPONENT_BLACKLIST:
+            ts_print("Skipping blacklisted or empty row")
             if self.tracker and self.sheet_name:
                 self.tracker.add_sheet_result(RowResult(
                     sheet_name=self.sheet_name,
                     row_number=idx + 2,
                     component_name=component_name,
                     status=OperationStatus.UPLOAD_ERROR,
-                    error_details={"message": "Skipped: Untitled component"},
+                    error_details={"message": "Skipping blacklisted or empty row"},
                     template_type=template_type,
                     component=component
                 ))
