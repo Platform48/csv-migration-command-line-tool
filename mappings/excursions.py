@@ -114,6 +114,7 @@ def map_excursion_component(row, template_ids, COMPONENT_ID_MAP, context=None, r
         "private": False,
         "difficulty": get_stripped(row, "Difficulty") or "Other",
         "guided": get_stripped(row, "Guided?") == "Guided",
+        "boardBasis": get_stripped(row, "Meals"),
         "guideGuestRatio": -1,
         "requirements": {
             "gear": [],
