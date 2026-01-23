@@ -637,7 +637,7 @@ def upload_dummy_components():
 
     base = {
         "orgId":"swoop",
-        "destination":"patagonia",
+        "destination":"unspecified",
         "state": "Draft",
         "pricing": {"amount":0,"currency":"gbp"},
         "package": None,
