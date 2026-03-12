@@ -177,7 +177,7 @@ def map_private_tours_component(row, template_ids, COMPONENT_ID_MAP, context=Non
             get_stripped(row, "TripID")[:3]+"-"+get_stripped(row, "PartnerID")
         ],
         "regions": [r for r in regions if r],  # filter out None values
-        "name": get_stripped(row, "name") or "Untitled",
+        "name": f"{get_stripped(row, "name")}-{get_stripped(row, "destination")}" or "Untitled",
         "externalName": get_stripped(row, "name") or "Untitled",
         "media": media,
         "componentFields": component_fields,
